@@ -23,45 +23,55 @@ claude -p "Antworte nur mit: ok"   # muss ohne Rückfrage "ok" liefern
 
 Falls `gh` im Ubuntu-Paket fehlt oder veraltet ist: Installationsanleitung unter https://github.com/cli/cli/blob/trunk/docs/install_linux.md.
 
-### 2. GitHub-Zugang nur für dieses Repo
+### 2. GitHub-Zugang nur für dieses Repo (ohne bestehende Logins zu ändern)
 
-Auf github.com: Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+Die Fabrik bekommt einen **eigenen** Token, der nur in ihrer Konfigurationsdatei liegt. Ein bereits eingerichteter `gh`- oder Git-Login auf dem VPS (z. B. ein anderer GitHub-Nutzer für deine Coding-Sessions) bleibt unverändert. Also **kein** `gh auth login` und kein `gh auth setup-git` für die Fabrik.
+
+Auf github.com mit dem Konto, dem die Organisation `scrollzoll` gehört: Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
 
 - Resource owner: **scrollzoll**
 - Expiration: 60 Tage (deckt den Urlaub ab)
 - Repository access: **Only select repositories** → `content`
 - Permissions: **Contents: Read and write**, **Pull requests: Read and write** (Metadata: Read wird automatisch gesetzt)
 
-Den Token nur im Terminal des VPS eingeben, nirgends sonst:
-
-```bash
-gh auth login --with-token     # Token einfügen, Enter, Strg+D
-gh auth setup-git
-git config --global user.name "Seb"
-git config --global user.email "DEINE-MAIL"
-```
-
-### 3. Repo klonen (eigener Ordner nur für die Fabrik)
+### 3. Repo klonen und Fabrik konfigurieren (eigener Ordner nur für die Fabrik)
 
 ```bash
 mkdir -p ~/scrollzoll && cd ~/scrollzoll
-gh repo clone scrollzoll/content
+git clone https://github.com/scrollzoll/content.git       # öffentlich, braucht keinen Login
+python3 -m venv venv && venv/bin/pip install -r content/requirements.txt
 cp content/factory/factory.env.example factory.env
+chmod 600 factory.env
+nano factory.env      # Token bei GH_TOKEN= eintragen, speichern
 ```
 
-In diesem Ordner nicht von Hand arbeiten: Die Fabrik setzt ihn vor jedem Lauf auf den Stand von `main` zurück.
+Git im Fabrik-Ordner so einstellen, dass es nur hier den Token aus `GH_TOKEN` nutzt und unter deinem Namen committet:
+
+```bash
+cd ~/scrollzoll/content
+git config --local credential.helper ""
+git config --local --add credential.helper '!f() { echo username=x-access-token; echo "password=$GH_TOKEN"; }; f'
+git config --local user.name "Seb"
+git config --local user.email "DEINE-MAIL"
+```
+
+`gh` liest `GH_TOKEN` automatisch und ignoriert dann den globalen Login. In diesem Ordner nicht von Hand arbeiten: Die Fabrik setzt ihn vor jedem Lauf auf den Stand von `main` zurück.
 
 ### 4. Repo-Einstellungen auf GitHub (`scrollzoll/content`)
 
 - Settings → General → Pull Requests: **Allow auto-merge** aktivieren, **Automatically delete head branches** aktivieren.
-- Settings → Branches (oder Rules) → Regel für `main`: Pull Request erforderlich, **0** Freigaben, Status-Check **Validate units** erforderlich. Mit 0 Freigaben läuft Auto-Merge ohne dich durch, sobald die Prüfung grün ist.
+- Settings → Rules → Ruleset für `main`: Pull Request erforderlich, **0** Freigaben, Status-Check **`validate`** (Quelle GitHub Actions) erforderlich, „Repository admin“ in der Bypass-Liste. Mit 0 Freigaben läuft Auto-Merge ohne dich durch, sobald die Prüfung grün ist.
 
 ### 5. Testen
 
+Für Läufe von Hand die Konfiguration in die Shell laden:
+
 ```bash
 cd ~/scrollzoll/content
-DRY_RUN=1 python3 factory/run_batch.py                 # zeigt nur die Themen und den Prompt
-UNITS_PER_RUN=1 MAX_RUNS_PER_DAY=99 python3 factory/run_batch.py   # ein echter Lauf mit einem Thema
+set -a; . ~/scrollzoll/factory.env; set +a
+GH_TOKEN="$GH_TOKEN" gh api repos/scrollzoll/content --jq .full_name    # Token funktioniert?
+DRY_RUN=1 ../venv/bin/python factory/run_batch.py                       # zeigt nur Themen und Prompt
+UNITS_PER_RUN=1 MAX_RUNS_PER_DAY=99 ../venv/bin/python factory/run_batch.py   # ein echter Lauf mit einem Thema
 ```
 
 Danach sollte auf GitHub ein Pull Request „Neue Lerneinheiten (1) …“ stehen und nach grüner Prüfung automatisch gemergt werden.
@@ -71,12 +81,20 @@ Danach sollte auf GitHub ein Pull Request „Neue Lerneinheiten (1) …“ stehe
 ```bash
 mkdir -p ~/.config/systemd/user
 cp ~/scrollzoll/content/factory/systemd/scrollzoll-factory.* ~/.config/systemd/user/
-which claude    # Pfad prüfen; ggf. in der .service-Datei unter Environment=PATH ergänzen
+which claude    # liegt der Ordner nicht im PATH der .service-Datei, dort unter Environment=PATH ergänzen
 systemctl --user daemon-reload
 systemctl --user enable --now scrollzoll-factory.timer
 sudo loginctl enable-linger "$USER"     # Timer laufen auch ohne eingeloggte Sitzung
 systemctl --user list-timers | grep scrollzoll
+systemctl --user start scrollzoll-factory.service && journalctl --user -u scrollzoll-factory -n 30 --no-pager
 ```
+
+## Coding-Sessions auf demselben VPS
+
+Für die Arbeit an `scrollzoll/app` mit Claude Code gibt es zwei saubere Wege, ohne den Fabrik-Token zu berühren:
+
+- **Dein vorhandener GitHub-Nutzer** bekommt Zugriff auf die Organisation `scrollzoll` (Organisation → People → Invite member). Dann funktioniert alles wie bei deinen anderen Repos.
+- **Zweites Konto in `gh`**: `gh auth login` erneut ausführen und das Konto hinzufügen, mit `gh auth switch` wechseln (ab gh 2.40).
 
 ## Im Urlaub
 
