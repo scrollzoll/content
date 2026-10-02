@@ -108,7 +108,7 @@ Für die Arbeit an `scrollzoll/app` mit Claude Code gibt es zwei saubere Wege, o
 
 ## Mengengerüst (Max 5x)
 
-Standard: 4 Läufe × 4 Einheiten = bis zu 16 Einheiten pro Tag. Die Warteliste (281 Themen) reicht damit gut zweieinhalb Wochen; verworfene Themen verlängern das. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
+Standard: 4 Läufe × 4 Einheiten = bis zu 16 Einheiten pro Tag. Die Warteliste (rund 470 Themen, gemischt aus Technologie, Sprachen, Allgemeinwissen und Geschichte) reicht damit mehrere Wochen; verworfene Themen verlängern das. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
 
 ## Hinweise zum Abo
 
