@@ -2337,3 +2337,3348 @@ queue:
     hint: "Herrscherinnen der Geschichte: Kleopatra, Elisabeth I., Maria Theresia, Katharina die Große"
     format: flashcards
     priority: 2
+  - id: tech-icmp
+    topic: technologie/netzwerke
+    hint: "ICMP nach RFC 792: Zweck, Echo Request/Reply (Typ 8/0), Destination Unreachable, Time Exceeded, ICMPv6 und Neighbor Discovery"
+    format: facts_quiz
+    priority: 3
+  - id: tech-spanning-tree
+    topic: technologie/netzwerke
+    hint: "Spanning Tree Protocol IEEE 802.1D: Schleifen in Layer-2-Netzen, Broadcast-Sturm, Root Bridge, Radia Perlman, Nachfolger RSTP 802.1w"
+    format: facts_quiz
+    priority: 3
+  - id: tech-power-over-ethernet
+    topic: technologie/netzwerke
+    hint: "Power over Ethernet: IEEE 802.3af, 802.3at, 802.3bt mit Leistungsklassen in Watt, typische Geraete wie Access Points, IP-Kameras, VoIP-Telefone"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ipsec
+    topic: technologie/netzwerke
+    hint: "IPsec: AH und ESP, Transport- vs. Tunnelmodus, IKEv2 (RFC 7296), Security Associations, typischer Einsatz Site-to-Site-VPN"
+    format: facts_quiz
+    priority: 3
+  - id: tech-wireguard
+    topic: technologie/netzwerke
+    hint: "WireGuard: Jason Donenfeld, schlanke Codebasis, Noise-Protokoll, Curve25519 und ChaCha20-Poly1305, seit Linux-Kernel 5.6 enthalten"
+    format: facts_quiz
+    priority: 3
+  - id: tech-vxlan
+    topic: technologie/netzwerke
+    hint: "VXLAN nach RFC 7348: Layer 2 ueber UDP (Port 4789), 24-Bit-VNI mit rund 16 Mio. Segmenten statt 4094 VLANs, Einsatz im Rechenzentrum"
+    format: facts_quiz
+    priority: 3
+  - id: tech-vrrp-hsrp
+    topic: technologie/netzwerke
+    hint: "First Hop Redundancy: VRRP (RFC 5798) als offener Standard, HSRP von Cisco, virtuelle IP als Standard-Gateway, Master/Backup-Prinzip"
+    format: facts_quiz
+    priority: 3
+  - id: tech-qos-dscp
+    topic: technologie/netzwerke
+    hint: "Quality of Service: DiffServ und DSCP-Feld im IP-Header (RFC 2474), Klasse EF fuer Sprache, Priorisierung, Warteschlangen, warum Bandbreite allein nicht reicht"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ieee-8021x
+    topic: technologie/netzwerke
+    hint: "Portbasierte Netzwerkzugangskontrolle IEEE 802.1X: Supplicant, Authenticator, Authentication Server, EAP und RADIUS, Einsatz in LAN und WPA-Enterprise"
+    format: facts_quiz
+    priority: 3
+  - id: tech-netflow-ipfix
+    topic: technologie/netzwerke
+    hint: "Flow-Daten: NetFlow von Cisco, IPFIX als IETF-Standard (RFC 7011), 5-Tupel, Nutzen fuer Kapazitaetsplanung und Angriffserkennung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-sni
+    topic: technologie/netzwerke
+    hint: "Server Name Indication: TLS-Erweiterung (RFC 6066), mehrere HTTPS-Sites auf einer IP, Hostname im Klartext sichtbar, Encrypted Client Hello als Antwort"
+    format: facts_quiz
+    priority: 3
+  - id: tech-tcp-congestion-control
+    topic: technologie/netzwerke
+    hint: "TCP-Staukontrolle: Slow Start, Congestion Window, Van Jacobson 1988 nach dem Congestion Collapse 1986, Algorithmen Reno, CUBIC und BBR"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ipv6-slaac
+    topic: technologie/netzwerke
+    hint: "IPv6 Stateless Address Autoconfiguration (RFC 4862): Router Advertisements, Praefix plus Interface-ID, Privacy Extensions (RFC 8981), Abgrenzung zu DHCPv6"
+    format: facts_quiz
+    priority: 3
+  - id: tech-internet-exchange-point
+    topic: technologie/netzwerke
+    hint: "Internet Exchange Points: Peering zwischen Netzbetreibern, DE-CIX in Frankfurt als einer der groessten Knoten, Unterschied Peering vs. Transit"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rpki
+    topic: technologie/netzwerke
+    hint: "RPKI und Route Origin Validation: Schutz vor BGP-Hijacking, ROAs, Regional Internet Registries, Beispiel Pakistan Telecom und YouTube 2008"
+    format: facts_quiz
+    priority: 3
+  - id: tech-lorawan
+    topic: technologie/netzwerke
+    hint: "LoRaWAN als LPWAN: grosse Reichweite bei wenig Energie, lizenzfreies 868-MHz-Band in Europa, Gateways, geringe Datenraten, Abgrenzung zu NB-IoT"
+    format: facts_quiz
+    priority: 3
+  - id: tech-dns-root-server
+    topic: technologie/netzwerke
+    hint: "DNS-Root-Server: 13 Namen a bis m, aber hunderte Instanzen per Anycast, Betreiber wie Verisign und RIPE NCC, Root Zone von IANA"
+    format: facts_quiz
+    priority: 3
+  - id: tech-kerberos
+    topic: technologie/sicherheit
+    hint: "Kerberos: MIT Projekt Athena, Ticket Granting Ticket, KDC, RFC 4120, Standard-Authentifizierung im Active Directory, Angriffe wie Pass-the-Ticket und Golden Ticket"
+    format: facts_quiz
+    priority: 3
+  - id: tech-saml
+    topic: technologie/sicherheit
+    hint: "SAML 2.0 (OASIS 2005): Identity Provider, Service Provider, XML-Assertions, Single Sign-on fuer Unternehmens-SaaS"
+    format: facts_quiz
+    priority: 3
+  - id: tech-openid-connect
+    topic: technologie/sicherheit
+    hint: "OpenID Connect: Identitaetsschicht auf OAuth 2.0, ID Token als JWT, OpenID Foundation 2014, Unterschied Authentifizierung vs. Autorisierung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-jwt
+    topic: technologie/sicherheit
+    hint: "JSON Web Token (RFC 7519): Header, Payload, Signatur Base64url-kodiert, Payload nicht verschluesselt, typische Fehler wie alg none"
+    format: facts_quiz
+    priority: 3
+  - id: tech-csrf
+    topic: technologie/sicherheit
+    hint: "Cross-Site Request Forgery: Browser sendet Cookies automatisch mit, Gegenmassnahmen Anti-CSRF-Token und SameSite-Cookies, Einordnung nach OWASP"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ssrf
+    topic: technologie/sicherheit
+    hint: "Server-Side Request Forgery: Server ruft vom Angreifer gewaehlte URLs auf, Zugriff auf Cloud-Metadatendienst 169.254.169.254, Capital-One-Vorfall 2019, IMDSv2"
+    format: facts_quiz
+    priority: 3
+  - id: tech-buffer-overflow
+    topic: technologie/sicherheit
+    hint: "Pufferueberlauf: Schreiben ueber Speichergrenzen in C, Aleph One 1996 Smashing the Stack, Schutz durch ASLR, DEP/NX und Stack Canaries"
+    format: facts_quiz
+    priority: 3
+  - id: tech-spectre-meltdown
+    topic: technologie/sicherheit
+    hint: "Spectre und Meltdown 2018: spekulative Ausfuehrung, Seitenkanal ueber CPU-Cache, Project Zero und TU Graz, Gegenmassnahme KPTI"
+    format: facts_quiz
+    priority: 3
+  - id: tech-heartbleed
+    topic: technologie/sicherheit
+    hint: "Heartbleed CVE-2014-0160: Fehler in der OpenSSL-Heartbeat-Erweiterung, Auslesen von bis zu 64 KB Serverspeicher, Folge Core Infrastructure Initiative"
+    format: facts_quiz
+    priority: 3
+  - id: tech-log4shell
+    topic: technologie/sicherheit
+    hint: "Log4Shell CVE-2021-44228: JNDI-Lookup in Apache Log4j 2, CVSS 10, Remote Code Execution ueber Logzeilen, BSI-Warnstufe Rot"
+    format: facts_quiz
+    priority: 3
+  - id: tech-stuxnet
+    topic: technologie/sicherheit
+    hint: "Stuxnet: 2010 entdeckt, Angriff auf Siemens-Steuerungen (S7) in Urananreicherung, mehrere Zero-Days, Verbreitung per USB, Wendepunkt fuer Cyberwaffen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-morris-wurm
+    topic: technologie/sicherheit
+    hint: "Morris-Wurm 1988: Robert Tappan Morris, Ausnutzung von sendmail und fingerd, rund 10 Prozent des damaligen Internets betroffen, Gruendung des CERT/CC"
+    format: facts_quiz
+    priority: 3
+  - id: tech-siem-soar
+    topic: technologie/sicherheit
+    hint: "SIEM und SOAR: Logs sammeln und korrelieren, Use Cases und Alarme, Automatisierung per Playbooks, Rolle im Security Operations Center"
+    format: facts_quiz
+    priority: 3
+  - id: tech-edr-xdr
+    topic: technologie/sicherheit
+    hint: "Endpoint Detection and Response: Begriff von Gartner 2013, Verhaltensanalyse statt Signaturen, Isolation von Endgeraeten, Erweiterung zu XDR und MDR"
+    format: facts_quiz
+    priority: 3
+  - id: tech-cyber-kill-chain
+    topic: technologie/sicherheit
+    hint: "Cyber Kill Chain von Lockheed Martin 2011: sieben Phasen von Reconnaissance bis Actions on Objectives, Abgrenzung zu MITRE ATT&CK"
+    format: facts_quiz
+    priority: 3
+  - id: tech-threat-modeling-stride
+    topic: technologie/sicherheit
+    hint: "STRIDE von Microsoft: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege jeweils mit verletzter Schutzeigenschaft"
+    format: flashcards
+    priority: 3
+  - id: tech-sbom
+    topic: technologie/sicherheit
+    hint: "Software Bill of Materials: Stueckliste aller Komponenten, Formate SPDX und CycloneDX, US-Executive-Order 14028, Bezug zum Cyber Resilience Act"
+    format: facts_quiz
+    priority: 3
+  - id: tech-secure-boot-tpm
+    topic: technologie/sicherheit
+    hint: "Secure Boot und TPM 2.0: signierte Bootloader unter UEFI, Trusted Platform Module nach ISO/IEC 11889, Measured Boot, BitLocker-Schluessel"
+    format: facts_quiz
+    priority: 3
+  - id: tech-nist-csf
+    topic: technologie/sicherheit
+    hint: "NIST Cybersecurity Framework 2.0 (2024): Funktionen Govern, Identify, Protect, Detect, Respond, Recover, freiwilliger Rahmen fuer alle Organisationsgroessen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-tor-netzwerk
+    topic: technologie/sicherheit
+    hint: "Tor und Onion Routing: urspruenglich US Naval Research Laboratory, drei Relays mit Schichtverschluesselung, Exit Node sieht unverschluesselten Verkehr, .onion-Dienste"
+    format: facts_quiz
+    priority: 3
+  - id: tech-aes
+    topic: technologie/kryptografie
+    hint: "AES: Rijndael von Daemen und Rijmen, NIST-Wettbewerb, Standard FIPS 197 seit 2001, Blockgroesse 128 Bit, Schluessel 128/192/256 Bit, Nachfolger von DES"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rsa
+    topic: technologie/kryptografie
+    hint: "RSA 1977: Rivest, Shamir, Adleman, Sicherheit beruht auf Faktorisierung grosser Zahlen, oeffentlicher und privater Schluessel, Clifford Cocks beim GCHQ frueher"
+    format: facts_quiz
+    priority: 3
+  - id: tech-diffie-hellman
+    topic: technologie/kryptografie
+    hint: "Diffie-Hellman-Schluesselaustausch 1976: gemeinsames Geheimnis ueber unsicheren Kanal, diskreter Logarithmus, Farbmisch-Analogie, Turing Award 2015"
+    format: facts_quiz
+    priority: 3
+  - id: tech-elliptische-kurven
+    topic: technologie/kryptografie
+    hint: "Elliptische-Kurven-Kryptografie: Koblitz und Miller 1985, kuerzere Schluessel bei gleicher Sicherheit (256 Bit ECC vergleichbar 3072 Bit RSA), Curve25519, ECDSA"
+    format: facts_quiz
+    priority: 3
+  - id: tech-enigma
+    topic: technologie/kryptografie
+    hint: "Enigma: Rotor-Chiffriermaschine, Arthur Scherbius, polnisches Biuro Szyfrow mit Marian Rejewski, Bletchley Park und Alan Turings Bombe"
+    format: facts_quiz
+    priority: 3
+  - id: tech-caesar-vigenere
+    topic: technologie/kryptografie
+    hint: "Klassische Chiffren: Caesar-Verschiebung, Vigenere-Chiffre als le chiffre indechiffrable, Brechen durch Haeufigkeitsanalyse und Kasiski-Test"
+    format: facts_quiz
+    priority: 3
+  - id: tech-one-time-pad
+    topic: technologie/kryptografie
+    hint: "One-Time-Pad: Vernam 1917, Claude Shannon bewies perfekte Sicherheit 1949, Bedingungen echter Zufall, gleiche Laenge, nur einmal nutzen, Venona-Projekt"
+    format: facts_quiz
+    priority: 3
+  - id: tech-kerckhoffs-prinzip
+    topic: technologie/kryptografie
+    hint: "Kerckhoffs-Prinzip 1883: Ein Verschluesselungsverfahren muss sicher bleiben, auch wenn alles ausser dem Schluessel bekannt ist, Gegensatz zu Security through Obscurity"
+    format: single_fact
+    priority: 3
+  - id: tech-certificate-transparency
+    topic: technologie/kryptografie
+    hint: "Certificate Transparency (RFC 6962): oeffentliche Append-only-Logs fuer TLS-Zertifikate, Anlass DigiNotar-Vorfall 2011, Suche ueber crt.sh"
+    format: facts_quiz
+    priority: 3
+  - id: tech-perfect-forward-secrecy
+    topic: technologie/kryptografie
+    hint: "Perfect Forward Secrecy: kurzlebige Sitzungsschluessel per ephemerem Diffie-Hellman, alter Verkehr bleibt sicher trotz spaeter gestohlenem Serverschluessel, Pflicht in TLS 1.3"
+    format: facts_quiz
+    priority: 3
+  - id: tech-zufallszahlen
+    topic: technologie/kryptografie
+    hint: "Zufall in der Kryptografie: echte vs. Pseudozufallszahlen, CSPRNG, Debian-OpenSSL-Fehler 2008, Cloudflares Lavalampen-Wand als Entropiequelle"
+    format: facts_quiz
+    priority: 3
+  - id: tech-zero-knowledge-proofs
+    topic: technologie/kryptografie
+    hint: "Zero-Knowledge-Beweise: Goldwasser, Micali, Rackoff 1985, Ali-Baba-Hoehle als Beispiel, Eigenschaften Vollstaendigkeit, Korrektheit, Zero-Knowledge"
+    format: facts_quiz
+    priority: 3
+  - id: tech-krypto-begriffe
+    topic: technologie/kryptografie
+    hint: "Begriffspaare Kryptografie: Klartext, Chiffrat, Salt, Nonce, Padding, MAC jeweils mit kurzer Definition"
+    format: flashcards
+    priority: 3
+  - id: tech-multi-tenancy
+    topic: technologie/cloud
+    hint: "Mandantenfaehigkeit: mehrere Kunden teilen Infrastruktur, logische Isolation, Noisy-Neighbor-Problem, Single- vs. Multi-Tenant-SaaS"
+    format: facts_quiz
+    priority: 3
+  - id: tech-blue-green-canary
+    topic: technologie/cloud
+    hint: "Deployment-Strategien: Rolling Update, Blue-Green, Canary Release, schnelles Zurueckrollen, Herkunft des Begriffs Kanarienvogel aus dem Bergbau"
+    format: facts_quiz
+    priority: 3
+  - id: tech-twelve-factor-app
+    topic: technologie/cloud
+    hint: "Twelve-Factor App: Methodik von Heroku-Entwicklern um 2011, Konfiguration in Umgebungsvariablen, zustandslose Prozesse, Logs als Event-Streams"
+    format: facts_quiz
+    priority: 3
+  - id: tech-hypervisor-typen
+    topic: technologie/cloud
+    hint: "Hypervisoren: Typ 1 bare metal (ESXi, Hyper-V, KVM) vs. Typ 2 gehostet (VirtualBox), Popek-Goldberg-Kriterien 1974, Hardwareunterstuetzung Intel VT-x und AMD-V"
+    format: facts_quiz
+    priority: 3
+  - id: tech-vendor-lock-in
+    topic: technologie/cloud
+    hint: "Vendor Lock-in in der Cloud: proprietaere Dienste, Datenabfluss-Gebuehren als Huerde, Multi-Cloud und offene Standards als Gegenmittel, EU Data Act zum Anbieterwechsel"
+    format: facts_quiz
+    priority: 3
+  - id: tech-chaos-engineering
+    topic: technologie/cloud
+    hint: "Chaos Engineering: Netflix Chaos Monkey um 2011, Simian Army, gezielte Fehler in Produktion, Principles of Chaos Engineering"
+    format: facts_quiz
+    priority: 3
+  - id: tech-well-architected
+    topic: technologie/cloud
+    hint: "AWS Well-Architected Framework: sechs Saeulen Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability"
+    format: facts_quiz
+    priority: 3
+  - id: tech-sre-slo-sli
+    topic: technologie/cloud
+    hint: "Begriffspaare Site Reliability Engineering nach Googles SRE-Buch: SLI, SLO, SLA, Error Budget, Toil jeweils mit Definition"
+    format: flashcards
+    priority: 3
+  - id: tech-cloud-geschichte
+    topic: technologie/cloud
+    hint: "Geschichte des Cloud Computing: Time-Sharing der 1960er, Salesforce 1999, AWS S3 und EC2 2006, Google App Engine 2008, Microsoft Azure 2010"
+    format: facts_quiz
+    priority: 3
+  - id: tech-cloud-begriffe
+    topic: technologie/cloud
+    hint: "Begriffspaare Cloud: Elastizitaet, Skalierung horizontal vs. vertikal, Egress, Region, Tenant jeweils mit Definition nach NIST SP 800-145"
+    format: flashcards
+    priority: 3
+  - id: tech-kubernetes-begriffe
+    topic: technologie/cloud
+    hint: "Begriffspaare Kubernetes: Pod, Node, Deployment, Service, Namespace, Ingress jeweils mit kurzer Erklaerung laut kubernetes.io"
+    format: flashcards
+    priority: 3
+  - id: tech-perzeptron
+    topic: technologie/ki
+    hint: "Perzeptron: Frank Rosenblatt 1958, Mark I Perceptron, Minsky und Papert 1969 zeigten Grenzen (XOR-Problem), Grundbaustein neuronaler Netze"
+    format: facts_quiz
+    priority: 3
+  - id: tech-backpropagation
+    topic: technologie/ki
+    hint: "Backpropagation: Fehlerrueckfuehrung ueber Kettenregel, Rumelhart, Hinton, Williams 1986 in Nature, Grundlage fuer das Training tiefer Netze"
+    format: facts_quiz
+    priority: 3
+  - id: tech-tokenisierung
+    topic: technologie/ki
+    hint: "Tokenisierung bei Sprachmodellen: Byte Pair Encoding, Tokens sind oft Wortteile, Deutsch braucht meist mehr Tokens als Englisch, Folgen fuer Zaehlaufgaben"
+    format: facts_quiz
+    priority: 3
+  - id: tech-temperatur-sampling
+    topic: technologie/ki
+    hint: "Textgenerierung steuern: Temperatur, Top-k, Top-p (Nucleus Sampling, Holtzman et al. 2019), Greedy Decoding, warum Antworten variieren"
+    format: facts_quiz
+    priority: 3
+  - id: tech-overfitting
+    topic: technologie/ki
+    hint: "Overfitting und Underfitting: Trainings- vs. Testfehler, Bias-Varianz-Abwaegung, Gegenmittel Regularisierung, Dropout, mehr Daten, Kreuzvalidierung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-cnn
+    topic: technologie/ki
+    hint: "Convolutional Neural Networks: Faltung und Pooling, Yann LeCun und LeNet zur Ziffernerkennung (MNIST), Vorbild visuelle Hirnrinde nach Hubel und Wiesel"
+    format: facts_quiz
+    priority: 3
+  - id: tech-deep-blue
+    topic: technologie/ki
+    hint: "Deep Blue gegen Garri Kasparow: IBM, Niederlage 1996, Sieg 1997 mit 3,5 zu 2,5, Spezialhardware und Suchbaeume statt Lernen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ki-winter
+    topic: technologie/ki
+    hint: "KI-Winter: Lighthill-Report 1973 in Grossbritannien, Ende der Expertensystem-Welle Ende der 1980er, Lisp-Maschinen, Zyklen aus Hype und Enttaeuschung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rnn-lstm
+    topic: technologie/ki
+    hint: "Rekurrente Netze und LSTM: Hochreiter und Schmidhuber 1997 (TU Muenchen), verschwindender Gradient, Einsatz in Spracherkennung und Uebersetzung vor Transformern"
+    format: facts_quiz
+    priority: 3
+  - id: tech-mixture-of-experts
+    topic: technologie/ki
+    hint: "Mixture of Experts: Router waehlt pro Token wenige Experten, nur Teil der Parameter aktiv, Idee von Jacobs et al. 1991, Sparse MoE bei grossen Sprachmodellen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-chain-of-thought
+    topic: technologie/ki
+    hint: "Chain-of-Thought-Prompting: Wei et al. 2022 bei Google, Zwischenschritte verbessern Rechen- und Logikaufgaben, Zero-Shot mit Lass uns Schritt fuer Schritt denken, Reasoning-Modelle"
+    format: facts_quiz
+    priority: 3
+  - id: tech-vektordatenbanken
+    topic: technologie/ki
+    hint: "Vektordatenbanken: Aehnlichkeitssuche ueber Embeddings, Kosinus-Aehnlichkeit, Approximate Nearest Neighbor mit HNSW, Beispiele pgvector, FAISS"
+    format: facts_quiz
+    priority: 3
+  - id: tech-alphafold
+    topic: technologie/ki
+    hint: "AlphaFold von DeepMind: Proteinfaltung, Durchbruch beim CASP14-Wettbewerb 2020, Datenbank mit ueber 200 Mio. Strukturen, Chemie-Nobelpreis 2024 fuer Hassabis und Jumper"
+    format: facts_quiz
+    priority: 3
+  - id: tech-chinesisches-zimmer
+    topic: technologie/ki
+    hint: "Gedankenexperiment Chinesisches Zimmer von John Searle 1980: Symbolverarbeitung ohne Verstehen, starke vs. schwache KI, Kritik am Turing-Test"
+    format: facts_quiz
+    priority: 3
+  - id: tech-scaling-laws
+    topic: technologie/ki
+    hint: "Skalierungsgesetze: Kaplan et al. 2020 (OpenAI), Chinchilla-Studie 2022 (DeepMind) mit rund 20 Tokens pro Parameter, Verlust sinkt nach Potenzgesetz"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ki-lernbegriffe
+    topic: technologie/ki
+    hint: "Begriffspaare maschinelles Lernen: Epoche, Batch, Lernrate, Validierungsdatensatz, Hyperparameter, Inferenz jeweils mit Definition"
+    format: flashcards
+    priority: 3
+  - id: tech-design-patterns
+    topic: technologie/software
+    hint: "Entwurfsmuster der Gang of Four 1994: 23 Muster in drei Gruppen Erzeugung, Struktur, Verhalten, Beispiele Singleton, Observer, Factory"
+    format: facts_quiz
+    priority: 3
+  - id: tech-solid-prinzipien
+    topic: technologie/software
+    hint: "SOLID nach Robert C. Martin: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion jeweils mit Kernaussage"
+    format: flashcards
+    priority: 3
+  - id: tech-kiss-dry-yagni
+    topic: technologie/software
+    hint: "Begriffspaare Entwicklerprinzipien: KISS, DRY (Pragmatic Programmer 1999), YAGNI (Extreme Programming), Boy-Scout-Regel, Separation of Concerns"
+    format: flashcards
+    priority: 3
+  - id: tech-conways-gesetz
+    topic: technologie/software
+    hint: "Conways Gesetz 1968: Organisationen entwerfen Systeme, die ihre eigenen Kommunikationsstrukturen abbilden, Bezug zur Inverse Conway Maneuver bei Microservices"
+    format: single_fact
+    priority: 3
+  - id: tech-brooks-gesetz
+    topic: technologie/software
+    hint: "Fred Brooks, The Mythical Man-Month 1975: Mehr Personal fuer ein verspaetetes Projekt verspaetet es weiter, Kommunikationswege wachsen mit n mal n minus 1 durch 2, No Silver Bullet"
+    format: facts_quiz
+    priority: 3
+  - id: tech-jahr-2000-problem
+    topic: technologie/software
+    hint: "Jahr-2000-Problem: zweistellige Jahreszahlen aus Speicherspargruenden, weltweite Umstellungsprojekte, warum der Jahreswechsel weitgehend glimpflich verlief"
+    format: facts_quiz
+    priority: 3
+  - id: tech-jahr-2038-problem
+    topic: technologie/software
+    hint: "Jahr-2038-Problem: vorzeichenbehaftete 32-Bit-Unix-Zeit laeuft am 19. Januar 2038 um 03:14:07 UTC ueber, Loesung 64-Bit-time_t"
+    format: single_fact
+    priority: 3
+  - id: tech-ariane-5
+    topic: technologie/software
+    hint: "Ariane 5 Flug 501 am 4. Juni 1996: Explosion nach rund 37 Sekunden, Ueberlauf bei Umwandlung 64-Bit-Gleitkomma in 16-Bit-Ganzzahl, wiederverwendeter Code aus Ariane 4"
+    format: facts_quiz
+    priority: 3
+  - id: tech-therac-25
+    topic: technologie/software
+    hint: "Therac-25: Bestrahlungsgeraet, Unfaelle 1985 bis 1987 mit Strahlenueberdosen, Race Condition in der Software, fehlende Hardware-Sperren, Lehrstueck fuer sicherheitskritische Software"
+    format: facts_quiz
+    priority: 3
+  - id: tech-test-driven-development
+    topic: technologie/software
+    hint: "Testgetriebene Entwicklung: Kent Beck, Zyklus Red, Green, Refactor, Unit-Tests vor dem Code, Bezug zu Extreme Programming"
+    format: facts_quiz
+    priority: 3
+  - id: tech-wasserfall-modell
+    topic: technologie/software
+    hint: "Wasserfallmodell: Winston Royce 1970 beschrieb es eigentlich mit Ruecklaeufen und Kritik, V-Modell (in Deutschland V-Modell XT fuer Behoerden), Gegenentwurf Agiles Manifest 2001"
+    format: facts_quiz
+    priority: 3
+  - id: tech-markdown
+    topic: technologie/software
+    hint: "Markdown: John Gruber und Aaron Swartz 2004, Ziel lesbarer Klartext, Dialekte CommonMark und GitHub Flavored Markdown, Grundsyntax"
+    format: facts_quiz
+    priority: 3
+  - id: tech-grace-hopper-bug
+    topic: technologie/software
+    hint: "Der erste Bug: Motte im Harvard Mark II am 9. September 1947 ins Logbuch geklebt, Grace Hopper, Begriff Bug war aber schon frueher gebraeuchlich"
+    format: facts_quiz
+    priority: 3
+  - id: tech-transistor
+    topic: technologie/hardware
+    hint: "Transistor: Bell Labs 1947, Bardeen, Brattain, Shockley, Nobelpreis 1956, Schalter und Verstaerker, heute Milliarden pro Chip"
+    format: facts_quiz
+    priority: 3
+  - id: tech-von-neumann-architektur
+    topic: technologie/hardware
+    hint: "Von-Neumann-Architektur 1945: Rechenwerk, Steuerwerk, Speicher, Ein-/Ausgabe, Programm und Daten im selben Speicher, Von-Neumann-Flaschenhals, Harvard-Architektur"
+    format: facts_quiz
+    priority: 3
+  - id: tech-cpu-cache
+    topic: technologie/hardware
+    hint: "CPU-Cache: L1, L2, L3, Lokalitaetsprinzip, Cache Hit und Miss, Groessenordnungen der Zugriffszeiten im Vergleich zu RAM"
+    format: facts_quiz
+    priority: 3
+  - id: tech-raid
+    topic: technologie/hardware
+    hint: "RAID: Patterson, Gibson, Katz 1988 in Berkeley, Level 0, 1, 5, 6, 10, RAID ist kein Backup"
+    format: facts_quiz
+    priority: 3
+  - id: tech-risc-v
+    topic: technologie/hardware
+    hint: "RISC-V: offene Befehlssatzarchitektur, UC Berkeley 2010, RISC-V International mit Sitz in der Schweiz, lizenzfrei, modulare Erweiterungen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-eniac
+    topic: technologie/hardware
+    hint: "ENIAC 1945/46: Eckert und Mauchly, rund 17.500 Roehren, 27 Tonnen, Programmierung durch Umstecken, die ENIAC-Programmiererinnen wie Jean Bartik"
+    format: facts_quiz
+    priority: 3
+  - id: tech-zuse-z3
+    topic: technologie/hardware
+    hint: "Konrad Zuse und die Z3: 1941 in Berlin, erster funktionsfaehiger programmgesteuerter Digitalrechner, Relais, Gleitkomma, Lochstreifen, Plankalkuel"
+    format: facts_quiz
+    priority: 3
+  - id: tech-lochkarte
+    topic: technologie/hardware
+    hint: "Lochkarten: Jacquard-Webstuhl 1804, Herman Hollerith und US-Volkszaehlung 1890, Ursprung von IBM, 80-Spalten-Format praegte Terminalbreiten"
+    format: facts_quiz
+    priority: 3
+  - id: tech-festplatte-geschichte
+    topic: technologie/hardware
+    hint: "Festplatte: IBM 350 RAMAC 1956 mit rund 5 MB, Schreib-Lese-Kopf, Riesenmagnetowiderstand (Nobelpreis 2007 Gruenberg und Fert), Umstieg auf SSD"
+    format: facts_quiz
+    priority: 3
+  - id: tech-uefi-bios
+    topic: technologie/hardware
+    hint: "BIOS und UEFI: BIOS seit IBM PC 1981, UEFI-Forum, GPT statt MBR, grafische Setup-Oberflaechen, Secure Boot"
+    format: facts_quiz
+    priority: 3
+  - id: tech-amdahls-gesetz
+    topic: technologie/hardware
+    hint: "Amdahls Gesetz 1967: Beschleunigung durch Parallelisierung ist durch den seriellen Anteil begrenzt, Rechenbeispiel, Gustafsons Gesetz als Gegenperspektive"
+    format: facts_quiz
+    priority: 3
+  - id: tech-qr-code
+    topic: technologie/hardware
+    hint: "QR-Code: Denso Wave 1994, Masahiro Hara, Fehlerkorrektur per Reed-Solomon in vier Stufen, ISO/IEC 18004, Positionsmarken in drei Ecken"
+    format: facts_quiz
+    priority: 3
+  - id: tech-barcode-ean
+    topic: technologie/hardware
+    hint: "Strichcodes: Patent Woodland und Silver 1952, erster UPC-Scan 1974 Kaugummi in Ohio, EAN-13 mit Pruefziffer, GS1"
+    format: facts_quiz
+    priority: 3
+  - id: tech-unix-geschichte
+    topic: technologie/betriebssysteme
+    hint: "Unix: Ken Thompson und Dennis Ritchie, Bell Labs 1969, Neuschreiben in C 1973, BSD, Unix-Philosophie mache eine Sache gut"
+    format: facts_quiz
+    priority: 3
+  - id: tech-kernel-arten
+    topic: technologie/betriebssysteme
+    hint: "Kernel-Architekturen: monolithisch (Linux), Mikrokernel (Mach, L4, MINIX), hybrid (Windows NT, XNU), Tanenbaum-Torvalds-Debatte 1992"
+    format: facts_quiz
+    priority: 3
+  - id: tech-prozesse-threads
+    topic: technologie/betriebssysteme
+    hint: "Prozesse und Threads: eigener Adressraum vs. geteilter Speicher, Kontextwechsel, Prozess-ID, Race Conditions bei Threads"
+    format: facts_quiz
+    priority: 3
+  - id: tech-virtueller-speicher
+    topic: technologie/betriebssysteme
+    hint: "Virtueller Speicher: Paging, Seitentabellen, MMU, Swapping, Atlas-Computer Manchester 1962 als Pionier, Page Faults"
+    format: facts_quiz
+    priority: 3
+  - id: tech-deadlock
+    topic: technologie/betriebssysteme
+    hint: "Deadlock: vier Coffman-Bedingungen 1971, Problem der speisenden Philosophen von Dijkstra, Vermeidung und Erkennung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-unix-dateirechte
+    topic: technologie/betriebssysteme
+    hint: "Unix-Dateirechte: rwx fuer Besitzer, Gruppe, Andere, Oktalschreibweise wie 755 und 644, chmod, Root-Benutzer, Setuid-Bit"
+    format: facts_quiz
+    priority: 3
+  - id: tech-systemd-init
+    topic: technologie/betriebssysteme
+    hint: "Init-Systeme: PID 1, SysVinit mit Runlevels, systemd von Lennart Poettering 2010, Units und paralleler Start, Kontroverse in der Community"
+    format: facts_quiz
+    priority: 3
+  - id: tech-android-architektur
+    topic: technologie/betriebssysteme
+    hint: "Android-Aufbau: Linux-Kernel, Android Runtime (ART), App-Sandbox mit eigener Benutzer-ID pro App, Berechtigungsmodell, AOSP, Android Inc. 2003 und Google-Uebernahme 2005"
+    format: facts_quiz
+    priority: 3
+  - id: tech-windows-nt
+    topic: technologie/betriebssysteme
+    hint: "Windows NT: Dave Cutler von DEC, erste Version 1993, Basis von Windows 2000, XP bis heute, Hardware Abstraction Layer, NTFS"
+    format: facts_quiz
+    priority: 3
+  - id: tech-compiler-interpreter
+    topic: technologie/programmierung
+    hint: "Compiler vs. Interpreter: Uebersetzung vorab vs. zur Laufzeit, Bytecode und virtuelle Maschinen (JVM), Just-in-Time-Kompilierung, Grace Hoppers A-0 1952"
+    format: facts_quiz
+    priority: 3
+  - id: tech-garbage-collection
+    topic: technologie/programmierung
+    hint: "Garbage Collection: John McCarthy fuer Lisp 1959, Mark-and-Sweep, Referenzzaehlung, generationelle GC, Gegenmodell manuelle Verwaltung in C"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rekursion
+    topic: technologie/programmierung
+    hint: "Rekursion: Funktion ruft sich selbst auf, Abbruchbedingung, Beispiele Fakultaet und Tuerme von Hanoi, Stack Overflow bei fehlender Abbruchbedingung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-sortieralgorithmen
+    topic: technologie/programmierung
+    hint: "Sortierverfahren: Bubble Sort, Merge Sort (von Neumann 1945), Quicksort (Tony Hoare 1959/61), Laufzeiten O(n log n) vs. O(n hoch 2), Timsort"
+    format: facts_quiz
+    priority: 3
+  - id: tech-datenstrukturen
+    topic: technologie/programmierung
+    hint: "Begriffspaare Datenstrukturen: Array, verkettete Liste, Stack, Queue, Baum, Graph jeweils mit Kerneigenschaft"
+    format: flashcards
+    priority: 3
+  - id: tech-funktionale-programmierung
+    topic: technologie/programmierung
+    hint: "Funktionale Programmierung: Lambda-Kalkuel von Alonzo Church 1930er, reine Funktionen, Unveraenderlichkeit, Funktionen hoeherer Ordnung map, filter, reduce, Haskell"
+    format: facts_quiz
+    priority: 3
+  - id: tech-oop-grundbegriffe
+    topic: technologie/programmierung
+    hint: "Begriffspaare objektorientierte Programmierung: Klasse, Objekt, Kapselung, Vererbung, Polymorphie, Interface; Ursprung Simula 67 und Smalltalk"
+    format: flashcards
+    priority: 3
+  - id: tech-ada-lovelace
+    topic: technologie/programmierung
+    hint: "Ada Lovelace: Notizen 1843 zu Babbages Analytical Engine, Algorithmus fuer Bernoulli-Zahlen, gilt als erste Programmiererin, Programmiersprache Ada nach ihr benannt"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rust-speichersicherheit
+    topic: technologie/programmierung
+    hint: "Speichersichere Sprachen: Rust mit Ownership und Borrow Checker, Microsoft- und Google-Angaben zu rund 70 Prozent Speicherfehlern bei Sicherheitsluecken, Empfehlungen von CISA und NSA"
+    format: facts_quiz
+    priority: 3
+  - id: tech-gleitkomma-ieee754
+    topic: technologie/programmierung
+    hint: "Gleitkommazahlen nach IEEE 754 (1985): Vorzeichen, Exponent, Mantisse, warum 0,1 plus 0,2 nicht exakt 0,3 ergibt, NaN und Unendlich, William Kahan"
+    format: facts_quiz
+    priority: 3
+  - id: tech-boolesche-algebra
+    topic: technologie/programmierung
+    hint: "Boolesche Algebra: George Boole 1854, AND, OR, NOT, XOR, De-Morgan-Regeln, Claude Shannons Masterarbeit 1937 verband Logik und Schaltkreise"
+    format: facts_quiz
+    priority: 3
+  - id: tech-halteproblem
+    topic: technologie/programmierung
+    hint: "Halteproblem: Alan Turing 1936, kein Programm kann fuer alle Programme entscheiden, ob sie anhalten, Turingmaschine, Grenzen der Berechenbarkeit"
+    format: facts_quiz
+    priority: 3
+  - id: tech-dijkstra-algorithmus
+    topic: technologie/programmierung
+    hint: "Dijkstra-Algorithmus 1956/1959: kuerzeste Wege in Graphen mit nichtnegativen Gewichten, Einsatz in Routing (OSPF) und Navigation, Edsger Dijkstra"
+    format: facts_quiz
+    priority: 3
+  - id: tech-cap-theorem
+    topic: technologie/daten
+    hint: "CAP-Theorem: Eric Brewer 2000, Beweis Gilbert und Lynch 2002, Consistency, Availability, Partition Tolerance, bei Netzpartition Wahl zwischen C und A, PACELC"
+    format: facts_quiz
+    priority: 3
+  - id: tech-normalisierung
+    topic: technologie/daten
+    hint: "Datenbank-Normalisierung: Edgar F. Codd, Normalformen 1NF bis 3NF, Redundanz und Anomalien vermeiden, gezielte Denormalisierung"
+    format: facts_quiz
+    priority: 3
+  - id: tech-datenbank-index
+    topic: technologie/daten
+    hint: "Datenbankindizes: B-Baum (Bayer und McCreight 1970), schnelle Suche statt Full Table Scan, Kosten beim Schreiben, Analogie Buchregister"
+    format: facts_quiz
+    priority: 3
+  - id: tech-data-lake-warehouse
+    topic: technologie/daten
+    hint: "Data Warehouse vs. Data Lake vs. Lakehouse: Bill Inmon und Ralph Kimball, Schema-on-Write vs. Schema-on-Read, Begriff Data Lake von James Dixon 2010"
+    format: facts_quiz
+    priority: 3
+  - id: tech-verlustfreie-kompression
+    topic: technologie/daten
+    hint: "Verlustfreie Kompression: Huffman-Kodierung 1952, Lempel-Ziv 1977/78, DEFLATE in ZIP und PNG, warum zufaellige Daten nicht komprimierbar sind"
+    format: facts_quiz
+    priority: 3
+  - id: tech-jpeg-mp3
+    topic: technologie/daten
+    hint: "Verlustbehaftete Kompression: JPEG mit diskreter Kosinustransformation (Standard 1992), MP3 vom Fraunhofer IIS in Erlangen mit Psychoakustik, Karlheinz Brandenburg"
+    format: facts_quiz
+    priority: 3
+  - id: tech-byte-einheiten
+    topic: technologie/daten
+    hint: "Kilobyte vs. Kibibyte: IEC-Praefixe 1998, 1 KB = 1000 Byte, 1 KiB = 1024 Byte, warum eine 1-TB-Festplatte im Betriebssystem kleiner erscheint"
+    format: facts_quiz
+    priority: 3
+  - id: tech-sql-grundbefehle
+    topic: technologie/daten
+    hint: "Begriffspaare SQL: SELECT, WHERE, JOIN, GROUP BY, INSERT, UPDATE jeweils mit Funktion; SQL entstand bei IBM 1970er als SEQUEL"
+    format: flashcards
+    priority: 3
+  - id: tech-mapreduce-hadoop
+    topic: technologie/daten
+    hint: "MapReduce und Hadoop: Google-Papers zu GFS 2003 und MapReduce 2004, Doug Cutting und Hadoop 2006 (benannt nach Spielzeugelefant), Nachfolger Apache Spark"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ascii
+    topic: technologie/daten
+    hint: "ASCII 1963: 7 Bit, 128 Zeichen, Steuerzeichen wie Zeilenumbruch, Grossbuchstabe A = 65, ISO 8859-1 fuer Umlaute, Abloesung durch Unicode"
+    format: facts_quiz
+    priority: 3
+  - id: tech-iso-8601
+    topic: technologie/daten
+    hint: "ISO 8601: Datumsformat JJJJ-MM-TT, sortierbar, Zeitzonenangabe mit Z oder Offset, Kalenderwochen nach ISO, Abgrenzung zu RFC 3339"
+    format: facts_quiz
+    priority: 3
+  - id: tech-anonymisierung
+    topic: technologie/daten
+    hint: "Anonymisierung vs. Pseudonymisierung (DSGVO Art. 4), k-Anonymitaet von Latanya Sweeney, 87 Prozent der US-Bevoelkerung ueber PLZ, Geburtsdatum, Geschlecht identifizierbar, Differential Privacy"
+    format: facts_quiz
+    priority: 3
+  - id: tech-arpanet
+    topic: technologie/internet-geschichte
+    hint: "ARPANET: erste Verbindung UCLA zu Stanford am 29. Oktober 1969, Nachricht LO statt LOGIN, IMPs von BBN, Paketvermittlung nach Paul Baran und Donald Davies"
+    format: facts_quiz
+    priority: 3
+  - id: tech-tcp-ip-flag-day
+    topic: technologie/internet-geschichte
+    hint: "Vinton Cerf und Robert Kahn: TCP/IP-Paper 1974, Umstellung des ARPANET auf TCP/IP am 1. Januar 1983 als Geburtsstunde des Internets, Turing Award 2004"
+    format: facts_quiz
+    priority: 3
+  - id: tech-world-wide-web
+    topic: technologie/internet-geschichte
+    hint: "World Wide Web: Tim Berners-Lee am CERN, Vorschlag Information Management 1989, HTML, HTTP, URL, erste Website info.cern.ch, Freigabe gemeinfrei 1993"
+    format: facts_quiz
+    priority: 3
+  - id: tech-erste-email
+    topic: technologie/internet-geschichte
+    hint: "Erste E-Mail im Netz: Ray Tomlinson 1971 im ARPANET, Wahl des @-Zeichens, erste E-Mail nach Deutschland 1984 an die Uni Karlsruhe"
+    format: facts_quiz
+    priority: 3
+  - id: tech-mosaic-netscape
+    topic: technologie/internet-geschichte
+    hint: "Mosaic und Netscape: NCSA Mosaic 1993 mit Bildern im Text, Marc Andreessen, Netscape Navigator 1994, Browserkrieg mit Internet Explorer, Mozilla und Firefox als Erbe"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rfc-geschichte
+    topic: technologie/internet-geschichte
+    hint: "Requests for Comments: RFC 1 von Steve Crocker 1969, Bescheidenheit des Namens, Aprilscherz-RFCs wie RFC 1149 Brieftauben-IP, IETF-Standardisierungsweg"
+    format: facts_quiz
+    priority: 3
+  - id: tech-icann-iana
+    topic: technologie/internet-geschichte
+    hint: "Wer verwaltet das Internet: IANA und Jon Postel, ICANN 1998, Uebergabe der IANA-Aufsicht durch die US-Regierung 2016, Regional Internet Registries wie RIPE NCC"
+    format: facts_quiz
+    priority: 3
+  - id: tech-de-domain
+    topic: technologie/internet-geschichte
+    hint: "Die Domain .de: eingetragen 1986, DENIC eG in Frankfurt seit 1996, eine der groessten Laenderdomains, Umlautdomains seit 2004"
+    format: facts_quiz
+    priority: 3
+  - id: tech-emoticon-smiley
+    topic: technologie/internet-geschichte
+    hint: "Das erste dokumentierte Emoticon :-) schlug Scott Fahlman am 19. September 1982 an der Carnegie Mellon University fuer scherzhafte Beitraege vor"
+    format: single_fact
+    priority: 3
+  - id: tech-pagerank
+    topic: technologie/internet-geschichte
+    hint: "PageRank: Larry Page und Sergey Brin in Stanford 1998, Links als Stimmen, Zufallssurfer-Modell, Paper The Anatomy of a Large-Scale Hypertextual Web Search Engine"
+    format: facts_quiz
+    priority: 3
+  - id: tech-dotcom-blase
+    topic: technologie/internet-geschichte
+    hint: "Dotcom-Blase: Nasdaq-Hoch im Maerz 2000, Absturz bis 2002, Beispiele Pets.com und Neuer Markt in Deutschland, Ueberlebende wie Amazon"
+    format: facts_quiz
+    priority: 3
+  - id: tech-btx
+    topic: technologie/internet-geschichte
+    hint: "Bildschirmtext: Deutsche Bundespost ab 1983/84, CEPT-Standard, BTX-Hack des Chaos Computer Clubs 1984 gegen die Hamburger Sparkasse, Weiterfuehrung als T-Online"
+    format: facts_quiz
+    priority: 3
+  - id: tech-ccc-geschichte
+    topic: technologie/internet-geschichte
+    hint: "Chaos Computer Club: Gruendung 1981 in Berlin um Wau Holland, Hackerethik, jaehrlicher Chaos Communication Congress, Rolle als Sachverstaendige vor Gerichten und Parlamenten"
+    format: facts_quiz
+    priority: 3
+  - id: tech-wikipedia-geschichte
+    topic: technologie/internet-geschichte
+    hint: "Wikipedia: Start 15. Januar 2001 durch Jimmy Wales und Larry Sanger, Vorlaeufer Nupedia, Wiki-Prinzip von Ward Cunningham 1995, deutschsprachige Ausgabe 2001, Lizenz CC BY-SA"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-idioms-6
+    topic: sprachen/englisch
+    hint: "Redewendungen: beat around the bush, get cold feet, go the extra mile, jump on the bandwagon, miss the boat"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-7
+    topic: sprachen/englisch
+    hint: "Redewendungen: a drop in the ocean, add insult to injury, burn the midnight oil, cross that bridge when we come to it, the last straw"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-8
+    topic: sprachen/englisch
+    hint: "Redewendungen: pull someone's leg, keep an eye on, see eye to eye, by the skin of your teeth, give someone the cold shoulder"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-9
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Geld: break the bank, tighten your belt, money talks, pay through the nose, make ends meet"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-10
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Zeit: in the nick of time, against the clock, kill time, ahead of the curve, better late than never"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-11
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Essen: bring home the bacon, take with a grain of salt, a hot potato, have bigger fish to fry, the icing on the cake"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-12
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Körperteilen: keep your chin up, get something off your chest, put your foot in your mouth, have a heart of gold"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-13
+    topic: sprachen/englisch
+    hint: "Redewendungen aus dem Sport: level playing field, move the goalposts, drop the ball, step up to the plate, out of left field"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-14
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Farben: out of the blue, red tape, green with envy, in the black, a grey area"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-15
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Wetter: a storm in a teacup, steal someone's thunder, take a rain check, come rain or shine, on cloud nine"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-16
+    topic: sprachen/englisch
+    hint: "Redewendungen im Büro: back to the drawing board, learn the ropes, pull your weight, the bottom line, up in the air"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-idioms-17
+    topic: sprachen/englisch
+    hint: "Herkunft englischer Redewendungen: bite the bullet, the whole nine yards (ungeklärt), mad as a hatter, saved by the bell (Volksetymologie entlarven)"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-6
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit get: get over, get by, get away with, get across, get round to"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-7
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit take: take on, take off, take up, take after, take back"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-8
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit put: put up with, put forward, put across, put out, put together"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-9
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit go: go ahead, go over, go along with, go for, go without"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-10
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit come: come up, come down with, come along, come round, come out"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-11
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit look: look after, look up, look out, look over, look up to"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-12
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit turn: turn up, turn out, turn into, turn off, turn around"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-13
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit bring: bring about, bring forward, bring in, bring back, bring together"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-14
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit run: run out of, run through, run over, run by, run up against"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-15
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit set und work: set aside, set off, set back, work out, work on"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-16
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs mit break und cut: break through, break off, cut back on, cut off, cut in"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-17
+    topic: sprachen/englisch
+    hint: "Trennbare und untrennbare Phrasal Verbs: turn it off vs. look after it, Pronomen-Stellung als Regel"
+    format: single_fact
+    priority: 3
+  - id: sprachen-en-meetings-2
+    topic: sprachen/englisch
+    hint: "Meetings leiten: Agenda vorstellen, Wort erteilen, zum Thema zurückführen, Action Items festhalten, Meeting beenden"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-meetings-3
+    topic: sprachen/englisch
+    hint: "Höflich widersprechen und unterbrechen: I see your point, but; Sorry to interrupt; Could I just add; I am not sure I agree"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-videocalls
+    topic: sprachen/englisch
+    hint: "Videocalls: you are on mute, can you see my screen, you are breaking up, let me share my screen, I will drop off now"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-business-emails-2
+    topic: sprachen/englisch
+    hint: "E-Mails: Bezug nehmen und Anhänge, as discussed, please find attached, further to, for your reference, I am writing to"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-business-emails-3
+    topic: sprachen/englisch
+    hint: "E-Mails: Entschuldigen und Absagen, apologies for the delay, unfortunately, I am afraid, regrettably, I will have to decline"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-business-emails-4
+    topic: sprachen/englisch
+    hint: "Grußformeln in E-Mails: Dear vs. Hi, Yours sincerely vs. Yours faithfully, Best regards, Kind regards, UK und US Unterschiede"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-verhandeln-2
+    topic: sprachen/englisch
+    hint: "Verhandeln: Bedingungen setzen, provided that, on condition that, if you could, we would be prepared to, that is our final offer"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-presentations-2
+    topic: sprachen/englisch
+    hint: "Präsentationen: Grafiken beschreiben, rise sharply, level off, peak at, drop slightly, fluctuate"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-presentations-3
+    topic: sprachen/englisch
+    hint: "Präsentationen: Fragen beantworten, that is a good question, let me get back to you, to clarify, does that answer your question"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-projektstatus
+    topic: sprachen/englisch
+    hint: "Projektstatus berichten: on track, behind schedule, ahead of schedule, at risk, blocker, milestone"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-delegieren
+    topic: sprachen/englisch
+    hint: "Aufgaben delegieren und nachfragen: Could you take care of, would you mind, by when can you, just checking in, gentle reminder"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-2
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: complement/compliment, principal/principle, stationary/stationery, discreet/discrete, advice/advise"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-3
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: its/it's, your/you're, their/there/they're, whose/who's, then/than"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-4
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: lie/lay, sit/set, fewer/less, among/between, ensure/insure"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-5
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: economic/economical, historic/historical, classic/classical, sensible/sensitive, continual/continuous"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-6
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: say/tell, speak/talk, listen/hear, see/look/watch, rob/steal"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-konfusionen-7
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: e.g./i.e., accept/except, alternate/alternative, imply/infer, farther/further"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-uk-us-2
+    topic: sprachen/englisch
+    hint: "UK vs. US Wörter im Alltag: flat/apartment, lift/elevator, queue/line, rubbish/trash, holiday/vacation"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-uk-us-3
+    topic: sprachen/englisch
+    hint: "UK vs. US Schreibweisen: -our/-or, -ise/-ize, -re/-er, travelled/traveled, programme/program"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-uk-us-4
+    topic: sprachen/englisch
+    hint: "UK vs. US Grammatik: have got vs. have, Present Perfect vs. Simple Past (Did you eat yet), Kollektivnomen the team are/is, at/on the weekend"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-uk-us-5
+    topic: sprachen/englisch
+    hint: "UK vs. US Wörter mit Falle: pants, chips/crisps, biscuit/cookie, first floor, football/soccer"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-also-too-either
+    topic: sprachen/englisch
+    hint: "also, too, as well, either, neither: Stellung im Satz und Verneinung (me neither)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-bring-take
+    topic: sprachen/englisch
+    hint: "bring vs. take: Richtung zum Sprecher hin oder vom Sprecher weg, mit Beispielen"
+    format: single_fact
+    priority: 3
+  - id: sprachen-en-until-by
+    topic: sprachen/englisch
+    hint: "bis auf Englisch: until vs. by, Frist vs. Dauer (I need it by Friday, I work until 5)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-during-while
+    topic: sprachen/englisch
+    hint: "während auf Englisch: during + Nomen, while + Satz, for + Zeitdauer"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-still-yet-already
+    topic: sprachen/englisch
+    hint: "still, yet, already, anymore, no longer: Bedeutung und Stellung im Satz"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-become-bekommen
+    topic: sprachen/englisch
+    hint: "Falle become vs. bekommen: I become a coffee als klassischer Fehler, korrekt get oder receive"
+    format: single_fact
+    priority: 3
+  - id: sprachen-en-every-each-all
+    topic: sprachen/englisch
+    hint: "every, each, all, whole: Unterschiede und typische Fehler (every day vs. everyday)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-few-little
+    topic: sprachen/englisch
+    hint: "few, a few, little, a little: zählbar vs. unzählbar und der Bedeutungsunterschied durch den Artikel"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-unzaehlbare-nomen
+    topic: sprachen/englisch
+    hint: "Unzählbare Nomen, die im Deutschen zählbar sind: information, advice, news, furniture, feedback, equipment"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-if-when-whether
+    topic: sprachen/englisch
+    hint: "wenn und ob auf Englisch: if vs. when vs. whether, mit Beispielsätzen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-wish
+    topic: sprachen/englisch
+    hint: "Wünsche mit wish und if only: I wish I had, I wish I could, I wish you would, Zeitform-Verschiebung"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-zeitangaben-ohne-praeposition
+    topic: sprachen/englisch
+    hint: "Zeitangaben ohne Präposition: last week, next Monday, this morning, every year (kein in oder on)"
+    format: single_fact
+    priority: 3
+  - id: sprachen-en-aussprache-ed
+    topic: sprachen/englisch
+    hint: "Aussprache der -ed-Endung: /t/ (worked), /d/ (played), /id/ (wanted) mit Regel"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-aussprache-ough
+    topic: sprachen/englisch
+    hint: "Aussprache von ough: though, through, tough, thought, cough, bough"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-aussprache-betonung
+    topic: sprachen/englisch
+    hint: "Betonungswechsel Nomen vs. Verb: record, present, object, increase, permit"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-aussprache-schwierig
+    topic: sprachen/englisch
+    hint: "Oft falsch ausgesprochene Wörter: comfortable, vegetable, recipe, colonel, Worcestershire"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-auslautverhaertung
+    topic: sprachen/englisch
+    hint: "Auslautverhärtung als deutscher Akzent: bed vs. bet, dog vs. dock, eyes vs. ice"
+    format: single_fact
+    priority: 3
+  - id: sprachen-en-homophone
+    topic: sprachen/englisch
+    hint: "Homophone: right/write/rite, knew/new, weather/whether, piece/peace, sight/site/cite"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-vocabulary-2
+    topic: sprachen/englisch
+    hint: "IT-Security-Englisch: breach, vulnerability, patch, phishing, threat actor, least privilege"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-vocabulary-3
+    topic: sprachen/englisch
+    hint: "Agile-Englisch: backlog, sprint, standup, retro, story points, definition of done"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-vocabulary-4
+    topic: sprachen/englisch
+    hint: "Git- und Code-Review-Englisch: commit, merge, pull request, nitpick (nit), LGTM, blocking comment"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-vocabulary-5
+    topic: sprachen/englisch
+    hint: "Incident-Englisch: root cause, mitigation, postmortem, on-call, escalate, SLA"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-vocabulary-6
+    topic: sprachen/englisch
+    hint: "Cloud-Englisch: scale out vs. scale up, latency, throughput, provisioning, failover"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-aussprache
+    topic: sprachen/englisch
+    hint: "Aussprache von Tech-Begriffen: GIF, SQL, cache, router (UK/US), Linux, nginx"
+    format: flashcards
+    priority: 3
+  - id: sprachen-en-tech-jargon
+    topic: sprachen/englisch
+    hint: "Tech-Jargon im Arbeitsalltag: bandwidth (Kapazität), deep dive, circle back, ping someone, sync"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-1
+    topic: sprachen/deutsch
+    hint: "Herkunft: etwas auf dem Kerbholz haben, jemandem das Wasser reichen, ins Fettnäpfchen treten, Schwein haben, auf den Hund kommen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-2
+    topic: sprachen/deutsch
+    hint: "Herkunft: die Daumen drücken, Tacheles reden, Hals- und Beinbruch, Pech haben, sich die Sporen verdienen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-3
+    topic: sprachen/deutsch
+    hint: "Herkunft: blau machen, einen Zahn zulegen, auf dem Holzweg sein, jemanden über den Löffel balbieren, durch die Lappen gehen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-4
+    topic: sprachen/deutsch
+    hint: "Herkunft: Maulaffen feilhalten, die Katze im Sack kaufen, Lunte riechen, etwas ausbaden müssen, unter die Haube kommen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-5
+    topic: sprachen/deutsch
+    hint: "Herkunft aus dem Rotwelschen und Jiddischen: Kohldampf schieben, Pleite, Schmiere stehen, Ganove, meschugge"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-6
+    topic: sprachen/deutsch
+    hint: "Herkunft aus der Bibel: ein Buch mit sieben Siegeln, sein Licht unter den Scheffel stellen, Perlen vor die Säue, wie Sand am Meer, Hiobsbotschaft"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-7
+    topic: sprachen/deutsch
+    hint: "Herkunft aus Handwerk und Zünften: blauer Montag, etwas aus dem Effeff können, sich verhauen, über die Stränge schlagen, am Hungertuch nagen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-8
+    topic: sprachen/deutsch
+    hint: "Herkunft aus dem Kartenspiel und Glücksspiel: alles auf eine Karte setzen, Trumpf sein, sich nicht in die Karten schauen lassen, Oberwasser haben, aus dem Rennen sein"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-redewendungen-9
+    topic: sprachen/deutsch
+    hint: "Herkunft: Ich verstehe nur Bahnhof, Fersengeld geben, mit Kind und Kegel, da liegt der Hase im Pfeffer, das geht auf keine Kuhhaut"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-de-redewendungen-10
+    topic: sprachen/deutsch
+    hint: "Herkunft aus Mittelalter und Rittertum: etwas im Schilde führen, jemandem den Fehdehandschuh hinwerfen, in die Bresche springen, die Fahne hochhalten, gegen den Strich gehen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-scheinbar-anscheinend
+    topic: sprachen/deutsch
+    hint: "scheinbar vs. anscheinend: Schein ohne Wirklichkeit vs. vermutlich so, laut Duden"
+    format: single_fact
+    priority: 3
+  - id: sprachen-de-das-dass
+    topic: sprachen/deutsch
+    hint: "das vs. dass: Ersatzprobe mit dieses, welches, jenes und Beispiele"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-verwechslungen-1
+    topic: sprachen/deutsch
+    hint: "Leicht verwechselt: seit/seid, wieder/wider, Lid/Lied, Stil/Stiel, Mine/Miene"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-verwechslungen-2
+    topic: sprachen/deutsch
+    hint: "Leicht verwechselt: effektiv/effizient, nutzen/benutzen, sensibel/sensitiv, formal/formell, kindlich/kindisch"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-verwechslungen-3
+    topic: sprachen/deutsch
+    hint: "Leicht verwechselt: offensichtlich/offenbar, scheinbar/vermeintlich, lösbar/löslich, fremd/fremdartig, ernst/ernsthaft"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-verwechslungen-4
+    topic: sprachen/deutsch
+    hint: "Zweifelsfälle: wegen dem oder wegen des, Pizzas oder Pizzen, das oder der Joghurt, gewinkt oder gewunken, laut Duden"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-de-getrennt-zusammen
+    topic: sprachen/deutsch
+    hint: "Getrennt- und Zusammenschreibung: kennenlernen/kennen lernen, zurzeit/zur Zeit, wie viel, irgendwann, so dass/sodass"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-apostroph
+    topic: sprachen/deutsch
+    hint: "Apostroph im Deutschen: Genitiv ohne Apostroph (Annas Café), erlaubte Ausnahmen laut amtlicher Regelung von 2006"
+    format: single_fact
+    priority: 3
+  - id: sprachen-de-anglizismen-1
+    topic: sprachen/deutsch
+    hint: "Scheinanglizismen: Handy, Beamer, Oldtimer, Public Viewing, Homeoffice und was Englischsprachige stattdessen sagen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-anglizismen-2
+    topic: sprachen/deutsch
+    hint: "Scheinanglizismen: Smoking, Showmaster, Dressman, Basecap, Wellness und die englischen Entsprechungen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-anglizismen-3
+    topic: sprachen/deutsch
+    hint: "Eingedeutschte englische Verben: downloaden, liken, googeln, Partizip II (gedownloadet oder downgeloadet) laut Duden"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-de-anglizismen-4
+    topic: sprachen/deutsch
+    hint: "Germanismen im Englischen: kindergarten, angst, wanderlust, zeitgeist, schadenfreude mit Bedeutung im Englischen"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-anglizismen-5
+    topic: sprachen/deutsch
+    hint: "Anglizismus des Jahres: Initiative um Anatol Stefanowitsch, Beispiele früherer Gewinner wie Shitstorm (2011)"
+    format: single_fact
+    priority: 3
+  - id: sprachen-de-dialekt-woerter
+    topic: sprachen/deutsch
+    hint: "Regionale Wörter: Brötchen, Semmel, Schrippe, Weck, Rundstück und wo man sie sagt (Atlas zur deutschen Alltagssprache)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-de-jugendwort
+    topic: sprachen/deutsch
+    hint: "Jugendwort des Jahres (Langenscheidt): Gewinner seit 2020 wie lost, cringe, smash, goofy, Aura mit Bedeutung"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-ety-wochentage
+    topic: sprachen/etymologie
+    hint: "Herkunft der Wochentage auf Deutsch und Englisch: Sonne, Mond, Tiw/Ziu, Wodan, Donar/Thor, Frigg, Saturn"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-monate
+    topic: sprachen/etymologie
+    hint: "Herkunft der Monatsnamen: Januar (Janus), März (Mars), Juli (Julius Caesar), August (Augustus), September bis Dezember (Zahlen)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-arabisch-1
+    topic: sprachen/etymologie
+    hint: "Lehnwörter aus dem Arabischen: Algebra, Algorithmus (al-Chwarizmi), Ziffer, Alkohol, Zucker"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-arabisch-2
+    topic: sprachen/etymologie
+    hint: "Lehnwörter aus dem Arabischen: Kaffee, Magazin, Matratze, Sofa, Tarif"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-latein-wurzeln
+    topic: sprachen/etymologie
+    hint: "Lateinische Wurzeln: port (tragen), duc (führen), spec (sehen), scrib (schreiben), mit Beispielen in DE und EN"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-griechisch-wurzeln
+    topic: sprachen/etymologie
+    hint: "Griechische Wurzeln: tele, phon, graph, bio, logos, mit Beispielen wie Telefon, Biografie"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-alltag-1
+    topic: sprachen/etymologie
+    hint: "Herkunft alltäglicher Wörter: Salär (Salz), Kompanie/Kumpan (Brot teilen), Kandidat (weiß gekleidet), Muskel (Mäuschen), Bankrott"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-alltag-2
+    topic: sprachen/etymologie
+    hint: "Herkunft englischer Alltagswörter: salary, companion, sandwich (Earl of Sandwich), quarantine, disaster"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-eponyme
+    topic: sprachen/etymologie
+    hint: "Eponyme: Boykott, Sandwich, Silhouette, Guillotine, Diesel, nach realen Personen benannt"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-tech-woerter
+    topic: sprachen/etymologie
+    hint: "Herkunft von Tech-Wörtern: Bug, Spam, Bluetooth (Harald Blauzahn), Cookie, Robot (Čapek)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-essen
+    topic: sprachen/etymologie
+    hint: "Herkunft von Essenswörtern: Tomate (Nahuatl), Schokolade, Ketchup, Kartoffel (tartufolo), Joghurt (Türkisch)"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-tiere
+    topic: sprachen/etymologie
+    hint: "Herkunft von Tiernamen: Nilpferd/hippopotamus, Dinosaurier, Pinguin, Känguru (Guugu Yimithirr), Schildkröte"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-planeten
+    topic: sprachen/etymologie
+    hint: "Herkunft der Planetennamen: Merkur, Venus, Mars, Jupiter, Saturn, Uranus, Neptun und ihre Götter"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-farben
+    topic: sprachen/etymologie
+    hint: "Herkunft von Farbwörtern: Orange (Frucht, Sanskrit), Lila (Flieder, Persisch), Purpur, Indigo (Indien), Karmin"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-zahlen-ziffern
+    topic: sprachen/etymologie
+    hint: "Herkunft der Ziffern: indisch-arabische Ziffern, Fibonacci und Liber Abaci, Null aus sifr, römische Zahlen"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-ety-indogermanisch
+    topic: sprachen/etymologie
+    hint: "Indogermanische Sprachfamilie: Mutter, mother, mater, matr (Sanskrit), William Jones 1786, verwandte Wörter für Vater und drei"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-ety-lautverschiebung
+    topic: sprachen/etymologie
+    hint: "Zweite Lautverschiebung: Wasser/water, Apfel/apple, zehn/ten, machen/make, warum Deutsch und Englisch sich unterscheiden"
+    format: single_fact
+    priority: 3
+  - id: sprachen-ety-franzoesisch-de
+    topic: sprachen/etymologie
+    hint: "Französische Lehnwörter im Deutschen: Trottoir, Portemonnaie, Friseur, Bürokratie, Garage"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-italienisch
+    topic: sprachen/etymologie
+    hint: "Italienische Lehnwörter aus Bank und Musik: Konto, Bankrott, Kredit, Saldo, Allegro, Piano"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-niederlaendisch-en
+    topic: sprachen/etymologie
+    hint: "Niederländische Lehnwörter im Englischen: yacht, cookie, boss, skipper, landscape"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-hindi-en
+    topic: sprachen/etymologie
+    hint: "Lehnwörter aus Hindi und Urdu im Englischen: shampoo, jungle, bungalow, pyjamas, thug"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-japanisch
+    topic: sprachen/etymologie
+    hint: "Lehnwörter aus dem Japanischen: Tsunami, Karaoke, Emoji (nicht von emotion), Tycoon, Karate"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-ortsnamen
+    topic: sprachen/etymologie
+    hint: "Wörter nach Orten benannt: Jeans (Genua), Denim (de Nîmes), Marathon, Bikini (Atoll), Hamburger"
+    format: flashcards
+    priority: 3
+  - id: sprachen-ety-volksetymologie
+    topic: sprachen/etymologie
+    hint: "Volksetymologie: Hängematte (hamaca), Maulwurf, Sintflut, Armbrust, Friedhof (von vrīthof, eingefriedeter Hof, nicht Frieden)"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-ety-okay
+    topic: sprachen/etymologie
+    hint: "Herkunft von OK: oll korrect, Boston 1839, Allen Walker Read als Quelle"
+    format: single_fact
+    priority: 3
+  - id: aw-totes-meer
+    topic: allgemeinwissen/geografie
+    hint: "Totes Meer: tiefster Landpunkt der Erde (ca. 430 m unter NN), Salzgehalt rund 30 %, warum man treibt, sinkender Wasserspiegel durch Jordan-Wasserentnahme"
+    format: facts_quiz
+    priority: 3
+  - id: aw-marianengraben
+    topic: allgemeinwissen/geografie
+    hint: "Marianengraben und Challengertief (ca. 11 km), Piccard und Walsh 1960 mit der Trieste, James Cameron 2012, Druck am Grund"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sahara-gruen
+    topic: allgemeinwissen/geografie
+    hint: "Grüne Sahara: Afrikanische Feuchtperiode vor ca. 11.000 bis 5.000 Jahren, Seen, Felsbilder von Giraffen und Schwimmern, Ursache Erdbahnschwankungen"
+    format: single_fact
+    priority: 3
+  - id: aw-amazonas
+    topic: allgemeinwissen/geografie
+    hint: "Amazonas: wasserreichster Fluss der Erde, ca. 20 % des Süßwassereintrags in die Ozeane, keine Brücke über den Hauptstrom, Name nach Orellana"
+    format: facts_quiz
+    priority: 3
+  - id: aw-baikalsee
+    topic: allgemeinwissen/geografie
+    hint: "Baikalsee: tiefster (ca. 1.640 m) und ältester See der Welt (ca. 25 Mio. Jahre), rund 20 % des flüssigen Süßwassers, Baikalrobbe"
+    format: facts_quiz
+    priority: 3
+  - id: aw-meerengen
+    topic: allgemeinwissen/geografie
+    hint: "Wichtige Meerengen: Gibraltar, Bosporus, Hormus, Malakka, Beringstraße – was sie verbinden und warum sie bedeutend sind"
+    format: flashcards
+    priority: 3
+  - id: aw-kanaele-suez-panama
+    topic: allgemeinwissen/geografie
+    hint: "Suezkanal (1869, ohne Schleusen) und Panamakanal (1914, Schleusen, Gatúnsee), welche Meere sie verbinden, eingesparte Seewege"
+    format: facts_quiz
+    priority: 3
+  - id: aw-enklaven-exklaven
+    topic: allgemeinwissen/geografie
+    hint: "Enklave vs. Exklave, Beispiele Büsingen am Hochrhein, Kaliningrad, Lesotho und San Marino als vollständig umschlossene Staaten, Baarle-Nassau"
+    format: facts_quiz
+    priority: 3
+  - id: aw-wasserfaelle
+    topic: allgemeinwissen/geografie
+    hint: "Berühmte Wasserfälle: Salto Ángel (höchster), Victoriafälle, Iguazú, Niagara, wie Wasserfälle durch Erosion zurückwandern"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fjorde
+    topic: allgemeinwissen/geografie
+    hint: "Fjorde: von Gletschern ausgeschürfte, vom Meer geflutete Täler, Norwegen, Sognefjord als längster Norwegens, Schwelle am Fjordausgang"
+    format: single_fact
+    priority: 3
+  - id: aw-polarregionen
+    topic: allgemeinwissen/geografie
+    hint: "Arktis vs. Antarktis: Meer mit Eis vs. Kontinent, Eisbären nur im Norden, Pinguine nur im Süden, Antarktisvertrag 1959, Kältepol Wostok"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mittelpunkt-erde
+    topic: allgemeinwissen/geografie
+    hint: "Aufbau der Erde: Kruste, Mantel, äußerer flüssiger und innerer fester Kern, Radius ca. 6.371 km, Temperatur im Kern ähnlich Sonnenoberfläche, Erkenntnis durch Erdbebenwellen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-deutsche-fluesse
+    topic: allgemeinwissen/geografie
+    hint: "Große Flüsse Deutschlands: Rhein, Donau, Elbe, Main, Weser – Quelle, Mündung, Besonderheit (Donau fließt ins Schwarze Meer)"
+    format: flashcards
+    priority: 3
+  - id: aw-bundeslaender-hauptstaedte
+    topic: allgemeinwissen/geografie
+    hint: "16 Bundesländer und Landeshauptstädte, Stadtstaaten Berlin, Hamburg, Bremen, Fallen wie Düsseldorf statt Köln, Wiesbaden statt Frankfurt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-istanbul-zwei-kontinente
+    topic: allgemeinwissen/geografie
+    hint: "Istanbul liegt auf Europa und Asien, Bosporus als Grenze, frühere Namen Byzantion und Konstantinopel, Umbenennung 1930"
+    format: single_fact
+    priority: 3
+  - id: aw-oktopus
+    topic: allgemeinwissen/natur
+    hint: "Oktopus: drei Herzen, blaues Blut durch Hämocyanin, Großteil der Neuronen in den Armen, Tarnung durch Chromatophoren, Problemlösen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-baertierchen
+    topic: allgemeinwissen/natur
+    hint: "Bärtierchen (Tardigraden): Kryptobiose/Tönnchenstadium, überleben Austrocknung, Kälte und Weltraum (FOTON-M3 2007), Größe unter 1 mm"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ameisen
+    topic: allgemeinwissen/natur
+    hint: "Ameisen: Staatenbildung, Kommunikation über Pheromone, Blattschneiderameisen züchten Pilze, Superkolonien der Argentinischen Ameise"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mykorrhiza
+    topic: allgemeinwissen/natur
+    hint: "Mykorrhiza: Symbiose von Pilzen und Pflanzenwurzeln, Austausch Zucker gegen Wasser und Nährstoffe, Großteil der Landpflanzen beteiligt"
+    format: single_fact
+    priority: 3
+  - id: aw-tierwanderungen
+    topic: allgemeinwissen/natur
+    hint: "Tierwanderungen: Gnus in der Serengeti, Monarchfalter nach Mexiko, Küstenseeschwalbe mit längstem Zug, Lachse zurück zum Geburtsfluss"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fleischfressende-pflanzen
+    topic: allgemeinwissen/natur
+    hint: "Fleischfressende Pflanzen: Venusfliegenfalle (zwei Berührungen nötig), Sonnentau, Kannenpflanze, warum auf nährstoffarmen Böden"
+    format: facts_quiz
+    priority: 3
+  - id: aw-biolumineszenz
+    topic: allgemeinwissen/natur
+    hint: "Biolumineszenz: Luciferin und Luciferase, Glühwürmchen, Anglerfisch, Meeresleuchten durch Dinoflagellaten, Häufigkeit in der Tiefsee"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tarnung-mimikry
+    topic: allgemeinwissen/natur
+    hint: "Begriffe Tarnung, Mimese, Bates-Mimikry, Müller-Mimikry, Warntracht – je ein Tierbeispiel (Schwebfliege, Stabschrecke, Pfeilgiftfrosch)"
+    format: flashcards
+    priority: 3
+  - id: aw-elefanten
+    topic: allgemeinwissen/natur
+    hint: "Elefanten: Afrikanischer Steppen-, Wald- und Asiatischer Elefant, Rüssel mit Zehntausenden Muskeln, Infraschall-Kommunikation, ca. 22 Monate Tragzeit"
+    format: facts_quiz
+    priority: 3
+  - id: aw-haie
+    topic: allgemeinwissen/natur
+    hint: "Haie: älter als Bäume (über 400 Mio. Jahre), Knorpelskelett, Lorenzinische Ampullen, Revolvergebiss, Walhai als größter Fisch, Grönlandhai sehr langlebig"
+    format: facts_quiz
+    priority: 3
+  - id: aw-rabenvoegel-intelligenz
+    topic: allgemeinwissen/natur
+    hint: "Rabenvögel-Intelligenz: Neukaledonische Krähen bauen Werkzeuge, Elstern im Spiegeltest, Krähen merken sich Gesichter (Studie Univ. Washington)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-winterschlaf
+    topic: allgemeinwissen/natur
+    hint: "Winterschlaf vs. Winterruhe vs. Winterstarre: Igel und Siebenschläfer, Bär und Eichhörnchen, Frösche und Insekten, Absenken von Puls und Körpertemperatur"
+    format: facts_quiz
+    priority: 3
+  - id: aw-pflanzen-kommunikation
+    topic: allgemeinwissen/natur
+    hint: "Pflanzen warnen sich: Akazien produzieren bei Fraß Tannine und Ethylen als Signal, Tomaten und Duftstoffe, Anlocken von Fressfeinden der Schädlinge"
+    format: single_fact
+    priority: 3
+  - id: aw-quallen
+    topic: allgemeinwissen/natur
+    hint: "Quallen: ohne Gehirn und Herz, ca. 95 % Wasser, Nesselzellen, Turritopsis dohrnii als unsterbliche Qualle, Lebenszyklus Polyp-Meduse"
+    format: facts_quiz
+    priority: 3
+  - id: aw-moore
+    topic: allgemeinwissen/natur
+    hint: "Moore: Hochmoor vs. Niedermoor, Torf wächst ca. 1 mm pro Jahr, speichern viel Kohlenstoff, Moorleichen wie Tollund-Mann"
+    format: facts_quiz
+    priority: 3
+  - id: aw-entropie
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Entropie und zweiter Hauptsatz der Thermodynamik: Wärme fließt von warm nach kalt, Unordnung nimmt zu, Zeitpfeil, Perpetuum mobile unmöglich"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ph-wert
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "pH-Wert: Skala 0 bis 14, logarithmisch, neutral 7, Beispiele Magensäure, Zitronensaft, Blut ca. 7,4, Seifenlauge, Søren Sørensen 1909"
+    format: facts_quiz
+    priority: 3
+  - id: aw-isotope-c14
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Isotope und Radiokarbonmethode: C-14, Halbwertszeit ca. 5.730 Jahre, Willard Libby (Nobelpreis 1960), Grenze ca. 50.000 Jahre"
+    format: facts_quiz
+    priority: 3
+  - id: aw-quantenphysik-basics
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Quantenphysik-Grundideen: Plancks Wirkungsquantum 1900, Welle-Teilchen-Dualismus, Doppelspaltexperiment, Heisenbergsche Unschärferelation"
+    format: facts_quiz
+    priority: 3
+  - id: aw-supraleitung
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Supraleitung: elektrischer Widerstand null unterhalb Sprungtemperatur, Heike Kamerlingh Onnes 1911 mit Quecksilber, Meißner-Effekt, Einsatz in MRT"
+    format: single_fact
+    priority: 3
+  - id: aw-laser
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Laser: Akronym Light Amplification by Stimulated Emission of Radiation, Einstein 1917 theoretisch, Theodore Maiman 1960 Rubinlaser, kohärentes Licht"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kernfusion-spaltung
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Kernspaltung vs. Kernfusion: Otto Hahn und Lise Meitner 1938, E=mc², Fusion in der Sonne aus Wasserstoff zu Helium, Massendefekt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-brownsche-bewegung
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Brownsche Bewegung: Robert Brown 1827 Pollenpartikel, Einstein 1905 Erklärung durch Molekülstöße, Jean Perrin bestätigt Existenz von Atomen"
+    format: single_fact
+    priority: 3
+  - id: aw-elemente-namen
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Woher Elementnamen kommen: Helium (Sonne), Wasserstoff/Hydrogenium, Germanium, Einsteinium, Kupfer/Cuprum (Zypern) – Bedeutung erklärt"
+    format: flashcards
+    priority: 3
+  - id: aw-oberflaechenspannung
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Oberflächenspannung: Wasserläufer, Tropfenform, Wasserstoffbrücken, Spülmittel als Tensid senkt sie, Kapillareffekt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-viren-bakterien
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Viren vs. Bakterien: Größe, Bakterien als Lebewesen mit eigenem Stoffwechsel, Viren brauchen Wirtszellen, warum Antibiotika nicht gegen Viren wirken"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kristalle
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Kristalle: regelmäßiges Atomgitter, Diamant und Graphit beide reiner Kohlenstoff, Schneeflocken sechseckig, Mohs-Härteskala 1 bis 10"
+    format: facts_quiz
+    priority: 3
+  - id: aw-doppler-effekt
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Doppler-Effekt: Christian Doppler 1842, Martinshorn klingt beim Wegfahren tiefer, Rotverschiebung in der Astronomie, Radarblitzer"
+    format: single_fact
+    priority: 3
+  - id: aw-fermentation-chemie
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Gärung: alkoholische und Milchsäuregärung, Hefe wandelt Zucker in Ethanol und CO2, Louis Pasteur, Unterschied zur Zellatmung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-jupiter
+    topic: allgemeinwissen/astronomie
+    hint: "Jupiter: größter Planet, Großer Roter Fleck als jahrhundertealter Sturm, Galileische Monde (Io, Europa, Ganymed, Kallisto) entdeckt 1610"
+    format: facts_quiz
+    priority: 3
+  - id: aw-saturn-ringe
+    topic: allgemeinwissen/astronomie
+    hint: "Saturnringe: hauptsächlich Wassereis, sehr dünn im Verhältnis zur Breite, Cassini-Teilung, Saturn hat geringere Dichte als Wasser, Mond Titan"
+    format: facts_quiz
+    priority: 3
+  - id: aw-venus
+    topic: allgemeinwissen/astronomie
+    hint: "Venus: heißester Planet durch Treibhauseffekt (ca. 465 °C), Tag länger als Jahr, dreht rückläufig, Morgen- und Abendstern"
+    format: facts_quiz
+    priority: 3
+  - id: aw-exoplaneten
+    topic: allgemeinwissen/astronomie
+    hint: "Exoplaneten: erster um sonnenähnlichen Stern 51 Pegasi b (Mayor und Queloz 1995, Nobelpreis 2019), Transit- und Radialgeschwindigkeitsmethode, habitable Zone"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sternentwicklung
+    topic: allgemeinwissen/astronomie
+    hint: "Lebenslauf von Sternen: Nebel, Hauptreihe, Roter Riese, Weißer Zwerg oder Supernova, Neutronenstern, Schwarzes Loch, Masse entscheidet"
+    format: facts_quiz
+    priority: 3
+  - id: aw-polarlichter
+    topic: allgemeinwissen/astronomie
+    hint: "Polarlichter: Sonnenwind trifft Erdmagnetfeld, Anregung von Sauerstoff (grün, rot) und Stickstoff, Aurora borealis und australis, Polarlichtoval"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mondlandung
+    topic: allgemeinwissen/astronomie
+    hint: "Apollo 11 am 20./21. Juli 1969: Armstrong, Aldrin, Collins, Mondfähre Eagle, Mare Tranquillitatis, insgesamt 12 Menschen auf dem Mond bis 1972"
+    format: facts_quiz
+    priority: 3
+  - id: aw-voyager
+    topic: allgemeinwissen/astronomie
+    hint: "Voyager 1 und 2: Start 1977, Grand Tour, Golden Record mit Grüßen und Musik, Voyager 1 als fernstes Menschenwerk, Pale Blue Dot 1990"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sternenstaub
+    topic: allgemeinwissen/astronomie
+    hint: "Wir sind Sternenstaub: schwere Elemente wie Kohlenstoff, Sauerstoff, Eisen entstanden in Sternen und Supernovae, Gold u. a. aus Neutronensternkollisionen"
+    format: single_fact
+    priority: 3
+  - id: aw-gravitationswellen
+    topic: allgemeinwissen/astronomie
+    hint: "Gravitationswellen: Einstein 1916 vorhergesagt, LIGO-Nachweis 14. September 2015 aus verschmelzenden Schwarzen Löchern, Nobelpreis 2017"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mondphasen
+    topic: allgemeinwissen/astronomie
+    hint: "Mondphasen: Neumond, zunehmend, Vollmond, abnehmend, synodischer Monat ca. 29,5 Tage, gebundene Rotation, Merkregel abnehmend wie a"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sonnenwind-weltraumwetter
+    topic: allgemeinwissen/astronomie
+    hint: "Weltraumwetter: Sonnenflecken, 11-jähriger Sonnenzyklus, Carrington-Ereignis 1859 legte Telegrafen lahm"
+    format: single_fact
+    priority: 3
+  - id: aw-fibonacci
+    topic: allgemeinwissen/mathematik
+    hint: "Fibonacci-Folge: Leonardo von Pisa, Liber abaci 1202, Kaninchenaufgabe, Sonnenblumenspiralen, Quotient nähert sich dem Goldenen Schnitt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-unendlichkeit
+    topic: allgemeinwissen/mathematik
+    hint: "Unendlichkeit: Hilberts Hotel, Georg Cantor, abzählbar vs. überabzählbar, es gibt mehr reelle Zahlen als natürliche (Diagonalargument)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fermat-letzter-satz
+    topic: allgemeinwissen/mathematik
+    hint: "Fermats letzter Satz: Randnotiz 1637, über 350 Jahre ungelöst, Beweis durch Andrew Wiles 1994/95"
+    format: single_fact
+    priority: 3
+  - id: aw-eulersche-zahl
+    topic: allgemeinwissen/mathematik
+    hint: "Eulersche Zahl e ca. 2,718: Jakob Bernoulli und Zinsproblem, natürliches Wachstum, Euler-Identität e hoch i pi plus 1 gleich 0"
+    format: facts_quiz
+    priority: 3
+  - id: aw-binaersystem
+    topic: allgemeinwissen/mathematik
+    hint: "Binärsystem: nur 0 und 1, Leibniz, Umrechnen kleiner Zahlen, Bit und Byte, warum Computer binär rechnen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ziegenproblem
+    topic: allgemeinwissen/mathematik
+    hint: "Monty-Hall-Problem: drei Türen, Wechseln gewinnt mit 2/3, Marilyn vos Savant 1990, warum die Intuition täuscht"
+    format: facts_quiz
+    priority: 3
+  - id: aw-platonische-koerper
+    topic: allgemeinwissen/mathematik
+    hint: "Die fünf platonischen Körper: Tetraeder, Würfel, Oktaeder, Dodekaeder, Ikosaeder – Flächenzahl und Flächenform, Spielwürfel D4 bis D20"
+    format: flashcards
+    priority: 3
+  - id: aw-vier-farben-satz
+    topic: allgemeinwissen/mathematik
+    hint: "Vier-Farben-Satz: jede Landkarte mit vier Farben färbbar, 1852 vermutet, 1976 von Appel und Haken mit Computerhilfe bewiesen"
+    format: single_fact
+    priority: 3
+  - id: aw-koenigsberger-bruecken
+    topic: allgemeinwissen/mathematik
+    hint: "Königsberger Brückenproblem: sieben Brücken, Euler 1736 zeigt Unmöglichkeit, Geburtsstunde der Graphentheorie"
+    format: facts_quiz
+    priority: 3
+  - id: aw-millennium-probleme
+    topic: allgemeinwissen/mathematik
+    hint: "Millennium-Probleme des Clay Mathematics Institute (2000): sieben Probleme, je 1 Mio. Dollar, Poincaré-Vermutung von Perelman gelöst, Preis abgelehnt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mathe-symbole
+    topic: allgemeinwissen/mathematik
+    hint: "Herkunft mathematischer Zeichen: Gleichheitszeichen (Robert Recorde 1557), Plus und Minus, Wurzelzeichen, Pi-Symbol (William Jones 1706), Unendlich-Zeichen (Wallis)"
+    format: flashcards
+    priority: 3
+  - id: aw-exponentielles-wachstum
+    topic: allgemeinwissen/mathematik
+    hint: "Exponentielles Wachstum: Weizenkornlegende auf dem Schachbrett, Verdopplungszeit, Seerosen-Rätsel, Unterschied zu linearem Wachstum"
+    format: facts_quiz
+    priority: 3
+  - id: aw-dezimal-duodezimal
+    topic: allgemeinwissen/mathematik
+    hint: "Warum 60 Minuten und 360 Grad: Sexagesimalsystem der Babylonier, 60 hat viele Teiler, Reste davon in Zeit und Winkelmaß"
+    format: single_fact
+    priority: 3
+  - id: aw-moebiusband
+    topic: allgemeinwissen/mathematik
+    hint: "Möbiusband: nur eine Seite und eine Kante, August Ferdinand Möbius 1858, Zerschneiden in der Mitte ergibt ein längeres Band, Recycling-Symbol"
+    format: single_fact
+    priority: 3
+  - id: aw-olympische-goetter
+    topic: allgemeinwissen/kultur
+    hint: "Griechische Götter und römische Entsprechungen: Zeus/Jupiter, Hera/Juno, Poseidon/Neptun, Athene/Minerva, Ares/Mars – Zuständigkeit"
+    format: flashcards
+    priority: 3
+  - id: aw-wochentage-namen
+    topic: allgemeinwissen/kultur
+    hint: "Herkunft der Wochentagsnamen: Sonne, Mond, Ziu/Tyr (Dienstag in Tuesday), Donar/Thor, Frigg; Mittwoch als Wochenmitte, Samstag vom Sabbat"
+    format: facts_quiz
+    priority: 3
+  - id: aw-monatsnamen
+    topic: allgemeinwissen/kultur
+    hint: "Monatsnamen: Juli nach Julius Caesar, August nach Augustus, September bis Dezember als 7. bis 10. Monat im alten römischen Kalender"
+    format: facts_quiz
+    priority: 3
+  - id: aw-hieroglyphen-rosetta
+    topic: allgemeinwissen/kultur
+    hint: "Stein von Rosetta: 1799 gefunden, drei Schriften (Hieroglyphen, Demotisch, Griechisch), Entzifferung durch Champollion 1822, heute British Museum"
+    format: facts_quiz
+    priority: 3
+  - id: aw-alphabet-geschichte
+    topic: allgemeinwissen/kultur
+    hint: "Geschichte des Alphabets: phönizische Schrift, Griechen fügen Vokale hinzu, lateinisches Alphabet, Buchstabe A aus Ochsenkopf Aleph"
+    format: facts_quiz
+    priority: 3
+  - id: aw-weihnachtsbraeuche
+    topic: allgemeinwissen/kultur
+    hint: "Herkunft von Weihnachtsbräuchen: Adventskranz (Johann Hinrich Wichern 1839), Christbaum aus dem Elsass, Nikolaus von Myra, Stille Nacht 1818 Oberndorf"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ostern-datum
+    topic: allgemeinwissen/kultur
+    hint: "Osterdatum: erster Sonntag nach dem ersten Frühlingsvollmond, Konzil von Nicäa 325, daher zwischen 22. März und 25. April"
+    format: single_fact
+    priority: 3
+  - id: aw-sprachfamilien
+    topic: allgemeinwissen/kultur
+    hint: "Sprachfamilien: Indogermanisch (Deutsch, Hindi, Persisch verwandt), Finnisch und Ungarisch als uralische Sprachen, Baskisch als isolierte Sprache"
+    format: facts_quiz
+    priority: 3
+  - id: aw-lehnwoerter
+    topic: allgemeinwissen/kultur
+    hint: "Deutsche Lehnwörter aus anderen Sprachen: Algebra/Ziffer (Arabisch), Fenster/Mauer (Latein), Tomate (Nahuatl), Tee (Chinesisch), Kiosk (Persisch/Türkisch)"
+    format: flashcards
+    priority: 3
+  - id: aw-deutsche-woerter-im-englischen
+    topic: allgemeinwissen/kultur
+    hint: "Deutsche Wörter im Englischen: Kindergarten, Angst, Zeitgeist, Wanderlust, Schadenfreude, Doppelgänger – Bedeutung und Gebrauch"
+    format: flashcards
+    priority: 3
+  - id: aw-pyramiden-gizeh
+    topic: allgemeinwissen/kultur
+    hint: "Pyramiden von Gizeh: Cheops-Pyramide ca. 2560 v. Chr., ursprünglich ca. 146 m, fast 4.000 Jahre höchstes Bauwerk, Arbeiter statt Sklaven"
+    format: facts_quiz
+    priority: 3
+  - id: aw-chinesische-mauer
+    topic: allgemeinwissen/kultur
+    hint: "Chinesische Mauer: viele Mauern über Jahrhunderte, Ming-Dynastie, Gesamtlänge ca. 21.000 km laut Vermessung 2012, Mythos: mit bloßem Auge aus dem All nicht sichtbar"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tierkreis-chinesisch
+    topic: allgemeinwissen/kultur
+    hint: "Chinesischer Tierkreis: zwölf Tiere im 12-Jahres-Zyklus, Legende vom Wettrennen, kombiniert mit fünf Elementen zu 60-Jahres-Zyklus, Neujahr nach Mondkalender"
+    format: single_fact
+    priority: 3
+  - id: aw-gutenberg-bibel
+    topic: allgemeinwissen/kultur
+    hint: "Gutenberg-Bibel: um 1454/55 in Mainz, ca. 180 Exemplare, 42 Zeilen pro Seite, heute noch ca. 49 erhalten"
+    format: single_fact
+    priority: 3
+  - id: aw-mittelalter-mythen
+    topic: allgemeinwissen/kultur
+    hint: "Irrtümer über das Mittelalter: Menschen hielten die Erde nicht für flach, Hörner auf Wikingerhelmen als Erfindung des 19. Jh. (Wagner-Kostüme)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-opportunitaetskosten
+    topic: allgemeinwissen/wirtschaft
+    hint: "Opportunitätskosten: entgangener Nutzen der besten Alternative, Beispiele Studium und Zeit, Basis jeder ökonomischen Entscheidung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-komparativer-vorteil
+    topic: allgemeinwissen/wirtschaft
+    hint: "Komparativer Vorteil: David Ricardo 1817, Wein und Tuch aus England und Portugal, warum Handel auch für weniger produktive Länder lohnt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-zentralbank
+    topic: allgemeinwissen/wirtschaft
+    hint: "Wie eine Zentralbank arbeitet: EZB in Frankfurt, Leitzins, Preisstabilität mit Ziel 2 % Inflation, Unabhängigkeit, Unterschied zu Geschäftsbanken"
+    format: facts_quiz
+    priority: 3
+  - id: aw-unsichtbare-hand
+    topic: allgemeinwissen/wirtschaft
+    hint: "Adam Smith und die unsichtbare Hand: Wohlstand der Nationen 1776, Eigennutz und Gemeinwohl, Arbeitsteilung am Beispiel Stecknadelfabrik"
+    format: single_fact
+    priority: 3
+  - id: aw-tulpenmanie
+    topic: allgemeinwissen/wirtschaft
+    hint: "Tulpenmanie in den Niederlanden 1636/37 als frühe Spekulationsblase, Zwiebelpreise, Termingeschäfte, Debatte über das Ausmaß"
+    format: facts_quiz
+    priority: 3
+  - id: aw-boerse-geschichte
+    topic: allgemeinwissen/wirtschaft
+    hint: "Geschichte der Börse: Brügge und Familie van der Beurse, Amsterdamer Börse und VOC als erste Aktiengesellschaft 1602, Bulle und Bär"
+    format: facts_quiz
+    priority: 3
+  - id: aw-anleihen
+    topic: allgemeinwissen/wirtschaft
+    hint: "Anleihen einfach erklärt: Kredit an Staat oder Firma, Kupon, Laufzeit, Rendite und Kurs bewegen sich gegenläufig, Rating"
+    format: facts_quiz
+    priority: 3
+  - id: aw-wirtschaftskrise-1929
+    topic: allgemeinwissen/wirtschaft
+    hint: "Weltwirtschaftskrise: Schwarzer Donnerstag 24. Oktober 1929, Bankenkrisen, Massenarbeitslosigkeit, New Deal unter Roosevelt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-hyperinflation-1923
+    topic: allgemeinwissen/wirtschaft
+    hint: "Hyperinflation 1923 in Deutschland: Brot kostete Milliarden Mark, Ursachen Reparationen und Notenpresse, Rentenmark im November 1923, 1 Billion zu 1"
+    format: facts_quiz
+    priority: 3
+  - id: aw-wirtschaftsbegriffe
+    topic: allgemeinwissen/wirtschaft
+    hint: "Wirtschaftsbegriffe: Rezession, Deflation, Stagflation, Handelsbilanz, Kaufkraft – kurze Definitionen"
+    format: flashcards
+    priority: 3
+  - id: aw-marke-logo-geschichte
+    topic: allgemeinwissen/wirtschaft
+    hint: "Älteste eingetragene Marke: Bass-Brauerei rotes Dreieck 1876 als UK-Trademark Nr. 1, Ursprung des Wortes Brand aus Brandzeichen"
+    format: single_fact
+    priority: 3
+  - id: aw-genossenschaft
+    topic: allgemeinwissen/wirtschaft
+    hint: "Genossenschaften: Friedrich Wilhelm Raiffeisen und Hermann Schulze-Delitzsch, Prinzip ein Mitglied eine Stimme, Genossenschaftsidee als UNESCO-Kulturerbe 2016"
+    format: facts_quiz
+    priority: 3
+  - id: aw-containerschiff
+    topic: allgemeinwissen/wirtschaft
+    hint: "Der Container: Malcom McLean 1956, Standard-TEU (20 Fuß), drastisch gesunkene Verladekosten als Motor der Globalisierung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-barcode
+    topic: allgemeinwissen/erfindungen
+    hint: "Strichcode: Patent von Woodland und Silver 1952, inspiriert vom Morsecode, erster Scan 1974 eine Packung Wrigleys-Kaugummi in Ohio"
+    format: single_fact
+    priority: 3
+  - id: aw-mikrowelle
+    topic: allgemeinwissen/erfindungen
+    hint: "Mikrowelle: Percy Spencer bei Raytheon 1945, geschmolzener Schokoriegel, Wassermoleküle werden in Schwingung versetzt, frühes Gerät Radarange"
+    format: facts_quiz
+    priority: 3
+  - id: aw-zufallserfindungen
+    topic: allgemeinwissen/erfindungen
+    hint: "Zufallserfindungen: Teflon (Plunkett 1938), Post-it (Silver und Fry), Sekundenkleber (Coover), Herzschrittmacher-Prinzip (Greatbatch), Röntgenstrahlen (Röntgen 1895)"
+    format: flashcards
+    priority: 3
+  - id: aw-kuehlschrank
+    topic: allgemeinwissen/erfindungen
+    hint: "Kühlschrank: Carl von Linde Kältemaschine 1870er, Prinzip Verdampfung entzieht Wärme, Einstein-Szilard-Kühlschrank, FCKW-Verbot im Montreal-Protokoll 1987"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fahrrad
+    topic: allgemeinwissen/erfindungen
+    hint: "Fahrrad: Karl Drais Laufmaschine 1817 in Mannheim, Hochrad, Sicherheitsniederrad mit Kettenantrieb, Dunlop-Luftreifen 1888"
+    format: facts_quiz
+    priority: 3
+  - id: aw-eisenbahn
+    topic: allgemeinwissen/erfindungen
+    hint: "Eisenbahn: Stockton-Darlington 1825, Stephensons Rocket 1829, erste deutsche Strecke Nürnberg-Fürth 1835 mit dem Adler, Normalspur 1435 mm"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fotografie
+    topic: allgemeinwissen/erfindungen
+    hint: "Fotografie: Niépce erstes erhaltenes Foto um 1826/27, Daguerreotypie 1839, Kodak 1888 mit Slogan You press the button, we do the rest"
+    format: facts_quiz
+    priority: 3
+  - id: aw-radio
+    topic: allgemeinwissen/erfindungen
+    hint: "Radio: Heinrich Hertz weist elektromagnetische Wellen nach (1886/88), Marconi Transatlantik 1901, erste deutsche Rundfunksendung 29. Oktober 1923"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gps
+    topic: allgemeinwissen/erfindungen
+    hint: "GPS: US-Militärsystem, mindestens vier Satelliten für Position, Atomuhren, Relativitätstheorie muss korrigiert werden, Galileo als europäisches System"
+    format: facts_quiz
+    priority: 3
+  - id: aw-brille
+    topic: allgemeinwissen/erfindungen
+    hint: "Brille: Lesesteine, erste Brillen in Italien Ende des 13. Jh., Bügelbrille erst im 18. Jh., Benjamin Franklin und die Bifokalbrille"
+    format: single_fact
+    priority: 3
+  - id: aw-uhr-geschichte
+    topic: allgemeinwissen/erfindungen
+    hint: "Zeitmessung: Sonnen- und Wasseruhr, Pendeluhr von Christiaan Huygens 1656, Taschenuhr und Peter Henlein, Quarzuhr, Atomuhr definiert die Sekunde"
+    format: facts_quiz
+    priority: 3
+  - id: aw-beton-roemer
+    topic: allgemeinwissen/erfindungen
+    hint: "Römischer Beton: Puzzolanerde, Pantheon-Kuppel seit fast 1.900 Jahren größte unbewehrte Betonkuppel, Selbstheilung durch Kalkeinschlüsse (MIT-Studie 2023)"
+    format: single_fact
+    priority: 3
+  - id: aw-kunststoff
+    topic: allgemeinwissen/erfindungen
+    hint: "Kunststoff: Bakelit von Leo Baekeland 1907 als erster vollsynthetischer Kunststoff, Nylon 1935 (Carothers), Polymere als lange Molekülketten"
+    format: facts_quiz
+    priority: 3
+  - id: aw-reissverschluss
+    topic: allgemeinwissen/erfindungen
+    hint: "Reißverschluss: Whitcomb Judson 1893, Gideon Sundback 1913 moderne Form, Name Zipper durch B.F. Goodrich, YKK aus Japan"
+    format: single_fact
+    priority: 3
+  - id: aw-dynamit-nobel
+    topic: allgemeinwissen/erfindungen
+    hint: "Dynamit: Alfred Nobel 1867, Nitroglycerin in Kieselgur gebunden, falscher Nachruf Händler des Todes, Testament stiftet Nobelpreise"
+    format: facts_quiz
+    priority: 3
+  - id: aw-papierformate
+    topic: allgemeinwissen/alltag
+    hint: "DIN-Papierformate: A0 hat 1 m², Seitenverhältnis 1 zu Wurzel 2, halbieren ergibt nächstes Format, DIN 476 von 1922, Walter Porstmann"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ok-herkunft
+    topic: allgemeinwissen/alltag
+    hint: "Herkunft von OK: Boston 1839 als Scherzabkürzung oll korrect, Wahlkampf Old Kinderhook für Martin Van Buren, Forschung von Allen Walker Read"
+    format: single_fact
+    priority: 3
+  - id: aw-handschlag-gruss
+    topic: allgemeinwissen/alltag
+    hint: "Grußformen weltweit: Händedruck, Verbeugung in Japan, Wai in Thailand, Hongi der Maori, Wangenküsse je nach Region"
+    format: facts_quiz
+    priority: 3
+  - id: aw-at-zeichen
+    topic: allgemeinwissen/alltag
+    hint: "Das @-Zeichen: Handelszeichen für à bzw. Amphore, Ray Tomlinson 1971 erste E-Mail mit @, Namen in anderen Sprachen (Klammeraffe, Schnecke)"
+    format: single_fact
+    priority: 3
+  - id: aw-verkehrsampel
+    topic: allgemeinwissen/alltag
+    hint: "Ampel: erste Gasampel London 1868, erste elektrische Ampel Cleveland 1914, Berliner Ampelturm am Potsdamer Platz 1924, Ampelmännchen von Karl Peglau 1961"
+    format: facts_quiz
+    priority: 3
+  - id: aw-links-rechtsverkehr
+    topic: allgemeinwissen/alltag
+    hint: "Links- und Rechtsverkehr: rund ein Drittel der Weltbevölkerung fährt links, Großbritannien, Japan, Indien, Schweden wechselte 1967 (Dagen H)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-stecker-standards
+    topic: allgemeinwissen/alltag
+    hint: "Warum es weltweit viele Steckertypen gibt: Schuko von Albert Büttner 1926, 230 V und 50 Hz in Europa vs. 120 V und 60 Hz in Nordamerika"
+    format: single_fact
+    priority: 3
+  - id: aw-postleitzahlen
+    topic: allgemeinwissen/alltag
+    hint: "Postleitzahlen in Deutschland: Einführung 1941, vierstellig ab 1962, fünfstellig seit 1. Juli 1993 nach der Wiedervereinigung, Leitzonen 0 bis 9"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kleidergroessen
+    topic: allgemeinwissen/alltag
+    hint: "Herkunft der Schuhgröße: Pariser Stich (2/3 cm) in Europa, Barleycorn-Maß in UK und USA, deshalb verschiedene Größensysteme"
+    format: single_fact
+    priority: 3
+  - id: aw-mythen-alltag
+    topic: allgemeinwissen/alltag
+    hint: "Verbreitete Irrtümer: Goldfische mit 3-Sekunden-Gedächtnis, nur 10 % des Gehirns, Blitz schlägt nie zweimal ein, Stier sieht rot, Chamäleons wechseln Farbe zur Tarnung – jeweils die Fakten"
+    format: flashcards
+    priority: 3
+  - id: aw-feuerwerk
+    topic: allgemeinwissen/alltag
+    hint: "Feuerwerk: Schwarzpulver aus China, Farben durch Metallsalze (Strontium rot, Barium grün, Kupfer blau, Natrium gelb), blau als schwierigste Farbe"
+    format: facts_quiz
+    priority: 3
+  - id: aw-seife
+    topic: allgemeinwissen/alltag
+    hint: "Wie Seife wirkt: Tensidmoleküle mit wasser- und fettliebendem Ende, Mizellen, Verseifung von Fett mit Lauge, Ignaz Semmelweis und Händewaschen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-batterie-akku
+    topic: allgemeinwissen/alltag
+    hint: "Batterie und Akku: Volta-Säule 1800, Einheit Volt, Lithium-Ionen-Akku (Nobelpreis Chemie 2019: Goodenough, Whittingham, Yoshino)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-buchstabieralphabet
+    topic: allgemeinwissen/alltag
+    hint: "NATO-Buchstabieralphabet: Alfa, Bravo, Charlie, Delta, Echo usw., warum eindeutige Wörter, Unterschied zur deutschen Buchstabiertafel DIN 5009"
+    format: flashcards
+    priority: 3
+  - id: aw-herz
+    topic: allgemeinwissen/koerper
+    hint: "Das Herz: Hohlmuskel mit vier Kammern, schlägt ca. 100.000-mal am Tag, Sinusknoten als Taktgeber, Lungen- und Körperkreislauf"
+    format: facts_quiz
+    priority: 3
+  - id: aw-blutgruppen
+    topic: allgemeinwissen/koerper
+    hint: "Blutgruppen: AB0-System von Karl Landsteiner 1901 (Nobelpreis 1930), Rhesusfaktor, 0 negativ als Universalspender, AB positiv als Universalempfänger"
+    format: facts_quiz
+    priority: 3
+  - id: aw-knochen
+    topic: allgemeinwissen/koerper
+    hint: "Skelett: Erwachsene ca. 206 Knochen, Babys mehr (verwachsen), kleinster Knochen Steigbügel im Ohr, größter Oberschenkelknochen, Knochen als lebendes Gewebe"
+    format: facts_quiz
+    priority: 3
+  - id: aw-darm-mikrobiom
+    topic: allgemeinwissen/koerper
+    hint: "Darm und Mikrobiom: Billionen Bakterien, Bakterien- und Körperzellen etwa gleich viele (Sender et al. 2016), Darmnervensystem als Bauchhirn"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gehirn
+    topic: allgemeinwissen/koerper
+    hint: "Gehirn: ca. 86 Mrd. Nervenzellen, ca. 2 % des Körpergewichts aber ca. 20 % des Energieverbrauchs, Großhirnhälften, Plastizität"
+    format: facts_quiz
+    priority: 3
+  - id: aw-haut
+    topic: allgemeinwissen/koerper
+    hint: "Haut: größtes Organ, ca. 1,5 bis 2 m², Oberhaut erneuert sich etwa monatlich, Melanin, Schweißdrüsen zur Kühlung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sinne-mehr-als-fuenf
+    topic: allgemeinwissen/koerper
+    hint: "Mehr als fünf Sinne: Gleichgewichtssinn, Propriozeption, Temperatur- und Schmerzsinn, Interozeption, Aristoteles und die klassischen fünf"
+    format: facts_quiz
+    priority: 3
+  - id: aw-geschmack
+    topic: allgemeinwissen/koerper
+    hint: "Geschmackssinn: süß, sauer, salzig, bitter, umami (Kikunae Ikeda 1908), Mythos Zungenkarte, Großteil des Geschmacks kommt über die Nase"
+    format: facts_quiz
+    priority: 3
+  - id: aw-immunsystem
+    topic: allgemeinwissen/koerper
+    hint: "Immunsystem: angeborene und erworbene Abwehr, Fresszellen, B- und T-Zellen, Antikörper, Gedächtniszellen als Prinzip hinter Impfungen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-muskeln
+    topic: allgemeinwissen/koerper
+    hint: "Muskelarten und Rekorde: Skelett-, Herz- und glatte Muskulatur, größter Muskel Gesäß, kleinster Steigbügelmuskel, Kaumuskel als kräftigster relativ zur Größe"
+    format: flashcards
+    priority: 3
+  - id: aw-gaehnen
+    topic: allgemeinwissen/koerper
+    hint: "Gähnen: ansteckend auch zwischen Mensch und Hund, Hypothese der Gehirnkühlung, Gähnen schon im Mutterleib"
+    format: single_fact
+    priority: 3
+  - id: aw-augen
+    topic: allgemeinwissen/koerper
+    hint: "Das Auge: Stäbchen und Zapfen, blinder Fleck, Bild steht auf der Netzhaut kopf, Gehirn dreht es, Lidschlag ca. 15-20 Mal pro Minute"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fingerabdruck
+    topic: allgemeinwissen/koerper
+    hint: "Fingerabdrücke: entstehen im Mutterleib, selbst eineiige Zwillinge unterschiedlich, Francis Galton, Koalas haben ähnliche Papillarleisten"
+    format: single_fact
+    priority: 3
+  - id: aw-notensystem
+    topic: allgemeinwissen/musik
+    hint: "Notenschrift: Guido von Arezzo um 1025, Solmisation ut-re-mi aus Johannes-Hymnus, Notenlinien, Kammerton a' 440 Hz"
+    format: facts_quiz
+    priority: 3
+  - id: aw-orchester
+    topic: allgemeinwissen/musik
+    hint: "Instrumentengruppen im Orchester: Streicher, Holzbläser, Blechbläser, Schlagwerk, Tasteninstrumente – Beispiele und Sitzordnung, Oboe gibt den Stimmton"
+    format: flashcards
+    priority: 3
+  - id: aw-dur-moll
+    topic: allgemeinwissen/musik
+    hint: "Dur und Moll: große vs. kleine Terz, Tonleiter mit Ganz- und Halbtonschritten, Quintenzirkel, Wirkung fröhlich vs. traurig als kulturelle Prägung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-mozart
+    topic: allgemeinwissen/musik
+    hint: "Wolfgang Amadeus Mozart: Salzburg 1756 bis Wien 1791, Wunderkind-Reisen, über 600 Werke, Köchelverzeichnis, Zauberflöte, Requiem unvollendet"
+    format: facts_quiz
+    priority: 3
+  - id: aw-bach
+    topic: allgemeinwissen/musik
+    hint: "Johann Sebastian Bach: Eisenach 1685, Thomaskantor in Leipzig, Brandenburgische Konzerte, Wohltemperiertes Klavier, Wiederentdeckung durch Mendelssohn 1829"
+    format: facts_quiz
+    priority: 3
+  - id: aw-jazz
+    topic: allgemeinwissen/musik
+    hint: "Jazz: Ursprung New Orleans um 1900, Blues und Ragtime als Wurzeln, Improvisation, Louis Armstrong, Swing, Bebop mit Charlie Parker"
+    format: facts_quiz
+    priority: 3
+  - id: aw-rock-n-roll
+    topic: allgemeinwissen/musik
+    hint: "Rock n Roll: Wurzeln in Rhythm and Blues und Country, Chuck Berry, Elvis Presley, Begriff durch DJ Alan Freed, 1950er Jahre"
+    format: facts_quiz
+    priority: 3
+  - id: aw-klavier
+    topic: allgemeinwissen/musik
+    hint: "Klavier: Bartolomeo Cristofori um 1700, Name Pianoforte weil leise und laut spielbar, Hammermechanik, 88 Tasten"
+    format: single_fact
+    priority: 3
+  - id: aw-the-beatles
+    topic: allgemeinwissen/musik
+    hint: "The Beatles: Liverpool, Lennon, McCartney, Harrison, Starr, Hamburger Jahre ab 1960, Sgt. Peppers 1967, Trennung 1970"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ohrwuermer
+    topic: allgemeinwissen/musik
+    hint: "Ohrwürmer: Involuntary Musical Imagery, Forschung von Kelly Jakubowski, typische Merkmale eingängiger Melodien, Kaugummi kauen hilft"
+    format: single_fact
+    priority: 3
+  - id: aw-tempo-bezeichnungen
+    topic: allgemeinwissen/musik
+    hint: "Italienische Musikbegriffe: Largo, Andante, Allegro, Presto, Forte und Piano, Crescendo – Bedeutung, Metronom von Mälzel"
+    format: flashcards
+    priority: 3
+  - id: aw-mona-lisa
+    topic: allgemeinwissen/kunst
+    hint: "Mona Lisa: Leonardo da Vinci ab ca. 1503, Lisa Gherardini, Sfumato-Technik, Diebstahl 1911 durch Vincenzo Peruggia machte sie weltberühmt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-van-gogh
+    topic: allgemeinwissen/kunst
+    hint: "Vincent van Gogh: rund 900 Gemälde in ca. 10 Jahren, zu Lebzeiten kaum verkauft, Sternennacht 1889, Briefe an Bruder Theo"
+    format: facts_quiz
+    priority: 3
+  - id: aw-michelangelo
+    topic: allgemeinwissen/kunst
+    hint: "Michelangelo: David 1501-1504, Decke der Sixtinischen Kapelle 1508-1512, Erschaffung Adams, Kuppel des Petersdoms"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kunststile
+    topic: allgemeinwissen/kunst
+    hint: "Kunstepochen kurz: Gotik, Renaissance, Barock, Romantik, Expressionismus – Zeitraum, Merkmal, ein typischer Künstler"
+    format: flashcards
+    priority: 3
+  - id: aw-perspektive
+    topic: allgemeinwissen/kunst
+    hint: "Zentralperspektive: Filippo Brunelleschi um 1415 mit Spiegelexperiment, Leon Battista Alberti, Fluchtpunkt, Masaccios Dreifaltigkeit"
+    format: single_fact
+    priority: 3
+  - id: aw-farbpigmente
+    topic: allgemeinwissen/kunst
+    hint: "Geschichte der Farbpigmente: Ultramarin aus Lapislazuli teurer als Gold, Ägyptisch Blau, Purpur aus Schnecken, Preußischblau 1706 Berlin"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kubismus-picasso
+    topic: allgemeinwissen/kunst
+    hint: "Picasso und Kubismus: Les Demoiselles dAvignon 1907, Georges Braque, mehrere Ansichten gleichzeitig, Guernica 1937"
+    format: facts_quiz
+    priority: 3
+  - id: aw-duerer
+    topic: allgemeinwissen/kunst
+    hint: "Albrecht Dürer: Nürnberg 1471-1528, Selbstbildnis im Pelzrock, Feldhase, Rhinocerus-Holzschnitt ohne das Tier je gesehen zu haben, Monogramm AD"
+    format: facts_quiz
+    priority: 3
+  - id: aw-pop-art
+    topic: allgemeinwissen/kunst
+    hint: "Pop Art: Andy Warhol Campbells Soup Cans 1962, Roy Lichtenstein, Comics und Konsum als Motive, Fifteen minutes of fame"
+    format: single_fact
+    priority: 3
+  - id: aw-hoehlenmalerei
+    topic: allgemeinwissen/kunst
+    hint: "Höhlenmalerei: Chauvet (ca. 36.000 Jahre), Lascaux (1940 von Jugendlichen entdeckt), Altamira, Venus vom Hohle Fels als älteste Menschenfigur"
+    format: facts_quiz
+    priority: 3
+  - id: aw-homer-epen
+    topic: allgemeinwissen/literatur
+    hint: "Homer: Ilias (Trojanischer Krieg, Zorn des Achill) und Odyssee (Irrfahrt des Odysseus), Hexameter, mündliche Tradition, Trojanisches Pferd"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kafka
+    topic: allgemeinwissen/literatur
+    hint: "Franz Kafka: Prag 1883-1924, Die Verwandlung, Der Process, Max Brod veröffentlichte gegen Kafkas Wunsch, Adjektiv kafkaesk"
+    format: facts_quiz
+    priority: 3
+  - id: aw-don-quijote
+    topic: allgemeinwissen/literatur
+    hint: "Don Quijote: Miguel de Cervantes 1605/1615, oft als erster moderner Roman bezeichnet, Kampf gegen Windmühlen, Sancho Panza"
+    format: facts_quiz
+    priority: 3
+  - id: aw-faust
+    topic: allgemeinwissen/literatur
+    hint: "Goethes Faust: historischer Johann Georg Faust, Pakt mit Mephisto, Gretchenfrage, Faust II erst nach Goethes Tod 1832 veröffentlicht"
+    format: facts_quiz
+    priority: 3
+  - id: aw-literaturnobelpreis-deutsch
+    topic: allgemeinwissen/literatur
+    hint: "Deutschsprachige Literaturnobelpreisträger: Theodor Mommsen 1902, Thomas Mann 1929, Hermann Hesse 1946, Heinrich Böll 1972, Günter Grass 1999 – je ein Hauptwerk"
+    format: flashcards
+    priority: 3
+  - id: aw-orwell-1984
+    topic: allgemeinwissen/literatur
+    hint: "George Orwell: 1984 (erschienen 1949), Big Brother, Neusprech, Doppeldenk, Farm der Tiere 1945, eigentlicher Name Eric Arthur Blair"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tausendundeine-nacht
+    topic: allgemeinwissen/literatur
+    hint: "Tausendundeine Nacht: Rahmenerzählung um Scheherazade, Aladin und Ali Baba erst von Antoine Galland im 18. Jh. hinzugefügt"
+    format: single_fact
+    priority: 3
+  - id: aw-gattungen
+    topic: allgemeinwissen/literatur
+    hint: "Literarische Gattungen und Formen: Epik, Lyrik, Dramatik, Novelle, Sonett – Definition und Beispiel"
+    format: flashcards
+    priority: 3
+  - id: aw-sherlock-holmes
+    topic: allgemeinwissen/literatur
+    hint: "Sherlock Holmes: Arthur Conan Doyle, erster Auftritt 1887 in Eine Studie in Scharlachrot, Baker Street 221b, Vorbild Joseph Bell, Reichenbachfall"
+    format: facts_quiz
+    priority: 3
+  - id: aw-frankenstein
+    topic: allgemeinwissen/literatur
+    hint: "Frankenstein: Mary Shelley, entstanden 1816 am Genfersee (Jahr ohne Sommer), erschienen 1818, Frankenstein ist der Schöpfer nicht das Monster"
+    format: facts_quiz
+    priority: 3
+  - id: aw-buecher-meistuebersetzt
+    topic: allgemeinwissen/literatur
+    hint: "Der kleine Prinz: Antoine de Saint-Exupéry 1943, eines der meistübersetzten Bücher nach der Bibel, Fuchs und Rose, Man sieht nur mit dem Herzen gut"
+    format: single_fact
+    priority: 3
+  - id: aw-tolkien
+    topic: allgemeinwissen/literatur
+    hint: "J. R. R. Tolkien: Oxford-Philologe, Der Hobbit 1937, Herr der Ringe 1954/55, erfundene Elbensprachen Quenya und Sindarin"
+    format: facts_quiz
+    priority: 3
+  - id: aw-marathon
+    topic: allgemeinwissen/sport
+    hint: "Marathon: Legende von Pheidippides, Distanz 42,195 km festgelegt nach London 1908, Kipchoges Sub-2-Stunden-Lauf 2019 inoffiziell"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tour-de-france
+    topic: allgemeinwissen/sport
+    hint: "Tour de France: erstmals 1903, Zeitung LAuto als Initiator, Trikotfarben gelb (Zeitungspapier), grün, gepunktet, ca. 3.500 km in drei Wochen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tennis-zaehlweise
+    topic: allgemeinwissen/sport
+    hint: "Tennis-Zählweise 15, 30, 40: Theorien um Uhrzifferblatt und jeu de paume, love von loeuf als Theorie, Wimbledon seit 1877"
+    format: single_fact
+    priority: 3
+  - id: aw-schach
+    topic: allgemeinwissen/sport
+    hint: "Schach: Ursprung Chaturanga in Indien, Schachmatt von persisch Schah mat, Deep Blue schlägt Kasparow 1997, mehr mögliche Partien als Atome im Universum (Shannon-Zahl)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-fussball-regeln-geschichte
+    topic: allgemeinwissen/sport
+    hint: "Fußball-Ursprung: Football Association 1863 in London, Abseitsregel, Elfmeter 1891, Konrad Koch bringt Fußball nach Deutschland 1874"
+    format: facts_quiz
+    priority: 3
+  - id: aw-paralympics
+    topic: allgemeinwissen/sport
+    hint: "Paralympics: Ludwig Guttmann und Stoke Mandeville Games 1948, erste Paralympics Rom 1960, Name para wie parallel"
+    format: facts_quiz
+    priority: 3
+  - id: aw-basketball
+    topic: allgemeinwissen/sport
+    hint: "Basketball: James Naismith 1891 in Springfield, Pfirsichkörbe, 13 Originalregeln, olympisch seit 1936"
+    format: single_fact
+    priority: 3
+  - id: aw-sportbegriffe
+    topic: allgemeinwissen/sport
+    hint: "Sportbegriffe erklärt: Hattrick, Photo-Finish, Doping, Ass (Tennis), K.-o.-System – Herkunft und Bedeutung"
+    format: flashcards
+    priority: 3
+  - id: aw-ski-geschichte
+    topic: allgemeinwissen/sport
+    hint: "Skifahren: Felszeichnungen in Norwegen, Telemark und Sondre Norheim, Mathias Zdarsky und Alpinski, erste Olympische Winterspiele Chamonix 1924"
+    format: facts_quiz
+    priority: 3
+  - id: aw-golf
+    topic: allgemeinwissen/sport
+    hint: "Golf: Schottland als Ursprung, St Andrews, 18 Löcher seit 1764, Alan Shepard schlug 1971 Golfbälle auf dem Mond"
+    format: single_fact
+    priority: 3
+  - id: aw-grundgesetz
+    topic: allgemeinwissen/recht-politik
+    hint: "Grundgesetz: 23. Mai 1949, Parlamentarischer Rat in Bonn, Artikel 1 Menschenwürde, Ewigkeitsklausel Art. 79 Abs. 3, Name wegen Provisorium"
+    format: facts_quiz
+    priority: 3
+  - id: aw-bundestag-bundesrat
+    topic: allgemeinwissen/recht-politik
+    hint: "Bundestag vs. Bundesrat: Volksvertretung vs. Länderkammer, Gesetzgebungsverfahren, Einspruchs- und Zustimmungsgesetze, Vermittlungsausschuss"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gewaltenteilung
+    topic: allgemeinwissen/recht-politik
+    hint: "Gewaltenteilung: Legislative, Exekutive, Judikative, Montesquieu Vom Geist der Gesetze 1748, John Locke, Checks and Balances"
+    format: facts_quiz
+    priority: 3
+  - id: aw-vereinte-nationen
+    topic: allgemeinwissen/recht-politik
+    hint: "Vereinte Nationen: Gründung 1945 in San Francisco, 193 Mitgliedstaaten, Sicherheitsrat mit fünf Vetomächten, Generalversammlung, Sitz New York"
+    format: facts_quiz
+    priority: 3
+  - id: aw-wahlsystem-deutschland
+    topic: allgemeinwissen/recht-politik
+    hint: "Bundestagswahl: Erst- und Zweitstimme, Verhältniswahl, Fünf-Prozent-Hürde, Wahlrechtsgrundsätze allgemein, unmittelbar, frei, gleich, geheim"
+    format: facts_quiz
+    priority: 3
+  - id: aw-bundespraesident
+    topic: allgemeinwissen/recht-politik
+    hint: "Bundespräsident: Wahl durch Bundesversammlung, Amtszeit fünf Jahre, einmalige Wiederwahl, Unterzeichnung von Gesetzen, überwiegend repräsentativ"
+    format: facts_quiz
+    priority: 3
+  - id: aw-bundesverfassungsgericht
+    topic: allgemeinwissen/recht-politik
+    hint: "Bundesverfassungsgericht: Sitz Karlsruhe seit 1951, zwei Senate mit je acht Richtern, Amtszeit zwölf Jahre, Verfassungsbeschwerde durch jeden Bürger"
+    format: facts_quiz
+    priority: 3
+  - id: aw-menschenrechte
+    topic: allgemeinwissen/recht-politik
+    hint: "Allgemeine Erklärung der Menschenrechte: 10. Dezember 1948, Eleanor Roosevelt, 30 Artikel, Tag der Menschenrechte, meistübersetztes Dokument"
+    format: facts_quiz
+    priority: 3
+  - id: aw-demokratie-athen
+    topic: allgemeinwissen/recht-politik
+    hint: "Attische Demokratie: Kleisthenes 508/507 v. Chr., Volksversammlung, Losverfahren, Scherbengericht (Ostrakismos), Frauen und Sklaven ausgeschlossen"
+    format: single_fact
+    priority: 3
+  - id: aw-magna-carta
+    topic: allgemeinwissen/recht-politik
+    hint: "Magna Carta 1215: König Johann Ohneland und die Barone, Runnymede, Grundsatz König steht nicht über dem Gesetz, Habeas-Corpus-Gedanke"
+    format: single_fact
+    priority: 3
+  - id: aw-rechtsbegriffe
+    topic: allgemeinwissen/recht-politik
+    hint: "Rechtsbegriffe: Zivilrecht vs. Strafrecht, Unschuldsvermutung, Rechtsstaat, Föderalismus, Subsidiarität – kurze Definitionen"
+    format: flashcards
+    priority: 3
+  - id: aw-europarat-vs-eu
+    topic: allgemeinwissen/recht-politik
+    hint: "Verwechslungsgefahr: Europarat (Straßburg, 1949, Menschenrechtskonvention) vs. Europäischer Rat vs. Rat der EU, Europäischer Gerichtshof für Menschenrechte vs. EuGH"
+    format: facts_quiz
+    priority: 3
+  - id: aw-sokrates
+    topic: allgemeinwissen/philosophie
+    hint: "Sokrates: schrieb nichts selbst, bekannt durch Platon, sokratische Methode, Ich weiß, dass ich nichts weiß, Schierlingsbecher 399 v. Chr."
+    format: facts_quiz
+    priority: 3
+  - id: aw-platon-hoehlengleichnis
+    topic: allgemeinwissen/philosophie
+    hint: "Platons Höhlengleichnis: Schatten an der Wand, Ideenlehre, Politeia Buch VII, Akademie in Athen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kant-imperativ
+    topic: allgemeinwissen/philosophie
+    hint: "Immanuel Kant: Königsberg, Kritik der reinen Vernunft 1781, kategorischer Imperativ, Was ist Aufklärung 1784 mit Sapere aude"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ockhams-rasiermesser
+    topic: allgemeinwissen/philosophie
+    hint: "Ockhams Rasiermesser: Wilhelm von Ockham, Sparsamkeitsprinzip, einfachere Erklärung bevorzugen, Anwendung in der Wissenschaft"
+    format: single_fact
+    priority: 3
+  - id: aw-stoa
+    topic: allgemeinwissen/philosophie
+    hint: "Stoizismus: Zenon von Kition, Säulenhalle Stoa poikile, Seneca, Epiktet, Mark Aurel, Unterscheidung was in unserer Macht steht"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gedankenexperimente
+    topic: allgemeinwissen/philosophie
+    hint: "Berühmte Gedankenexperimente: Trolley-Problem, Schiff des Theseus, Schrödingers Katze, Gehirn im Tank, Chinesisches Zimmer – Kernfrage"
+    format: flashcards
+    priority: 3
+  - id: aw-descartes
+    topic: allgemeinwissen/philosophie
+    hint: "René Descartes: Cogito ergo sum, methodischer Zweifel, Leib-Seele-Dualismus, kartesisches Koordinatensystem, Tod in Stockholm 1650"
+    format: facts_quiz
+    priority: 3
+  - id: aw-utilitarismus
+    topic: allgemeinwissen/philosophie
+    hint: "Utilitarismus: Jeremy Bentham, John Stuart Mill, größtes Glück der größten Zahl, Kritik an Verrechnung, Gegensatz zur Pflichtethik"
+    format: facts_quiz
+    priority: 3
+  - id: aw-konfuzius
+    topic: allgemeinwissen/philosophie
+    hint: "Konfuzius: ca. 551-479 v. Chr., Gespräche (Lunyu), Goldene Regel in negativer Form, Ehrfurcht vor Eltern, Einfluss auf Ostasien"
+    format: facts_quiz
+    priority: 3
+  - id: aw-existenzialismus
+    topic: allgemeinwissen/philosophie
+    hint: "Existenzialismus: Sartre Die Existenz geht der Essenz voraus, Simone de Beauvoir, Camus und der Mythos des Sisyphos"
+    format: single_fact
+    priority: 3
+  - id: aw-dunning-kruger
+    topic: allgemeinwissen/psychologie
+    hint: "Dunning-Kruger-Effekt: Studie 1999 Cornell, Inkompetente überschätzen sich, Kritik und statistische Debatte, Ursprung Bankräuber mit Zitronensaft"
+    format: facts_quiz
+    priority: 3
+  - id: aw-bestaetigungsfehler
+    topic: allgemeinwissen/psychologie
+    hint: "Bestätigungsfehler (Confirmation Bias): Peter Wason 2-4-6-Aufgabe 1960, Informationen selektiv suchen und deuten, Gegenstrategien"
+    format: facts_quiz
+    priority: 3
+  - id: aw-ankereffekt
+    topic: allgemeinwissen/psychologie
+    hint: "Ankereffekt: Tversky und Kahneman 1974, Glücksrad-Experiment mit UN-Afrika-Frage, Wirkung bei Verhandlungen und Schätzungen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kognitive-verzerrungen
+    topic: allgemeinwissen/psychologie
+    hint: "Denkfehler: Verfügbarkeitsheuristik, Sunk-Cost-Fallacy, Halo-Effekt, Rückschaufehler, Spieler-Fehlschluss – Definition und Beispiel"
+    format: flashcards
+    priority: 3
+  - id: aw-marshmallow-test
+    topic: allgemeinwissen/psychologie
+    hint: "Marshmallow-Test: Walter Mischel Stanford Ende der 1960er, Belohnungsaufschub, Replikation 2018 (Watts et al.) mit schwächeren Zusammenhängen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-milgram
+    topic: allgemeinwissen/psychologie
+    hint: "Milgram-Experiment 1961 Yale: Gehorsam gegenüber Autorität, vermeintliche Stromstöße bis 450 Volt, ca. 65 % gingen bis zum Ende, Ethikdebatte"
+    format: facts_quiz
+    priority: 3
+  - id: aw-asch-konformitaet
+    topic: allgemeinwissen/psychologie
+    hint: "Asch-Konformitätsexperiment 1951: Linienlängen schätzen, Gruppe von Eingeweihten, viele schlossen sich offensichtlich falscher Mehrheit an"
+    format: single_fact
+    priority: 3
+  - id: aw-placebo-effekt
+    topic: allgemeinwissen/psychologie
+    hint: "Placebo und Nocebo: Wirkung durch Erwartung, Doppelblindstudien, offene Placebos, Henry Beecher 1955, Nocebo-Nebenwirkungen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gedaechtnis-vergessen
+    topic: allgemeinwissen/psychologie
+    hint: "Vergessenskurve: Hermann Ebbinghaus 1885 mit sinnlosen Silben, Großteil wird schnell vergessen, verteiltes Wiederholen (Spacing-Effekt)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-flow
+    topic: allgemeinwissen/psychologie
+    hint: "Flow: Mihaly Csikszentmihalyi, Gleichgewicht von Anforderung und Fähigkeit, Zeitgefühl verschwindet, klare Ziele und direktes Feedback"
+    format: single_fact
+    priority: 3
+  - id: aw-pawlow-konditionierung
+    topic: allgemeinwissen/psychologie
+    hint: "Klassische und operante Konditionierung: Iwan Pawlow und Hunde (Nobelpreis 1904 eigentlich für Verdauung), B. F. Skinner, Verstärkung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-zeigarnik-effekt
+    topic: allgemeinwissen/psychologie
+    hint: "Zeigarnik-Effekt: Bljuma Zeigarnik 1927 bei Kurt Lewin, Kellner merken sich offene Bestellungen besser, unerledigte Aufgaben bleiben präsent"
+    format: single_fact
+    priority: 3
+  - id: aw-gesichter-erkennen
+    topic: allgemeinwissen/psychologie
+    hint: "Pareidolie und Gesichtererkennung: Gesichter in Steckdosen und Wolken, Fusiformes Gesichtsareal, Gesichtsblindheit (Prosopagnosie)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-maillard-reaktion
+    topic: allgemeinwissen/essen-trinken
+    hint: "Maillard-Reaktion: Louis-Camille Maillard 1912, Zucker und Aminosäuren ab ca. 140 °C, Bräunung von Brotkruste und Steak, Unterschied zur Karamellisierung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-kartoffel
+    topic: allgemeinwissen/essen-trinken
+    hint: "Kartoffel: Herkunft Anden, nach Europa im 16. Jh., Friedrich II. und Kartoffelbefehl 1756, Irische Hungersnot ab 1845 durch Kraut- und Knollenfäule"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tomate
+    topic: allgemeinwissen/essen-trinken
+    hint: "Tomate: aus Südamerika, in Europa lange als Zierpflanze, Name von Nahuatl tomatl, botanisch eine Beere, US Supreme Court Nix v. Hedden 1893 als Gemüse"
+    format: single_fact
+    priority: 3
+  - id: aw-tee
+    topic: allgemeinwissen/essen-trinken
+    hint: "Tee: grüner, schwarzer und weißer Tee aus derselben Pflanze Camellia sinensis, Unterschied Oxidation, Ursprung China, Wörter Tee und Chai"
+    format: facts_quiz
+    priority: 3
+  - id: aw-gewuerze
+    topic: allgemeinwissen/essen-trinken
+    hint: "Gewürze und ihre Pflanzenteile: Zimt (Rinde), Pfeffer (Frucht), Nelke (Blütenknospe), Safran (Blütennarbe), Ingwer (Wurzelstock), Vanille (Schote einer Orchidee)"
+    format: flashcards
+    priority: 3
+  - id: aw-chili-schaerfe
+    topic: allgemeinwissen/essen-trinken
+    hint: "Chili-Schärfe: Capsaicin, Scoville-Skala von Wilbur Scoville 1912, kein Geschmack sondern Schmerzreiz, Milch hilft dank Casein, Vögel spüren keine Schärfe"
+    format: facts_quiz
+    priority: 3
+  - id: aw-honig
+    topic: allgemeinwissen/essen-trinken
+    hint: "Honig: aus Nektar durch Enzyme und Wasserentzug, praktisch unbegrenzt haltbar, essbarer Honig in ägyptischen Gräbern (umstritten), Kristallisation normal"
+    format: facts_quiz
+    priority: 3
+  - id: aw-pizza
+    topic: allgemeinwissen/essen-trinken
+    hint: "Pizza Margherita: Legende Neapel 1889, Raffaele Esposito und Königin Margherita, Farben der Trikolore, neapolitanische Pizzakunst UNESCO-Kulturerbe 2017"
+    format: single_fact
+    priority: 3
+  - id: aw-reinheitsgebot
+    topic: allgemeinwissen/essen-trinken
+    hint: "Bayerisches Reinheitsgebot 1516 in Ingolstadt: ursprünglich Gerste, Hopfen, Wasser, Hefe noch unbekannt, Hintergrund Weizen fürs Brot"
+    format: facts_quiz
+    priority: 3
+  - id: aw-umami-glutamat
+    topic: allgemeinwissen/essen-trinken
+    hint: "Glutamat und Umami: Kikunae Ikeda isoliert 1908 aus Kombu-Alge, natürlich in Parmesan und Tomaten, Ajinomoto"
+    format: single_fact
+    priority: 3
+  - id: aw-kaese
+    topic: allgemeinwissen/essen-trinken
+    hint: "Käseherstellung: Lab aus Kälbermagen, Gerinnung von Casein, Löcher im Emmentaler durch Propionsäurebakterien, Edelschimmel bei Roquefort"
+    format: facts_quiz
+    priority: 3
+  - id: aw-zucker-geschichte
+    topic: allgemeinwissen/essen-trinken
+    hint: "Zucker: Zuckerrohr aus Neuguinea/Indien, Andreas Sigismund Marggraf entdeckt 1747 Zucker in Rüben, erste Rübenzuckerfabrik 1801 in Schlesien (Achard)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-brot-sauerteig
+    topic: allgemeinwissen/essen-trinken
+    hint: "Sauerteig: Milchsäurebakterien und wilde Hefen, ältestes Triebmittel, Säure macht Roggenbrot backfähig, Teig als Lebenskultur"
+    format: single_fact
+    priority: 3
+  - id: aw-wein-grundlagen
+    topic: allgemeinwissen/essen-trinken
+    hint: "Weinbasics: Rotwein-Farbe aus der Schale, Weißwein auch aus roten Trauben möglich, Reblaus-Katastrophe im 19. Jh., Veredelung auf amerikanischen Unterlagen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-oetzi
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Gletschermumie vom Tisenjoch: Fund 1991, Alter ca. 5.300 Jahre, Kupferbeil, Pfeilspitze in der Schulter, heute im Südtiroler Archäologiemuseum Bozen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-goebekli-tepe
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Steinzeitliche Anlage in der Südosttürkei ab ca. 9600 v. Chr., Ausgrabung ab 1995 unter Klaus Schmidt, T-förmige Pfeiler mit Tierreliefs, UNESCO-Welterbe 2018"
+    format: facts_quiz
+    priority: 3
+  - id: ge-neolithische-revolution
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Übergang zu Ackerbau und Viehzucht ab ca. 10.000 v. Chr. im Fruchtbaren Halbmond, erste Kulturpflanzen Emmer und Einkorn, Begriff von Vere Gordon Childe"
+    format: facts_quiz
+    priority: 3
+  - id: ge-himmelsscheibe-nebra
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Bronzezeitliche Scheibe vom Mittelberg, Raubgrabung 1999, Sicherstellung 2002 in Basel, Datierung um 1600 v. Chr., Landesmuseum Halle, UNESCO-Weltdokumentenerbe 2013"
+    format: facts_quiz
+    priority: 3
+  - id: ge-stonehenge
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Bauphasen ca. 3000 bis 1500 v. Chr., Blausteine aus den Preseli Hills in Wales, Ausrichtung auf Sonnenwenden, UNESCO-Welterbe seit 1986"
+    format: facts_quiz
+    priority: 3
+  - id: ge-hoehlenmalerei
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Altamira entdeckt 1879, Lascaux 1940 von Jugendlichen gefunden, Chauvet 1994 mit Malereien von über 30.000 Jahren, Motive und Techniken"
+    format: facts_quiz
+    priority: 3
+  - id: ge-loewenmensch
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Elfenbeinfigur aus dem Hohlenstein-Stadel auf der Schwäbischen Alb, ca. 40.000 Jahre alt, Fund 1939, Höhlen der ältesten Eiszeitkunst seit 2017 UNESCO-Welterbe"
+    format: single_fact
+    priority: 3
+  - id: ge-bronzezeit
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Legierung aus Kupfer und Zinn, Beginn in Vorderasien um 3300 v. Chr., in Mitteleuropa ab ca. 2200 v. Chr., Fernhandel mit Zinn, Dreiperiodensystem von Christian Jürgensen Thomsen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kelten
+    topic: geschichte/ur-und-fruehgeschichte
+    hint: "Hallstatt- und La-Tène-Kultur, Fürstensitz Heuneburg, Oppidum Manching, Keltenfürst von Hochdorf, Eroberung Galliens durch Rom 58 bis 50 v. Chr."
+    format: facts_quiz
+    priority: 3
+  - id: ge-hammurabi
+    topic: geschichte/antike
+    hint: "Babylonischer König um 1792 bis 1750 v. Chr., Gesetzesstele mit 282 Paragraphen, Fund 1901/02 in Susa, heute im Louvre, Prinzip Auge um Auge"
+    format: facts_quiz
+    priority: 3
+  - id: ge-keilschrift
+    topic: geschichte/antike
+    hint: "Entstehung in Uruk um 3300 v. Chr., Tontafeln und Griffel, Gilgamesch-Epos, Entzifferung durch Georg Friedrich Grotefend 1802 und Henry Rawlinson, Behistun-Inschrift"
+    format: facts_quiz
+    priority: 3
+  - id: ge-punische-kriege
+    topic: geschichte/antike
+    hint: "Rom gegen Karthago 264 bis 146 v. Chr., Hannibal überquert 218 v. Chr. die Alpen, Schlacht bei Cannae 216, Zama 202, Zerstörung Karthagos 146 v. Chr."
+    format: facts_quiz
+    priority: 3
+  - id: ge-perserkriege
+    topic: geschichte/antike
+    hint: "Marathon 490 v. Chr., Thermopylen und Salamis 480, Plataiai 479, Dareios I. und Xerxes, Themistokles, Herodot als Quelle"
+    format: facts_quiz
+    priority: 3
+  - id: ge-perserreich-achaemeniden
+    topic: geschichte/antike
+    hint: "Kyros II. erobert Babylon 539 v. Chr., Kyros-Zylinder, Satrapien, Königsstraße, Persepolis, Ende durch Alexander 330 v. Chr."
+    format: facts_quiz
+    priority: 3
+  - id: ge-maurya-ashoka
+    topic: geschichte/antike
+    hint: "Maurya-Reich ab ca. 322 v. Chr. unter Chandragupta, Ashoka nach Kalinga-Krieg um 261 v. Chr. Förderer des Buddhismus, Felsen- und Säulenedikte, Löwenkapitell als Staatswappen Indiens"
+    format: facts_quiz
+    priority: 3
+  - id: ge-han-dynastie
+    topic: geschichte/antike
+    hint: "Han-Dynastie 206 v. Chr. bis 220 n. Chr., Liu Bang, Konfuzianismus als Staatslehre, Erfindung des Papiers mit Cai Lun um 105 n. Chr., Zhang Qian als Gesandter nach Westen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-aksum
+    topic: geschichte/antike
+    hint: "Königreich Aksum im heutigen Äthiopien und Eritrea ca. 1. bis 7. Jahrhundert, Stelen, eigene Münzen, Christianisierung unter König Ezana im 4. Jahrhundert, Geʽez-Schrift"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kusch-meroe
+    topic: geschichte/antike
+    hint: "Nubisches Reich Kusch, 25. Dynastie der schwarzen Pharaonen ab ca. 747 v. Chr., Pyramiden von Meroe, Eisenverhüttung, meroitische Schrift bis heute nicht übersetzt"
+    format: facts_quiz
+    priority: 3
+  - id: ge-olmeken
+    topic: geschichte/antike
+    hint: "Frühe mesoamerikanische Kultur ca. 1200 bis 400 v. Chr. am Golf von Mexiko, Kolossalköpfe aus Basalt, San Lorenzo und La Venta, Einfluss auf Maya"
+    format: facts_quiz
+    priority: 3
+  - id: ge-maya-klassik
+    topic: geschichte/antike
+    hint: "Klassische Maya-Zeit ca. 250 bis 900 n. Chr., Tikal, Palenque, König Pakal, Langzeitrechnung, Glyphenschrift und Entzifferung durch Juri Knorosow"
+    format: facts_quiz
+    priority: 3
+  - id: ge-teotihuacan
+    topic: geschichte/antike
+    hint: "Metropole im Hochtal von Mexiko mit bis zu 100.000 Einwohnern um 450 n. Chr., Sonnen- und Mondpyramide, Straße der Toten, Name später von Azteken vergeben"
+    format: facts_quiz
+    priority: 3
+  - id: ge-minoer
+    topic: geschichte/antike
+    hint: "Minoische Kultur auf Kreta ca. 3000 bis 1450 v. Chr., Palast von Knossos, Ausgrabung Arthur Evans ab 1900, Linear A unentziffert, Vulkanausbruch von Thera"
+    format: facts_quiz
+    priority: 3
+  - id: ge-konstantin
+    topic: geschichte/antike
+    hint: "Konstantin der Große, Schlacht an der Milvischen Brücke 312, Mailänder Vereinbarung 313, Konzil von Nicäa 325, Gründung Konstantinopels 330"
+    format: facts_quiz
+    priority: 3
+  - id: ge-antike-daten
+    topic: geschichte/antike
+    hint: "Fünf Schlüsseldaten der Antike: 776 v. Chr. erste Olympiade, 753 v. Chr. sagenhafte Gründung Roms, 509 v. Chr. Republik, 44 v. Chr. Caesars Tod, 476 Absetzung des Romulus Augustulus"
+    format: flashcards
+    priority: 3
+  - id: ge-otto-der-grosse
+    topic: geschichte/mittelalter
+    hint: "Otto I., Krönung in Aachen 936, Schlacht auf dem Lechfeld 955, Kaiserkrönung in Rom 962, Reichskirchensystem, Grab im Magdeburger Dom"
+    format: facts_quiz
+    priority: 3
+  - id: ge-investiturstreit
+    topic: geschichte/mittelalter
+    hint: "Heinrich IV. gegen Papst Gregor VII., Gang nach Canossa 1077, Wormser Konkordat 1122, Frage der Einsetzung von Bischöfen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-barbarossa
+    topic: geschichte/mittelalter
+    hint: "Friedrich I. Barbarossa, Kaiser ab 1155, Italienzüge, Konflikt mit Heinrich dem Löwen, Tod 1190 im Fluss Saleph auf dem Dritten Kreuzzug, Kyffhäuser-Sage"
+    format: facts_quiz
+    priority: 3
+  - id: ge-schlacht-hastings
+    topic: geschichte/mittelalter
+    hint: "14. Oktober 1066, Wilhelm der Eroberer gegen Harald II., Teppich von Bayeux, Domesday Book 1086, Wandel der englischen Sprache"
+    format: facts_quiz
+    priority: 3
+  - id: ge-hundertjaehriger-krieg
+    topic: geschichte/mittelalter
+    hint: "England gegen Frankreich 1337 bis 1453, Crécy 1346, Azincourt 1415, Langbogen, Jeanne d'Arc befreit Orléans 1429, Ende mit Castillon"
+    format: facts_quiz
+    priority: 3
+  - id: ge-reconquista
+    topic: geschichte/mittelalter
+    hint: "Al-Andalus ab 711, Kalifat von Córdoba, Schlacht bei Las Navas de Tolosa 1212, Fall Granadas 2. Januar 1492, Katholische Könige"
+    format: facts_quiz
+    priority: 3
+  - id: ge-abbasiden-bagdad
+    topic: geschichte/mittelalter
+    hint: "Abbasiden ab 750, Gründung Bagdads 762, Haus der Weisheit, Harun ar-Raschid, al-Chwarizmi, Eroberung durch die Mongolen 1258"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mali-mansa-musa
+    topic: geschichte/mittelalter
+    hint: "Reich Mali ab 13. Jahrhundert, Sundiata Keita, Mansa Musa und seine Pilgerreise nach Mekka 1324, Timbuktu mit Sankoré-Moschee und Handschriften"
+    format: facts_quiz
+    priority: 3
+  - id: ge-gross-simbabwe
+    topic: geschichte/mittelalter
+    hint: "Steinstadt im südlichen Afrika ca. 11. bis 15. Jahrhundert, Mauern ohne Mörtel, Goldhandel bis zur Swahili-Küste, Namensgeber des Staates Simbabwe 1980"
+    format: facts_quiz
+    priority: 3
+  - id: ge-angkor
+    topic: geschichte/mittelalter
+    hint: "Khmer-Reich ab 802 unter Jayavarman II., Angkor Wat unter Suryavarman II. im 12. Jahrhundert, Angkor Thom, Bewässerungssystem, Wiederentdeckung durch Europäer im 19. Jahrhundert"
+    format: facts_quiz
+    priority: 3
+  - id: ge-tang-song-china
+    topic: geschichte/mittelalter
+    hint: "Tang-Dynastie 618 bis 907 mit Hauptstadt Chang'an, Song-Dynastie 960 bis 1279, Beamtenprüfungen, Papiergeld, Schwarzpulver, Bi Sheng und beweglicher Druck"
+    format: facts_quiz
+    priority: 3
+  - id: ge-samurai-kamakura
+    topic: geschichte/mittelalter
+    hint: "Kamakura-Shogunat ab 1185/1192 unter Minamoto no Yoritomo, Samurai und Bushido, mongolische Invasionen 1274 und 1281, Kamikaze-Stürme"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kiewer-rus
+    topic: geschichte/mittelalter
+    hint: "Kiewer Rus ab 9. Jahrhundert, Taufe Wladimirs 988, Jaroslaw der Weise und Russkaja Prawda, Sophienkathedrale, Zerstörung Kiews durch Mongolen 1240"
+    format: facts_quiz
+    priority: 3
+  - id: ge-inka-reich
+    topic: geschichte/mittelalter
+    hint: "Tawantinsuyu, Pachacútec ab 1438, Hauptstadt Cusco, Straßennetz Qhapaq Ñan, Knotenschrift Quipu, Machu Picchu, Eroberung durch Pizarro ab 1532"
+    format: facts_quiz
+    priority: 3
+  - id: ge-azteken-tenochtitlan
+    topic: geschichte/mittelalter
+    hint: "Gründung Tenochtitlans 1325 im Texcoco-See, Chinampas, Templo Mayor, Dreibund, Eroberung durch Hernán Cortés 1521, Moctezuma II."
+    format: facts_quiz
+    priority: 3
+  - id: ge-mittelalter-herrscher
+    topic: geschichte/mittelalter
+    hint: "Fünf Herrscher des Mittelalters: Karl Martell, Otto I., Wilhelm der Eroberer, Friedrich II., Karl IV., jeweils Lebenszeit und wichtigste Tat"
+    format: flashcards
+    priority: 3
+  - id: ge-osmanen-konstantinopel
+    topic: geschichte/neuzeit
+    hint: "Eroberung Konstantinopels durch Mehmed II. am 29. Mai 1453, Kanone von Urban, Hagia Sophia wird Moschee, Ende des Byzantinischen Reiches"
+    format: facts_quiz
+    priority: 3
+  - id: ge-ming-zheng-he
+    topic: geschichte/neuzeit
+    hint: "Ming-Dynastie ab 1368, Admiral Zheng He mit sieben Flottenfahrten 1405 bis 1433 bis Ostafrika, Verbotene Stadt ab 1406, Ausbau der Großen Mauer"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mogulreich
+    topic: geschichte/neuzeit
+    hint: "Babur siegt 1526 bei Panipat, Akbar und religiöse Toleranz, Shah Jahan lässt ab 1632 das Taj Mahal bauen, Aurangzeb, Niedergang im 18. Jahrhundert"
+    format: facts_quiz
+    priority: 3
+  - id: ge-tokugawa-edo
+    topic: geschichte/neuzeit
+    hint: "Schlacht von Sekigahara 1600, Tokugawa Ieyasu Shogun 1603, Abschließung Sakoku, Handelsposten Dejima, Ende 1867/68"
+    format: facts_quiz
+    priority: 3
+  - id: ge-conquista-peru
+    topic: geschichte/neuzeit
+    hint: "Francisco Pizarro, Gefangennahme Atahualpas in Cajamarca 1532, Lösegeldraum, Hinrichtung 1533, Folgen von Seuchen und Silberbergbau in Potosí"
+    format: facts_quiz
+    priority: 3
+  - id: ge-columbian-exchange
+    topic: geschichte/neuzeit
+    hint: "Austausch zwischen Alter und Neuer Welt nach 1492: Kartoffel, Mais, Tomate nach Europa, Pferde und Weizen nach Amerika, Pocken und Bevölkerungseinbruch, Begriff von Alfred Crosby 1972"
+    format: facts_quiz
+    priority: 3
+  - id: ge-transatlantischer-sklavenhandel
+    topic: geschichte/neuzeit
+    hint: "Dreieckshandel 16. bis 19. Jahrhundert, rund 12,5 Millionen verschleppte Menschen laut Slave Voyages Datenbank, Middle Passage, Zielregionen Brasilien und Karibik"
+    format: facts_quiz
+    priority: 3
+  - id: ge-westfaelischer-frieden
+    topic: geschichte/neuzeit
+    hint: "Verhandlungen in Münster und Osnabrück, Unterzeichnung 1648, Unabhängigkeit der Niederlande und Schweiz, Gleichberechtigung der Konfessionen, Souveränitätsprinzip"
+    format: facts_quiz
+    priority: 3
+  - id: ge-ludwig-xiv-absolutismus
+    topic: geschichte/neuzeit
+    hint: "Ludwig XIV. regiert 1643 bis 1715, Sonnenkönig, Versailles, Merkantilismus unter Colbert, Edikt von Fontainebleau 1685, Absolutismus"
+    format: facts_quiz
+    priority: 3
+  - id: ge-peter-der-grosse
+    topic: geschichte/neuzeit
+    hint: "Peter I. Zar ab 1682, Große Gesandtschaft 1697/98, Gründung Sankt Petersburgs 1703, Sieg bei Poltawa 1709, Bartsteuer, Kaisertitel 1721"
+    format: facts_quiz
+    priority: 3
+  - id: ge-friedrich-der-grosse
+    topic: geschichte/neuzeit
+    hint: "Friedrich II. von Preußen 1740 bis 1786, Schlesische Kriege, Siebenjähriger Krieg 1756 bis 1763, Sanssouci, Abschaffung der Folter 1740, Kartoffelbefehl 1756"
+    format: facts_quiz
+    priority: 3
+  - id: ge-haitianische-revolution
+    topic: geschichte/neuzeit
+    hint: "Aufstand in Saint-Domingue ab 1791, Toussaint Louverture, Jean-Jacques Dessalines, Unabhängigkeit Haitis am 1. Januar 1804 als erste Republik nach erfolgreichem Sklavenaufstand"
+    format: facts_quiz
+    priority: 3
+  - id: ge-bolivar-unabhaengigkeit
+    topic: geschichte/neuzeit
+    hint: "Simón Bolívar und José de San Martín, Unabhängigkeitskriege Südamerikas ab 1810, Schlacht von Boyacá 1819, Ayacucho 1824, Großkolumbien"
+    format: facts_quiz
+    priority: 3
+  - id: ge-hexenverfolgung
+    topic: geschichte/neuzeit
+    hint: "Höhepunkt ca. 1560 bis 1630, Hexenhammer 1486, Schätzungen um 40.000 bis 60.000 Hinrichtungen in Europa, Schwerpunkt im Reich, Kritik von Friedrich Spee 1631"
+    format: facts_quiz
+    priority: 3
+  - id: ge-neuzeit-daten
+    topic: geschichte/neuzeit
+    hint: "Fünf Daten der Frühen Neuzeit: 1453 Fall Konstantinopels, 1517 Thesenanschlag, 1555 Augsburger Religionsfrieden, 1648 Westfälischer Frieden, 1789 Sturm auf die Bastille"
+    format: flashcards
+    priority: 3
+  - id: ge-opiumkriege
+    topic: geschichte/19-jahrhundert
+    hint: "Erster Opiumkrieg 1839 bis 1842, Lin Zexu, Vertrag von Nanking und Abtretung Hongkongs, Zweiter Opiumkrieg 1856 bis 1860, ungleiche Verträge"
+    format: facts_quiz
+    priority: 3
+  - id: ge-taiping-aufstand
+    topic: geschichte/19-jahrhundert
+    hint: "1850 bis 1864 in China, Hong Xiuquan, Himmlisches Königreich mit Hauptstadt Nanjing, geschätzt 20 bis 30 Millionen Tote, einer der verlustreichsten Konflikte des Jahrhunderts"
+    format: facts_quiz
+    priority: 3
+  - id: ge-berliner-kongokonferenz
+    topic: geschichte/19-jahrhundert
+    hint: "Berliner Konferenz November 1884 bis Februar 1885 unter Bismarck, Generalakte, Kongo-Freistaat Leopolds II., Wettlauf um Afrika"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kongo-freistaat
+    topic: geschichte/19-jahrhundert
+    hint: "Privatbesitz Leopolds II. 1885 bis 1908, Kautschukgewinnung mit Zwangsarbeit, Bericht von Roger Casement 1904, Kongo-Reformbewegung, Übernahme durch Belgien 1908"
+    format: facts_quiz
+    priority: 3
+  - id: ge-adwa-1896
+    topic: geschichte/19-jahrhundert
+    hint: "Schlacht von Adwa 1. März 1896, Äthiopien unter Menelik II. und Taytu Betul besiegt Italien, Vertrag von Addis Abeba, Unabhängigkeit bewahrt"
+    format: single_fact
+    priority: 3
+  - id: ge-herero-nama
+    topic: geschichte/19-jahrhundert
+    hint: "Deutsch-Südwestafrika, Aufstand 1904, Schlacht am Waterberg, Vernichtungsbefehl Lothar von Trothas, Anerkennung als Völkermord durch die Bundesregierung 2021"
+    format: facts_quiz
+    priority: 3
+  - id: ge-indischer-aufstand-1857
+    topic: geschichte/19-jahrhundert
+    hint: "Aufstand der Sepoys 1857, Meerut und Delhi, Bahadur Shah II., Ende der Ostindien-Kompanie 1858, Britisch-Indien unter der Krone, Victoria Kaiserin von Indien 1876"
+    format: facts_quiz
+    priority: 3
+  - id: ge-italienische-einigung
+    topic: geschichte/19-jahrhundert
+    hint: "Risorgimento, Cavour, Garibaldi und der Zug der Tausend 1860, Königreich Italien 1861 unter Viktor Emanuel II., Rom Hauptstadt 1871"
+    format: facts_quiz
+    priority: 3
+  - id: ge-bismarck
+    topic: geschichte/19-jahrhundert
+    hint: "Otto von Bismarck, preußischer Ministerpräsident 1862, Blut-und-Eisen-Rede, Einigungskriege 1864, 1866, 1870/71, Kulturkampf, Sozialistengesetz, Entlassung 1890"
+    format: facts_quiz
+    priority: 3
+  - id: ge-irische-hungersnot
+    topic: geschichte/19-jahrhundert
+    hint: "Great Famine 1845 bis 1849, Kartoffelfäule durch Phytophthora infestans, rund eine Million Tote und eine Million Auswanderer, Bevölkerungsrückgang"
+    format: facts_quiz
+    priority: 3
+  - id: ge-joseon-korea
+    topic: geschichte/aussereuropaeisch
+    hint: "Joseon-Dynastie in Korea 1392 bis 1897, Hangeul 1443 unter König Sejong, Öffnung durch Vertrag von Ganghwa 1876, Annexion durch Japan 1910"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mexikanisch-amerikanischer-krieg
+    topic: geschichte/19-jahrhundert
+    hint: "1846 bis 1848, Texas-Annexion 1845, Vertrag von Guadalupe Hidalgo, Mexiko verliert etwa die Hälfte seines Territoriums, Gadsden-Kauf 1853"
+    format: facts_quiz
+    priority: 3
+  - id: ge-trail-of-tears
+    topic: geschichte/19-jahrhundert
+    hint: "Indian Removal Act 1830 unter Andrew Jackson, Zwangsumsiedlung der Cherokee 1838/39, Worcester v. Georgia 1832, tausende Tote auf dem Weg nach Oklahoma"
+    format: facts_quiz
+    priority: 3
+  - id: ge-19-jh-personen
+    topic: geschichte/19-jahrhundert
+    hint: "Fünf Personen des 19. Jahrhunderts: Simón Bolívar, Queen Victoria, Otto von Bismarck, Abraham Lincoln, Kaiser Meiji, jeweils Lebensdaten und Bedeutung"
+    format: flashcards
+    priority: 3
+  - id: ge-russische-revolution
+    topic: geschichte/20-jahrhundert
+    hint: "Februarrevolution 1917 und Abdankung Nikolaus II., Oktoberrevolution unter Lenin, Bürgerkrieg bis 1922, Gründung der Sowjetunion Dezember 1922"
+    format: facts_quiz
+    priority: 3
+  - id: ge-versailler-vertrag
+    topic: geschichte/20-jahrhundert
+    hint: "Unterzeichnung 28. Juni 1919 im Spiegelsaal, Artikel 231, Gebietsverluste, Reparationen, Völkerbund, Rheinlandbesetzung"
+    format: facts_quiz
+    priority: 3
+  - id: ge-armenier-voelkermord
+    topic: geschichte/20-jahrhundert
+    hint: "Deportationen ab 24. April 1915 im Osmanischen Reich, Todesmärsche, Schätzungen von 800.000 bis 1,5 Millionen Toten, Bundestagsresolution 2016"
+    format: facts_quiz
+    priority: 3
+  - id: ge-spanischer-buergerkrieg
+    topic: geschichte/20-jahrhundert
+    hint: "1936 bis 1939, Putsch unter Franco, Republikaner gegen Nationalisten, Internationale Brigaden, Luftangriff auf Guernica 26. April 1937, Diktatur bis 1975"
+    format: facts_quiz
+    priority: 3
+  - id: ge-widerstand-ns
+    topic: geschichte/20-jahrhundert
+    hint: "Georg Elser 8. November 1939, Weiße Rose mit Hans und Sophie Scholl 1943, Attentat vom 20. Juli 1944 durch Stauffenberg, Kreisauer Kreis"
+    format: facts_quiz
+    priority: 3
+  - id: ge-gandhi-indien-unabhaengigkeit
+    topic: geschichte/20-jahrhundert
+    hint: "Mahatma Gandhi, Salzmarsch 1930, Quit India 1942, Unabhängigkeit und Teilung am 15. August 1947, Nehru, Ermordung Gandhis 1948"
+    format: facts_quiz
+    priority: 3
+  - id: ge-teilung-indien-1947
+    topic: geschichte/20-jahrhundert
+    hint: "Teilung Britisch-Indiens in Indien und Pakistan 1947, Radcliffe-Linie, Flucht von 10 bis 20 Millionen Menschen, Gewalt mit Hunderttausenden Toten, Kaschmir-Konflikt"
+    format: facts_quiz
+    priority: 3
+  - id: ge-chinesische-revolution-1949
+    topic: geschichte/20-jahrhundert
+    hint: "Xinhai-Revolution 1911 und Sun Yat-sen, Langer Marsch 1934/35, Ausrufung der Volksrepublik durch Mao am 1. Oktober 1949, Rückzug der Kuomintang nach Taiwan"
+    format: facts_quiz
+    priority: 3
+  - id: ge-koreakrieg
+    topic: geschichte/20-jahrhundert
+    hint: "Angriff Nordkoreas 25. Juni 1950, UN-Truppen unter MacArthur, Landung bei Incheon, Eingreifen Chinas, Waffenstillstand 27. Juli 1953 in Panmunjom, 38. Breitengrad"
+    format: facts_quiz
+    priority: 3
+  - id: ge-vietnamkrieg
+    topic: geschichte/20-jahrhundert
+    hint: "Indochinakrieg und Dien Bien Phu 1954, Genfer Konferenz, Tonkin-Zwischenfall 1964, Tet-Offensive 1968, Fall Saigons 30. April 1975"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kubakrise
+    topic: geschichte/20-jahrhundert
+    hint: "Oktober 1962, sowjetische Raketen auf Kuba, Kennedy und Chruschtschow, Seeblockade, 13 Tage, Abzug gegen Jupiter-Raketen in der Türkei, heißer Draht 1963"
+    format: facts_quiz
+    priority: 3
+  - id: ge-solidarnosc
+    topic: geschichte/20-jahrhundert
+    hint: "Streik auf der Danziger Leninwerft August 1980, Lech Wałęsa, Kriegsrecht Dezember 1981, Runder Tisch und halbfreie Wahlen Juni 1989"
+    format: facts_quiz
+    priority: 3
+  - id: ge-apartheid-mandela
+    topic: geschichte/20-jahrhundert
+    hint: "Apartheid ab 1948 in Südafrika, Massaker von Sharpeville 1960, Nelson Mandela 27 Jahre in Haft, Freilassung 1990, erste freie Wahl 1994"
+    format: facts_quiz
+    priority: 3
+  - id: ge-afrikanisches-jahr-1960
+    topic: geschichte/20-jahrhundert
+    hint: "1960 werden 17 afrikanische Staaten unabhängig, darunter Nigeria, Kongo und Senegal, Ghana bereits 1957 unter Kwame Nkrumah, OAU-Gründung 1963"
+    format: single_fact
+    priority: 3
+  - id: ge-nahostkonflikt-1948
+    topic: geschichte/20-jahrhundert
+    hint: "UN-Teilungsplan November 1947, Staatsgründung Israels 14. Mai 1948, Krieg 1948/49 und Flucht und Vertreibung von rund 700.000 Palästinensern, Sechstagekrieg 1967"
+    format: facts_quiz
+    priority: 3
+  - id: ge-ruanda-1994
+    topic: geschichte/20-jahrhundert
+    hint: "Völkermord an den Tutsi April bis Juli 1994, Abschuss des Präsidentenflugzeugs 6. April, rund 800.000 Tote in etwa 100 Tagen, UN-Tribunal in Arusha"
+    format: facts_quiz
+    priority: 3
+  - id: ge-srebrenica-jugoslawienkriege
+    topic: geschichte/20-jahrhundert
+    hint: "Zerfall Jugoslawiens ab 1991, Belagerung Sarajevos, Massaker von Srebrenica Juli 1995 mit über 8.000 Toten, Abkommen von Dayton Dezember 1995, Tribunal in Den Haag"
+    format: facts_quiz
+    priority: 3
+  - id: ge-roter-khmer
+    topic: geschichte/20-jahrhundert
+    hint: "Rote Khmer unter Pol Pot regieren Kambodscha 1975 bis 1979, Räumung Phnom Penhs, rund 1,5 bis 2 Millionen Tote, Gefängnis Tuol Sleng, Sondertribunal ab 2006"
+    format: facts_quiz
+    priority: 3
+  - id: ge-ostpolitik-brandt
+    topic: geschichte/20-jahrhundert
+    hint: "Willy Brandt Kanzler 1969, Moskauer und Warschauer Vertrag 1970, Kniefall von Warschau 7. Dezember 1970, Grundlagenvertrag 1972, Friedensnobelpreis 1971"
+    format: facts_quiz
+    priority: 3
+  - id: ge-20-jh-daten
+    topic: geschichte/20-jahrhundert
+    hint: "Fünf Daten des 20. Jahrhunderts: 1914 Attentat von Sarajevo, 1917 Oktoberrevolution, 1945 Kriegsende in Europa, 1961 Mauerbau, 1991 Auflösung der Sowjetunion"
+    format: flashcards
+    priority: 3
+  - id: ge-schrift-papier-china
+    topic: geschichte/technik
+    hint: "Papier vor Cai Lun bereits archäologisch belegt, Verbreitung über Samarkand nach 751 und Bagdad, erste Papiermühle im Reich 1390 in Nürnberg durch Ulman Stromer"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mechanismus-antikythera
+    topic: geschichte/technik
+    hint: "Fund 1901 im Wrack vor Antikythera, Zahnradrechner um 100 v. Chr. zur Berechnung von Mond, Sonne und Finsternissen, Rekonstruktion durch Derek de Solla Price"
+    format: single_fact
+    priority: 3
+  - id: ge-mechanische-uhr
+    topic: geschichte/technik
+    hint: "Räderuhren ab Ende 13. Jahrhundert, Hemmung, Peter Henlein und die Taschenuhr um 1510, Huygens Pendeluhr 1656, John Harrison und die Längengrad-Uhr H4"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kanalbau-suez-panama
+    topic: geschichte/technik
+    hint: "Suezkanal eröffnet 1869 unter Ferdinand de Lesseps, Verstaatlichung 1956, Panamakanal 1914 nach gescheitertem französischen Versuch, Schleusen und Gelbfieber"
+    format: facts_quiz
+    priority: 3
+  - id: ge-elektrifizierung-stromkrieg
+    topic: geschichte/technik
+    hint: "Edison Pearl Street Station 1882, Gleichstrom gegen Wechselstrom mit Tesla und Westinghouse, Weltausstellung Chicago 1893, Niagara-Kraftwerk 1895, Lauffen-Frankfurt 1891"
+    format: facts_quiz
+    priority: 3
+  - id: ge-containerschiff
+    topic: geschichte/technik
+    hint: "Malcom McLean, Ideal X im April 1956, ISO-Normcontainer 20 und 40 Fuß, Einheit TEU, Auswirkung auf Welthandel und Häfen"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kernspaltung-entdeckung
+    topic: geschichte/technik
+    hint: "Otto Hahn und Fritz Straßmann Dezember 1938 in Berlin, Deutung durch Lise Meitner und Otto Frisch 1939, erster Reaktor Chicago Pile-1 unter Fermi 1942"
+    format: facts_quiz
+    priority: 3
+  - id: ge-erfindungen-china
+    topic: geschichte/technik
+    hint: "Fünf chinesische Erfindungen: Papier, Schwarzpulver, Kompass, Buchdruck mit beweglichen Lettern durch Bi Sheng, Porzellan, jeweils Zeit und Weg nach Europa"
+    format: flashcards
+    priority: 3
+  - id: ge-ibn-battuta
+    topic: geschichte/entdecker
+    hint: "Ibn Battuta aus Tanger, Reisen 1325 bis 1354 über rund 120.000 km, Mekka, Indien, China, Mali, Reisebericht Rihla"
+    format: facts_quiz
+    priority: 3
+  - id: ge-leif-eriksson-vinland
+    topic: geschichte/entdecker
+    hint: "Leif Eriksson um das Jahr 1000 in Vinland, Grönland-Saga, Fundstelle L'Anse aux Meadows entdeckt 1960 durch Helge und Anne Stine Ingstad, Datierung auf 1021"
+    format: facts_quiz
+    priority: 3
+  - id: ge-bartolomeu-dias-heinrich
+    topic: geschichte/entdecker
+    hint: "Heinrich der Seefahrer, Karavelle, Bartolomeu Dias umrundet 1488 das Kap der Guten Hoffnung, Vertrag von Tordesillas 1494"
+    format: facts_quiz
+    priority: 3
+  - id: ge-polynesische-navigation
+    topic: geschichte/entdecker
+    hint: "Besiedlung Polynesiens mit Auslegerkanus, Neuseeland um 1250 bis 1300, Navigation nach Sternen und Wellen, Hokule'a fährt 1976 nach Tahiti"
+    format: facts_quiz
+    priority: 3
+  - id: ge-lewis-clark
+    topic: geschichte/entdecker
+    hint: "Louisiana Purchase 1803, Expedition 1804 bis 1806 bis zum Pazifik, Sacagawea als Dolmetscherin, Auftrag von Thomas Jefferson"
+    format: facts_quiz
+    priority: 3
+  - id: ge-livingstone-stanley
+    topic: geschichte/entdecker
+    hint: "David Livingstone, Victoriafälle 1855, Henry Morton Stanley trifft ihn 1871 in Ujiji, Suche nach Nilquellen, John Hanning Speke und Viktoriasee 1858"
+    format: facts_quiz
+    priority: 3
+  - id: ge-nansen-fram
+    topic: geschichte/entdecker
+    hint: "Fridtjof Nansen, Grönlanddurchquerung 1888, Fram-Drift 1893 bis 1896, Nordrekord, Nansen-Pass für Flüchtlinge, Friedensnobelpreis 1922"
+    format: facts_quiz
+    priority: 3
+  - id: ge-shackleton-endurance
+    topic: geschichte/entdecker
+    hint: "Endurance-Expedition 1914 bis 1917, Schiff im Weddellmeer zerdrückt, Bootsfahrt nach Südgeorgien, alle Männer überleben, Wrack 2022 gefunden"
+    format: facts_quiz
+    priority: 3
+  - id: ge-entdecker-flashcards
+    topic: geschichte/entdecker
+    hint: "Fünf Entdecker außerhalb Europas oder vergessen: Ibn Battuta, Zheng He, Xuanzang, Matthew Henson, Tenzing Norgay, jeweils Zeit und Leistung"
+    format: flashcards
+    priority: 3
+  - id: ge-kleopatra
+    topic: geschichte/personen
+    hint: "Kleopatra VII. 69 bis 30 v. Chr., letzte Ptolemäerin, Beziehungen zu Caesar und Antonius, Schlacht bei Actium 31 v. Chr., Ägypten wird römische Provinz"
+    format: facts_quiz
+    priority: 3
+  - id: ge-konfuzius
+    topic: geschichte/personen
+    hint: "Kong Fuzi ca. 551 bis 479 v. Chr. in Lu, Gespräche Lunyu, Ren und Li, Kindespietät, Wirkung auf Beamtenprüfungen in China"
+    format: facts_quiz
+    priority: 3
+  - id: ge-hildegard-von-bingen
+    topic: geschichte/personen
+    hint: "Hildegard von Bingen 1098 bis 1179, Kloster Rupertsberg, Scivias, Naturheilkunde, Kompositionen, Heiligsprechung und Kirchenlehrerin 2012"
+    format: facts_quiz
+    priority: 3
+  - id: ge-saladin
+    topic: geschichte/personen
+    hint: "Salah ad-Din, Sultan von Ägypten und Syrien, Schlacht bei Hattin 1187, Rückeroberung Jerusalems, Vertrag mit Richard Löwenherz 1192, Tod 1193 in Damaskus"
+    format: facts_quiz
+    priority: 3
+  - id: ge-katharina-die-grosse
+    topic: geschichte/personen
+    hint: "Sophie von Anhalt-Zerbst, Zarin ab 1762, Briefwechsel mit Voltaire, Pugatschow-Aufstand, Teilungen Polens, Krim-Annexion 1783"
+    format: facts_quiz
+    priority: 3
+  - id: ge-harriet-tubman
+    topic: geschichte/personen
+    hint: "Harriet Tubman, Flucht 1849, Underground Railroad, rund 70 befreite Menschen auf etwa 13 Reisen, Combahee-Ferry-Einsatz 1863"
+    format: facts_quiz
+    priority: 3
+  - id: ge-rosa-luxemburg
+    topic: geschichte/personen
+    hint: "Rosa Luxemburg geboren 1871 in Zamość, SPD, Spartakusbund, KPD-Gründung, Ermordung 15. Januar 1919 in Berlin mit Karl Liebknecht"
+    format: facts_quiz
+    priority: 3
+  - id: ge-atatuerk
+    topic: geschichte/personen
+    hint: "Mustafa Kemal, Gallipoli 1915, Unabhängigkeitskrieg, Ausrufung der Republik Türkei 29. Oktober 1923, Abschaffung des Kalifats 1924, lateinisches Alphabet 1928"
+    format: facts_quiz
+    priority: 3
+  - id: ge-nkrumah
+    topic: geschichte/personen
+    hint: "Kwame Nkrumah führt die Goldküste 1957 als Ghana in die Unabhängigkeit, Panafrikanismus, Mitgründer der OAU 1963, Putsch 1966"
+    format: facts_quiz
+    priority: 3
+  - id: ge-gorbatschow
+    topic: geschichte/personen
+    hint: "Michail Gorbatschow Generalsekretär ab 1985, Glasnost und Perestroika, INF-Vertrag 1987, Friedensnobelpreis 1990, Rücktritt 25. Dezember 1991"
+    format: facts_quiz
+    priority: 3
+  - id: ge-frauenrechtlerinnen
+    topic: geschichte/personen
+    hint: "Fünf Vorkämpferinnen für Frauenrechte: Olympe de Gouges 1791, Mary Wollstonecraft 1792, Louise Otto-Peters 1865, Emmeline Pankhurst 1903, Marie Juchacz 1919, jeweils Tat und Jahr"
+    format: flashcards
+    priority: 3
+  - id: ge-nzinga
+    topic: geschichte/personen
+    hint: "Nzinga Mbande, Königin von Ndongo und Matamba um 1583 bis 1663, Verhandlungen mit Portugiesen in Luanda 1622, Widerstand über Jahrzehnte"
+    format: facts_quiz
+    priority: 3
+  - id: ge-swahili-kueste
+    topic: geschichte/aussereuropaeisch
+    hint: "Handelsstädte Kilwa, Mombasa, Sansibar, Lamu, Monsunhandel mit Arabien, Indien und China, Swahili-Sprache, Ankunft Vasco da Gamas 1498"
+    format: facts_quiz
+    priority: 3
+  - id: ge-songhai-reich
+    topic: geschichte/aussereuropaeisch
+    hint: "Songhai unter Sonni Ali ab 1464 und Askia Mohammed, Gao und Timbuktu, Niederlage gegen Marokko bei Tondibi 1591"
+    format: facts_quiz
+    priority: 3
+  - id: ge-benin-bronzen
+    topic: geschichte/aussereuropaeisch
+    hint: "Königreich Benin im heutigen Nigeria, Messing- und Bronzeplatten ab 13. Jahrhundert, britische Strafexpedition 1897, Rückgaben aus Deutschland ab 2022"
+    format: facts_quiz
+    priority: 3
+  - id: ge-maori-waitangi
+    topic: geschichte/aussereuropaeisch
+    hint: "Vertrag von Waitangi 6. Februar 1840 zwischen Krone und Māori-Häuptlingen, Unterschiede der englischen und Māori-Fassung, Waitangi Tribunal seit 1975"
+    format: facts_quiz
+    priority: 3
+  - id: ge-aborigines-geschichte
+    topic: geschichte/aussereuropaeisch
+    hint: "Besiedlung Australiens vor mindestens 50.000 Jahren, First Fleet 1788, Stolen Generations, Referendum 1967, Entschuldigung von Kevin Rudd 2008"
+    format: facts_quiz
+    priority: 3
+  - id: ge-osterinsel-rapanui
+    topic: geschichte/aussereuropaeisch
+    hint: "Rapa Nui, Besiedlung um 1200, Moai-Statuen aus dem Steinbruch Rano Raraku, Ankunft Roggevens Ostern 1722, Debatte über ökologischen Kollaps und Sklavenraub 1862"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mississippi-cahokia
+    topic: geschichte/aussereuropaeisch
+    hint: "Cahokia bei St. Louis, Blüte um 1050 bis 1200, Monks Mound als größter Erdhügel Nordamerikas, Mississippi-Kultur, UNESCO-Welterbe 1982"
+    format: facts_quiz
+    priority: 3
+  - id: ge-safawiden-persien
+    topic: geschichte/aussereuropaeisch
+    hint: "Safawiden ab 1501 unter Ismail I., Schia als Staatsreligion, Abbas I. und Isfahan als Hauptstadt ab 1598, Imam-Platz, Ende 1736"
+    format: facts_quiz
+    priority: 3
+  - id: ge-aethiopien-lalibela
+    topic: geschichte/aussereuropaeisch
+    hint: "Felsenkirchen von Lalibela unter König Lalibela um 1200, Zagwe-Dynastie, elf monolithische Kirchen, Bete Giyorgis, UNESCO-Welterbe 1978"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mexikanische-revolution
+    topic: geschichte/aussereuropaeisch
+    hint: "1910 gegen Porfirio Díaz, Francisco Madero, Emiliano Zapata und Pancho Villa, Verfassung von 1917, Landreform"
+    format: facts_quiz
+    priority: 3
+  - id: ge-aussereuropa-reiche
+    topic: geschichte/aussereuropaeisch
+    hint: "Fünf außereuropäische Reiche: Aksum, Khmer, Mali, Inka, Mogulreich, jeweils Region, Blütezeit und Hauptstadt"
+    format: flashcards
+    priority: 3
+  - id: ge-bauernkrieg
+    topic: geschichte/deutschland
+    hint: "Deutscher Bauernkrieg 1524 bis 1526, Zwölf Artikel von Memmingen März 1525, Thomas Müntzer, Schlacht bei Frankenhausen 15. Mai 1525"
+    format: facts_quiz
+    priority: 3
+  - id: ge-preussische-reformen
+    topic: geschichte/deutschland
+    hint: "Niederlage 1806 bei Jena und Auerstedt, Stein und Hardenberg, Oktoberedikt 1807 und Bauernbefreiung, Städteordnung 1808, Humboldts Bildungsreform, Heeresreform Scharnhorst"
+    format: facts_quiz
+    priority: 3
+  - id: ge-novemberrevolution-1918
+    topic: geschichte/deutschland
+    hint: "Kieler Matrosenaufstand, Ausrufung der Republik am 9. November 1918 durch Scheidemann und Liebknecht, Abdankung Wilhelms II., Rat der Volksbeauftragten"
+    format: facts_quiz
+    priority: 3
+  - id: ge-hyperinflation-1923
+    topic: geschichte/deutschland
+    hint: "Ruhrbesetzung Januar 1923, Geldentwertung bis 4,2 Billionen Mark je Dollar im November, Rentenmark 15. November 1923, Hitlerputsch 9. November"
+    format: facts_quiz
+    priority: 3
+  - id: ge-novemberpogrome-1938
+    topic: geschichte/deutschland
+    hint: "Nacht vom 9. auf den 10. November 1938, Zerstörung von Synagogen und Geschäften, rund 30.000 jüdische Männer in KZ verschleppt, Begriff Reichspogromnacht"
+    format: facts_quiz
+    priority: 3
+  - id: ge-flucht-vertreibung-1945
+    topic: geschichte/deutschland
+    hint: "Flucht und Vertreibung von rund 12 bis 14 Millionen Deutschen aus Ostgebieten ab 1944/45, Potsdamer Abkommen August 1945, Integration in BRD und DDR"
+    format: facts_quiz
+    priority: 3
+  - id: ge-waehrungsreform-1948
+    topic: geschichte/deutschland
+    hint: "20. Juni 1948 Einführung der D-Mark in den Westzonen, Kopfgeld 40 DM, Ludwig Erhard, Ost-Mark als Reaktion, Auslöser der Berlin-Blockade"
+    format: facts_quiz
+    priority: 3
+  - id: ge-wirtschaftswunder
+    topic: geschichte/deutschland
+    hint: "Wachstum der 1950er Jahre in der BRD, Ludwig Erhard, Koreaboom, Wunder von Bern 1954, Anwerbeabkommen mit Italien 1955 und der Türkei 1961, VW Käfer"
+    format: facts_quiz
+    priority: 3
+  - id: ge-gastarbeiter
+    topic: geschichte/deutschland
+    hint: "Anwerbeabkommen 1955 bis 1968 mit Italien, Spanien, Griechenland, Türkei, Marokko, Portugal, Tunesien, Jugoslawien, Armando Rodrigues als Millionster 1964, Anwerbestopp 1973"
+    format: facts_quiz
+    priority: 3
+  - id: ge-friedliche-revolution-leipzig
+    topic: geschichte/deutschland
+    hint: "Montagsdemonstrationen ab September 1989, Nikolaikirche, 9. Oktober 1989 mit rund 70.000 Menschen ohne Gewalteinsatz, Wir sind das Volk"
+    format: facts_quiz
+    priority: 3
+  - id: ge-deutschland-daten
+    topic: geschichte/deutschland
+    hint: "Fünf Daten deutscher Geschichte: 1806 Ende des Heiligen Römischen Reiches, 1871 Reichsgründung, 1918 Republik, 1949 Gründung von BRD und DDR, 1990 Einheit"
+    format: flashcards
+    priority: 3
+  - id: ge-bayern-koenigreich-1806
+    topic: geschichte/bayern
+    hint: "Bayern wird am 1. Januar 1806 Königreich unter Max I. Joseph, Minister Montgelas, Verfassung 1818, Gebietsgewinne in Franken und Schwaben"
+    format: facts_quiz
+    priority: 3
+  - id: ge-ludwig-ii-bayern
+    topic: geschichte/bayern
+    hint: "Ludwig II. König ab 1864, Förderung Richard Wagners, Schlösser Neuschwanstein, Linderhof und Herrenchiemsee, Entmündigung und Tod im Starnberger See 13. Juni 1886"
+    format: facts_quiz
+    priority: 3
+  - id: ge-wittelsbacher
+    topic: geschichte/bayern
+    hint: "Otto von Wittelsbach Herzog 1180, Herrschaft bis 1918, Kaiser Ludwig der Bayer, Kurwürde 1623, Ende mit Ludwig III. im November 1918"
+    format: facts_quiz
+    priority: 3
+  - id: ge-reinheitsgebot-1516
+    topic: geschichte/bayern
+    hint: "Bayerische Landesordnung vom 23. April 1516 in Ingolstadt unter Wilhelm IV. und Ludwig X., Bier nur aus Gerste, Hopfen und Wasser, Hefe erst später erwähnt"
+    format: single_fact
+    priority: 3
+  - id: ge-freistaat-bayern-1918
+    topic: geschichte/bayern
+    hint: "Kurt Eisner ruft am 8. November 1918 den Freistaat aus, Ermordung Eisners Februar 1919, Münchner Räterepublik April 1919, Bamberger Verfassung"
+    format: facts_quiz
+    priority: 3
+  - id: ge-bayerische-verfassung-1946
+    topic: geschichte/bayern
+    hint: "Volksabstimmung 1. Dezember 1946, Wilhelm Hoegner, Ablehnung des Grundgesetzes im Landtag 1949 bei gleichzeitiger Anerkennung, Senat bis 1999"
+    format: facts_quiz
+    priority: 3
+  - id: ge-augsburg-fugger
+    topic: geschichte/bayern
+    hint: "Jakob Fugger der Reiche, Finanzierung der Kaiserwahl Karls V. 1519, Bergbau in Tirol und Ungarn, Fuggerei 1521 als älteste Sozialsiedlung der Welt"
+    format: facts_quiz
+    priority: 3
+  - id: ge-suedseeblase
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "South Sea Company, Spekulationsblase 1720, Isaac Newton verliert Geld, parallele Mississippi-Blase von John Law in Frankreich, Bubble Act"
+    format: facts_quiz
+    priority: 3
+  - id: ge-bretton-woods
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "Konferenz Juli 1944, Gründung von IWF und Weltbank, Dollar an Gold gebunden mit 35 Dollar je Unze, Ende durch Nixon-Schock 15. August 1971"
+    format: facts_quiz
+    priority: 3
+  - id: ge-oelkrise-1973
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "OPEC-Lieferboykott nach dem Jom-Kippur-Krieg Oktober 1973, Ölpreis vervierfacht, autofreie Sonntage in der BRD im November und Dezember 1973"
+    format: facts_quiz
+    priority: 3
+  - id: ge-finanzkrise-2008
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "US-Immobilienblase und Subprime-Kredite, Insolvenz von Lehman Brothers 15. September 2008, Bankenrettungen, Rezession 2009"
+    format: facts_quiz
+    priority: 3
+  - id: ge-gatt-wto
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "GATT 1947 mit 23 Gründungsstaaten, Handelsrunden wie Uruguay-Runde 1986 bis 1994, Gründung der WTO am 1. Januar 1995 in Genf"
+    format: single_fact
+    priority: 3
+  - id: ge-wirtschaft-krisen
+    topic: geschichte/wirtschaftsgeschichte
+    hint: "Fünf Wirtschaftskrisen: Tulpenmanie 1637, Südseeblase 1720, Gründerkrach 1873, Schwarzer Donnerstag 1929, Lehman-Pleite 2008, jeweils Auslöser"
+    format: flashcards
+    priority: 3
+  - id: ge-kopernikanische-wende
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Nikolaus Kopernikus De revolutionibus 1543, Tycho Brahe, Johannes Kepler und die Planetengesetze 1609 und 1619, Wechsel zum heliozentrischen Weltbild"
+    format: facts_quiz
+    priority: 3
+  - id: ge-newton-principia
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Isaac Newton Principia 1687, Gravitationsgesetz, drei Bewegungsgesetze, Edmond Halley als Förderer, Prioritätsstreit mit Leibniz um die Infinitesimalrechnung"
+    format: facts_quiz
+    priority: 3
+  - id: ge-semmelweis-hygiene
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Ignaz Semmelweis in Wien 1847, Kindbettfieber, Händewaschen mit Chlorkalk, Joseph Lister antiseptische Chirurgie 1867, Robert Koch und Louis Pasteur"
+    format: facts_quiz
+    priority: 3
+  - id: ge-robert-koch
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Robert Koch entdeckt 1882 den Tuberkulose-Erreger, Vortrag 24. März heute Welttuberkulosetag, Cholera-Erreger 1883/84, Nobelpreis 1905"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mendel-vererbung
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Gregor Mendel, Erbsenversuche in Brünn 1856 bis 1863, Veröffentlichung 1866, Wiederentdeckung 1900 durch de Vries, Correns und Tschermak"
+    format: facts_quiz
+    priority: 3
+  - id: ge-wissenschaftler-flashcards
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Fünf Gelehrte außerhalb Europas: al-Chwarizmi, Ibn Sina, Aryabhata, Zhang Heng, Ibn al-Haitham, jeweils Zeit und Beitrag"
+    format: flashcards
+    priority: 3
+  - id: ge-ibn-sina
+    topic: geschichte/wissenschaftsgeschichte
+    hint: "Ibn Sina oder Avicenna 980 bis 1037, Kanon der Medizin um 1025, in Europa als Lehrbuch bis ins 17. Jahrhundert genutzt"
+    format: single_fact
+    priority: 3
+  - id: ge-roemischer-alltag
+    topic: geschichte/alltagsgeschichte
+    hint: "Insulae in Rom, Thermen wie die Caracalla-Thermen 216 n. Chr., Garum, Brot und Spiele, Graffiti in Pompeji als Quelle"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mittelalter-ernaehrung
+    topic: geschichte/alltagsgeschichte
+    hint: "Getreidebrei und Brot als Grundnahrung, Dreifelderwirtschaft, Fastentage, Gewürze als Luxus, Bier als Alltagsgetränk, Unterschiede nach Stand"
+    format: facts_quiz
+    priority: 3
+  - id: ge-schulpflicht-geschichte
+    topic: geschichte/alltagsgeschichte
+    hint: "Schulpflicht in Pfalz-Zweibrücken 1592, Weimar 1619, Preußen Generallandschulreglement 1763, Reichsverfassung 1919 mit Grundschule für alle"
+    format: facts_quiz
+    priority: 3
+  - id: ge-zeitzonen-eisenbahnzeit
+    topic: geschichte/alltagsgeschichte
+    hint: "Ortszeiten bis ins 19. Jahrhundert, Railway Time in Großbritannien 1847, Internationale Meridiankonferenz 1884 in Washington, MEZ im Deutschen Reich ab 1. April 1893"
+    format: single_fact
+    priority: 3
+  - id: ge-post-thurn-taxis
+    topic: geschichte/alltagsgeschichte
+    hint: "Thurn und Taxis Postnetz ab 1490 unter Maximilian I., Reichspost, Briefmarke Penny Black 1840, Weltpostverein 1874 in Bern"
+    format: facts_quiz
+    priority: 3
+  - id: ge-kaffeehaus-geschichte
+    topic: geschichte/alltagsgeschichte
+    hint: "Kaffeehäuser in Istanbul ab 1554, Venedig 1645, London ab 1652 und Lloyd's, Wien nach 1683, Rolle als Ort für Nachrichten und Debatten"
+    format: facts_quiz
+    priority: 3
