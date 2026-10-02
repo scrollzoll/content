@@ -3,7 +3,7 @@
 Erzeugt auf dem VPS automatisch neue Lerneinheiten mit Claude Code (über dein Claude-Abo) und reicht sie als Pull Request ein.
 
 ```
-Timer (4×/Tag) → run_batch.py → claude -p + Skill einheiten-erstellen → Prüfung → PR → Auto-Merge bei grüner CI
+Timer (alle 2 h) → run_batch.py → claude -p + Skill einheiten-erstellen → Prüfung → PR → Auto-Merge bei grüner CI
 ```
 
 - Claude darf nur recherchieren, lesen, Dateien unter `units/` schreiben und das Prüfskript ausführen. Git und GitHub macht nur `run_batch.py`.
@@ -108,7 +108,7 @@ Für die Arbeit an `scrollzoll/app` mit Claude Code gibt es zwei saubere Wege, o
 
 ## Mengengerüst (Max 5x)
 
-Standard: 4 Läufe × 4 Einheiten = bis zu 16 Einheiten pro Tag. Die Warteliste (rund 470 Themen, gemischt aus Technologie, Sprachen, Allgemeinwissen und Geschichte) reicht damit mehrere Wochen; verworfene Themen verlängern das. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
+Der Timer startet alle 2 Stunden einen Lauf; `MAX_RUNS_PER_DAY` × `UNITS_PER_RUN` begrenzt die Tagesmenge (Standard 4 × 4 = 16, maximal 12 Läufe). Um das Abo voll auszuschöpfen: `MAX_RUNS_PER_DAY=12`. Die Warteliste (über 1.100 Themen aus Technologie, Sprachen, Allgemeinwissen und Geschichte) reicht auch dann mehrere Wochen. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
 
 ## Hinweise zum Abo
 

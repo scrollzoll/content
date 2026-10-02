@@ -2,11 +2,9 @@
 Description=Scrollzoll Content-Fabrik – Zeitplan
 
 [Timer]
-# Vier Läufe pro Tag, je einer pro 5-Stunden-Fenster mit Abstand
-OnCalendar=*-*-* 02:20:00
-OnCalendar=*-*-* 08:20:00
-OnCalendar=*-*-* 14:20:00
-OnCalendar=*-*-* 20:20:00
+# Alle 2 Stunden ein Lauf (12/Tag). Wie viele davon wirklich laufen, begrenzt MAX_RUNS_PER_DAY
+# in factory.env; ist das Nutzungslimit erreicht, endet ein Lauf sofort und ohne Fehler.
+OnCalendar=*-*-* 00/2:20:00
 RandomizedDelaySec=10min
 Persistent=true
 
