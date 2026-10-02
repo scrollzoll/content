@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-symmetrisch-asymmetrisch",
+  "topic": "technologie/sicherheit",
+  "tags": ["verschluesselung", "aes", "rsa", "kryptografie", "nist"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Symmetrische und asymmetrische Verschlüsselung",
+      "intro": "Verschlüsselung funktioniert mit einem gemeinsamen Schlüssel oder mit einem Schlüsselpaar. Beide Wege haben bekannte Standardverfahren.",
+      "facts": [
+        { "text": "Ein symmetrisches Verfahren nutzt denselben geheimen Schlüssel für eine Operation und ihre Umkehrung, also zum Verschlüsseln und zum Entschlüsseln.", "source_ids": ["nist-symmetric"] },
+        { "text": "Ein asymmetrisches Verfahren arbeitet mit zwei getrennten Schlüsseln: einer verschlüsselt oder signiert, der andere entschlüsselt oder prüft die Signatur. Man spricht auch von Public-Key-Kryptografie.", "source_ids": ["nist-asymmetric"] },
+        { "text": "AES ist ein symmetrisches Blockverfahren. Der Standard FIPS 197 legt AES-128, AES-192 und AES-256 fest. Alle verarbeiten Daten in Blöcken von 128 Bit; die Zahl im Namen ist die Schlüssellänge.", "source_ids": ["fips-197"] },
+        { "text": "RSA ist ein Public-Key-Verfahren. Der öffentliche Schlüssel besteht aus Modulus n und Exponent e, der private Schlüssel ist davon getrennt. RFC 8017 beschreibt Verschlüsselung und Signaturen mit RSA.", "source_ids": ["rfc-8017"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Schlüssel braucht ein symmetrisches Verfahren zum Ver- und Entschlüsseln?",
+          "options": ["Einen gemeinsamen geheimen Schlüssel", "Zwei verschiedene Schlüssel", "Gar keinen Schlüssel", "Drei Schlüssel"],
+          "answer_index": 0,
+          "explanation": "Symmetrisch heißt: derselbe geheime Schlüssel für beide Richtungen."
+        },
+        {
+          "question": "Welches der folgenden Verfahren ist asymmetrisch?",
+          "options": ["AES-128", "RSA", "AES-192", "AES-256"],
+          "answer_index": 1,
+          "explanation": "RSA nutzt ein Schlüsselpaar aus öffentlichem und privatem Schlüssel. AES in allen drei Varianten ist symmetrisch."
+        },
+        {
+          "question": "Welche Blockgröße verwendet AES?",
+          "options": ["64 Bit", "128 Bit", "256 Bit", "512 Bit"],
+          "answer_index": 1,
+          "explanation": "AES verarbeitet immer 128-Bit-Blöcke. Nur die Schlüssellänge (128, 192 oder 256 Bit) unterscheidet sich."
+        }
+      ]
+    },
+    "en": {
+      "title": "Symmetric and Asymmetric Encryption",
+      "intro": "Encryption works with one shared key or with a key pair. Both approaches have well-known standard algorithms.",
+      "facts": [
+        { "text": "A symmetric algorithm uses the same secret key for an operation and its reverse, that is, for both encrypting and decrypting.", "source_ids": ["nist-symmetric"] },
+        { "text": "An asymmetric algorithm works with two separate keys: one encrypts or signs, the other decrypts or verifies the signature. It is also called public-key cryptography.", "source_ids": ["nist-asymmetric"] },
+        { "text": "AES is a symmetric block cipher. The FIPS 197 standard defines AES-128, AES-192 and AES-256. All process data in blocks of 128 bits; the number in the name is the key length.", "source_ids": ["fips-197"] },
+        { "text": "RSA is a public-key algorithm. The public key consists of modulus n and exponent e, while the private key is kept separate. RFC 8017 describes encryption and signatures with RSA.", "source_ids": ["rfc-8017"] }
+      ],
+      "quiz": [
+        {
+          "question": "How many keys does a symmetric algorithm need for encrypting and decrypting?",
+          "options": ["One shared secret key", "Two different keys", "No key at all", "Three keys"],
+          "answer_index": 0,
+          "explanation": "Symmetric means: the same secret key for both directions."
+        },
+        {
+          "question": "Which of the following algorithms is asymmetric?",
+          "options": ["AES-128", "RSA", "AES-192", "AES-256"],
+          "answer_index": 1,
+          "explanation": "RSA uses a key pair of public and private key. AES in all three variants is symmetric."
+        },
+        {
+          "question": "Which block size does AES use?",
+          "options": ["64 bits", "128 bits", "256 bits", "512 bits"],
+          "answer_index": 1,
+          "explanation": "AES always processes 128-bit blocks. Only the key length (128, 192 or 256 bits) differs."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-symmetric", "title": "NIST CSRC Glossary: symmetric key algorithm", "url": "https://csrc.nist.gov/glossary/term/symmetric_key_algorithm", "accessed": "2026-10-02" },
+    { "id": "nist-asymmetric", "title": "NIST CSRC Glossary: asymmetric cryptography", "url": "https://csrc.nist.gov/glossary/term/asymmetric_cryptography", "accessed": "2026-10-02" },
+    { "id": "fips-197", "title": "FIPS 197: Advanced Encryption Standard (AES)", "url": "https://csrc.nist.gov/pubs/fips/197/final", "accessed": "2026-10-02" },
+    { "id": "rfc-8017", "title": "RFC 8017: PKCS #1: RSA Cryptography Specifications Version 2.2", "url": "https://www.rfc-editor.org/rfc/rfc8017", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

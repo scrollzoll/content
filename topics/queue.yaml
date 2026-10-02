@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-symmetrisch-asymmetrisch
-    topic: technologie/sicherheit
-    hint: "Symmetrische vs. asymmetrische Verschlüsselung, Beispiele AES und RSA"
-    format: facts_quiz
-    priority: 1
-  - id: tech-public-key-infrastruktur
-    topic: technologie/sicherheit
-    hint: "PKI: Zertifizierungsstellen, Zertifikatskette, Vertrauensanker"
-    format: facts_quiz
-    priority: 1
   - id: tech-ransomware
     topic: technologie/sicherheit
     hint: "Wie Ransomware arbeitet und welche Schutzmaßnahmen helfen (BSI-Empfehlungen)"
@@ -347,16 +337,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-false-friends-1
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: become/bekommen, eventually/eventuell, gift/Gift, actual/aktuell, sensible/sensibel"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-false-friends-2
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: chef/Chef, also/also, art/Art, bald/bald, brave/brav"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-false-friends-3
     topic: sprachen/englisch
     hint: "Falsche Freunde Deutsch–Englisch: fabric/Fabrik, gymnasium/Gymnasium, map/Mappe, mist/Mist, rock/Rock"
@@ -1282,11 +1262,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-kontinente
-    topic: allgemeinwissen/geografie
-    hint: "Die sieben Kontinente: Flächen und Bevölkerung im Vergleich"
-    format: facts_quiz
-    priority: 1
   - id: aw-ozeane
     topic: allgemeinwissen/geografie
     hint: "Die fünf Ozeane: Größe, tiefste Stellen"
@@ -1932,11 +1907,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-mesopotamien
-    topic: geschichte/antike
-    hint: "Mesopotamien: Keilschrift, Städte, Codex Hammurapi"
-    format: facts_quiz
-    priority: 1
   - id: ge-aegypten-pyramiden
     topic: geschichte/antike
     hint: "Die Pyramiden von Gizeh: Bau und Pharaonen"

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-2",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (2)",
+      "intro": "Noch mehr Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „chef“: Was heißt es?", "back": "Koch, meist der Küchenchef eines Restaurants. Nicht der Chef im Sinne von Vorgesetzter." },
+        { "front": "Deutsch „Chef“: Was heißt es auf Englisch?", "back": "boss oder manager: verantwortlicher Leiter eines Betriebs oder Teams. Nicht „chef“." },
+        { "front": "Englisch „also“: Was heißt es?", "back": "auch, außerdem, zusätzlich („Alice also had toast“). Nicht „also“ im Sinne von „folglich“." },
+        { "front": "Deutsch „also“: Was heißt es auf Englisch?", "back": "so oder therefore: kennzeichnet eine Folgerung („Es ist schon 8 Uhr, also müssen wir los“). Nicht „also“." },
+        { "front": "Englisch „art“: Was heißt es?", "back": "Kunst: bewusst gestaltete Werke und die kreative Tätigkeit dahinter. Nicht „Art“ im Sinne von Sorte." },
+        { "front": "Deutsch „Art“: Was heißt es auf Englisch?", "back": "kind, type oder way, je nach Satz. In der Biologie: species. Nicht „art“." },
+        { "front": "Englisch „bald“: Was heißt es?", "back": "kahl, mit wenig oder gar keinem Haar. Nicht „bald“ im Sinne von „in Kürze“." },
+        { "front": "Deutsch „bald“: Was heißt es auf Englisch?", "back": "soon: nach kurzer Zeit. Nicht „bald“ (kahl)." },
+        { "front": "Englisch „brave“: Was heißt es?", "back": "mutig, tapfer. Nicht „brav“ im Sinne von artig." },
+        { "front": "Deutsch „brav“: Was heißt es auf Englisch?", "back": "well-behaved oder obedient: artig, folgsam, bei Erwachsenen auch rechtschaffen. Nicht „brave“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (2)",
+      "intro": "More word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"chef\": what does it mean?", "back": "A cook, usually the head cook of a restaurant. In German: Koch or Küchenchef, not \"Chef\" in the sense of boss." },
+        { "front": "German \"Chef\": what does it mean in English?", "back": "Boss or manager: the person responsible for running a business or team. Not \"chef\"." },
+        { "front": "English \"also\": what does it mean?", "back": "In addition, as well (\"Alice also had toast\"). In German: auch, außerdem, not \"also\"." },
+        { "front": "German \"also\": what does it mean in English?", "back": "So or therefore: it marks a conclusion (\"It is already 8 o'clock, so we must hurry\"). Not \"also\"." },
+        { "front": "English \"art\": what does it mean?", "back": "Consciously created works and the creative activity behind them. In German: Kunst, not \"Art\" (kind)." },
+        { "front": "German \"Art\": what does it mean in English?", "back": "Kind, type or way, depending on the sentence. In biology: species. Not \"art\"." },
+        { "front": "English \"bald\": what does it mean?", "back": "Having little or no hair. In German: kahl, not \"bald\" (soon)." },
+        { "front": "German \"bald\": what does it mean in English?", "back": "Soon: after a short time. Not \"bald\" (hairless)." },
+        { "front": "English \"brave\": what does it mean?", "back": "Courageous, strong in the face of fear. In German: mutig, tapfer, not \"brav\"." },
+        { "front": "German \"brav\": what does it mean in English?", "back": "Well-behaved or obedient, especially of children; for adults also respectable. Not \"brave\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-chef", "title": "Wiktionary: chef", "url": "https://en.wiktionary.org/wiki/chef", "accessed": "2026-10-02" },
+    { "id": "wiktionary-also", "title": "Wiktionary: also", "url": "https://en.wiktionary.org/wiki/also", "accessed": "2026-10-02" },
+    { "id": "wiktionary-art", "title": "Wiktionary: art", "url": "https://en.wiktionary.org/wiki/art", "accessed": "2026-10-02" },
+    { "id": "wiktionary-bald", "title": "Wiktionary: bald", "url": "https://en.wiktionary.org/wiki/bald", "accessed": "2026-10-02" },
+    { "id": "wiktionary-brave", "title": "Wiktionary: brave", "url": "https://en.wiktionary.org/wiki/brave", "accessed": "2026-10-02" },
+    { "id": "dwds-chef", "title": "DWDS: Chef", "url": "https://www.dwds.de/wb/Chef", "accessed": "2026-10-02" },
+    { "id": "dwds-also", "title": "DWDS: also", "url": "https://www.dwds.de/wb/also", "accessed": "2026-10-02" },
+    { "id": "dwds-art", "title": "DWDS: Art", "url": "https://www.dwds.de/wb/Art", "accessed": "2026-10-02" },
+    { "id": "dwds-bald", "title": "DWDS: bald", "url": "https://www.dwds.de/wb/bald", "accessed": "2026-10-02" },
+    { "id": "dwds-brav", "title": "DWDS: brav", "url": "https://www.dwds.de/wb/brav", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

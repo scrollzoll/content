@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "tech-public-key-infrastruktur",
+  "topic": "technologie/sicherheit",
+  "tags": ["pki", "zertifikate", "ca", "vertrauensanker", "rfc-5280"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 170,
+  "locales": {
+    "de": {
+      "title": "Public-Key-Infrastruktur: Zertifikatskette und Vertrauensanker",
+      "intro": "Woher weiß ein Browser, dass ein öffentlicher Schlüssel wirklich zu einer Webseite gehört? Dafür gibt es die PKI.",
+      "facts": [
+        { "text": "Eine Public-Key-Infrastruktur (PKI) ist ein Rahmenwerk, um Zertifikate für öffentliche Schlüssel auszustellen, zu verwalten und zu widerrufen.", "source_ids": ["nist-pki"] },
+        { "text": "Eine Zertifizierungsstelle (CA) signiert Zertifikate und bestätigt damit, dass ein öffentlicher Schlüssel zu einem bestimmten Inhaber gehört. Sie gibt auch den Widerrufsstatus ihrer Zertifikate an.", "source_ids": ["rfc-5280"] },
+        { "text": "Ein Zertifizierungspfad besteht aus dem Zertifikat des Endteilnehmers, das eine CA signiert hat, und null oder mehr CA-Zertifikaten, die jeweils von einer weiteren CA signiert sind.", "source_ids": ["rfc-5280"] },
+        { "text": "Ein Pfad beginnt beim Schlüssel einer CA, der man vorab vertraut, dem Vertrauensanker. Selbstsignierte Wurzelzertifikate übermitteln solche Schlüssel.", "source_ids": ["rfc-5280"] },
+        { "text": "Let's Encrypt hält den Schlüssel seiner Wurzel offline und stellt Endzertifikate über Zwischenzertifikate aus.", "source_ids": ["letsencrypt-certificates"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wer signiert in einer PKI das Zertifikat einer Webseite?",
+          "options": ["Der Besucher der Webseite", "Die Zertifizierungsstelle (CA)", "Der DNS-Server", "Der Internetanbieter des Besuchers"],
+          "answer_index": 1,
+          "explanation": "Die CA bestätigt mit ihrer Signatur, dass der öffentliche Schlüssel zum Inhaber des Zertifikats gehört."
+        },
+        {
+          "question": "Was kennzeichnet ein Wurzelzertifikat?",
+          "options": ["Es ist selbstsigniert und übermittelt einen Schlüssel, mit dem ein Pfad beginnt", "Es wird von der Webseite selbst bei jedem Besuch erzeugt", "Es ist immer nur einen Tag gültig", "Es wird von einem Zwischenzertifikat signiert"],
+          "answer_index": 0,
+          "explanation": "Ein Zertifizierungspfad beginnt bei einem CA-Schlüssel, dem man vorab vertraut, dem Vertrauensanker."
+        },
+        {
+          "question": "Wie stellt Let's Encrypt Endzertifikate aus, ohne den Wurzelschlüssel dafür zu nutzen?",
+          "options": ["Der Browser des Besuchers signiert sie", "Der DNS-Server signiert sie", "Über Zwischenzertifikate, während der Wurzelschlüssel offline bleibt", "Gar nicht, es gibt keine Zertifikate"],
+          "answer_index": 2,
+          "explanation": "Zwischenzertifikate stellen die Endzertifikate aus, der Wurzelschlüssel bleibt sicher offline."
+        }
+      ]
+    },
+    "en": {
+      "title": "Public Key Infrastructure: Certificate Chain and Trust Anchor",
+      "intro": "How does a browser know that a public key really belongs to a website? That is what PKI is for.",
+      "facts": [
+        { "text": "A public key infrastructure (PKI) is a framework for issuing, maintaining and revoking public key certificates.", "source_ids": ["nist-pki"] },
+        { "text": "A certification authority (CA) signs certificates and thereby confirms that a public key belongs to a specific subject. It also indicates the revocation status of the certificates it issues.", "source_ids": ["rfc-5280"] },
+        { "text": "A certification path consists of the end entity's certificate, signed by a CA, plus zero or more CA certificates, each signed by another CA.", "source_ids": ["rfc-5280"] },
+        { "text": "A path starts at the key of a CA that is trusted in advance, the trust anchor. Self-signed root certificates convey such keys.", "source_ids": ["rfc-5280"] },
+        { "text": "Let's Encrypt keeps its root key offline and issues end-entity certificates through intermediate certificates.", "source_ids": ["letsencrypt-certificates"] }
+      ],
+      "quiz": [
+        {
+          "question": "Who signs a website's certificate in a PKI?",
+          "options": ["The visitor of the website", "The certification authority (CA)", "The DNS server", "The visitor's internet provider"],
+          "answer_index": 1,
+          "explanation": "With its signature, the CA confirms that the public key belongs to the certificate's subject."
+        },
+        {
+          "question": "What characterizes a root certificate?",
+          "options": ["It is self-signed and conveys a key where a path begins", "The website generates it anew on every visit", "It is only ever valid for one day", "It is signed by an intermediate certificate"],
+          "answer_index": 0,
+          "explanation": "A certification path begins at a CA key that is trusted in advance, the trust anchor."
+        },
+        {
+          "question": "How does Let's Encrypt issue end-entity certificates without using its root key for it?",
+          "options": ["The visitor's browser signs them", "The DNS server signs them", "Through intermediate certificates, while the root key stays offline", "It does not, there are no certificates"],
+          "answer_index": 2,
+          "explanation": "Intermediate certificates issue the end-entity certificates, so the root key stays safely offline."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-pki", "title": "NIST CSRC Glossary: public key infrastructure", "url": "https://csrc.nist.gov/glossary/term/public_key_infrastructure", "accessed": "2026-10-02" },
+    { "id": "rfc-5280", "title": "RFC 5280: Internet X.509 Public Key Infrastructure Certificate and CRL Profile", "url": "https://www.rfc-editor.org/rfc/rfc5280", "accessed": "2026-10-02" },
+    { "id": "letsencrypt-certificates", "title": "Let's Encrypt: Chains of Trust", "url": "https://letsencrypt.org/certificates/", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
