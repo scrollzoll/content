@@ -1312,3 +1312,1058 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
+  - id: aw-kontinente
+    topic: allgemeinwissen/geografie
+    hint: "Die sieben Kontinente: Flächen und Bevölkerung im Vergleich"
+    format: facts_quiz
+    priority: 1
+  - id: aw-ozeane
+    topic: allgemeinwissen/geografie
+    hint: "Die fünf Ozeane: Größe, tiefste Stellen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-hoechste-berge
+    topic: allgemeinwissen/geografie
+    hint: "Die höchsten Berge je Kontinent (Seven Summits)"
+    format: facts_quiz
+    priority: 1
+  - id: aw-laengste-fluesse
+    topic: allgemeinwissen/geografie
+    hint: "Die längsten Flüsse der Erde und der Streit Nil vs. Amazonas"
+    format: facts_quiz
+    priority: 1
+  - id: aw-wuesten
+    topic: allgemeinwissen/geografie
+    hint: "Die größten Wüsten: warum auch die Antarktis eine Wüste ist"
+    format: facts_quiz
+    priority: 1
+  - id: aw-zeitzonen
+    topic: allgemeinwissen/geografie
+    hint: "Zeitzonen: UTC, Datumsgrenze, warum China nur eine Zeitzone hat"
+    format: facts_quiz
+    priority: 1
+  - id: aw-laengen-breitengrade
+    topic: allgemeinwissen/geografie
+    hint: "Längen- und Breitengrade, Äquator und Nullmeridian"
+    format: facts_quiz
+    priority: 1
+  - id: aw-plattentektonik
+    topic: allgemeinwissen/geografie
+    hint: "Plattentektonik: wie Kontinente wandern und Erdbeben entstehen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-vulkane
+    topic: allgemeinwissen/geografie
+    hint: "Vulkane: Arten, Pazifischer Feuerring"
+    format: facts_quiz
+    priority: 1
+  - id: aw-klimazonen
+    topic: allgemeinwissen/geografie
+    hint: "Die Klimazonen der Erde nach Köppen-Geiger"
+    format: facts_quiz
+    priority: 1
+  - id: aw-deutschland-geografie
+    topic: allgemeinwissen/geografie
+    hint: "Deutschland: höchster Berg, längster Fluss, größter See, Bundesländer"
+    format: facts_quiz
+    priority: 1
+  - id: aw-alpen
+    topic: allgemeinwissen/geografie
+    hint: "Die Alpen: Länder, höchste Gipfel, Entstehung"
+    format: facts_quiz
+    priority: 1
+  - id: aw-europa-hauptstaedte-1
+    topic: allgemeinwissen/geografie
+    hint: "Hauptstädte Europas Teil 1 (West- und Nordeuropa)"
+    format: facts_quiz
+    priority: 1
+  - id: aw-europa-hauptstaedte-2
+    topic: allgemeinwissen/geografie
+    hint: "Hauptstädte Europas Teil 2 (Ost- und Südeuropa)"
+    format: facts_quiz
+    priority: 1
+  - id: aw-kleinste-staaten
+    topic: allgemeinwissen/geografie
+    hint: "Die kleinsten Staaten der Welt: Vatikanstadt, Monaco, Nauru"
+    format: facts_quiz
+    priority: 1
+  - id: aw-groesste-staaten
+    topic: allgemeinwissen/geografie
+    hint: "Die flächengrößten Staaten der Welt"
+    format: facts_quiz
+    priority: 1
+  - id: aw-bevoelkerung-welt
+    topic: allgemeinwissen/geografie
+    hint: "Weltbevölkerung: Entwicklung und bevölkerungsreichste Länder"
+    format: facts_quiz
+    priority: 1
+  - id: aw-gezeiten
+    topic: allgemeinwissen/geografie
+    hint: "Ebbe und Flut: Rolle von Mond und Sonne"
+    format: facts_quiz
+    priority: 1
+  - id: aw-golfstrom
+    topic: allgemeinwissen/geografie
+    hint: "Golfstrom und Nordatlantikstrom: Einfluss auf das Klima Europas"
+    format: facts_quiz
+    priority: 1
+  - id: aw-inseln
+    topic: allgemeinwissen/geografie
+    hint: "Die größten Inseln der Erde"
+    format: facts_quiz
+    priority: 1
+  - id: aw-hauptstaedte-welt-1
+    topic: allgemeinwissen/geografie
+    hint: "Hauptstädte großer Länder außerhalb Europas, Teil 1 (Amerika)"
+    format: flashcards
+    priority: 2
+  - id: aw-hauptstaedte-welt-2
+    topic: allgemeinwissen/geografie
+    hint: "Hauptstädte großer Länder außerhalb Europas, Teil 2 (Asien, Afrika, Ozeanien)"
+    format: flashcards
+    priority: 2
+  - id: aw-hauptstadt-fallen
+    topic: allgemeinwissen/geografie
+    hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
+    format: flashcards
+    priority: 2
+  - id: aw-photosynthese
+    topic: allgemeinwissen/natur
+    hint: "Photosynthese: wie Pflanzen Licht in Energie umwandeln"
+    format: facts_quiz
+    priority: 1
+  - id: aw-wasserkreislauf
+    topic: allgemeinwissen/natur
+    hint: "Der Wasserkreislauf der Erde"
+    format: facts_quiz
+    priority: 1
+  - id: aw-bienen
+    topic: allgemeinwissen/natur
+    hint: "Bienen: Bestäubung, Staatenbildung, Schwänzeltanz"
+    format: facts_quiz
+    priority: 1
+  - id: aw-voegel-zug
+    topic: allgemeinwissen/natur
+    hint: "Vogelzug: wie Zugvögel navigieren"
+    format: facts_quiz
+    priority: 1
+  - id: aw-wale
+    topic: allgemeinwissen/natur
+    hint: "Wale: größte Tiere der Erde, Blauwal, Gesang"
+    format: facts_quiz
+    priority: 1
+  - id: aw-baeume-alter
+    topic: allgemeinwissen/natur
+    hint: "Die ältesten und höchsten Bäume der Welt"
+    format: facts_quiz
+    priority: 1
+  - id: aw-pilze
+    topic: allgemeinwissen/natur
+    hint: "Pilze: weder Pflanze noch Tier, Myzelnetzwerke"
+    format: facts_quiz
+    priority: 1
+  - id: aw-artensterben
+    topic: allgemeinwissen/natur
+    hint: "Massenaussterben in der Erdgeschichte"
+    format: facts_quiz
+    priority: 1
+  - id: aw-dinosaurier
+    topic: allgemeinwissen/natur
+    hint: "Dinosaurier: Erdzeitalter und Aussterben vor 66 Millionen Jahren"
+    format: facts_quiz
+    priority: 1
+  - id: aw-evolution-darwin
+    topic: allgemeinwissen/natur
+    hint: "Evolution durch natürliche Selektion: Darwin und Wallace"
+    format: facts_quiz
+    priority: 1
+  - id: aw-dna
+    topic: allgemeinwissen/natur
+    hint: "DNA: Aufbau, Doppelhelix, Entdeckung 1953"
+    format: facts_quiz
+    priority: 1
+  - id: aw-zellen
+    topic: allgemeinwissen/natur
+    hint: "Zellen: Pflanzen- vs. Tierzelle, Zellkern, Mitochondrien"
+    format: facts_quiz
+    priority: 1
+  - id: aw-oekosystem-wald
+    topic: allgemeinwissen/natur
+    hint: "Der Wald als Ökosystem in Mitteleuropa"
+    format: facts_quiz
+    priority: 1
+  - id: aw-korallenriffe
+    topic: allgemeinwissen/natur
+    hint: "Korallenriffe: Great Barrier Reef, Korallenbleiche"
+    format: facts_quiz
+    priority: 1
+  - id: aw-tierrekorde
+    topic: allgemeinwissen/natur
+    hint: "Tierrekorde: schnellstes, größtes, ältestes Tier"
+    format: facts_quiz
+    priority: 1
+  - id: aw-wetter-gewitter
+    topic: allgemeinwissen/natur
+    hint: "Wie Gewitter, Blitz und Donner entstehen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-regenbogen
+    topic: allgemeinwissen/natur
+    hint: "Wie ein Regenbogen entsteht"
+    format: facts_quiz
+    priority: 1
+  - id: aw-jahreszeiten
+    topic: allgemeinwissen/natur
+    hint: "Warum es Jahreszeiten gibt: Neigung der Erdachse"
+    format: facts_quiz
+    priority: 1
+  - id: aw-periodensystem
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Das Periodensystem: Mendelejew, Aufbau, Gruppen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-aggregatzustaende
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Aggregatzustände: fest, flüssig, gasförmig, Plasma"
+    format: facts_quiz
+    priority: 1
+  - id: aw-schwerkraft
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Schwerkraft: Newton, Fallbeschleunigung 9,81 m/s²"
+    format: facts_quiz
+    priority: 1
+  - id: aw-lichtgeschwindigkeit
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Lichtgeschwindigkeit und warum nichts schneller ist"
+    format: facts_quiz
+    priority: 1
+  - id: aw-relativitaetstheorie
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Einsteins Relativitätstheorie in einfachen Worten"
+    format: facts_quiz
+    priority: 1
+  - id: aw-energieerhaltung
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Energieerhaltungssatz mit Alltagsbeispielen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-schall
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Schall: Ausbreitung, Schallgeschwindigkeit, Dezibel"
+    format: facts_quiz
+    priority: 1
+  - id: aw-magnetismus
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Magnetismus und das Magnetfeld der Erde"
+    format: facts_quiz
+    priority: 1
+  - id: aw-elektrizitaet
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Strom, Spannung, Widerstand: das ohmsche Gesetz"
+    format: facts_quiz
+    priority: 1
+  - id: aw-atome
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Atome: Protonen, Neutronen, Elektronen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-radioaktivitaet
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Radioaktivität: Entdeckung durch Becquerel und Curie, Halbwertszeit"
+    format: facts_quiz
+    priority: 1
+  - id: aw-wasser-besonderheiten
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Die Dichteanomalie des Wassers und warum Eis schwimmt"
+    format: facts_quiz
+    priority: 1
+  - id: aw-si-einheiten
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Die sieben SI-Basiseinheiten"
+    format: facts_quiz
+    priority: 1
+  - id: aw-temperatur-skalen
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Celsius, Fahrenheit, Kelvin: Umrechnung und absoluter Nullpunkt"
+    format: facts_quiz
+    priority: 1
+  - id: aw-treibhauseffekt
+    topic: allgemeinwissen/naturwissenschaft
+    hint: "Natürlicher und menschengemachter Treibhauseffekt"
+    format: facts_quiz
+    priority: 1
+  - id: aw-sonnensystem
+    topic: allgemeinwissen/astronomie
+    hint: "Die acht Planeten des Sonnensystems"
+    format: facts_quiz
+    priority: 1
+  - id: aw-pluto
+    topic: allgemeinwissen/astronomie
+    hint: "Warum Pluto seit 2006 kein Planet mehr ist"
+    format: facts_quiz
+    priority: 1
+  - id: aw-mond
+    topic: allgemeinwissen/astronomie
+    hint: "Der Mond: Entstehung, Phasen, Mondlandung 1969"
+    format: facts_quiz
+    priority: 1
+  - id: aw-sonne
+    topic: allgemeinwissen/astronomie
+    hint: "Die Sonne: Aufbau, Alter, Energie durch Kernfusion"
+    format: facts_quiz
+    priority: 1
+  - id: aw-lichtjahr
+    topic: allgemeinwissen/astronomie
+    hint: "Was ein Lichtjahr ist und wie weit die nächsten Sterne sind"
+    format: facts_quiz
+    priority: 1
+  - id: aw-milchstrasse
+    topic: allgemeinwissen/astronomie
+    hint: "Die Milchstraße: Größe, Form, unser Platz darin"
+    format: facts_quiz
+    priority: 1
+  - id: aw-schwarze-loecher
+    topic: allgemeinwissen/astronomie
+    hint: "Schwarze Löcher: Entstehung und erstes Bild 2019"
+    format: facts_quiz
+    priority: 1
+  - id: aw-urknall
+    topic: allgemeinwissen/astronomie
+    hint: "Urknall: Alter des Universums, kosmische Hintergrundstrahlung"
+    format: facts_quiz
+    priority: 1
+  - id: aw-finsternisse
+    topic: allgemeinwissen/astronomie
+    hint: "Sonnen- und Mondfinsternis: wie sie entstehen"
+    format: facts_quiz
+    priority: 1
+  - id: aw-iss
+    topic: allgemeinwissen/astronomie
+    hint: "Die Internationale Raumstation: Bau, Umlaufbahn, Partner"
+    format: facts_quiz
+    priority: 1
+  - id: aw-mars
+    topic: allgemeinwissen/astronomie
+    hint: "Der Mars: Missionen und Suche nach Wasser"
+    format: facts_quiz
+    priority: 1
+  - id: aw-kometen-meteore
+    topic: allgemeinwissen/astronomie
+    hint: "Kometen, Asteroiden, Meteore: Unterschiede"
+    format: facts_quiz
+    priority: 1
+  - id: aw-sternbilder
+    topic: allgemeinwissen/astronomie
+    hint: "Sternbilder und Tierkreiszeichen: Astronomie vs. Astrologie"
+    format: facts_quiz
+    priority: 1
+  - id: aw-teleskope
+    topic: allgemeinwissen/astronomie
+    hint: "Hubble und James Webb: was Weltraumteleskope leisten"
+    format: facts_quiz
+    priority: 1
+  - id: aw-pi
+    topic: allgemeinwissen/mathematik
+    hint: "Die Kreiszahl Pi: Bedeutung und Geschichte"
+    format: facts_quiz
+    priority: 2
+  - id: aw-primzahlen
+    topic: allgemeinwissen/mathematik
+    hint: "Primzahlen: Definition und warum es unendlich viele gibt"
+    format: facts_quiz
+    priority: 2
+  - id: aw-prozentrechnung
+    topic: allgemeinwissen/mathematik
+    hint: "Prozentrechnung im Alltag: Rabatte, Zinsen, Prozentpunkte"
+    format: facts_quiz
+    priority: 2
+  - id: aw-zinseszins
+    topic: allgemeinwissen/mathematik
+    hint: "Zinseszins und die 72er-Regel"
+    format: facts_quiz
+    priority: 2
+  - id: aw-wahrscheinlichkeit
+    topic: allgemeinwissen/mathematik
+    hint: "Wahrscheinlichkeit: Würfel, Münzwurf, Spielerfehlschluss"
+    format: facts_quiz
+    priority: 2
+  - id: aw-geburtstagsparadoxon
+    topic: allgemeinwissen/mathematik
+    hint: "Das Geburtstagsparadoxon"
+    format: facts_quiz
+    priority: 2
+  - id: aw-null
+    topic: allgemeinwissen/mathematik
+    hint: "Die Geschichte der Null"
+    format: facts_quiz
+    priority: 2
+  - id: aw-roemische-zahlen
+    topic: allgemeinwissen/mathematik
+    hint: "Römische Zahlen lesen und schreiben"
+    format: facts_quiz
+    priority: 2
+  - id: aw-goldener-schnitt
+    topic: allgemeinwissen/mathematik
+    hint: "Der Goldene Schnitt und die Fibonacci-Folge"
+    format: facts_quiz
+    priority: 2
+  - id: aw-pythagoras
+    topic: allgemeinwissen/mathematik
+    hint: "Der Satz des Pythagoras"
+    format: facts_quiz
+    priority: 2
+  - id: aw-statistik-mittelwert
+    topic: allgemeinwissen/mathematik
+    hint: "Mittelwert, Median, Modus: wann welcher Wert passt"
+    format: facts_quiz
+    priority: 2
+  - id: aw-grosse-zahlen
+    topic: allgemeinwissen/mathematik
+    hint: "Große Zahlen: Million, Milliarde, Billion im Deutschen und Englischen"
+    format: facts_quiz
+    priority: 2
+  - id: aw-weltwunder-antike
+    topic: allgemeinwissen/kultur
+    hint: "Die sieben Weltwunder der Antike"
+    format: facts_quiz
+    priority: 2
+  - id: aw-unesco-welterbe
+    topic: allgemeinwissen/kultur
+    hint: "UNESCO-Welterbe: Idee und Beispiele in Deutschland"
+    format: facts_quiz
+    priority: 2
+  - id: aw-renaissance-kunst
+    topic: allgemeinwissen/kultur
+    hint: "Die Renaissance: Leonardo, Michelangelo, Raffael"
+    format: facts_quiz
+    priority: 2
+  - id: aw-impressionismus
+    topic: allgemeinwissen/kultur
+    hint: "Impressionismus: Monet, Renoir und der Name der Bewegung"
+    format: facts_quiz
+    priority: 2
+  - id: aw-bauhaus
+    topic: allgemeinwissen/kultur
+    hint: "Das Bauhaus: Gründung 1919, Ideen, Standorte"
+    format: facts_quiz
+    priority: 2
+  - id: aw-klassische-musik-epochen
+    topic: allgemeinwissen/kultur
+    hint: "Epochen der klassischen Musik: Barock, Klassik, Romantik"
+    format: facts_quiz
+    priority: 2
+  - id: aw-beethoven
+    topic: allgemeinwissen/kultur
+    hint: "Ludwig van Beethoven: Leben und Taubheit"
+    format: facts_quiz
+    priority: 2
+  - id: aw-buchdruck
+    topic: allgemeinwissen/kultur
+    hint: "Gutenberg und der Buchdruck mit beweglichen Lettern"
+    format: facts_quiz
+    priority: 2
+  - id: aw-olympische-spiele
+    topic: allgemeinwissen/kultur
+    hint: "Olympische Spiele: Antike und Neuzeit seit 1896"
+    format: facts_quiz
+    priority: 2
+  - id: aw-fussball-wm
+    topic: allgemeinwissen/kultur
+    hint: "Die Fußball-Weltmeisterschaft: Geschichte und Rekorde"
+    format: facts_quiz
+    priority: 2
+  - id: aw-nobelpreis
+    topic: allgemeinwissen/kultur
+    hint: "Der Nobelpreis: Stiftung, Kategorien, Vergabe"
+    format: facts_quiz
+    priority: 2
+  - id: aw-weltreligionen
+    topic: allgemeinwissen/kultur
+    hint: "Die großen Weltreligionen: Entstehung und Verbreitung (neutral, sachlich)"
+    format: facts_quiz
+    priority: 2
+  - id: aw-kalender
+    topic: allgemeinwissen/kultur
+    hint: "Julianischer und gregorianischer Kalender, Schaltjahre"
+    format: facts_quiz
+    priority: 2
+  - id: aw-goethe-schiller
+    topic: allgemeinwissen/kultur
+    hint: "Goethe und Schiller: Weimarer Klassik"
+    format: facts_quiz
+    priority: 2
+  - id: aw-shakespeare
+    topic: allgemeinwissen/kultur
+    hint: "William Shakespeare: Werke und Einfluss auf die Sprache"
+    format: facts_quiz
+    priority: 2
+  - id: aw-film-geschichte
+    topic: allgemeinwissen/kultur
+    hint: "Die Anfänge des Films: Brüder Lumière, Stummfilm, Tonfilm"
+    format: facts_quiz
+    priority: 2
+  - id: aw-inflation
+    topic: allgemeinwissen/wirtschaft
+    hint: "Inflation: Ursachen, Messung, Rolle der Zentralbanken"
+    format: facts_quiz
+    priority: 2
+  - id: aw-euro
+    topic: allgemeinwissen/wirtschaft
+    hint: "Der Euro: Einführung, Länder, Europäische Zentralbank"
+    format: facts_quiz
+    priority: 2
+  - id: aw-bip
+    topic: allgemeinwissen/wirtschaft
+    hint: "Bruttoinlandsprodukt: was es misst und was nicht"
+    format: facts_quiz
+    priority: 2
+  - id: aw-angebot-nachfrage
+    topic: allgemeinwissen/wirtschaft
+    hint: "Angebot und Nachfrage: Preisbildung am Markt"
+    format: facts_quiz
+    priority: 2
+  - id: aw-aktien-grundlagen
+    topic: allgemeinwissen/wirtschaft
+    hint: "Was eine Aktie ist und wie eine Börse funktioniert (keine Anlageberatung)"
+    format: facts_quiz
+    priority: 2
+  - id: aw-geld-geschichte
+    topic: allgemeinwissen/wirtschaft
+    hint: "Geschichte des Geldes: Tauschhandel, Münzen, Papiergeld"
+    format: facts_quiz
+    priority: 2
+  - id: aw-soziale-marktwirtschaft
+    topic: allgemeinwissen/wirtschaft
+    hint: "Soziale Marktwirtschaft: Idee und Ursprung in Deutschland"
+    format: facts_quiz
+    priority: 2
+  - id: aw-globalisierung
+    topic: allgemeinwissen/wirtschaft
+    hint: "Globalisierung: Containerschiff, Lieferketten, Welthandel"
+    format: facts_quiz
+    priority: 2
+  - id: aw-steuern-grundlagen
+    topic: allgemeinwissen/wirtschaft
+    hint: "Direkte und indirekte Steuern: Grundbegriffe"
+    format: facts_quiz
+    priority: 2
+  - id: aw-eu-institutionen
+    topic: allgemeinwissen/wirtschaft
+    hint: "Die EU-Institutionen: Parlament, Rat, Kommission"
+    format: facts_quiz
+    priority: 2
+  - id: aw-gluehbirne
+    topic: allgemeinwissen/erfindungen
+    hint: "Die Glühbirne: Edison, Swan und Vorgänger"
+    format: facts_quiz
+    priority: 2
+  - id: aw-telefon
+    topic: allgemeinwissen/erfindungen
+    hint: "Das Telefon: Bell, Reis und die Streitfrage"
+    format: facts_quiz
+    priority: 2
+  - id: aw-dampfmaschine
+    topic: allgemeinwissen/erfindungen
+    hint: "Die Dampfmaschine: Watt und die Industrialisierung"
+    format: facts_quiz
+    priority: 2
+  - id: aw-auto
+    topic: allgemeinwissen/erfindungen
+    hint: "Das Automobil: Benz 1886 und Daimler"
+    format: facts_quiz
+    priority: 2
+  - id: aw-flugzeug
+    topic: allgemeinwissen/erfindungen
+    hint: "Die ersten Motorflüge: Gebrüder Wright und Lilienthal"
+    format: facts_quiz
+    priority: 2
+  - id: aw-penicillin
+    topic: allgemeinwissen/erfindungen
+    hint: "Die Entdeckung des Penicillins durch Fleming"
+    format: facts_quiz
+    priority: 2
+  - id: aw-computer-anfaenge
+    topic: allgemeinwissen/erfindungen
+    hint: "Die ersten Computer: Zuse Z3, ENIAC"
+    format: facts_quiz
+    priority: 2
+  - id: aw-internet-www
+    topic: allgemeinwissen/erfindungen
+    hint: "Internet und World Wide Web: ARPANET, Tim Berners-Lee 1989"
+    format: facts_quiz
+    priority: 2
+  - id: aw-smartphone
+    topic: allgemeinwissen/erfindungen
+    hint: "Das Smartphone: von IBM Simon zum iPhone"
+    format: facts_quiz
+    priority: 2
+  - id: aw-kompass
+    topic: allgemeinwissen/erfindungen
+    hint: "Kompass, Papier, Schießpulver: Erfindungen aus China"
+    format: facts_quiz
+    priority: 2
+  - id: aw-rad
+    topic: allgemeinwissen/erfindungen
+    hint: "Das Rad: älteste Funde und Verbreitung"
+    format: facts_quiz
+    priority: 2
+  - id: aw-impfung
+    topic: allgemeinwissen/erfindungen
+    hint: "Die erste Impfung: Edward Jenner und die Pocken"
+    format: facts_quiz
+    priority: 2
+  - id: aw-kaffee
+    topic: allgemeinwissen/alltag
+    hint: "Kaffee: Herkunft, Anbau, Koffein"
+    format: facts_quiz
+    priority: 3
+  - id: aw-schokolade
+    topic: allgemeinwissen/alltag
+    hint: "Schokolade: Kakao, Geschichte, Herstellung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-tastatur-qwertz
+    topic: allgemeinwissen/alltag
+    hint: "Warum die Tastatur QWERTZ heißt"
+    format: facts_quiz
+    priority: 3
+  - id: aw-farben-sehen
+    topic: allgemeinwissen/alltag
+    hint: "Wie wir Farben sehen: Zapfen und Stäbchen"
+    format: facts_quiz
+    priority: 3
+  - id: aw-schlaf-phasen
+    topic: allgemeinwissen/alltag
+    hint: "Schlafphasen: REM und Tiefschlaf (Allgemeinwissen, keine Beratung)"
+    format: facts_quiz
+    priority: 3
+  - id: aw-flaggen-farben
+    topic: allgemeinwissen/alltag
+    hint: "Die Farben der deutschen Flagge und ihre Herkunft"
+    format: facts_quiz
+    priority: 3
+  - id: aw-nationalhymnen
+    topic: allgemeinwissen/alltag
+    hint: "Nationalhymnen: Entstehung der deutschen Hymne"
+    format: facts_quiz
+    priority: 3
+  - id: aw-brotkultur
+    topic: allgemeinwissen/alltag
+    hint: "Deutsche Brotkultur als immaterielles Kulturerbe"
+    format: facts_quiz
+    priority: 3
+  - id: aw-maerchen-grimm
+    topic: allgemeinwissen/alltag
+    hint: "Die Brüder Grimm und ihre Märchensammlung"
+    format: facts_quiz
+    priority: 3
+  - id: aw-oktoberfest
+    topic: allgemeinwissen/alltag
+    hint: "Das Oktoberfest: Ursprung 1810"
+    format: facts_quiz
+    priority: 3
+  - id: ge-mesopotamien
+    topic: geschichte/antike
+    hint: "Mesopotamien: Keilschrift, Städte, Codex Hammurapi"
+    format: facts_quiz
+    priority: 1
+  - id: ge-aegypten-pyramiden
+    topic: geschichte/antike
+    hint: "Die Pyramiden von Gizeh: Bau und Pharaonen"
+    format: facts_quiz
+    priority: 1
+  - id: ge-hieroglyphen
+    topic: geschichte/antike
+    hint: "Hieroglyphen und der Stein von Rosetta"
+    format: facts_quiz
+    priority: 1
+  - id: ge-athen-demokratie
+    topic: geschichte/antike
+    hint: "Die attische Demokratie: Entstehung und Grenzen"
+    format: facts_quiz
+    priority: 1
+  - id: ge-alexander
+    topic: geschichte/antike
+    hint: "Alexander der Große: Feldzüge und Hellenismus"
+    format: facts_quiz
+    priority: 1
+  - id: ge-roemische-republik
+    topic: geschichte/antike
+    hint: "Die Römische Republik: Senat, Konsuln, Ende"
+    format: facts_quiz
+    priority: 1
+  - id: ge-caesar
+    topic: geschichte/antike
+    hint: "Julius Caesar: Aufstieg und Ermordung 44 v. Chr."
+    format: facts_quiz
+    priority: 1
+  - id: ge-roemisches-kaiserreich
+    topic: geschichte/antike
+    hint: "Das Römische Kaiserreich: Augustus bis zur Teilung"
+    format: facts_quiz
+    priority: 1
+  - id: ge-untergang-westrom
+    topic: geschichte/antike
+    hint: "Der Untergang Westroms 476 n. Chr."
+    format: facts_quiz
+    priority: 1
+  - id: ge-varusschlacht
+    topic: geschichte/antike
+    hint: "Die Varusschlacht 9 n. Chr. und der Limes"
+    format: facts_quiz
+    priority: 1
+  - id: ge-china-qin
+    topic: geschichte/antike
+    hint: "Der erste Kaiser Chinas, Qin Shi Huang, und die Terrakotta-Armee"
+    format: facts_quiz
+    priority: 1
+  - id: ge-seidenstrasse
+    topic: geschichte/antike
+    hint: "Die Seidenstraße: Handel zwischen Ost und West"
+    format: facts_quiz
+    priority: 1
+  - id: ge-griechische-philosophen
+    topic: geschichte/antike
+    hint: "Sokrates, Platon, Aristoteles"
+    format: facts_quiz
+    priority: 1
+  - id: ge-pompeji
+    topic: geschichte/antike
+    hint: "Pompeji und der Ausbruch des Vesuvs 79 n. Chr."
+    format: facts_quiz
+    priority: 1
+  - id: ge-karl-der-grosse
+    topic: geschichte/mittelalter
+    hint: "Karl der Große: Kaiserkrönung 800"
+    format: facts_quiz
+    priority: 1
+  - id: ge-lehnswesen
+    topic: geschichte/mittelalter
+    hint: "Das Lehnswesen im Mittelalter"
+    format: facts_quiz
+    priority: 1
+  - id: ge-wikinger
+    topic: geschichte/mittelalter
+    hint: "Die Wikinger: Seefahrt, Handel, Entdeckungen"
+    format: facts_quiz
+    priority: 1
+  - id: ge-kreuzzuege
+    topic: geschichte/mittelalter
+    hint: "Die Kreuzzüge: Ursachen und Verlauf (sachlich)"
+    format: facts_quiz
+    priority: 1
+  - id: ge-magna-carta
+    topic: geschichte/mittelalter
+    hint: "Die Magna Carta 1215"
+    format: facts_quiz
+    priority: 1
+  - id: ge-pest
+    topic: geschichte/mittelalter
+    hint: "Die Pest im 14. Jahrhundert"
+    format: facts_quiz
+    priority: 1
+  - id: ge-hanse
+    topic: geschichte/mittelalter
+    hint: "Die Hanse: Städtebund und Handel"
+    format: facts_quiz
+    priority: 1
+  - id: ge-burgen
+    topic: geschichte/mittelalter
+    hint: "Burgen im Mittelalter: Aufbau und Funktion"
+    format: facts_quiz
+    priority: 1
+  - id: ge-heiliges-roemisches-reich
+    topic: geschichte/mittelalter
+    hint: "Das Heilige Römische Reich: Entstehung bis 1806"
+    format: facts_quiz
+    priority: 1
+  - id: ge-goldene-bulle
+    topic: geschichte/mittelalter
+    hint: "Die Goldene Bulle 1356 und die Kurfürsten"
+    format: facts_quiz
+    priority: 1
+  - id: ge-byzanz
+    topic: geschichte/mittelalter
+    hint: "Das Byzantinische Reich und der Fall Konstantinopels 1453"
+    format: facts_quiz
+    priority: 1
+  - id: ge-mongolen
+    topic: geschichte/mittelalter
+    hint: "Das Mongolische Reich unter Dschingis Khan"
+    format: facts_quiz
+    priority: 1
+  - id: ge-kloester
+    topic: geschichte/mittelalter
+    hint: "Klöster als Zentren von Wissen im Mittelalter"
+    format: facts_quiz
+    priority: 1
+  - id: ge-kolumbus
+    topic: geschichte/neuzeit
+    hint: "Kolumbus 1492 und die Folgen für Amerika"
+    format: facts_quiz
+    priority: 1
+  - id: ge-reformation
+    topic: geschichte/neuzeit
+    hint: "Martin Luther und die Reformation 1517"
+    format: facts_quiz
+    priority: 1
+  - id: ge-dreissigjaehriger-krieg
+    topic: geschichte/neuzeit
+    hint: "Der Dreißigjährige Krieg und der Westfälische Frieden"
+    format: facts_quiz
+    priority: 1
+  - id: ge-aufklaerung
+    topic: geschichte/neuzeit
+    hint: "Die Aufklärung: Kant, Voltaire, Rousseau"
+    format: facts_quiz
+    priority: 1
+  - id: ge-amerikanische-unabhaengigkeit
+    topic: geschichte/neuzeit
+    hint: "Die amerikanische Unabhängigkeitserklärung 1776"
+    format: facts_quiz
+    priority: 1
+  - id: ge-franzoesische-revolution
+    topic: geschichte/neuzeit
+    hint: "Die Französische Revolution 1789"
+    format: facts_quiz
+    priority: 1
+  - id: ge-napoleon
+    topic: geschichte/neuzeit
+    hint: "Napoleon Bonaparte: Aufstieg und Ende"
+    format: facts_quiz
+    priority: 1
+  - id: ge-industrielle-revolution
+    topic: geschichte/neuzeit
+    hint: "Die Industrielle Revolution: England als Ausgangspunkt"
+    format: facts_quiz
+    priority: 1
+  - id: ge-magellan
+    topic: geschichte/neuzeit
+    hint: "Die erste Weltumsegelung: Magellan und Elcano"
+    format: facts_quiz
+    priority: 1
+  - id: ge-galilei
+    topic: geschichte/neuzeit
+    hint: "Galileo Galilei und das heliozentrische Weltbild"
+    format: facts_quiz
+    priority: 1
+  - id: ge-wiener-kongress
+    topic: geschichte/neuzeit
+    hint: "Der Wiener Kongress 1814/15"
+    format: facts_quiz
+    priority: 1
+  - id: ge-sklaverei-abschaffung
+    topic: geschichte/neuzeit
+    hint: "Abschaffung der Sklaverei im 19. Jahrhundert (sachlich)"
+    format: facts_quiz
+    priority: 1
+  - id: ge-revolution-1848
+    topic: geschichte/19-jahrhundert
+    hint: "Die Revolution 1848/49 und die Paulskirche"
+    format: facts_quiz
+    priority: 1
+  - id: ge-reichsgruendung-1871
+    topic: geschichte/19-jahrhundert
+    hint: "Die Reichsgründung 1871 und Bismarck"
+    format: facts_quiz
+    priority: 1
+  - id: ge-sozialversicherung
+    topic: geschichte/19-jahrhundert
+    hint: "Bismarcks Sozialversicherung: Kranken-, Unfall-, Rentenversicherung"
+    format: facts_quiz
+    priority: 1
+  - id: ge-eisenbahn-deutschland
+    topic: geschichte/19-jahrhundert
+    hint: "Die erste deutsche Eisenbahn 1835 Nürnberg–Fürth"
+    format: facts_quiz
+    priority: 1
+  - id: ge-amerikanischer-buergerkrieg
+    topic: geschichte/19-jahrhundert
+    hint: "Der Amerikanische Bürgerkrieg 1861–1865"
+    format: facts_quiz
+    priority: 1
+  - id: ge-kolonialismus
+    topic: geschichte/19-jahrhundert
+    hint: "Kolonialismus und die Berliner Konferenz 1884 (sachlich)"
+    format: facts_quiz
+    priority: 1
+  - id: ge-meiji
+    topic: geschichte/19-jahrhundert
+    hint: "Die Meiji-Restauration in Japan"
+    format: facts_quiz
+    priority: 1
+  - id: ge-frauenwahlrecht
+    topic: geschichte/19-jahrhundert
+    hint: "Frauenwahlrecht: Neuseeland 1893, Deutschland 1918"
+    format: facts_quiz
+    priority: 1
+  - id: ge-goldrausch
+    topic: geschichte/19-jahrhundert
+    hint: "Der kalifornische Goldrausch 1848"
+    format: facts_quiz
+    priority: 1
+  - id: ge-erster-weltkrieg
+    topic: geschichte/20-jahrhundert
+    hint: "Der Erste Weltkrieg: Ursachen, Verlauf, Ende 1918"
+    format: facts_quiz
+    priority: 1
+  - id: ge-weimarer-republik
+    topic: geschichte/20-jahrhundert
+    hint: "Die Weimarer Republik 1918–1933"
+    format: facts_quiz
+    priority: 1
+  - id: ge-weltwirtschaftskrise
+    topic: geschichte/20-jahrhundert
+    hint: "Die Weltwirtschaftskrise ab 1929"
+    format: facts_quiz
+    priority: 1
+  - id: ge-zweiter-weltkrieg
+    topic: geschichte/20-jahrhundert
+    hint: "Der Zweite Weltkrieg 1939–1945: Eckdaten (sachlich)"
+    format: facts_quiz
+    priority: 1
+  - id: ge-holocaust
+    topic: geschichte/20-jahrhundert
+    hint: "Der Holocaust: Fakten und Erinnerungskultur (sachlich, mit seriösen Quellen wie Gedenkstätten)"
+    format: facts_quiz
+    priority: 1
+  - id: ge-nuernberger-prozesse
+    topic: geschichte/20-jahrhundert
+    hint: "Die Nürnberger Prozesse 1945/46"
+    format: facts_quiz
+    priority: 1
+  - id: ge-uno-gruendung
+    topic: geschichte/20-jahrhundert
+    hint: "Gründung der Vereinten Nationen 1945"
+    format: facts_quiz
+    priority: 1
+  - id: ge-grundgesetz
+    topic: geschichte/20-jahrhundert
+    hint: "Das Grundgesetz 1949"
+    format: facts_quiz
+    priority: 1
+  - id: ge-kalter-krieg
+    topic: geschichte/20-jahrhundert
+    hint: "Der Kalte Krieg: Blockbildung, Kuba-Krise"
+    format: facts_quiz
+    priority: 1
+  - id: ge-berliner-mauer
+    topic: geschichte/20-jahrhundert
+    hint: "Die Berliner Mauer 1961–1989"
+    format: facts_quiz
+    priority: 1
+  - id: ge-wiedervereinigung
+    topic: geschichte/20-jahrhundert
+    hint: "Die Deutsche Einheit 1990"
+    format: facts_quiz
+    priority: 1
+  - id: ge-mondlandung
+    topic: geschichte/20-jahrhundert
+    hint: "Apollo 11 und die Mondlandung 1969"
+    format: facts_quiz
+    priority: 1
+  - id: ge-europaeische-einigung
+    topic: geschichte/20-jahrhundert
+    hint: "Von der Montanunion zur EU"
+    format: facts_quiz
+    priority: 1
+  - id: ge-dekolonisation
+    topic: geschichte/20-jahrhundert
+    hint: "Dekolonisation nach 1945: Indien 1947 und Afrika"
+    format: facts_quiz
+    priority: 1
+  - id: ge-buergerrechtsbewegung
+    topic: geschichte/20-jahrhundert
+    hint: "Die US-Bürgerrechtsbewegung: Rosa Parks, Martin Luther King"
+    format: facts_quiz
+    priority: 1
+  - id: ge-mauerfall-schengen
+    topic: geschichte/20-jahrhundert
+    hint: "Schengen-Abkommen 1985 und offene Grenzen"
+    format: facts_quiz
+    priority: 1
+  - id: ge-sowjetunion-ende
+    topic: geschichte/20-jahrhundert
+    hint: "Das Ende der Sowjetunion 1991"
+    format: facts_quiz
+    priority: 1
+  - id: ge-zuse
+    topic: geschichte/technik
+    hint: "Konrad Zuse und die Z3 (1941)"
+    format: facts_quiz
+    priority: 2
+  - id: ge-enigma-turing
+    topic: geschichte/technik
+    hint: "Enigma und Alan Turing in Bletchley Park"
+    format: facts_quiz
+    priority: 2
+  - id: ge-raumfahrt-sputnik
+    topic: geschichte/technik
+    hint: "Sputnik 1957 und der Beginn des Raumfahrtzeitalters"
+    format: facts_quiz
+    priority: 2
+  - id: ge-transistor
+    topic: geschichte/technik
+    hint: "Die Erfindung des Transistors 1947"
+    format: facts_quiz
+    priority: 2
+  - id: ge-telegraf
+    topic: geschichte/technik
+    hint: "Telegrafie und das erste Transatlantikkabel"
+    format: facts_quiz
+    priority: 2
+  - id: ge-radio-fernsehen
+    topic: geschichte/technik
+    hint: "Die Anfänge von Radio und Fernsehen"
+    format: facts_quiz
+    priority: 2
+  - id: ge-atomzeitalter
+    topic: geschichte/technik
+    hint: "Kernspaltung 1938: Hahn, Meitner, Straßmann"
+    format: facts_quiz
+    priority: 2
+  - id: ge-marco-polo
+    topic: geschichte/entdecker
+    hint: "Marco Polo und seine Reise nach China"
+    format: facts_quiz
+    priority: 2
+  - id: ge-vasco-da-gama
+    topic: geschichte/entdecker
+    hint: "Vasco da Gama und der Seeweg nach Indien"
+    format: facts_quiz
+    priority: 2
+  - id: ge-humboldt
+    topic: geschichte/entdecker
+    hint: "Alexander von Humboldt: Forschungsreisen in Amerika"
+    format: facts_quiz
+    priority: 2
+  - id: ge-suedpol-wettlauf
+    topic: geschichte/entdecker
+    hint: "Amundsen gegen Scott: Wettlauf zum Südpol 1911"
+    format: facts_quiz
+    priority: 2
+  - id: ge-everest-erstbesteigung
+    topic: geschichte/entdecker
+    hint: "Die Erstbesteigung des Mount Everest 1953"
+    format: facts_quiz
+    priority: 2
+  - id: ge-cook
+    topic: geschichte/entdecker
+    hint: "James Cook und die Erkundung des Pazifiks"
+    format: facts_quiz
+    priority: 2
+  - id: ge-wissenschaftlerinnen
+    topic: geschichte/personen
+    hint: "Bedeutende Wissenschaftlerinnen: Marie Curie, Lise Meitner, Ada Lovelace, Rosalind Franklin, Emmy Noether"
+    format: flashcards
+    priority: 2
+  - id: ge-erfinder-deutschland
+    topic: geschichte/personen
+    hint: "Deutsche Erfinder: Gutenberg, Benz, Diesel, Röntgen, Zuse"
+    format: flashcards
+    priority: 2
+  - id: ge-herrscherinnen
+    topic: geschichte/personen
+    hint: "Herrscherinnen der Geschichte: Kleopatra, Elisabeth I., Maria Theresia, Katharina die Große"
+    format: flashcards
+    priority: 2

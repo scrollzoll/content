@@ -7,6 +7,12 @@ topics:
   sprachen:
     label: { de: Sprachen, en: Languages }
     status: active
+  allgemeinwissen:
+    label: { de: Allgemeinwissen, en: General knowledge }
+    status: active
+  geschichte:
+    label: { de: Geschichte, en: History }
+    status: active
   self-improvement:
     label: { de: Selbstentwicklung, en: Self-improvement }
     status: later

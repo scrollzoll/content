@@ -64,6 +64,27 @@ LIMIT_PATTERNS = re.compile(r"hit your .{0,40}limit|usage limit|rate limit|\(429
 
 # ---------------------------------------------------------------- Hilfsfunktionen
 
+
+def interleave(queue):
+    """Nach Priorität sortieren, innerhalb gleicher Priorität reihum über die Hauptthemen mischen."""
+    from collections import OrderedDict
+    out = []
+    for prio in sorted({t.get("priority", 3) for t in queue}):
+        buckets = OrderedDict()
+        for t in queue:
+            if t.get("priority", 3) == prio:
+                buckets.setdefault(t["topic"].split("/")[0], []).append(t)
+        lists = list(buckets.values())
+        i = 0
+        while any(lists):
+            for lst in lists:
+                if len(lst) > i:
+                    out.append(lst[i])
+            i += 1
+            if all(len(lst) <= i for lst in lists):
+                break
+    return out
+
 def log(msg: str) -> None:
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     line = f"{datetime.now().isoformat(timespec='seconds')} {msg}"
@@ -178,8 +199,7 @@ def main() -> int:
     reserved = {k for k, v in state.get("reserved", {}).items() if v > now and k not in have}
     rejected = {k for k, v in state.get("rejections", {}).items() if v >= MAX_REJECTIONS}
     queue = [t for t in load_queue() if t["id"] not in have | reserved | rejected]
-    queue.sort(key=lambda t: t.get("priority", 3))
-    topics = queue[:UNITS_PER_RUN]
+    topics = interleave(queue)[:UNITS_PER_RUN]
     if not topics:
         log("nichts zu tun: Warteliste leer oder alle Themen vergeben")
         return 0
