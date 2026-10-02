@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-owasp-top10",
+  "topic": "technologie/sicherheit",
+  "tags": ["owasp", "websicherheit", "schwachstellen"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "OWASP Top 10: Die größten Risiken für Webanwendungen",
+      "intro": "Die OWASP Top 10 sind eine Liste der kritischsten Sicherheitsrisiken für Webanwendungen.",
+      "facts": [
+        { "text": "Die OWASP Top 10 sind ein Aufklärungsdokument für Entwickler und Websicherheit. Sie bündeln einen breiten Konsens darüber, welche Sicherheitsrisiken für Webanwendungen am kritischsten sind.", "source_ids": ["owasp-top10-2025"] },
+        { "text": "Herausgeber ist das OWASP, eine 2001 gegründete gemeinnützige Organisation für Anwendungssicherheit. Die erste Ausgabe der Top 10 erschien 2003.", "source_ids": ["wikipedia-owasp"] },
+        { "text": "In der aktuellen Ausgabe 2025 steht „Broken Access Control“ (fehlerhafte Zugriffskontrolle) auf Platz A01, gefolgt von „Security Misconfiguration“ (Fehlkonfiguration) auf A02.", "source_ids": ["owasp-top10-2025"] },
+        { "text": "„Software Supply Chain Failures“ (Fehler in der Software-Lieferkette) stehen 2025 auf Platz A03. Diese Kategorie gehört zu den Neuerungen der Ausgabe.", "source_ids": ["owasp-top10-2025", "wikipedia-owasp"] },
+        { "text": "Die Liste 2025 umfasst die Plätze A01 bis A10. Den letzten Platz, A10, belegt „Mishandling of Exceptional Conditions“.", "source_ids": ["owasp-top10-2025"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Kategorie steht in der OWASP-Ausgabe 2025 auf Platz A01?",
+          "options": ["Broken Access Control", "Injection", "Cryptographic Failures", "Insecure Design"],
+          "answer_index": 0,
+          "explanation": "A01:2025 ist „Broken Access Control“. Injection steht 2025 erst auf Platz A05."
+        },
+        {
+          "question": "Welche der folgenden Kategorien gehört zu den Neuerungen der Ausgabe 2025?",
+          "options": ["Software Supply Chain Failures", "Broken Access Control", "Injection", "Cryptographic Failures"],
+          "answer_index": 0,
+          "explanation": "Die Lieferkette (Software Supply Chain Failures) wurde 2025 als Kategorie eingeführt. Die anderen drei sind etablierte Kategorien."
+        },
+        {
+          "question": "Wer veröffentlicht die OWASP Top 10?",
+          "options": ["OWASP", "NIST", "MITRE", "FIRST"],
+          "answer_index": 0,
+          "explanation": "Die Liste stammt vom OWASP, der Open Worldwide Application Security Project."
+        }
+      ]
+    },
+    "en": {
+      "title": "OWASP Top 10: The Biggest Risks for Web Applications",
+      "intro": "The OWASP Top 10 is a list of the most critical security risks for web applications.",
+      "facts": [
+        { "text": "The OWASP Top 10 is an awareness document for developers and web application security. It captures a broad consensus on which security risks to web applications are the most critical.", "source_ids": ["owasp-top10-2025"] },
+        { "text": "It is published by OWASP, a nonprofit application security organization founded in 2001. The first edition of the Top 10 appeared in 2003.", "source_ids": ["wikipedia-owasp"] },
+        { "text": "In the current 2025 edition, \"Broken Access Control\" ranks A01, followed by \"Security Misconfiguration\" at A02.", "source_ids": ["owasp-top10-2025"] },
+        { "text": "\"Software Supply Chain Failures\" rank A03 in 2025. This category is one of the new additions of the edition.", "source_ids": ["owasp-top10-2025", "wikipedia-owasp"] },
+        { "text": "The 2025 list covers ranks A01 to A10. The last rank, A10, is held by \"Mishandling of Exceptional Conditions\".", "source_ids": ["owasp-top10-2025"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which category holds rank A01 in the 2025 OWASP edition?",
+          "options": ["Broken Access Control", "Injection", "Cryptographic Failures", "Insecure Design"],
+          "answer_index": 0,
+          "explanation": "A01:2025 is \"Broken Access Control\". Injection only ranks A05 in 2025."
+        },
+        {
+          "question": "Which of these categories is one of the additions of the 2025 edition?",
+          "options": ["Software Supply Chain Failures", "Broken Access Control", "Injection", "Cryptographic Failures"],
+          "answer_index": 0,
+          "explanation": "Software Supply Chain Failures was introduced as a category in 2025. The other three are established categories."
+        },
+        {
+          "question": "Who publishes the OWASP Top 10?",
+          "options": ["OWASP", "NIST", "MITRE", "FIRST"],
+          "answer_index": 0,
+          "explanation": "The list comes from OWASP, the Open Worldwide Application Security Project."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "owasp-top10-2025", "title": "OWASP Top 10:2025", "url": "https://top10.owasp.org/2025", "accessed": "2026-10-02" },
+    { "id": "wikipedia-owasp", "title": "Wikipedia: OWASP", "url": "https://en.wikipedia.org/wiki/OWASP", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-owasp-top10
-    topic: technologie/sicherheit
-    hint: "Was die OWASP Top 10 sind und drei aktuelle Kategorien"
-    format: facts_quiz
-    priority: 1
-  - id: tech-cve-cvss
-    topic: technologie/sicherheit
-    hint: "CVE-Kennungen und CVSS-Bewertung von Schwachstellen"
-    format: facts_quiz
-    priority: 1
   - id: tech-firewall-arten
     topic: technologie/sicherheit
     hint: "Paketfilter, Stateful Firewall, Next-Generation Firewall"
@@ -317,16 +307,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-false-friends-7
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: stadium/Stadium, closet/Klosett, dome/Dom, lack/Lack, brand/Brand"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-false-friends-8
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: handy/Handy, beamer/Beamer, oldtimer/Oldtimer, public viewing, home office (Scheinanglizismen)"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-phrasal-verbs-1
     topic: sprachen/englisch
     hint: "Phrasal Verbs im Job: carry out, come up with, figure out, follow up, set up, turn down"
@@ -1222,11 +1202,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-laengste-fluesse
-    topic: allgemeinwissen/geografie
-    hint: "Die längsten Flüsse der Erde und der Streit Nil vs. Amazonas"
-    format: facts_quiz
-    priority: 1
   - id: aw-wuesten
     topic: allgemeinwissen/geografie
     hint: "Die größten Wüsten: warum auch die Antarktis eine Wüste ist"
@@ -1857,11 +1832,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-athen-demokratie
-    topic: geschichte/antike
-    hint: "Die attische Demokratie: Entstehung und Grenzen"
-    format: facts_quiz
-    priority: 1
   - id: ge-alexander
     topic: geschichte/antike
     hint: "Alexander der Große: Feldzüge und Hellenismus"
