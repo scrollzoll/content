@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-quic",
+  "topic": "technologie/netzwerke",
+  "tags": ["quic", "udp", "http3", "tls", "transportprotokolle"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "QUIC: Das Transportprotokoll hinter HTTP/3",
+      "intro": "QUIC verbindet, was früher getrennt war: zuverlässigen Transport, Verschlüsselung und mehrere Datenströme in einer Verbindung. Übertragen wird es über UDP.",
+      "facts": [
+        { "text": "QUIC ist ein sicheres, verbindungsorientiertes Transportprotokoll für allgemeine Zwecke. Version 1 ist in RFC 9000 vom Mai 2021 festgelegt. QUIC-Pakete werden in UDP-Datagrammen übertragen.", "source_ids": ["rfc9000"] },
+        { "text": "Der QUIC-Handshake handelt Verschlüsselung und Transportparameter gemeinsam aus, damit Anwendungsdaten möglichst früh fließen. Mit 0-RTT kann ein Client Daten senden, bevor der Server geantwortet hat. Das setzt einen früheren Kontakt oder eine Vorkonfiguration voraus.", "source_ids": ["rfc9000"] },
+        { "text": "Für die Sicherheit nutzt QUIC TLS 1.3. Ältere TLS-Versionen darf ein Client nicht anbieten. Pakete werden mit Schlüsseln geschützt, die aus dem TLS-Handshake stammen. Auch Teile des Paketkopfs sind geschützt.", "source_ids": ["rfc9001"] },
+        { "text": "Anwendungen tauschen Daten über Streams aus, geordnete Bytefolgen. Es gibt Streams in beide Richtungen und Streams in nur eine Richtung. Mehrere Streams laufen über eine Verbindung, ohne sich gegenseitig durch Head-of-Line-Blocking aufzuhalten.", "source_ids": ["rfc9000", "rfc9308"] },
+        { "text": "Jede QUIC-Verbindung hat Connection-IDs. Mit ihnen kann eine Verbindung auf einen neuen Netzwerkpfad umziehen und Änderungen der Adresszuordnung überstehen, etwa durch NAT. In Version 1 kann nur der Client migrieren.", "source_ids": ["rfc9000"] },
+        { "text": "HTTP/3 ist die Abbildung von HTTP auf QUIC. Es verlässt sich auf QUIC für Vertraulichkeit, Integrität und zuverlässige, geordnete Zustellung je Stream. Kommt keine QUIC-Verbindung zustande, etwa weil UDP blockiert ist, sollen Clients auf TCP-basierte HTTP-Versionen ausweichen.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "Worin werden QUIC-Pakete übertragen?",
+          "options": ["In TCP-Segmenten", "In UDP-Datagrammen", "In ICMP-Nachrichten", "In DNS-Antworten"],
+          "answer_index": 1,
+          "explanation": "QUIC-Pakete werden in UDP-Datagrammen übertragen. Zuverlässigkeit und Verschlüsselung bringt QUIC selbst mit."
+        },
+        {
+          "question": "Welche TLS-Version nutzt QUIC Version 1 mindestens?",
+          "options": ["TLS 1.0", "TLS 1.1", "TLS 1.2", "TLS 1.3"],
+          "answer_index": 3,
+          "explanation": "QUIC nutzt TLS 1.3. Versionen älter als 1.3 darf ein Client nicht anbieten."
+        },
+        {
+          "question": "Was ermöglichen Connection-IDs in QUIC?",
+          "options": ["Die Verbindung kann auf einen neuen Netzwerkpfad umziehen", "Die Verbindung kommt ohne Verschlüsselung aus", "Alle Streams werden in eine feste Reihenfolge gebracht", "Der Server kann UDP durch TCP ersetzen"],
+          "answer_index": 0,
+          "explanation": "Über Connection-IDs lässt sich eine Verbindung erkennen, auch wenn sich der Netzwerkpfad ändert. So kann sie umziehen und Adressänderungen überstehen."
+        },
+        {
+          "question": "Was erlaubt 0-RTT in QUIC?",
+          "options": ["Der Server wechselt während der Verbindung seine Adresse", "Streams laufen ohne Handshake über TCP", "Der Client sendet Daten, bevor der Server geantwortet hat", "Pakete werden unverschlüsselt übertragen"],
+          "answer_index": 2,
+          "explanation": "Mit 0-RTT kann der Client sofort Anwendungsdaten senden, ohne auf eine Antwort des Servers zu warten. Dafür braucht es einen früheren Kontakt oder eine Vorkonfiguration."
+        }
+      ]
+    },
+    "en": {
+      "title": "QUIC: The Transport Protocol Behind HTTP/3",
+      "intro": "QUIC combines what used to be separate: reliable transport, encryption and several data streams in one connection. It is carried over UDP.",
+      "facts": [
+        { "text": "QUIC is a secure, connection-oriented, general-purpose transport protocol. Version 1 is specified in RFC 9000 from May 2021. QUIC packets are carried in UDP datagrams.", "source_ids": ["rfc9000"] },
+        { "text": "The QUIC handshake negotiates encryption and transport parameters together so that application data can flow as early as possible. With 0-RTT, a client can send data before the server has responded. This requires earlier contact or prior configuration.", "source_ids": ["rfc9000"] },
+        { "text": "For security, QUIC uses TLS 1.3. A client must not offer older TLS versions. Packets are protected with keys that come from the TLS handshake. Parts of the packet header are protected as well.", "source_ids": ["rfc9001"] },
+        { "text": "Applications exchange data over streams, which are ordered sequences of bytes. There are streams in both directions and streams in only one direction. Several streams run over one connection without holding each other up through head-of-line blocking.", "source_ids": ["rfc9000", "rfc9308"] },
+        { "text": "Every QUIC connection has connection IDs. With them, a connection can move to a new network path and survive changes in address mappings, for example caused by NAT. In version 1, only the client can migrate.", "source_ids": ["rfc9000"] },
+        { "text": "HTTP/3 is the mapping of HTTP onto QUIC. It relies on QUIC for confidentiality, integrity and reliable, in-order delivery per stream. If no QUIC connection can be established, for example because UDP is blocked, clients should fall back to TCP-based versions of HTTP.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "What are QUIC packets carried in?",
+          "options": ["In TCP segments", "In UDP datagrams", "In ICMP messages", "In DNS responses"],
+          "answer_index": 1,
+          "explanation": "QUIC packets are carried in UDP datagrams. QUIC provides reliability and encryption itself."
+        },
+        {
+          "question": "Which TLS version does QUIC version 1 use at minimum?",
+          "options": ["TLS 1.0", "TLS 1.1", "TLS 1.2", "TLS 1.3"],
+          "answer_index": 3,
+          "explanation": "QUIC uses TLS 1.3. A client must not offer versions older than 1.3."
+        },
+        {
+          "question": "What do connection IDs make possible in QUIC?",
+          "options": ["The connection can move to a new network path", "The connection works without encryption", "All streams are put into one fixed order", "The server can replace UDP with TCP"],
+          "answer_index": 0,
+          "explanation": "Connection IDs identify a connection even when the network path changes. This lets it migrate and survive address changes."
+        },
+        {
+          "question": "What does 0-RTT allow in QUIC?",
+          "options": ["The server changes its address during the connection", "Streams run over TCP without a handshake", "The client sends data before the server has responded", "Packets are transmitted unencrypted"],
+          "answer_index": 2,
+          "explanation": "With 0-RTT, the client can send application data immediately without waiting for a response from the server. This requires earlier contact or prior configuration."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc9000", "title": "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport", "url": "https://www.rfc-editor.org/rfc/rfc9000.html", "accessed": "2026-10-02" },
+    { "id": "rfc9001", "title": "RFC 9001: Using TLS to Secure QUIC", "url": "https://www.rfc-editor.org/rfc/rfc9001.html", "accessed": "2026-10-02" },
+    { "id": "rfc9114", "title": "RFC 9114: HTTP/3", "url": "https://www.rfc-editor.org/rfc/rfc9114.html", "accessed": "2026-10-02" },
+    { "id": "rfc9308", "title": "RFC 9308: Applicability of the QUIC Transport Protocol", "url": "https://www.rfc-editor.org/rfc/rfc9308.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

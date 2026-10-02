@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-http-versionen",
+  "topic": "technologie/netzwerke",
+  "tags": ["http", "http2", "http3", "quic", "web"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "HTTP/1.1, HTTP/2 und HTTP/3 im Vergleich",
+      "intro": "Die Bedeutung von Anfragen und Antworten ist in allen drei HTTP-Versionen gleich. Geändert hat sich vor allem, wie die Nachrichten über die Leitung gehen.",
+      "facts": [
+        { "text": "HTTP/1.1, HTTP/2 und HTTP/3 stützen sich auf dieselbe HTTP-Semantik, die RFC 9110 festlegt. HTTP/2 und HTTP/3 sind neue Abbildungen dieser Semantik auf eine Verbindung, keine neue Bedeutung von Anfragen und Antworten.", "source_ids": ["rfc9110", "rfc9113", "rfc9114"] },
+        { "text": "HTTP/1.1 überträgt Nachrichten als Text: eine Startzeile, Header-Zeilen, eine Leerzeile und optional einen Nachrichtenkörper. Verbindungen bleiben standardmäßig bestehen, sodass mehrere Anfragen und Antworten über dieselbe Verbindung laufen können.", "source_ids": ["rfc9112", "rfc9114"] },
+        { "text": "Schickt ein Client bei HTTP/1.1 mehrere Anfragen hintereinander über dieselbe Verbindung, muss der Server in derselben Reihenfolge antworten. Eine langsame Antwort hält die folgenden auf (Head-of-Line-Blocking). Deshalb nutzen Clients oft mehrere Verbindungen parallel.", "source_ids": ["rfc9112", "rfc9113"] },
+        { "text": "HTTP/2 führt eine binäre Rahmung ein und erlaubt viele gleichzeitige Anfragen auf einer einzigen TCP-Verbindung. Jeder Austausch bekommt einen eigenen Stream (Multiplexing). Außerdem werden Header-Felder komprimiert.", "source_ids": ["rfc9113"] },
+        { "text": "Das Head-of-Line-Blocking von TCP löst HTTP/2 nicht. Weil TCP das Multiplexing nicht sieht, bremst ein verlorenes oder vertauschtes Paket alle laufenden Übertragungen, auch die gar nicht betroffenen.", "source_ids": ["rfc9113", "rfc9114"] },
+        { "text": "HTTP/3 bildet HTTP auf das Transportprotokoll QUIC ab statt auf TCP. QUIC bringt das Multiplexing selbst mit und sorgt für Zuverlässigkeit je einzelnem Stream. Zur Header-Kompression dient QPACK statt HPACK.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was haben HTTP/1.1, HTTP/2 und HTTP/3 gemeinsam?",
+          "options": ["Dieselbe HTTP-Semantik", "Dasselbe Transportprotokoll", "Dasselbe textbasierte Nachrichtenformat", "Dasselbe Verfahren zur Header-Kompression"],
+          "answer_index": 0,
+          "explanation": "Alle drei Versionen stützen sich auf die Semantik aus RFC 9110. Sie unterscheiden sich darin, wie Nachrichten übertragen werden."
+        },
+        {
+          "question": "Was führte HTTP/2 gegenüber HTTP/1.1 ein?",
+          "options": ["Den Wechsel von TCP zu QUIC", "Nachrichten als lesbaren Text", "Binäre Rahmung und Multiplexing auf einer Verbindung", "Die Header-Kompression QPACK"],
+          "answer_index": 2,
+          "explanation": "HTTP/2 brachte binäre Rahmung, Multiplexing über Streams und Header-Kompression. Es läuft weiterhin über TCP. QUIC und QPACK gehören zu HTTP/3."
+        },
+        {
+          "question": "Auf welchem Transportprotokoll setzt HTTP/3 auf?",
+          "options": ["TCP", "QUIC", "ICMP", "SCTP"],
+          "answer_index": 1,
+          "explanation": "HTTP/3 ist die Abbildung von HTTP auf das Transportprotokoll QUIC. HTTP/2 läuft über TCP, und auch HTTP/1.1 nutzt üblicherweise TCP-Verbindungen."
+        },
+        {
+          "question": "Welches Problem bleibt bei HTTP/2 bestehen?",
+          "options": ["Header-Felder lassen sich nicht komprimieren", "Pro Verbindung ist nur ein Austausch gleichzeitig möglich", "Nachrichten müssen als Text übertragen werden", "Ein verlorenes TCP-Paket bremst alle laufenden Übertragungen"],
+          "answer_index": 3,
+          "explanation": "HTTP/2 bündelt alle Streams auf einer TCP-Verbindung. TCP sieht das Multiplexing nicht, deshalb hält ein verlorenes Paket alle Übertragungen auf."
+        }
+      ]
+    },
+    "en": {
+      "title": "HTTP/1.1, HTTP/2 and HTTP/3 Compared",
+      "intro": "The meaning of requests and responses is the same in all three HTTP versions. What changed is mainly how the messages travel over the wire.",
+      "facts": [
+        { "text": "HTTP/1.1, HTTP/2 and HTTP/3 rely on the same HTTP semantics, which RFC 9110 defines. HTTP/2 and HTTP/3 are new mappings of these semantics onto a connection, not a new meaning of requests and responses.", "source_ids": ["rfc9110", "rfc9113", "rfc9114"] },
+        { "text": "HTTP/1.1 transmits messages as text: a start line, header lines, an empty line and optionally a message body. Connections are persistent by default, so several requests and responses can travel over the same connection.", "source_ids": ["rfc9112", "rfc9114"] },
+        { "text": "If a client sends several HTTP/1.1 requests in a row over the same connection, the server has to respond in the same order. A slow response holds up the ones behind it (head-of-line blocking). That is why clients often use several connections in parallel.", "source_ids": ["rfc9112", "rfc9113"] },
+        { "text": "HTTP/2 introduces binary framing and allows many concurrent requests on a single TCP connection. Each exchange gets its own stream (multiplexing). In addition, header fields are compressed.", "source_ids": ["rfc9113"] },
+        { "text": "HTTP/2 does not solve TCP's head-of-line blocking. Because TCP cannot see the multiplexing, a lost or reordered packet stalls all active transfers, even those not affected at all.", "source_ids": ["rfc9113", "rfc9114"] },
+        { "text": "HTTP/3 maps HTTP onto the transport protocol QUIC instead of TCP. QUIC brings its own multiplexing and provides reliability for each individual stream. Header compression uses QPACK instead of HPACK.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "What do HTTP/1.1, HTTP/2 and HTTP/3 have in common?",
+          "options": ["The same HTTP semantics", "The same transport protocol", "The same text-based message format", "The same header compression scheme"],
+          "answer_index": 0,
+          "explanation": "All three versions rely on the semantics from RFC 9110. They differ in how messages are transmitted."
+        },
+        {
+          "question": "What did HTTP/2 introduce compared with HTTP/1.1?",
+          "options": ["The switch from TCP to QUIC", "Messages as readable text", "Binary framing and multiplexing on one connection", "The header compression QPACK"],
+          "answer_index": 2,
+          "explanation": "HTTP/2 brought binary framing, multiplexing via streams and header compression. It still runs over TCP. QUIC and QPACK belong to HTTP/3."
+        },
+        {
+          "question": "Which transport protocol does HTTP/3 build on?",
+          "options": ["TCP", "QUIC", "ICMP", "SCTP"],
+          "answer_index": 1,
+          "explanation": "HTTP/3 is the mapping of HTTP onto the transport protocol QUIC. HTTP/2 runs over TCP, and HTTP/1.1 typically uses TCP connections as well."
+        },
+        {
+          "question": "Which problem remains with HTTP/2?",
+          "options": ["Header fields cannot be compressed", "Only one exchange at a time is possible per connection", "Messages have to be transmitted as text", "A lost TCP packet stalls all active transfers"],
+          "answer_index": 3,
+          "explanation": "HTTP/2 bundles all streams on one TCP connection. TCP cannot see the multiplexing, so a lost packet holds up all transfers."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc9110", "title": "RFC 9110: HTTP Semantics", "url": "https://www.rfc-editor.org/rfc/rfc9110.html", "accessed": "2026-10-02" },
+    { "id": "rfc9112", "title": "RFC 9112: HTTP/1.1", "url": "https://www.rfc-editor.org/rfc/rfc9112.html", "accessed": "2026-10-02" },
+    { "id": "rfc9113", "title": "RFC 9113: HTTP/2", "url": "https://www.rfc-editor.org/rfc/rfc9113.html", "accessed": "2026-10-02" },
+    { "id": "rfc9114", "title": "RFC 9114: HTTP/3", "url": "https://www.rfc-editor.org/rfc/rfc9114.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

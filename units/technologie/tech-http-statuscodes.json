@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-http-statuscodes",
+  "topic": "technologie/netzwerke",
+  "tags": ["http", "statuscodes", "web", "fehlercodes", "internet"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "HTTP-Statuscodes: Was 200, 301, 404 und 500 bedeuten",
+      "intro": "Jede Antwort eines Webservers enthält eine dreistellige Zahl. Sie verrät, ob die Anfrage geklappt hat, und wenn nicht, auf welcher Seite das Problem liegt.",
+      "facts": [
+        { "text": "HTTP-Statuscodes zeigen an, ob eine Anfrage erfolgreich abgeschlossen wurde. Sie sind in fünf Klassen eingeteilt, von 100–199 bis 500–599. Die Klasse erkennt man an der ersten Ziffer: 1xx, 2xx, 3xx, 4xx oder 5xx.", "source_ids": ["mdn-status", "iana-statuscodes"] },
+        { "text": "1xx steht für Information: Die Anfrage ist angekommen, die Verarbeitung läuft weiter. 2xx steht für Erfolg: Die Anfrage wurde empfangen, verstanden und angenommen. Ein Beispiel ist 200 (OK): Die Anfrage war erfolgreich.", "source_ids": ["iana-statuscodes", "mdn-status"] },
+        { "text": "3xx bedeutet Umleitung: Es sind weitere Schritte nötig, um die Anfrage abzuschließen. 301 (Moved Permanently) heißt, dass die Ressource dauerhaft umgezogen ist. Die neue Adresse steht im Header-Feld Location.", "source_ids": ["iana-statuscodes", "mdn-301"] },
+        { "text": "4xx meldet einen Fehler auf Seiten des Clients: Die Anfrage ist fehlerhaft aufgebaut oder lässt sich nicht erfüllen. 404 (Not Found) heißt, dass der Server die angefragte Ressource nicht finden kann.", "source_ids": ["iana-statuscodes", "mdn-status"] },
+        { "text": "Ein 404 sagt nur, dass die Ressource fehlt. Ob sie vorübergehend oder dauerhaft fehlt, bleibt offen. Wurde eine Ressource dauerhaft entfernt, sollte der Server stattdessen 410 (Gone) senden.", "source_ids": ["mdn-404"] },
+        { "text": "5xx meldet einen Fehler auf Seiten des Servers: Er konnte eine offenbar gültige Anfrage nicht erfüllen. 500 (Internal Server Error) ist ein allgemeiner Fehlercode: Der Server ist auf eine Situation gestoßen, mit der er nicht umgehen kann.", "source_ids": ["iana-statuscodes", "mdn-status"] }
+      ],
+      "quiz": [
+        {
+          "question": "Woran erkennt man die Klasse eines HTTP-Statuscodes?",
+          "options": ["An der letzten Ziffer", "An der ersten Ziffer", "An der Länge der Antwort", "An der Anzahl der Umleitungen"],
+          "answer_index": 1,
+          "explanation": "Die erste Ziffer zeigt die Klasse: 1xx Information, 2xx Erfolg, 3xx Umleitung, 4xx Client-Fehler, 5xx Server-Fehler."
+        },
+        {
+          "question": "Eine Seite ist dauerhaft unter eine neue Adresse umgezogen. Welcher Statuscode passt dazu?",
+          "options": ["200", "404", "301", "500"],
+          "answer_index": 2,
+          "explanation": "301 (Moved Permanently) zeigt an, dass die Ressource dauerhaft umgezogen ist. Die neue Adresse steht im Header-Feld Location."
+        },
+        {
+          "question": "Zu welcher Klasse gehört der Statuscode 404?",
+          "options": ["Erfolg (2xx)", "Umleitung (3xx)", "Server-Fehler (5xx)", "Client-Fehler (4xx)"],
+          "answer_index": 3,
+          "explanation": "Die erste Ziffer 4 ordnet den Code den Client-Fehlern zu. 404 (Not Found) heißt, dass der Server die angefragte Ressource nicht finden kann."
+        },
+        {
+          "question": "Ein Server stößt bei einer offenbar gültigen Anfrage auf eine Situation, mit der er nicht umgehen kann. Welcher Code passt?",
+          "options": ["500", "301", "404", "200"],
+          "answer_index": 0,
+          "explanation": "500 (Internal Server Error) gehört zur Klasse 5xx. Sie steht für Fehler auf Seiten des Servers bei einer offenbar gültigen Anfrage."
+        }
+      ]
+    },
+    "en": {
+      "title": "HTTP Status Codes: What 200, 301, 404 and 500 Mean",
+      "intro": "Every response from a web server contains a three-digit number. It tells you whether the request worked and, if not, which side the problem is on.",
+      "facts": [
+        { "text": "HTTP status codes indicate whether a request has been completed successfully. They are grouped into five classes, from 100–199 to 500–599. You can tell the class from the first digit: 1xx, 2xx, 3xx, 4xx or 5xx.", "source_ids": ["mdn-status", "iana-statuscodes"] },
+        { "text": "1xx stands for information: the request has arrived and processing continues. 2xx stands for success: the request was received, understood and accepted. One example is 200 (OK): the request succeeded.", "source_ids": ["iana-statuscodes", "mdn-status"] },
+        { "text": "3xx means redirection: further steps are needed to complete the request. 301 (Moved Permanently) means the resource has moved permanently. The new address is given in the Location header field.", "source_ids": ["iana-statuscodes", "mdn-301"] },
+        { "text": "4xx reports an error on the client's side: the request is malformed or cannot be fulfilled. 404 (Not Found) means the server cannot find the requested resource.", "source_ids": ["iana-statuscodes", "mdn-status"] },
+        { "text": "A 404 only says that the resource is missing. Whether it is missing temporarily or permanently is left open. If a resource has been removed permanently, the server should send 410 (Gone) instead.", "source_ids": ["mdn-404"] },
+        { "text": "5xx reports an error on the server's side: it failed to fulfill an apparently valid request. 500 (Internal Server Error) is a generic error code: the server has run into a situation it does not know how to handle.", "source_ids": ["iana-statuscodes", "mdn-status"] }
+      ],
+      "quiz": [
+        {
+          "question": "How can you tell the class of an HTTP status code?",
+          "options": ["From the last digit", "From the first digit", "From the length of the response", "From the number of redirects"],
+          "answer_index": 1,
+          "explanation": "The first digit shows the class: 1xx information, 2xx success, 3xx redirection, 4xx client error, 5xx server error."
+        },
+        {
+          "question": "A page has moved permanently to a new address. Which status code fits?",
+          "options": ["200", "404", "301", "500"],
+          "answer_index": 2,
+          "explanation": "301 (Moved Permanently) indicates that the resource has moved permanently. The new address is given in the Location header field."
+        },
+        {
+          "question": "Which class does the status code 404 belong to?",
+          "options": ["Success (2xx)", "Redirection (3xx)", "Server error (5xx)", "Client error (4xx)"],
+          "answer_index": 3,
+          "explanation": "The first digit 4 places the code among the client errors. 404 (Not Found) means the server cannot find the requested resource."
+        },
+        {
+          "question": "On an apparently valid request, a server runs into a situation it does not know how to handle. Which code fits?",
+          "options": ["500", "301", "404", "200"],
+          "answer_index": 0,
+          "explanation": "500 (Internal Server Error) belongs to the 5xx class. It stands for errors on the server's side with an apparently valid request."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "iana-statuscodes", "title": "IANA: Hypertext Transfer Protocol (HTTP) Status Code Registry", "url": "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml", "accessed": "2026-10-02" },
+    { "id": "mdn-status", "title": "MDN Web Docs: HTTP response status codes", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status", "accessed": "2026-10-02" },
+    { "id": "mdn-301", "title": "MDN Web Docs: 301 Moved Permanently", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/301", "accessed": "2026-10-02" },
+    { "id": "mdn-404", "title": "MDN Web Docs: 404 Not Found", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

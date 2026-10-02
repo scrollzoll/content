@@ -2,26 +2,6 @@
 # holen sich hier das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu existiert.
 # priority: 1 = hoch, 3 = niedrig. Format eines Eintrags bitte beibehalten (zwei Leerzeichen + '- id:').
 queue:
-  - id: tech-http-statuscodes
-    topic: technologie/netzwerke
-    hint: "Die wichtigsten HTTP-Statuscode-Klassen und Beispiele (200, 301, 404, 500)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-http-versionen
-    topic: technologie/netzwerke
-    hint: "HTTP/1.1, HTTP/2 und HTTP/3: was sich jeweils geändert hat"
-    format: facts_quiz
-    priority: 1
-  - id: tech-quic
-    topic: technologie/netzwerke
-    hint: "QUIC: Transportprotokoll über UDP, Basis von HTTP/3 (RFC 9000)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-cdn
-    topic: technologie/netzwerke
-    hint: "Wie ein Content Delivery Network Inhalte schneller ausliefert"
-    format: facts_quiz
-    priority: 1
   - id: tech-bgp
     topic: technologie/netzwerke
     hint: "BGP als Routing-Protokoll zwischen autonomen Systemen im Internet"
