@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-7",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (7)",
+      "intro": "Fünf weitere Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „stadium“: Was heißt es?", "back": "Stadion: ein Ort für Sportveranstaltungen. Nicht „Stadium“." },
+        { "front": "Deutsch „Stadium“: Was heißt es auf Englisch?", "back": "stage oder phase: ein Entwicklungsabschnitt, etwa das Stadium einer Krankheit. Nicht „stadium“." },
+        { "front": "Englisch „closet“: Was heißt es?", "back": "Schrank oder kleiner Abstellraum für Kleidung und Vorräte. Nicht „Klosett“." },
+        { "front": "Deutsch „Klosett“: Was heißt es auf Englisch?", "back": "toilet: der Raum mit Spülung. Das deutsche Wort kommt von englisch „water closet“. Nicht „closet“." },
+        { "front": "Englisch „dome“: Was heißt es?", "back": "Kuppel: ein halbkugelförmiges Gewölbe oder Dach. Nicht „Dom“." },
+        { "front": "Deutsch „Dom“: Was heißt es auf Englisch?", "back": "cathedral: eine große Kirche, meist Bischofskirche, etwa der Kölner Dom. Nicht „dome“." },
+        { "front": "Englisch „lack“: Was heißt es?", "back": "Mangel, Fehlen. Als Verb: etwas nicht haben („to lack“). Nicht „Lack“." },
+        { "front": "Deutsch „Lack“: Was heißt es auf Englisch?", "back": "varnish oder lacquer: ein glänzender Überzug, der aufgepinselt oder gespritzt wird. Nicht „lack“." },
+        { "front": "Englisch „brand“: Was heißt es?", "back": "Marke: ein Name oder Logo, das ein Produkt kennzeichnet. Nicht „Brand“ im Sinne von Feuer." },
+        { "front": "Deutsch „Brand“: Was heißt es auf Englisch?", "back": "fire: ein gefährliches, zerstörerisches Feuer. Beide Wörter stammen vom selben germanischen Wort für „Flamme“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (7)",
+      "intro": "Five more word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"stadium\": what does it mean?", "back": "A venue for sporting events. In German: Stadion, not \"Stadium\"." },
+        { "front": "German \"Stadium\": what does it mean in English?", "back": "Stage or phase: a section of development, such as the stage of a disease. Not \"stadium\"." },
+        { "front": "English \"closet\": what does it mean?", "back": "A cupboard or small room for storing clothes and supplies. In German: Schrank or Abstellraum, not \"Klosett\"." },
+        { "front": "German \"Klosett\": what does it mean in English?", "back": "Toilet: the room with a flush. The German word comes from English \"water closet\". Not \"closet\"." },
+        { "front": "English \"dome\": what does it mean?", "back": "A hemispherical vault or roof. In German: Kuppel, not \"Dom\"." },
+        { "front": "German \"Dom\": what does it mean in English?", "back": "Cathedral: a large church, usually a bishop's church, such as Cologne Cathedral. Not \"dome\"." },
+        { "front": "English \"lack\": what does it mean?", "back": "A shortage or absence. As a verb: to be without something (\"to lack\"). In German: Mangel, not \"Lack\"." },
+        { "front": "German \"Lack\": what does it mean in English?", "back": "Varnish or lacquer: a glossy coating applied by brush or spray. Not \"lack\"." },
+        { "front": "English \"brand\": what does it mean?", "back": "A name or logo that identifies a product. In German: Marke, not \"Brand\" in the sense of fire." },
+        { "front": "German \"Brand\": what does it mean in English?", "back": "Fire: a dangerous, destructive blaze. Both words come from the same Germanic word for \"flame\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-stadium", "title": "Wiktionary: stadium", "url": "https://en.wiktionary.org/wiki/stadium", "accessed": "2026-10-02" },
+    { "id": "wiktionary-closet", "title": "Wiktionary: closet", "url": "https://en.wiktionary.org/wiki/closet", "accessed": "2026-10-02" },
+    { "id": "wiktionary-dome", "title": "Wiktionary: dome", "url": "https://en.wiktionary.org/wiki/dome", "accessed": "2026-10-02" },
+    { "id": "wiktionary-lack", "title": "Wiktionary: lack", "url": "https://en.wiktionary.org/wiki/lack", "accessed": "2026-10-02" },
+    { "id": "wiktionary-brand", "title": "Wiktionary: brand", "url": "https://en.wiktionary.org/wiki/brand", "accessed": "2026-10-02" },
+    { "id": "dwds-stadium", "title": "DWDS: Stadium", "url": "https://www.dwds.de/wb/Stadium", "accessed": "2026-10-02" },
+    { "id": "dwds-stadion", "title": "DWDS: Stadion", "url": "https://www.dwds.de/wb/Stadion", "accessed": "2026-10-02" },
+    { "id": "dwds-klosett", "title": "DWDS: Klosett", "url": "https://www.dwds.de/wb/Klosett", "accessed": "2026-10-02" },
+    { "id": "dwds-dom", "title": "DWDS: Dom", "url": "https://www.dwds.de/wb/Dom", "accessed": "2026-10-02" },
+    { "id": "dwds-lack", "title": "DWDS: Lack", "url": "https://www.dwds.de/wb/Lack", "accessed": "2026-10-02" },
+    { "id": "dwds-brand", "title": "DWDS: Brand", "url": "https://www.dwds.de/wb/Brand", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

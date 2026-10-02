@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "aw-laengste-fluesse",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["fluesse", "nil", "amazonas"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die längsten Flüsse der Erde",
+      "intro": "Welcher Fluss ist der längste? Die Antwort hängt davon ab, wie man misst.",
+      "facts": [
+        { "text": "Eine verbreitete Liste führt den Nil (ca. 6.650 km) vor dem Amazonas (ca. 6.400 km), dem Jangtse (ca. 6.300 km), dem Mississippi-Missouri (ca. 6.275 km) und dem Jenissei (ca. 5.539 km).", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "Der Nil gilt traditionell als längster Fluss. 2007/2008 argumentierten einige Wissenschaftler, der Amazonas sei mit rund 6.992 km länger (Nil im selben Vergleich: 6.853 km), wenn man den Pará-Mündungsarm einrechnet.", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "Eine Studie von 2009 kam zum Ergebnis, dass der Nil doch länger ist. Die Debatte dauert an; es hängt davon ab, welche Quelle und welche Mündung man zählt.", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "Flusslängen sind keine feste Zahl: Quellwahl, Mündungsdefinition, Mäander sowie Dämme und Erosion verändern das Ergebnis. Der Nil wird je nach Quelle mit 6.650 bis 7.088 km angegeben, der Amazonas mit 6.400 bis 6.575 km.", "source_ids": ["wikipedia-rivers-by-length", "wikipedia-nile", "wikipedia-amazon"] },
+        { "text": "Beim Wasservolumen liegt der Amazonas klar vorn: Im Mittel strömen rund 223.700 m³ pro Sekunde ins Meer. Der Nil führt nur etwa 1 % der Wassermenge des Amazonas.", "source_ids": ["wikipedia-amazon", "wikipedia-nile"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Fluss gilt traditionell als der längste der Erde?",
+          "options": ["Nil", "Amazonas", "Jangtse", "Jenissei"],
+          "answer_index": 0,
+          "explanation": "Der Nil gilt traditionell als längster Fluss; eine Studie von 2009 stützte das gegen die Amazonas-These."
+        },
+        {
+          "question": "Welcher Fluss führt die größte Wassermenge?",
+          "options": ["Amazonas", "Nil", "Jangtse", "Mississippi"],
+          "answer_index": 0,
+          "explanation": "Der Amazonas hat mit rund 223.700 m³/s den größten Abfluss. Der Nil erreicht nur etwa 1 % davon."
+        },
+        {
+          "question": "Warum ist die „längste Fluss“-Frage umstritten?",
+          "options": [
+            "Quelle und Mündung lassen sich unterschiedlich festlegen",
+            "Flüsse werden nie mit Satelliten vermessen",
+            "Beide Flüsse haben genau dieselbe Länge",
+            "Der Nil ändert jedes Jahr seinen Namen"
+          ],
+          "answer_index": 0,
+          "explanation": "Je nachdem, welcher Quellfluss und welche Mündung zählen, ändert sich die Länge. Eine einzige „richtige“ Zahl gibt es nicht."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Longest Rivers on Earth",
+      "intro": "Which river is the longest? The answer depends on how you measure.",
+      "facts": [
+        { "text": "A widely used list ranks the Nile (about 6,650 km) ahead of the Amazon (about 6,400 km), the Yangtze (about 6,300 km), the Mississippi-Missouri (about 6,275 km) and the Yenisey (about 5,539 km).", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "The Nile is traditionally considered the longest river. In 2007/2008, some scientists argued the Amazon is longer at about 6,992 km (Nile in the same comparison: 6,853 km) when the Pará estuary arm is included.", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "A 2009 study concluded that the Nile is longer after all. The debate continues; it depends on which source and which mouth you count.", "source_ids": ["wikipedia-rivers-by-length"] },
+        { "text": "River length is not one fixed number: choice of source, definition of the mouth, meanders, dams and erosion all change the result. The Nile is given as 6,650 to 7,088 km, the Amazon as 6,400 to 6,575 km.", "source_ids": ["wikipedia-rivers-by-length", "wikipedia-nile", "wikipedia-amazon"] },
+        { "text": "In water volume the Amazon is far ahead: on average about 223,700 m³ per second flow into the sea. The Nile carries only about 1% of the Amazon's water.", "source_ids": ["wikipedia-amazon", "wikipedia-nile"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which river is traditionally considered the longest on Earth?",
+          "options": ["Nile", "Amazon", "Yangtze", "Yenisey"],
+          "answer_index": 0,
+          "explanation": "The Nile is traditionally seen as the longest river; a 2009 study supported this against the Amazon claim."
+        },
+        {
+          "question": "Which river carries the largest volume of water?",
+          "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+          "answer_index": 0,
+          "explanation": "The Amazon has the largest discharge at about 223,700 m³/s. The Nile reaches only about 1% of that."
+        },
+        {
+          "question": "Why is the question of the longest river disputed?",
+          "options": [
+            "Source and mouth can be defined in different ways",
+            "Rivers are never measured with satellites",
+            "Both rivers have exactly the same length",
+            "The Nile changes its name every year"
+          ],
+          "answer_index": 0,
+          "explanation": "The length changes depending on which headwater and which mouth count. There is no single correct number."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-rivers-by-length", "title": "Wikipedia: List of rivers by length", "url": "https://en.wikipedia.org/wiki/List_of_rivers_by_length", "accessed": "2026-10-02" },
+    { "id": "wikipedia-nile", "title": "Wikipedia: Nile", "url": "https://en.wikipedia.org/wiki/Nile", "accessed": "2026-10-02" },
+    { "id": "wikipedia-amazon", "title": "Wikipedia: Amazon River", "url": "https://en.wikipedia.org/wiki/Amazon_River", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

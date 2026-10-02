@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-8",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "scheinanglizismen", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (8): Scheinanglizismen",
+      "intro": "Diese Wörter klingen englisch, sind aber deutsche Bildungen oder bedeuten im Englischen etwas anderes.",
+      "cards": [
+        { "front": "Deutsch „Handy“: Was heißt es?", "back": "Mobiltelefon (englisch: mobile phone). „Handy“ ist ein Scheinanglizismus und wird von englischen Muttersprachlern meist nicht als Telefon verstanden." },
+        { "front": "Englisch „handy“: Was heißt es?", "back": "nützlich, praktisch, griffbereit oder geschickt mit den Händen. Nicht „Mobiltelefon“." },
+        { "front": "Deutsch „Beamer“: Was heißt es?", "back": "Videoprojektor (englisch: video projector). Der Sinn „projizieren“ entstand im Deutschen; das englische „beam“ hat ihn nicht. Ein Scheinanglizismus." },
+        { "front": "Englisch „beamer“: Was heißt es?", "back": "Im Cricket ein Ball, der nicht aufspringt und den Schlagmann oberhalb der Hüfte erreicht. Auch Slang für einen BMW (Auto oder Motorrad)." },
+        { "front": "Deutsch „Oldtimer“: Was heißt es?", "back": "Ein gut gepflegtes, sehr altes Fahrzeug (englisch: vintage car). „Oldtimer“ ist ein Scheinanglizismus zu „old-timer“." },
+        { "front": "Englisch „old-timer“: Was heißt es?", "back": "Ein älterer Mensch oder jemand mit langer Erfahrung, ein Veteran. Kein Fahrzeug." },
+        { "front": "Deutsch „Public Viewing“: Was heißt es?", "back": "Die öffentliche Übertragung eines Sportspiels oder Ereignisses auf einem Großbildschirm (englisch: public screening). Ein Scheinanglizismus." },
+        { "front": "Englisch „public viewing“: Was heißt es?", "back": "Je nach Zusammenhang eine öffentliche Vorführung (Screening) oder ein Bereich, von dem aus die Öffentlichkeit Sehenswertes sicher betrachten kann." },
+        { "front": "Deutsch „Homeoffice“: Was heißt es?", "back": "Das Arbeiten von zu Hause (englisch: working from home) oder der Arbeitsplatz daheim. „Homeoffice“ ist ein Scheinanglizismus aus „home“ und „office“." },
+        { "front": "Englisch „home office“: Was heißt es?", "back": "Die Zentrale einer Organisation oder ein Raum zu Hause, der als Büro eingerichtet ist. In Großbritannien auch das Innenministerium." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (8): Pseudo-Anglicisms",
+      "intro": "These words sound English, but they are German formations or mean something else in English.",
+      "cards": [
+        { "front": "German \"Handy\": what does it mean?", "back": "A mobile phone (German: Mobiltelefon). \"Handy\" is a pseudo-anglicism, and native English speakers usually do not understand it as a phone." },
+        { "front": "English \"handy\": what does it mean?", "back": "Useful, convenient, within reach, or skilled with the hands. Not \"Mobiltelefon\"." },
+        { "front": "German \"Beamer\": what does it mean?", "back": "A video projector. The sense \"to project\" arose in German; English \"beam\" does not have it. A pseudo-anglicism." },
+        { "front": "English \"beamer\": what does it mean?", "back": "In cricket, a ball that does not bounce and reaches the batter above the waist. Also slang for a BMW (car or motorcycle)." },
+        { "front": "German \"Oldtimer\": what does it mean?", "back": "A well-kept, very old vehicle (English: vintage car). \"Oldtimer\" is a pseudo-anglicism based on \"old-timer\"." },
+        { "front": "English \"old-timer\": what does it mean?", "back": "An older person or someone with long experience, a veteran. Not a vehicle." },
+        { "front": "German \"Public Viewing\": what does it mean?", "back": "The public showing of a sports match or other event on a big screen (English: public screening). A pseudo-anglicism." },
+        { "front": "English \"public viewing\": what does it mean?", "back": "Depending on context, a public screening or an area from which the public can safely view sights of interest." },
+        { "front": "German \"Homeoffice\": what does it mean?", "back": "Working from home (English: working from home) or the workplace at home. \"Homeoffice\" is a pseudo-anglicism built from \"home\" and \"office\"." },
+        { "front": "English \"home office\": what does it mean?", "back": "An organization's headquarters or a room at home set up as an office. In Britain also the interior ministry." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "dwds-handy", "title": "DWDS: Handy", "url": "https://www.dwds.de/wb/Handy", "accessed": "2026-10-02" },
+    { "id": "dwds-beamer", "title": "DWDS: Beamer", "url": "https://www.dwds.de/wb/Beamer", "accessed": "2026-10-02" },
+    { "id": "dwds-oldtimer", "title": "DWDS: Oldtimer", "url": "https://www.dwds.de/wb/Oldtimer", "accessed": "2026-10-02" },
+    { "id": "dwds-public-viewing", "title": "DWDS: Public Viewing", "url": "https://www.dwds.de/wb/Public%20Viewing", "accessed": "2026-10-02" },
+    { "id": "dwds-homeoffice", "title": "DWDS: Homeoffice", "url": "https://www.dwds.de/wb/Homeoffice", "accessed": "2026-10-02" },
+    { "id": "wiktionary-de-handy", "title": "Wiktionary: Handy (Deutsch)", "url": "https://en.wiktionary.org/wiki/Handy", "accessed": "2026-10-02" },
+    { "id": "wiktionary-de-beamer", "title": "Wiktionary: Beamer (Deutsch)", "url": "https://en.wiktionary.org/wiki/Beamer", "accessed": "2026-10-02" },
+    { "id": "wiktionary-de-oldtimer", "title": "Wiktionary: Oldtimer (Deutsch)", "url": "https://en.wiktionary.org/wiki/Oldtimer", "accessed": "2026-10-02" },
+    { "id": "wiktionary-de-public-viewing", "title": "Wiktionary: Public Viewing (Deutsch)", "url": "https://en.wiktionary.org/wiki/Public_Viewing", "accessed": "2026-10-02" },
+    { "id": "wiktionary-de-homeoffice", "title": "Wiktionary: Homeoffice (Deutsch)", "url": "https://en.wiktionary.org/wiki/Homeoffice", "accessed": "2026-10-02" },
+    { "id": "wiktionary-handy", "title": "Wiktionary: handy", "url": "https://en.wiktionary.org/wiki/handy", "accessed": "2026-10-02" },
+    { "id": "wiktionary-beamer", "title": "Wiktionary: beamer", "url": "https://en.wiktionary.org/wiki/beamer", "accessed": "2026-10-02" },
+    { "id": "wiktionary-old-timer", "title": "Wiktionary: old-timer", "url": "https://en.wiktionary.org/wiki/old-timer", "accessed": "2026-10-02" },
+    { "id": "wikipedia-public-viewing", "title": "Wikipedia: Public viewing", "url": "https://en.wikipedia.org/wiki/Public_viewing", "accessed": "2026-10-02" },
+    { "id": "wiktionary-home-office", "title": "Wiktionary: home office", "url": "https://en.wiktionary.org/wiki/home_office", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

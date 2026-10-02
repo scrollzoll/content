@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "ge-athen-demokratie",
+  "topic": "geschichte/antike",
+  "tags": ["athen", "demokratie", "antike-griechenland"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die attische Demokratie: Entstehung und Grenzen",
+      "intro": "Athen erfand im 5. Jahrhundert v. Chr. eine Demokratie, an der aber nur wenige teilnehmen durften.",
+      "facts": [
+        { "text": "Um 594 v. Chr. legte Solon mit Vermögensklassen, einem Rat der 400 und einer Volksversammlung erste Grundlagen. 508/507 v. Chr. ordnete Kleisthenes die Bürger in zehn Stämme nach Wohnort statt nach Reichtum.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "462 v. Chr. beschnitt Ephialtes die Macht des Areopags zugunsten demokratischer Einrichtungen.", "source_ids": ["wikipedia-athenian-democracy"] },
+        { "text": "Die Volksversammlung (Ekklesia) stimmte über Gesetze, Entscheidungen und Prozesse ab. Der Rat (Boule) aus 500 jährlich ausgelosten Mitgliedern bereitete die Vorlagen vor.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "Teilnehmen durften nur erwachsene männliche Bürger, etwa 10–20 % der Bevölkerung. Frauen, Sklaven und zugewanderte Fremde (Metöken) waren ausgeschlossen.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "411 und 404 v. Chr. unterbrachen oligarchische Umstürze die Demokratie. Sie endete 322 v. Chr., als Antipater sie nach dem Lamischen Krieg unterdrückte.", "source_ids": ["wikipedia-athenian-democracy"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wer ordnete 508/507 v. Chr. die Bürger Athens in zehn Stämme nach Wohnort?",
+          "options": ["Kleisthenes", "Solon", "Perikles", "Antipater"],
+          "answer_index": 0,
+          "explanation": "Kleisthenes schwächte mit dieser Neuordnung die Macht des Adels; sie gilt als Grundlage der Demokratie."
+        },
+        {
+          "question": "Wer durfte in der Volksversammlung abstimmen?",
+          "options": [
+            "Erwachsene männliche Bürger",
+            "Alle erwachsenen Einwohner Athens",
+            "Nur Grundbesitzer aus dem Adel",
+            "Alle freien Einwohner einschließlich Frauen"
+          ],
+          "answer_index": 0,
+          "explanation": "Frauen, Sklaven und Metöken waren ausgeschlossen; nur etwa 10–20 % der Bevölkerung hatten politische Rechte."
+        },
+        {
+          "question": "Wie wurden die 500 Mitglieder des Rates (Boule) bestimmt?",
+          "options": [
+            "Durch Los",
+            "Durch Erbfolge",
+            "Durch Ernennung des Areopags",
+            "Durch Wahl nur aus dem Adel"
+          ],
+          "answer_index": 0,
+          "explanation": "Das Los (Sortition) sollte Korruption verhindern und politische Gleichheit sichern."
+        }
+      ]
+    },
+    "en": {
+      "title": "Athenian Democracy: Origins and Limits",
+      "intro": "In the 5th century BC Athens built a democracy, but only a few people were allowed to take part.",
+      "facts": [
+        { "text": "Around 594 BC, Solon laid early foundations with property classes, a council of 400 and an assembly. In 508/507 BC, Cleisthenes grouped citizens into ten tribes by place of residence rather than wealth.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "In 462 BC, Ephialtes cut the power of the Areopagus in favour of democratic institutions.", "source_ids": ["wikipedia-athenian-democracy"] },
+        { "text": "The assembly (Ecclesia) voted on laws, decisions and trials. The council (Boule) of 500 members, chosen by lot each year, prepared the proposals.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "Only adult male citizens could take part, about 10–20% of the population. Women, slaves and resident foreigners (metics) were excluded.", "source_ids": ["wikipedia-athenian-democracy", "worldhistory-athenian-democracy"] },
+        { "text": "Oligarchic coups interrupted the democracy in 411 and 404 BC. It ended in 322 BC, when Antipater suppressed it after the Lamian War.", "source_ids": ["wikipedia-athenian-democracy"] }
+      ],
+      "quiz": [
+        {
+          "question": "Who grouped Athens' citizens into ten tribes by place of residence in 508/507 BC?",
+          "options": ["Cleisthenes", "Solon", "Pericles", "Antipater"],
+          "answer_index": 0,
+          "explanation": "This reorganisation weakened the aristocracy's power and is seen as the foundation of the democracy."
+        },
+        {
+          "question": "Who was allowed to vote in the assembly?",
+          "options": [
+            "Adult male citizens",
+            "All adult residents of Athens",
+            "Only landowners from the nobility",
+            "All free residents including women"
+          ],
+          "answer_index": 0,
+          "explanation": "Women, slaves and metics were excluded; only about 10–20% of the population had political rights."
+        },
+        {
+          "question": "How were the 500 members of the council (Boule) chosen?",
+          "options": [
+            "By lot",
+            "By inheritance",
+            "By appointment of the Areopagus",
+            "By election from the nobility only"
+          ],
+          "answer_index": 0,
+          "explanation": "Selection by lot (sortition) was meant to prevent corruption and ensure political equality."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-athenian-democracy", "title": "Wikipedia: Athenian democracy", "url": "https://en.wikipedia.org/wiki/Athenian_democracy", "accessed": "2026-10-02" },
+    { "id": "worldhistory-athenian-democracy", "title": "World History Encyclopedia: Athenian Democracy", "url": "https://www.worldhistory.org/Athenian_Democracy/", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
