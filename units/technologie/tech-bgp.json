@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "tech-bgp",
+  "topic": "technologie/netzwerke",
+  "tags": ["bgp", "routing", "autonomes-system", "internet", "tcp"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "BGP: Wie die Netze des Internets Routen austauschen",
+      "intro": "Autonome Systeme sind Netze unter einheitlicher Verwaltung mit eigener Routing-Politik. Über BGP teilen sie einander mit, welche Ziele über sie erreichbar sind.",
+      "facts": [
+        { "text": "Das Border Gateway Protocol (BGP) ist ein Routing-Protokoll zwischen autonomen Systemen. Die Version BGP-4 ist in RFC 4271 vom Januar 2006 beschrieben. Hauptaufgabe eines BGP-Systems ist es, Informationen zur Erreichbarkeit von Netzen mit anderen BGP-Systemen auszutauschen.", "source_ids": ["rfc4271"] },
+        { "text": "Ein autonomes System (AS) ist eine zusammenhängende Gruppe von IP-Präfixen, die von einem oder mehreren Netzbetreibern betrieben wird und eine einzige, klar definierte Routing-Politik hat. Jedes AS hat eine weltweit eindeutige Nummer, die AS-Nummer (ASN).", "source_ids": ["rfc1930"] },
+        { "text": "BGP nutzt TCP als Transportprotokoll und lauscht auf TCP-Port 179. Um erneutes Senden, Bestätigungen und die Reihenfolge muss es sich deshalb nicht selbst kümmern. Nach dem ersten Austausch der Routen folgen nur noch Änderungen, eine regelmäßige Auffrischung ist nicht nötig.", "source_ids": ["rfc4271"] },
+        { "text": "Ein BGP-Nachbar in einem anderen AS heißt externer Peer, einer im selben AS interner Peer. Entsprechend spricht man kurz von externem BGP (EBGP) und internem BGP (IBGP).", "source_ids": ["rfc4271"] },
+        { "text": "Das Pflichtattribut AS_PATH nennt die autonomen Systeme, die eine Routing-Information durchlaufen hat. Gibt ein BGP-Router eine Route an einen externen Peer weiter, setzt er die eigene AS-Nummer davor. Mit diesen Angaben lassen sich Routing-Schleifen entfernen.", "source_ids": ["rfc4271"] },
+        { "text": "In der BGP-Grundspezifikation sind AS-Nummern zwei Oktette lang, der Bereich reicht von 0 bis 65535. RFC 6793 vom Dezember 2012 beschreibt, wie BGP AS-Nummern mit vier Oktetten überträgt. Damit wächst der Bereich auf 0 bis 4294967295.", "source_ids": ["rfc6793"] }
+      ],
+      "quiz": [
+        {
+          "question": "Über welches Transportprotokoll und welchen Port läuft BGP?",
+          "options": ["UDP, Port 179", "TCP, Port 179", "TCP, Port 53", "UDP, Port 53"],
+          "answer_index": 1,
+          "explanation": "BGP nutzt TCP und lauscht auf Port 179. TCP übernimmt dabei erneutes Senden, Bestätigungen und die Reihenfolge."
+        },
+        {
+          "question": "Was ist bei BGP ein externer Peer?",
+          "options": ["Ein Nachbar in einem anderen autonomen System", "Ein Nachbar im selben autonomen System", "Ein Router ohne eigene AS-Nummer", "Ein Endgerät, das Routen nur empfängt"],
+          "answer_index": 0,
+          "explanation": "Ein Peer in einem anderen AS ist ein externer Peer (EBGP). Ein Peer im selben AS ist ein interner Peer (IBGP)."
+        },
+        {
+          "question": "Was steht im Attribut AS_PATH?",
+          "options": ["Die IP-Adressen aller Router auf dem Weg", "Die Laufzeit der Route in Millisekunden", "Die autonomen Systeme, die die Routing-Information durchlaufen hat", "Die TCP-Ports der beteiligten Peers"],
+          "answer_index": 2,
+          "explanation": "AS_PATH nennt die autonomen Systeme, durch die eine Routing-Information gelaufen ist. Damit lassen sich Routing-Schleifen entfernen."
+        },
+        {
+          "question": "Welchen Bereich haben AS-Nummern mit vier Oktetten, wie RFC 6793 sie beschreibt?",
+          "options": ["0 bis 255", "0 bis 65535", "0 bis 16777215", "0 bis 4294967295"],
+          "answer_index": 3,
+          "explanation": "Mit vier statt zwei Oktetten wächst der Bereich der AS-Nummern von 0–65535 auf 0–4294967295."
+        }
+      ]
+    },
+    "en": {
+      "title": "BGP: How the Internet's Networks Exchange Routes",
+      "intro": "Autonomous systems are networks under a single administration with a routing policy of their own. Through BGP they tell each other which destinations can be reached via them.",
+      "facts": [
+        { "text": "The Border Gateway Protocol (BGP) is a routing protocol between autonomous systems. Version BGP-4 is described in RFC 4271 from January 2006. The main task of a BGP system is to exchange information about the reachability of networks with other BGP systems.", "source_ids": ["rfc4271"] },
+        { "text": "An autonomous system (AS) is a connected group of IP prefixes that is run by one or more network operators and has a single, clearly defined routing policy. Every AS has a globally unique number, the AS number (ASN).", "source_ids": ["rfc1930"] },
+        { "text": "BGP uses TCP as its transport protocol and listens on TCP port 179. It therefore does not have to handle retransmission, acknowledgements and ordering itself. After the first exchange of routes, only changes follow. A periodic refresh is not needed.", "source_ids": ["rfc4271"] },
+        { "text": "A BGP neighbour in a different AS is called an external peer, one in the same AS an internal peer. Accordingly, people speak of external BGP (EBGP) and internal BGP (IBGP) for short.", "source_ids": ["rfc4271"] },
+        { "text": "The mandatory attribute AS_PATH names the autonomous systems that a piece of routing information has passed through. When a BGP router passes a route on to an external peer, it puts its own AS number in front. This information makes it possible to remove routing loops.", "source_ids": ["rfc4271"] },
+        { "text": "In the base BGP specification, AS numbers are two octets long, with a range from 0 to 65535. RFC 6793 from December 2012 describes how BGP carries AS numbers with four octets. This grows the range to 0 to 4294967295.", "source_ids": ["rfc6793"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which transport protocol and port does BGP run over?",
+          "options": ["UDP, port 179", "TCP, port 179", "TCP, port 53", "UDP, port 53"],
+          "answer_index": 1,
+          "explanation": "BGP uses TCP and listens on port 179. TCP takes care of retransmission, acknowledgements and ordering."
+        },
+        {
+          "question": "What is an external peer in BGP?",
+          "options": ["A neighbour in a different autonomous system", "A neighbour in the same autonomous system", "A router without an AS number of its own", "An end device that only receives routes"],
+          "answer_index": 0,
+          "explanation": "A peer in a different AS is an external peer (EBGP). A peer in the same AS is an internal peer (IBGP)."
+        },
+        {
+          "question": "What does the AS_PATH attribute contain?",
+          "options": ["The IP addresses of all routers along the way", "The delay of the route in milliseconds", "The autonomous systems that the routing information has passed through", "The TCP ports of the peers involved"],
+          "answer_index": 2,
+          "explanation": "AS_PATH names the autonomous systems that a piece of routing information has passed through. This makes it possible to remove routing loops."
+        },
+        {
+          "question": "What range do AS numbers with four octets have, as described in RFC 6793?",
+          "options": ["0 to 255", "0 to 65535", "0 to 16777215", "0 to 4294967295"],
+          "answer_index": 3,
+          "explanation": "With four octets instead of two, the range of AS numbers grows from 0–65535 to 0–4294967295."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc4271", "title": "RFC 4271: A Border Gateway Protocol 4 (BGP-4)", "url": "https://www.rfc-editor.org/rfc/rfc4271.html", "accessed": "2026-10-02" },
+    { "id": "rfc1930", "title": "RFC 1930: Guidelines for creation, selection, and registration of an Autonomous System (AS)", "url": "https://www.rfc-editor.org/rfc/rfc1930.html", "accessed": "2026-10-02" },
+    { "id": "rfc6793", "title": "RFC 6793: BGP Support for Four-Octet Autonomous System (AS) Number Space", "url": "https://www.rfc-editor.org/rfc/rfc6793.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

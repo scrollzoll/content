@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "tech-vpn-grundlagen",
+  "topic": "technologie/netzwerke",
+  "tags": ["vpn", "ipsec", "wireguard", "verschluesselung", "tunnel"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 200,
+  "locales": {
+    "de": {
+      "title": "VPN-Grundlagen: IPsec und WireGuard im Vergleich",
+      "intro": "Ein VPN packt Datenpakete in einen geschützten Tunnel, der über ein bestehendes Netz führt. IPsec und WireGuard lösen diese Aufgabe auf sehr unterschiedliche Weise.",
+      "facts": [
+        { "text": "Ein VPN (Virtual Private Network) ist nach NIST ein virtuelles Netz, das auf bestehenden physischen Netzen aufbaut. Es kann Daten gesichert übertragen, zwischen Netzen oder zwischen einzelnen Knoten im selben Netz.", "source_ids": ["nist-vpn"] },
+        { "text": "IPsec arbeitet auf der IP-Schicht und schützt so alle Protokolle, die über IP laufen. Es kennt zwei Protokolle: AH sichert Integrität und Herkunft der Daten, ESP zusätzlich die Vertraulichkeit durch Verschlüsselung. Implementierungen müssen ESP unterstützen, AH ist optional.", "source_ids": ["rfc4301"] },
+        { "text": "Im Tunnelmodus hat ein IPsec-Paket zwei IP-Header: Der äußere nennt die Endpunkte der IPsec-Verarbeitung, der innere die eigentliche Quelle und das eigentliche Ziel. Der Transportmodus dient dagegen meist dem Schutz zwischen zwei Hosts.", "source_ids": ["rfc4301"] },
+        { "text": "Bei IPsec richtet das Protokoll IKEv2 die Sicherheitsbeziehungen (Security Associations) ein, festgelegt in RFC 7296 vom Oktober 2014. Beide Seiten authentifizieren sich gegenseitig. IKE nutzt die UDP-Ports 500 und 4500 und braucht im Normalfall vier Nachrichten zum Aufbau.", "source_ids": ["rfc7296"] },
+        { "text": "WireGuard ist ein Tunnel auf Schicht 3, der IP-Pakete verschlüsselt und in UDP verpackt. Sein Grundprinzip heißt Cryptokey Routing: Zum öffentlichen Schlüssel jedes Partners gehört eine Liste der IP-Adressen, die dieser Partner im Tunnel verwenden darf.", "source_ids": ["wireguard-web", "wireguard-paper"] },
+        { "text": "WireGuard legt seine Kryptografie fest: Curve25519, ChaCha20, Poly1305 und BLAKE2s. Auf Wahlmöglichkeiten bei den Verfahren verzichtet es bewusst. Der Schlüsselaustausch braucht nur einen Umlauf (1-RTT). Laut Entwurfspapier genügen für Linux weniger als 4.000 Zeilen Code.", "source_ids": ["wireguard-paper"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welches IPsec-Protokoll bietet zusätzlich zu Integrität und Herkunftsnachweis auch Vertraulichkeit?",
+          "options": ["AH (Authentication Header)", "ESP (Encapsulating Security Payload)", "ARP (Address Resolution Protocol)", "ICMP (Internet Control Message Protocol)"],
+          "answer_index": 1,
+          "explanation": "ESP bietet dieselben Dienste wie AH und zusätzlich Vertraulichkeit durch Verschlüsselung. ARP und ICMP gehören nicht zu IPsec."
+        },
+        {
+          "question": "Über welches Transportprotokoll überträgt WireGuard seine Pakete?",
+          "options": ["TCP", "SCTP", "UDP", "ICMP"],
+          "answer_index": 2,
+          "explanation": "WireGuard verschlüsselt IP-Pakete und verpackt sie in UDP."
+        },
+        {
+          "question": "Was kennzeichnet den Tunnelmodus von IPsec?",
+          "options": ["Ein äußerer und ein innerer IP-Header", "Die Übertragung ganz ohne IP-Header", "Der Verzicht auf jede Authentifizierung", "Die feste Bindung an TCP-Port 179"],
+          "answer_index": 0,
+          "explanation": "Im Tunnelmodus nennt der äußere IP-Header die Endpunkte der IPsec-Verarbeitung, der innere die eigentliche Quelle und das eigentliche Ziel."
+        },
+        {
+          "question": "Was verknüpft WireGuards Cryptokey Routing miteinander?",
+          "options": ["Benutzernamen mit Passwörtern", "TCP-Ports mit Zertifikaten", "MAC-Adressen mit VLAN-Nummern", "Öffentliche Schlüssel mit erlaubten Tunnel-IP-Adressen"],
+          "answer_index": 3,
+          "explanation": "Beim Cryptokey Routing gehört zu jedem öffentlichen Schlüssel eine Liste der IP-Adressen, die der jeweilige Partner im Tunnel verwenden darf."
+        }
+      ]
+    },
+    "en": {
+      "title": "VPN Basics: IPsec and WireGuard Compared",
+      "intro": "A VPN puts data packets into a protected tunnel that runs across an existing network. IPsec and WireGuard solve this task in very different ways.",
+      "facts": [
+        { "text": "NIST describes a VPN (virtual private network) as a virtual network layered over existing physical networks. It can transmit data securely, between networks or between individual nodes on the same network.", "source_ids": ["nist-vpn"] },
+        { "text": "IPsec works at the IP layer and so protects all protocols carried over IP. It has two protocols: AH secures the integrity and origin of data, ESP additionally secures confidentiality through encryption. Implementations must support ESP, AH is optional.", "source_ids": ["rfc4301"] },
+        { "text": "In tunnel mode, an IPsec packet has two IP headers: the outer one names the endpoints of IPsec processing, the inner one the actual source and the actual destination. Transport mode, by contrast, mostly serves to protect traffic between two hosts.", "source_ids": ["rfc4301"] },
+        { "text": "In IPsec, the protocol IKEv2 sets up the security associations. It is specified in RFC 7296 from October 2014. Both sides authenticate each other. IKE uses UDP ports 500 and 4500 and normally needs four messages for the setup.", "source_ids": ["rfc7296"] },
+        { "text": "WireGuard is a tunnel at layer 3 that encrypts IP packets and wraps them in UDP. Its basic principle is called cryptokey routing: every peer's public key comes with a list of the IP addresses that this peer may use in the tunnel.", "source_ids": ["wireguard-web", "wireguard-paper"] },
+        { "text": "WireGuard fixes its cryptography: Curve25519, ChaCha20, Poly1305 and BLAKE2s. It deliberately does without a choice of algorithms. The key exchange needs only one round trip (1-RTT). According to the design paper, less than 4,000 lines of code are enough for Linux.", "source_ids": ["wireguard-paper"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which IPsec protocol offers confidentiality in addition to integrity and proof of origin?",
+          "options": ["AH (Authentication Header)", "ESP (Encapsulating Security Payload)", "ARP (Address Resolution Protocol)", "ICMP (Internet Control Message Protocol)"],
+          "answer_index": 1,
+          "explanation": "ESP offers the same services as AH and additionally confidentiality through encryption. ARP and ICMP are not part of IPsec."
+        },
+        {
+          "question": "Which transport protocol does WireGuard use to carry its packets?",
+          "options": ["TCP", "SCTP", "UDP", "ICMP"],
+          "answer_index": 2,
+          "explanation": "WireGuard encrypts IP packets and wraps them in UDP."
+        },
+        {
+          "question": "What characterises the tunnel mode of IPsec?",
+          "options": ["An outer and an inner IP header", "Transmission without any IP header", "Doing without any authentication", "A fixed binding to TCP port 179"],
+          "answer_index": 0,
+          "explanation": "In tunnel mode, the outer IP header names the endpoints of IPsec processing, the inner one the actual source and the actual destination."
+        },
+        {
+          "question": "What does WireGuard's cryptokey routing link together?",
+          "options": ["User names with passwords", "TCP ports with certificates", "MAC addresses with VLAN numbers", "Public keys with allowed tunnel IP addresses"],
+          "answer_index": 3,
+          "explanation": "In cryptokey routing, every public key comes with a list of the IP addresses that the respective peer may use in the tunnel."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-vpn", "title": "NIST CSRC Glossary: virtual private network (VPN), Definition aus NIST SP 800-77 Rev. 1", "url": "https://csrc.nist.gov/glossary/term/virtual_private_network", "accessed": "2026-10-02" },
+    { "id": "rfc4301", "title": "RFC 4301: Security Architecture for the Internet Protocol", "url": "https://www.rfc-editor.org/rfc/rfc4301.html", "accessed": "2026-10-02" },
+    { "id": "rfc7296", "title": "RFC 7296: Internet Key Exchange Protocol Version 2 (IKEv2)", "url": "https://www.rfc-editor.org/rfc/rfc7296.html", "accessed": "2026-10-02" },
+    { "id": "wireguard-web", "title": "WireGuard: fast, modern, secure VPN tunnel", "url": "https://www.wireguard.com/", "accessed": "2026-10-02" },
+    { "id": "wireguard-paper", "title": "Jason A. Donenfeld: WireGuard: Next Generation Kernel Network Tunnel", "url": "https://www.wireguard.com/papers/wireguard.pdf", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

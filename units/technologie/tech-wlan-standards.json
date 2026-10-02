@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "tech-wlan-standards",
+  "topic": "technologie/netzwerke",
+  "tags": ["wlan", "wi-fi", "ieee-802-11", "frequenzband", "funk"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "WLAN-Generationen: Von Wi-Fi 4 bis Wi-Fi 7",
+      "intro": "Hinter Namen wie Wi-Fi 6 stecken IEEE-Standards mit sperrigen Kürzeln. Jede Generation bringt neue Technik mit, und nicht jede funkt in denselben Frequenzbändern.",
+      "facts": [
+        { "text": "Seit Oktober 2018 benennt die Wi-Fi Alliance WLAN-Generationen mit Nummern: Wi-Fi 4 steht für den Standard IEEE 802.11n, Wi-Fi 5 für 802.11ac und Wi-Fi 6 für 802.11ax. So sollen Nutzer leichter erkennen, welche Technik ein Gerät unterstützt.", "source_ids": ["wfa-generationen"] },
+        { "text": "Wi-Fi 4 (802.11n, veröffentlicht im Oktober 2009) kann im 2,4-GHz- oder im 5-GHz-Band funken. Der Standard führte als erster WLAN-Standard MIMO ein und erlaubt 40 MHz breite Kanäle, doppelt so breit wie die 20 MHz zuvor.", "source_ids": ["wikipedia-80211n"] },
+        { "text": "Wi-Fi 5 (802.11ac, 2013) ist für das 5-GHz-Band festgelegt. Kanäle mit 80 MHz Breite sind Pflicht, 160 MHz sind optional. Als optionale Betriebsart kam die Modulation 256-QAM dazu.", "source_ids": ["wikipedia-80211ac"] },
+        { "text": "Wi-Fi 6 (802.11ax) arbeitet im 2,4-GHz- und im 5-GHz-Band. Zu den Merkmalen gehören OFDMA, das Kanäle effizienter teilt, 1024-QAM für mehr Durchsatz und Target Wake Time, das die Akkulaufzeit von Geräten verbessert.", "source_ids": ["wfa-generationen", "wfa-macphy"] },
+        { "text": "Wi-Fi 6E ist ein im Januar 2020 eingeführter Name für Geräte, die die Fähigkeiten von Wi-Fi 6 auch im 6-GHz-Band bieten. Laut Wi-Fi Alliance ist dort Platz für 14 zusätzliche 80-MHz-Kanäle und 7 zusätzliche 160-MHz-Kanäle.", "source_ids": ["wfa-wifi6e"] },
+        { "text": "Wi-Fi 7 basiert auf IEEE 802.11be, wurde 2024 eingeführt und nutzt die Bänder 2,4, 5 und 6 GHz. Im 6-GHz-Band sind 320 MHz breite Kanäle möglich. Multi-Link Operation verteilt Daten auf mehrere Verbindungen. 4K-QAM erreicht 20 % höhere Raten als 1024-QAM bei Wi-Fi 6.", "source_ids": ["wfa-macphy", "wfa-wifi7-beacon"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher IEEE-Standard steckt hinter Wi-Fi 6?",
+          "options": ["802.11n", "802.11ac", "802.11ax", "802.11be"],
+          "answer_index": 2,
+          "explanation": "Wi-Fi 6 steht für 802.11ax. 802.11n ist Wi-Fi 4, 802.11ac ist Wi-Fi 5 und 802.11be ist die Grundlage von Wi-Fi 7."
+        },
+        {
+          "question": "Welches Frequenzband kommt mit Wi-Fi 6E gegenüber Wi-Fi 6 hinzu?",
+          "options": ["6 GHz", "2,4 GHz", "5 GHz", "60 GHz"],
+          "answer_index": 0,
+          "explanation": "Wi-Fi 6E bezeichnet Geräte, die die Fähigkeiten von Wi-Fi 6 auf das 6-GHz-Band ausdehnen."
+        },
+        {
+          "question": "Welche dieser Generationen ist nur für das 5-GHz-Band festgelegt?",
+          "options": ["Wi-Fi 4", "Wi-Fi 5", "Wi-Fi 6", "Wi-Fi 7"],
+          "answer_index": 1,
+          "explanation": "Wi-Fi 5 (802.11ac) ist für das 5-GHz-Band festgelegt. Wi-Fi 4, 6 und 7 nutzen auch 2,4 GHz."
+        },
+        {
+          "question": "Wie breit können Kanäle bei Wi-Fi 7 im 6-GHz-Band höchstens sein?",
+          "options": ["40 MHz", "80 MHz", "160 MHz", "320 MHz"],
+          "answer_index": 3,
+          "explanation": "Wi-Fi 7 erlaubt im 6-GHz-Band 320 MHz breite Kanäle."
+        }
+      ]
+    },
+    "en": {
+      "title": "Wi-Fi Generations: From Wi-Fi 4 to Wi-Fi 7",
+      "intro": "Behind names like Wi-Fi 6 are IEEE standards with unwieldy abbreviations. Each generation brings new technology, and not every one uses the same frequency bands.",
+      "facts": [
+        { "text": "Since October 2018, the Wi-Fi Alliance has named Wi-Fi generations with numbers: Wi-Fi 4 stands for the standard IEEE 802.11n, Wi-Fi 5 for 802.11ac and Wi-Fi 6 for 802.11ax. This is meant to make it easier for users to see which technology a device supports.", "source_ids": ["wfa-generationen"] },
+        { "text": "Wi-Fi 4 (802.11n, published in October 2009) can operate in the 2.4 GHz or the 5 GHz band. It was the first Wi-Fi standard to introduce MIMO and allows channels 40 MHz wide, twice as wide as the 20 MHz before.", "source_ids": ["wikipedia-80211n"] },
+        { "text": "Wi-Fi 5 (802.11ac, 2013) is specified for the 5 GHz band. Channels 80 MHz wide are mandatory, 160 MHz is optional. The modulation 256-QAM was added as an optional mode.", "source_ids": ["wikipedia-80211ac"] },
+        { "text": "Wi-Fi 6 (802.11ax) works in the 2.4 GHz and the 5 GHz band. Its features include OFDMA, which shares channels more efficiently, 1024-QAM for more throughput and Target Wake Time, which improves the battery life of devices.", "source_ids": ["wfa-generationen", "wfa-macphy"] },
+        { "text": "Wi-Fi 6E is a name introduced in January 2020 for devices that offer the capabilities of Wi-Fi 6 in the 6 GHz band as well. According to the Wi-Fi Alliance, there is room there for 14 additional 80 MHz channels and 7 additional 160 MHz channels.", "source_ids": ["wfa-wifi6e"] },
+        { "text": "Wi-Fi 7 is based on IEEE 802.11be, was introduced in 2024 and uses the 2.4, 5 and 6 GHz bands. In the 6 GHz band, channels 320 MHz wide are possible. Multi-Link Operation spreads data across several links. 4K QAM reaches 20% higher rates than 1024-QAM in Wi-Fi 6.", "source_ids": ["wfa-macphy", "wfa-wifi7-beacon"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which IEEE standard is behind Wi-Fi 6?",
+          "options": ["802.11n", "802.11ac", "802.11ax", "802.11be"],
+          "answer_index": 2,
+          "explanation": "Wi-Fi 6 stands for 802.11ax. 802.11n is Wi-Fi 4, 802.11ac is Wi-Fi 5 and 802.11be is the basis of Wi-Fi 7."
+        },
+        {
+          "question": "Which frequency band does Wi-Fi 6E add compared with Wi-Fi 6?",
+          "options": ["6 GHz", "2.4 GHz", "5 GHz", "60 GHz"],
+          "answer_index": 0,
+          "explanation": "Wi-Fi 6E refers to devices that extend the capabilities of Wi-Fi 6 into the 6 GHz band."
+        },
+        {
+          "question": "Which of these generations is specified for the 5 GHz band only?",
+          "options": ["Wi-Fi 4", "Wi-Fi 5", "Wi-Fi 6", "Wi-Fi 7"],
+          "answer_index": 1,
+          "explanation": "Wi-Fi 5 (802.11ac) is specified for the 5 GHz band. Wi-Fi 4, 6 and 7 also use 2.4 GHz."
+        },
+        {
+          "question": "How wide can channels be at most with Wi-Fi 7 in the 6 GHz band?",
+          "options": ["40 MHz", "80 MHz", "160 MHz", "320 MHz"],
+          "answer_index": 3,
+          "explanation": "Wi-Fi 7 allows channels 320 MHz wide in the 6 GHz band."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wfa-generationen", "title": "Wi-Fi Alliance: Wi-Fi Alliance introduces Wi-Fi 6 (press release, 3 October 2018)", "url": "https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-6", "accessed": "2026-10-02" },
+    { "id": "wfa-macphy", "title": "Wi-Fi Alliance: Wi-Fi (MAC/PHY), Abschnitte Wi-Fi CERTIFIED 6 und Wi-Fi CERTIFIED 7", "url": "https://www.wi-fi.org/wi-fi-macphy", "accessed": "2026-10-02" },
+    { "id": "wfa-wifi6e", "title": "Wi-Fi Alliance: Wi-Fi Alliance brings Wi-Fi 6 into 6 GHz (press release, 3 January 2020)", "url": "https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-brings-wi-fi-6-into-6-ghz", "accessed": "2026-10-02" },
+    { "id": "wfa-wifi7-beacon", "title": "Wi-Fi Alliance, The Beacon: Wi-Fi 7: Advanced connectivity for the next generation", "url": "https://www.wi-fi.org/beacon/the-beacon/wi-fi-7-advanced-connectivity-for-the-next-generation", "accessed": "2026-10-02" },
+    { "id": "wikipedia-80211n", "title": "Wikipedia: IEEE 802.11n", "url": "https://en.wikipedia.org/wiki/IEEE_802.11n", "accessed": "2026-10-02" },
+    { "id": "wikipedia-80211ac", "title": "Wikipedia: IEEE 802.11ac", "url": "https://en.wikipedia.org/wiki/IEEE_802.11ac", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}
