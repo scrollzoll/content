@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-cdn",
+  "topic": "technologie/netzwerke",
+  "tags": ["cdn", "caching", "http", "dns", "web"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "CDN: Inhalte näher an die Nutzer bringen",
+      "intro": "Ein Content Delivery Network verteilt Kopien von Inhalten auf viele Standorte. So muss nicht jede Anfrage den weiten Weg zum ursprünglichen Server nehmen.",
+      "facts": [
+        { "text": "Ein Content Delivery Network (CDN) ist eine Gruppe von Servern an vielen Standorten. Sie halten Kopien von Daten bereit, damit Anfragen von einem Server in der Nähe des Nutzers beantwortet werden können.", "source_ids": ["mdn-cdn"] },
+        { "text": "Die Server eines CDN, die Inhalte an die Nutzer ausliefern, heißen in der Fachsprache Surrogates. Oft nennt man sie einfach Caches. Für Inhalte, die sich zwischenspeichern lassen, senken CDNs die Auslieferungskosten und machen die Auslieferung robuster.", "source_ids": ["rfc6707"] },
+        { "text": "Nähe zahlt sich aus: Die geografische Entfernung wirkt sich direkt auf die Verzögerung (Latenz) aus. Die meisten CDNs haben Server rund um den Globus. Diese können den Nutzern näher sein als die eigenen Server einer Website.", "source_ids": ["mdn-cdn"] },
+        { "text": "Das Request-Routing lenkt Anfragen zu einem Server, der sie gut bedienen kann. Ein bekannter Weg führt über DNS: Ein spezieller DNS-Server gibt je nach Regeln und Messwerten unterschiedliche Einträge zurück. Kriterien sind etwa Netzwerknähe und Auslastung der Server.", "source_ids": ["rfc3568"] },
+        { "text": "Die Grundlage ist HTTP-Caching: Ein Cache speichert Antworten und nutzt sie für spätere gleichwertige Anfragen erneut. Das spart Antwortzeit und Bandbreite. Wie lange eine Antwort frisch bleibt, regelt etwa max-age; s-maxage gilt speziell für gemeinsam genutzte Caches.", "source_ids": ["rfc9111"] },
+        { "text": "Ein CDN nimmt den eigenen Servern Anfragen ab und macht einen Dienst weniger anfällig für hohen Andrang. Der Preis ist eine zusätzliche Abhängigkeit: Fällt das CDN aus oder wird es in einer Region blockiert, funktioniert die Website nicht mehr richtig.", "source_ids": ["mdn-cdn"] }
+      ],
+      "quiz": [
+        {
+          "question": "Warum kann ein CDN Inhalte schneller ausliefern?",
+          "options": ["Kopien liegen auf Servern in der Nähe der Nutzer", "Es überträgt Inhalte ohne das Internet", "Es kommt ohne DNS aus", "Es speichert Inhalte nur an einem einzigen Standort"],
+          "answer_index": 0,
+          "explanation": "Ein CDN hält Kopien an vielen Standorten bereit. Ein naher Server antwortet, und die kürzere Entfernung bedeutet weniger Verzögerung."
+        },
+        {
+          "question": "Wie heißt die Funktion, die Anfragen zu einem passenden CDN-Server lenkt?",
+          "options": ["Port-Forwarding", "Request-Routing", "Subnetting", "Handshake"],
+          "answer_index": 1,
+          "explanation": "Das Request-Routing leitet Anfragen zu einem Server, der sie gut bedienen kann. Ein bekannter Weg dafür führt über DNS."
+        },
+        {
+          "question": "Welche Angabe legt speziell für gemeinsam genutzte Caches fest, wie lange eine Antwort als frisch gilt?",
+          "options": ["Location", "Host", "s-maxage", "Age"],
+          "answer_index": 2,
+          "explanation": "s-maxage gilt für gemeinsam genutzte Caches und hat dort Vorrang vor max-age. Der Header Age gibt dagegen an, wie alt eine Antwort schätzungsweise ist."
+        },
+        {
+          "question": "Welchen Nachteil kann der Einsatz eines CDN haben?",
+          "options": ["Die eigenen Server bekommen mehr Anfragen", "Inhalte liegen nur noch an einem Standort", "Die Entfernung zu den Nutzern wächst", "Die Website hängt zusätzlich von einem Drittanbieter ab"],
+          "answer_index": 3,
+          "explanation": "Mit einem CDN kommt eine weitere Abhängigkeit hinzu. Fällt das CDN aus oder wird es blockiert, funktioniert die Website nicht mehr richtig."
+        }
+      ]
+    },
+    "en": {
+      "title": "CDN: Bringing Content Closer to Users",
+      "intro": "A content delivery network spreads copies of content across many locations. That way, not every request has to travel the long way to the original server.",
+      "facts": [
+        { "text": "A content delivery network (CDN) is a group of servers in many locations. They keep copies of data ready so that requests can be answered by a server close to the user.", "source_ids": ["mdn-cdn"] },
+        { "text": "The servers of a CDN that deliver content to users are called surrogates in technical terms. Often they are simply called caches. For content that can be cached, CDNs lower the cost of delivery and make delivery more robust.", "source_ids": ["rfc6707"] },
+        { "text": "Being close pays off: geographical distance directly affects delay (latency). Most CDNs have servers all around the globe. These can be closer to users than a website's own servers.", "source_ids": ["mdn-cdn"] },
+        { "text": "Request routing directs requests to a server that can serve them well. A well-known way uses DNS: a specialized DNS server returns different records depending on policies and measurements. Criteria include network proximity and server load.", "source_ids": ["rfc3568"] },
+        { "text": "The foundation is HTTP caching: a cache stores responses and reuses them for later equivalent requests. This reduces response time and bandwidth use. How long a response counts as fresh is set by max-age, for example; s-maxage applies specifically to shared caches.", "source_ids": ["rfc9111"] },
+        { "text": "A CDN takes requests off a site's own servers and makes a service less vulnerable to heavy traffic. The price is an additional dependency: if the CDN goes down or is blocked in a region, the website no longer works properly.", "source_ids": ["mdn-cdn"] }
+      ],
+      "quiz": [
+        {
+          "question": "Why can a CDN deliver content faster?",
+          "options": ["Copies sit on servers close to the users", "It transmits content without the internet", "It works without DNS", "It stores content in only one location"],
+          "answer_index": 0,
+          "explanation": "A CDN keeps copies ready in many locations. A nearby server responds, and the shorter distance means less delay."
+        },
+        {
+          "question": "What is the function called that directs requests to a suitable CDN server?",
+          "options": ["Port forwarding", "Request routing", "Subnetting", "Handshake"],
+          "answer_index": 1,
+          "explanation": "Request routing steers requests to a server that can serve them well. A well-known way to do this uses DNS."
+        },
+        {
+          "question": "Which directive sets, specifically for shared caches, how long a response counts as fresh?",
+          "options": ["Location", "Host", "s-maxage", "Age"],
+          "answer_index": 2,
+          "explanation": "s-maxage applies to shared caches and takes precedence there over max-age. The Age header, by contrast, states the estimated age of a response."
+        },
+        {
+          "question": "Which drawback can using a CDN have?",
+          "options": ["The site's own servers receive more requests", "Content is stored in only one location", "The distance to users grows", "The website additionally depends on a third party"],
+          "answer_index": 3,
+          "explanation": "A CDN adds another dependency. If the CDN goes down or is blocked, the website no longer works properly."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "mdn-cdn", "title": "MDN Web Docs Glossary: CDN", "url": "https://developer.mozilla.org/en-US/docs/Glossary/CDN", "accessed": "2026-10-02" },
+    { "id": "rfc6707", "title": "RFC 6707: Content Distribution Network Interconnection (CDNI) Problem Statement", "url": "https://www.rfc-editor.org/rfc/rfc6707.html", "accessed": "2026-10-02" },
+    { "id": "rfc3568", "title": "RFC 3568: Known Content Network (CN) Request-Routing Mechanisms", "url": "https://www.rfc-editor.org/rfc/rfc3568.html", "accessed": "2026-10-02" },
+    { "id": "rfc9111", "title": "RFC 9111: HTTP Caching", "url": "https://www.rfc-editor.org/rfc/rfc9111.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}
