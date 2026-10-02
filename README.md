@@ -1,5 +1,9 @@
 # Scrollzoll Content
 
+> **Projekt im Aufbau.** Die Scrollzoll-App ist noch nicht verfügbar, und die Einheiten in diesem Repo sind überwiegend noch ungeprüft (Status `review`). Beiträge sind willkommen, aber Schema und Abläufe können sich noch ändern.
+>
+> **Work in progress.** The Scrollzoll app is not available yet, and most units here are not reviewed yet (status `review`). Contributions are welcome, but the schema and workflows may still change.
+
 Offene Microlearning-Datenbank: kurze Lerneinheiten (Fakten + Quiz, Karteikarten, Einzelfakten) auf Deutsch und Englisch, jede mit Quellen. Die Einheiten speisen die App Scrollzoll und stehen allen offen, auch für eigene Projekte und KI-Agents.
 
 ## Lizenz
@@ -17,6 +21,8 @@ units/<thema>/<id>.json            eine Datei pro Einheit
 topics/taxonomy.yaml               erlaubte Hauptthemen
 topics/queue.yaml                  Warteliste offener Themen für Beitragende
 scripts/validate.py                Prüft Schema, Quellen, Quiz-Logik, IDs
+factory/                           Content-Fabrik: automatische Erstellung per Claude Code (siehe factory/README.md)
+.claude/skills/einheiten-erstellen Skill zum Erstellen von Einheiten
 ```
 
 ## Prüfen
