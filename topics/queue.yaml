@@ -2,26 +2,6 @@
 # holen sich hier das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu existiert.
 # priority: 1 = hoch, 3 = niedrig. Format eines Eintrags bitte beibehalten (zwei Leerzeichen + '- id:').
 queue:
-  - id: tech-bgp
-    topic: technologie/netzwerke
-    hint: "BGP als Routing-Protokoll zwischen autonomen Systemen im Internet"
-    format: facts_quiz
-    priority: 1
-  - id: tech-latenz-bandbreite
-    topic: technologie/netzwerke
-    hint: "Unterschied zwischen Latenz, Bandbreite und Durchsatz"
-    format: facts_quiz
-    priority: 1
-  - id: tech-wlan-standards
-    topic: technologie/netzwerke
-    hint: "WLAN-Generationen Wi-Fi 4 bis Wi-Fi 7 und ihre Frequenzbänder"
-    format: facts_quiz
-    priority: 1
-  - id: tech-vpn-grundlagen
-    topic: technologie/netzwerke
-    hint: "Was ein VPN technisch macht, IPsec vs. WireGuard"
-    format: facts_quiz
-    priority: 1
   - id: tech-dns-records
     topic: technologie/netzwerke
     hint: "DNS-Eintragstypen A, AAAA, CNAME, MX, TXT"

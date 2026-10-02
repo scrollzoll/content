@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-latenz-bandbreite",
+  "topic": "technologie/netzwerke",
+  "tags": ["latenz", "bandbreite", "durchsatz", "tcp", "netzwerkleistung"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Latenz, Bandbreite und Durchsatz: Was ist der Unterschied?",
+      "intro": "Drei Begriffe, die oft verwechselt werden: Bandbreite beschreibt, wie viel eine Verbindung höchstens übertragen kann. Latenz beschreibt, wie lange Daten unterwegs sind. Durchsatz ist das, was tatsächlich erreicht wird.",
+      "facts": [
+        { "text": "„Bandbreite“ ist mehrdeutig. RFC 5136 nennt als Beispiel eine 802.11b-Verbindung: Ein Netzwerktechniker sagt 11 Mbit/s, ein Elektroingenieur 25 MHz, und ein Nutzer beobachtet 8 Mbit/s. Das RFC spricht deshalb lieber von Kapazität.", "source_ids": ["rfc5136"] },
+        { "text": "Die Kapazität eines ganzen Pfades entspricht der Kapazität der Verbindung mit der geringsten Kapazität auf diesem Pfad. RFC 6349 nennt die niedrigste Bandbreite entlang des gesamten Pfades Bottleneck Bandwidth, also Engpass-Bandbreite.", "source_ids": ["rfc5136", "rfc6349"] },
+        { "text": "RFC 1242 definiert Latenz für ein Gerät, das Frames erst speichert und dann weiterleitet, als Zeit vom letzten Bit des Frames am Eingang bis zum ersten Bit am Ausgang. Durchsatz ist dort die höchste Rate, bei der das Gerät keinen der angebotenen Frames verwirft.", "source_ids": ["rfc1242"] },
+        { "text": "Für ganze Pfade lässt sich die Verzögerung als Umlaufzeit (Round-Trip Delay) messen: die Zeit vom Senden des ersten Bits eines Pakets bis zum Empfang des letzten Bits der Antwort. Der kleinste Wert weist auf die Verzögerung allein durch Ausbreitung und Übertragung hin.", "source_ids": ["rfc2681"] },
+        { "text": "Umlaufzeiten über dem Minimum deuten auf Überlastung im Pfad hin. Außerdem gilt: Je größer die Verzögerung, desto schwerer fällt es Transportprotokollen, hohe Datenraten zu halten.", "source_ids": ["rfc2681"] },
+        { "text": "Bei TCP begrenzen Empfangsfenster und Umlaufzeit (RTT) den Durchsatz: Durchsatz = Fenster × 8 / RTT. Beispiele aus RFC 6349 für eine T3-Leitung: 16 KByte Fenster und 10 ms RTT ergeben 12,8 Mbit/s. Bei 25 ms RTT nennt das RFC ein Fenster von mindestens etwa 138 KByte.", "source_ids": ["rfc6349"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was bestimmt nach RFC 5136 die Kapazität eines ganzen Pfades?",
+          "options": ["Die Verbindung mit der geringsten Kapazität", "Die Verbindung mit der größten Kapazität", "Der Durchschnitt aller Verbindungen", "Die Summe aller Verbindungen"],
+          "answer_index": 0,
+          "explanation": "Die Kapazität eines Pfades ist die der Verbindung mit der geringsten Kapazität. Dieser Engpass begrenzt den ganzen Weg."
+        },
+        {
+          "question": "Was misst die Umlaufzeit (Round-Trip Delay)?",
+          "options": ["Die höchste Datenrate einer Verbindung", "Die Zeit vom Senden eines Pakets bis zum Empfang der Antwort", "Den Anteil verlorener Pakete", "Die Breite des genutzten Frequenzbands"],
+          "answer_index": 1,
+          "explanation": "Die Umlaufzeit reicht vom Senden des ersten Bits eines Pakets bis zum Empfang des letzten Bits der Antwort. Sie ist eine Zeit, keine Datenrate."
+        },
+        {
+          "question": "Das TCP-Empfangsfenster bleibt gleich, die Umlaufzeit (RTT) verdoppelt sich. Was passiert mit dem Durchsatz, den das Fenster höchstens erlaubt?",
+          "options": ["Er verdoppelt sich", "Er bleibt gleich", "Er halbiert sich", "Er vervierfacht sich"],
+          "answer_index": 2,
+          "explanation": "Nach der Formel Durchsatz = Fenster × 8 / RTT steht die RTT im Nenner. Doppelte RTT bei gleichem Fenster bedeutet halben Durchsatz."
+        },
+        {
+          "question": "Worauf deuten Umlaufzeiten hin, die über dem gemessenen Minimum liegen?",
+          "options": ["Auf eine höhere Kapazität des Pfades", "Auf ein größeres TCP-Fenster", "Auf verschlüsselte Übertragung", "Auf Überlastung im Pfad"],
+          "answer_index": 3,
+          "explanation": "Das Minimum entspricht der Verzögerung durch Ausbreitung und Übertragung. Werte darüber sind ein Hinweis auf Überlastung im Pfad."
+        }
+      ]
+    },
+    "en": {
+      "title": "Latency, Bandwidth and Throughput: What Is the Difference?",
+      "intro": "Three terms that are often confused: bandwidth describes how much a link can carry at most. Latency describes how long data is in transit. Throughput is what is actually achieved.",
+      "facts": [
+        { "text": "\"Bandwidth\" is ambiguous. RFC 5136 gives the example of an 802.11b link: a network engineer says 11 Mbit/s, an electrical engineer says 25 MHz, and a user observes 8 Mbit/s. The RFC therefore prefers the term capacity.", "source_ids": ["rfc5136"] },
+        { "text": "The capacity of a whole path equals the capacity of the link with the smallest capacity along that path. RFC 6349 calls the lowest bandwidth along the complete path the bottleneck bandwidth.", "source_ids": ["rfc5136", "rfc6349"] },
+        { "text": "RFC 1242 defines latency for a device that first stores frames and then forwards them as the time from the last bit of the frame at the input to the first bit at the output. Throughput there is the highest rate at which the device drops none of the offered frames.", "source_ids": ["rfc1242"] },
+        { "text": "For whole paths, delay can be measured as round-trip delay: the time from sending the first bit of a packet until receiving the last bit of the response. The smallest value points to the delay from propagation and transmission alone.", "source_ids": ["rfc2681"] },
+        { "text": "Round-trip delays above the minimum indicate congestion in the path. In addition, the larger the delay, the harder it is for transport protocols to sustain high data rates.", "source_ids": ["rfc2681"] },
+        { "text": "In TCP, receive window and round-trip time (RTT) limit throughput: throughput = window × 8 / RTT. Examples from RFC 6349 for a T3 link: a 16 KByte window and 10 ms RTT give 12.8 Mbit/s. At 25 ms RTT, the RFC states a window of at least about 138 KByte.", "source_ids": ["rfc6349"] }
+      ],
+      "quiz": [
+        {
+          "question": "According to RFC 5136, what determines the capacity of a whole path?",
+          "options": ["The link with the smallest capacity", "The link with the largest capacity", "The average of all links", "The sum of all links"],
+          "answer_index": 0,
+          "explanation": "The capacity of a path is that of the link with the smallest capacity. This bottleneck limits the whole route."
+        },
+        {
+          "question": "What does round-trip delay measure?",
+          "options": ["The highest data rate of a link", "The time from sending a packet until receiving the response", "The share of lost packets", "The width of the frequency band in use"],
+          "answer_index": 1,
+          "explanation": "Round-trip delay runs from sending the first bit of a packet until receiving the last bit of the response. It is a time, not a data rate."
+        },
+        {
+          "question": "The TCP receive window stays the same and the round-trip time (RTT) doubles. What happens to the maximum throughput the window allows?",
+          "options": ["It doubles", "It stays the same", "It is halved", "It quadruples"],
+          "answer_index": 2,
+          "explanation": "In the formula throughput = window × 8 / RTT, the RTT is in the denominator. Double the RTT with the same window means half the throughput."
+        },
+        {
+          "question": "What do round-trip delays above the measured minimum indicate?",
+          "options": ["A higher capacity of the path", "A larger TCP window", "Encrypted transmission", "Congestion in the path"],
+          "answer_index": 3,
+          "explanation": "The minimum corresponds to the delay from propagation and transmission. Values above it are a sign of congestion in the path."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc5136", "title": "RFC 5136: Defining Network Capacity", "url": "https://www.rfc-editor.org/rfc/rfc5136.html", "accessed": "2026-10-02" },
+    { "id": "rfc6349", "title": "RFC 6349: Framework for TCP Throughput Testing", "url": "https://www.rfc-editor.org/rfc/rfc6349.html", "accessed": "2026-10-02" },
+    { "id": "rfc2681", "title": "RFC 2681: A Round-trip Delay Metric for IPPM", "url": "https://www.rfc-editor.org/rfc/rfc2681.html", "accessed": "2026-10-02" },
+    { "id": "rfc1242", "title": "RFC 1242: Benchmarking Terminology for Network Interconnection Devices", "url": "https://www.rfc-editor.org/rfc/rfc1242.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}
