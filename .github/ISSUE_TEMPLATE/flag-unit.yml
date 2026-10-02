@@ -1,0 +1,23 @@
+name: Fehler in einer Einheit
+description: Eine Lerneinheit enthält einen falschen oder veralteten Fakt
+labels: ["flagged"]
+body:
+  - type: input
+    id: unit
+    attributes:
+      label: ID der Einheit
+      description: Steht in der App unter „Details“ oder ist der Dateiname, z. B. tech-dns-grundlagen
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Was ist falsch?
+      description: Welche Aussage, und was stimmt stattdessen?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Beleg
+      description: Link zu einer Quelle, die die Korrektur stützt

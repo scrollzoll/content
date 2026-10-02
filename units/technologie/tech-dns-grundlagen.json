@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "tech-dns-grundlagen",
+  "topic": "technologie/netzwerke",
+  "tags": ["dns", "internet", "grundlagen"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "DNS: Das Telefonbuch des Internets",
+      "intro": "Ohne DNS müsstest du dir für jede Website eine Zahlenfolge merken.",
+      "facts": [
+        { "text": "Das Domain Name System (DNS) übersetzt Namen wie example.org in IP-Adressen, die Computer zum Verbinden brauchen.", "source_ids": ["rfc1034"] },
+        { "text": "Die grundlegenden DNS-Spezifikationen RFC 1034 und RFC 1035 wurden im November 1987 veröffentlicht.", "source_ids": ["rfc1034", "rfc1035"] },
+        { "text": "DNS ist hierarchisch aufgebaut: Von der Root-Zone geht es über Top-Level-Domains wie .de bis zur einzelnen Domain.", "source_ids": ["rfc1034"] },
+        { "text": "Die Root-Zone wird von 13 benannten Root-Server-Identitäten (a bis m.root-servers.net) bedient, die von 12 unabhängigen Organisationen betrieben werden.", "source_ids": ["root-servers"] },
+        { "text": "DNS-Anfragen laufen standardmäßig über Port 53, meist per UDP und bei größeren Antworten per TCP.", "source_ids": ["rfc1035"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist die Hauptaufgabe von DNS?",
+          "options": ["Webseiten verschlüsseln", "Domainnamen in IP-Adressen übersetzen", "E-Mails zustellen", "Dateien komprimieren"],
+          "answer_index": 1,
+          "explanation": "DNS löst Namen wie example.org in IP-Adressen auf."
+        },
+        {
+          "question": "Wie viele benannte Root-Server-Identitäten gibt es?",
+          "options": ["3", "7", "13", "100"],
+          "answer_index": 2,
+          "explanation": "Es gibt 13 Identitäten von a bis m.root-servers.net, betrieben von 12 Organisationen."
+        },
+        {
+          "question": "Über welchen Port laufen DNS-Anfragen standardmäßig?",
+          "options": ["53", "80", "443", "22"],
+          "answer_index": 0,
+          "explanation": "DNS nutzt Port 53, per UDP und TCP."
+        }
+      ]
+    },
+    "en": {
+      "title": "DNS: The Internet's Phone Book",
+      "intro": "Without DNS you would have to memorise a string of numbers for every website.",
+      "facts": [
+        { "text": "The Domain Name System (DNS) translates names like example.org into the IP addresses computers need to connect.", "source_ids": ["rfc1034"] },
+        { "text": "The core DNS specifications, RFC 1034 and RFC 1035, were published in November 1987.", "source_ids": ["rfc1034", "rfc1035"] },
+        { "text": "DNS is hierarchical: from the root zone down through top-level domains like .de to an individual domain.", "source_ids": ["rfc1034"] },
+        { "text": "The root zone is served by 13 named root server identities (a to m.root-servers.net), run by 12 independent organisations.", "source_ids": ["root-servers"] },
+        { "text": "DNS queries use port 53 by default, usually over UDP and over TCP for larger responses.", "source_ids": ["rfc1035"] }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main job of DNS?",
+          "options": ["Encrypting websites", "Translating domain names into IP addresses", "Delivering email", "Compressing files"],
+          "answer_index": 1,
+          "explanation": "DNS resolves names like example.org to IP addresses."
+        },
+        {
+          "question": "How many named root server identities are there?",
+          "options": ["3", "7", "13", "100"],
+          "answer_index": 2,
+          "explanation": "There are 13 identities from a to m.root-servers.net, run by 12 organisations."
+        },
+        {
+          "question": "Which port do DNS queries use by default?",
+          "options": ["53", "80", "443", "22"],
+          "answer_index": 0,
+          "explanation": "DNS uses port 53, over both UDP and TCP."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc1034", "title": "RFC 1034: Domain Names – Concepts and Facilities", "url": "https://www.rfc-editor.org/rfc/rfc1034", "accessed": "2026-10-02" },
+    { "id": "rfc1035", "title": "RFC 1035: Domain Names – Implementation and Specification", "url": "https://www.rfc-editor.org/rfc/rfc1035", "accessed": "2026-10-02" },
+    { "id": "root-servers", "title": "Root Server Technical Operations Association", "url": "https://root-servers.org/", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-opus-5-5", "created_at": "2026-10-02" }
+}

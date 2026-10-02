@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/scrollzoll/content/schema/learning-unit.schema.json",
+  "title": "Lerneinheit (Learning Unit)",
+  "description": "Eine Microlearning-Einheit. Eine Datei pro Einheit, Dateiname = id + .json. Inhalte stehen unter CC BY-SA 4.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "topic", "format", "difficulty", "duration_seconds", "locales", "sources", "license", "status", "provenance"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": {
+      "type": "string",
+      "description": "Eindeutige, sprechende ID in Kleinbuchstaben, z. B. tech-dns-grundlagen. Ändert sich nie.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 80
+    },
+    "topic": {
+      "type": "string",
+      "description": "Themenpfad, z. B. technologie/netzwerke. Erste Ebene aus topics/taxonomy.yaml.",
+      "pattern": "^[a-z0-9-]+(/[a-z0-9-]+){0,3}$"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "uniqueItems": true,
+      "maxItems": 10
+    },
+    "format": {
+      "enum": ["facts_quiz", "flashcards", "single_fact"],
+      "description": "facts_quiz = Fakten + Quiz, flashcards = Karteikarten, single_fact = ein Fakt mit Erklärung"
+    },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "duration_seconds": {
+      "type": "integer",
+      "minimum": 15,
+      "maximum": 600,
+      "description": "Geschätzte Bearbeitungszeit"
+    },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min_age": { "type": "integer", "minimum": 0, "maximum": 99 },
+        "school_level": { "type": "string", "description": "Optional, z. B. de-gymnasium-10" }
+      }
+    },
+    "locales": {
+      "type": "object",
+      "description": "Inhalt je Sprache. Ziel: de und en. Mindestens eine Sprache.",
+      "minProperties": 1,
+      "propertyNames": { "enum": ["de", "en"] },
+      "additionalProperties": { "$ref": "#/$defs/localeContent" }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "license": { "const": "CC-BY-SA-4.0" },
+    "status": {
+      "enum": ["draft", "review", "approved", "flagged", "retired"],
+      "description": "draft = in Arbeit, review = wartet auf Prüfung, approved = freigegeben, flagged = als falsch gemeldet, retired = zurückgezogen"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_by", "created_at"],
+      "properties": {
+        "created_by": { "enum": ["human", "ai", "ai_human_edited", "import"] },
+        "model": { "type": "string", "description": "Bei KI: Modellname, z. B. claude-sonnet-5-5" },
+        "contributor": { "type": "string", "description": "Optionaler Name oder Handle des Beitragenden" },
+        "created_at": { "type": "string", "format": "date" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "automated_checks": { "type": "array", "items": { "type": "string" } },
+        "second_model": { "type": "string" },
+        "reviewed_at": { "type": "string", "format": "date" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "localeContent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title"],
+      "properties": {
+        "title": { "type": "string", "minLength": 3, "maxLength": 80 },
+        "intro": { "type": "string", "maxLength": 300 },
+        "facts": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text", "source_ids"],
+            "properties": {
+              "text": { "type": "string", "minLength": 10, "maxLength": 280 },
+              "source_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+            }
+          }
+        },
+        "quiz": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["question", "options", "answer_index", "explanation"],
+            "properties": {
+              "question": { "type": "string", "minLength": 5, "maxLength": 200 },
+              "options": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 5,
+                "uniqueItems": true,
+                "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+              },
+              "answer_index": { "type": "integer", "minimum": 0 },
+              "explanation": { "type": "string", "minLength": 5, "maxLength": 300 }
+            }
+          }
+        },
+        "cards": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["front", "back"],
+            "properties": {
+              "front": { "type": "string", "minLength": 1, "maxLength": 200 },
+              "back": { "type": "string", "minLength": 1, "maxLength": 400 }
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "url", "accessed"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 3 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "license": { "type": "string", "description": "Lizenz der Quelle, falls Inhalte übernommen wurden (z. B. CC-BY-SA-4.0). Leer = nur als Beleg genutzt." },
+        "accessed": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

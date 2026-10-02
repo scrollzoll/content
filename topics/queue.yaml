@@ -1,0 +1,29 @@
+# Warteliste offener Themen. Das Spenden-Plugin holt sich hier (bzw. über den Connector)
+# das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu freigegeben ist.
+# priority: 1 = hoch, 3 = niedrig
+queue:
+  - id: tech-https-tls
+    topic: technologie/netzwerke
+    hint: "Was HTTPS schützt und was nicht; Rolle von TLS-Zertifikaten"
+    format: facts_quiz
+    priority: 1
+  - id: tech-osi-modell
+    topic: technologie/netzwerke
+    hint: "Die sieben Schichten mit je einem Beispielprotokoll"
+    format: flashcards
+    priority: 1
+  - id: tech-zero-trust
+    topic: technologie/sicherheit
+    hint: "Grundidee Zero Trust, Abgrenzung zum Perimeter-Modell, Quelle NIST SP 800-207"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-shared-responsibility
+    topic: technologie/cloud
+    hint: "Wer ist bei IaaS, PaaS, SaaS wofür verantwortlich"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-false-friends-1
+    topic: sprachen/englisch
+    hint: "Falsche Freunde Deutsch–Englisch, z. B. become/bekommen, eventually/eventuell"
+    format: flashcards
+    priority: 1

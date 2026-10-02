@@ -1,0 +1,18 @@
+# Erste Themenebene. Neue Hauptthemen nur per Pull Request mit Begründung.
+# status: active = Einheiten willkommen, later = noch nicht für Beiträge geöffnet
+topics:
+  technologie:
+    label: { de: Technologie, en: Technology }
+    status: active
+  sprachen:
+    label: { de: Sprachen, en: Languages }
+    status: active
+  self-improvement:
+    label: { de: Selbstentwicklung, en: Self-improvement }
+    status: later
+  schule:
+    label: { de: Schulfächer, en: School subjects }
+    status: later   # erst nach Klärung Jugendschutz/DSGVO
+  gesundheit:
+    label: { de: Gesundheit, en: Health }
+    status: later   # nur Allgemeinwissen, strengere Prüfung nötig
