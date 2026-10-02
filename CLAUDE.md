@@ -10,6 +10,7 @@ Dieses Repo ist die offene Microlearning-Datenbank von Scrollzoll. Es enthält n
 - Lizenz der Daten: CC BY-SA 4.0. Nichts aus Quellen mit NC- oder unklarer Lizenz übernehmen.
 
 ## Beim Erstellen von Einheiten
+- Dafür gibt es den Skill `einheiten-erstellen` (`.claude/skills/`); die Content-Fabrik (`factory/`) ruft ihn automatisch auf.
 - Fakten nur aus Quellen, die du tatsächlich geöffnet hast. Unsicheres weglassen.
 - Zahlen, Jahreszahlen und Namen gegen die Quelle prüfen.
 - Quizfragen: genau eine richtige Antwort, `answer_index` zählt ab 0.

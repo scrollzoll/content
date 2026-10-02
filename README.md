@@ -17,6 +17,8 @@ units/<thema>/<id>.json            eine Datei pro Einheit
 topics/taxonomy.yaml               erlaubte Hauptthemen
 topics/queue.yaml                  Warteliste offener Themen für Beitragende
 scripts/validate.py                Prüft Schema, Quellen, Quiz-Logik, IDs
+factory/                           Content-Fabrik: automatische Erstellung per Claude Code (siehe factory/README.md)
+.claude/skills/einheiten-erstellen Skill zum Erstellen von Einheiten
 ```
 
 ## Prüfen
