@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "ge-hieroglyphen",
+  "topic": "geschichte/antike",
+  "tags": ["hieroglyphen", "rosetta", "aegypten", "schrift"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Hieroglyphen und der Stein von Rosetta",
+      "intro": "Jahrhundertelang konnte niemand die ägyptische Bilderschrift lesen. Der Stein von Rosetta brachte den Durchbruch.",
+      "facts": [
+        { "text": "Ägyptische Hieroglyphen entstanden um 3250 v. Chr. Die Schrift mischte Zeichen für ganze Wörter, Zeichen für Konsonantenlaute und stumme Deutzeichen (Determinative).", "source_ids": ["wikipedia-hieroglyphs"] },
+        { "text": "Die letzte bekannte Hieroglypheninschrift stammt aus dem Philae-Tempel und wurde 394 n. Chr. angebracht.", "source_ids": ["wikipedia-hieroglyphs"] },
+        { "text": "Der Stein von Rosetta ist eine Stele aus Granodiorit mit einem Dekret von 196 v. Chr. unter König Ptolemaios V. Der Text steht in drei Schriften: Hieroglyphen, Demotisch und Altgriechisch.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "Der französische Offizier Pierre-François Bouchard entdeckte den Stein im Juli 1799 bei Rosetta (Raschid) in Ägypten.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "Seit 1802 befindet sich der Stein im Britischen Museum in London.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "Jean-François Champollion gab am 27. September 1822 in Paris die Entzifferung der ägyptischen Schriften bekannt. Der Stein lieferte dafür parallele Texte.", "source_ids": ["wikipedia-rosetta", "wikipedia-hieroglyphs"] }
+      ],
+      "quiz": [
+        {
+          "question": "In welchen drei Schriften ist der Stein von Rosetta beschriftet?",
+          "options": ["Hieroglyphen, Demotisch, Altgriechisch", "Hieroglyphen, Keilschrift, Latein", "Hieratisch, Phönizisch, Hebräisch", "Demotisch, Latein, Aramäisch"],
+          "answer_index": 0,
+          "explanation": "Derselbe Dekrettext steht in Hieroglyphen, demotischer Schrift und Altgriechisch."
+        },
+        {
+          "question": "Wer gab 1822 die Entzifferung der Hieroglyphen bekannt?",
+          "options": ["Pierre-François Bouchard", "Jean-François Champollion", "Howard Carter", "Napoleon Bonaparte"],
+          "answer_index": 1,
+          "explanation": "Champollion verkündete sie am 27. September 1822 in Paris."
+        },
+        {
+          "question": "Wo befindet sich der Stein von Rosetta heute?",
+          "options": ["Im Louvre in Paris", "Im Ägyptischen Museum in Kairo", "Im Britischen Museum in London", "Im Pergamonmuseum in Berlin"],
+          "answer_index": 2,
+          "explanation": "Er ist seit 1802 im Britischen Museum."
+        }
+      ]
+    },
+    "en": {
+      "title": "Hieroglyphs and the Rosetta Stone",
+      "intro": "For centuries nobody could read the Egyptian picture script. The Rosetta Stone brought the breakthrough.",
+      "facts": [
+        { "text": "Egyptian hieroglyphs emerged around 3250 BC. The script mixed signs for whole words, signs for consonant sounds and silent meaning markers (determinatives).", "source_ids": ["wikipedia-hieroglyphs"] },
+        { "text": "The last known hieroglyphic inscription comes from the temple of Philae and was made in AD 394.", "source_ids": ["wikipedia-hieroglyphs"] },
+        { "text": "The Rosetta Stone is a granodiorite stele bearing a decree of 196 BC under King Ptolemy V. The text appears in three scripts: hieroglyphs, Demotic and Ancient Greek.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "The French officer Pierre-François Bouchard discovered the stone in July 1799 near Rosetta (Rashid) in Egypt.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "Since 1802 the stone has been in the British Museum in London.", "source_ids": ["wikipedia-rosetta"] },
+        { "text": "Jean-François Champollion announced the decipherment of the Egyptian scripts in Paris on 27 September 1822. The stone provided parallel texts for this.", "source_ids": ["wikipedia-rosetta", "wikipedia-hieroglyphs"] }
+      ],
+      "quiz": [
+        {
+          "question": "In which three scripts is the Rosetta Stone inscribed?",
+          "options": ["Hieroglyphs, Demotic, Ancient Greek", "Hieroglyphs, cuneiform, Latin", "Hieratic, Phoenician, Hebrew", "Demotic, Latin, Aramaic"],
+          "answer_index": 0,
+          "explanation": "The same decree text appears in hieroglyphs, Demotic script and Ancient Greek."
+        },
+        {
+          "question": "Who announced the decipherment of hieroglyphs in 1822?",
+          "options": ["Pierre-François Bouchard", "Jean-François Champollion", "Howard Carter", "Napoleon Bonaparte"],
+          "answer_index": 1,
+          "explanation": "Champollion announced it in Paris on 27 September 1822."
+        },
+        {
+          "question": "Where is the Rosetta Stone today?",
+          "options": ["In the Louvre in Paris", "In the Egyptian Museum in Cairo", "In the British Museum in London", "In the Pergamon Museum in Berlin"],
+          "answer_index": 2,
+          "explanation": "It has been in the British Museum since 1802."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-hieroglyphs", "title": "Wikipedia: Egyptian hieroglyphs", "url": "https://en.wikipedia.org/wiki/Egyptian_hieroglyphs", "license": "CC-BY-SA-4.0", "accessed": "2026-10-02" },
+    { "id": "wikipedia-rosetta", "title": "Wikipedia: Rosetta Stone", "url": "https://en.wikipedia.org/wiki/Rosetta_Stone", "license": "CC-BY-SA-4.0", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

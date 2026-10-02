@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "tech-sql-injection",
+  "topic": "technologie/sicherheit",
+  "tags": ["sql-injection", "prepared-statements", "owasp", "webanwendungen"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "SQL-Injection: Prinzip und Schutz",
+      "intro": "Bei SQL-Injection schleusen Angreifer eigene Datenbankbefehle über Eingabefelder ein. Der wichtigste Schutz sind Prepared Statements.",
+      "facts": [
+        { "text": "Bei einer SQL-Injection gelangt Text aus Nutzereingaben in eine SQL-Abfrage und wird dort als Befehl ausgeführt, nicht als reine Daten.", "source_ids": ["owasp-sqli"] },
+        { "text": "Anfällig sind Anwendungen, die ihre Abfragen dynamisch bauen, indem sie Nutzereingaben per Zeichenketten-Verkettung in den SQL-Text einfügen.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Folgen können sein: vertrauliche Daten auslesen, Daten ändern oder löschen, Anmeldungen umgehen und in manchen Fällen sogar Befehle des Betriebssystems ausführen.", "source_ids": ["owasp-sqli"] },
+        { "text": "Erste Wahl als Schutz sind Prepared Statements: Die Anwendung legt die Abfrage zuerst fest und übergibt Eingaben danach als Parameter. So trennt die Datenbank stets Code und Daten.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Gespeicherte Prozeduren schützen ebenso gut, aber nur, wenn sie mit Parametern arbeiten und intern keinen SQL-Text dynamisch zusammensetzen.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Für Tabellen- oder Spaltennamen gehen Parameter nicht. Dort hilft eine Positivliste erlaubter Werte. Das bloße Escapen von Eingaben gilt als fehleranfällig und wird nicht empfohlen.", "source_ids": ["owasp-cheatsheet"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist die erste Wahl zum Schutz vor SQL-Injection?",
+          "options": ["Prepared Statements mit Parametern", "Eingaben nur in Großbuchstaben erlauben", "Die Datenbank hinter einer Firewall verstecken", "Fehlermeldungen in Rot anzeigen"],
+          "answer_index": 0,
+          "explanation": "Bei Prepared Statements steht die Abfragestruktur fest, Eingaben werden nur als Daten übergeben."
+        },
+        {
+          "question": "Wodurch entsteht eine SQL-Injection-Schwachstelle typischerweise?",
+          "options": ["Zu langsame Datenbankserver", "Nutzereingaben werden per Verkettung in den SQL-Text eingefügt", "Zu viele gleichzeitige Nutzer", "Veraltete Bildschirmauflösungen"],
+          "answer_index": 1,
+          "explanation": "Bei der Verkettung kann Eingabe die Struktur der Abfrage verändern."
+        },
+        {
+          "question": "Was empfiehlt sich, wenn ein Tabellenname aus Nutzereingabe stammt?",
+          "options": ["Den Namen als Parameter binden", "Eine Positivliste erlaubter Namen verwenden", "Den Namen verschlüsseln", "Den Namen einfach einfügen"],
+          "answer_index": 1,
+          "explanation": "Parameter gelten nur für Werte, nicht für Tabellennamen. Deshalb werden erlaubte Namen fest vorgegeben."
+        }
+      ]
+    },
+    "en": {
+      "title": "SQL Injection: Principle and Protection",
+      "intro": "In SQL injection, attackers smuggle their own database commands in through input fields. The main defense is prepared statements.",
+      "facts": [
+        { "text": "In a SQL injection, text from user input ends up in a SQL query and is executed there as a command, not treated as plain data.", "source_ids": ["owasp-sqli"] },
+        { "text": "Applications are vulnerable when they build queries dynamically by inserting user input into the SQL text through string concatenation.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Consequences can include reading confidential data, changing or deleting data, bypassing logins and, in some cases, even running operating-system commands.", "source_ids": ["owasp-sqli"] },
+        { "text": "The first choice for protection is prepared statements: the application defines the query first and passes input afterwards as parameters. The database thus always keeps code and data apart.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Stored procedures protect just as well, but only if they use parameters and do not assemble SQL text dynamically inside.", "source_ids": ["owasp-cheatsheet"] },
+        { "text": "Parameters do not work for table or column names. An allow-list of permitted values helps there. Merely escaping input is considered fragile and is not recommended.", "source_ids": ["owasp-cheatsheet"] }
+      ],
+      "quiz": [
+        {
+          "question": "What is the first choice for protecting against SQL injection?",
+          "options": ["Prepared statements with parameters", "Allowing only uppercase input", "Hiding the database behind a firewall", "Showing error messages in red"],
+          "answer_index": 0,
+          "explanation": "With prepared statements the query structure is fixed and input is passed only as data."
+        },
+        {
+          "question": "What typically causes a SQL injection vulnerability?",
+          "options": ["Database servers that are too slow", "User input is concatenated into the SQL text", "Too many simultaneous users", "Outdated screen resolutions"],
+          "answer_index": 1,
+          "explanation": "With concatenation, input can change the structure of the query."
+        },
+        {
+          "question": "What is advisable when a table name comes from user input?",
+          "options": ["Bind the name as a parameter", "Use an allow-list of permitted names", "Encrypt the name", "Simply insert the name"],
+          "answer_index": 1,
+          "explanation": "Parameters apply to values, not table names. So permitted names are fixed in advance."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "owasp-cheatsheet", "title": "OWASP Cheat Sheet Series: SQL Injection Prevention", "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html", "accessed": "2026-10-02" },
+    { "id": "owasp-sqli", "title": "OWASP Community: SQL Injection", "url": "https://community.owasp.org/attacks/SQL_Injection", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-sql-injection
-    topic: technologie/sicherheit
-    hint: "SQL-Injection: Prinzip und Schutz durch Prepared Statements"
-    format: facts_quiz
-    priority: 1
-  - id: tech-xss
-    topic: technologie/sicherheit
-    hint: "Cross-Site Scripting: Arten und Schutzmaßnahmen"
-    format: facts_quiz
-    priority: 1
   - id: tech-owasp-top10
     topic: technologie/sicherheit
     hint: "Was die OWASP Top 10 sind und drei aktuelle Kategorien"
@@ -327,16 +317,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-false-friends-5
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: meaning/Meinung, consequent/konsequent, sympathetic/sympathisch, provision/Provision, control/kontrollieren"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-false-friends-6
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: novel/Novelle, oversee/übersehen, prospect/Prospekt, chips/Chips, smoking/Smoking"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-false-friends-7
     topic: sprachen/englisch
     hint: "Falsche Freunde Deutsch–Englisch: stadium/Stadium, closet/Klosett, dome/Dom, lack/Lack, brand/Brand"
@@ -1242,11 +1222,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-hoechste-berge
-    topic: allgemeinwissen/geografie
-    hint: "Die höchsten Berge je Kontinent (Seven Summits)"
-    format: facts_quiz
-    priority: 1
   - id: aw-laengste-fluesse
     topic: allgemeinwissen/geografie
     hint: "Die längsten Flüsse der Erde und der Streit Nil vs. Amazonas"
@@ -1882,11 +1857,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-hieroglyphen
-    topic: geschichte/antike
-    hint: "Hieroglyphen und der Stein von Rosetta"
-    format: facts_quiz
-    priority: 1
   - id: ge-athen-demokratie
     topic: geschichte/antike
     hint: "Die attische Demokratie: Entstehung und Grenzen"

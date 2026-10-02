@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "tech-xss",
+  "topic": "technologie/sicherheit",
+  "tags": ["xss", "owasp", "webanwendungen", "output-encoding"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Cross-Site Scripting (XSS): Arten und Schutz",
+      "intro": "Bei XSS läuft fremder Skriptcode im Browser der Besucher einer vertrauenswürdigen Website. Man unterscheidet drei Arten.",
+      "facts": [
+        { "text": "XSS ist eine Form der Injection: Schadskripte werden in eine eigentlich vertrauenswürdige Website eingeschleust, weil sie Nutzereingaben ohne Prüfung oder Kodierung ausgibt.", "source_ids": ["owasp-xss"] },
+        { "text": "Reflected XSS: Das Skript steckt in der Anfrage, etwa in einem präparierten Link, und wird vom Server direkt in der Antwort zurückgespiegelt, zum Beispiel in einer Suchseite.", "source_ids": ["owasp-xss"] },
+        { "text": "Stored XSS: Das Skript wird dauerhaft auf dem Server gespeichert, etwa in einem Kommentar oder Forenbeitrag, und läuft bei jedem, der den Inhalt abruft.", "source_ids": ["owasp-xss"] },
+        { "text": "DOM-basiertes XSS entsteht im clientseitigen Code: Das Skript verändert direkt das Document Object Model der Seite. Serverseitige Filter erfassen das schlecht.", "source_ids": ["owasp-xss", "owasp-xss-cheatsheet"] },
+        { "text": "Wichtigster Schutz ist kontextabhängige Ausgabekodierung, möglichst direkt vor der Ausgabe: im HTML-Text etwa „<“ zu „&lt;“, in Attributen, JavaScript, CSS und URLs jeweils eigene Regeln.", "source_ids": ["owasp-xss-cheatsheet"] },
+        { "text": "Ergänzend helfen Auto-Escaping der Frameworks, Bereinigung von Nutzer-HTML (z. B. mit DOMPurify) und HttpOnly-Cookies. Eine Content Security Policy ist nur zusätzlicher Schutz, kein Ersatz.", "source_ids": ["owasp-xss-cheatsheet"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welche XSS-Art speichert das Schadskript dauerhaft auf dem Server?",
+          "options": ["Reflected XSS", "Stored XSS", "DOM-basiertes XSS", "Keine, XSS speichert nie"],
+          "answer_index": 1,
+          "explanation": "Bei Stored XSS liegt das Skript etwa in einer Datenbank und trifft jeden, der den Inhalt lädt."
+        },
+        {
+          "question": "Was ist der wichtigste Schutz gegen XSS?",
+          "options": ["Kontextabhängige Ausgabekodierung", "Längere Passwörter", "Nur HTTP statt HTTPS", "Cookies komplett abschalten"],
+          "answer_index": 0,
+          "explanation": "Kodierte Ausgabe sorgt dafür, dass Eingaben als Text und nicht als Code im Browser landen."
+        },
+        {
+          "question": "Wie wird ein Skript bei Reflected XSS typischerweise ausgelöst?",
+          "options": ["Ein Opfer ruft einen präparierten Link auf", "Der Server stürzt ab", "Die Datenbank wird neu gestartet", "Das Opfer installiert ein Programm"],
+          "answer_index": 0,
+          "explanation": "Der Link enthält den Schadcode, die Antwort des Servers spiegelt ihn in die Seite zurück."
+        }
+      ]
+    },
+    "en": {
+      "title": "Cross-Site Scripting (XSS): Types and Protection",
+      "intro": "With XSS, foreign script code runs in the browsers of visitors to a trusted website. Three types are distinguished.",
+      "facts": [
+        { "text": "XSS is a form of injection: malicious scripts are injected into an otherwise trusted website because it outputs user input without validating or encoding it.", "source_ids": ["owasp-xss"] },
+        { "text": "Reflected XSS: the script is part of the request, such as in a crafted link, and the server reflects it straight back in the response, for example on a search page.", "source_ids": ["owasp-xss"] },
+        { "text": "Stored XSS: the script is permanently stored on the server, for example in a comment or forum post, and runs for everyone who retrieves that content.", "source_ids": ["owasp-xss"] },
+        { "text": "DOM-based XSS arises in client-side code: the script directly manipulates the page's Document Object Model. Server-side filters catch this poorly.", "source_ids": ["owasp-xss", "owasp-xss-cheatsheet"] },
+        { "text": "The main defense is context-dependent output encoding, ideally right before output: in HTML text, for example, \"<\" becomes \"&lt;\", with separate rules for attributes, JavaScript, CSS and URLs.", "source_ids": ["owasp-xss-cheatsheet"] },
+        { "text": "Framework auto-escaping, sanitizing user-supplied HTML (e.g. with DOMPurify) and HttpOnly cookies also help. A Content Security Policy is only an extra layer, not a replacement.", "source_ids": ["owasp-xss-cheatsheet"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which XSS type stores the malicious script permanently on the server?",
+          "options": ["Reflected XSS", "Stored XSS", "DOM-based XSS", "None, XSS never stores anything"],
+          "answer_index": 1,
+          "explanation": "With stored XSS the script sits in, say, a database and hits everyone who loads the content."
+        },
+        {
+          "question": "What is the main protection against XSS?",
+          "options": ["Context-dependent output encoding", "Longer passwords", "Using HTTP instead of HTTPS", "Disabling cookies entirely"],
+          "answer_index": 0,
+          "explanation": "Encoded output ensures that input ends up in the browser as text, not as code."
+        },
+        {
+          "question": "How is a script typically triggered in reflected XSS?",
+          "options": ["A victim opens a crafted link", "The server crashes", "The database is restarted", "The victim installs a program"],
+          "answer_index": 0,
+          "explanation": "The link carries the malicious code, and the server's response reflects it into the page."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "owasp-xss", "title": "OWASP Community: Cross Site Scripting (XSS)", "url": "https://community.owasp.org/attacks/xss", "accessed": "2026-10-02" },
+    { "id": "owasp-xss-cheatsheet", "title": "OWASP Cheat Sheet Series: Cross Site Scripting Prevention", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
