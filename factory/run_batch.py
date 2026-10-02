@@ -47,7 +47,7 @@ AUTO_MERGE = os.environ.get("AUTO_MERGE", "1") == "1"
 BASE_BRANCH = os.environ.get("BASE_BRANCH", "main")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 
-RESERVATION_DAYS = 3        # Themen offener PRs so lange nicht erneut vergeben
+RESERVATION_DAYS = 30       # Themen offener PRs nicht erneut vergeben, bis sie in main sind
 MAX_REJECTIONS = 2          # danach wird ein Thema übersprungen
 FAILURE_PAUSE_AFTER = 3     # so viele Fehlläufe in Folge ...
 FAILURE_PAUSE_HOURS = 12    # ... führen zu einer automatischen Pause
