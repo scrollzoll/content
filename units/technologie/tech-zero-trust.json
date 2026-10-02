@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-zero-trust",
+  "topic": "technologie/sicherheit",
+  "tags": ["zero-trust", "nist", "perimeter", "zugriffskontrolle"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Zero Trust: Vertraue nie automatisch",
+      "intro": "Früher galt: Wer im Firmennetz ist, wird schon in Ordnung sein. Zero Trust dreht das um und prüft jeden Zugriff einzeln.",
+      "facts": [
+        { "text": "Laut NIST SP 800-207 (2020) ist Zero Trust ein Ansatz, bei dem Vertrauen nie stillschweigend gewährt, sondern fortlaufend überprüft wird. Der Schutz gilt vor allem Ressourcen wie Daten und Diensten.", "source_ids": ["nist-800-207"] },
+        { "text": "Beim klassischen Perimeter-Modell erhalten angemeldete Nutzer im internen Netz breiten Zugriff. Wer die Außengrenze überwindet, kann sich laut NIST dahinter ungehindert seitlich weiterbewegen.", "source_ids": ["nist-800-207"] },
+        { "text": "Zero Trust geht davon aus, dass ein Angreifer schon im Netz sein kann und das Firmennetz nicht vertrauenswürdiger ist als fremde Netze. Zugriffe werden pro Anfrage mit minimalen Rechten entschieden.", "source_ids": ["nist-800-207"] },
+        { "text": "Eine „implizite Vertrauenszone“ ist ein Bereich, in dem alle Beteiligten ohne weitere Prüfung als vertrauenswürdig gelten. Zero Trust will sie möglichst klein halten und die Kontrolle nah an die Ressource rücken.", "source_ids": ["nist-800-207"] },
+        { "text": "Microsoft fasst Zero Trust in drei Prinzipien: explizit überprüfen, mit minimalen Rechten arbeiten und einen Einbruch annehmen.", "source_ids": ["ms-zero-trust"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist die Kernidee von Zero Trust nach NIST SP 800-207?",
+          "options": ["Wer einmal angemeldet ist, bleibt dauerhaft vertrauenswürdig", "Vertrauen wird nie stillschweigend gewährt, sondern fortlaufend geprüft", "Das Firmennetz ist sicherer als das Internet", "Passwörter werden abgeschafft"],
+          "answer_index": 1,
+          "explanation": "Zero Trust ersetzt implizites Vertrauen durch fortlaufende Prüfung jeder Zugriffsanfrage."
+        },
+        {
+          "question": "Welches Problem des Perimeter-Modells nennt NIST?",
+          "options": ["Es ist zu langsam für E-Mails", "Es braucht zu viele Passwörter", "Es funktioniert nur mit IPv6", "Nach dem Überwinden der Grenze ist seitliche Bewegung ungehindert möglich"],
+          "answer_index": 3,
+          "explanation": "Hat ein Angreifer den Perimeter durchbrochen, trifft er dahinter oft auf wenig weitere Hürden."
+        },
+        {
+          "question": "Welches ist eines der drei Zero-Trust-Prinzipien bei Microsoft?",
+          "options": ["Dem internen Netz standardmäßig vertrauen", "Einmal beim Login prüfen und dann nie wieder", "Explizit überprüfen", "Allen Mitarbeitenden Administratorrechte geben"],
+          "answer_index": 2,
+          "explanation": "Die drei Prinzipien: explizit überprüfen, minimale Rechte, Einbruch annehmen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Zero Trust: Never Trust Automatically",
+      "intro": "It used to be that anyone inside the company network was assumed to be fine. Zero Trust turns this around and checks every access individually.",
+      "facts": [
+        { "text": "According to NIST SP 800-207 (2020), zero trust is an approach where trust is never granted implicitly but continually evaluated. Protection focuses mainly on resources such as data and services.", "source_ids": ["nist-800-207"] },
+        { "text": "In the classic perimeter model, authenticated users on the internal network get broad access. According to NIST, whoever breaches the outer boundary can then move sideways behind it unhindered.", "source_ids": ["nist-800-207"] },
+        { "text": "Zero trust assumes an attacker may already be inside and that the enterprise network is no more trustworthy than outside ones. Access is decided per request with minimal privileges.", "source_ids": ["nist-800-207"] },
+        { "text": "An \"implicit trust zone\" is an area where all parties are treated as trustworthy without further checks. Zero trust aims to keep it as small as possible and to move enforcement close to the resource.", "source_ids": ["nist-800-207"] },
+        { "text": "Microsoft sums up Zero Trust in three principles: verify explicitly, use least privilege access, and assume breach.", "source_ids": ["ms-zero-trust"] }
+      ],
+      "quiz": [
+        {
+          "question": "What is the core idea of zero trust according to NIST SP 800-207?",
+          "options": ["Once logged in, a user stays trusted permanently", "Trust is never granted implicitly but continually evaluated", "The company network is safer than the internet", "Passwords are abolished"],
+          "answer_index": 1,
+          "explanation": "Zero trust replaces implicit trust with continuous checking of every access request."
+        },
+        {
+          "question": "Which problem of the perimeter model does NIST name?",
+          "options": ["It is too slow for email", "It needs too many passwords", "It only works with IPv6", "After the boundary is breached, lateral movement is unhindered"],
+          "answer_index": 3,
+          "explanation": "Once an attacker has broken through the perimeter, there are often few further hurdles behind it."
+        },
+        {
+          "question": "Which is one of Microsoft's three Zero Trust principles?",
+          "options": ["Trust the internal network by default", "Check once at login and never again", "Verify explicitly", "Give all employees administrator rights"],
+          "answer_index": 2,
+          "explanation": "The three principles: verify explicitly, least privilege, assume breach."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-800-207", "title": "NIST SP 800-207: Zero Trust Architecture", "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf", "accessed": "2026-10-02" },
+    { "id": "ms-zero-trust", "title": "Zero Trust as a security foundation (Microsoft Learn)", "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "tech-sase",
+  "topic": "technologie/netzwerke",
+  "tags": ["sase", "sd-wan", "cloud-sicherheit", "ztna", "gartner"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "SASE: Netzwerk und Sicherheit aus der Cloud",
+      "intro": "Mitarbeitende arbeiten im Büro, zu Hause und unterwegs, Anwendungen liegen in der Cloud. SASE will Netzwerk und Sicherheit dafür aus einem Cloud-Dienst liefern.",
+      "facts": [
+        { "text": "Der Begriff SASE (Secure Access Service Edge) stammt vom Gartner-Analysten Neil MacDonald und wurde 2019 geprägt.", "source_ids": ["wikipedia-sase"] },
+        { "text": "Die Grundidee: Weitverkehrsnetz (WAN) und Sicherheitskontrollen kommen als Cloud-Dienst direkt zum Ort der Verbindung, statt allen Verkehr über ein zentrales Rechenzentrum zu leiten.", "source_ids": ["wikipedia-sase"] },
+        { "text": "SASE verbindet SD-WAN mit Sicherheitsfunktionen wie Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), Firewall as a Service (FWaaS) und Zero Trust Network Access (ZTNA) in einem Dienst.", "source_ids": ["paloalto-sase"] },
+        { "text": "Technisch läuft das über ein weltweit verteiltes Netz von Zugangspunkten (PoPs). Nutzer und Filialen verbinden sich mit dem nächstgelegenen PoP, der Netzwerk- und Sicherheitsfunktionen bereitstellt.", "source_ids": ["wikipedia-sase", "paloalto-sase"] }
+      ],
+      "quiz": [
+        {
+          "question": "Von wem stammt der Begriff SASE?",
+          "options": ["Vom Analystenhaus Gartner", "Von der IETF in einem RFC", "Vom NIST in einem Standard", "Von der Bluetooth SIG"],
+          "answer_index": 0,
+          "explanation": "Der Gartner-Analyst Neil MacDonald prägte den Begriff 2019."
+        },
+        {
+          "question": "Was kombiniert SASE in einem Cloud-Dienst?",
+          "options": ["Nur Virenscanner und Backup", "SD-WAN und Sicherheitsfunktionen wie SWG, CASB, FWaaS und ZTNA", "Nur DNS und DHCP", "Rechenzentrumsstrom und Kühlung"],
+          "answer_index": 1,
+          "explanation": "SASE verbindet Netzwerk (SD-WAN) mit mehreren Cloud-Sicherheitsfunktionen."
+        },
+        {
+          "question": "Wie verbinden sich Nutzer bei SASE mit dem Dienst?",
+          "options": ["Über einen einzigen zentralen Server der Firma", "Per Brief an den Anbieter", "Mit dem nächstgelegenen Zugangspunkt (PoP)", "Nur direkt aus dem Firmenbüro"],
+          "answer_index": 2,
+          "explanation": "Verteilte PoPs sorgen dafür, dass Verkehr nicht über ein entferntes zentrales Rechenzentrum umgeleitet werden muss."
+        }
+      ]
+    },
+    "en": {
+      "title": "SASE: Network and Security from the Cloud",
+      "intro": "People work in the office, at home and on the move, and applications live in the cloud. SASE aims to deliver networking and security for all of this from one cloud service.",
+      "facts": [
+        { "text": "The term SASE (Secure Access Service Edge) comes from Gartner analyst Neil MacDonald and was coined in 2019.", "source_ids": ["wikipedia-sase"] },
+        { "text": "The basic idea: wide area network (WAN) and security controls arrive as a cloud service directly at the point of connection, instead of routing all traffic through a central data center.", "source_ids": ["wikipedia-sase"] },
+        { "text": "SASE combines SD-WAN with security functions such as Secure Web Gateway (SWG), Cloud Access Security Broker (CASB), Firewall as a Service (FWaaS) and Zero Trust Network Access (ZTNA) in a single service.", "source_ids": ["paloalto-sase"] },
+        { "text": "Technically this runs on a globally distributed network of points of presence (PoPs). Users and branch offices connect to the nearest PoP, which provides networking and security functions.", "source_ids": ["wikipedia-sase", "paloalto-sase"] }
+      ],
+      "quiz": [
+        {
+          "question": "Who coined the term SASE?",
+          "options": ["The analyst firm Gartner", "The IETF in an RFC", "NIST in a standard", "The Bluetooth SIG"],
+          "answer_index": 0,
+          "explanation": "Gartner analyst Neil MacDonald coined the term in 2019."
+        },
+        {
+          "question": "What does SASE combine in one cloud service?",
+          "options": ["Only antivirus and backup", "SD-WAN and security functions such as SWG, CASB, FWaaS and ZTNA", "Only DNS and DHCP", "Data center power and cooling"],
+          "answer_index": 1,
+          "explanation": "SASE joins networking (SD-WAN) with several cloud security functions."
+        },
+        {
+          "question": "How do users connect to the service with SASE?",
+          "options": ["Through a single central server of the company", "By letter to the provider", "Via the nearest point of presence (PoP)", "Only directly from the company office"],
+          "answer_index": 2,
+          "explanation": "Distributed PoPs mean traffic does not have to be detoured through a distant central data center."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-sase", "title": "Secure access service edge (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Secure_access_service_edge", "accessed": "2026-10-02" },
+    { "id": "paloalto-sase", "title": "What Is SASE? (Palo Alto Networks Cyberpedia)", "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-sase", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

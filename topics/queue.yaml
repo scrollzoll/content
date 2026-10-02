@@ -2,11 +2,6 @@
 # holen sich hier das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu existiert.
 # priority: 1 = hoch, 3 = niedrig. Format eines Eintrags bitte beibehalten (zwei Leerzeichen + '- id:').
 queue:
-  - id: tech-sase
-    topic: technologie/netzwerke
-    hint: "SASE: Netzwerk und Sicherheit aus der Cloud, Begriff von Gartner"
-    format: facts_quiz
-    priority: 1
   - id: tech-osi-modell
     topic: technologie/netzwerke
     hint: "Die sieben OSI-Schichten mit je einem Beispielprotokoll"
@@ -22,31 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-zero-trust
-    topic: technologie/sicherheit
-    hint: "Grundidee Zero Trust, Abgrenzung zum Perimeter-Modell, Quelle NIST SP 800-207"
-    format: facts_quiz
-    priority: 1
-  - id: tech-phishing
-    topic: technologie/sicherheit
-    hint: "Typische Merkmale von Phishing-Mails und wie man sie erkennt"
-    format: facts_quiz
-    priority: 1
-  - id: tech-mfa
-    topic: technologie/sicherheit
-    hint: "Mehrfaktor-Authentifizierung: Faktoren Wissen, Besitz, Inhärenz"
-    format: facts_quiz
-    priority: 1
-  - id: tech-passkeys
-    topic: technologie/sicherheit
-    hint: "Passkeys und FIDO2/WebAuthn: Anmelden ohne Passwort"
-    format: facts_quiz
-    priority: 1
-  - id: tech-passwort-hashing
-    topic: technologie/sicherheit
-    hint: "Warum Passwörter gehasht und gesalzen werden; bcrypt, Argon2"
-    format: facts_quiz
-    priority: 1
   - id: tech-symmetrisch-asymmetrisch
     topic: technologie/sicherheit
     hint: "Symmetrische vs. asymmetrische Verschlüsselung, Beispiele AES und RSA"

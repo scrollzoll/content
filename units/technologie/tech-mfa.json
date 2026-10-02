@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "tech-mfa",
+  "topic": "technologie/sicherheit",
+  "tags": ["mfa", "authentifizierung", "nist", "faktoren"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Mehrfaktor-Authentifizierung: Wissen, Besitz, Inhärenz",
+      "intro": "Ein Passwort allein kann gestohlen werden. Mehrfaktor-Authentifizierung verlangt zusätzlich einen Nachweis anderer Art.",
+      "facts": [
+        { "text": "NIST unterscheidet drei Arten von Authentifizierungsfaktoren: etwas, das man weiß, etwas, das man hat, und etwas, das man ist.", "source_ids": ["nist-800-63b"] },
+        { "text": "Wissen ist ein merkbares Geheimnis wie ein Passwort. Besitz ist ein Gerät oder ein Schlüssel, etwa ein Hardware-Token. Inhärenz sind biometrische Merkmale wie Fingerabdruck, Stimme oder Gesicht.", "source_ids": ["nist-800-63b"] },
+        { "text": "Mehrfaktor-Authentifizierung heißt: Man weist Besitz und Kontrolle über zwei verschiedene Faktoren nach, zum Beispiel Passwort plus Einmalcode-Gerät oder kryptografischer Schlüssel plus Biometrie.", "source_ids": ["nist-800-63b"] },
+        { "text": "Phishing-resistent ist ein Verfahren, wenn es Geheimnisse nicht an eine gefälschte Gegenstelle preisgibt, ohne dass die Wachsamkeit der Nutzer nötig ist. Dafür nutzt NIST kryptografische Verfahren mit Bindung an den echten Dienst.", "source_ids": ["nist-800-63b"] }
+      ],
+      "quiz": [
+        {
+          "question": "Zu welchem Faktor gehört ein Fingerabdruck?",
+          "options": ["Wissen", "Besitz", "Inhärenz (etwas, das man ist)", "Ort"],
+          "answer_index": 2,
+          "explanation": "Biometrische Merkmale zählen zum Faktor „etwas, das man ist“."
+        },
+        {
+          "question": "Welche Kombination ist echte Mehrfaktor-Authentifizierung?",
+          "options": ["Passwort und Sicherheitsfrage", "Passwort und Einmalcode-Gerät", "Zwei verschiedene Passwörter", "PIN und zweites Passwort"],
+          "answer_index": 1,
+          "explanation": "Passwort (Wissen) plus Gerät (Besitz) sind zwei verschiedene Faktoren. Die anderen Kombinationen bestehen nur aus Wissen."
+        },
+        {
+          "question": "Was bedeutet „phishing-resistent“ bei NIST?",
+          "options": ["Das Passwort hat mindestens 20 Zeichen", "Die Nutzer werden jährlich geschult", "Geheimnisse gehen nicht an eine gefälschte Gegenstelle, ohne dass es auf die Wachsamkeit der Nutzer ankommt", "Die Anmeldung dauert besonders lange"],
+          "answer_index": 2,
+          "explanation": "Die Technik verhindert die Preisgabe selbst, etwa durch kryptografische Bindung an den echten Dienst."
+        }
+      ]
+    },
+    "en": {
+      "title": "Multi-Factor Authentication: Know, Have, Are",
+      "intro": "A password alone can be stolen. Multi-factor authentication additionally demands proof of a different kind.",
+      "facts": [
+        { "text": "NIST distinguishes three kinds of authentication factors: something you know, something you have, and something you are.", "source_ids": ["nist-800-63b"] },
+        { "text": "Knowledge is a memorizable secret such as a password. Possession is a device or a key, for example a hardware token. Inherence means biometric traits such as fingerprint, voice or face.", "source_ids": ["nist-800-63b"] },
+        { "text": "Multi-factor authentication means proving possession and control of two distinct factors, for example a password plus a one-time-code device, or a cryptographic key plus a biometric.", "source_ids": ["nist-800-63b"] },
+        { "text": "A method is phishing-resistant if it does not disclose secrets to a fake counterpart without relying on user vigilance. NIST uses cryptographic methods bound to the genuine service for this.", "source_ids": ["nist-800-63b"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which factor does a fingerprint belong to?",
+          "options": ["Knowledge", "Possession", "Inherence (something you are)", "Location"],
+          "answer_index": 2,
+          "explanation": "Biometric traits count as the factor \"something you are\"."
+        },
+        {
+          "question": "Which combination is true multi-factor authentication?",
+          "options": ["Password and security question", "Password and one-time-code device", "Two different passwords", "PIN and second password"],
+          "answer_index": 1,
+          "explanation": "Password (knowledge) plus device (possession) are two distinct factors. The other combinations consist of knowledge only."
+        },
+        {
+          "question": "What does \"phishing-resistant\" mean at NIST?",
+          "options": ["The password has at least 20 characters", "Users are trained every year", "Secrets are not disclosed to a fake counterpart, without relying on user vigilance", "Login takes especially long"],
+          "answer_index": 2,
+          "explanation": "The technique prevents the disclosure itself, for example through cryptographic binding to the genuine service."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-800-63b", "title": "NIST SP 800-63B-4: Digital Identity Guidelines, Authentication and Authenticator Management", "url": "https://pages.nist.gov/800-63-4/sp800-63b.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

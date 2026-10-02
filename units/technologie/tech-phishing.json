@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "tech-phishing",
+  "topic": "technologie/sicherheit",
+  "tags": ["phishing", "social-engineering", "e-mail", "betrug"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Phishing erkennen",
+      "intro": "Phishing-Nachrichten geben sich als vertrauenswürdig aus, um an Daten oder Geld zu kommen. Mit ein paar Merkmalen lassen sie sich oft entlarven.",
+      "facts": [
+        { "text": "Phishing-Nachrichten behaupten oft, es gebe verdächtige Aktivitäten oder ein Problem mit dem Konto oder den Zahlungsdaten, und fordern dazu auf, persönliche Angaben zu bestätigen.", "source_ids": ["ftc-phishing"] },
+        { "text": "Die britische Behörde NCSC nennt fünf typische Hebel der Betrüger: Autorität, Zeitdruck, Emotionen, Verknappung und aktuelle Ereignisse.", "source_ids": ["ncsc-spot-scams"] },
+        { "text": "Ein Beispiel der FTC zeigt typische Zeichen: eine allgemeine Anrede, ein erfundenes Abrechnungsproblem und die Aufforderung, über einen Link Zahlungsdaten zu aktualisieren.", "source_ids": ["ftc-phishing"] },
+        { "text": "Im Zweifel nicht auf Links oder Telefonnummern der Nachricht verlassen, sondern die Organisation über eine selbst nachgeschlagene Webseite oder Nummer kontaktieren.", "source_ids": ["ftc-phishing", "ncsc-spot-scams"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Merkmal passt zu einer typischen Phishing-Mail?",
+          "options": ["Persönliche Anrede mit vollem Namen und Kundennummer ohne Link", "Eine Frist wie „innerhalb von 24 Stunden“ und Drohung mit Konsequenzen", "Eine Nachricht, die Sie selbst angefordert haben", "Ein Newsletter mit Abmeldelink"],
+          "answer_index": 1,
+          "explanation": "Zeitdruck ist laut NCSC ein typischer Hebel, um Menschen zu unüberlegtem Handeln zu bringen."
+        },
+        {
+          "question": "Eine Mail „Ihrer Bank“ meldet ein Kontoproblem und enthält einen Link. Was ist sinnvoll?",
+          "options": ["Auf den Link klicken und schnell anmelden", "Die Bank über eine selbst nachgeschlagene Webseite oder Nummer kontaktieren", "Die Mail an Freunde weiterleiten", "Auf die Mail antworten und Daten nennen"],
+          "answer_index": 1,
+          "explanation": "Kontakt nur über Wege, die Sie unabhängig überprüft haben, nicht über Angaben aus der Nachricht."
+        },
+        {
+          "question": "Welcher Hebel steckt hinter der Formulierung „Nur noch wenige Tickets verfügbar“?",
+          "options": ["Autorität", "Verknappung", "Aktuelle Ereignisse", "Technische Fehler"],
+          "answer_index": 1,
+          "explanation": "Begrenzte Verfügbarkeit soll die Angst erzeugen, etwas zu verpassen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Spotting Phishing",
+      "intro": "Phishing messages pretend to be trustworthy in order to get data or money. A few typical features often give them away.",
+      "facts": [
+        { "text": "Phishing messages often claim there is suspicious activity or a problem with your account or payment details, and ask you to confirm personal information.", "source_ids": ["ftc-phishing"] },
+        { "text": "The UK agency NCSC names five typical levers scammers use: authority, urgency, emotion, scarcity and current events.", "source_ids": ["ncsc-spot-scams"] },
+        { "text": "An FTC example shows typical signs: a generic greeting, an invented billing problem and a request to update payment details via a link.", "source_ids": ["ftc-phishing"] },
+        { "text": "When in doubt, do not rely on links or phone numbers in the message; contact the organization through a website or number you looked up yourself.", "source_ids": ["ftc-phishing", "ncsc-spot-scams"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which feature fits a typical phishing email?",
+          "options": ["A personal greeting with your full name and customer number but no link", "A deadline such as \"within 24 hours\" and a threat of consequences", "A message you requested yourself", "A newsletter with an unsubscribe link"],
+          "answer_index": 1,
+          "explanation": "According to NCSC, urgency is a typical lever to push people into acting without thinking."
+        },
+        {
+          "question": "An email from \"your bank\" reports an account problem and contains a link. What makes sense?",
+          "options": ["Click the link and log in quickly", "Contact the bank through a website or number you looked up yourself", "Forward the email to friends", "Reply to the email and give your details"],
+          "answer_index": 1,
+          "explanation": "Contact only through channels you have checked independently, not through details from the message."
+        },
+        {
+          "question": "Which lever is behind the wording \"Only a few tickets left\"?",
+          "options": ["Authority", "Scarcity", "Current events", "Technical errors"],
+          "answer_index": 1,
+          "explanation": "Limited availability is meant to create fear of missing out."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "ftc-phishing", "title": "How To Recognize and Avoid Phishing Scams (FTC Consumer Advice)", "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams", "accessed": "2026-10-02" },
+    { "id": "ncsc-spot-scams", "title": "Spot scams (UK NCSC)", "url": "https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
