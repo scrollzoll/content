@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "tech-passwort-hashing",
+  "topic": "technologie/sicherheit",
+  "tags": ["hashing", "salt", "bcrypt", "argon2", "passwoerter"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Passwörter speichern: Hash und Salt",
+      "intro": "Seriöse Dienste kennen Ihr Passwort nicht, sie speichern nur einen Hash davon. Wie das funktioniert und warum es bewusst langsam sein soll.",
+      "facts": [
+        { "text": "Passwörter dürfen nie im Klartext gespeichert werden. Ein Hash ist eine Einwegfunktion: Wird die Datenbank gestohlen, lassen sich daraus die Passwörter nicht einfach auslesen.", "source_ids": ["owasp-password-storage"] },
+        { "text": "Ein Salt ist ein zufälliger Wert, der pro Nutzer vor dem Hashen ergänzt wird. Er macht vorberechnete Tabellen (Rainbow Tables) nutzlos und zwingt Angreifer, jeden Hash einzeln zu knacken.", "source_ids": ["owasp-password-storage"] },
+        { "text": "Ein Pepper ist ein zusätzliches Geheimnis für alle Passwörter. Er wird getrennt von der Datenbank aufbewahrt, nicht beim Hash.", "source_ids": ["owasp-password-storage"] },
+        { "text": "bcrypt (Provos und Mazières, 1999) basiert auf Blowfish und hat einen einstellbaren Aufwand. So kann man die Rechenzeit mit schnellerer Hardware mitwachsen lassen.", "source_ids": ["bcrypt-paper"] },
+        { "text": "Argon2 (RFC 9106) ist speicherintensiv und kommt in drei Varianten. OWASP empfiehlt in erster Linie Argon2id, mindestens mit 19 MiB Speicher, 2 Durchläufen und Parallelität 1.", "source_ids": ["rfc-9106", "owasp-password-storage"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wozu dient ein Salt beim Passwort-Hashing?",
+          "options": ["Er verschlüsselt die Datenbank", "Er macht vorberechnete Tabellen nutzlos, weil jeder Hash anders ausfällt", "Er macht das Passwort kürzer", "Er speichert das Passwort im Klartext sicher"],
+          "answer_index": 1,
+          "explanation": "Mit einem zufälligen Salt pro Nutzer müssen Angreifer jeden Hash einzeln angreifen."
+        },
+        {
+          "question": "Warum hat bcrypt einen einstellbaren Aufwand?",
+          "options": ["Damit sich der Rechenaufwand mit schnellerer Hardware anpassen lässt", "Damit Passwörter kürzer werden", "Damit Nutzer ihr Passwort nicht merken müssen", "Damit der Hash umkehrbar ist"],
+          "answer_index": 0,
+          "explanation": "Der Aufwand soll mit der Hardware mitwachsen, ohne dass man den Algorithmus wechseln muss."
+        },
+        {
+          "question": "Welches Verfahren empfiehlt OWASP in erster Linie für neue Systeme?",
+          "options": ["Klartext mit Zugriffsschutz", "Argon2id", "Base64-Kodierung", "Ein einfacher Hash ohne Salt"],
+          "answer_index": 1,
+          "explanation": "OWASP nennt Argon2id als erste Wahl. Alternativen sind unter anderem scrypt, bcrypt und PBKDF2."
+        }
+      ]
+    },
+    "en": {
+      "title": "Storing Passwords: Hash and Salt",
+      "intro": "Reputable services do not know your password; they store only a hash of it. Here is how that works and why it is meant to be slow.",
+      "facts": [
+        { "text": "Passwords must never be stored in plain text. A hash is a one-way function: if the database is stolen, the passwords cannot simply be read out of it.", "source_ids": ["owasp-password-storage"] },
+        { "text": "A salt is a random value added per user before hashing. It makes precomputed tables (rainbow tables) useless and forces attackers to crack each hash individually.", "source_ids": ["owasp-password-storage"] },
+        { "text": "A pepper is an extra secret shared by all passwords. It is kept separately from the database, not alongside the hash.", "source_ids": ["owasp-password-storage"] },
+        { "text": "bcrypt (Provos and Mazières, 1999) is based on Blowfish and has an adjustable cost. That lets the computing time grow along with faster hardware.", "source_ids": ["bcrypt-paper"] },
+        { "text": "Argon2 (RFC 9106) is memory-hard and comes in three variants. OWASP primarily recommends Argon2id, at minimum with 19 MiB of memory, 2 iterations and parallelism 1.", "source_ids": ["rfc-9106", "owasp-password-storage"] }
+      ],
+      "quiz": [
+        {
+          "question": "What is a salt for in password hashing?",
+          "options": ["It encrypts the database", "It makes precomputed tables useless because every hash comes out different", "It makes the password shorter", "It safely stores the password in plain text"],
+          "answer_index": 1,
+          "explanation": "With a random salt per user, attackers must attack each hash individually."
+        },
+        {
+          "question": "Why does bcrypt have an adjustable cost?",
+          "options": ["So the computing effort can be adjusted as hardware gets faster", "So passwords become shorter", "So users do not need to remember their password", "So the hash is reversible"],
+          "answer_index": 0,
+          "explanation": "The cost is meant to grow with hardware without having to switch the algorithm."
+        },
+        {
+          "question": "Which algorithm does OWASP primarily recommend for new systems?",
+          "options": ["Plain text with access protection", "Argon2id", "Base64 encoding", "A simple hash without salt"],
+          "answer_index": 1,
+          "explanation": "OWASP names Argon2id as the first choice. Alternatives include scrypt, bcrypt and PBKDF2."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "owasp-password-storage", "title": "Password Storage Cheat Sheet (OWASP)", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html", "accessed": "2026-10-02" },
+    { "id": "rfc-9106", "title": "RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications", "url": "https://www.rfc-editor.org/rfc/rfc9106.html", "accessed": "2026-10-02" },
+    { "id": "bcrypt-paper", "title": "A Future-Adaptable Password Scheme (Provos, Mazières, USENIX 1999)", "url": "https://www.usenix.org/legacy/event/usenix99/provos/provos.pdf", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

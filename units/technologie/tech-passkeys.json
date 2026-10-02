@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-passkeys",
+  "topic": "technologie/sicherheit",
+  "tags": ["passkeys", "fido2", "webauthn", "passwortlos", "authentifizierung"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Passkeys: Anmelden ohne Passwort",
+      "intro": "Mit Passkeys meldet man sich per Fingerabdruck, Gesicht oder PIN an, ohne ein Passwort einzutippen. Dahinter stecken FIDO2 und WebAuthn.",
+      "facts": [
+        { "text": "Ein Passkey ist eine Anmeldeinformation auf Basis von FIDO-Standards. Sie kann auf Smartphone oder Computer oder in einem Hardware-Sicherheitsschlüssel gespeichert sein.", "source_ids": ["fido-passkeys"] },
+        { "text": "Beim Erstellen entsteht ein kryptografisches Schlüsselpaar. Der private Schlüssel bleibt im Gerät, der Dienst erhält nur den öffentlichen. Beim Anmelden beweist man den Besitz des privaten Schlüssels, ohne ein Geheimnis zu senden.", "source_ids": ["fido-passkeys", "w3c-webauthn-2"] },
+        { "text": "Zur Freigabe nutzt man dieselbe Methode wie zum Entsperren des Geräts, etwa Fingerabdruck, Gesicht oder PIN. Der Dienst erfährt nur, dass die Prüfung gelungen ist; biometrische Daten verlassen das Gerät nicht.", "source_ids": ["fido-passkeys"] },
+        { "text": "WebAuthn bindet jede Anmeldeinformation an einen Dienst (Relying Party). Eine bei einer Organisation angelegte Information funktioniert bei einer anderen nicht, was vor Phishing schützt.", "source_ids": ["w3c-webauthn-2"] },
+        { "text": "Passkeys können über einen Anbieter wie iCloud-Schlüsselbund oder Google Passwortmanager auf mehrere Geräte synchronisiert werden. Alternativ bleiben sie an ein einzelnes Gerät oder einen Schlüssel gebunden.", "source_ids": ["fido-passkeys"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was speichert der Dienst bei einem Passkey?",
+          "options": ["Das Passwort im Klartext", "Den Fingerabdruck der Nutzerin", "Den öffentlichen Schlüssel", "Den privaten Schlüssel"],
+          "answer_index": 2,
+          "explanation": "Der private Schlüssel bleibt auf dem Gerät. Der Dienst prüft Signaturen mit dem öffentlichen Schlüssel."
+        },
+        {
+          "question": "Warum schützt WebAuthn vor Phishing?",
+          "options": ["Weil Anmeldeinformationen an den echten Dienst gebunden sind und bei einer gefälschten Seite nicht funktionieren", "Weil Nutzer längere Passwörter wählen müssen", "Weil Mails automatisch gelöscht werden", "Weil der Browser keine Links öffnet"],
+          "answer_index": 0,
+          "explanation": "Die Bindung an den Dienst verhindert, dass eine Fälschungsseite die Anmeldung weiterverwenden kann."
+        },
+        {
+          "question": "Was passiert mit dem Fingerabdruck, wenn man sich mit einem Passkey anmeldet?",
+          "options": ["Er wird an den Dienst gesendet", "Er schaltet die Freigabe auf dem Gerät frei; biometrische Daten verlassen das Gerät nicht", "Er wird im Browserverlauf gespeichert", "Er wird per E-Mail bestätigt"],
+          "answer_index": 1,
+          "explanation": "Der Dienst erfährt nur, dass die Prüfung erfolgreich war."
+        }
+      ]
+    },
+    "en": {
+      "title": "Passkeys: Signing In Without a Password",
+      "intro": "With passkeys you sign in using a fingerprint, face or PIN instead of typing a password. FIDO2 and WebAuthn are behind this.",
+      "facts": [
+        { "text": "A passkey is a credential based on FIDO standards. It can be stored on a smartphone or computer, or in a hardware security key.", "source_ids": ["fido-passkeys"] },
+        { "text": "Creating one generates a cryptographic key pair. The private key stays on the device, and the service receives only the public one. When signing in, you prove possession of the private key without sending a secret.", "source_ids": ["fido-passkeys", "w3c-webauthn-2"] },
+        { "text": "You approve with the same method used to unlock the device, such as fingerprint, face or PIN. The service learns only that the check succeeded; biometric data does not leave the device.", "source_ids": ["fido-passkeys"] },
+        { "text": "WebAuthn binds each credential to one service (relying party). A credential created for one organization does not work with another, which protects against phishing.", "source_ids": ["w3c-webauthn-2"] },
+        { "text": "Passkeys can be synced across several devices through a provider such as iCloud Keychain or Google Password Manager. Alternatively, they stay bound to a single device or key.", "source_ids": ["fido-passkeys"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does the service store for a passkey?",
+          "options": ["The password in plain text", "The user's fingerprint", "The public key", "The private key"],
+          "answer_index": 2,
+          "explanation": "The private key stays on the device. The service verifies signatures with the public key."
+        },
+        {
+          "question": "Why does WebAuthn protect against phishing?",
+          "options": ["Because credentials are bound to the genuine service and do not work on a fake site", "Because users have to choose longer passwords", "Because emails are deleted automatically", "Because the browser does not open links"],
+          "answer_index": 0,
+          "explanation": "The binding to the service prevents a fake site from reusing the sign-in."
+        },
+        {
+          "question": "What happens to the fingerprint when you sign in with a passkey?",
+          "options": ["It is sent to the service", "It unlocks the approval on the device; biometric data does not leave the device", "It is stored in the browser history", "It is confirmed by email"],
+          "answer_index": 1,
+          "explanation": "The service learns only that the check succeeded."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "fido-passkeys", "title": "Passkeys (FIDO Alliance)", "url": "https://fidoalliance.org/passkeys/", "accessed": "2026-10-02" },
+    { "id": "w3c-webauthn-2", "title": "Web Authentication: An API for accessing Public Key Credentials, Level 2 (W3C)", "url": "https://www.w3.org/TR/webauthn-2/", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
