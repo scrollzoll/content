@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-https-tls",
+  "topic": "technologie/netzwerke",
+  "tags": ["https", "tls", "zertifikate", "verschluesselung", "sicherheit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "HTTPS und TLS: Was geschützt ist – und was nicht",
+      "intro": "HTTPS sichert den Weg zwischen dir und einer Website. Ob die Website selbst vertrauenswürdig ist, verrät es nicht.",
+      "facts": [
+        { "text": "HTTPS ist HTTP über eine mit TLS gesicherte Verbindung. Nennt die Adresse keinen Port, gilt TCP-Port 443 als Standard.", "source_ids": ["rfc9110"] },
+        { "text": "TLS gibt einer Verbindung dreifachen Schutz: Der Server wird authentifiziert, die Daten sind nur für die beiden Endpunkte lesbar (Vertraulichkeit), und sie lassen sich unterwegs nicht unbemerkt verändern (Integrität).", "source_ids": ["rfc9846"] },
+        { "text": "Ein TLS-Zertifikat verknüpft den öffentlichen Schlüssel einer Website mit ihrem Domainnamen. So kann der Browser prüfen, ob er wirklich mit dem Server für die aufgerufene Adresse verbunden ist.", "source_ids": ["mdn-tls", "rfc9110"] },
+        { "text": "Passt das Zertifikat nicht zur aufgerufenen Adresse, muss der Browser laut HTTP-Standard die Verbindung mit einem Zertifikatsfehler abbrechen oder vor dem Fortfahren die Bestätigung des Nutzers einholen.", "source_ids": ["rfc9110"] },
+        { "text": "TLS verbirgt nicht alles: Die Länge der übertragenen Daten bleibt erkennbar. Die Endpunkte können Datensätze lediglich auffüllen (Padding), um die Länge zu verschleiern.", "source_ids": ["rfc9846"] },
+        { "text": "Ein domainvalidiertes Zertifikat (DV) bestätigt nur, dass ein öffentlicher Schlüssel zu einer Domain gehört. Über Inhalt, Betreiber, Ruf oder Sicherheit der Website sagt es nichts aus.", "source_ids": ["letsencrypt-dv"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher TCP-Port ist der Standard für HTTPS?",
+          "options": ["80", "443", "53", "22"],
+          "answer_index": 1,
+          "explanation": "Fehlt in einer https-Adresse die Portangabe, gilt TCP-Port 443. Port 80 ist der Standard für unverschlüsseltes HTTP."
+        },
+        {
+          "question": "Was bestätigt ein domainvalidiertes TLS-Zertifikat (DV)?",
+          "options": ["Dass die Website frei von Schadsoftware ist", "Dass der Betreiber ein geprüftes Unternehmen ist", "Dass ein öffentlicher Schlüssel zu einer Domain gehört", "Dass die Inhalte der Website korrekt sind"],
+          "answer_index": 2,
+          "explanation": "Ein DV-Zertifikat bindet nur einen Schlüssel an eine Domain. Über Inhalt, Betreiber oder Sicherheit der Website sagt es nichts aus."
+        },
+        {
+          "question": "Was verbirgt TLS nicht?",
+          "options": ["Den Inhalt der abgerufenen Seiten", "In Formulare eingegebene Passwörter", "Mitgesendete Cookies", "Die Länge der übertragenen Daten"],
+          "answer_index": 3,
+          "explanation": "TLS hält die übertragenen Inhalte vertraulich, aber nicht deren Länge. Padding kann die Länge nur verschleiern."
+        },
+        {
+          "question": "Was muss ein Browser tun, wenn das Zertifikat nicht zur aufgerufenen Adresse passt?",
+          "options": ["Abbrechen oder vorher die Bestätigung des Nutzers einholen", "Die Seite stillschweigend unverschlüsselt laden", "Selbst ein passendes Zertifikat ausstellen", "Die Verbindung ohne Hinweis normal fortsetzen"],
+          "answer_index": 0,
+          "explanation": "Der HTTP-Standard lässt dem Browser nur zwei Wege: Abbruch mit Zertifikatsfehler oder Fortfahren nach Bestätigung des Nutzers."
+        }
+      ]
+    },
+    "en": {
+      "title": "HTTPS and TLS: What Is Protected – and What Isn't",
+      "intro": "HTTPS secures the path between you and a website. It does not tell you whether the website itself is trustworthy.",
+      "facts": [
+        { "text": "HTTPS is HTTP over a connection secured with TLS. If the address does not name a port, TCP port 443 is the default.", "source_ids": ["rfc9110"] },
+        { "text": "TLS gives a connection three kinds of protection: the server is authenticated, the data is readable only by the two endpoints (confidentiality), and it cannot be altered in transit without detection (integrity).", "source_ids": ["rfc9846"] },
+        { "text": "A TLS certificate ties a website's public key to its domain name. This lets the browser check that it is really connected to the server for the address it requested.", "source_ids": ["mdn-tls", "rfc9110"] },
+        { "text": "If the certificate does not match the requested address, the HTTP standard requires the browser to end the connection with a certificate error or to get the user's confirmation before proceeding.", "source_ids": ["rfc9110"] },
+        { "text": "TLS does not hide everything: the length of the transmitted data remains visible. Endpoints can only pad records to obscure the length.", "source_ids": ["rfc9846"] },
+        { "text": "A domain-validated (DV) certificate only confirms that a public key belongs to a domain. It says nothing about the website's content, operator, reputation or safety.", "source_ids": ["letsencrypt-dv"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which TCP port is the default for HTTPS?",
+          "options": ["80", "443", "53", "22"],
+          "answer_index": 1,
+          "explanation": "If an https address gives no port, TCP port 443 applies. Port 80 is the default for unencrypted HTTP."
+        },
+        {
+          "question": "What does a domain-validated (DV) TLS certificate confirm?",
+          "options": ["That the website is free of malware", "That the operator is a verified company", "That a public key belongs to a domain", "That the website's content is accurate"],
+          "answer_index": 2,
+          "explanation": "A DV certificate only binds a key to a domain. It says nothing about the website's content, operator or safety."
+        },
+        {
+          "question": "What does TLS not hide?",
+          "options": ["The content of the pages you load", "Passwords entered into forms", "Cookies sent along with requests", "The length of the transmitted data"],
+          "answer_index": 3,
+          "explanation": "TLS keeps the transmitted content confidential, but not its length. Padding can only obscure the length."
+        },
+        {
+          "question": "What must a browser do if the certificate does not match the requested address?",
+          "options": ["Abort, or get the user's confirmation first", "Silently load the page unencrypted", "Issue a matching certificate itself", "Continue the connection normally without notice"],
+          "answer_index": 0,
+          "explanation": "The HTTP standard leaves the browser only two paths: ending with a certificate error, or proceeding after the user's confirmation."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc9110", "title": "RFC 9110: HTTP Semantics", "url": "https://www.rfc-editor.org/rfc/rfc9110.html", "accessed": "2026-10-02" },
+    { "id": "rfc9846", "title": "RFC 9846: The Transport Layer Security (TLS) Protocol Version 1.3", "url": "https://www.rfc-editor.org/rfc/rfc9846.html", "accessed": "2026-10-02" },
+    { "id": "mdn-tls", "title": "MDN Web Docs: Transport Layer Security (TLS)", "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Transport_Layer_Security", "accessed": "2026-10-02" },
+    { "id": "letsencrypt-dv", "title": "Let's Encrypt: The CA's Role in Fighting Phishing and Malware", "url": "https://letsencrypt.org/2015/10/29/phishing-and-malware/", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}
