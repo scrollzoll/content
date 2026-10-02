@@ -11,7 +11,7 @@ Offene Microlearning-Datenbank: kurze Lerneinheiten (Fakten + Quiz, Karteikarten
 - **Lerneinheiten (`units/`) und Themenlisten (`topics/`):** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de). Namensnennung: „Scrollzoll Content-Beitragende“ mit Link auf dieses Repo.
 - **Schema und Skripte (`schema/`, `scripts/`):** MIT.
 
-Den vollständigen Lizenztext legst du beim Anlegen des Repos über GitHubs Lizenzauswahl an (siehe `LICENSE.md`).
+Volltexte: [`LICENSE`](LICENSE) (CC BY-SA 4.0) und [`LICENSE-CODE`](LICENSE-CODE) (MIT), Übersicht in [`LICENSE.md`](LICENSE.md).
 
 ## Aufbau
 

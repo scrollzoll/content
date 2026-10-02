@@ -1,8 +1,8 @@
 name: Validate units
 
 on:
+  # ohne Pfadfilter: die Prüfung ist Pflicht-Check für main und muss bei jedem PR laufen
   pull_request:
-    paths: ["units/**", "schema/**", "topics/**", "scripts/**"]
   push:
     branches: [main]
 
