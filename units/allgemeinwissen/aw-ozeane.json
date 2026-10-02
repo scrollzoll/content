@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "aw-ozeane",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["ozeane", "meere", "erde", "tiefsee"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die fünf Ozeane: Größe und tiefste Stellen",
+      "intro": "Eigentlich gibt es nur einen zusammenhängenden Weltozean. Üblich ist es, fünf Ozeane zu unterscheiden.",
+      "facts": [
+        { "text": "Die fünf benannten Ozeane sind Atlantik, Pazifik, Indischer, Arktischer und Südlicher Ozean. Der Südliche Ozean reicht nach US-Definition von der Antarktisküste bis 60° Süd.", "source_ids": ["noaa-howmany"] },
+        { "text": "Der Pazifik ist der größte Ozean und bedeckt rund 46 % der Wasserfläche der Erde. Seine tiefste Stelle ist das Challengertief im Marianengraben mit rund 10.900 Metern.", "source_ids": ["wikipedia-pacific"] },
+        { "text": "Der Atlantik ist der zweitgrößte Ozean mit etwa 85 Millionen km². Seine tiefste Stelle ist der Puerto-Rico-Graben mit rund 8.400 Metern.", "source_ids": ["wikipedia-atlantic"] },
+        { "text": "Der Indische Ozean ist der drittgrößte mit etwa 70,6 Millionen km². Seine tiefste Stelle liegt im Sundagraben bei rund 7.290 Metern.", "source_ids": ["wikipedia-indian"] },
+        { "text": "Der Südliche Ozean umfasst etwa 22 Millionen km². Als tiefste Stelle gilt das vorgeschlagene Factorian Deep mit rund 7.430 Metern, entdeckt 2019.", "source_ids": ["wikipedia-southern"] },
+        { "text": "Der Arktische Ozean ist der kleinste und flachste der fünf. Seine größte Tiefe liegt bei etwa 5.550 Metern in der Molloy-Tiefe in der Framstraße.", "source_ids": ["wikipedia-arctic"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Ozean ist der größte?",
+          "options": ["Atlantik", "Indischer Ozean", "Pazifik", "Arktischer Ozean"],
+          "answer_index": 2,
+          "explanation": "Der Pazifik bedeckt rund 46 % der Wasserfläche der Erde."
+        },
+        {
+          "question": "In welchem Ozean liegt der Puerto-Rico-Graben?",
+          "options": ["Im Atlantik", "Im Pazifik", "Im Indischen Ozean", "Im Südlichen Ozean"],
+          "answer_index": 0,
+          "explanation": "Der Puerto-Rico-Graben ist mit rund 8.400 Metern die tiefste Stelle des Atlantiks."
+        },
+        {
+          "question": "Welcher Ozean ist der kleinste und flachste?",
+          "options": ["Südlicher Ozean", "Arktischer Ozean", "Indischer Ozean", "Atlantik"],
+          "answer_index": 1,
+          "explanation": "Der Arktische Ozean ist der kleinste und flachste der fünf Ozeane."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Five Oceans: Size and Deepest Points",
+      "intro": "Strictly speaking, there is only one connected global ocean. It is common to distinguish five oceans.",
+      "facts": [
+        { "text": "The five named oceans are the Atlantic, Pacific, Indian, Arctic and Southern Ocean. By US definition, the Southern Ocean extends from the Antarctic coast to 60° South.", "source_ids": ["noaa-howmany"] },
+        { "text": "The Pacific is the largest ocean and covers about 46% of Earth's water surface. Its deepest point is the Challenger Deep in the Mariana Trench at about 10,900 metres.", "source_ids": ["wikipedia-pacific"] },
+        { "text": "The Atlantic is the second largest ocean at about 85 million km². Its deepest point is the Puerto Rico Trench at about 8,400 metres.", "source_ids": ["wikipedia-atlantic"] },
+        { "text": "The Indian Ocean is the third largest at about 70.6 million km². Its deepest point is in the Sunda Trench at about 7,290 metres.", "source_ids": ["wikipedia-indian"] },
+        { "text": "The Southern Ocean covers about 22 million km². Its deepest point is considered to be the proposed Factorian Deep at about 7,430 metres, found in 2019.", "source_ids": ["wikipedia-southern"] },
+        { "text": "The Arctic Ocean is the smallest and shallowest of the five. Its greatest depth is about 5,550 metres at the Molloy Hole in the Fram Strait.", "source_ids": ["wikipedia-arctic"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which ocean is the largest?",
+          "options": ["Atlantic", "Indian Ocean", "Pacific", "Arctic Ocean"],
+          "answer_index": 2,
+          "explanation": "The Pacific covers about 46% of Earth's water surface."
+        },
+        {
+          "question": "In which ocean does the Puerto Rico Trench lie?",
+          "options": ["In the Atlantic", "In the Pacific", "In the Indian Ocean", "In the Southern Ocean"],
+          "answer_index": 0,
+          "explanation": "At about 8,400 metres, the Puerto Rico Trench is the deepest point of the Atlantic."
+        },
+        {
+          "question": "Which ocean is the smallest and shallowest?",
+          "options": ["Southern Ocean", "Arctic Ocean", "Indian Ocean", "Atlantic"],
+          "answer_index": 1,
+          "explanation": "The Arctic Ocean is the smallest and shallowest of the five oceans."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "noaa-howmany", "title": "NOAA National Ocean Service: How many oceans are there?", "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html", "accessed": "2026-10-02" },
+    { "id": "wikipedia-pacific", "title": "Wikipedia: Pacific Ocean", "url": "https://en.wikipedia.org/wiki/Pacific_Ocean", "accessed": "2026-10-02" },
+    { "id": "wikipedia-atlantic", "title": "Wikipedia: Atlantic Ocean", "url": "https://en.wikipedia.org/wiki/Atlantic_Ocean", "accessed": "2026-10-02" },
+    { "id": "wikipedia-indian", "title": "Wikipedia: Indian Ocean", "url": "https://en.wikipedia.org/wiki/Indian_Ocean", "accessed": "2026-10-02" },
+    { "id": "wikipedia-southern", "title": "Wikipedia: Southern Ocean", "url": "https://en.wikipedia.org/wiki/Southern_Ocean", "accessed": "2026-10-02" },
+    { "id": "wikipedia-arctic", "title": "Wikipedia: Arctic Ocean", "url": "https://en.wikipedia.org/wiki/Arctic_Ocean", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "ge-aegypten-pyramiden",
+  "topic": "geschichte/antike",
+  "tags": ["aegypten", "pyramiden", "gizeh", "altes-reich"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Pyramiden von Gizeh: Bau und Pharaonen",
+      "intro": "Die drei großen Pyramiden von Gizeh gehören zu den bekanntesten Bauwerken der Antike.",
+      "facts": [
+        { "text": "Die drei großen Pyramiden von Gizeh entstanden in der 4. Dynastie des Alten Reichs für Cheops (Chufu), seinen Sohn Chephren (Chafre) und seinen Enkel Mykerinos (Menkaure).", "source_ids": ["worldhistory-giza", "wikipedia-giza", "wikipedia-menkaure"] },
+        { "text": "Die Cheops-Pyramide wurde um 2600 v. Chr. gebaut. Sie war ursprünglich 146,6 m hoch und misst heute 138,5 m, weil Verkleidungssteine fehlen.", "source_ids": ["wikipedia-great-pyramid"] },
+        { "text": "Ursprünglich war die Pyramide mit weißem Kalkstein verkleidet, der weithin sichtbar glänzte. Die Verkleidung wurde später als Baumaterial für Kairo abgetragen.", "source_ids": ["worldhistory-giza"] },
+        { "text": "Funde bei den Arbeitersiedlungen von Gizeh sprechen gegen Sklaverei: Die Pyramide bauten tausende Arbeitskräfte, die der Staat verpflichtete oder anwarb.", "source_ids": ["wikipedia-great-pyramid", "worldhistory-giza"] },
+        { "text": "Das 2013 entdeckte Merer-Tagebuch belegt, dass weißer Kalkstein aus Tura zur Cheops-Pyramide transportiert wurde. Sie wird darin „Achet Chufu“ genannt.", "source_ids": ["wikipedia-great-pyramid"] },
+        { "text": "Die Chephren-Pyramide war ursprünglich 143,5 m hoch und wirkt wegen ihres höheren Untergrunds größer als die Cheops-Pyramide. Die Mykerinos-Pyramide war nur rund 65,5 m hoch.", "source_ids": ["wikipedia-khafre", "wikipedia-menkaure"] }
+      ],
+      "quiz": [
+        {
+          "question": "Für welchen Pharao wurde die Große Pyramide von Gizeh gebaut?",
+          "options": ["Chephren (Chafre)", "Cheops (Chufu)", "Mykerinos (Menkaure)", "Tutanchamun"],
+          "answer_index": 1,
+          "explanation": "Die Große Pyramide ist das Grabmal von Cheops (Chufu)."
+        },
+        {
+          "question": "Welche der drei großen Pyramiden von Gizeh ist die kleinste?",
+          "options": ["Die des Cheops", "Die des Chephren", "Die des Mykerinos", "Alle drei sind gleich hoch"],
+          "answer_index": 2,
+          "explanation": "Die Mykerinos-Pyramide war ursprünglich nur rund 65,5 m hoch."
+        },
+        {
+          "question": "Wer baute die Pyramiden laut archäologischen Funden?",
+          "options": ["Etwa 100.000 Sklaven, wie Herodot behauptete", "Vom Staat verpflichtete oder angeworbene Arbeiter", "Ausschließlich Kriegsgefangene", "Handwerker aus Mesopotamien"],
+          "answer_index": 1,
+          "explanation": "Funde in den Arbeitersiedlungen sprechen für staatlich organisierte Arbeitskräfte, nicht für Sklaven."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Pyramids of Giza: Construction and Pharaohs",
+      "intro": "The three great pyramids of Giza are among the best-known structures of antiquity.",
+      "facts": [
+        { "text": "The three great pyramids of Giza were built in the 4th Dynasty of the Old Kingdom for Khufu (Cheops), his son Khafre (Chephren) and his grandson Menkaure (Mykerinos).", "source_ids": ["worldhistory-giza", "wikipedia-giza", "wikipedia-menkaure"] },
+        { "text": "The Great Pyramid was built around 2600 BC. It was originally 146.6 m tall and is 138.5 m today because casing stones are missing.", "source_ids": ["wikipedia-great-pyramid"] },
+        { "text": "Originally the pyramid was covered in white limestone that shone for miles. The casing was later removed and used as building material for Cairo.", "source_ids": ["worldhistory-giza"] },
+        { "text": "Finds at the workers' settlements at Giza argue against slavery: the pyramid was built by thousands of labourers conscripted or hired by the state.", "source_ids": ["wikipedia-great-pyramid", "worldhistory-giza"] },
+        { "text": "The Diary of Merer, discovered in 2013, documents the transport of white limestone from Tura to the Great Pyramid, which it calls \"Akhet Khufu\".", "source_ids": ["wikipedia-great-pyramid"] },
+        { "text": "Khafre's pyramid was originally 143.5 m tall and looks larger than Khufu's because of its higher ground. Menkaure's pyramid was only about 65.5 m tall.", "source_ids": ["wikipedia-khafre", "wikipedia-menkaure"] }
+      ],
+      "quiz": [
+        {
+          "question": "For which pharaoh was the Great Pyramid of Giza built?",
+          "options": ["Khafre (Chephren)", "Khufu (Cheops)", "Menkaure (Mykerinos)", "Tutankhamun"],
+          "answer_index": 1,
+          "explanation": "The Great Pyramid is the tomb of Khufu (Cheops)."
+        },
+        {
+          "question": "Which of the three great Giza pyramids is the smallest?",
+          "options": ["Khufu's", "Khafre's", "Menkaure's", "All three are equally tall"],
+          "answer_index": 2,
+          "explanation": "Menkaure's pyramid was originally only about 65.5 m tall."
+        },
+        {
+          "question": "Who built the pyramids according to archaeological finds?",
+          "options": ["About 100,000 slaves, as Herodotus claimed", "Labourers conscripted or hired by the state", "Exclusively prisoners of war", "Craftsmen from Mesopotamia"],
+          "answer_index": 1,
+          "explanation": "Finds in the workers' settlements point to state-organised labourers, not slaves."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "worldhistory-giza", "title": "World History Encyclopedia: Great Pyramid of Giza", "url": "https://www.worldhistory.org/Great_Pyramid_of_Giza/", "accessed": "2026-10-02" },
+    { "id": "wikipedia-giza", "title": "Wikipedia: Giza pyramid complex", "url": "https://en.wikipedia.org/wiki/Giza_pyramid_complex", "accessed": "2026-10-02" },
+    { "id": "wikipedia-great-pyramid", "title": "Wikipedia: Great Pyramid of Giza", "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza", "accessed": "2026-10-02" },
+    { "id": "wikipedia-khafre", "title": "Wikipedia: Pyramid of Khafre", "url": "https://en.wikipedia.org/wiki/Pyramid_of_Khafre", "accessed": "2026-10-02" },
+    { "id": "wikipedia-menkaure", "title": "Wikipedia: Pyramid of Menkaure", "url": "https://en.wikipedia.org/wiki/Pyramid_of_Menkaure", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

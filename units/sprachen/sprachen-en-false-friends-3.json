@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-3",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (3)",
+      "intro": "Noch mehr Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „fabric“: Was heißt es?", "back": "Stoff, Gewebe: ein Material aus Fasern, besonders ein gewebtes. Nicht „Fabrik“." },
+        { "front": "Deutsch „Fabrik“: Was heißt es auf Englisch?", "back": "factory: ein Betrieb, in dem Arbeiter mit Maschinen Waren in großer Menge herstellen. Nicht „fabric“." },
+        { "front": "Englisch „gymnasium“: Was heißt es?", "back": "Turnhalle, Sporthalle (förmlich; umgangssprachlich „gym“). Nicht die Schulform „Gymnasium“." },
+        { "front": "Deutsch „Gymnasium“: Was heißt es auf Englisch?", "back": "Eine höhere Schule, die zur Hochschulreife führt. Auf Englisch sagt man dafür meist „secondary school“; „gymnasium“ meint dort in der Regel eine Sporthalle." },
+        { "front": "Englisch „map“: Was heißt es?", "back": "Landkarte, Plan: eine bildliche Darstellung eines Gebiets mit der Lage von Orten. Nicht „Mappe“." },
+        { "front": "Deutsch „Mappe“: Was heißt es auf Englisch?", "back": "folder: ein Umschlag oder Hefter für lose Blätter. Auch eine flache Tasche, etwa für die Schule. Nicht „map“." },
+        { "front": "Englisch „mist“: Was heißt es?", "back": "Dunst, feiner Nebel: in der Luft schwebende feine Wassertröpfchen. Nicht „Mist“." },
+        { "front": "Deutsch „Mist“: Was heißt es auf Englisch?", "back": "manure oder dung: Stalldung als Dünger. Umgangssprachlich auch „rubbish“ oder „nonsense“ für Unsinn und Wertloses. Nicht „mist“." },
+        { "front": "Englisch „rock“: Was heißt es?", "back": "Fels, Gestein: aus Mineralen aufgebautes Material der Erdkruste, auch ein einzelner Stein. Nicht „Rock“ als Kleidungsstück." },
+        { "front": "Deutsch „Rock“: Was heißt es auf Englisch?", "back": "skirt: ein Kleidungsstück, das ab Hüfte oder Taille abwärts getragen wird. Nicht „rock“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (3)",
+      "intro": "More word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"fabric\": what does it mean?", "back": "A material made of fibers, especially a woven one. In German: Stoff or Gewebe, not \"Fabrik\"." },
+        { "front": "German \"Fabrik\": what does it mean in English?", "back": "Factory: a site where workers use machines to produce goods in large quantities. Not \"fabric\"." },
+        { "front": "English \"gymnasium\": what does it mean?", "back": "A large room or building for indoor sports (formal; informally \"gym\"). In German: Turnhalle, not the school type \"Gymnasium\"." },
+        { "front": "German \"Gymnasium\": what does it mean in English?", "back": "A higher secondary school leading to university entrance. In English one usually says \"secondary school\" for it; \"gymnasium\" there usually means a sports hall." },
+        { "front": "English \"map\": what does it mean?", "back": "A visual representation of an area showing the positions of places. In German: Landkarte, not \"Mappe\"." },
+        { "front": "German \"Mappe\": what does it mean in English?", "back": "Folder: a cover or case for loose sheets of paper. Also a flat bag, for example for school. Not \"map\"." },
+        { "front": "English \"mist\": what does it mean?", "back": "Fine water droplets suspended in the air. In German: Dunst or feiner Nebel, not \"Mist\"." },
+        { "front": "German \"Mist\": what does it mean in English?", "back": "Manure or dung: stable dung used as fertilizer. Colloquially also \"rubbish\" or \"nonsense\". Not \"mist\"." },
+        { "front": "English \"rock\": what does it mean?", "back": "The solid mineral material of the earth's crust, also a single stone. In German: Fels or Gestein, not \"Rock\" (garment)." },
+        { "front": "German \"Rock\": what does it mean in English?", "back": "Skirt: a garment worn from the hips or waist downward. Not \"rock\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-fabric", "title": "Wiktionary: fabric", "url": "https://en.wiktionary.org/wiki/fabric", "accessed": "2026-10-02" },
+    { "id": "wiktionary-gymnasium", "title": "Wiktionary: gymnasium", "url": "https://en.wiktionary.org/wiki/gymnasium", "accessed": "2026-10-02" },
+    { "id": "wiktionary-map", "title": "Wiktionary: map", "url": "https://en.wiktionary.org/wiki/map", "accessed": "2026-10-02" },
+    { "id": "wiktionary-mist", "title": "Wiktionary: mist", "url": "https://en.wiktionary.org/wiki/mist", "accessed": "2026-10-02" },
+    { "id": "wiktionary-rock", "title": "Wiktionary: rock", "url": "https://en.wiktionary.org/wiki/rock", "accessed": "2026-10-02" },
+    { "id": "dwds-fabrik", "title": "DWDS: Fabrik", "url": "https://www.dwds.de/wb/Fabrik", "accessed": "2026-10-02" },
+    { "id": "dwds-gymnasium", "title": "DWDS: Gymnasium", "url": "https://www.dwds.de/wb/Gymnasium", "accessed": "2026-10-02" },
+    { "id": "dwds-mappe", "title": "DWDS: Mappe", "url": "https://www.dwds.de/wb/Mappe", "accessed": "2026-10-02" },
+    { "id": "dwds-mist", "title": "DWDS: Mist", "url": "https://www.dwds.de/wb/Mist", "accessed": "2026-10-02" },
+    { "id": "dwds-rock", "title": "DWDS: Rock", "url": "https://www.dwds.de/wb/Rock", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

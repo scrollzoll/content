@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "tech-ransomware",
+  "topic": "technologie/sicherheit",
+  "tags": ["ransomware", "bsi", "backup", "erpressung"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Ransomware: Angriff und Schutzmaßnahmen",
+      "intro": "Ransomware legt ganze Unternehmen lahm. Das BSI nennt bewährte Maßnahmen, die den Schaden begrenzen.",
+      "facts": [
+        { "text": "Ransomware verschlüsselt Daten auf IT-Systemen. Eine Entschlüsselung wird nur gegen Zahlung eines Lösegelds („Ransom“) in Aussicht gestellt.", "source_ids": ["bsi-ransomware"] },
+        { "text": "Oft drohen Angreifer zusätzlich, zuvor gestohlene Daten zu veröffentlichen („doppelte Erpressung“). Dann hilft ein Backup allein nicht gegen den Druck.", "source_ids": ["bsi-ransomware", "wikipedia-ransomware"] },
+        { "text": "Typische Einfallstore sind Phishing-Mails mit schädlichen Anhängen, Brute-Force-Angriffe auf schwache Passwörter bei Fernzugriffen wie RDP und ungepatchte Schwachstellen.", "source_ids": ["wikipedia-ransomware"] },
+        { "text": "Das BSI hält Offline-Backups für zentral: Die Sicherung wird nach dem Vorgang vom System getrennt, damit Angreifer sie nicht mitverschlüsseln können.", "source_ids": ["bsi-top10"] },
+        { "text": "Weitere BSI-Maßnahmen: Updates gegen kritische Schwachstellen vorrangig einspielen, Fernzugänge nur über VPN mit Zwei-Faktor-Authentisierung erlauben, Makros per Gruppenrichtlinie abschalten.", "source_ids": ["bsi-top10"] },
+        { "text": "Netzwerke sollten segmentiert sein, damit sich ein Befall nicht überallhin ausbreitet. Ein Notfallplan für Verschlüsselungsfälle soll regelmäßig geübt werden.", "source_ids": ["bsi-top10"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was bedeutet „doppelte Erpressung“ bei Ransomware?",
+          "options": ["Das Lösegeld wird zweimal gefordert, von zwei Opfern", "Daten werden verschlüsselt und zusätzlich wird mit ihrer Veröffentlichung gedroht", "Es werden zwei Backups gleichzeitig gelöscht", "Der Angriff läuft über zwei Mail-Konten"],
+          "answer_index": 1,
+          "explanation": "Neben der Verschlüsselung drohen die Täter, zuvor gestohlene Daten zu veröffentlichen."
+        },
+        {
+          "question": "Welche Backup-Maßnahme empfiehlt das BSI?",
+          "options": ["Sicherung auf einem dauerhaft verbundenen Netzlaufwerk", "Sicherung auf demselben Server wie die Originaldaten", "Offline-Backup, das nach der Sicherung vom System getrennt wird", "Auf Backups verzichten und im Ernstfall Lösegeld zahlen"],
+          "answer_index": 2,
+          "explanation": "Nur ein getrenntes Offline-Backup ist vor einer Verschlüsselung durch die Angreifer geschützt."
+        },
+        {
+          "question": "Wie sollen Remote-Zugänge laut BSI abgesichert werden?",
+          "options": ["Nur über VPN, zusammen mit Zwei-Faktor-Authentisierung", "Über offenes RDP mit einem langen Passwort", "Über E-Mail-Links ohne weitere Prüfung", "Gar nicht, sie werden einfach beibehalten"],
+          "answer_index": 0,
+          "explanation": "Das BSI empfiehlt Fernzugriff über VPN mit Zwei-Faktor-Authentisierung."
+        }
+      ]
+    },
+    "en": {
+      "title": "Ransomware: Attack and Protective Measures",
+      "intro": "Ransomware can paralyse entire organisations. The BSI lists proven measures that limit the damage.",
+      "facts": [
+        { "text": "Ransomware encrypts data on IT systems. Decryption is offered only in return for a ransom payment.", "source_ids": ["bsi-ransomware"] },
+        { "text": "Attackers often also threaten to publish previously stolen data (\"double extortion\"). In that case a backup alone does not remove the pressure.", "source_ids": ["bsi-ransomware", "wikipedia-ransomware"] },
+        { "text": "Typical entry points are phishing emails with malicious attachments, brute-force attacks on weak passwords for remote access such as RDP, and unpatched vulnerabilities.", "source_ids": ["wikipedia-ransomware"] },
+        { "text": "The BSI considers offline backups central: after the backup run, the copy is disconnected from the system so attackers cannot encrypt it as well.", "source_ids": ["bsi-top10"] },
+        { "text": "Further BSI measures: install updates for critical vulnerabilities first, allow remote access only via VPN with two-factor authentication, and disable macros through group policy.", "source_ids": ["bsi-top10"] },
+        { "text": "Networks should be segmented so an infection does not spread everywhere. An emergency plan for encryption incidents should be practised regularly.", "source_ids": ["bsi-top10"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does \"double extortion\" mean in ransomware attacks?",
+          "options": ["The ransom is demanded twice, from two victims", "Data is encrypted and publication of it is threatened as well", "Two backups are deleted at the same time", "The attack runs through two mail accounts"],
+          "answer_index": 1,
+          "explanation": "Besides encrypting, the attackers threaten to publish data they stole beforehand."
+        },
+        {
+          "question": "Which backup measure does the BSI recommend?",
+          "options": ["Saving to a permanently connected network drive", "Saving to the same server as the original data", "An offline backup that is disconnected after the backup run", "No backups; pay the ransom in an emergency"],
+          "answer_index": 2,
+          "explanation": "Only a disconnected offline backup is protected from encryption by the attackers."
+        },
+        {
+          "question": "How does the BSI say remote access should be secured?",
+          "options": ["Only via VPN, together with two-factor authentication", "Via open RDP with a long password", "Via email links without further checks", "Not at all; keep it as it is"],
+          "answer_index": 0,
+          "explanation": "The BSI recommends remote access via VPN with two-factor authentication."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "bsi-ransomware", "title": "BSI: Ransomware-Angriffe", "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/ransomware-angriffe_node.html", "accessed": "2026-10-02" },
+    { "id": "bsi-top10", "title": "BSI: Top 10 Ransomware-Maßnahmen", "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/Top-10-Ransomware-Massnahmen/top-10-ransomware-massnahmen.html", "accessed": "2026-10-02" },
+    { "id": "wikipedia-ransomware", "title": "Wikipedia: Ransomware", "url": "https://en.wikipedia.org/wiki/Ransomware", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "tech-ddos",
+  "topic": "technologie/sicherheit",
+  "tags": ["ddos", "botnetz", "angriffe", "netzwerk"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "DDoS-Angriffe: Volumen, Protokoll, Anwendung",
+      "intro": "Bei einem DDoS-Angriff überlasten viele Systeme gleichzeitig ein Ziel. Man unterscheidet drei Kategorien.",
+      "facts": [
+        { "text": "Bei einem verteilten Denial-of-Service-Angriff (DDoS) fluten viele Systeme, oft ein Botnetz aus infizierten Geräten, die Bandbreite oder Ressourcen eines Ziels.", "source_ids": ["wikipedia-dos", "imperva-ddos"] },
+        { "text": "Volumetrische Angriffe wollen die Bandbreite des Ziels sättigen und werden in Bit pro Sekunde gemessen. Beispiele sind UDP-Floods, ICMP-Floods und DNS-Amplification.", "source_ids": ["imperva-ddos"] },
+        { "text": "Bei Amplification nutzen Angreifer öffentliche Server, um ihren Datenverkehr zu vervielfachen. Laut Wikipedia sind bei DNS bis zu 179-fach, bei Memcached bis zu 50.000-fach möglich.", "source_ids": ["wikipedia-dos"] },
+        { "text": "Protokollangriffe nutzen Schwächen der Kommunikationsregeln auf den Schichten 3 und 4 und belasten Server, Router und Firewalls. Gemessen wird in Paketen pro Sekunde.", "source_ids": ["imperva-ddos"] },
+        { "text": "Ein Beispiel ist die SYN-Flood: Viele TCP-Verbindungsanfragen mit gefälschten Absendern erzeugen halb offene Verbindungen, die den Server auslasten.", "source_ids": ["wikipedia-dos"] },
+        { "text": "Anwendungsschicht-Angriffe (Schicht 7), etwa HTTP-Floods, überlasten bestimmte Funktionen einer Website. Sie ähneln normalem Verkehr und sind schwer zu erkennen. Gemessen wird in Anfragen pro Sekunde.", "source_ids": ["imperva-ddos", "wikipedia-dos"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was versucht ein volumetrischer DDoS-Angriff zu erschöpfen?",
+          "options": ["Die Rechenzeit der Datenbank", "Die Bandbreite des Ziels", "Die Passwörter der Nutzer", "Den Speicherplatz auf der Festplatte"],
+          "answer_index": 1,
+          "explanation": "Volumetrische Angriffe sättigen die Netzanbindung des Ziels mit Datenverkehr."
+        },
+        {
+          "question": "Zu welcher Kategorie gehört eine SYN-Flood?",
+          "options": ["Volumetrischer Angriff", "Anwendungsschicht-Angriff", "Protokollangriff", "Phishing-Angriff"],
+          "answer_index": 2,
+          "explanation": "Die SYN-Flood nutzt den TCP-Verbindungsaufbau aus und gehört zu den Protokollangriffen."
+        },
+        {
+          "question": "Warum sind Anwendungsschicht-Angriffe schwer zu erkennen?",
+          "options": ["Ihre Anfragen wirken wie normaler Nutzerverkehr", "Sie nutzen verschlüsselte Handy-Funknetze", "Sie dauern immer nur eine Sekunde", "Sie benötigen keinen Internetzugang"],
+          "answer_index": 0,
+          "explanation": "Die Anfragen, etwa HTTP-GET oder -POST, sehen aus wie echte Zugriffe."
+        }
+      ]
+    },
+    "en": {
+      "title": "DDoS Attacks: Volumetric, Protocol, Application",
+      "intro": "In a DDoS attack, many systems overload one target at the same time. Three categories are commonly distinguished.",
+      "facts": [
+        { "text": "In a distributed denial-of-service (DDoS) attack, many systems, often a botnet of infected devices, flood the bandwidth or resources of a target.", "source_ids": ["wikipedia-dos", "imperva-ddos"] },
+        { "text": "Volumetric attacks try to saturate the target's bandwidth and are measured in bits per second. Examples are UDP floods, ICMP floods and DNS amplification.", "source_ids": ["imperva-ddos"] },
+        { "text": "With amplification, attackers use public servers to multiply their traffic. According to Wikipedia, up to 179 times is possible with DNS and up to 50,000 times with Memcached.", "source_ids": ["wikipedia-dos"] },
+        { "text": "Protocol attacks exploit weaknesses in communication rules at layers 3 and 4 and burden servers, routers and firewalls. They are measured in packets per second.", "source_ids": ["imperva-ddos"] },
+        { "text": "One example is the SYN flood: many TCP connection requests with spoofed senders create half-open connections that exhaust the server.", "source_ids": ["wikipedia-dos"] },
+        { "text": "Application-layer attacks (layer 7), such as HTTP floods, overload specific functions of a website. They resemble normal traffic and are hard to detect. They are measured in requests per second.", "source_ids": ["imperva-ddos", "wikipedia-dos"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does a volumetric DDoS attack try to exhaust?",
+          "options": ["The computing time of the database", "The bandwidth of the target", "The users' passwords", "The storage space on the hard drive"],
+          "answer_index": 1,
+          "explanation": "Volumetric attacks saturate the target's network connection with traffic."
+        },
+        {
+          "question": "Which category does a SYN flood belong to?",
+          "options": ["Volumetric attack", "Application-layer attack", "Protocol attack", "Phishing attack"],
+          "answer_index": 2,
+          "explanation": "The SYN flood abuses the TCP connection setup and is a protocol attack."
+        },
+        {
+          "question": "Why are application-layer attacks hard to detect?",
+          "options": ["Their requests look like normal user traffic", "They use encrypted mobile networks", "They always last only one second", "They need no internet access"],
+          "answer_index": 0,
+          "explanation": "The requests, such as HTTP GET or POST, look like genuine visits."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "imperva-ddos", "title": "Imperva: DDoS Attack Types & Mitigation Methods", "url": "https://www.imperva.com/learn/ddos/ddos-attacks/", "accessed": "2026-10-02" },
+    { "id": "wikipedia-dos", "title": "Wikipedia: Denial-of-service attack", "url": "https://en.wikipedia.org/wiki/Denial-of-service_attack", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
