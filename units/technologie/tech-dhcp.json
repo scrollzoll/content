@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "tech-dhcp",
+  "topic": "technologie/netzwerke",
+  "tags": ["dhcp", "ip-adresse", "dora", "lease", "heimnetz"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "DHCP: So bekommt ein Gerät seine IP-Adresse",
+      "intro": "Ein neues Gerät im Netz kennt weder seine eigene Adresse noch den Router. DHCP klärt das automatisch in vier Schritten.",
+      "facts": [
+        { "text": "DHCP versorgt ein Gerät automatisch mit seiner IP-Konfiguration. Neben der IP-Adresse kann der Server über Optionen zum Beispiel die Subnetzmaske, die Router im Subnetz und die DNS-Server mitteilen.", "source_ids": ["rfc2131", "rfc2132"] },
+        { "text": "Die Vergabe einer neuen Adresse läuft in vier Schritten ab, oft als DORA abgekürzt: Discovery, Offer, Request, Acknowledgement. DHCP nutzt UDP. Nachrichten an den Server gehen an Port 67, Nachrichten an den Client an Port 68.", "source_ids": ["rfc2131", "wikipedia-dhcp"] },
+        { "text": "Discovery: Der Client schickt ein DHCPDISCOVER als Broadcast in sein lokales Netz, um Server zu finden. Weil er noch keine Adresse hat, trägt er als Absenderadresse 0 ein.", "source_ids": ["rfc2131"] },
+        { "text": "Offer und Request: Jeder Server kann mit einem DHCPOFFER eine freie Adresse anbieten. Der Client wählt ein Angebot und sendet ein DHCPREQUEST als Broadcast, das den gewählten Server nennt. So erfahren die übrigen Server, dass ihr Angebot abgelehnt wurde.", "source_ids": ["rfc2131"] },
+        { "text": "Acknowledgement: Der gewählte Server bestätigt mit einem DHCPACK, das die Konfiguration enthält. Stellt der Client danach fest, dass die Adresse schon benutzt wird, muss er sie mit DHCPDECLINE ablehnen.", "source_ids": ["rfc2131"] },
+        { "text": "Bei dynamischer Vergabe gilt die Adresse nur für eine begrenzte Zeit, die Lease. Standardmäßig bittet der Client nach der Hälfte der Lease-Dauer seinen Server um Verlängerung. Läuft die Lease ohne Verlängerung ab, muss er die Adresse sofort aufgeben.", "source_ids": ["rfc2131"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wofür steht die Abkürzung DORA beim DHCP-Ablauf?",
+          "options": ["Discovery, Offer, Request, Acknowledgement", "Detection, Opening, Routing, Assignment", "Discovery, Obtaining, Registration, Authentication", "Demand, Offer, Reservation, Acceptance"],
+          "answer_index": 0,
+          "explanation": "DORA fasst die vier Schritte zusammen: Der Client sucht (Discovery), Server bieten an (Offer), der Client fordert an (Request), der Server bestätigt (Acknowledgement)."
+        },
+        {
+          "question": "Wie erreicht ein Gerät ohne eigene IP-Adresse einen DHCP-Server?",
+          "options": ["Es fragt einen DNS-Server nach dessen Adresse", "Es sendet ein DHCPDISCOVER als Broadcast ins lokale Netz", "Es baut eine TCP-Verbindung zum Router auf", "Es wartet, bis der Server sich von selbst meldet"],
+          "answer_index": 1,
+          "explanation": "Der Client kennt anfangs keinen Server und hat keine Adresse. Deshalb schickt er sein DHCPDISCOVER als Broadcast an alle im lokalen Netz."
+        },
+        {
+          "question": "An welchen UDP-Port gehen DHCP-Nachrichten, die ein Client an den Server schickt?",
+          "options": ["53", "67", "68", "443"],
+          "answer_index": 1,
+          "explanation": "Nachrichten an den Server gehen an UDP-Port 67. Port 68 ist der Port des Clients."
+        },
+        {
+          "question": "Wann bittet ein DHCP-Client standardmäßig zum ersten Mal um Verlängerung seiner Lease?",
+          "options": ["Sofort nach dem DHCPACK", "Nach der Hälfte der Lease-Dauer", "Erst wenn die Lease abgelaufen ist", "Bei jedem Aufruf einer Website"],
+          "answer_index": 1,
+          "explanation": "Der Standardwert für den ersten Verlängerungsversuch ist die Hälfte der Lease-Dauer. Der Client wendet sich dann direkt an den Server, von dem er die Adresse hat."
+        }
+      ]
+    },
+    "en": {
+      "title": "DHCP: How a Device Gets Its IP Address",
+      "intro": "A new device on the network knows neither its own address nor the router. DHCP sorts that out automatically in four steps.",
+      "facts": [
+        { "text": "DHCP automatically supplies a device with its IP configuration. Besides the IP address, the server can use options to pass on, for example, the subnet mask, the routers on the subnet and the DNS servers.", "source_ids": ["rfc2131", "rfc2132"] },
+        { "text": "Allocating a new address takes four steps, often abbreviated as DORA: Discovery, Offer, Request, Acknowledgement. DHCP uses UDP. Messages to the server go to port 67, messages to the client go to port 68.", "source_ids": ["rfc2131", "wikipedia-dhcp"] },
+        { "text": "Discovery: the client sends a DHCPDISCOVER as a broadcast on its local network to find servers. Because it has no address yet, it puts 0 as the sender address.", "source_ids": ["rfc2131"] },
+        { "text": "Offer and Request: each server may offer an available address with a DHCPOFFER. The client picks one offer and broadcasts a DHCPREQUEST that names the chosen server. That tells the remaining servers that their offer was declined.", "source_ids": ["rfc2131"] },
+        { "text": "Acknowledgement: the chosen server confirms with a DHCPACK that contains the configuration. If the client then finds that the address is already in use, it must reject it with a DHCPDECLINE.", "source_ids": ["rfc2131"] },
+        { "text": "With dynamic allocation, the address is valid only for a limited time, the lease. By default, the client asks its server for an extension after half the lease duration. If the lease expires without being extended, the client must stop using the address immediately.", "source_ids": ["rfc2131"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does the abbreviation DORA stand for in the DHCP process?",
+          "options": ["Discovery, Offer, Request, Acknowledgement", "Detection, Opening, Routing, Assignment", "Discovery, Obtaining, Registration, Authentication", "Demand, Offer, Reservation, Acceptance"],
+          "answer_index": 0,
+          "explanation": "DORA sums up the four steps: the client searches (Discovery), servers make offers (Offer), the client requests (Request), the server confirms (Acknowledgement)."
+        },
+        {
+          "question": "How does a device without an IP address of its own reach a DHCP server?",
+          "options": ["It asks a DNS server for the server's address", "It sends a DHCPDISCOVER as a broadcast on the local network", "It opens a TCP connection to the router", "It waits until the server gets in touch by itself"],
+          "answer_index": 1,
+          "explanation": "At first the client knows no server and has no address. So it sends its DHCPDISCOVER as a broadcast to everyone on the local network."
+        },
+        {
+          "question": "Which UDP port do DHCP messages go to when a client sends them to the server?",
+          "options": ["53", "67", "68", "443"],
+          "answer_index": 1,
+          "explanation": "Messages to the server go to UDP port 67. Port 68 is the client's port."
+        },
+        {
+          "question": "When does a DHCP client by default first ask to extend its lease?",
+          "options": ["Immediately after the DHCPACK", "After half the lease duration", "Only once the lease has expired", "Every time a website is opened"],
+          "answer_index": 1,
+          "explanation": "The default for the first renewal attempt is half the lease duration. The client then contacts the server that gave it the address directly."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc2131", "title": "RFC 2131: Dynamic Host Configuration Protocol", "url": "https://www.rfc-editor.org/rfc/rfc2131.html", "accessed": "2026-10-02" },
+    { "id": "rfc2132", "title": "RFC 2132: DHCP Options and BOOTP Vendor Extensions", "url": "https://www.rfc-editor.org/rfc/rfc2132.html", "accessed": "2026-10-02" },
+    { "id": "wikipedia-dhcp", "title": "Wikipedia: Dynamic Host Configuration Protocol", "url": "https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

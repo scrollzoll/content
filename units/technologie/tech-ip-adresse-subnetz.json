@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-ip-adresse-subnetz",
+  "topic": "technologie/netzwerke",
+  "tags": ["ipv4", "subnetz", "subnetzmaske", "cidr", "ip-adresse"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Subnetzmaske und CIDR: Was /24 bedeutet",
+      "intro": "Eine IPv4-Adresse besteht aus einem Netzanteil und einem Hostanteil. Wo die Grenze liegt, verrät die Subnetzmaske oder kurz die Zahl hinter dem Schrägstrich.",
+      "facts": [
+        { "text": "Die Subnetzmaske ist ein 32-Bit-Wert, genauso lang wie eine IPv4-Adresse. Ihre vorderen Bits sind Einsen und markieren den Netzanteil der Adresse, die hinteren Bits sind Nullen und markieren den Hostanteil.", "source_ids": ["rfc950", "rfc4632"] },
+        { "text": "Die CIDR-Schreibweise kürzt die Maske ab: Hinter der Adresse folgen ein Schrägstrich und eine Zahl von 0 bis 32. Sie gibt an, wie viele führende Bits zum Netzpräfix gehören.", "source_ids": ["rfc4632"] },
+        { "text": "Ein /24 entspricht der Maske 255.255.255.0 und umfasst 256 Adressen. Ein /16 entspricht 255.255.0.0 und umfasst 65 536 Adressen. Jedes Bit weniger im Präfix verdoppelt die Blockgröße.", "source_ids": ["rfc4632", "rfc1878"] },
+        { "text": "In einem /24-Netz lassen sich nur 254 der 256 Adressen an Geräte vergeben. Ein Hostanteil nur aus Nullen oder nur aus Einsen ist nicht erlaubt. Nur Einsen bedeutet: Broadcast an das ganze Subnetz.", "source_ids": ["rfc1122", "rfc4632"] },
+        { "text": "Mit der Maske entscheidet ein Gerät, wohin ein Paket geht: Ergibt das bitweise UND von Maske und Zieladresse denselben Wert wie bei der eigenen Adresse, liegt das Ziel im selben Subnetz. Sonst geht das Paket an ein Gateway.", "source_ids": ["rfc950"] },
+        { "text": "CIDR löste das alte Klassensystem mit den festen Netzklassen A, B und C ab. Gründe waren unter anderem die wachsenden Routingtabellen und die knapp werdenden Klasse-B-Netze.", "source_ids": ["rfc4632"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Subnetzmaske entspricht dem Präfix /24?",
+          "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.128"],
+          "answer_index": 2,
+          "explanation": "Bei /24 sind die ersten 24 Bits der Maske Einsen. Das ergibt 255.255.255.0. 255.255.0.0 wäre /16."
+        },
+        {
+          "question": "Was gibt die Zahl hinter dem Schrägstrich in 192.168.1.0/24 an?",
+          "options": ["Die Anzahl der Geräte im Netz", "Die Anzahl der führenden Bits, die zum Netzpräfix gehören", "Die Anzahl der Subnetze", "Die Portnummer des Routers"],
+          "answer_index": 1,
+          "explanation": "Die Zahl nennt die Länge des Präfixes: So viele führende Bits der Adresse gehören zum Netzanteil."
+        },
+        {
+          "question": "Wie viele Adressen lassen sich in einem /24-Netz an Geräte vergeben?",
+          "options": ["24", "254", "255", "256"],
+          "answer_index": 1,
+          "explanation": "Der Block umfasst 256 Adressen. Die Hostanteile nur aus Nullen und nur aus Einsen (Broadcast) fallen weg, es bleiben 254."
+        },
+        {
+          "question": "Wie erkennt ein Gerät, ob ein Ziel im selben Subnetz liegt?",
+          "options": ["Es fragt einen DNS-Server", "Es vergleicht nur die letzte Zahl beider Adressen", "Es vergleicht eigene Adresse und Zieladresse, jeweils bitweise UND-verknüpft mit der Maske", "Es prüft, ob beide Adressen mit derselben Ziffer beginnen"],
+          "answer_index": 2,
+          "explanation": "Die Maske blendet den Hostanteil aus. Bleibt bei eigener Adresse und Zieladresse derselbe Netzanteil übrig, liegt das Ziel im selben Subnetz."
+        }
+      ]
+    },
+    "en": {
+      "title": "Subnet Mask and CIDR: What /24 Means",
+      "intro": "An IPv4 address consists of a network part and a host part. The subnet mask, or simply the number after the slash, tells you where the boundary lies.",
+      "facts": [
+        { "text": "The subnet mask is a 32-bit value, just as long as an IPv4 address. Its leading bits are ones and mark the network part of the address, its trailing bits are zeros and mark the host part.", "source_ids": ["rfc950", "rfc4632"] },
+        { "text": "CIDR notation abbreviates the mask: the address is followed by a slash and a number from 0 to 32. It states how many leading bits belong to the network prefix.", "source_ids": ["rfc4632"] },
+        { "text": "A /24 corresponds to the mask 255.255.255.0 and covers 256 addresses. A /16 corresponds to 255.255.0.0 and covers 65,536 addresses. Each bit fewer in the prefix doubles the block size.", "source_ids": ["rfc4632", "rfc1878"] },
+        { "text": "In a /24 network, only 254 of the 256 addresses can be assigned to devices. A host part of all zeros or all ones is not permitted. All ones means: broadcast to the whole subnet.", "source_ids": ["rfc1122", "rfc4632"] },
+        { "text": "A device uses the mask to decide where a packet goes: if the bitwise AND of mask and destination address gives the same value as for its own address, the destination is on the same subnet. Otherwise the packet goes to a gateway.", "source_ids": ["rfc950"] },
+        { "text": "CIDR replaced the old class system with its fixed network classes A, B and C. Reasons included the growing routing tables and the dwindling supply of Class B networks.", "source_ids": ["rfc4632"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which subnet mask corresponds to the prefix /24?",
+          "options": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.128"],
+          "answer_index": 2,
+          "explanation": "With /24, the first 24 bits of the mask are ones. That gives 255.255.255.0. 255.255.0.0 would be /16."
+        },
+        {
+          "question": "What does the number after the slash in 192.168.1.0/24 state?",
+          "options": ["The number of devices on the network", "The number of leading bits that belong to the network prefix", "The number of subnets", "The router's port number"],
+          "answer_index": 1,
+          "explanation": "The number gives the length of the prefix: that many leading bits of the address belong to the network part."
+        },
+        {
+          "question": "How many addresses in a /24 network can be assigned to devices?",
+          "options": ["24", "254", "255", "256"],
+          "answer_index": 1,
+          "explanation": "The block covers 256 addresses. The host parts of all zeros and all ones (broadcast) drop out, leaving 254."
+        },
+        {
+          "question": "How does a device tell whether a destination is on the same subnet?",
+          "options": ["It asks a DNS server", "It compares only the last number of both addresses", "It compares its own address and the destination address, each bitwise ANDed with the mask", "It checks whether both addresses start with the same digit"],
+          "answer_index": 2,
+          "explanation": "The mask hides the host part. If its own address and the destination address leave the same network part, the destination is on the same subnet."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc4632", "title": "RFC 4632: Classless Inter-domain Routing (CIDR): The Internet Address Assignment and Aggregation Plan", "url": "https://www.rfc-editor.org/rfc/rfc4632.html", "accessed": "2026-10-02" },
+    { "id": "rfc950", "title": "RFC 950: Internet Standard Subnetting Procedure", "url": "https://www.rfc-editor.org/rfc/rfc950.html", "accessed": "2026-10-02" },
+    { "id": "rfc1122", "title": "RFC 1122: Requirements for Internet Hosts – Communication Layers", "url": "https://www.rfc-editor.org/rfc/rfc1122.html", "accessed": "2026-10-02" },
+    { "id": "rfc1878", "title": "RFC 1878: Variable Length Subnet Table For IPv4", "url": "https://www.rfc-editor.org/rfc/rfc1878.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

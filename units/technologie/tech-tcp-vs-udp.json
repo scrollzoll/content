@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "tech-tcp-vs-udp",
+  "topic": "technologie/netzwerke",
+  "tags": ["tcp", "udp", "transportprotokolle", "quic", "internet"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "TCP und UDP: Zuverlässig oder schlank",
+      "intro": "Zwei Transportprotokolle prägen das Internet. TCP kümmert sich um Vollständigkeit und Reihenfolge, UDP lässt fast alles weg.",
+      "facts": [
+        { "text": "TCP ist verbindungsorientiert und liefert Anwendungen einen zuverlässigen, geordneten Bytestrom. Verlorene Pakete erkennt es an Sequenznummern, Übertragungsfehler an Prüfsummen. Was fehlt, wird erneut gesendet.", "source_ids": ["rfc9293"] },
+        { "text": "Eine TCP-Verbindung entsteht durch den Drei-Wege-Handshake: SYN, dann SYN und ACK, dann ACK. Danach gilt die Verbindung als aufgebaut.", "source_ids": ["rfc9293"] },
+        { "text": "UDP kommt mit einem Minimum an Protokoll aus. Es garantiert weder die Zustellung noch Schutz vor doppelten Datagrammen. Wer geordnete, zuverlässige Datenströme braucht, soll laut UDP-Standard TCP nehmen.", "source_ids": ["rfc768"] },
+        { "text": "Der UDP-Header besteht aus nur vier Feldern zu je 16 Bit: Quellport, Zielport, Länge und Prüfsumme. Das sind zusammen 8 Byte.", "source_ids": ["rfc768"] },
+        { "text": "UDP braucht keinen Verbindungsauf- und -abbau. Das macht es für manche Anwendungen sehr effizient. Ein Beispiel für eine UDP-Anwendung ist DNS mit seinem strikten Frage-Antwort-Muster. Braucht eine Anwendung eine feste Reihenfolge, muss sie diese selbst wiederherstellen.", "source_ids": ["rfc8085"] },
+        { "text": "Das Web nutzt beide: HTTP/2 läuft vorwiegend über TLS und TCP. HTTP/3 setzt auf das neuere Transportprotokoll QUIC und wird über UDP-Ports angeboten. Ist UDP blockiert, sollen Clients auf TCP-basierte HTTP-Versionen ausweichen.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Eigenschaft bietet TCP, UDP aber nicht?",
+          "options": ["Portnummern für Anwendungen", "Zuverlässige Zustellung in der richtigen Reihenfolge", "Eine Prüfsumme im Header", "Übertragung über IP"],
+          "answer_index": 1,
+          "explanation": "TCP liefert einen zuverlässigen, geordneten Bytestrom. UDP garantiert weder Zustellung noch Reihenfolge. Ports und eine Prüfsumme haben beide."
+        },
+        {
+          "question": "Wie groß ist der UDP-Header?",
+          "options": ["4 Byte", "8 Byte", "16 Byte", "32 Byte"],
+          "answer_index": 1,
+          "explanation": "Der UDP-Header hat vier Felder zu je 16 Bit (Quellport, Zielport, Länge, Prüfsumme), also 64 Bit oder 8 Byte."
+        },
+        {
+          "question": "Warum ist UDP für manche Anwendungen sehr effizient?",
+          "options": ["Es verhindert doppelte Datagramme", "Es garantiert, dass jedes Datagramm ankommt", "Es braucht keinen Verbindungsauf- und -abbau", "Es bringt Datagramme in die richtige Reihenfolge"],
+          "answer_index": 2,
+          "explanation": "UDP spart den Auf- und Abbau einer Verbindung. Zustellung, Schutz vor Duplikaten und Reihenfolge garantiert es dagegen nicht."
+        },
+        {
+          "question": "Wie heißt das Verfahren, mit dem TCP eine Verbindung aufbaut?",
+          "options": ["Drei-Wege-Handshake", "Zwei-Phasen-Commit", "Broadcast-Anfrage", "Schlüsselaustausch"],
+          "answer_index": 0,
+          "explanation": "TCP baut Verbindungen mit dem Drei-Wege-Handshake auf: SYN, dann SYN und ACK, dann ACK."
+        }
+      ]
+    },
+    "en": {
+      "title": "TCP and UDP: Reliable or Lean",
+      "intro": "Two transport protocols shape the internet. TCP takes care of completeness and order, UDP leaves almost everything out.",
+      "facts": [
+        { "text": "TCP is connection-oriented and gives applications a reliable, in-order byte stream. It detects lost packets through sequence numbers and transmission errors through checksums. Whatever is missing is sent again.", "source_ids": ["rfc9293"] },
+        { "text": "A TCP connection is set up with the three-way handshake: SYN, then SYN and ACK, then ACK. After that, the connection counts as established.", "source_ids": ["rfc9293"] },
+        { "text": "UDP gets by with a minimum of protocol. It guarantees neither delivery nor protection against duplicate datagrams. According to the UDP standard, anyone who needs ordered, reliable data streams should use TCP.", "source_ids": ["rfc768"] },
+        { "text": "The UDP header consists of just four fields of 16 bits each: source port, destination port, length and checksum. That adds up to 8 bytes.", "source_ids": ["rfc768"] },
+        { "text": "UDP needs no connection setup or teardown. That makes it very efficient for some applications. One example of a UDP application is DNS with its strict request-response pattern. If an application needs a fixed order, it has to restore that order itself.", "source_ids": ["rfc8085"] },
+        { "text": "The web uses both: HTTP/2 runs primarily over TLS and TCP. HTTP/3 relies on the newer transport protocol QUIC and is served on UDP ports. If UDP is blocked, clients should fall back to TCP-based versions of HTTP.", "source_ids": ["rfc9114"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which property does TCP offer that UDP does not?",
+          "options": ["Port numbers for applications", "Reliable delivery in the correct order", "A checksum in the header", "Transmission over IP"],
+          "answer_index": 1,
+          "explanation": "TCP delivers a reliable, in-order byte stream. UDP guarantees neither delivery nor order. Both have ports and a checksum."
+        },
+        {
+          "question": "How large is the UDP header?",
+          "options": ["4 bytes", "8 bytes", "16 bytes", "32 bytes"],
+          "answer_index": 1,
+          "explanation": "The UDP header has four fields of 16 bits each (source port, destination port, length, checksum), which is 64 bits or 8 bytes."
+        },
+        {
+          "question": "Why is UDP very efficient for some applications?",
+          "options": ["It prevents duplicate datagrams", "It guarantees that every datagram arrives", "It needs no connection setup or teardown", "It puts datagrams into the correct order"],
+          "answer_index": 2,
+          "explanation": "UDP saves setting up and tearing down a connection. It does not, however, guarantee delivery, protection against duplicates or ordering."
+        },
+        {
+          "question": "What is the procedure called that TCP uses to establish a connection?",
+          "options": ["Three-way handshake", "Two-phase commit", "Broadcast request", "Key exchange"],
+          "answer_index": 0,
+          "explanation": "TCP establishes connections with the three-way handshake: SYN, then SYN and ACK, then ACK."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc9293", "title": "RFC 9293: Transmission Control Protocol (TCP)", "url": "https://www.rfc-editor.org/rfc/rfc9293.html", "accessed": "2026-10-02" },
+    { "id": "rfc768", "title": "RFC 768: User Datagram Protocol", "url": "https://www.rfc-editor.org/rfc/rfc768.html", "accessed": "2026-10-02" },
+    { "id": "rfc8085", "title": "RFC 8085: UDP Usage Guidelines", "url": "https://www.rfc-editor.org/rfc/rfc8085.html", "accessed": "2026-10-02" },
+    { "id": "rfc9114", "title": "RFC 9114: HTTP/3", "url": "https://www.rfc-editor.org/rfc/rfc9114.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}
