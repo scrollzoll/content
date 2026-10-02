@@ -7,6 +7,6 @@ Dieses Repo nutzt zwei Lizenzen:
 | `units/`, `topics/` (Inhalte) | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) |
 | `schema/`, `scripts/`, `.github/` (Code) | MIT License |
 
-**Dateien:** `LICENSE-CODE` enthält den MIT-Text für den Code. Den vollständigen CC-BY-SA-4.0-Text für die Inhalte bitte einmalig über GitHub anlegen: „Add file“ → „Create new file“ → Dateiname `LICENSE` → „Choose a license template“ → „Creative Commons Attribution Share Alike 4.0 International“.
+**Dateien:** `LICENSE` enthält den vollständigen Text der CC BY-SA 4.0 (Quelle: SPDX License List, identisch mit https://creativecommons.org/licenses/by-sa/4.0/legalcode), `LICENSE-CODE` den MIT-Text für den Code.
 
 Namensnennung bei Weiterverwendung: „Scrollzoll Content-Beitragende, CC BY-SA 4.0, https://github.com/scrollzoll/content“.
