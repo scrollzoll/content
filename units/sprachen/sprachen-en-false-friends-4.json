@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-4",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (4)",
+      "intro": "Noch mehr Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „sea“: Was heißt es?", "back": "Meer: ein großes Salzwasser-Gewässer. Nicht „See“ im Sinne von Binnengewässer." },
+        { "front": "Deutsch „See“: Was heißt es auf Englisch?", "back": "lake: ein stehendes Gewässer im Binnenland (der See). Die See im Sinne von Meer heißt „sea“." },
+        { "front": "Englisch „spend“: Was heißt es?", "back": "ausgeben (Geld) oder verbringen (Zeit): „I spent two hours reading.“ Nicht „spenden“." },
+        { "front": "Deutsch „spenden“: Was heißt es auf Englisch?", "back": "donate: etwas als Spende geben, etwa Geld oder Blut. Nicht „spend“." },
+        { "front": "Englisch „undertaker“: Was heißt es?", "back": "Bestatter: jemand, der Beerdigungen und Einäscherungen organisiert. Nicht „Unternehmer“." },
+        { "front": "Deutsch „Unternehmer“: Was heißt es auf Englisch?", "back": "entrepreneur oder business owner: jemand, der einen Betrieb besitzt und leitet. Nicht „undertaker“." },
+        { "front": "Englisch „warehouse“: Was heißt es?", "back": "Lagerhaus, Lager: ein Gebäude, in dem große Mengen an Waren gelagert werden. Nicht „Warenhaus“." },
+        { "front": "Deutsch „Warenhaus“: Was heißt es auf Englisch?", "back": "department store: ein großes Geschäft, das Waren vieler Branchen verkauft. Nicht „warehouse“." },
+        { "front": "Englisch „who“: Was heißt es?", "back": "wer (Fragewort für Personen) oder der/die (Relativpronomen: „the man who works here“). Nicht „wo“." },
+        { "front": "Deutsch „wo“: Was heißt es auf Englisch?", "back": "where: fragt nach dem Ort („Wo wohnt er?“ = „Where does he live?“). Nicht „who“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (4)",
+      "intro": "More word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"sea\": what does it mean?", "back": "A large body of salt water. In German: Meer, not \"See\" (inland lake)." },
+        { "front": "German \"See\": what does it mean in English?", "back": "Lake: a standing body of water inland (der See). The feminine \"die See\" means the sea." },
+        { "front": "English \"spend\": what does it mean?", "back": "To pay out money or to use up time: \"I spent two hours reading.\" In German: ausgeben, verbringen, not \"spenden\"." },
+        { "front": "German \"spenden\": what does it mean in English?", "back": "Donate: to give something as a donation, such as money or blood. Not \"spend\"." },
+        { "front": "English \"undertaker\": what does it mean?", "back": "A funeral director: someone who arranges funerals, burials and cremations. In German: Bestatter, not \"Unternehmer\"." },
+        { "front": "German \"Unternehmer\": what does it mean in English?", "back": "Entrepreneur or business owner: someone who owns and runs a company. Not \"undertaker\"." },
+        { "front": "English \"warehouse\": what does it mean?", "back": "A building for storing large amounts of goods. In German: Lagerhaus, not \"Warenhaus\"." },
+        { "front": "German \"Warenhaus\": what does it mean in English?", "back": "Department store: a large shop selling goods from many lines of business. Not \"warehouse\"." },
+        { "front": "English \"who\": what does it mean?", "back": "Asks for a person's identity, or introduces a relative clause (\"the man who works here\"). In German: wer, not \"wo\"." },
+        { "front": "German \"wo\": what does it mean in English?", "back": "Where: asks for a place (\"Wo wohnt er?\" = \"Where does he live?\"). Not \"who\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-sea", "title": "Wiktionary: sea", "url": "https://en.wiktionary.org/wiki/sea", "accessed": "2026-10-02" },
+    { "id": "wiktionary-spend", "title": "Wiktionary: spend", "url": "https://en.wiktionary.org/wiki/spend", "accessed": "2026-10-02" },
+    { "id": "wiktionary-undertaker", "title": "Wiktionary: undertaker", "url": "https://en.wiktionary.org/wiki/undertaker", "accessed": "2026-10-02" },
+    { "id": "wiktionary-warehouse", "title": "Wiktionary: warehouse", "url": "https://en.wiktionary.org/wiki/warehouse", "accessed": "2026-10-02" },
+    { "id": "wiktionary-who", "title": "Wiktionary: who", "url": "https://en.wiktionary.org/wiki/who", "accessed": "2026-10-02" },
+    { "id": "dwds-see", "title": "DWDS: See", "url": "https://www.dwds.de/wb/See", "accessed": "2026-10-02" },
+    { "id": "dwds-spenden", "title": "DWDS: spenden", "url": "https://www.dwds.de/wb/spenden", "accessed": "2026-10-02" },
+    { "id": "dwds-unternehmer", "title": "DWDS: Unternehmer", "url": "https://www.dwds.de/wb/Unternehmer", "accessed": "2026-10-02" },
+    { "id": "dwds-warenhaus", "title": "DWDS: Warenhaus", "url": "https://www.dwds.de/wb/Warenhaus", "accessed": "2026-10-02" },
+    { "id": "dwds-wo", "title": "DWDS: wo", "url": "https://www.dwds.de/wb/wo", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-ransomware
-    topic: technologie/sicherheit
-    hint: "Wie Ransomware arbeitet und welche Schutzmaßnahmen helfen (BSI-Empfehlungen)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ddos
-    topic: technologie/sicherheit
-    hint: "DDoS-Angriffe: Volumen-, Protokoll- und Anwendungsangriffe"
-    format: facts_quiz
-    priority: 1
   - id: tech-sql-injection
     topic: technologie/sicherheit
     hint: "SQL-Injection: Prinzip und Schutz durch Prepared Statements"
@@ -337,16 +327,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-false-friends-3
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: fabric/Fabrik, gymnasium/Gymnasium, map/Mappe, mist/Mist, rock/Rock"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-false-friends-4
-    topic: sprachen/englisch
-    hint: "Falsche Freunde Deutsch–Englisch: sea/See, spend/spenden, undertaker/Unternehmer, warehouse/Warenhaus, who/wo"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-false-friends-5
     topic: sprachen/englisch
     hint: "Falsche Freunde Deutsch–Englisch: meaning/Meinung, consequent/konsequent, sympathetic/sympathisch, provision/Provision, control/kontrollieren"
@@ -1262,11 +1242,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-ozeane
-    topic: allgemeinwissen/geografie
-    hint: "Die fünf Ozeane: Größe, tiefste Stellen"
-    format: facts_quiz
-    priority: 1
   - id: aw-hoechste-berge
     topic: allgemeinwissen/geografie
     hint: "Die höchsten Berge je Kontinent (Seven Summits)"
@@ -1907,11 +1882,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-aegypten-pyramiden
-    topic: geschichte/antike
-    hint: "Die Pyramiden von Gizeh: Bau und Pharaonen"
-    format: facts_quiz
-    priority: 1
   - id: ge-hieroglyphen
     topic: geschichte/antike
     hint: "Hieroglyphen und der Stein von Rosetta"
