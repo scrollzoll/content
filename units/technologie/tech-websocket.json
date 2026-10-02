@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "tech-websocket",
+  "topic": "technologie/netzwerke",
+  "tags": ["websocket", "rfc6455", "http-upgrade", "echtzeit", "tcp"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "WebSockets: Dauerhafte Verbindung in beide Richtungen",
+      "intro": "Bei normalem HTTP fragt der Client, der Server antwortet. WebSockets halten eine Verbindung offen, über die beide Seiten jederzeit Nachrichten senden können.",
+      "facts": [
+        { "text": "WebSocket (RFC 6455) ermöglicht Kommunikation in beide Richtungen zwischen Client und Server. Statt vieler einzelner HTTP-Verbindungen genügt eine einzige dauerhafte TCP-Verbindung.", "source_ids": ["rfc6455"] },
+        { "text": "Beide Seiten können jederzeit senden. Der Server schickt Nachrichten, sobald sie anfallen, und der Client muss nicht ständig nachfragen (Polling).", "source_ids": ["mdn-websockets", "rfc6455"] },
+        { "text": "Der Verbindungsaufbau beginnt als normale HTTP-Anfrage: Der Client sendet ein GET mit den Headern Upgrade: websocket und Connection: Upgrade sowie einem zufälligen Sec-WebSocket-Key.", "source_ids": ["rfc6455"] },
+        { "text": "Stimmt der Server zu, antwortet er mit dem HTTP-Status 101 (Switching Protocols) und einem aus dem Schlüssel berechneten Sec-WebSocket-Accept. Danach läuft die Verbindung als WebSocket weiter.", "source_ids": ["rfc6455"] },
+        { "text": "Es gibt zwei URI-Schemata: ws:// ohne Verschlüsselung, Standardport 80, und wss:// mit TLS-Verschlüsselung, Standardport 443. Es sind dieselben Ports wie bei HTTP und HTTPS.", "source_ids": ["rfc6455"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher HTTP-Statuscode bestätigt den Wechsel zu WebSocket?",
+          "options": ["200 OK", "101 Switching Protocols", "301 Moved Permanently", "404 Not Found"],
+          "answer_index": 1,
+          "explanation": "Der Server antwortet mit 101 Switching Protocols und bestätigt damit den Protokollwechsel. 200, 301 und 404 haben andere Bedeutungen."
+        },
+        {
+          "question": "Welcher Standardport gehört zu wss://?",
+          "options": ["80", "8080", "443", "22"],
+          "answer_index": 2,
+          "explanation": "wss:// ist die verschlüsselte Variante über TLS und nutzt standardmäßig Port 443, wie HTTPS. Unverschlüsseltes ws:// nutzt Port 80."
+        },
+        {
+          "question": "Was unterscheidet WebSocket von wiederholten HTTP-Anfragen (Polling)?",
+          "options": ["Eine dauerhafte Verbindung, über die beide Seiten jederzeit senden können", "Die Daten werden immer per UDP verschickt", "Nur der Server darf Nachrichten senden", "Der Client muss für jede Nachricht eine neue Verbindung öffnen"],
+          "answer_index": 0,
+          "explanation": "WebSocket hält eine einzige TCP-Verbindung offen und erlaubt Nachrichten in beide Richtungen, ohne dass der Client nachfragen muss."
+        },
+        {
+          "question": "Wie beginnt ein WebSocket-Verbindungsaufbau?",
+          "options": ["Mit einem UDP-Broadcast ins lokale Netz", "Mit einer HTTP-GET-Anfrage mit Upgrade-Header", "Mit einer DNS-Anfrage nach einem TXT-Eintrag", "Mit einer ICMP-Echo-Anfrage"],
+          "answer_index": 1,
+          "explanation": "Der Aufbau startet als HTTP-GET mit Upgrade: websocket. Erst nach der Antwort 101 wechselt die Verbindung zum WebSocket-Protokoll."
+        }
+      ]
+    },
+    "en": {
+      "title": "WebSockets: A Lasting Connection in Both Directions",
+      "intro": "With ordinary HTTP, the client asks and the server answers. WebSockets keep a connection open over which both sides can send messages at any time.",
+      "facts": [
+        { "text": "WebSocket (RFC 6455) enables two-way communication between client and server. Instead of many separate HTTP connections, a single persistent TCP connection is enough.", "source_ids": ["rfc6455"] },
+        { "text": "Both sides can send at any time. The server pushes messages as soon as they occur, and the client does not have to keep asking (polling).", "source_ids": ["mdn-websockets", "rfc6455"] },
+        { "text": "The connection setup begins as a normal HTTP request: the client sends a GET with the headers Upgrade: websocket and Connection: Upgrade, plus a random Sec-WebSocket-Key.", "source_ids": ["rfc6455"] },
+        { "text": "If the server agrees, it answers with HTTP status 101 (Switching Protocols) and a Sec-WebSocket-Accept computed from the key. After that the connection continues as a WebSocket.", "source_ids": ["rfc6455"] },
+        { "text": "There are two URI schemes: ws:// without encryption, default port 80, and wss:// with TLS encryption, default port 443. These are the same ports as for HTTP and HTTPS.", "source_ids": ["rfc6455"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which HTTP status code confirms the switch to WebSocket?",
+          "options": ["200 OK", "101 Switching Protocols", "301 Moved Permanently", "404 Not Found"],
+          "answer_index": 1,
+          "explanation": "The server answers with 101 Switching Protocols, confirming the protocol change. 200, 301 and 404 mean something else."
+        },
+        {
+          "question": "Which default port belongs to wss://?",
+          "options": ["80", "8080", "443", "22"],
+          "answer_index": 2,
+          "explanation": "wss:// is the encrypted variant over TLS and uses port 443 by default, like HTTPS. Unencrypted ws:// uses port 80."
+        },
+        {
+          "question": "What distinguishes WebSocket from repeated HTTP requests (polling)?",
+          "options": ["A persistent connection over which both sides can send at any time", "The data is always sent via UDP", "Only the server may send messages", "The client must open a new connection for every message"],
+          "answer_index": 0,
+          "explanation": "WebSocket keeps a single TCP connection open and allows messages in both directions without the client having to ask."
+        },
+        {
+          "question": "How does a WebSocket connection setup begin?",
+          "options": ["With a UDP broadcast into the local network", "With an HTTP GET request with an Upgrade header", "With a DNS query for a TXT record", "With an ICMP echo request"],
+          "answer_index": 1,
+          "explanation": "The setup starts as an HTTP GET with Upgrade: websocket. Only after the 101 response does the connection switch to the WebSocket protocol."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc6455", "title": "RFC 6455: The WebSocket Protocol", "url": "https://www.rfc-editor.org/rfc/rfc6455", "accessed": "2026-10-02" },
+    { "id": "mdn-websockets", "title": "MDN Web Docs: The WebSocket API (WebSockets)", "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

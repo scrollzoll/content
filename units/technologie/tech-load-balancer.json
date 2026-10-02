@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "tech-load-balancer",
+  "topic": "technologie/netzwerke",
+  "tags": ["load-balancer", "layer-4", "layer-7", "round-robin", "skalierung"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Load Balancer: Layer 4 und Layer 7",
+      "intro": "Ein Load Balancer steht vor mehreren Servern und verteilt die Anfragen. Er unterscheidet sich darin, wie tief er in den Verkehr schaut und nach welchem Verfahren er Ziele auswählt.",
+      "facts": [
+        { "text": "Ein Load Balancer verteilt eingehenden Verkehr auf mehrere Ziele wie Server oder Container. Mit Health Checks prüft er deren Zustand und leitet Anfragen nur an Ziele, die gesund sind.", "source_ids": ["aws-elb"] },
+        { "text": "Ein Layer-4-Load-Balancer arbeitet auf der Transportschicht, etwa für TCP und UDP. Der Network Load Balancer von AWS wählt das Ziel per Flow-Hash (u. a. aus Adressen und Ports); eine TCP-Verbindung bleibt bei einem Ziel.", "source_ids": ["aws-nlb"] },
+        { "text": "Ein Layer-7-Load-Balancer arbeitet auf der Anwendungsschicht. Der Application Load Balancer von AWS leitet Anfragen nach ihrem Inhalt weiter, zum Beispiel nach URL-Pfad, Host oder HTTP-Header.", "source_ids": ["aws-alb"] },
+        { "text": "Round Robin verteilt Anfragen reihum und ist bei nginx wie beim AWS-ALB das Standardverfahren. Alternativen sind Least Connections bei nginx (Server mit den wenigsten aktiven Verbindungen) und Least Outstanding Requests im ALB.", "source_ids": ["nginx-lb", "aws-alb"] },
+        { "text": "Mit ip_hash wählt nginx den Server anhand der Client-IP-Adresse. Derselbe Client landet dadurch immer beim selben Server, solange dieser erreichbar ist; das sichert Sitzungsbindung.", "source_ids": ["nginx-lb"] }
+      ],
+      "quiz": [
+        {
+          "question": "Auf welcher OSI-Schicht arbeitet ein Layer-7-Load-Balancer?",
+          "options": ["Schicht 2 (Sicherung)", "Schicht 3 (Vermittlung)", "Schicht 7 (Anwendung)", "Schicht 4 (Transport)"],
+          "answer_index": 2,
+          "explanation": "Layer 7 ist die Anwendungsschicht. Dort kann der Load Balancer Inhalte wie Pfad oder Header auswerten."
+        },
+        {
+          "question": "Welches Verfahren schickt die nächste Anfrage an den Server mit den wenigsten aktiven Verbindungen?",
+          "options": ["Round Robin", "Least Connections", "IP-Hash", "Weighted DNS"],
+          "answer_index": 1,
+          "explanation": "Least Connections wählt den am geringsten ausgelasteten Server. Round Robin dagegen geht der Reihe nach vor."
+        },
+        {
+          "question": "Ein Load Balancer soll Anfragen anhand des URL-Pfads auf verschiedene Server verteilen. Was passt?",
+          "options": ["Layer 4, weil er Pfade in TCP-Paketen sieht", "Layer 7, weil er den Anwendungsinhalt auswertet", "Round Robin, weil es Pfade erkennt", "Das geht mit keinem Load Balancer"],
+          "answer_index": 1,
+          "explanation": "Pfadbasierte Weiterleitung braucht Einblick in die HTTP-Anfrage und damit Layer 7. Round Robin ist ein Verteilverfahren, kein Mittel zur Inhaltserkennung."
+        },
+        {
+          "question": "Welches Verfahren sorgt dafür, dass derselbe Client möglichst immer beim selben Server landet?",
+          "options": ["Round Robin", "Least Connections", "Weighted Round Robin", "IP-Hash"],
+          "answer_index": 3,
+          "explanation": "IP-Hash bildet die Client-Adresse auf einen Server ab. Dadurch bleibt ein Client bei seinem Server, solange der erreichbar ist."
+        }
+      ]
+    },
+    "en": {
+      "title": "Load Balancers: Layer 4 and Layer 7",
+      "intro": "A load balancer sits in front of several servers and distributes requests. Load balancers differ in how deeply they inspect traffic and by which method they pick targets.",
+      "facts": [
+        { "text": "A load balancer distributes incoming traffic across several targets such as servers or containers. It checks their state with health checks and sends requests only to targets that are healthy.", "source_ids": ["aws-elb"] },
+        { "text": "A layer 4 load balancer works at the transport layer, for example for TCP and UDP. AWS's Network Load Balancer picks the target by a flow hash (including addresses and ports); a TCP connection stays with one target.", "source_ids": ["aws-nlb"] },
+        { "text": "A layer 7 load balancer works at the application layer. AWS's Application Load Balancer forwards requests by their content, for example by URL path, host or HTTP header.", "source_ids": ["aws-alb"] },
+        { "text": "Round robin hands out requests in turn and is the default method in nginx as well as in the AWS ALB. Alternatives are least connections in nginx (the server with the fewest active connections) and least outstanding requests in the ALB.", "source_ids": ["nginx-lb", "aws-alb"] },
+        { "text": "With ip_hash, nginx chooses the server based on the client's IP address. The same client therefore always reaches the same server as long as it is available; this provides session persistence.", "source_ids": ["nginx-lb"] }
+      ],
+      "quiz": [
+        {
+          "question": "At which OSI layer does a layer 7 load balancer work?",
+          "options": ["Layer 2 (data link)", "Layer 3 (network)", "Layer 7 (application)", "Layer 4 (transport)"],
+          "answer_index": 2,
+          "explanation": "Layer 7 is the application layer. There the load balancer can evaluate content such as path or headers."
+        },
+        {
+          "question": "Which method sends the next request to the server with the fewest active connections?",
+          "options": ["Round robin", "Least connections", "IP hash", "Weighted DNS"],
+          "answer_index": 1,
+          "explanation": "Least connections picks the least busy server. Round robin, by contrast, simply goes in turn."
+        },
+        {
+          "question": "A load balancer is meant to distribute requests across servers based on the URL path. What fits?",
+          "options": ["Layer 4, because it sees paths in TCP packets", "Layer 7, because it evaluates the application content", "Round robin, because it recognizes paths", "No load balancer can do this"],
+          "answer_index": 1,
+          "explanation": "Path-based routing needs insight into the HTTP request and therefore layer 7. Round robin is a distribution method, not a means of recognizing content."
+        },
+        {
+          "question": "Which method makes the same client end up on the same server whenever possible?",
+          "options": ["Round robin", "Least connections", "Weighted round robin", "IP hash"],
+          "answer_index": 3,
+          "explanation": "IP hash maps the client address to a server. As a result a client stays with its server as long as it is reachable."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "aws-elb", "title": "AWS: What is Elastic Load Balancing?", "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html", "accessed": "2026-10-02" },
+    { "id": "aws-nlb", "title": "AWS: What is a Network Load Balancer?", "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html", "accessed": "2026-10-02" },
+    { "id": "aws-alb", "title": "AWS: What is an Application Load Balancer?", "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html", "accessed": "2026-10-02" },
+    { "id": "nginx-lb", "title": "nginx: Using nginx as HTTP load balancer", "url": "https://nginx.org/en/docs/http/load_balancing.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

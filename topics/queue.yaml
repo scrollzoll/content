@@ -2,36 +2,6 @@
 # holen sich hier das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu existiert.
 # priority: 1 = hoch, 3 = niedrig. Format eines Eintrags bitte beibehalten (zwei Leerzeichen + '- id:').
 queue:
-  - id: tech-dns-records
-    topic: technologie/netzwerke
-    hint: "DNS-Eintragstypen A, AAAA, CNAME, MX, TXT"
-    format: facts_quiz
-    priority: 1
-  - id: tech-mac-adresse
-    topic: technologie/netzwerke
-    hint: "MAC-Adresse vs. IP-Adresse, Aufbau einer MAC-Adresse"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ports
-    topic: technologie/netzwerke
-    hint: "Was Ports sind, bekannte Ports (22, 53, 80, 443) und der Bereich 0–1023"
-    format: facts_quiz
-    priority: 1
-  - id: tech-load-balancer
-    topic: technologie/netzwerke
-    hint: "Load Balancer: Layer 4 vs. Layer 7, gängige Verfahren"
-    format: facts_quiz
-    priority: 1
-  - id: tech-websocket
-    topic: technologie/netzwerke
-    hint: "WebSockets für bidirektionale Verbindungen (RFC 6455)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-traceroute-ping
-    topic: technologie/netzwerke
-    hint: "Wie ping und traceroute funktionieren (ICMP, TTL)"
-    format: facts_quiz
-    priority: 1
   - id: tech-sase
     topic: technologie/netzwerke
     hint: "SASE: Netzwerk und Sicherheit aus der Cloud, Begriff von Gartner"

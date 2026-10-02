@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "tech-traceroute-ping",
+  "topic": "technologie/netzwerke",
+  "tags": ["ping", "traceroute", "icmp", "ttl", "diagnose"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "ping und traceroute: ICMP und TTL",
+      "intro": "ping zeigt, ob ein Ziel antwortet, traceroute den Weg dorthin. Beide Werkzeuge stützen sich auf ICMP-Nachrichten und das TTL-Feld im IP-Header.",
+      "facts": [
+        { "text": "ICMP kennt die Nachrichten Echo (Typ 8) und Echo Reply (Typ 0). Das Ziel schickt die empfangenen Daten zurück. So lässt sich prüfen, ob ein Rechner erreichbar ist, und die Umlaufzeit messen; darauf beruht ping.", "source_ids": ["rfc792"] },
+        { "text": "Das Feld Time to Live (TTL) im IP-Header ist 8 Bit groß. Jeder Router verringert es mindestens um 1, und bei 0 wird das Paket verworfen. Laut Standard zählt es Sekunden, in der Praxis wirkt es wie ein Hop-Zähler.", "source_ids": ["rfc791"] },
+        { "text": "Verwirft ein Router ein Paket wegen TTL 0, kann er den Absender mit der ICMP-Nachricht Time Exceeded (Typ 11, Code 0) informieren. Das verhindert, dass Pakete bei Routingschleifen ewig kreisen.", "source_ids": ["rfc792", "rfc791"] },
+        { "text": "traceroute sendet Testpakete mit TTL 1 und erhöht den Wert schrittweise um 1. Jeder Router auf dem Weg antwortet irgendwann mit Time Exceeded, daher lässt sich die Route Hop für Hop ablesen.", "source_ids": ["traceroute-man"] },
+        { "text": "Das Ziel ist erreicht, wenn statt Time Exceeded ein ICMP Port Unreachable (UDP-Methode) oder ein TCP-Reset eintrifft. Standardmäßig sendet traceroute drei Proben je TTL und endet spätestens nach 30 Hops.", "source_ids": ["traceroute-man"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welche ICMP-Nachricht schickt ein Router zurück, wenn er ein Paket mit TTL 0 verwirft?",
+          "options": ["Echo Reply", "Port Unreachable", "Time Exceeded", "Echo Request"],
+          "answer_index": 2,
+          "explanation": "Time Exceeded (Typ 11) meldet dem Absender, dass die TTL unterwegs abgelaufen ist. Auf dieser Meldung beruht traceroute."
+        },
+        {
+          "question": "Mit welchem TTL-Wert beginnt traceroute?",
+          "options": ["0", "1", "30", "255"],
+          "answer_index": 1,
+          "explanation": "traceroute startet mit TTL 1 und erhöht jeweils um 1. So antwortet zuerst der erste Router, dann der zweite und so weiter."
+        },
+        {
+          "question": "Wie viele Hops sind bei traceroute standardmäßig höchstens vorgesehen?",
+          "options": ["15", "30", "64", "255"],
+          "answer_index": 1,
+          "explanation": "Laut Handbuchseite liegt das Standardmaximum bei 30 Hops. Mit einer Option lässt es sich ändern."
+        },
+        {
+          "question": "Was geschieht mit einem Paket, dessen TTL auf 0 gesunken ist?",
+          "options": ["Es wird verschlüsselt weitergeleitet", "Es wird ohne Änderung ans Ziel zugestellt", "Es wird an den Absender zurückgeschickt", "Es wird verworfen"],
+          "answer_index": 3,
+          "explanation": "Bei TTL 0 muss das Paket verworfen werden. Der Router darf den Absender mit einer Time-Exceeded-Meldung informieren."
+        }
+      ]
+    },
+    "en": {
+      "title": "ping and traceroute: ICMP and TTL",
+      "intro": "ping shows whether a target answers, traceroute the path to it. Both tools rely on ICMP messages and the TTL field in the IP header.",
+      "facts": [
+        { "text": "ICMP has the messages Echo (type 8) and Echo Reply (type 0). The target sends the received data back. This lets you check whether a host is reachable and measure the round-trip time; ping is based on it.", "source_ids": ["rfc792"] },
+        { "text": "The Time to Live (TTL) field in the IP header is 8 bits wide. Every router lowers it by at least 1, and at 0 the packet is discarded. By the standard it counts seconds, but in practice it acts like a hop counter.", "source_ids": ["rfc791"] },
+        { "text": "When a router discards a packet because of TTL 0, it can inform the sender with the ICMP message Time Exceeded (type 11, code 0). This keeps packets from circling forever in routing loops.", "source_ids": ["rfc792", "rfc791"] },
+        { "text": "traceroute sends probe packets with TTL 1 and raises the value step by step by 1. Each router along the way eventually answers with Time Exceeded, so the route can be read off hop by hop.", "source_ids": ["traceroute-man"] },
+        { "text": "The destination is reached when an ICMP Port Unreachable (UDP method) or a TCP reset arrives instead of Time Exceeded. By default traceroute sends three probes per TTL and stops after 30 hops at most.", "source_ids": ["traceroute-man"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which ICMP message does a router send back when it discards a packet with TTL 0?",
+          "options": ["Echo Reply", "Port Unreachable", "Time Exceeded", "Echo Request"],
+          "answer_index": 2,
+          "explanation": "Time Exceeded (type 11) tells the sender that the TTL ran out in transit. traceroute is based on this message."
+        },
+        {
+          "question": "With which TTL value does traceroute start?",
+          "options": ["0", "1", "30", "255"],
+          "answer_index": 1,
+          "explanation": "traceroute starts with TTL 1 and raises it by 1 each time. So the first router answers first, then the second, and so on."
+        },
+        {
+          "question": "How many hops does traceroute allow at most by default?",
+          "options": ["15", "30", "64", "255"],
+          "answer_index": 1,
+          "explanation": "According to the manual page, the default maximum is 30 hops. An option can change it."
+        },
+        {
+          "question": "What happens to a packet whose TTL has dropped to 0?",
+          "options": ["It is forwarded in encrypted form", "It is delivered to the destination unchanged", "It is sent back to the sender", "It is discarded"],
+          "answer_index": 3,
+          "explanation": "At TTL 0 the packet must be discarded. The router may inform the sender with a Time Exceeded message."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc792", "title": "RFC 792: Internet Control Message Protocol", "url": "https://www.rfc-editor.org/rfc/rfc792", "accessed": "2026-10-02" },
+    { "id": "rfc791", "title": "RFC 791: Internet Protocol", "url": "https://www.rfc-editor.org/rfc/rfc791", "accessed": "2026-10-02" },
+    { "id": "traceroute-man", "title": "traceroute(8) - Linux manual page", "url": "https://man7.org/linux/man-pages/man8/traceroute.8.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

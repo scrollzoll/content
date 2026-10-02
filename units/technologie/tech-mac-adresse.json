@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "tech-mac-adresse",
+  "topic": "technologie/netzwerke",
+  "tags": ["mac-adresse", "oui", "ethernet", "arp", "osi-schicht-2"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "MAC-Adresse und IP-Adresse im Vergleich",
+      "intro": "Jede Netzwerkschnittstelle hat eine MAC-Adresse für das lokale Netz und bekommt zusätzlich eine IP-Adresse für die Verbindung darüber hinaus. Beide erfüllen verschiedene Aufgaben.",
+      "facts": [
+        { "text": "Eine MAC-Adresse (EUI-48) ist 48 Bit lang und wird meist als sechs Paare hexadezimaler Ziffern geschrieben, etwa mit Bindestrichen getrennt. Sie kennzeichnet eine Netzwerkschnittstelle im lokalen Netzsegment.", "source_ids": ["wikipedia-mac"] },
+        { "text": "Die ersten 24 Bit einer MAC-Adresse sind die OUI, die das IEEE einer Organisation zuteilt. Die übrigen 24 Bit vergibt die Organisation selbst an einzelne Geräte, so wird die Adresse weltweit eindeutig.", "source_ids": ["ieee-oui"] },
+        { "text": "MAC-Adressen gehören zur Sicherungsschicht (Schicht 2 im OSI-Modell), IP-Adressen zur Vermittlungsschicht (Schicht 3). Beide Adressarten haben also verschiedene Aufgaben.", "source_ids": ["wikipedia-mac"] },
+        { "text": "Das Protokoll ARP verbindet beide Welten: Es ordnet einer 32-Bit-IPv4-Adresse die 48-Bit-Ethernet-Adresse zu, damit Geräte im selben Netz einander finden und Pakete richtig zustellen können.", "source_ids": ["rfc826"] },
+        { "text": "Im ersten Byte tragen zwei Bits eine Bedeutung: Das niedrigste unterscheidet Unicast (0) von Multicast (1), das zweitniedrigste zeigt, ob die Adresse vom Hersteller (0) oder lokal (1) vergeben wurde.", "source_ids": ["wikipedia-mac"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Bit hat eine klassische MAC-Adresse (EUI-48)?",
+          "options": ["32 Bit", "48 Bit", "64 Bit", "128 Bit"],
+          "answer_index": 1,
+          "explanation": "EUI-48 bedeutet 48 Bit, also sechs Bytes (sechs Paare hexadezimaler Ziffern)."
+        },
+        {
+          "question": "Was kennzeichnen die ersten 24 Bit einer MAC-Adresse (OUI)?",
+          "options": ["Das Land, in dem das Gerät genutzt wird", "Die IP-Adresse des Geräts", "Die Organisation, der der Adressblock zugeteilt wurde", "Die Seriennummer des einzelnen Geräts"],
+          "answer_index": 2,
+          "explanation": "Die OUI identifiziert die Organisation, der das IEEE den Block zugeteilt hat. Die einzelnen Geräte unterscheidet der zweite Teil der Adresse."
+        },
+        {
+          "question": "Auf welcher OSI-Schicht arbeiten MAC-Adressen?",
+          "options": ["Schicht 1 (Bitübertragung)", "Schicht 2 (Sicherung)", "Schicht 3 (Vermittlung)", "Schicht 7 (Anwendung)"],
+          "answer_index": 1,
+          "explanation": "MAC-Adressen gehören zur Sicherungsschicht, Schicht 2. IP-Adressen liegen eine Ebene darüber auf Schicht 3."
+        }
+      ]
+    },
+    "en": {
+      "title": "MAC Address vs. IP Address",
+      "intro": "Every network interface has a MAC address for the local network and additionally receives an IP address for connections beyond it. The two serve different purposes.",
+      "facts": [
+        { "text": "A MAC address (EUI-48) is 48 bits long and is usually written as six pairs of hexadecimal digits, for example separated by hyphens. It identifies a network interface within the local network segment.", "source_ids": ["wikipedia-mac"] },
+        { "text": "The first 24 bits of a MAC address are the OUI, which the IEEE assigns to an organization. The organization itself assigns the remaining 24 bits to individual devices, which makes the address globally unique.", "source_ids": ["ieee-oui"] },
+        { "text": "MAC addresses belong to the data link layer (layer 2 of the OSI model), IP addresses to the network layer (layer 3). The two kinds of address therefore have different tasks.", "source_ids": ["wikipedia-mac"] },
+        { "text": "The protocol ARP links the two worlds: it maps a 32-bit IPv4 address to the 48-bit Ethernet address so that devices on the same network can find each other and deliver packets correctly.", "source_ids": ["rfc826"] },
+        { "text": "Two bits in the first byte carry a meaning: the lowest distinguishes unicast (0) from multicast (1), the second-lowest shows whether the address was assigned by the manufacturer (0) or locally (1).", "source_ids": ["wikipedia-mac"] }
+      ],
+      "quiz": [
+        {
+          "question": "How many bits does a classic MAC address (EUI-48) have?",
+          "options": ["32 bits", "48 bits", "64 bits", "128 bits"],
+          "answer_index": 1,
+          "explanation": "EUI-48 means 48 bits, that is six bytes (six pairs of hexadecimal digits)."
+        },
+        {
+          "question": "What do the first 24 bits of a MAC address (OUI) identify?",
+          "options": ["The country where the device is used", "The device's IP address", "The organization to which the address block was assigned", "The serial number of the individual device"],
+          "answer_index": 2,
+          "explanation": "The OUI identifies the organization to which the IEEE assigned the block. The second part of the address tells the individual devices apart."
+        },
+        {
+          "question": "At which OSI layer do MAC addresses operate?",
+          "options": ["Layer 1 (physical)", "Layer 2 (data link)", "Layer 3 (network)", "Layer 7 (application)"],
+          "answer_index": 1,
+          "explanation": "MAC addresses belong to the data link layer, layer 2. IP addresses sit one level above, on layer 3."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-mac", "title": "MAC address (Wikipedia)", "url": "https://en.wikipedia.org/wiki/MAC_address", "accessed": "2026-10-02" },
+    { "id": "ieee-oui", "title": "IEEE Registration Authority FAQs: OUI / MA-L", "url": "https://standards.ieee.org/faqs/regauth/", "accessed": "2026-10-02" },
+    { "id": "rfc826", "title": "RFC 826: An Ethernet Address Resolution Protocol", "url": "https://www.rfc-editor.org/rfc/rfc826", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
