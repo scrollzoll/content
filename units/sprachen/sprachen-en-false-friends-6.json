@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-6",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (6)",
+      "intro": "Noch mehr Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „novel“: Was heißt es?", "back": "Roman: ein längerer Prosatext, länger als eine „novella“. Als Adjektiv: neu, neuartig. Nicht „Novelle“." },
+        { "front": "Deutsch „Novelle“: Was heißt es auf Englisch?", "back": "novella: eine kürzere Prosaerzählung über ein einzelnes ungewöhnliches Ereignis. Im Recht auch ein Änderungsgesetz („amendment“). Nicht „novel“." },
+        { "front": "Englisch „oversee“: Was heißt es?", "back": "beaufsichtigen, überwachen: die Arbeit anderer leiten oder prüfen. Nicht „übersehen“." },
+        { "front": "Deutsch „übersehen“ im Sinne von nicht bemerken: Was heißt es auf Englisch?", "back": "overlook oder miss: etwas aus Versehen nicht wahrnehmen. Nicht „oversee“." },
+        { "front": "Englisch „prospect“: Was heißt es?", "back": "Aussicht, Perspektive (auch Ausblick); in der Wirtschaft ein potenzieller Kunde. Nicht „Prospekt“." },
+        { "front": "Deutsch „Prospekt“: Was heißt es auf Englisch?", "back": "brochure oder leaflet: ein bebildertes Werbeheft, etwa ein Reiseprospekt. Nicht „prospect“." },
+        { "front": "Englisch „chips“ (britisch): Was heißt es?", "back": "Pommes frites: dickere frittierte Kartoffelstreifen. Im amerikanischen Englisch dagegen Kartoffelchips." },
+        { "front": "Deutsch „Chips“ (Kartoffelchips): Was heißt es britisch auf Englisch?", "back": "crisps: dünne frittierte Kartoffelscheiben aus der Tüte. Amerikanisch heißen sie „chips“." },
+        { "front": "Englisch „smoking“: Was heißt es?", "back": "Rauchen (das Rauchen von Tabak), als Adjektiv: rauchend. Nicht „Smoking“ als Kleidungsstück." },
+        { "front": "Deutsch „Smoking“: Was heißt es auf Englisch?", "back": "tuxedo oder dinner jacket: festlicher Abendanzug mit seidenen Revers. Das Wort stammt von „smoking jacket“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (6)",
+      "intro": "Even more word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"novel\": what does it mean?", "back": "A longer work of prose fiction, longer than a novella. As an adjective: new, original. In German: Roman, not \"Novelle\"." },
+        { "front": "German \"Novelle\": what does it mean in English?", "back": "Novella: a shorter prose narrative about a single unusual event. In law also an amending act (\"amendment\"). Not \"novel\"." },
+        { "front": "English \"oversee\": what does it mean?", "back": "To supervise: to direct or review the work of others. In German: beaufsichtigen, überwachen, not \"übersehen\"." },
+        { "front": "German \"übersehen\" in the sense of not noticing: what is it in English?", "back": "To overlook or miss: to fail to notice something by accident. Not \"oversee\"." },
+        { "front": "English \"prospect\": what does it mean?", "back": "An outlook or view, or a chance for the future; in business, a potential customer. In German: Aussicht, Perspektive, not \"Prospekt\"." },
+        { "front": "German \"Prospekt\": what does it mean in English?", "back": "Brochure or leaflet: an illustrated advertising publication, such as a travel brochure. Not \"prospect\"." },
+        { "front": "English \"chips\" (British): what does it mean?", "back": "Thick-cut fried potato strips. In German: Pommes frites. In American English, \"chips\" are what Germans call Kartoffelchips." },
+        { "front": "German \"Chips\" (potato snacks): what are they in British English?", "back": "Crisps: thin fried potato slices sold in bags. American English calls them \"chips\"." },
+        { "front": "English \"smoking\": what does it mean?", "back": "The burning and inhaling of tobacco; as an adjective: giving off smoke. Not the German \"Smoking\" garment." },
+        { "front": "German \"Smoking\": what does it mean in English?", "back": "Tuxedo or dinner jacket: formal evening suit with silk lapels. The German word comes from \"smoking jacket\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-novel", "title": "Wiktionary: novel", "url": "https://en.wiktionary.org/wiki/novel", "accessed": "2026-10-02" },
+    { "id": "wiktionary-oversee", "title": "Wiktionary: oversee", "url": "https://en.wiktionary.org/wiki/oversee", "accessed": "2026-10-02" },
+    { "id": "wiktionary-prospect", "title": "Wiktionary: prospect", "url": "https://en.wiktionary.org/wiki/prospect", "accessed": "2026-10-02" },
+    { "id": "wiktionary-chips", "title": "Wiktionary: chips", "url": "https://en.wiktionary.org/wiki/chips", "accessed": "2026-10-02" },
+    { "id": "wiktionary-smoking", "title": "Wiktionary: smoking", "url": "https://en.wiktionary.org/wiki/smoking", "accessed": "2026-10-02" },
+    { "id": "wiktionary-tuxedo", "title": "Wiktionary: tuxedo", "url": "https://en.wiktionary.org/wiki/tuxedo", "accessed": "2026-10-02" },
+    { "id": "wiktionary-brochure", "title": "Wiktionary: brochure", "url": "https://en.wiktionary.org/wiki/brochure", "accessed": "2026-10-02" },
+    { "id": "dwds-novelle", "title": "DWDS: Novelle", "url": "https://www.dwds.de/wb/Novelle", "accessed": "2026-10-02" },
+    { "id": "dwds-uebersehen", "title": "DWDS: übersehen", "url": "https://www.dwds.de/wb/%C3%BCbersehen", "accessed": "2026-10-02" },
+    { "id": "dwds-prospekt", "title": "DWDS: Prospekt", "url": "https://www.dwds.de/wb/Prospekt", "accessed": "2026-10-02" },
+    { "id": "dwds-chips", "title": "DWDS: Chips", "url": "https://www.dwds.de/wb/Chips", "accessed": "2026-10-02" },
+    { "id": "dwds-smoking", "title": "DWDS: Smoking", "url": "https://www.dwds.de/wb/Smoking", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

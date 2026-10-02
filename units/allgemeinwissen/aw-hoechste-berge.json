@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "aw-hoechste-berge",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["berge", "seven-summits", "kontinente", "geografie"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die Seven Summits: höchste Berge der Kontinente",
+      "intro": "Die Seven Summits sind die höchsten Gipfel der Kontinente. Hier die Höhen nach Wikipedia.",
+      "facts": [
+        { "text": "Der Mount Everest in Asien ist mit 8.849 Metern der höchste Berg der Erde und zugleich der höchste Gipfel unter den Seven Summits.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Der Aconcagua in Südamerika misst 6.961 Meter, der Denali in Nordamerika 6.194 Meter.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Der Kilimandscharo ist mit 5.895 Metern der höchste Berg Afrikas, der Elbrus mit 5.642 Metern der höchste Europas.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "In der Antarktis ist der Mount Vinson mit 4.892 Metern der höchste Berg.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Für Ozeanien gilt oft der Puncak Jaya (Carstensz-Pyramide) auf Neuguinea mit 4.884 Metern als siebter Gipfel. Die Alternative ist der Kosciuszko als höchster Berg des australischen Festlands.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Reinhold Messner trat für den Puncak Jaya ein, weil dessen Besteigung expeditionsartig ist. Der Kosciuszko ist dagegen eine einfache Wanderung.", "source_ids": ["wikipedia-seven-summits"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Berg ist der höchste Südamerikas?",
+          "options": ["Denali", "Aconcagua", "Elbrus", "Kilimandscharo"],
+          "answer_index": 1,
+          "explanation": "Der Aconcagua misst 6.961 Meter."
+        },
+        {
+          "question": "Welcher der Seven Summits liegt in Afrika?",
+          "options": ["Kilimandscharo", "Mount Vinson", "Denali", "Elbrus"],
+          "answer_index": 0,
+          "explanation": "Der Kilimandscharo ist mit 5.895 Metern Afrikas höchster Berg."
+        },
+        {
+          "question": "Welchen Gipfel befürwortete Reinhold Messner als Vertreter Ozeaniens?",
+          "options": ["Mount Kosciuszko", "Mount Vinson", "Puncak Jaya", "Mount Elbrus"],
+          "answer_index": 2,
+          "explanation": "Messner hielt den Puncak Jaya für die echte alpinistische Herausforderung."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Seven Summits: Highest Peaks of the Continents",
+      "intro": "The Seven Summits are the highest peaks of the continents. Heights below follow Wikipedia.",
+      "facts": [
+        { "text": "Mount Everest in Asia, at 8,849 metres, is the highest mountain on Earth and also the highest of the Seven Summits.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Aconcagua in South America measures 6,961 metres, and Denali in North America 6,194 metres.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Kilimanjaro, at 5,895 metres, is the highest mountain in Africa, and Elbrus, at 5,642 metres, the highest in Europe.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "In Antarctica, Mount Vinson is the highest mountain at 4,892 metres.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "For Oceania, Puncak Jaya (Carstensz Pyramid) on New Guinea, at 4,884 metres, is often counted as the seventh summit. The alternative is Kosciuszko, the highest peak of mainland Australia.", "source_ids": ["wikipedia-seven-summits"] },
+        { "text": "Reinhold Messner argued for Puncak Jaya because climbing it is expedition-like. Kosciuszko, by contrast, is an easy hike.", "source_ids": ["wikipedia-seven-summits"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which mountain is the highest in South America?",
+          "options": ["Denali", "Aconcagua", "Elbrus", "Kilimanjaro"],
+          "answer_index": 1,
+          "explanation": "Aconcagua measures 6,961 metres."
+        },
+        {
+          "question": "Which of the Seven Summits is in Africa?",
+          "options": ["Kilimanjaro", "Mount Vinson", "Denali", "Elbrus"],
+          "answer_index": 0,
+          "explanation": "Kilimanjaro, at 5,895 metres, is Africa's highest mountain."
+        },
+        {
+          "question": "Which peak did Reinhold Messner favour as Oceania's representative?",
+          "options": ["Mount Kosciuszko", "Mount Vinson", "Puncak Jaya", "Mount Elbrus"],
+          "answer_index": 2,
+          "explanation": "Messner considered Puncak Jaya the genuine mountaineering challenge."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-seven-summits", "title": "Wikipedia: Seven Summits", "url": "https://en.wikipedia.org/wiki/Seven_Summits", "license": "CC-BY-SA-4.0", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

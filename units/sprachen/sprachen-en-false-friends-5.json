@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-5",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (5)",
+      "intro": "Weitere Wortpaare, die ähnlich aussehen, aber Verschiedenes bedeuten.",
+      "cards": [
+        { "front": "Englisch „meaning“: Was heißt es?", "back": "Bedeutung: was ein Wort oder Zeichen besagt. Nicht „Meinung“." },
+        { "front": "Deutsch „Meinung“: Was heißt es auf Englisch?", "back": "opinion: die persönliche Ansicht zu etwas. Nicht „meaning“." },
+        { "front": "Englisch „consequent“: Was heißt es?", "back": "daraus folgend: „his retirement and consequent spare time“. Nicht „konsequent“." },
+        { "front": "Deutsch „konsequent“: Was heißt es auf Englisch?", "back": "consistent oder resolute: folgerichtig und zielstrebig handelnd. Nicht „consequent“." },
+        { "front": "Englisch „sympathetic“: Was heißt es?", "back": "mitfühlend: „I gave him a sympathetic look.“ Nicht „sympathisch“." },
+        { "front": "Deutsch „sympathisch“: Was heißt es auf Englisch?", "back": "likeable oder nice: jemand, der angenehm wirkt. Nicht „sympathetic“." },
+        { "front": "Englisch „provision“: Was heißt es?", "back": "Vorrat, Bereitstellung oder Klausel in einem Vertrag oder Gesetz. Nicht „Provision“ im Sinne einer Vermittlungsgebühr." },
+        { "front": "Deutsch „Provision“: Was heißt es auf Englisch?", "back": "commission: Vergütung als Prozentsatz vom Umsatz, etwa für Vertreter oder Makler. Nicht „provision“." },
+        { "front": "Englisch „control“: Was heißt es?", "back": "steuern, beherrschen: Einfluss oder Macht über etwas haben. Als Substantiv: Kontrolle im Sinne von Macht oder Bedienelement." },
+        { "front": "Deutsch „kontrollieren“ im Sinne von prüfen: Was heißt es auf Englisch?", "back": "check: nachsehen, ob alles in Ordnung ist („Reisende an der Grenze kontrollieren“ = „to check travellers at the border“). „To control“ meint eher steuern." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (5)",
+      "intro": "More word pairs that look alike but mean different things.",
+      "cards": [
+        { "front": "English \"meaning\": what does it mean?", "back": "What a word or sign signifies. In German: Bedeutung, not \"Meinung\"." },
+        { "front": "German \"Meinung\": what does it mean in English?", "back": "Opinion: a personal view about something. Not \"meaning\"." },
+        { "front": "English \"consequent\": what does it mean?", "back": "Following as a result: \"his retirement and consequent spare time\". In German: daraus folgend, not \"konsequent\"." },
+        { "front": "German \"konsequent\": what does it mean in English?", "back": "Consistent or resolute: acting logically and with determination. Not \"consequent\"." },
+        { "front": "English \"sympathetic\": what does it mean?", "back": "Feeling or showing sympathy: \"I gave him a sympathetic look.\" In German: mitfühlend, not \"sympathisch\"." },
+        { "front": "German \"sympathisch\": what does it mean in English?", "back": "Likeable or nice: someone who makes a pleasant impression. Not \"sympathetic\"." },
+        { "front": "English \"provision\": what does it mean?", "back": "A supply, the act of providing, or a clause in a contract or law. In German: Vorrat, Bereitstellung, Klausel, not a sales \"Provision\"." },
+        { "front": "German \"Provision\": what does it mean in English?", "back": "Commission: payment as a percentage of sales, for example for agents or brokers. Not \"provision\"." },
+        { "front": "English \"control\": what does it mean?", "back": "To steer or govern: to have influence or power over something. As a noun: power, or an operating device. In German: steuern, beherrschen." },
+        { "front": "German \"kontrollieren\" in the sense of checking: what is it in English?", "back": "To check: to see whether everything is in order (\"Reisende an der Grenze kontrollieren\" = \"to check travellers at the border\"). \"To control\" rather means to steer or govern." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-meaning", "title": "Wiktionary: meaning", "url": "https://en.wiktionary.org/wiki/meaning", "accessed": "2026-10-02" },
+    { "id": "wiktionary-consequent", "title": "Wiktionary: consequent", "url": "https://en.wiktionary.org/wiki/consequent", "accessed": "2026-10-02" },
+    { "id": "wiktionary-sympathetic", "title": "Wiktionary: sympathetic", "url": "https://en.wiktionary.org/wiki/sympathetic", "accessed": "2026-10-02" },
+    { "id": "wiktionary-provision", "title": "Wiktionary: provision", "url": "https://en.wiktionary.org/wiki/provision", "accessed": "2026-10-02" },
+    { "id": "wiktionary-control", "title": "Wiktionary: control", "url": "https://en.wiktionary.org/wiki/control", "accessed": "2026-10-02" },
+    { "id": "dwds-meinung", "title": "DWDS: Meinung", "url": "https://www.dwds.de/wb/Meinung", "accessed": "2026-10-02" },
+    { "id": "dwds-konsequent", "title": "DWDS: konsequent", "url": "https://www.dwds.de/wb/konsequent", "accessed": "2026-10-02" },
+    { "id": "dwds-sympathisch", "title": "DWDS: sympathisch", "url": "https://www.dwds.de/wb/sympathisch", "accessed": "2026-10-02" },
+    { "id": "dwds-provision", "title": "DWDS: Provision", "url": "https://www.dwds.de/wb/Provision", "accessed": "2026-10-02" },
+    { "id": "dwds-kontrollieren", "title": "DWDS: kontrollieren", "url": "https://www.dwds.de/wb/kontrollieren", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
