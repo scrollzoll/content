@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "tech-nat",
+  "topic": "technologie/netzwerke",
+  "tags": ["nat", "napt", "private-adressen", "rfc1918", "heimnetz", "ipv4"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "NAT: Viele Geräte, eine öffentliche Adresse",
+      "intro": "Im Heimnetz haben Geräte private IP-Adressen, die es so in unzähligen anderen Netzen auch gibt. Erst der Router übersetzt sie in eine Adresse, die im Internet gilt.",
+      "facts": [
+        { "text": "Drei IPv4-Bereiche sind für private Netze reserviert: 10.0.0.0 bis 10.255.255.255 (10/8), 172.16.0.0 bis 172.31.255.255 (172.16/12) und 192.168.0.0 bis 192.168.255.255 (192.168/16). Festgehalten ist das in RFC 1918 von 1996.", "source_ids": ["rfc1918"] },
+        { "text": "Private Adressen darf jeder ohne Absprache mit einer Vergabestelle nutzen. Sie müssen nur im eigenen Netz eindeutig sein, deshalb können viele Netze dieselben Adressen verwenden. Das schont den knappen Vorrat global eindeutiger Adressen.", "source_ids": ["rfc1918"] },
+        { "text": "Im öffentlichen Internet sollen keine Routen zu privaten Adressen führen: Von Internetanbietern wird erwartet, dass ihre Router Routing-Informationen über private Netze herausfiltern. Ein Gerät mit privater Adresse erreicht Ziele außerhalb daher nur über einen Vermittler.", "source_ids": ["rfc1918"] },
+        { "text": "NAT (Network Address Translation) ist ein solcher Vermittler: Ein Router an der Netzgrenze übersetzt zwischen privaten Adressen innen und global eindeutigen Adressen außen, in der Regel ohne dass Nutzer davon etwas merken.", "source_ids": ["rfc3022"] },
+        { "text": "Bei der Variante NAPT teilen sich viele Geräte eine einzige öffentliche Adresse. Der Router ersetzt private Adresse und Port durch seine eigene Adresse und einen von ihm vergebenen Port. Das passt zu Heimnetzen, die vom Anbieter nur eine Adresse bekommen.", "source_ids": ["rfc3022"] },
+        { "text": "Beim klassischen NAT gehen Verbindungen von innen nach außen. In die Gegenrichtung sind sie nur ausnahmsweise möglich, über fest eingetragene Zuordnungen für ausgewählte Geräte.", "source_ids": ["rfc3022"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Adressbereich ist nach RFC 1918 für private Netze reserviert?",
+          "options": ["11.0.0.0/8", "172.32.0.0/16", "192.168.0.0/16", "193.168.0.0/16"],
+          "answer_index": 2,
+          "explanation": "Privat sind 10/8, 172.16/12 (172.16.0.0 bis 172.31.255.255) und 192.168/16. Die anderen drei Bereiche liegen außerhalb davon."
+        },
+        {
+          "question": "Warum können viele Heimnetze dieselben privaten Adressen verwenden?",
+          "options": ["Weil private Adressen nur im eigenen Netz eindeutig sein müssen", "Weil der Internetanbieter sie jede Nacht neu verteilt", "Weil private Adressen verschlüsselt übertragen werden", "Weil jedes Gerät weltweit nur eine Adresse haben kann"],
+          "answer_index": 0,
+          "explanation": "Private Adressen gelten nur innerhalb des eigenen Netzes und werden im öffentlichen Internet nicht geroutet. Deshalb stören sich gleiche Adressen in verschiedenen Netzen nicht."
+        },
+        {
+          "question": "Was tauscht ein NAPT-Router bei einem Paket aus, das ein Gerät ins Internet schickt?",
+          "options": ["Die Zieladresse gegen die Adresse eines DNS-Servers", "Private Absenderadresse und Port gegen seine eigene öffentliche Adresse und einen neuen Port", "Den Inhalt des Pakets gegen eine verschlüsselte Fassung", "Die private Absenderadresse gegen eine andere private Adresse"],
+          "answer_index": 1,
+          "explanation": "NAPT bildet Paare aus privater Adresse und Port auf die öffentliche Adresse des Routers und einen von ihm vergebenen Port ab. So teilen sich viele Geräte eine Adresse."
+        },
+        {
+          "question": "In welche Richtung werden Verbindungen beim klassischen NAT normalerweise aufgebaut?",
+          "options": ["Nur von außen nach innen", "In beide Richtungen ohne Einschränkung", "Von innen nach außen", "Nur zwischen Geräten im selben privaten Netz"],
+          "answer_index": 2,
+          "explanation": "Klassisches NAT ist auf Verbindungen ausgelegt, die aus dem privaten Netz heraus beginnen. Von außen nach innen geht es nur ausnahmsweise über feste Zuordnungen."
+        }
+      ]
+    },
+    "en": {
+      "title": "NAT: Many Devices, One Public Address",
+      "intro": "On a home network, devices have private IP addresses that exist in exactly the same form on countless other networks. Only the router translates them into an address that is valid on the internet.",
+      "facts": [
+        { "text": "Three IPv4 ranges are reserved for private networks: 10.0.0.0 to 10.255.255.255 (10/8), 172.16.0.0 to 172.31.255.255 (172.16/12) and 192.168.0.0 to 192.168.255.255 (192.168/16). This is laid down in RFC 1918 from 1996.", "source_ids": ["rfc1918"] },
+        { "text": "Anyone may use private addresses without coordinating with a registry. They only have to be unique within their own network, so many networks can use the same addresses. This conserves the scarce supply of globally unique addresses.", "source_ids": ["rfc1918"] },
+        { "text": "On the public internet, no routes are supposed to lead to private addresses: internet providers' routers are expected to filter out routing information about private networks. A device with a private address thus reaches outside destinations only through an intermediary.", "source_ids": ["rfc1918"] },
+        { "text": "NAT (Network Address Translation) is such an intermediary: a router at the network border translates between private addresses on the inside and globally unique addresses on the outside, usually without users noticing anything.", "source_ids": ["rfc3022"] },
+        { "text": "With the NAPT variant, many devices share a single public address. The router replaces the private address and port with its own address and a port it assigns. This suits home networks that get only one address from their provider.", "source_ids": ["rfc3022"] },
+        { "text": "With traditional NAT, connections go from the inside to the outside. In the opposite direction they are possible only as an exception, through fixed mappings for selected devices.", "source_ids": ["rfc3022"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which address range is reserved for private networks under RFC 1918?",
+          "options": ["11.0.0.0/8", "172.32.0.0/16", "192.168.0.0/16", "193.168.0.0/16"],
+          "answer_index": 2,
+          "explanation": "The private ranges are 10/8, 172.16/12 (172.16.0.0 to 172.31.255.255) and 192.168/16. The other three ranges lie outside them."
+        },
+        {
+          "question": "Why can many home networks use the same private addresses?",
+          "options": ["Because private addresses only have to be unique within their own network", "Because the internet provider redistributes them every night", "Because private addresses are transmitted in encrypted form", "Because each device can have only one address worldwide"],
+          "answer_index": 0,
+          "explanation": "Private addresses are valid only within their own network and are not routed on the public internet. That is why identical addresses on different networks do not clash."
+        },
+        {
+          "question": "What does a NAPT router swap in a packet that a device sends to the internet?",
+          "options": ["The destination address for the address of a DNS server", "The private sender address and port for its own public address and a new port", "The packet's content for an encrypted version", "The private sender address for another private address"],
+          "answer_index": 1,
+          "explanation": "NAPT maps pairs of private address and port to the router's public address and a port it assigns. That is how many devices share one address."
+        },
+        {
+          "question": "In which direction are connections normally set up with traditional NAT?",
+          "options": ["Only from the outside to the inside", "In both directions without restriction", "From the inside to the outside", "Only between devices on the same private network"],
+          "answer_index": 2,
+          "explanation": "Traditional NAT is designed for connections that start from within the private network. From the outside in, they work only as an exception through fixed mappings."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc1918", "title": "RFC 1918: Address Allocation for Private Internets", "url": "https://www.rfc-editor.org/rfc/rfc1918.html", "accessed": "2026-10-02" },
+    { "id": "rfc3022", "title": "RFC 3022: Traditional IP Network Address Translator (Traditional NAT)", "url": "https://www.rfc-editor.org/rfc/rfc3022.html", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-fable-5-1", "created_at": "2026-10-02" }
+}

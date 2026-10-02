@@ -2,26 +2,6 @@
 # holen sich hier das nächste Thema. Ein Eintrag wird entfernt, sobald eine Einheit dazu existiert.
 # priority: 1 = hoch, 3 = niedrig. Format eines Eintrags bitte beibehalten (zwei Leerzeichen + '- id:').
 queue:
-  - id: tech-tcp-vs-udp
-    topic: technologie/netzwerke
-    hint: "Unterschiede TCP und UDP, typische Einsatzzwecke"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ip-adresse-subnetz
-    topic: technologie/netzwerke
-    hint: "Was eine Subnetzmaske bzw. CIDR-Notation wie /24 bedeutet"
-    format: facts_quiz
-    priority: 1
-  - id: tech-nat
-    topic: technologie/netzwerke
-    hint: "Network Address Translation: warum Heimnetze private Adressen nutzen (RFC 1918)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-dhcp
-    topic: technologie/netzwerke
-    hint: "Wie ein Gerät per DHCP automatisch eine IP-Adresse bekommt (DORA-Ablauf)"
-    format: facts_quiz
-    priority: 1
   - id: tech-http-statuscodes
     topic: technologie/netzwerke
     hint: "Die wichtigsten HTTP-Statuscode-Klassen und Beispiele (200, 301, 404, 500)"
