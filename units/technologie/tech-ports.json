@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "tech-ports",
+  "topic": "technologie/netzwerke",
+  "tags": ["ports", "tcp", "udp", "iana", "well-known-ports", "socket"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Ports: Welcher Dienst hinter der Adresse?",
+      "intro": "Eine IP-Adresse führt zum richtigen Gerät, der Port zum richtigen Programm darauf. Für bekannte Dienste sind feste Portnummern vergeben.",
+      "facts": [
+        { "text": "Eine Portnummer ist eine 16-Bit-Zahl. Im TCP-Header gibt es je ein Feld für Quell- und Zielport, möglich sind damit die Werte 0 bis 65535.", "source_ids": ["rfc9293", "rfc6335"] },
+        { "text": "Ports halten mehrere gleichzeitige Verbindungen zwischen denselben Geräten auseinander und benennen den Dienst. IP-Adresse plus Port heißt Socket; eine TCP-Verbindung wird durch zwei Sockets festgelegt.", "source_ids": ["rfc9293", "rfc6335"] },
+        { "text": "Die IANA teilt Ports in drei Bereiche: System-Ports 0 bis 1023, User-Ports 1024 bis 49151 und dynamische Ports 49152 bis 65535. Die dynamischen werden nie vergeben und dienen kurzzeitig lokalen Programmen.", "source_ids": ["rfc6335"] },
+        { "text": "Im IANA-Register stehen bekannte Dienste auf festen Ports: SSH auf Port 22 und der Domain Name Server (DNS) auf Port 53. Beides sind System-Ports.", "source_ids": ["iana-ports"] },
+        { "text": "Auch Webdienste haben feste Ports: HTTP liegt auf Port 80, HTTPS (HTTP über TLS) auf Port 443. Beide gehören zum Bereich der System-Ports von 0 bis 1023.", "source_ids": ["iana-ports"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Port ist im IANA-Register für HTTPS eingetragen?",
+          "options": ["80", "22", "443", "53"],
+          "answer_index": 2,
+          "explanation": "HTTPS, also HTTP über TLS, ist Port 443 zugeordnet. Port 80 gehört zu HTTP, 22 zu SSH und 53 zum DNS."
+        },
+        {
+          "question": "Welcher Bereich umfasst die System-Ports (Well-Known Ports)?",
+          "options": ["0 bis 1023", "1024 bis 49151", "49152 bis 65535", "0 bis 255"],
+          "answer_index": 0,
+          "explanation": "System-Ports reichen von 0 bis 1023. Danach folgen die User-Ports bis 49151 und die dynamischen Ports bis 65535."
+        },
+        {
+          "question": "Wozu dienen Portnummern?",
+          "options": ["Sie verschlüsseln die Daten einer Verbindung", "Sie vergeben IP-Adressen an Geräte", "Sie messen die Laufzeit von Paketen", "Sie trennen gleichzeitige Verbindungen und benennen den Dienst"],
+          "answer_index": 3,
+          "explanation": "Ports unterscheiden mehrere Verbindungen zwischen denselben Endpunkten und zeigen, welcher Dienst gemeint ist. Verschlüsselung, Adressvergabe und Messung sind andere Aufgaben."
+        },
+        {
+          "question": "Wie groß ist das Feld für die Portnummer im TCP-Header?",
+          "options": ["8 Bit", "16 Bit", "32 Bit", "48 Bit"],
+          "answer_index": 1,
+          "explanation": "Ports sind 16-Bit-Zahlen und reichen daher von 0 bis 65535."
+        }
+      ]
+    },
+    "en": {
+      "title": "Ports: Which Service Sits Behind the Address?",
+      "intro": "An IP address leads to the right device, the port to the right program on it. Fixed port numbers are assigned for well-known services.",
+      "facts": [
+        { "text": "A port number is a 16-bit value. The TCP header has one field each for source and destination port, which allows values from 0 to 65535.", "source_ids": ["rfc9293", "rfc6335"] },
+        { "text": "Ports keep several simultaneous connections between the same devices apart and name the service. An IP address plus a port is called a socket; a TCP connection is defined by two sockets.", "source_ids": ["rfc9293", "rfc6335"] },
+        { "text": "IANA divides ports into three ranges: system ports 0 to 1023, user ports 1024 to 49151 and dynamic ports 49152 to 65535. Dynamic ports are never assigned and serve local programs briefly.", "source_ids": ["rfc6335"] },
+        { "text": "The IANA registry lists well-known services on fixed ports: SSH on port 22 and the Domain Name Server (DNS) on port 53. Both are system ports.", "source_ids": ["iana-ports"] },
+        { "text": "Web services also have fixed ports: HTTP is on port 80, HTTPS (HTTP over TLS) on port 443. Both fall within the system port range of 0 to 1023.", "source_ids": ["iana-ports"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which port is registered with IANA for HTTPS?",
+          "options": ["80", "22", "443", "53"],
+          "answer_index": 2,
+          "explanation": "HTTPS, that is HTTP over TLS, is assigned to port 443. Port 80 belongs to HTTP, 22 to SSH and 53 to DNS."
+        },
+        {
+          "question": "Which range covers the system ports (well-known ports)?",
+          "options": ["0 to 1023", "1024 to 49151", "49152 to 65535", "0 to 255"],
+          "answer_index": 0,
+          "explanation": "System ports run from 0 to 1023. They are followed by user ports up to 49151 and dynamic ports up to 65535."
+        },
+        {
+          "question": "What are port numbers used for?",
+          "options": ["They encrypt the data of a connection", "They assign IP addresses to devices", "They measure the travel time of packets", "They separate simultaneous connections and name the service"],
+          "answer_index": 3,
+          "explanation": "Ports distinguish several connections between the same endpoints and show which service is meant. Encryption, address assignment and measurement are other tasks."
+        },
+        {
+          "question": "How large is the port number field in the TCP header?",
+          "options": ["8 bits", "16 bits", "32 bits", "48 bits"],
+          "answer_index": 1,
+          "explanation": "Ports are 16-bit values and therefore range from 0 to 65535."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc6335", "title": "RFC 6335: IANA Procedures for the Management of the Service Name and Transport Protocol Port Number Registry", "url": "https://www.rfc-editor.org/rfc/rfc6335", "accessed": "2026-10-02" },
+    { "id": "rfc9293", "title": "RFC 9293: Transmission Control Protocol (TCP)", "url": "https://www.rfc-editor.org/rfc/rfc9293", "accessed": "2026-10-02" },
+    { "id": "iana-ports", "title": "IANA Service Name and Transport Protocol Port Number Registry", "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

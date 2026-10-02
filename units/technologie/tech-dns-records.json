@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-dns-records",
+  "topic": "technologie/netzwerke",
+  "tags": ["dns", "a-record", "aaaa", "cname", "mx", "txt"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "DNS-Einträge: A, AAAA, CNAME, MX, TXT",
+      "intro": "Das DNS speichert zu jedem Namen Einträge unterschiedlichen Typs. Der Typ legt fest, was die Antwort bedeutet: eine Adresse, ein Alias, ein Mailserver oder Text.",
+      "facts": [
+        { "text": "Ein A-Eintrag ordnet einem Namen eine IPv4-Adresse zu, also eine 32-Bit-Adresse. Er ist der klassische Eintrag, um einen Rechnernamen in eine Adresse aufzulösen.", "source_ids": ["rfc1035"] },
+        { "text": "Ein AAAA-Eintrag ist das Gegenstück für IPv6 und speichert eine 128-Bit-Adresse. Hat ein Rechner mehrere IPv6-Adressen, braucht jede Adresse einen eigenen AAAA-Eintrag.", "source_ids": ["rfc3596"] },
+        { "text": "Ein CNAME-Eintrag macht einen Namen zum Alias: Er verweist auf den kanonischen, also eigentlichen Namen. Die Adresse wird dann über den Zielnamen aufgelöst.", "source_ids": ["rfc1035"] },
+        { "text": "Ein MX-Eintrag (Mail Exchange) nennt die Mailserver, die E-Mails für eine Domain annehmen. Jeder Eintrag trägt einen Präferenzwert, mit dem sich Server nach Vorrang ordnen lassen.", "source_ids": ["rfc1035"] },
+        { "text": "Ein TXT-Eintrag enthält Textzeichenfolgen. Was der Text bedeutet, hängt von der Domain ab, bei der er steht.", "source_ids": ["rfc1035"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Eintragstyp speichert eine IPv6-Adresse?",
+          "options": ["A", "AAAA", "CNAME", "MX"],
+          "answer_index": 1,
+          "explanation": "AAAA speichert eine 128-Bit-IPv6-Adresse. Der A-Eintrag ist für 32-Bit-IPv4-Adressen gedacht."
+        },
+        {
+          "question": "Wofür dient ein MX-Eintrag?",
+          "options": ["Er nennt Mailserver, die E-Mails der Domain annehmen", "Er macht einen Namen zum Alias eines anderen Namens", "Er speichert die IPv4-Adresse eines Webservers", "Er enthält frei wählbaren Text"],
+          "answer_index": 0,
+          "explanation": "MX steht für Mail Exchange. Der Eintrag verweist auf Mailserver und gibt per Präferenzwert an, in welcher Reihenfolge sie bevorzugt werden."
+        },
+        {
+          "question": "Mit welchem Eintragstyp wird ein Name zum Alias eines anderen Namens?",
+          "options": ["TXT", "MX", "A", "CNAME"],
+          "answer_index": 3,
+          "explanation": "CNAME bedeutet canonical name: Der Alias verweist auf den eigentlichen Namen, über den dann die Adresse aufgelöst wird."
+        }
+      ]
+    },
+    "en": {
+      "title": "DNS Records: A, AAAA, CNAME, MX, TXT",
+      "intro": "DNS stores records of different types for each name. The type determines what the answer means: an address, an alias, a mail server or text.",
+      "facts": [
+        { "text": "An A record maps a name to an IPv4 address, a 32-bit address. It is the classic record for resolving a host name to an address.", "source_ids": ["rfc1035"] },
+        { "text": "An AAAA record is the IPv6 counterpart and stores a 128-bit address. If a host has several IPv6 addresses, each address needs its own AAAA record.", "source_ids": ["rfc3596"] },
+        { "text": "A CNAME record turns a name into an alias: it points to the canonical, that is the actual, name. The address is then resolved via the target name.", "source_ids": ["rfc1035"] },
+        { "text": "An MX record (Mail Exchange) names the mail servers that accept email for a domain. Each record carries a preference value that lets servers be ranked by priority.", "source_ids": ["rfc1035"] },
+        { "text": "A TXT record holds text strings. What the text means depends on the domain where it is found.", "source_ids": ["rfc1035"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which record type stores an IPv6 address?",
+          "options": ["A", "AAAA", "CNAME", "MX"],
+          "answer_index": 1,
+          "explanation": "AAAA stores a 128-bit IPv6 address. The A record is meant for 32-bit IPv4 addresses."
+        },
+        {
+          "question": "What is an MX record used for?",
+          "options": ["It names mail servers that accept the domain's email", "It makes a name an alias of another name", "It stores the IPv4 address of a web server", "It holds free-form text"],
+          "answer_index": 0,
+          "explanation": "MX stands for Mail Exchange. The record points to mail servers and uses a preference value to say in which order they are preferred."
+        },
+        {
+          "question": "Which record type makes a name an alias of another name?",
+          "options": ["TXT", "MX", "A", "CNAME"],
+          "answer_index": 3,
+          "explanation": "CNAME means canonical name: the alias points to the actual name, through which the address is then resolved."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "rfc1035", "title": "RFC 1035: Domain Names - Implementation and Specification", "url": "https://www.rfc-editor.org/rfc/rfc1035", "accessed": "2026-10-02" },
+    { "id": "rfc3596", "title": "RFC 3596: DNS Extensions to Support IP Version 6", "url": "https://www.rfc-editor.org/rfc/rfc3596", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
