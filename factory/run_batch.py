@@ -159,6 +159,10 @@ def main() -> int:
         log(f"übersprungen: Tageslimit erreicht ({runs_today}/{MAX_RUNS_PER_DAY})")
         return 0
 
+    if not DRY_RUN and not os.environ.get("GH_TOKEN"):
+        log("Fehler: GH_TOKEN fehlt (siehe factory/README.md, Schritt 3)")
+        return 1
+
     # 1. Stand von main holen
     if not DRY_RUN:
         sh("git", "fetch", "--quiet", "origin", BASE_BRANCH)
