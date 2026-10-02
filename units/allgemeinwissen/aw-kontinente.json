@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "aw-kontinente",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["kontinente", "flaeche", "bevoelkerung", "geografie"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die sieben Kontinente im Vergleich",
+      "intro": "Nach dem verbreiteten Sieben-Kontinente-Modell unterscheiden sich Fläche und Einwohnerzahl enorm. Die Bevölkerungszahlen sind UN-Schätzungen für 2021.",
+      "facts": [
+        { "text": "Asien ist mit rund 44,6 Millionen km² der größte Kontinent und macht etwa 30 % der Landfläche der Erde aus.", "source_ids": ["wiki-continent", "wiki-asia"] },
+        { "text": "Afrika ist mit rund 30,4 Millionen km² der zweitgrößte Kontinent, gefolgt von Nordamerika (rund 24,2 Mio. km²) und Südamerika (rund 17,8 Mio. km²).", "source_ids": ["wiki-continent"] },
+        { "text": "Asien hat etwa 4,7 Milliarden Einwohner, rund 59 % der Weltbevölkerung. Afrika folgt mit etwa 1,4 Milliarden (rund 18 %).", "source_ids": ["wiki-continent"] },
+        { "text": "Antarktika ist mit 14,2 Millionen km² der fünftgrößte Kontinent, hat aber keine ständigen Einwohner, nur Forschungsstationen.", "source_ids": ["wiki-continent", "wiki-antarctica"] },
+        { "text": "Ozeanien ist mit rund 8,5 Millionen km² der flächenmäßig kleinste Kontinent, Europa kommt auf rund 10 Millionen km².", "source_ids": ["wiki-continent"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Kontinent ist flächenmäßig der größte?",
+          "options": ["Afrika", "Asien", "Nordamerika", "Antarktika"],
+          "answer_index": 1,
+          "explanation": "Asien misst rund 44,6 Millionen km² und ist damit deutlich größer als Afrika mit rund 30,4 Millionen km²."
+        },
+        {
+          "question": "Welcher Kontinent ist flächenmäßig der kleinste?",
+          "options": ["Europa", "Antarktika", "Südamerika", "Ozeanien"],
+          "answer_index": 3,
+          "explanation": "Ozeanien hat rund 8,5 Millionen km², Europa rund 10 Millionen km²."
+        },
+        {
+          "question": "Welcher Kontinent hat nach Asien die meisten Einwohner?",
+          "options": ["Europa", "Nordamerika", "Afrika", "Südamerika"],
+          "answer_index": 2,
+          "explanation": "Afrika hat etwa 1,4 Milliarden Einwohner, Europa nur etwa 0,75 Milliarden."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Seven Continents Compared",
+      "intro": "In the common seven-continent model, area and population differ enormously. Population figures are UN estimates for 2021.",
+      "facts": [
+        { "text": "At about 44.6 million km², Asia is the largest continent and makes up roughly 30% of Earth's land area.", "source_ids": ["wiki-continent", "wiki-asia"] },
+        { "text": "Africa is the second-largest continent at about 30.4 million km², followed by North America (about 24.2 million km²) and South America (about 17.8 million km²).", "source_ids": ["wiki-continent"] },
+        { "text": "Asia has about 4.7 billion inhabitants, roughly 59% of the world population. Africa follows with about 1.4 billion (roughly 18%).", "source_ids": ["wiki-continent"] },
+        { "text": "At 14.2 million km², Antarctica is the fifth-largest continent but has no permanent residents, only research stations.", "source_ids": ["wiki-continent", "wiki-antarctica"] },
+        { "text": "Oceania is the smallest continent by area at about 8.5 million km²; Europe covers about 10 million km².", "source_ids": ["wiki-continent"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which continent is the largest by area?",
+          "options": ["Africa", "Asia", "North America", "Antarctica"],
+          "answer_index": 1,
+          "explanation": "Asia measures about 44.6 million km², clearly larger than Africa at about 30.4 million km²."
+        },
+        {
+          "question": "Which continent is the smallest by area?",
+          "options": ["Europe", "Antarctica", "South America", "Oceania"],
+          "answer_index": 3,
+          "explanation": "Oceania has about 8.5 million km², Europe about 10 million km²."
+        },
+        {
+          "question": "Which continent has the most inhabitants after Asia?",
+          "options": ["Europe", "North America", "Africa", "South America"],
+          "answer_index": 2,
+          "explanation": "Africa has about 1.4 billion inhabitants, Europe only about 0.75 billion."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiki-continent", "title": "Wikipedia: Continent (Tabelle mit UN-Schätzungen 2021)", "url": "https://en.wikipedia.org/wiki/Continent", "accessed": "2026-10-02" },
+    { "id": "wiki-asia", "title": "Wikipedia: Asia", "url": "https://en.wikipedia.org/wiki/Asia", "accessed": "2026-10-02" },
+    { "id": "wiki-antarctica", "title": "Wikipedia: Antarctica", "url": "https://en.wikipedia.org/wiki/Antarctica", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

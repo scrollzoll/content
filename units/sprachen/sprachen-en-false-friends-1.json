@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-false-friends-1",
+  "topic": "sprachen/englisch",
+  "tags": ["false-friends", "wortschatz", "deutsch-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Falsche Freunde Deutsch–Englisch (1)",
+      "intro": "Diese Wortpaare sehen ähnlich aus, bedeuten aber Verschiedenes.",
+      "cards": [
+        { "front": "Englisch „become“: Was heißt es?", "back": "werden (z. B. „She became a doctor“). Nicht „bekommen“." },
+        { "front": "Deutsch „bekommen“: Was heißt es auf Englisch?", "back": "to get oder to receive, also etwas in Besitz bekommen. Nicht „become“." },
+        { "front": "Englisch „eventually“: Was heißt es?", "back": "schließlich, am Ende, nach einiger Zeit. Nicht „eventuell“." },
+        { "front": "Deutsch „eventuell“: Was heißt es auf Englisch?", "back": "possibly oder perhaps: etwas, das unter Umständen eintreten kann. Nicht „eventually“." },
+        { "front": "Englisch „gift“: Was heißt es?", "back": "Geschenk, etwas, das man freiwillig gibt. Auch: Begabung, Talent. Nicht „Gift“ im Sinne von Giftstoff." },
+        { "front": "Deutsch „Gift“: Was heißt es auf Englisch?", "back": "poison. Beide Wörter gehen auf „geben“ zurück, doch im Deutschen wandelte sich die Bedeutung von „Gabe“ zu „Giftstoff“." },
+        { "front": "Englisch „actual“: Was heißt es?", "back": "tatsächlich, wirklich vorhanden (z. B. „the actual cost“). Nicht „aktuell“." },
+        { "front": "Deutsch „aktuell“: Was heißt es auf Englisch?", "back": "current oder up to date: gegenwärtig und zeitnah. Nicht „actual“." },
+        { "front": "Englisch „sensible“: Was heißt es?", "back": "vernünftig, besonnen („a sensible decision“). Nicht „sensibel“." },
+        { "front": "Deutsch „sensibel“: Was heißt es auf Englisch?", "back": "sensitive: feinfühlig, empfindlich. Nicht „sensible“." }
+      ]
+    },
+    "en": {
+      "title": "German–English False Friends (1)",
+      "intro": "These word pairs look alike but mean different things.",
+      "cards": [
+        { "front": "English \"become\": what does it mean?", "back": "To turn into or begin to be (e.g. \"She became a doctor\"). In German: werden, not \"bekommen\"." },
+        { "front": "German \"bekommen\": what does it mean in English?", "back": "To get or to receive, i.e. to come into possession of something. Not \"become\"." },
+        { "front": "English \"eventually\": what does it mean?", "back": "In the end, at some later time. In German: schließlich, not \"eventuell\"." },
+        { "front": "German \"eventuell\": what does it mean in English?", "back": "Possibly or perhaps: something that may occur under certain circumstances. Not \"eventually\"." },
+        { "front": "English \"gift\": what does it mean?", "back": "Something given voluntarily, a present. Also a talent. In German: Geschenk, not \"Gift\" (poison)." },
+        { "front": "German \"Gift\": what does it mean in English?", "back": "Poison. Both words go back to \"give\", but in German the meaning shifted from \"something given\" to \"poisonous substance\"." },
+        { "front": "English \"actual\": what does it mean?", "back": "Real, existing in fact (e.g. \"the actual cost\"). In German: tatsächlich, not \"aktuell\"." },
+        { "front": "German \"aktuell\": what does it mean in English?", "back": "Current or up to date: relating to the present moment. Not \"actual\"." },
+        { "front": "English \"sensible\": what does it mean?", "back": "Showing good sense, reasonable (\"a sensible decision\"). In German: vernünftig, not \"sensibel\"." },
+        { "front": "German \"sensibel\": what does it mean in English?", "back": "Sensitive: delicate in feeling or reaction. Not \"sensible\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-become", "title": "Wiktionary: become", "url": "https://en.wiktionary.org/wiki/become", "accessed": "2026-10-02" },
+    { "id": "wiktionary-eventually", "title": "Wiktionary: eventually", "url": "https://en.wiktionary.org/wiki/eventually", "accessed": "2026-10-02" },
+    { "id": "wiktionary-gift", "title": "Wiktionary: gift", "url": "https://en.wiktionary.org/wiki/gift", "accessed": "2026-10-02" },
+    { "id": "wiktionary-actual", "title": "Wiktionary: actual", "url": "https://en.wiktionary.org/wiki/actual", "accessed": "2026-10-02" },
+    { "id": "wiktionary-sensible", "title": "Wiktionary: sensible", "url": "https://en.wiktionary.org/wiki/sensible", "accessed": "2026-10-02" },
+    { "id": "dwds-bekommen", "title": "DWDS: bekommen", "url": "https://www.dwds.de/wb/bekommen", "accessed": "2026-10-02" },
+    { "id": "dwds-eventuell", "title": "DWDS: eventuell", "url": "https://www.dwds.de/wb/eventuell", "accessed": "2026-10-02" },
+    { "id": "dwds-gift", "title": "DWDS: Gift", "url": "https://www.dwds.de/wb/Gift", "accessed": "2026-10-02" },
+    { "id": "dwds-aktuell", "title": "DWDS: aktuell", "url": "https://www.dwds.de/wb/aktuell", "accessed": "2026-10-02" },
+    { "id": "dwds-sensibel", "title": "DWDS: sensibel", "url": "https://www.dwds.de/wb/sensibel", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}

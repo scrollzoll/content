@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "ge-mesopotamien",
+  "topic": "geschichte/antike",
+  "tags": ["mesopotamien", "keilschrift", "uruk", "hammurapi", "babylon"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 170,
+  "locales": {
+    "de": {
+      "title": "Mesopotamien: Keilschrift, Uruk und der Codex Hammurapi",
+      "intro": "Im Land zwischen Euphrat und Tigris entstanden einige der ersten Städte und Schriftzeugnisse der Menschheit.",
+      "facts": [
+        { "text": "Der Name Mesopotamien kommt aus dem Griechischen und bedeutet „zwischen zwei Flüssen“, gemeint sind Euphrat und Tigris. Das Gebiet entspricht grob dem heutigen Irak.", "source_ids": ["worldhistory-mesopotamia", "wiki-mesopotamia"] },
+        { "text": "Uruk, heute Warka im Irak, gehört zu den frühesten Städten. Um 3100 v. Chr. lebten dort vermutlich bis zu 50.000 Menschen, damals wohl die größte Stadt der Welt.", "source_ids": ["wiki-uruk"] },
+        { "text": "Die Keilschrift entstand aus einer Bilderschrift gegen Ende des 4. Jahrtausends v. Chr. Die ältesten bekannten Aufzeichnungen stammen aus Uruk, um 3300 v. Chr.", "source_ids": ["wiki-cuneiform", "wiki-uruk"] },
+        { "text": "Ab der Mitte des 3. Jahrtausends v. Chr. drückte man einen keilförmig zugespitzten Griffel in weichen Ton. Mit Keilschrift schrieb man viele Sprachen, darunter Sumerisch, Akkadisch und Hethitisch.", "source_ids": ["wiki-cuneiform"] },
+        { "text": "Der Codex Hammurapi entstand zwischen etwa 1755 und 1750 v. Chr. in altbabylonischer Zeit. Er steht auf einer rund 2,25 m hohen Stele aus Basalt und gilt als der längste und am besten erhaltene Rechtstext des alten Vorderen Orients.", "source_ids": ["wiki-hammurabi", "wiki-mesopotamia"] },
+        { "text": "Die Stele wurde zwischen Dezember 1901 und Januar 1902 in Susa im heutigen Iran gefunden. Heute steht sie im Louvre in Paris.", "source_ids": ["wiki-hammurabi"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was bedeutet der Name „Mesopotamien“ auf Griechisch?",
+          "options": ["Zwischen zwei Flüssen", "Land der Könige", "Land der aufgehenden Sonne", "Heiliges Tal"],
+          "answer_index": 0,
+          "explanation": "Gemeint sind die Flüsse Euphrat und Tigris."
+        },
+        {
+          "question": "Womit schrieb man Keilschrift ab der Mitte des 3. Jahrtausends v. Chr.?",
+          "options": ["Mit einem Pinsel auf Papyrus", "Mit einem keilförmigen Griffel auf Tontafeln", "Mit einer Feder auf Pergament", "Mit einem Meißel auf Holz"],
+          "answer_index": 1,
+          "explanation": "Der Griffel wurde in weichen Ton gedrückt und hinterließ keilförmige Eindrücke."
+        },
+        {
+          "question": "Aus welchem Material besteht die Stele mit dem Codex Hammurapi?",
+          "options": ["Marmor", "Sandstein", "Basalt", "Bronze"],
+          "answer_index": 2,
+          "explanation": "Die rund 2,25 m hohe Stele besteht aus Basalt."
+        }
+      ]
+    },
+    "en": {
+      "title": "Mesopotamia: Cuneiform, Uruk and the Code of Hammurabi",
+      "intro": "In the land between the Euphrates and the Tigris arose some of humanity's first cities and written records.",
+      "facts": [
+        { "text": "The name Mesopotamia comes from Greek and means \"between two rivers\", referring to the Euphrates and the Tigris. The region corresponds roughly to modern Iraq.", "source_ids": ["worldhistory-mesopotamia", "wiki-mesopotamia"] },
+        { "text": "Uruk, today Warka in Iraq, was one of the earliest cities. Around 3100 BC it probably had up to 50,000 inhabitants, then likely the largest city in the world.", "source_ids": ["wiki-uruk"] },
+        { "text": "Cuneiform developed from pictographic proto-writing in the late 4th millennium BC. The oldest known records come from Uruk, around 3300 BC.", "source_ids": ["wiki-cuneiform", "wiki-uruk"] },
+        { "text": "From the mid-3rd millennium BC, scribes pressed a wedge-tipped stylus into soft clay. Many languages were written in cuneiform, including Sumerian, Akkadian and Hittite.", "source_ids": ["wiki-cuneiform"] },
+        { "text": "The Code of Hammurabi was composed between about 1755 and 1750 BC, in the Old Babylonian period. It stands on a basalt stele about 2.25 m tall and is regarded as the longest and best-preserved legal text of the ancient Near East.", "source_ids": ["wiki-hammurabi", "wiki-mesopotamia"] },
+        { "text": "The stele was found between December 1901 and January 1902 at Susa in present-day Iran. Today it stands in the Louvre in Paris.", "source_ids": ["wiki-hammurabi"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does the name \"Mesopotamia\" mean in Greek?",
+          "options": ["Between two rivers", "Land of kings", "Land of the rising sun", "Holy valley"],
+          "answer_index": 0,
+          "explanation": "It refers to the Euphrates and Tigris rivers."
+        },
+        {
+          "question": "What was cuneiform written with from the mid-3rd millennium BC?",
+          "options": ["A brush on papyrus", "A wedge-shaped stylus on clay tablets", "A quill on parchment", "A chisel on wood"],
+          "answer_index": 1,
+          "explanation": "The stylus was pressed into soft clay and left wedge-shaped impressions."
+        },
+        {
+          "question": "What material is the stele with the Code of Hammurabi made of?",
+          "options": ["Marble", "Sandstone", "Basalt", "Bronze"],
+          "answer_index": 2,
+          "explanation": "The stele, about 2.25 m tall, is made of basalt."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "worldhistory-mesopotamia", "title": "World History Encyclopedia: Mesopotamia", "url": "https://www.worldhistory.org/Mesopotamia/", "accessed": "2026-10-02" },
+    { "id": "wiki-mesopotamia", "title": "Wikipedia: Mesopotamia", "url": "https://en.wikipedia.org/wiki/Mesopotamia", "accessed": "2026-10-02" },
+    { "id": "wiki-uruk", "title": "Wikipedia: Uruk", "url": "https://en.wikipedia.org/wiki/Uruk", "accessed": "2026-10-02" },
+    { "id": "wiki-cuneiform", "title": "Wikipedia: Cuneiform", "url": "https://en.wikipedia.org/wiki/Cuneiform", "accessed": "2026-10-02" },
+    { "id": "wiki-hammurabi", "title": "Wikipedia: Code of Hammurabi", "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi", "accessed": "2026-10-02" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-02" }
+}
