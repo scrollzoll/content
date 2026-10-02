@@ -622,3 +622,788 @@ queue:
     hint: "Verben mit -ing oder to-Infinitiv: enjoy doing vs. want to do"
     format: facts_quiz
     priority: 2
+  - id: tech-arp
+    topic: technologie/netzwerke
+    hint: "ARP: wie IP-Adressen im LAN zu MAC-Adressen aufgelöst werden"
+    format: facts_quiz
+    priority: 2
+  - id: tech-vlan
+    topic: technologie/netzwerke
+    hint: "VLANs: logische Trennung eines physischen Netzes, 802.1Q-Tagging"
+    format: facts_quiz
+    priority: 2
+  - id: tech-mtu-fragmentierung
+    topic: technologie/netzwerke
+    hint: "MTU, Fragmentierung und warum 1500 Byte so verbreitet sind"
+    format: facts_quiz
+    priority: 2
+  - id: tech-dnssec
+    topic: technologie/netzwerke
+    hint: "DNSSEC: Signaturen gegen gefälschte DNS-Antworten"
+    format: facts_quiz
+    priority: 2
+  - id: tech-doh-dot
+    topic: technologie/netzwerke
+    hint: "DNS over HTTPS und DNS over TLS: Zweck und Kritik"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ipv6-einfuehrung
+    topic: technologie/netzwerke
+    hint: "Warum IPv6 nötig wurde: Erschöpfung der IPv4-Adressen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-sd-wan
+    topic: technologie/netzwerke
+    hint: "SD-WAN: softwaregesteuerte Standortvernetzung statt MPLS"
+    format: facts_quiz
+    priority: 2
+  - id: tech-proxy-reverse-proxy
+    topic: technologie/netzwerke
+    hint: "Forward Proxy vs. Reverse Proxy"
+    format: facts_quiz
+    priority: 2
+  - id: tech-anycast
+    topic: technologie/netzwerke
+    hint: "Anycast: eine IP-Adresse an vielen Orten, Einsatz bei DNS und CDN"
+    format: facts_quiz
+    priority: 2
+  - id: tech-glasfaser
+    topic: technologie/netzwerke
+    hint: "Glasfaser vs. Kupfer: FTTH, FTTC, Vectoring"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ntp
+    topic: technologie/netzwerke
+    hint: "Network Time Protocol: warum genaue Uhrzeit für Netzwerke wichtig ist"
+    format: facts_quiz
+    priority: 2
+  - id: tech-snmp-monitoring
+    topic: technologie/netzwerke
+    hint: "Netzwerk-Monitoring: SNMP, Flow-Daten und Telemetrie"
+    format: facts_quiz
+    priority: 2
+  - id: tech-mpls
+    topic: technologie/netzwerke
+    hint: "MPLS: Label-basierte Weiterleitung in Provider-Netzen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ospf
+    topic: technologie/netzwerke
+    hint: "OSPF: Link-State-Routing innerhalb eines Unternehmensnetzes"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ethernet
+    topic: technologie/netzwerke
+    hint: "Ethernet: Entstehung, Frames und Geschwindigkeitsstufen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-bluetooth
+    topic: technologie/netzwerke
+    hint: "Bluetooth und Bluetooth Low Energy: Reichweite und Einsatz"
+    format: facts_quiz
+    priority: 2
+  - id: tech-nfc-rfid
+    topic: technologie/netzwerke
+    hint: "NFC und RFID: Unterschiede und Anwendungen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-satelliteninternet
+    topic: technologie/netzwerke
+    hint: "Satelliteninternet: geostationär vs. erdnahe Umlaufbahn (LEO), Latenz"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ipv4-adressklassen
+    topic: technologie/netzwerke
+    hint: "IPv4-Adressbereiche: privat, Loopback, Link-Local, Multicast"
+    format: facts_quiz
+    priority: 2
+  - id: tech-http-cookies-sicherheit
+    topic: technologie/netzwerke
+    hint: "Cookie-Attribute Secure, HttpOnly und SameSite"
+    format: facts_quiz
+    priority: 2
+  - id: tech-email-protokolle
+    topic: technologie/netzwerke
+    hint: "E-Mail-Protokolle: SMTP, IMAP, POP3"
+    format: facts_quiz
+    priority: 2
+  - id: tech-spf-dkim-dmarc
+    topic: technologie/netzwerke
+    hint: "SPF, DKIM und DMARC gegen gefälschte Absender"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-networking-peering
+    topic: technologie/netzwerke
+    hint: "Peering und Transit: wie Netzbetreiber Daten austauschen, Rolle von Internetknoten wie DE-CIX"
+    format: facts_quiz
+    priority: 2
+  - id: tech-netzneutralitaet
+    topic: technologie/netzwerke
+    hint: "Netzneutralität: Begriff und EU-Regeln"
+    format: facts_quiz
+    priority: 2
+  - id: tech-mesh-wlan
+    topic: technologie/netzwerke
+    hint: "Mesh-WLAN: wie mehrere Zugangspunkte ein Netz bilden"
+    format: facts_quiz
+    priority: 2
+  - id: tech-zero-day
+    topic: technologie/sicherheit
+    hint: "Zero-Day-Schwachstellen: Begriff und Umgang"
+    format: facts_quiz
+    priority: 2
+  - id: tech-patch-management
+    topic: technologie/sicherheit
+    hint: "Patch-Management: warum zeitnahe Updates schützen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-supply-chain-angriffe
+    topic: technologie/sicherheit
+    hint: "Supply-Chain-Angriffe: Beispiele und Gegenmaßnahmen wie SBOM"
+    format: facts_quiz
+    priority: 2
+  - id: tech-malware-arten
+    topic: technologie/sicherheit
+    hint: "Malware-Arten: Virus, Wurm, Trojaner, Spyware"
+    format: facts_quiz
+    priority: 2
+  - id: tech-botnetze
+    topic: technologie/sicherheit
+    hint: "Botnetze: Aufbau und Einsatz für Angriffe"
+    format: facts_quiz
+    priority: 2
+  - id: tech-mitm
+    topic: technologie/sicherheit
+    hint: "Man-in-the-Middle-Angriffe und Schutz durch TLS"
+    format: facts_quiz
+    priority: 2
+  - id: tech-credential-stuffing
+    topic: technologie/sicherheit
+    hint: "Credential Stuffing und warum Passwort-Wiederverwendung gefährlich ist"
+    format: facts_quiz
+    priority: 2
+  - id: tech-passwortmanager
+    topic: technologie/sicherheit
+    hint: "Passwortmanager: wie sie funktionieren und Risiken"
+    format: facts_quiz
+    priority: 2
+  - id: tech-hashfunktionen
+    topic: technologie/sicherheit
+    hint: "Kryptografische Hashfunktionen: Eigenschaften, SHA-256"
+    format: facts_quiz
+    priority: 2
+  - id: tech-digitale-signatur
+    topic: technologie/sicherheit
+    hint: "Digitale Signaturen: wie sie Echtheit und Unverfälschtheit belegen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-post-quanten-kryptografie
+    topic: technologie/sicherheit
+    hint: "Post-Quanten-Kryptografie: warum und NIST-Standards von 2024"
+    format: facts_quiz
+    priority: 2
+  - id: tech-pentest
+    topic: technologie/sicherheit
+    hint: "Penetrationstests: Ziel, Ablauf, Abgrenzung zu Schwachstellenscans"
+    format: facts_quiz
+    priority: 2
+  - id: tech-bug-bounty
+    topic: technologie/sicherheit
+    hint: "Bug-Bounty-Programme und Responsible Disclosure"
+    format: facts_quiz
+    priority: 2
+  - id: tech-incident-response
+    topic: technologie/sicherheit
+    hint: "Incident Response: Phasen nach NIST"
+    format: facts_quiz
+    priority: 2
+  - id: tech-mitre-attack
+    topic: technologie/sicherheit
+    hint: "MITRE ATT&CK: Wissensbasis über Angreifer-Taktiken"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ztna-vs-vpn
+    topic: technologie/sicherheit
+    hint: "ZTNA vs. VPN: Zugriff auf Anwendungen statt Netze"
+    format: facts_quiz
+    priority: 2
+  - id: tech-casb-swg
+    topic: technologie/sicherheit
+    hint: "Secure Web Gateway und CASB: Schutz bei Web- und Cloud-Nutzung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-dlp
+    topic: technologie/sicherheit
+    hint: "Data Loss Prevention: Datenabfluss erkennen und verhindern"
+    format: facts_quiz
+    priority: 2
+  - id: tech-sandboxing
+    topic: technologie/sicherheit
+    hint: "Sandboxing zur Analyse verdächtiger Dateien"
+    format: facts_quiz
+    priority: 2
+  - id: tech-bsi-grundschutz
+    topic: technologie/sicherheit
+    hint: "BSI IT-Grundschutz: Zweck und Aufbau"
+    format: facts_quiz
+    priority: 2
+  - id: tech-iso-27001
+    topic: technologie/sicherheit
+    hint: "ISO/IEC 27001: Informationssicherheits-Managementsystem"
+    format: facts_quiz
+    priority: 2
+  - id: tech-deepfakes
+    topic: technologie/sicherheit
+    hint: "Deepfakes: Risiken und Erkennungsmerkmale"
+    format: facts_quiz
+    priority: 2
+  - id: tech-sim-swapping
+    topic: technologie/sicherheit
+    hint: "SIM-Swapping und warum SMS als zweiter Faktor schwach ist"
+    format: facts_quiz
+    priority: 2
+  - id: tech-wlan-sicherheit
+    topic: technologie/sicherheit
+    hint: "WLAN-Verschlüsselung: WEP, WPA2, WPA3"
+    format: facts_quiz
+    priority: 2
+  - id: tech-browser-sicherheit
+    topic: technologie/sicherheit
+    hint: "Sicher surfen: Updates, Erweiterungen, HTTPS-Only-Modus"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cyber-resilience-act
+    topic: technologie/sicherheit
+    hint: "EU Cyber Resilience Act: Pflichten für Produkte mit digitalen Elementen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-honeypots
+    topic: technologie/sicherheit
+    hint: "Honeypots: Fallen für Angreifer"
+    format: facts_quiz
+    priority: 2
+  - id: tech-microsegmentierung
+    topic: technologie/sicherheit
+    hint: "Mikrosegmentierung: Netzwerke in kleine Zonen teilen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-arten
+    topic: technologie/cloud
+    hint: "Public, Private, Hybrid und Multi-Cloud"
+    format: facts_quiz
+    priority: 2
+  - id: tech-aws-grundlagen
+    topic: technologie/cloud
+    hint: "Amazon Web Services: Entstehung (2006) und Kerndienste EC2 und S3"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-markt
+    topic: technologie/cloud
+    hint: "Die größten Cloud-Anbieter und europäische Alternativen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-gaia-x
+    topic: technologie/cloud
+    hint: "Gaia-X: Ziele der europäischen Dateninfrastruktur-Initiative"
+    format: facts_quiz
+    priority: 2
+  - id: tech-docker
+    topic: technologie/cloud
+    hint: "Docker: Images, Container, Registry"
+    format: facts_quiz
+    priority: 2
+  - id: tech-service-mesh
+    topic: technologie/cloud
+    hint: "Service Mesh: Kommunikation zwischen Microservices steuern"
+    format: facts_quiz
+    priority: 2
+  - id: tech-observability
+    topic: technologie/cloud
+    hint: "Observability: Logs, Metriken, Traces"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-iam
+    topic: technologie/cloud
+    hint: "Identitäts- und Zugriffsverwaltung in der Cloud: Rollen und Richtlinien"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-verschluesselung
+    topic: technologie/cloud
+    hint: "Verschlüsselung in der Cloud: at rest, in transit, Schlüsselverwaltung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-disaster-recovery
+    topic: technologie/cloud
+    hint: "Disaster Recovery: RPO und RTO"
+    format: facts_quiz
+    priority: 2
+  - id: tech-edge-computing
+    topic: technologie/cloud
+    hint: "Edge Computing: Rechnen nah am Nutzer"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-migration
+    topic: technologie/cloud
+    hint: "Die 6 R der Cloud-Migration (Rehost, Replatform, Refactor …)"
+    format: facts_quiz
+    priority: 2
+  - id: tech-gitops
+    topic: technologie/cloud
+    hint: "GitOps: Infrastruktur und Deployments über Git steuern"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cloud-nachhaltigkeit
+    topic: technologie/cloud
+    hint: "Energieverbrauch von Rechenzentren und PUE-Kennzahl"
+    format: facts_quiz
+    priority: 2
+  - id: tech-saas-sicherheit
+    topic: technologie/cloud
+    hint: "SaaS-Sicherheit: Fehlkonfigurationen als Hauptrisiko"
+    format: facts_quiz
+    priority: 2
+  - id: tech-api-gateway
+    topic: technologie/cloud
+    hint: "API-Gateways: Routing, Authentifizierung, Ratenbegrenzung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-message-queues
+    topic: technologie/cloud
+    hint: "Message Queues und Event-Streaming, z. B. Kafka"
+    format: facts_quiz
+    priority: 2
+  - id: tech-cdn-caching
+    topic: technologie/cloud
+    hint: "Caching-Strategien im CDN: TTL, Invalidierung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ki-geschichte
+    topic: technologie/ki
+    hint: "Meilensteine der KI: Dartmouth 1956, KI-Winter, Deep Learning"
+    format: facts_quiz
+    priority: 2
+  - id: tech-neuronale-netze
+    topic: technologie/ki
+    hint: "Neuronale Netze: Neuronen, Schichten, Gewichte"
+    format: facts_quiz
+    priority: 2
+  - id: tech-deep-learning
+    topic: technologie/ki
+    hint: "Deep Learning und warum GPUs dafür wichtig sind"
+    format: facts_quiz
+    priority: 2
+  - id: tech-imagenet-alexnet
+    topic: technologie/ki
+    hint: "ImageNet und AlexNet (2012) als Wendepunkt"
+    format: facts_quiz
+    priority: 2
+  - id: tech-alphago
+    topic: technologie/ki
+    hint: "AlphaGo besiegt Lee Sedol (2016): Bedeutung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-diffusionsmodelle
+    topic: technologie/ki
+    hint: "Wie Bildgeneratoren mit Diffusionsmodellen arbeiten"
+    format: facts_quiz
+    priority: 2
+  - id: tech-spracherkennung
+    topic: technologie/ki
+    hint: "Automatische Spracherkennung: vom Audio zum Text"
+    format: facts_quiz
+    priority: 2
+  - id: tech-open-weight-modelle
+    topic: technologie/ki
+    hint: "Offene Modellgewichte vs. geschlossene Modelle"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ki-benchmarks
+    topic: technologie/ki
+    hint: "KI-Benchmarks: was sie messen und ihre Grenzen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-reinforcement-learning-feedback
+    topic: technologie/ki
+    hint: "RLHF: Lernen aus menschlichem Feedback"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ki-energie
+    topic: technologie/ki
+    hint: "Energiebedarf von KI-Training und -Nutzung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-prompt-injection
+    topic: technologie/ki
+    hint: "Prompt Injection: Angriffe auf KI-Anwendungen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ki-urheberrecht
+    topic: technologie/ki
+    hint: "KI und Urheberrecht: Trainingsdaten und erzeugte Inhalte (Überblick, keine Rechtsberatung)"
+    format: facts_quiz
+    priority: 2
+  - id: tech-multimodale-modelle
+    topic: technologie/ki
+    hint: "Multimodale Modelle: Text, Bild und Audio in einem Modell"
+    format: facts_quiz
+    priority: 2
+  - id: tech-ki-im-alltag
+    topic: technologie/ki
+    hint: "Wo KI im Alltag steckt: Empfehlungen, Übersetzung, Navigation"
+    format: facts_quiz
+    priority: 2
+  - id: tech-chatbot-eliza
+    topic: technologie/ki
+    hint: "ELIZA (1966): einer der ersten Chatbots"
+    format: facts_quiz
+    priority: 2
+  - id: tech-programmiersprachen-arten
+    topic: technologie/software
+    hint: "Kompilierte vs. interpretierte Sprachen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-python
+    topic: technologie/software
+    hint: "Python: Herkunft, Stärken, Einsatzgebiete"
+    format: facts_quiz
+    priority: 2
+  - id: tech-javascript
+    topic: technologie/software
+    hint: "JavaScript: Entstehung 1995 und Rolle im Browser"
+    format: facts_quiz
+    priority: 2
+  - id: tech-html-css
+    topic: technologie/software
+    hint: "HTML und CSS: Struktur vs. Gestaltung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-linux
+    topic: technologie/software
+    hint: "Linux: Linus Torvalds 1991, Kernel vs. Distribution"
+    format: facts_quiz
+    priority: 2
+  - id: tech-dateisysteme
+    topic: technologie/software
+    hint: "Dateisysteme: NTFS, ext4, APFS im Überblick"
+    format: facts_quiz
+    priority: 2
+  - id: tech-betriebssystem-aufgaben
+    topic: technologie/software
+    hint: "Was ein Betriebssystem macht: Prozesse, Speicher, Geräte"
+    format: facts_quiz
+    priority: 2
+  - id: tech-tests-pyramide
+    topic: technologie/software
+    hint: "Testpyramide: Unit-, Integrations- und End-to-End-Tests"
+    format: facts_quiz
+    priority: 2
+  - id: tech-agile-scrum
+    topic: technologie/software
+    hint: "Scrum: Rollen, Events, Artefakte"
+    format: facts_quiz
+    priority: 2
+  - id: tech-kanban
+    topic: technologie/software
+    hint: "Kanban: Visualisierung und WIP-Limits"
+    format: facts_quiz
+    priority: 2
+  - id: tech-technische-schulden
+    topic: technologie/software
+    hint: "Technische Schulden: Begriff und Folgen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-code-review
+    topic: technologie/software
+    hint: "Code Reviews: Zweck und gute Praxis"
+    format: facts_quiz
+    priority: 2
+  - id: tech-graphql
+    topic: technologie/software
+    hint: "GraphQL vs. REST"
+    format: facts_quiz
+    priority: 2
+  - id: tech-webassembly
+    topic: technologie/software
+    hint: "WebAssembly: schneller Code im Browser"
+    format: facts_quiz
+    priority: 2
+  - id: tech-progressive-web-apps
+    topic: technologie/software
+    hint: "Progressive Web Apps vs. native Apps"
+    format: facts_quiz
+    priority: 2
+  - id: tech-app-stores
+    topic: technologie/software
+    hint: "Wie App-Stores funktionieren: Prüfung, Provision, Updates"
+    format: facts_quiz
+    priority: 2
+  - id: tech-barrierefreiheit-web
+    topic: technologie/software
+    hint: "Barrierefreiheit im Web: WCAG-Grundprinzipien"
+    format: facts_quiz
+    priority: 2
+  - id: tech-dark-patterns
+    topic: technologie/software
+    hint: "Dark Patterns: manipulative Designmuster und Regulierung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-low-code
+    topic: technologie/software
+    hint: "Low-Code und No-Code: Chancen und Grenzen"
+    format: facts_quiz
+    priority: 2
+  - id: tech-versionsverwaltung-geschichte
+    topic: technologie/software
+    hint: "Von CVS und SVN zu Git: Geschichte der Versionsverwaltung"
+    format: facts_quiz
+    priority: 2
+  - id: tech-halbleiter-nanometer
+    topic: technologie/hardware
+    hint: "Was Fertigungsangaben wie 3 nm bei Chips bedeuten"
+    format: facts_quiz
+    priority: 3
+  - id: tech-arm-vs-x86
+    topic: technologie/hardware
+    hint: "ARM vs. x86: Architekturen und Energieeffizienz"
+    format: facts_quiz
+    priority: 3
+  - id: tech-quantencomputer
+    topic: technologie/hardware
+    hint: "Quantencomputer: Qubits, Superposition und Grenzen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-raspberry-pi
+    topic: technologie/hardware
+    hint: "Raspberry Pi: Einplatinenrechner für Lernen und Basteln"
+    format: facts_quiz
+    priority: 3
+  - id: tech-e-ink
+    topic: technologie/hardware
+    hint: "E-Ink-Displays: Funktionsweise und Stromverbrauch"
+    format: facts_quiz
+    priority: 3
+  - id: tech-oled-lcd
+    topic: technologie/hardware
+    hint: "OLED vs. LCD: Unterschiede bei Bildschirmen"
+    format: facts_quiz
+    priority: 3
+  - id: tech-smart-home-matter
+    topic: technologie/hardware
+    hint: "Matter: gemeinsamer Smart-Home-Standard"
+    format: facts_quiz
+    priority: 3
+  - id: tech-gps
+    topic: technologie/hardware
+    hint: "Wie GPS die Position bestimmt"
+    format: facts_quiz
+    priority: 3
+  - id: tech-rechenzentrum
+    topic: technologie/hardware
+    hint: "Aufbau eines Rechenzentrums: Strom, Kühlung, Redundanz"
+    format: facts_quiz
+    priority: 3
+  - id: tech-elektroschrott
+    topic: technologie/hardware
+    hint: "Elektroschrott und Recycling von Geräten in der EU"
+    format: facts_quiz
+    priority: 3
+  - id: sprachen-en-phrasal-verbs-4
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs: back up, catch up, fill in, hand over, sort out, take over"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-phrasal-verbs-5
+    topic: sprachen/englisch
+    hint: "Phrasal Verbs: come across, end up, go through, keep up with, pick up, show up"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-idioms-3
+    topic: sprachen/englisch
+    hint: "Redewendungen: a blessing in disguise, call it a day, get the ball rolling, think outside the box"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-idioms-4
+    topic: sprachen/englisch
+    hint: "Redewendungen: bite the bullet, spill the beans, cost an arm and a leg, once in a blue moon"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-idioms-5
+    topic: sprachen/englisch
+    hint: "Redewendungen: hit the ground running, touch base, low-hanging fruit, move the needle"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-verhandeln
+    topic: sprachen/englisch
+    hint: "Englisch für Verhandlungen: Angebot, Gegenangebot, Kompromiss"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-telefon
+    topic: sprachen/englisch
+    hint: "Telefonieren auf Englisch: Begrüßung, Verbinden, Rückruf"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-bewerbung
+    topic: sprachen/englisch
+    hint: "Bewerbungsgespräch auf Englisch: typische Fragen und Formulierungen"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-feedback
+    topic: sprachen/englisch
+    hint: "Feedback geben und annehmen auf Englisch"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-hoeflichkeit
+    topic: sprachen/englisch
+    hint: "Höfliche Bitten: could you, would you mind, I was wondering if"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-zahlen-daten
+    topic: sprachen/englisch
+    hint: "Zahlen, Daten und Uhrzeiten auf Englisch sprechen und schreiben"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-reisen
+    topic: sprachen/englisch
+    hint: "Englisch auf Reisen: Hotel, Flughafen, Restaurant"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-restaurant
+    topic: sprachen/englisch
+    hint: "Im Restaurant: bestellen, reklamieren, bezahlen"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-wetter
+    topic: sprachen/englisch
+    hint: "Wortschatz Wetter und typische Wendungen"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-gefuehle
+    topic: sprachen/englisch
+    hint: "Gefühle ausdrücken: Adjektive jenseits von happy und sad"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-verbindungswoerter
+    topic: sprachen/englisch
+    hint: "Verbindungswörter: however, therefore, although, whereas, moreover"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-abkuerzungen
+    topic: sprachen/englisch
+    hint: "Abkürzungen in E-Mails und Chats: ASAP, FYI, EOD, TBD, OOO"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-irregular-verbs-1
+    topic: sprachen/englisch
+    hint: "Unregelmäßige Verben Teil 1: begin, bring, buy, catch, choose, drive"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-irregular-verbs-2
+    topic: sprachen/englisch
+    hint: "Unregelmäßige Verben Teil 2: fall, feel, forget, hold, lead, rise"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-collocations
+    topic: sprachen/englisch
+    hint: "Collocations: make a decision, take a break, pay attention, do research"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-konfusionen
+    topic: sprachen/englisch
+    hint: "Leicht verwechselt: affect/effect, lose/loose, lend/borrow, rise/raise"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-redewendungen-tiere
+    topic: sprachen/englisch
+    hint: "Redewendungen mit Tieren: elephant in the room, let the cat out of the bag"
+    format: flashcards
+    priority: 2
+  - id: sprachen-en-artikel
+    topic: sprachen/englisch
+    hint: "Artikel a, an, the und wann keiner steht"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-progressive
+    topic: sprachen/englisch
+    hint: "Simple vs. Progressive Form im Präsens"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-passive
+    topic: sprachen/englisch
+    hint: "Passiv im Englischen: Bildung und Einsatz"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-reported-speech
+    topic: sprachen/englisch
+    hint: "Indirekte Rede: Zeitverschiebung"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-modal-verbs
+    topic: sprachen/englisch
+    hint: "Modalverben: must, have to, should, may, might"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-question-tags
+    topic: sprachen/englisch
+    hint: "Question Tags: isn't it, don't you"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-steigerung
+    topic: sprachen/englisch
+    hint: "Steigerung von Adjektiven: -er/-est vs. more/most, Ausnahmen"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-some-any
+    topic: sprachen/englisch
+    hint: "some vs. any in Aussagen, Fragen und Verneinungen"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-prepositions-place
+    topic: sprachen/englisch
+    hint: "Präpositionen des Ortes: in, on, at"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-word-order
+    topic: sprachen/englisch
+    hint: "Satzstellung: Subjekt–Verb–Objekt und Adverbien"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-gross-klein
+    topic: sprachen/englisch
+    hint: "Großschreibung im Englischen: Wochentage, Nationalitäten, I"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-kommasetzung
+    topic: sprachen/englisch
+    hint: "Kommasetzung im Englischen vs. Deutschen"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-aussprache-v-w
+    topic: sprachen/englisch
+    hint: "Aussprache v und w: typische Fehler deutscher Sprecher"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-stumme-buchstaben
+    topic: sprachen/englisch
+    hint: "Stumme Buchstaben: knight, island, Wednesday"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-wortherkunft
+    topic: sprachen/englisch
+    hint: "Warum Englisch so viele französische Wörter hat (1066)"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-weltsprache
+    topic: sprachen/englisch
+    hint: "Englisch als Weltsprache: Sprecherzahlen und Varianten"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-used-to
+    topic: sprachen/englisch
+    hint: "used to, be used to, get used to"
+    format: facts_quiz
+    priority: 2
+  - id: sprachen-en-gerade-eben
+    topic: sprachen/englisch
+    hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
+    format: facts_quiz
+    priority: 2

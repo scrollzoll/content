@@ -13,7 +13,7 @@ Git und GitHub erledigt ausschließlich dieses Skript; Claude bekommt keinen She
 außer auf das Prüfskript.
 
 Einstellungen per Umgebungsvariable (Standardwerte in Klammern):
-  UNITS_PER_RUN (4)  MAX_RUNS_PER_DAY (3)  CLAUDE_BIN (claude)  CLAUDE_MODEL (leer = Standard)
+  UNITS_PER_RUN (4)  MAX_RUNS_PER_DAY (4)  CLAUDE_BIN (claude)  CLAUDE_MODEL (leer = Standard)
   CLAUDE_TIMEOUT_MIN (75)  MAX_TURNS (200)  AUTO_MERGE (1)  BASE_BRANCH (main)  DRY_RUN (0)
 """
 from __future__ import annotations
@@ -38,7 +38,7 @@ LOG_FILE = STATE_DIR / "factory.log"
 RUN_LOG_DIR = STATE_DIR / "runs"
 
 UNITS_PER_RUN = int(os.environ.get("UNITS_PER_RUN", "4"))
-MAX_RUNS_PER_DAY = int(os.environ.get("MAX_RUNS_PER_DAY", "3"))
+MAX_RUNS_PER_DAY = int(os.environ.get("MAX_RUNS_PER_DAY", "4"))
 CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "claude")
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "").strip()
 CLAUDE_TIMEOUT_MIN = int(os.environ.get("CLAUDE_TIMEOUT_MIN", "75"))

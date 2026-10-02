@@ -3,7 +3,7 @@
 Erzeugt auf dem VPS automatisch neue Lerneinheiten mit Claude Code (über dein Claude-Abo) und reicht sie als Pull Request ein.
 
 ```
-Timer (3×/Tag) → run_batch.py → claude -p + Skill einheiten-erstellen → Prüfung → PR → Auto-Merge bei grüner CI
+Timer (4×/Tag) → run_batch.py → claude -p + Skill einheiten-erstellen → Prüfung → PR → Auto-Merge bei grüner CI
 ```
 
 - Claude darf nur recherchieren, lesen, Dateien unter `units/` schreiben und das Prüfskript ausführen. Git und GitHub macht nur `run_batch.py`.
@@ -87,6 +87,10 @@ systemctl --user list-timers | grep scrollzoll
 | Hart stoppen | per SSH: `systemctl --user disable --now scrollzoll-factory.timer` |
 | Protokoll | `~/.cache/scrollzoll-factory/factory.log`, Claude-Ausgaben in `~/.cache/scrollzoll-factory/runs/` |
 | Menge anpassen | `~/scrollzoll/factory.env` (`UNITS_PER_RUN`, `MAX_RUNS_PER_DAY`, `CLAUDE_MODEL`) |
+
+## Mengengerüst (Max 5x)
+
+Standard: 4 Läufe × 4 Einheiten = bis zu 16 Einheiten pro Tag. Die Warteliste (281 Themen) reicht damit gut zweieinhalb Wochen; verworfene Themen verlängern das. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
 
 ## Hinweise zum Abo
 
