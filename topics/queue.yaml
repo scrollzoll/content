@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-firewall-arten
-    topic: technologie/sicherheit
-    hint: "Paketfilter, Stateful Firewall, Next-Generation Firewall"
-    format: facts_quiz
-    priority: 1
-  - id: tech-social-engineering
-    topic: technologie/sicherheit
-    hint: "Social Engineering: Pretexting, Baiting, Tailgating"
-    format: facts_quiz
-    priority: 1
   - id: tech-backup-3-2-1
     topic: technologie/sicherheit
     hint: "Die 3-2-1-Backup-Regel und warum Offline-Kopien wichtig sind"
@@ -307,16 +297,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-phrasal-verbs-1
-    topic: sprachen/englisch
-    hint: "Phrasal Verbs im Job: carry out, come up with, figure out, follow up, set up, turn down"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-phrasal-verbs-2
-    topic: sprachen/englisch
-    hint: "Phrasal Verbs: get along, look forward to, put off, run into, break down, bring up"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-phrasal-verbs-3
     topic: sprachen/englisch
     hint: "Phrasal Verbs: call off, find out, give up, hold on, look into, point out"
@@ -1202,11 +1182,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-wuesten
-    topic: allgemeinwissen/geografie
-    hint: "Die größten Wüsten: warum auch die Antarktis eine Wüste ist"
-    format: facts_quiz
-    priority: 1
   - id: aw-zeitzonen
     topic: allgemeinwissen/geografie
     hint: "Zeitzonen: UTC, Datumsgrenze, warum China nur eine Zeitzone hat"
@@ -1832,11 +1807,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-alexander
-    topic: geschichte/antike
-    hint: "Alexander der Große: Feldzüge und Hellenismus"
-    format: facts_quiz
-    priority: 1
   - id: ge-roemische-republik
     topic: geschichte/antike
     hint: "Die Römische Republik: Senat, Konsuln, Ende"

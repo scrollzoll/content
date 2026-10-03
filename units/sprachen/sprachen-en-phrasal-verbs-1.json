@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-phrasal-verbs-1",
+  "topic": "sprachen/englisch",
+  "tags": ["phrasal-verbs", "wortschatz", "business-englisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Phrasal Verbs im Job (1)",
+      "intro": "Sechs Verbindungen aus Verb und Partikel, die im Arbeitsalltag ständig vorkommen.",
+      "cards": [
+        { "front": "carry out: Was heißt es?", "back": "durchführen, ausführen: einen Plan, eine Aufgabe oder eine Untersuchung umsetzen. „We carried out the test in May.“" },
+        { "front": "come up with: Was heißt es?", "back": "sich etwas einfallen lassen, etwas entwickeln: eine Idee oder Lösung hervorbringen. „She came up with a better plan.“" },
+        { "front": "figure out: Was heißt es?", "back": "herausfinden, dahinterkommen (informell): eine Lösung oder Ursache verstehen. „I can’t figure out why the file won’t open.“" },
+        { "front": "follow up: Was heißt es?", "back": "nachfassen: nach einem ersten Schritt weitermachen, z. B. nach einer Mail anrufen. „I’ll follow up with a call.“" },
+        { "front": "set up: Was heißt es?", "back": "einrichten, aufbauen: etwas gebrauchsfertig machen. „He set up the new laptop.“" },
+        { "front": "turn down: Was heißt es?", "back": "ablehnen („She turned down the offer“). Auch: leiser oder niedriger stellen. Pronomen stehen vor der Partikel: „turn it down“." }
+      ]
+    },
+    "en": {
+      "title": "Phrasal Verbs at Work (1)",
+      "intro": "Six verb-plus-particle combinations that come up constantly in everyday work.",
+      "cards": [
+        { "front": "carry out: what does it mean?", "back": "To perform or put into action: a plan, a task or an investigation. In German: durchführen. \"We carried out the test in May.\"" },
+        { "front": "come up with: what does it mean?", "back": "To think of and produce something, such as an idea or a solution. In German: sich etwas einfallen lassen. \"She came up with a better plan.\"" },
+        { "front": "figure out: what does it mean?", "back": "To work out or understand (informal): to find a solution or a cause. In German: herausfinden. \"I can't figure out why the file won't open.\"" },
+        { "front": "follow up: what does it mean?", "back": "To take a further step after a first one, e.g. calling after an email. In German: nachfassen. \"I'll follow up with a call.\"" },
+        { "front": "set up: what does it mean?", "back": "To make something ready for use. In German: einrichten, aufbauen. \"He set up the new laptop.\"" },
+        { "front": "turn down: what does it mean?", "back": "To refuse (\"She turned down the offer\"). Also: to lower a volume or setting. Pronouns go before the particle: \"turn it down\"." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-carry-out", "title": "Wiktionary: carry out", "url": "https://en.wiktionary.org/wiki/carry_out", "accessed": "2026-10-03" },
+    { "id": "wiktionary-come-up-with", "title": "Wiktionary: come up with", "url": "https://en.wiktionary.org/wiki/come_up_with", "accessed": "2026-10-03" },
+    { "id": "wiktionary-figure-out", "title": "Wiktionary: figure out", "url": "https://en.wiktionary.org/wiki/figure_out", "accessed": "2026-10-03" },
+    { "id": "wiktionary-follow-up", "title": "Wiktionary: follow up", "url": "https://en.wiktionary.org/wiki/follow_up", "accessed": "2026-10-03" },
+    { "id": "wiktionary-set-up", "title": "Wiktionary: set up", "url": "https://en.wiktionary.org/wiki/set_up", "accessed": "2026-10-03" },
+    { "id": "wiktionary-turn-down", "title": "Wiktionary: turn down", "url": "https://en.wiktionary.org/wiki/turn_down", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

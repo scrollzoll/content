@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "aw-wuesten",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["wueste", "antarktis", "sahara", "klima"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die größten Wüsten der Erde",
+      "intro": "Wüsten sind nicht nur heiß und sandig. Entscheidend ist ein ganz anderes Merkmal.",
+      "facts": [
+        { "text": "Eine Wüste ist ein Gebiet mit sehr wenig Niederschlag, meist weniger als etwa 250 Millimeter im Jahr. Ob es dort heiß oder kalt ist, spielt für diese Definition keine Rolle.", "source_ids": ["wikipedia-desert", "natgeo-desert"] },
+        { "text": "Die Antarktis ist mit rund 14,2 Millionen km² die größte Wüste der Erde. Sie ist zugleich die kälteste: Es fällt dort nur wenig Niederschlag, obwohl der Kontinent von Eis bedeckt ist.", "source_ids": ["wikipedia-desert", "natgeo-desert"] },
+        { "text": "Die Antarktis besteht zu etwa 98 % aus einem dicken Eisschild und zu etwa 2 % aus kahlem Gestein.", "source_ids": ["wikipedia-desert"] },
+        { "text": "Die Arktis ist mit rund 13,9 Millionen km² die zweitgrößte Wüste. Auch sie gehört zu den Polarwüsten.", "source_ids": ["wikipedia-desert", "wikipedia-deserts-area"] },
+        { "text": "Die Sahara ist mit rund 9,2 Millionen km² die größte heiße Wüste und nach den beiden Polargebieten die drittgrößte Wüste überhaupt.", "source_ids": ["wikipedia-desert", "natgeo-desert"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was macht ein Gebiet nach der üblichen Definition zur Wüste?",
+          "options": ["Sehr hohe Temperaturen", "Sehr wenig Niederschlag", "Ein Boden aus Sand", "Völlig fehlende Pflanzen"],
+          "answer_index": 1,
+          "explanation": "Maßgeblich ist die Trockenheit: Wüsten erhalten meist weniger als etwa 250 mm Niederschlag pro Jahr."
+        },
+        {
+          "question": "Welche ist die größte Wüste der Erde?",
+          "options": ["Sahara", "Gobi", "Arabische Wüste", "Antarktis"],
+          "answer_index": 3,
+          "explanation": "Die Antarktis ist eine Polarwüste mit rund 14,2 Mio. km² und damit größer als die Sahara."
+        },
+        {
+          "question": "Welche ist die größte heiße Wüste der Erde?",
+          "options": ["Gobi", "Kalahari", "Sahara", "Patagonische Wüste"],
+          "answer_index": 2,
+          "explanation": "Die Sahara misst rund 9,2 Mio. km² und ist die größte heiße Wüste."
+        }
+      ]
+    },
+    "en": {
+      "title": "The World's Largest Deserts",
+      "intro": "Deserts are not just hot and sandy. What counts is a very different feature.",
+      "facts": [
+        { "text": "A desert is an area with very little precipitation, usually less than about 250 millimetres a year. Whether it is hot or cold does not matter for this definition.", "source_ids": ["wikipedia-desert", "natgeo-desert"] },
+        { "text": "At about 14.2 million km², Antarctica is the largest desert on Earth. It is also the coldest: very little precipitation falls there, even though the continent is covered in ice.", "source_ids": ["wikipedia-desert", "natgeo-desert"] },
+        { "text": "Antarctica consists of roughly 98% thick ice sheet and roughly 2% barren rock.", "source_ids": ["wikipedia-desert"] },
+        { "text": "At about 13.9 million km², the Arctic is the second-largest desert. It, too, is one of the polar deserts.", "source_ids": ["wikipedia-desert", "wikipedia-deserts-area"] },
+        { "text": "At about 9.2 million km², the Sahara is the largest hot desert and, after the two polar regions, the third-largest desert overall.", "source_ids": ["wikipedia-desert", "natgeo-desert"] }
+      ],
+      "quiz": [
+        {
+          "question": "What makes an area a desert by the usual definition?",
+          "options": ["Very high temperatures", "Very little precipitation", "A ground made of sand", "A complete lack of plants"],
+          "answer_index": 1,
+          "explanation": "Dryness is what counts: deserts usually receive less than about 250 mm of precipitation per year."
+        },
+        {
+          "question": "Which is the largest desert on Earth?",
+          "options": ["Sahara", "Gobi", "Arabian Desert", "Antarctica"],
+          "answer_index": 3,
+          "explanation": "Antarctica is a polar desert of about 14.2 million km², larger than the Sahara."
+        },
+        {
+          "question": "Which is the largest hot desert on Earth?",
+          "options": ["Gobi", "Kalahari", "Sahara", "Patagonian Desert"],
+          "answer_index": 2,
+          "explanation": "The Sahara covers about 9.2 million km² and is the largest hot desert."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-desert", "title": "Wikipedia: Desert", "url": "https://en.wikipedia.org/wiki/Desert", "accessed": "2026-10-03" },
+    { "id": "wikipedia-deserts-area", "title": "Wikipedia: List of deserts by area", "url": "https://en.wikipedia.org/wiki/List_of_deserts_by_area", "accessed": "2026-10-03" },
+    { "id": "natgeo-desert", "title": "National Geographic Education: Desert", "url": "https://education.nationalgeographic.org/resource/desert", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

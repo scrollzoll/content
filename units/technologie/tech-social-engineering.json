@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-social-engineering",
+  "topic": "technologie/sicherheit",
+  "tags": ["social-engineering", "pretexting", "baiting", "tailgating", "angriffe"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Social Engineering: Pretexting, Baiting, Tailgating",
+      "intro": "Statt technische Lücken zu nutzen, täuschen Angreifer Menschen. Vier typische Maschen.",
+      "facts": [
+        { "text": "Social Engineering versucht, Menschen so zu täuschen, dass sie Informationen wie ein Passwort preisgeben, mit denen sich Systeme oder Netze angreifen lassen. Es nutzt Psychologie statt technischer Schwachstellen.", "source_ids": ["nist-glossary-se", "wikipedia-se"] },
+        { "text": "Beim Pretexting erfindet der Angreifer eine glaubwürdige Geschichte, den Vorwand, damit das Opfer eher Informationen herausgibt.", "source_ids": ["wikipedia-se"] },
+        { "text": "Beim Baiting dient ein Köder der Neugier oder Gier: Etwa ein mit Schadsoftware präparierter USB-Stick, der mit „Gehälter“ beschriftet an einem zugänglichen Ort liegt.", "source_ids": ["wikipedia-se"] },
+        { "text": "Beim Tailgating (auch Piggybacking) verschafft sich jemand unbefugt Zutritt, indem er sich als Berechtigter ausgibt, etwa als Paketbote, und Mitarbeitende bittet, ihm die Tür aufzuhalten.", "source_ids": ["wikipedia-se"] },
+        { "text": "Beim Quid pro quo bietet der Angreifer eine Gegenleistung an, zum Beispiel kostenlosen technischen Support, und will dafür etwa Zugangsdaten erhalten.", "source_ids": ["wikipedia-se"] }
+      ],
+      "quiz": [
+        {
+          "question": "Ein Anrufer behauptet, aus der Personalabteilung zu sein, und erfindet einen Anlass, um Daten abzufragen. Welche Technik ist das?",
+          "options": ["Pretexting", "Baiting", "Tailgating", "Quid pro quo"],
+          "answer_index": 0,
+          "explanation": "Die erfundene Geschichte (der Vorwand) macht die Abfrage glaubwürdig: das ist Pretexting."
+        },
+        {
+          "question": "Ein USB-Stick mit der Aufschrift „Gehälter“ liegt auf dem Firmenparkplatz. Welche Technik ist das?",
+          "options": ["Pretexting", "Baiting", "Tailgating", "Quid pro quo"],
+          "answer_index": 1,
+          "explanation": "Der Stick ist ein Köder, der Neugier weckt: das ist Baiting."
+        },
+        {
+          "question": "Eine Person im Paketboten-Outfit gelangt unbefugt in den Bürobereich, indem sie sich die Tür aufhalten lässt. Welche Technik ist das?",
+          "options": ["Baiting", "Pretexting", "Quid pro quo", "Tailgating"],
+          "answer_index": 3,
+          "explanation": "Unbefugter Zutritt durch Mitgehen hinter einer berechtigten Person heißt Tailgating oder Piggybacking."
+        }
+      ]
+    },
+    "en": {
+      "title": "Social Engineering: Pretexting, Baiting, Tailgating",
+      "intro": "Instead of exploiting technical flaws, attackers deceive people. Four typical tricks.",
+      "facts": [
+        { "text": "Social engineering tries to trick people into revealing information, such as a password, that can be used to attack systems or networks. It exploits psychology rather than technical weaknesses.", "source_ids": ["nist-glossary-se", "wikipedia-se"] },
+        { "text": "In pretexting, the attacker invents a believable story, the pretext, so that the victim is more likely to hand over information.", "source_ids": ["wikipedia-se"] },
+        { "text": "Baiting uses a lure that plays on curiosity or greed: for example, a USB stick loaded with malware and labelled \"Salaries\", left in an accessible place.", "source_ids": ["wikipedia-se"] },
+        { "text": "In tailgating (also piggybacking), someone gains unauthorised entry by posing as an authorised person, such as a courier, and asking employees to hold the door open.", "source_ids": ["wikipedia-se"] },
+        { "text": "In quid pro quo, the attacker offers something in return, for example free technical support, and wants something such as login credentials in exchange.", "source_ids": ["wikipedia-se"] }
+      ],
+      "quiz": [
+        {
+          "question": "A caller claims to be from HR and makes up a reason to ask for data. Which technique is this?",
+          "options": ["Pretexting", "Baiting", "Tailgating", "Quid pro quo"],
+          "answer_index": 0,
+          "explanation": "The invented story (the pretext) makes the request believable: that is pretexting."
+        },
+        {
+          "question": "A USB stick labelled \"Salaries\" is lying in the company car park. Which technique is this?",
+          "options": ["Pretexting", "Baiting", "Tailgating", "Quid pro quo"],
+          "answer_index": 1,
+          "explanation": "The stick is a lure that arouses curiosity: that is baiting."
+        },
+        {
+          "question": "A person dressed as a courier gets into the office area without authorisation by having the door held open. Which technique is this?",
+          "options": ["Baiting", "Pretexting", "Quid pro quo", "Tailgating"],
+          "answer_index": 3,
+          "explanation": "Entering without authorisation by following an authorised person is called tailgating or piggybacking."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-glossary-se", "title": "NIST CSRC Glossary: social engineering", "url": "https://csrc.nist.gov/glossary/term/social_engineering", "accessed": "2026-10-03" },
+    { "id": "wikipedia-se", "title": "Wikipedia: Social engineering (security)", "url": "https://en.wikipedia.org/wiki/Social_engineering_(security)", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

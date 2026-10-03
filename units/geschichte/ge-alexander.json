@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "ge-alexander",
+  "topic": "geschichte/antike",
+  "tags": ["alexander-der-grosse", "hellenismus", "makedonien", "persien"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Alexander der Große: Feldzüge und Hellenismus",
+      "intro": "In gut einem Jahrzehnt eroberte Alexander das Perserreich. Sein früher Tod leitete eine neue Epoche ein.",
+      "facts": [
+        { "text": "Alexander wurde 356 v. Chr. in Pella geboren, hatte Aristoteles als Lehrer und wurde 336 v. Chr. nach der Ermordung seines Vaters Philipp II. König von Makedonien.", "source_ids": ["wikipedia-alexander", "worldhistory-alexander"] },
+        { "text": "334 v. Chr. zog er nach Kleinasien. Er besiegte die Perser am Granikos (334), bei Issos (333) und bei Gaugamela (331 v. Chr.) und stürzte damit Dareios III.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "Er eroberte Ägypten und gründete dort Alexandria. 330 v. Chr. brannte Persepolis, als Vergeltung für den Griechenlandfeldzug des Xerxes.", "source_ids": ["worldhistory-alexander"] },
+        { "text": "326 v. Chr. siegte er am Hydaspes in Indien über König Poros. Seine Soldaten verweigerten danach den weiteren Marsch nach Osten, und er musste umkehren.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "Alexander starb 323 v. Chr. mit 32 Jahren in Babylon. Sein Reich zerfiel unter seinen Generälen, den Diadochen.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "Der Hellenismus dauerte von 323 v. Chr. bis zur römischen Eroberung Ägyptens, des letzten hellenistischen Königreichs. Griechische Kultur breitete sich damals weit über Asien aus.", "source_ids": ["worldhistory-hellenistic"] }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr fand die Schlacht von Gaugamela statt?",
+          "options": ["334 v. Chr.", "333 v. Chr.", "331 v. Chr.", "326 v. Chr."],
+          "answer_index": 2,
+          "explanation": "Gaugamela war 331 v. Chr. Granikos war 334, Issos 333 und der Hydaspes 326 v. Chr."
+        },
+        {
+          "question": "Wo starb Alexander der Große?",
+          "options": ["In Pella", "In Alexandria", "In Babylon", "In Persepolis"],
+          "answer_index": 2,
+          "explanation": "Er starb 323 v. Chr. in Babylon, nach etwa zehn Tagen Fieber."
+        },
+        {
+          "question": "Warum kehrte Alexander in Indien um?",
+          "options": ["Seine Truppen verweigerten den weiteren Vormarsch", "Er verlor die Schlacht am Hydaspes", "Dareios III. griff Makedonien an", "Aristoteles forderte seine Rückkehr"],
+          "answer_index": 0,
+          "explanation": "Nach dem Sieg am Hydaspes (326 v. Chr.) meuterten seine Soldaten und wollten nicht weiterziehen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Alexander the Great: Campaigns and the Hellenistic Age",
+      "intro": "In little more than a decade, Alexander conquered the Persian Empire. His early death opened a new era.",
+      "facts": [
+        { "text": "Alexander was born in Pella in 356 BC, was taught by Aristotle, and became king of Macedon in 336 BC after the assassination of his father Philip II.", "source_ids": ["wikipedia-alexander", "worldhistory-alexander"] },
+        { "text": "In 334 BC he crossed into Asia Minor. He defeated the Persians at the Granicus (334), at Issus (333) and at Gaugamela (331 BC), overthrowing Darius III.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "He conquered Egypt and founded Alexandria there. In 330 BC Persepolis was burned, as revenge for Xerxes' invasion of Greece.", "source_ids": ["worldhistory-alexander"] },
+        { "text": "In 326 BC he won at the Hydaspes in India against King Porus. His soldiers then refused to march further east, and he had to turn back.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "Alexander died in Babylon in 323 BC, aged 32. His empire broke apart under his generals, the Diadochi.", "source_ids": ["worldhistory-alexander", "wikipedia-alexander"] },
+        { "text": "The Hellenistic period lasted from 323 BC until Rome's conquest of Egypt, the last Hellenistic kingdom. Greek culture spread widely across Asia at that time.", "source_ids": ["worldhistory-hellenistic"] }
+      ],
+      "quiz": [
+        {
+          "question": "In which year was the Battle of Gaugamela fought?",
+          "options": ["334 BC", "333 BC", "331 BC", "326 BC"],
+          "answer_index": 2,
+          "explanation": "Gaugamela was in 331 BC. The Granicus was 334, Issus 333 and the Hydaspes 326 BC."
+        },
+        {
+          "question": "Where did Alexander the Great die?",
+          "options": ["In Pella", "In Alexandria", "In Babylon", "In Persepolis"],
+          "answer_index": 2,
+          "explanation": "He died in Babylon in 323 BC, after about ten days of fever."
+        },
+        {
+          "question": "Why did Alexander turn back in India?",
+          "options": ["His troops refused to advance further", "He lost the Battle of the Hydaspes", "Darius III attacked Macedon", "Aristotle demanded his return"],
+          "answer_index": 0,
+          "explanation": "After the victory at the Hydaspes (326 BC), his soldiers mutinied and would not go on."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-alexander", "title": "Wikipedia: Alexander the Great", "url": "https://en.wikipedia.org/wiki/Alexander_the_Great", "accessed": "2026-10-03" },
+    { "id": "worldhistory-alexander", "title": "World History Encyclopedia: Alexander the Great", "url": "https://www.worldhistory.org/Alexander_the_Great/", "accessed": "2026-10-03" },
+    { "id": "worldhistory-hellenistic", "title": "World History Encyclopedia: The Hellenistic World", "url": "https://www.worldhistory.org/Hellenistic_World/", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
