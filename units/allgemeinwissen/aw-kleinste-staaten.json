@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "aw-kleinste-staaten",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "staaten", "kleinstaaten"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die kleinsten Staaten der Welt",
+      "intro": "Drei Zwergstaaten: Vatikanstadt, Monaco und Nauru, jeweils mit einer Besonderheit.",
+      "facts": [
+        {"text": "Die Vatikanstadt ist mit 0,49 km² der kleinste Staat der Welt, nach Fläche und nach Einwohnern (rund 880 im Jahr 2024).", "source_ids": ["wp-vatican"]},
+        {"text": "Die Vatikanstadt entstand mit den Lateranverträgen vom 11. Februar 1929 zwischen dem Heiligen Stuhl und dem Königreich Italien. Sie liegt als Enklave in Rom.", "source_ids": ["wp-vatican"]},
+        {"text": "Monaco ist mit 2,084 km² der zweitkleinste Staat. Dort leben rund 38.900 Menschen, etwa 18.400 je km².", "source_ids": ["wp-monaco"]},
+        {"text": "Nauru im Südpazifik misst nur 21 km² und gilt als drittkleinstes Land der Welt. Dort leben etwa 12.000 Menschen.", "source_ids": ["wp-nauru"]},
+        {"text": "Nauru wurde 1968 von Australien unabhängig; Yaren gilt als De-facto-Hauptstadt. Der Phosphatabbau prägte die Wirtschaft, die Vorräte sind weitgehend erschöpft.", "source_ids": ["wp-nauru"]}
+      ],
+      "quiz": [
+        {"question": "Welcher Staat ist der kleinste der Welt?", "options": ["Monaco", "Vatikanstadt", "Nauru", "San Marino"], "answer_index": 1, "explanation": "Die Vatikanstadt hat nur 0,49 km² und ist damit kleiner als Monaco (2,084 km²)."},
+        {"question": "Welcher Staat ist nach der Vatikanstadt der zweitkleinste der Welt?", "options": ["Nauru", "Monaco", "San Marino", "Liechtenstein"], "answer_index": 1, "explanation": "Monaco hat 2,084 km² und ist damit der zweitkleinste Staat."},
+        {"question": "Wann wurde Nauru von Australien unabhängig?", "options": ["1945", "1968", "1980", "1999"], "answer_index": 1, "explanation": "Nauru erlangte 1968 die Unabhängigkeit."}
+      ]
+    },
+    "en": {
+      "title": "The smallest countries in the world",
+      "intro": "Three tiny states: Vatican City, Monaco and Nauru, each with a special feature.",
+      "facts": [
+        {"text": "Vatican City, at 0.49 km², is the smallest country in the world by both area and population (about 880 residents in 2024).", "source_ids": ["wp-vatican"]},
+        {"text": "Vatican City was created by the Lateran Treaty of 11 February 1929 between the Holy See and the Kingdom of Italy. It is an enclave within Rome.", "source_ids": ["wp-vatican"]},
+        {"text": "Monaco, at 2.084 km², is the second-smallest country. About 38,900 people live there, roughly 18,400 per km².", "source_ids": ["wp-monaco"]},
+        {"text": "Nauru in the South Pacific covers only 21 km² and is the third-smallest country in the world. About 12,000 people live there.", "source_ids": ["wp-nauru"]},
+        {"text": "Nauru became independent from Australia in 1968; Yaren is the de facto capital. Phosphate mining shaped the economy, and the reserves are largely depleted.", "source_ids": ["wp-nauru"]}
+      ],
+      "quiz": [
+        {"question": "Which is the smallest country in the world?", "options": ["Monaco", "Vatican City", "Nauru", "San Marino"], "answer_index": 1, "explanation": "Vatican City covers only 0.49 km², smaller than Monaco (2.084 km²)."},
+        {"question": "Which country is the second-smallest in the world after Vatican City?", "options": ["Nauru", "Monaco", "San Marino", "Liechtenstein"], "answer_index": 1, "explanation": "Monaco covers 2.084 km², making it the second-smallest country."},
+        {"question": "When did Nauru become independent from Australia?", "options": ["1945", "1968", "1980", "1999"], "answer_index": 1, "explanation": "Nauru gained independence in 1968."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-vatican", "title": "Wikipedia: Vatican City", "url": "https://en.wikipedia.org/wiki/Vatican_City", "accessed": "2026-10-03"},
+    {"id": "wp-monaco", "title": "Wikipedia: Monaco", "url": "https://en.wikipedia.org/wiki/Monaco", "accessed": "2026-10-03"},
+    {"id": "wp-nauru", "title": "Wikipedia: Nauru", "url": "https://en.wikipedia.org/wiki/Nauru", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "tech-infrastructure-as-code",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "iac", "terraform", "opentofu", "devops"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Infrastructure as Code: Terraform und OpenTofu",
+      "intro": "Infrastruktur als Code: Server und Netze werden beschrieben statt von Hand geklickt. Das macht sie wiederholbar und nachvollziehbar.",
+      "facts": [
+        {"text": "Infrastructure as Code (IaC) heißt: Ressourcen wie Server und Netze werden in Dateien beschrieben und wie Anwendungscode in der Versionsverwaltung abgelegt, statt sie von Hand einzurichten.", "source_ids": ["aws-devops-iac"]},
+        {"text": "Klassisch entstand Infrastruktur aus Skripten und manuellen Schritten. Neue Umgebungen waren dadurch oft nicht zuverlässig und gleich wiederholbar; IaC soll das vermeiden.", "source_ids": ["aws-devops-iac"]},
+        {"text": "Terraform und OpenTofu arbeiten deklarativ: Man beschreibt den gewünschten Endzustand, das Werkzeug ermittelt die Schritte selbst. Der Ablauf heißt Write, Plan, Apply.", "source_ids": ["terraform-intro", "opentofu-intro"]},
+        {"text": "Im Plan-Schritt zeigt das Werkzeug vorab die geplanten Änderungen. Eine State-Datei hält fest, welche realen Ressourcen verwaltet werden, und dient als Wahrheitsquelle.", "source_ids": ["terraform-intro"]},
+        {"text": "Terraform stammt von HashiCorp und steuert Plattformen über deren APIs, mithilfe von Providern für AWS, Azure, Google Cloud, Kubernetes u. a. Wiederverwendbare Bausteine heißen Module.", "source_ids": ["terraform-intro"]},
+        {"text": "OpenTofu ist die Open-Source-Alternative zu Terraform. Anlass war Terraforms Lizenzwechsel von MPL 2.0 zur Business Source License 1.1; angekündigt am 20. September 2023, gehostet von der Linux Foundation.", "source_ids": ["lf-opentofu"]}
+      ],
+      "quiz": [
+        {"question": "Was bedeutet „deklarativ“ bei Terraform und OpenTofu?", "options": ["Man beschreibt den gewünschten Endzustand der Infrastruktur", "Man schreibt jeden Einrichtungsschritt in fester Reihenfolge als Skript", "Man klickt Ressourcen in einer Weboberfläche zusammen", "Man dokumentiert die Infrastruktur nur in einem Wiki"], "answer_index": 0, "explanation": "Deklarativ heißt: Der Endzustand wird beschrieben, die nötigen Schritte ermittelt das Werkzeug."},
+        {"question": "Welcher Schritt zeigt vorab, welche Änderungen ein Lauf vornehmen würde?", "options": ["Write", "Plan", "Apply", "Destroy"], "answer_index": 1, "explanation": "Der Plan-Schritt erzeugt einen Ausführungsplan mit den vorgeschlagenen Änderungen, bevor Apply sie umsetzt."},
+        {"question": "Warum entstand OpenTofu?", "options": ["Terraform wechselte von der MPL 2.0 zur Business Source License", "Terraform wurde vollständig eingestellt", "AWS wollte ein eigenes Werkzeug haben", "Terraform konnte keine Cloud-APIs ansprechen"], "answer_index": 0, "explanation": "Der Lizenzwechsel von Terraform war der Anlass für die Community-Alternative unter dem Dach der Linux Foundation."}
+      ]
+    },
+    "en": {
+      "title": "Infrastructure as Code: Terraform and OpenTofu",
+      "intro": "Infrastructure is described in code instead of being set up by hand. That makes it repeatable and traceable.",
+      "facts": [
+        {"text": "Infrastructure as code (IaC) means resources such as servers and networks are described in files and kept in version control like application code, instead of being set up by hand.", "source_ids": ["aws-devops-iac"]},
+        {"text": "Infrastructure used to be built from scripts and manual steps. New environments were then often not reliably and consistently repeatable; IaC aims to avoid that.", "source_ids": ["aws-devops-iac"]},
+        {"text": "Terraform and OpenTofu are declarative: you describe the desired end state and the tool works out the steps itself. The workflow is Write, Plan, Apply.", "source_ids": ["terraform-intro", "opentofu-intro"]},
+        {"text": "In the plan step the tool shows the proposed changes in advance. A state file records which real resources are managed and serves as the source of truth.", "source_ids": ["terraform-intro"]},
+        {"text": "Terraform comes from HashiCorp and controls platforms through their APIs using providers for AWS, Azure, Google Cloud, Kubernetes and others. Reusable building blocks are called modules.", "source_ids": ["terraform-intro"]},
+        {"text": "OpenTofu is the open-source alternative to Terraform. It was triggered by Terraform's license change from MPL 2.0 to the Business Source License 1.1; announced on 20 September 2023 and hosted by the Linux Foundation.", "source_ids": ["lf-opentofu"]}
+      ],
+      "quiz": [
+        {"question": "What does “declarative” mean for Terraform and OpenTofu?", "options": ["You describe the desired end state of the infrastructure", "You write every setup step as a script in a fixed order", "You click resources together in a web console", "You only document the infrastructure in a wiki"], "answer_index": 0, "explanation": "Declarative means the end state is described and the tool works out the required steps."},
+        {"question": "Which step shows in advance which changes a run would make?", "options": ["Write", "Plan", "Apply", "Destroy"], "answer_index": 1, "explanation": "The plan step produces an execution plan with the proposed changes before apply carries them out."},
+        {"question": "Why was OpenTofu created?", "options": ["Terraform switched from the MPL 2.0 to the Business Source License", "Terraform was discontinued entirely", "AWS wanted a tool of its own", "Terraform could not call cloud APIs"], "answer_index": 0, "explanation": "Terraform's license change was the trigger for the community alternative under the Linux Foundation."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "aws-devops-iac", "title": "AWS Whitepaper: Introduction to DevOps on AWS – Infrastructure as code", "url": "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html", "accessed": "2026-10-03"},
+    {"id": "terraform-intro", "title": "HashiCorp Terraform: What is Terraform?", "url": "https://developer.hashicorp.com/terraform/intro", "accessed": "2026-10-03"},
+    {"id": "opentofu-intro", "title": "OpenTofu Documentation: Introduction", "url": "https://opentofu.org/docs/intro/", "accessed": "2026-10-03"},
+    {"id": "lf-opentofu", "title": "Linux Foundation: Announcing OpenTofu", "url": "https://www.linuxfoundation.org/press/announcing-opentofu", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

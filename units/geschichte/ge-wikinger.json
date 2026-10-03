@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ge-wikinger",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "wikinger", "seefahrt"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Wikinger: Seefahrt, Handel, Entdeckungen",
+      "intro": "Mehr als Raubzüge: Skandinavische Seefahrer handelten, siedelten und erreichten Nordamerika.",
+      "facts": [
+        {"text": "Die Wikingerzeit reicht grob vom Überfall auf Lindisfarne 793 bis zur normannischen Eroberung Englands 1066.", "source_ids": ["wp-vikings"]},
+        {"text": "Das Langschiff war schnell und wendig, hatte Ruder und Segel und wenig Tiefgang. Für den Handel nutzte man den breiteren Knarr.", "source_ids": ["wp-vikings"]},
+        {"text": "Nicht alle Skandinavier waren Wikinger. Die meisten waren Bauern, Fischer, Handwerker und Händler; der Begriff meint vor allem jene, die vom Küstenraub lebten.", "source_ids": ["wp-vikings", "de-wp-wikinger"]},
+        {"text": "Wikinger reisten bis ins Mittelmeer, nach Nordafrika und Vorderasien, nach Konstantinopel und Bagdad. Über Ostsee und russische Flüsse zogen die Waräger (Rus); Rurik begründete eine Dynastie in Russland.", "source_ids": ["wp-vikings", "de-wp-wikinger"]},
+        {"text": "Wikinger siedelten auf Island, Grönland und in Neufundland. Um das Jahr 1000 erreichte Leif Erikson Nordamerika („Vinland“); L'Anse aux Meadows in Neufundland ist eine nachgewiesene Siedlung.", "source_ids": ["wp-vikings"]},
+        {"text": "Für Hörnerhelme bei Wikingern gibt es keinen Beleg. Das Bild wurde im 19. Jahrhundert erfunden.", "source_ids": ["wp-vikings"]}
+      ],
+      "quiz": [
+        {"question": "Welches Ereignis markiert üblicherweise den Beginn der Wikingerzeit?", "options": ["Der Überfall auf Lindisfarne 793", "Die Schlacht bei Hastings 1066", "Die Belagerung von Paris 845", "Die Gründung von Dublin 841"], "answer_index": 0, "explanation": "Der Überfall auf Lindisfarne im Jahr 793 gilt als Auftakt."},
+        {"question": "Wie hieß das breitere Wikinger-Schiff für den Handel?", "options": ["Knarr", "Langschiff", "Kogge", "Galeere"], "answer_index": 0, "explanation": "Der Knarr war breiter und diente dem Warentransport; das Langschiff war das schnelle Kriegsschiff."},
+        {"question": "Was gilt über Hörnerhelme bei Wikingern?", "options": ["Es gibt keinen Beleg, das Bild stammt aus dem 19. Jh.", "Sie waren Standard in jeder Schlacht", "Nur Könige trugen sie", "Sie wurden bei Ausgrabungen in Norwegen gefunden"], "answer_index": 0, "explanation": "Es gibt keinen Beleg für Hörnerhelme; das Bild ist eine Erfindung des 19. Jahrhunderts."}
+      ]
+    },
+    "en": {
+      "title": "The Vikings: seafaring, trade, discoveries",
+      "intro": "More than raids: Scandinavian seafarers traded, settled and reached North America.",
+      "facts": [
+        {"text": "The Viking Age runs roughly from the raid on Lindisfarne in 793 to the Norman conquest of England in 1066.", "source_ids": ["wp-vikings"]},
+        {"text": "The longship was fast and agile, with oars and a sail and a shallow draft. For trade, the broader knarr was used.", "source_ids": ["wp-vikings"]},
+        {"text": "Not all Scandinavians were Vikings. Most were farmers, fishermen, craftsmen and traders; the term mainly refers to those who lived off coastal raiding.", "source_ids": ["wp-vikings", "de-wp-wikinger"]},
+        {"text": "Vikings travelled as far as the Mediterranean, North Africa and the Middle East, to Constantinople and Baghdad. Varangians (Rus) travelled via the Baltic and Russian rivers; Rurik founded a dynasty in Russia.", "source_ids": ["wp-vikings", "de-wp-wikinger"]},
+        {"text": "Vikings settled in Iceland, Greenland and Newfoundland. Around the year 1000 Leif Erikson reached North America (“Vinland”); L'Anse aux Meadows in Newfoundland is a confirmed settlement.", "source_ids": ["wp-vikings"]},
+        {"text": "There is no evidence that Vikings wore horned helmets. The image was invented in the 19th century.", "source_ids": ["wp-vikings"]}
+      ],
+      "quiz": [
+        {"question": "Which event usually marks the beginning of the Viking Age?", "options": ["The raid on Lindisfarne in 793", "The Battle of Hastings in 1066", "The siege of Paris in 845", "The founding of Dublin in 841"], "answer_index": 0, "explanation": "The raid on Lindisfarne in 793 is seen as the start."},
+        {"question": "What was the broader Viking ship used for trade called?", "options": ["Knarr", "Longship", "Cog", "Galley"], "answer_index": 0, "explanation": "The knarr was broader and carried goods; the longship was the fast warship."},
+        {"question": "What is true about Viking horned helmets?", "options": ["There is no evidence; the image dates from the 19th century", "They were standard in every battle", "Only kings wore them", "They were found in excavations in Norway"], "answer_index": 0, "explanation": "There is no evidence for horned helmets; the image is a 19th-century invention."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-vikings", "title": "Wikipedia: Vikings", "url": "https://en.wikipedia.org/wiki/Vikings", "accessed": "2026-10-03"},
+    {"id": "de-wp-wikinger", "title": "Wikipedia (de): Wikinger", "url": "https://de.wikipedia.org/wiki/Wikinger", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

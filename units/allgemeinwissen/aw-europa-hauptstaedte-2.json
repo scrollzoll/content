@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "aw-europa-hauptstaedte-2",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "europa", "hauptstaedte"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Hauptstädte Europas 2: Ost- und Südeuropa",
+      "intro": "Die Hauptstädte vieler Länder in Ost-, Südost- und Südeuropa und eine Besonderheit von Bratislava.",
+      "facts": [
+        {"text": "Die Hauptstadt Polens ist Warschau, die Tschechiens Prag und die Ungarns Budapest.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "Die Hauptstadt Rumäniens ist Bukarest, die Bulgariens Sofia und die Serbiens Belgrad.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "Die Hauptstadt Griechenlands ist Athen, die Italiens Rom, die Spaniens Madrid und die Portugals Lissabon.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "Die Hauptstadt der Ukraine ist Kiew (ukrainisch Kyjiw), die Kroatiens Zagreb, die Sloweniens Ljubljana und die Albaniens Tirana.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "Bratislava, Hauptstadt der Slowakei, ist die einzige Hauptstadt mit Landgrenzen zu zwei anderen Staaten (Österreich, Ungarn). Nur rund 50 bis 60 km trennen sie von Wien; laut Quelle ist das Europas nächstes Hauptstadtpaar.", "source_ids": ["wp-en-bratislava"]}
+      ],
+      "quiz": [
+        {"question": "Wie heißt die Hauptstadt Sloweniens?", "options": ["Zagreb", "Ljubljana", "Bratislava", "Belgrad"], "answer_index": 1, "explanation": "Ljubljana ist die Hauptstadt Sloweniens; Zagreb gehört zu Kroatien, Bratislava zur Slowakei."},
+        {"question": "Wie heißt die Hauptstadt Rumäniens?", "options": ["Sofia", "Budapest", "Bukarest", "Belgrad"], "answer_index": 2, "explanation": "Bukarest ist die Hauptstadt Rumäniens. Sofia ist die Hauptstadt Bulgariens."},
+        {"question": "Welche Hauptstadt liegt nur gut 50 km von Wien entfernt?", "options": ["Prag", "Budapest", "Bratislava", "Ljubljana"], "answer_index": 2, "explanation": "Bratislava und Wien sind das am nächsten beieinanderliegende Hauptstadtpaar Europas."}
+      ]
+    },
+    "en": {
+      "title": "Capitals of Europe 2: Eastern and Southern Europe",
+      "intro": "The capitals of many countries in Eastern, South-Eastern and Southern Europe, plus one special feature of Bratislava.",
+      "facts": [
+        {"text": "The capital of Poland is Warsaw, that of Czechia is Prague and that of Hungary is Budapest.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "The capital of Romania is Bucharest, that of Bulgaria is Sofia and that of Serbia is Belgrade.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "The capital of Greece is Athens, that of Italy is Rome, that of Spain is Madrid and that of Portugal is Lisbon.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "The capital of Ukraine is Kyiv, that of Croatia is Zagreb, that of Slovenia is Ljubljana and that of Albania is Tirana.", "source_ids": ["wp-en-sovereign-europe"]},
+        {"text": "Bratislava, the capital of Slovakia, is the only national capital with land borders to two other states (Austria and Hungary). Only about 50 to 60 km separate it from Vienna; according to the source this is Europe's closest pair of capitals.", "source_ids": ["wp-en-bratislava"]}
+      ],
+      "quiz": [
+        {"question": "What is the capital of Slovenia?", "options": ["Zagreb", "Ljubljana", "Bratislava", "Belgrade"], "answer_index": 1, "explanation": "Ljubljana is the capital of Slovenia; Zagreb belongs to Croatia and Bratislava to Slovakia."},
+        {"question": "What is the capital of Romania?", "options": ["Sofia", "Budapest", "Bucharest", "Belgrade"], "answer_index": 2, "explanation": "Bucharest is the capital of Romania. Sofia is the capital of Bulgaria."},
+        {"question": "Which capital lies only a little over 50 km from Vienna?", "options": ["Prague", "Budapest", "Bratislava", "Ljubljana"], "answer_index": 2, "explanation": "Bratislava and Vienna are the closest pair of capitals in Europe."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-en-sovereign-europe", "title": "Wikipedia: List of sovereign states in Europe", "url": "https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe", "accessed": "2026-10-03"},
+    {"id": "wp-en-bratislava", "title": "Wikipedia: Bratislava", "url": "https://en.wikipedia.org/wiki/Bratislava", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}
