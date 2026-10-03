@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "aw-alpen",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "alpen", "gebirge", "plattentektonik"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die Alpen: Länder, Gipfel, Entstehung",
+      "intro": "Ein Überblick über die Alpen: beteiligte Länder, höchster Gipfel, Ausdehnung und Entstehung.",
+      "facts": [
+        {
+          "text": "Acht Länder haben Anteil an den Alpen: Österreich, Frankreich, Deutschland, Italien, Liechtenstein, Monaco, Slowenien und die Schweiz.",
+          "source_ids": ["wp-en-alps"]
+        },
+        {
+          "text": "Höchster Gipfel der Alpen ist der Mont Blanc an der Grenze zwischen Frankreich und Italien. Er ragt rund 4.800 m hoch, die genaue Höhe schwankt mit Schnee und Eis.",
+          "source_ids": ["wp-en-mont-blanc", "wp-en-alps"]
+        },
+        {
+          "text": "Die Alpen sind etwa 1.200 km lang, bis zu 250 km breit und bedecken rund 200.000 km².",
+          "source_ids": ["wp-en-alps"]
+        },
+        {
+          "text": "Entstanden sind die Alpen durch die Kollision der Afrikanischen mit der Eurasischen Platte. Die Gebirgsbildung begann in der Kreidezeit und dauert bis heute an.",
+          "source_ids": ["wp-en-alps", "wp-en-alpine-orogeny"]
+        },
+        {
+          "text": "Die Hebung geht weiter: In den nördlichen, westlichen und zentralen Alpen steigt das Gebirge laut Messungen um bis zu etwa 2,5 mm pro Jahr.",
+          "source_ids": ["wp-en-alps"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie heißt der höchste Gipfel der Alpen?",
+          "options": ["Matterhorn", "Mont Blanc", "Zugspitze", "Großglockner"],
+          "answer_index": 1,
+          "explanation": "Der Mont Blanc an der Grenze zwischen Frankreich und Italien ist der höchste Alpengipfel."
+        },
+        {
+          "question": "Wie viele Länder haben Anteil an den Alpen?",
+          "options": ["Sechs", "Sieben", "Acht", "Zehn"],
+          "answer_index": 2,
+          "explanation": "Es sind acht: Österreich, Frankreich, Deutschland, Italien, Liechtenstein, Monaco, Slowenien und die Schweiz."
+        },
+        {
+          "question": "Welche Kollision ließ die Alpen entstehen?",
+          "options": [
+            "Pazifische und Nordamerikanische Platte",
+            "Indische und Eurasische Platte",
+            "Südamerikanische und Antarktische Platte",
+            "Afrikanische und Eurasische Platte"
+          ],
+          "answer_index": 3,
+          "explanation": "Die Alpen entstanden durch die Kollision der Afrikanischen mit der Eurasischen Platte."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Alps: countries, peaks, origin",
+      "intro": "An overview of the Alps: the countries involved, the highest peak, size and origin.",
+      "facts": [
+        {
+          "text": "Eight countries share the Alps: Austria, France, Germany, Italy, Liechtenstein, Monaco, Slovenia and Switzerland.",
+          "source_ids": ["wp-en-alps"]
+        },
+        {
+          "text": "The highest peak of the Alps is Mont Blanc on the border between France and Italy. It rises about 4,800 m; its exact height varies with snow and ice.",
+          "source_ids": ["wp-en-mont-blanc", "wp-en-alps"]
+        },
+        {
+          "text": "The Alps are about 1,200 km long, up to 250 km wide and cover roughly 200,000 km².",
+          "source_ids": ["wp-en-alps"]
+        },
+        {
+          "text": "The Alps formed through the collision of the African and Eurasian plates. The mountain building began in the Cretaceous and continues today.",
+          "source_ids": ["wp-en-alps", "wp-en-alpine-orogeny"]
+        },
+        {
+          "text": "The uplift continues: measurements show the northern, western and central Alps rising by up to about 2.5 mm per year.",
+          "source_ids": ["wp-en-alps"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the highest peak of the Alps?",
+          "options": ["Matterhorn", "Mont Blanc", "Zugspitze", "Grossglockner"],
+          "answer_index": 1,
+          "explanation": "Mont Blanc on the border between France and Italy is the highest peak of the Alps."
+        },
+        {
+          "question": "How many countries share the Alps?",
+          "options": ["Six", "Seven", "Eight", "Ten"],
+          "answer_index": 2,
+          "explanation": "Eight: Austria, France, Germany, Italy, Liechtenstein, Monaco, Slovenia and Switzerland."
+        },
+        {
+          "question": "Which collision created the Alps?",
+          "options": [
+            "Pacific and North American plates",
+            "Indian and Eurasian plates",
+            "South American and Antarctic plates",
+            "African and Eurasian plates"
+          ],
+          "answer_index": 3,
+          "explanation": "The Alps formed through the collision of the African and Eurasian plates."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-alps",
+      "title": "Wikipedia: Alps",
+      "url": "https://en.wikipedia.org/wiki/Alps",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-mont-blanc",
+      "title": "Wikipedia: Mont Blanc",
+      "url": "https://en.wikipedia.org/wiki/Mont_Blanc",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-alpine-orogeny",
+      "title": "Wikipedia: Alpine orogeny",
+      "url": "https://en.wikipedia.org/wiki/Alpine_orogeny",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

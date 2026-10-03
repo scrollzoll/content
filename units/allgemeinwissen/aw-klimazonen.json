@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-klimazonen",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "klima", "koeppen-geiger"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Klimazonen nach Köppen-Geiger",
+      "intro": "Die gängigste Klimaklassifikation teilt die Erde in fünf Hauptgruppen, die mit den Buchstaben A bis E bezeichnet werden.",
+      "facts": [
+        {
+          "text": "Der Klimatologe Wladimir Köppen veröffentlichte seine Klassifikation erstmals 1884. Rudolf Geiger überarbeitete sie später, daher heißt sie Köppen-Geiger-Klassifikation.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "Es gibt fünf Hauptgruppen: A tropisch, B trocken, C gemäßigt, D kontinental bzw. boreal (Schneeklima) und E polar. Der erste Buchstabe eines Klimacodes nennt die Hauptgruppe.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "Im tropischen Klima A liegt die Durchschnittstemperatur in jedem Monat des Jahres bei mindestens etwa 18 °C.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "Im Polarklima E bleibt die Durchschnittstemperatur in allen Monaten unter 10 °C, selbst im wärmsten Monat.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "Köppen baute das System auf Pflanzenkunde auf: Die Grenzen zwischen den Klimaten orientieren sich an der Verbreitung der Vegetationszonen der Erde.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Klimatologe veröffentlichte die Klassifikation erstmals 1884?",
+          "options": ["Wladimir Köppen", "Rudolf Geiger", "Alexander von Humboldt", "Alfred Wegener"],
+          "answer_index": 0,
+          "explanation": "Köppen veröffentlichte sie 1884. Geiger überarbeitete sie später, daher der Doppelname."
+        },
+        {
+          "question": "Welcher Buchstabe steht in der Köppen-Geiger-Klassifikation für polare Klimate?",
+          "options": ["A", "B", "D", "E"],
+          "answer_index": 3,
+          "explanation": "E steht für Polar- bzw. Eisklimate. A ist tropisch, B trocken und D kontinental."
+        },
+        {
+          "question": "Wie warm ist es im tropischen Klima A in jedem Monat mindestens ungefähr?",
+          "options": ["0 °C", "10 °C", "18 °C", "25 °C"],
+          "answer_index": 2,
+          "explanation": "Für Klima A gilt: Alle Monatsmittel liegen bei etwa 18 °C oder darüber."
+        }
+      ]
+    },
+    "en": {
+      "title": "Climate zones by Köppen-Geiger",
+      "intro": "The most widely used climate classification divides the Earth into five main groups, labelled A to E.",
+      "facts": [
+        {
+          "text": "The climatologist Wladimir Köppen first published his classification in 1884. Rudolf Geiger later refined it, which is why it is called the Köppen-Geiger classification.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "There are five main groups: A tropical, B arid, C temperate, D continental or boreal (snow climate) and E polar. The first letter of a climate code names the main group.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "In the tropical climate A, the average temperature is at least roughly 18 °C in every month of the year.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "In the polar climate E, the average temperature stays below 10 °C in all months, even in the warmest one.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        },
+        {
+          "text": "Köppen built the system on botany: the boundaries between climates follow the distribution of the Earth's vegetation zones.",
+          "source_ids": ["wp-en-koeppen", "wp-de-klimaklassifikation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which climatologist first published the classification in 1884?",
+          "options": ["Wladimir Köppen", "Rudolf Geiger", "Alexander von Humboldt", "Alfred Wegener"],
+          "answer_index": 0,
+          "explanation": "Köppen published it in 1884. Geiger refined it later, hence the double name."
+        },
+        {
+          "question": "Which letter stands for polar climates in the Köppen-Geiger classification?",
+          "options": ["A", "B", "D", "E"],
+          "answer_index": 3,
+          "explanation": "E stands for polar or ice climates. A is tropical, B arid and D continental."
+        },
+        {
+          "question": "Roughly how warm is it in every month, at the least, in tropical climate A?",
+          "options": ["0 °C", "10 °C", "18 °C", "25 °C"],
+          "answer_index": 2,
+          "explanation": "For climate A, all monthly averages are around 18 °C or higher."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-koeppen",
+      "title": "Wikipedia: Köppen climate classification",
+      "url": "https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-de-klimaklassifikation",
+      "title": "Wikipedia: Effektive Klimaklassifikation",
+      "url": "https://de.wikipedia.org/wiki/Effektive_Klimaklassifikation",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

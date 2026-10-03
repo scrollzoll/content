@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "id": "tech-serverless",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "serverless", "faas", "lambda"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Serverless und Function as a Service",
+      "intro": "Bei Serverless gibt es weiterhin Server, nur kümmert sich der Anbieter um sie. Das bringt Vorteile, aber auch Grenzen.",
+      "facts": [
+        {
+          "text": "Laut ISO/IEC 22123-2 nutzt der Kunde bei Serverless Cloud-Fähigkeiten, ohne Hardware oder Software selbst bereitzustellen oder zu verwalten. Server gibt es trotzdem, der Anbieter betreibt sie.",
+          "source_ids": ["wp-en-serverless"]
+        },
+        {
+          "text": "Function as a Service wie AWS Lambda führt Code als Reaktion auf Ereignisse oder API-Aufrufe aus. Wartung, Kapazität, Skalierung und Patching übernimmt der Anbieter.",
+          "source_ids": ["aws-lambda-welcome"]
+        },
+        {
+          "text": "Abgerechnet wird nach Nutzung: Bei Lambda zahlt man pro Anfrage plus Gigabyte-Sekunden Laufzeit, ohne feste Vorabverpflichtung.",
+          "source_ids": ["aws-lambda-welcome"]
+        },
+        {
+          "text": "Grenzen bei Lambda: höchstens 15 Minuten pro Aufruf und 128 bis 10.240 MB Speicher. Zustand bleibt zwischen Aufrufen nicht zuverlässig erhalten.",
+          "source_ids": ["aws-lambda-quotas", "aws-lambda-welcome"]
+        },
+        {
+          "text": "Typische Nachteile: Bindung an einen Anbieter (Vendor Lock-in), aufwendigeres Debugging verteilter, ereignisgesteuerter Anwendungen und Laufzeitgrenzen, die manche rechenintensive Aufgaben ausschließen.",
+          "source_ids": ["wp-en-serverless"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie lange darf ein einzelner AWS-Lambda-Aufruf höchstens laufen?",
+          "options": ["15 Sekunden", "15 Minuten", "15 Stunden", "Unbegrenzt"],
+          "answer_index": 1,
+          "explanation": "Das Timeout von Lambda beträgt höchstens 900 Sekunden, also 15 Minuten."
+        },
+        {
+          "question": "Wie wird Serverless typischerweise abgerechnet?",
+          "options": [
+            "Nach tatsächlicher Nutzung",
+            "Pauschal pro Server und Monat",
+            "Nach Anzahl der Entwickler",
+            "Nur einmalig beim Deployment"
+          ],
+          "answer_index": 0,
+          "explanation": "Pay-per-use: Bei Lambda zahlt man pro Anfrage und Laufzeit, ohne feste Vorabkosten."
+        },
+        {
+          "question": "Welcher Nachteil wird bei Serverless häufig genannt?",
+          "options": [
+            "Man muss Server selbst patchen",
+            "Vendor Lock-in",
+            "Keine automatische Skalierung",
+            "Zwangsweise feste Monatskosten"
+          ],
+          "answer_index": 1,
+          "explanation": "Anwendungen binden sich an Dienste eines Anbieters, ein Wechsel ist aufwendig."
+        }
+      ]
+    },
+    "en": {
+      "title": "Serverless and Function as a Service",
+      "intro": "With serverless there are still servers, but the provider takes care of them. This brings benefits as well as limits.",
+      "facts": [
+        {
+          "text": "According to ISO/IEC 22123-2, with serverless the customer uses cloud capabilities without provisioning or managing hardware or software. Servers still exist; the provider runs them.",
+          "source_ids": ["wp-en-serverless"]
+        },
+        {
+          "text": "Function as a Service such as AWS Lambda runs code in response to events or API calls. The provider handles maintenance, capacity, scaling and patching.",
+          "source_ids": ["aws-lambda-welcome"]
+        },
+        {
+          "text": "Billing is by usage: with Lambda you pay per request plus gigabyte-seconds of run time, with no upfront commitment.",
+          "source_ids": ["aws-lambda-welcome"]
+        },
+        {
+          "text": "Lambda limits: at most 15 minutes per invocation and 128 to 10,240 MB of memory. State is not reliably kept between invocations.",
+          "source_ids": ["aws-lambda-quotas", "aws-lambda-welcome"]
+        },
+        {
+          "text": "Typical drawbacks: tie-in to one provider (vendor lock-in), harder debugging of distributed, event-driven applications and runtime limits that rule out some compute-heavy tasks.",
+          "source_ids": ["wp-en-serverless"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long may a single AWS Lambda invocation run at most?",
+          "options": ["15 seconds", "15 minutes", "15 hours", "Unlimited"],
+          "answer_index": 1,
+          "explanation": "Lambda's timeout is at most 900 seconds, i.e. 15 minutes."
+        },
+        {
+          "question": "How is serverless typically billed?",
+          "options": [
+            "By actual usage",
+            "A flat fee per server per month",
+            "By number of developers",
+            "Once at deployment only"
+          ],
+          "answer_index": 0,
+          "explanation": "Pay-per-use: with Lambda you pay per request and run time, with no fixed upfront cost."
+        },
+        {
+          "question": "Which drawback is often named for serverless?",
+          "options": [
+            "You must patch servers yourself",
+            "Vendor lock-in",
+            "No automatic scaling",
+            "Mandatory fixed monthly costs"
+          ],
+          "answer_index": 1,
+          "explanation": "Applications become tied to one provider's services, which makes switching costly."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aws-lambda-welcome",
+      "title": "AWS Lambda Developer Guide: What is AWS Lambda?",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "aws-lambda-quotas",
+      "title": "AWS Lambda Developer Guide: Lambda quotas",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-serverless",
+      "title": "Wikipedia: Serverless computing",
+      "url": "https://en.wikipedia.org/wiki/Serverless_computing",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

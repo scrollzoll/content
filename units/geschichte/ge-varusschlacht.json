@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-varusschlacht",
+  "topic": "geschichte/antike",
+  "tags": ["geschichte", "antike", "rom", "germanen", "limes"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Varusschlacht und der Limes",
+      "intro": "Eine römische Niederlage im Jahr 9 n. Chr. prägte die Grenze zwischen dem Römischen Reich und Germanien.",
+      "facts": [
+        {
+          "text": "Im Jahr 9 n. Chr. vernichteten germanische Stämme unter Arminius, einem Cherusker, drei römische Legionen (XVII, XVIII, XIX) unter dem Statthalter Publius Quinctilius Varus.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Arminius hatte eine römische Militärausbildung und diente als Offizier der Hilfstruppen unter Varus. Dieses Wissen nutzte er für einen Hinterhalt in Wald- und Sumpfgelände.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Rom stellte die Expansion östlich des Rheins ein. Der Rhein wurde zur dauerhaften Grenze im Norden, die verlorenen Legionen wurden nie neu aufgestellt.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Ab 1987 fand der Brite Tony Clunn bei Kalkriese mit dem Metalldetektor römische Münzen, später kamen Schleuderbleie hinzu. Ob dort der Hauptschauplatz lag, wird bis heute diskutiert.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Der Limes war keine undurchdringliche Mauer, sondern ein Kontrollsystem aus Graben, Wall und Palisade mit Wachtürmen. Ausgebaut wurde er im 2. Jh. n. Chr.; der Obergermanisch-Raetische Limes wurde 2005 UNESCO-Welterbe.",
+          "source_ids": ["wp-en-limes"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr fand die Varusschlacht statt?",
+          "options": ["9 v. Chr.", "9 n. Chr.", "49 n. Chr.", "476 n. Chr."],
+          "answer_index": 1,
+          "explanation": "Die Schlacht fand im Jahr 9 n. Chr. statt."
+        },
+        {
+          "question": "Wer führte die germanischen Stämme in der Varusschlacht an?",
+          "options": ["Vercingetorix", "Ariovist", "Arminius", "Marbod"],
+          "answer_index": 2,
+          "explanation": "Arminius, ein Cherusker mit römischer Militärausbildung, organisierte das Bündnis und den Hinterhalt."
+        },
+        {
+          "question": "Wie viele römische Legionen wurden vernichtet?",
+          "options": ["Eine", "Drei", "Fünf", "Zehn"],
+          "answer_index": 1,
+          "explanation": "Die Legionen XVII, XVIII und XIX gingen unter und wurden nie neu aufgestellt."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Varus battle and the Limes",
+      "intro": "A Roman defeat in AD 9 shaped the frontier between the Roman Empire and Germania.",
+      "facts": [
+        {
+          "text": "In AD 9, Germanic tribes led by Arminius, a Cheruscan, destroyed three Roman legions (XVII, XVIII, XIX) under the governor Publius Quinctilius Varus.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Arminius had Roman military training and served as an officer of the auxiliary troops under Varus. He used that knowledge for an ambush in forested, marshy terrain.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "Rome stopped its expansion east of the Rhine. The Rhine became the lasting frontier in the north, and the lost legions were never re-formed.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "From 1987, the Briton Tony Clunn found Roman coins at Kalkriese with a metal detector; sling bullets followed later. Whether the main battle took place there is still debated.",
+          "source_ids": ["wp-en-teutoburg", "wp-de-teutoburg"]
+        },
+        {
+          "text": "The Limes was not an impenetrable wall but a control system of ditch, mound and palisade with watchtowers. It was developed in the 2nd century AD; the Upper Germanic-Rhaetian Limes became a UNESCO World Heritage Site in 2005.",
+          "source_ids": ["wp-en-limes"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did the Battle of the Teutoburg Forest take place?",
+          "options": ["9 BC", "AD 9", "AD 49", "AD 476"],
+          "answer_index": 1,
+          "explanation": "The battle took place in AD 9."
+        },
+        {
+          "question": "Who led the Germanic tribes in the Varus battle?",
+          "options": ["Vercingetorix", "Ariovistus", "Arminius", "Maroboduus"],
+          "answer_index": 2,
+          "explanation": "Arminius, a Cheruscan with Roman military training, organised the alliance and the ambush."
+        },
+        {
+          "question": "How many Roman legions were destroyed?",
+          "options": ["One", "Three", "Five", "Ten"],
+          "answer_index": 1,
+          "explanation": "Legions XVII, XVIII and XIX were lost and never re-formed."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-teutoburg",
+      "title": "Wikipedia: Battle of the Teutoburg Forest",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-de-teutoburg",
+      "title": "Wikipedia: Schlacht im Teutoburger Wald",
+      "url": "https://de.wikipedia.org/wiki/Schlacht_im_Teutoburger_Wald",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-limes",
+      "title": "Wikipedia: Limes Germanicus",
+      "url": "https://en.wikipedia.org/wiki/Limes_Germanicus",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

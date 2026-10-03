@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "tech-object-storage",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "speicher", "object-storage", "block-storage", "file-storage"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Object, Block und File Storage",
+      "intro": "Drei Speicherarten, drei Stärken: Welche Art passt zu Datenbanken, gemeinsamen Dateien und riesigen Datenmengen?",
+      "facts": [
+        {
+          "text": "Object Storage legt Daten als Objekte ab: Inhalt plus frei definierbare Metadaten und eine eindeutige Kennung. Sie liegen in einem flachen Namensraum (Bucket), nicht in Ordnern.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "Block Storage teilt Daten in Blöcke fester Größe mit eigener Adresse auf. Einzelne Blöcke sind direkt ansprechbar, das liefert hohe Leistung und geringe Latenz, z. B. für Datenbanken.",
+          "source_ids": ["aws-block-file-object"]
+        },
+        {
+          "text": "File Storage ordnet Daten hierarchisch in Verzeichnissen an, mit Protokollen wie SMB oder NFS. Es eignet sich für gemeinsamen Dateizugriff in Teams.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "Object Storage skaliert nahezu unbegrenzt, bis zu Petabytes und Milliarden Objekten, und speichert Daten redundant. Dafür sind Latenz und Durchsatz geringer als bei Block Storage.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "Bei AWS entsprechen den Typen Amazon S3 (Object), Amazon EBS (Block) sowie Amazon EFS und FSx (File).",
+          "source_ids": ["aws-block-file-object"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Speicherart passt am besten zu einer Datenbank mit niedriger Latenz?",
+          "options": ["Object Storage", "Block Storage", "Archivspeicher auf Band", "E-Mail-Postfach"],
+          "answer_index": 1,
+          "explanation": "Block Storage bietet hohe Leistung und geringe Latenz und ist daher typisch für Datenbanken."
+        },
+        {
+          "question": "Woraus besteht ein Objekt im Object Storage?",
+          "options": [
+            "Nur aus Dateiname und Ordnerpfad",
+            "Aus Daten, Metadaten und einer eindeutigen Kennung",
+            "Aus Blöcken fester Größe",
+            "Aus einer Verzeichnishierarchie"
+          ],
+          "answer_index": 1,
+          "explanation": "Ein Objekt umfasst Inhalt, Metadaten und eine Kennung, abgelegt in einem flachen Namensraum."
+        },
+        {
+          "question": "Welcher Speicherart ist Amazon S3 zuzuordnen?",
+          "options": ["Block Storage", "File Storage", "Object Storage", "Arbeitsspeicher"],
+          "answer_index": 2,
+          "explanation": "Amazon S3 ist der Object-Storage-Dienst von AWS."
+        }
+      ]
+    },
+    "en": {
+      "title": "Object, block and file storage",
+      "intro": "Three storage types, three strengths: which one suits databases, shared files and huge amounts of data?",
+      "facts": [
+        {
+          "text": "Object storage keeps data as objects: content plus user-defined metadata and a unique identifier. They sit in a flat namespace (bucket), not in folders.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "Block storage splits data into fixed-size blocks, each with its own address. Single blocks can be accessed directly, giving high performance and low latency, e.g. for databases.",
+          "source_ids": ["aws-block-file-object"]
+        },
+        {
+          "text": "File storage arranges data hierarchically in directories, using protocols such as SMB or NFS. It suits shared file access for teams.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "Object storage scales almost without limit, to petabytes and billions of objects, and stores data redundantly. In return, latency and throughput are lower than with block storage.",
+          "source_ids": ["aws-what-is-object-storage", "aws-block-file-object"]
+        },
+        {
+          "text": "At AWS, the types correspond to Amazon S3 (object), Amazon EBS (block) and Amazon EFS and FSx (file).",
+          "source_ids": ["aws-block-file-object"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which storage type best suits a database that needs low latency?",
+          "options": ["Object storage", "Block storage", "Tape archive", "Email mailbox"],
+          "answer_index": 1,
+          "explanation": "Block storage offers high performance and low latency, so it is typical for databases."
+        },
+        {
+          "question": "What does an object in object storage consist of?",
+          "options": [
+            "Only a file name and folder path",
+            "Data, metadata and a unique identifier",
+            "Fixed-size blocks",
+            "A directory hierarchy"
+          ],
+          "answer_index": 1,
+          "explanation": "An object comprises content, metadata and an identifier, kept in a flat namespace."
+        },
+        {
+          "question": "Which storage type is Amazon S3?",
+          "options": ["Block storage", "File storage", "Object storage", "Main memory"],
+          "answer_index": 2,
+          "explanation": "Amazon S3 is AWS's object storage service."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aws-what-is-object-storage",
+      "title": "AWS: What is Object Storage?",
+      "url": "https://aws.amazon.com/what-is/object-storage/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "aws-block-file-object",
+      "title": "AWS: The Difference Between Block, File, and Object Storage",
+      "url": "https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

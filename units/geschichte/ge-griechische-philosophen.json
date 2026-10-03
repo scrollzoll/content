@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-griechische-philosophen",
+  "topic": "geschichte/antike",
+  "tags": ["geschichte", "antike", "griechenland", "philosophie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Sokrates, Platon, Aristoteles",
+      "intro": "Drei Denker, eine Linie: Sokrates lehrte Platon, Platon lehrte Aristoteles.",
+      "facts": [
+        {
+          "text": "Sokrates (ca. 470–399 v. Chr.) hinterließ keine eigenen Schriften. Was wir über ihn wissen, stammt vor allem von seinem Schüler Platon und von Xenophon.",
+          "source_ids": ["wp-en-socrates"]
+        },
+        {
+          "text": "Sokrates fragte im Dialog nach, um Widersprüche in Überzeugungen aufzudecken (sokratische Methode). 399 v. Chr. wurde er in Athen verurteilt und musste den Schierlingsbecher trinken.",
+          "source_ids": ["wp-en-socrates"]
+        },
+        {
+          "text": "Platon (ca. 428–347 v. Chr.) war Schüler des Sokrates und gründete um 383 v. Chr. in Athen die Akademie. Seine Ideenlehre fragt nach Wirklichkeit und Wissen; zu seinen Werken zählt die „Politeia“.",
+          "source_ids": ["wp-en-plato"]
+        },
+        {
+          "text": "Aristoteles (384–322 v. Chr.) stammte aus Stagira und blieb knapp zwanzig Jahre in Platons Akademie. Ab 343 v. Chr. unterrichtete er Alexander den Großen.",
+          "source_ids": ["wp-en-aristotle"]
+        },
+        {
+          "text": "Um 335 v. Chr. gründete Aristoteles in Athen das Lykeion. Ihm wird die früheste systematische Logik zugeschrieben; seine Logikschriften sind im Organon gesammelt.",
+          "source_ids": ["wp-en-aristotle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Philosoph hinterließ keine eigenen Schriften?",
+          "options": ["Platon", "Aristoteles", "Sokrates", "Epikur"],
+          "answer_index": 2,
+          "explanation": "Von Sokrates stammt keine Schrift. Sein Denken kennen wir vor allem durch Platon und Xenophon."
+        },
+        {
+          "question": "Wer gründete um 383 v. Chr. die Akademie in Athen?",
+          "options": ["Platon", "Aristoteles", "Sokrates", "Diogenes"],
+          "answer_index": 0,
+          "explanation": "Platon gründete die Akademie, an der später Aristoteles fast zwanzig Jahre lernte."
+        },
+        {
+          "question": "Welcher Philosoph unterrichtete Alexander den Großen?",
+          "options": ["Sokrates", "Platon", "Xenophon", "Aristoteles"],
+          "answer_index": 3,
+          "explanation": "Aristoteles wurde ab 343 v. Chr. Lehrer des jungen Alexander."
+        }
+      ]
+    },
+    "en": {
+      "title": "Socrates, Plato, Aristotle",
+      "intro": "Three thinkers, one line: Socrates taught Plato, Plato taught Aristotle.",
+      "facts": [
+        {
+          "text": "Socrates (c. 470–399 BC) left no writings of his own. What we know about him comes mainly from his student Plato and from Xenophon.",
+          "source_ids": ["wp-en-socrates"]
+        },
+        {
+          "text": "Socrates questioned people in dialogue to expose contradictions in their beliefs (the Socratic method). In 399 BC he was convicted in Athens and had to drink hemlock.",
+          "source_ids": ["wp-en-socrates"]
+        },
+        {
+          "text": "Plato (c. 428–347 BC) was a student of Socrates and founded the Academy in Athens around 383 BC. His theory of Forms asks about reality and knowledge; his works include the 'Republic'.",
+          "source_ids": ["wp-en-plato"]
+        },
+        {
+          "text": "Aristotle (384–322 BC) came from Stagira and stayed almost twenty years at Plato's Academy. From 343 BC he tutored Alexander the Great.",
+          "source_ids": ["wp-en-aristotle"]
+        },
+        {
+          "text": "Around 335 BC Aristotle founded the Lyceum in Athens. He is credited with the earliest systematic logic; his logical writings are collected in the Organon.",
+          "source_ids": ["wp-en-aristotle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which philosopher left no writings of his own?",
+          "options": ["Plato", "Aristotle", "Socrates", "Epicurus"],
+          "answer_index": 2,
+          "explanation": "No writing by Socrates survives. We know his thought mainly through Plato and Xenophon."
+        },
+        {
+          "question": "Who founded the Academy in Athens around 383 BC?",
+          "options": ["Plato", "Aristotle", "Socrates", "Diogenes"],
+          "answer_index": 0,
+          "explanation": "Plato founded the Academy, where Aristotle later studied for almost twenty years."
+        },
+        {
+          "question": "Which philosopher tutored Alexander the Great?",
+          "options": ["Socrates", "Plato", "Xenophon", "Aristotle"],
+          "answer_index": 3,
+          "explanation": "From 343 BC Aristotle became the young Alexander's teacher."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-socrates",
+      "title": "Wikipedia: Socrates",
+      "url": "https://en.wikipedia.org/wiki/Socrates",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-plato",
+      "title": "Wikipedia: Plato",
+      "url": "https://en.wikipedia.org/wiki/Plato",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-aristotle",
+      "title": "Wikipedia: Aristotle",
+      "url": "https://en.wikipedia.org/wiki/Aristotle",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

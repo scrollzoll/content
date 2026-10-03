@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "aw-europa-hauptstaedte-1",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "europa", "hauptstaedte"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Hauptstädte Europas 1: West- und Nordeuropa",
+      "intro": "Die Hauptstädte der nordischen Länder und einiger Staaten Westeuropas, samt zwei Besonderheiten.",
+      "facts": [
+        {
+          "text": "Die Hauptstadt Norwegens ist Oslo, die Hauptstadt Schwedens ist Stockholm.",
+          "source_ids": ["wp-en-nordic-countries"]
+        },
+        {
+          "text": "Die Hauptstadt Dänemarks ist Kopenhagen, die Hauptstadt Finnlands ist Helsinki.",
+          "source_ids": ["wp-en-nordic-countries", "wp-en-national-capitals"]
+        },
+        {
+          "text": "Reykjavík ist die Hauptstadt Islands und liegt auf 64° nördlicher Breite. Es ist die nördlichste Hauptstadt eines souveränen Staats.",
+          "source_ids": ["wp-en-reykjavik"]
+        },
+        {
+          "text": "Die Hauptstadt der Niederlande ist Amsterdam, doch Regierung, Ministerien und Botschaften sitzen in Den Haag.",
+          "source_ids": ["wp-en-amsterdam", "wp-en-national-capitals"]
+        },
+        {
+          "text": "Weitere Hauptstädte: Dublin (Irland), Brüssel (Belgien), London (Vereinigtes Königreich) und Luxemburg (Luxemburg).",
+          "source_ids": ["wp-en-national-capitals"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie heißt die Hauptstadt Norwegens?",
+          "options": ["Stockholm", "Helsinki", "Oslo", "Kopenhagen"],
+          "answer_index": 2,
+          "explanation": "Oslo ist die Hauptstadt Norwegens. Stockholm gehört zu Schweden, Helsinki zu Finnland, Kopenhagen zu Dänemark."
+        },
+        {
+          "question": "Welche Hauptstadt ist die nördlichste eines souveränen Staats?",
+          "options": ["Reykjavík", "Oslo", "Helsinki", "Stockholm"],
+          "answer_index": 0,
+          "explanation": "Reykjavík liegt auf 64° nördlicher Breite und ist die nördlichste Hauptstadt eines souveränen Staats."
+        },
+        {
+          "question": "In welcher Stadt sitzt die Regierung der Niederlande?",
+          "options": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"],
+          "answer_index": 2,
+          "explanation": "Amsterdam ist offizielle Hauptstadt, die Regierung und die Botschaften befinden sich aber in Den Haag."
+        },
+        {
+          "question": "Wie heißt die Hauptstadt Irlands?",
+          "options": ["Cork", "Belfast", "Galway", "Dublin"],
+          "answer_index": 3,
+          "explanation": "Dublin ist die Hauptstadt Irlands, so führt es die Liste der Hauptstädte."
+        }
+      ]
+    },
+    "en": {
+      "title": "Capitals of Europe 1: Western and Northern Europe",
+      "intro": "The capitals of the Nordic countries and some Western European states, with two quirks.",
+      "facts": [
+        {
+          "text": "The capital of Norway is Oslo, the capital of Sweden is Stockholm.",
+          "source_ids": ["wp-en-nordic-countries"]
+        },
+        {
+          "text": "The capital of Denmark is Copenhagen, the capital of Finland is Helsinki.",
+          "source_ids": ["wp-en-nordic-countries", "wp-en-national-capitals"]
+        },
+        {
+          "text": "Reykjavík is the capital of Iceland and lies at 64° north. It is the northernmost capital of a sovereign state.",
+          "source_ids": ["wp-en-reykjavik"]
+        },
+        {
+          "text": "The capital of the Netherlands is Amsterdam, but the government, ministries and embassies are in The Hague.",
+          "source_ids": ["wp-en-amsterdam", "wp-en-national-capitals"]
+        },
+        {
+          "text": "More capitals: Dublin (Ireland), Brussels (Belgium), London (United Kingdom) and Luxembourg (Luxembourg).",
+          "source_ids": ["wp-en-national-capitals"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the capital of Norway?",
+          "options": ["Stockholm", "Helsinki", "Oslo", "Copenhagen"],
+          "answer_index": 2,
+          "explanation": "Oslo is the capital of Norway. Stockholm belongs to Sweden, Helsinki to Finland, Copenhagen to Denmark."
+        },
+        {
+          "question": "Which capital is the northernmost of a sovereign state?",
+          "options": ["Reykjavík", "Oslo", "Helsinki", "Stockholm"],
+          "answer_index": 0,
+          "explanation": "Reykjavík lies at 64° north and is the northernmost capital of a sovereign state."
+        },
+        {
+          "question": "In which city does the Dutch government sit?",
+          "options": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht"],
+          "answer_index": 2,
+          "explanation": "Amsterdam is the official capital, but the government and embassies are in The Hague."
+        },
+        {
+          "question": "What is the capital of Ireland?",
+          "options": ["Cork", "Belfast", "Galway", "Dublin"],
+          "answer_index": 3,
+          "explanation": "Dublin is the capital of Ireland, as the list of national capitals shows."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-nordic-countries",
+      "title": "Wikipedia: Nordic countries",
+      "url": "https://en.wikipedia.org/wiki/Nordic_countries",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-national-capitals",
+      "title": "Wikipedia: List of national capitals",
+      "url": "https://en.wikipedia.org/wiki/List_of_national_capitals",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-reykjavik",
+      "title": "Wikipedia: Reykjavík",
+      "url": "https://en.wikipedia.org/wiki/Reykjav%C3%ADk",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-amsterdam",
+      "title": "Wikipedia: Amsterdam",
+      "url": "https://en.wikipedia.org/wiki/Amsterdam",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
