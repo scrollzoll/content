@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-small-talk",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "small-talk", "alltag"],
+  "format": "flashcards",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Englisch: Small Talk – Einstiege und Antworten",
+      "cards": [
+        {
+          "front": "Gesprächseinstieg unter Kollegen",
+          "back": "How was your weekend?"
+        },
+        {
+          "front": "Gesprächseinstieg bei einer Veranstaltung",
+          "back": "What brings you here today?"
+        },
+        {
+          "front": "Lockerer Einstieg über das Wetter",
+          "back": "Lovely weather today, isn't it?"
+        },
+        {
+          "front": "Interesse zeigen, wenn jemand erzählt",
+          "back": "That sounds interesting. / Really? How was that?"
+        },
+        {
+          "front": "Jemanden bitten, mehr zu erzählen",
+          "back": "Tell me more about that."
+        },
+        {
+          "front": "Nachfragen, wie eine Geschichte weiterging",
+          "back": "What happened after that?"
+        },
+        {
+          "front": "Ein Gespräch höflich beenden",
+          "back": "Well, it's been lovely chatting with you."
+        },
+        {
+          "front": "Das Gespräch mit Ausblick abschließen",
+          "back": "Let's catch up again soon."
+        }
+      ]
+    },
+    "en": {
+      "title": "English: small talk – openers and replies",
+      "cards": [
+        {
+          "front": "Opener between colleagues",
+          "back": "How was your weekend?"
+        },
+        {
+          "front": "Opener at an event",
+          "back": "What brings you here today?"
+        },
+        {
+          "front": "Casual opener about the weather",
+          "back": "Lovely weather today, isn't it?"
+        },
+        {
+          "front": "Showing interest when someone is telling a story",
+          "back": "That sounds interesting. / Really? How was that?"
+        },
+        {
+          "front": "Asking someone to say more",
+          "back": "Tell me more about that."
+        },
+        {
+          "front": "Asking how a story continued",
+          "back": "What happened after that?"
+        },
+        {
+          "front": "Ending a conversation politely",
+          "back": "Well, it's been lovely chatting with you."
+        },
+        {
+          "front": "Closing with a look ahead",
+          "back": "Let's catch up again soon."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "british-council-small-talk",
+      "title": "British Council English Online: Your guide to small talk topics, phrases and openers in English",
+      "url": "https://englishonline.britishcouncil.org/blog/articles/your-guide-to-small-talk-topics-phrases-and-openers-in-english/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

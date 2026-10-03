@@ -22,16 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-iaas-paas-saas
-    topic: technologie/cloud
-    hint: "Die drei Cloud-Servicemodelle nach NIST-Definition mit Beispielen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-cloud-regionen-zonen
-    topic: technologie/cloud
-    hint: "Regionen und Verfügbarkeitszonen bei Cloud-Anbietern"
-    format: facts_quiz
-    priority: 1
   - id: tech-container-vs-vm
     topic: technologie/cloud
     hint: "Container vs. virtuelle Maschine: Unterschiede und Einsatz"
@@ -267,16 +257,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-presentations
-    topic: sprachen/englisch
-    hint: "Redewendungen für Präsentationen: Einleitung, Überleitung, Fragen"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-small-talk
-    topic: sprachen/englisch
-    hint: "Small Talk auf Englisch: Einstiege und typische Antworten"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-since-for
     topic: sprachen/englisch
     hint: "since vs. for bei Zeitangaben mit Present Perfect"
@@ -1122,11 +1102,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-vulkane
-    topic: allgemeinwissen/geografie
-    hint: "Vulkane: Arten, Pazifischer Feuerring"
-    format: facts_quiz
-    priority: 1
   - id: aw-klimazonen
     topic: allgemeinwissen/geografie
     hint: "Die Klimazonen der Erde nach Köppen-Geiger"
@@ -1732,11 +1707,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-untergang-westrom
-    topic: geschichte/antike
-    hint: "Der Untergang Westroms 476 n. Chr."
-    format: facts_quiz
-    priority: 1
   - id: ge-varusschlacht
     topic: geschichte/antike
     hint: "Die Varusschlacht 9 n. Chr. und der Limes"

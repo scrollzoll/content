@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "ge-untergang-westrom",
+  "topic": "geschichte/antike",
+  "tags": ["rom", "spaetantike", "odoaker"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Der Untergang Westroms 476 n. Chr.",
+      "intro": "476 gilt als Jahr, in dem das Weströmische Reich endete. Tatsächlich war es ein längerer Prozess.",
+      "facts": [
+        {
+          "text": "Am 4. September 476 setzte der Heerführer Odoaker den jungen Kaiser Romulus Augustulus ab, den letzten Kaiser des Westreichs.",
+          "source_ids": ["wikipedia-romulus", "wikipedia-fall-west"]
+        },
+        {
+          "text": "Romulus war womöglich erst zehn Jahre alt. Sein Vater Orestes, ein hoher Heerführer, hatte ihn 475 zum Kaiser gemacht und die Macht selbst behalten.",
+          "source_ids": ["wikipedia-romulus"]
+        },
+        {
+          "text": "Orestes verweigerte den verbündeten Truppen Land in Italien. Odoaker besiegte und tötete ihn daraufhin im August 476 und nahm danach Ravenna ein.",
+          "source_ids": ["wikipedia-romulus", "wikipedia-odoacer"]
+        },
+        {
+          "text": "Romulus wurde verschont: Odoaker gab ihm eine Jahrespension und ein Landgut in Kampanien bei Neapel.",
+          "source_ids": ["wikipedia-romulus"]
+        },
+        {
+          "text": "Der Senat schickte die kaiserlichen Insignien an Kaiser Zenon in Konstantinopel. Das Oströmische Reich bestand noch Jahrhunderte weiter, während Odoaker, von seinen Truppen zum König ausgerufen, Italien regierte.",
+          "source_ids": ["wikipedia-fall-west", "wikipedia-odoacer"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer setzte 476 den letzten weströmischen Kaiser ab?",
+          "options": ["Odoaker", "Theoderich", "Zenon", "Orestes"],
+          "answer_index": 0,
+          "explanation": "Odoaker setzte Romulus Augustulus am 4. September 476 ab."
+        },
+        {
+          "question": "Wer war der Vater des letzten weströmischen Kaisers?",
+          "options": ["Julius Nepos", "Orestes", "Odoaker", "Zenon"],
+          "answer_index": 1,
+          "explanation": "Orestes machte seinen Sohn Romulus 475 zum Kaiser, um selbst die Macht zu behalten."
+        },
+        {
+          "question": "Was geschah 476 mit dem Oströmischen Reich?",
+          "options": [
+            "Es bestand noch Jahrhunderte weiter",
+            "Es ging zusammen mit Westrom unter",
+            "Es wurde von Odoaker erobert",
+            "Es wurde in Italien neu gegründet"
+          ],
+          "answer_index": 0,
+          "explanation": "Das Oströmische (Byzantinische) Reich überdauerte den Fall des Westens um Jahrhunderte."
+        }
+      ]
+    },
+    "en": {
+      "title": "The fall of the Western Roman Empire, 476 AD",
+      "intro": "476 is regarded as the year the Western Roman Empire ended. In reality it was a longer process.",
+      "facts": [
+        {
+          "text": "On 4 September 476, the commander Odoacer deposed the young emperor Romulus Augustulus, the last emperor of the Western Empire.",
+          "source_ids": ["wikipedia-romulus", "wikipedia-fall-west"]
+        },
+        {
+          "text": "Romulus was perhaps only ten years old. His father Orestes, a senior commander, had made him emperor in 475 and kept the real power for himself.",
+          "source_ids": ["wikipedia-romulus"]
+        },
+        {
+          "text": "Orestes refused the allied troops land in Italy. Odoacer then defeated and killed him in August 476 and afterwards captured Ravenna.",
+          "source_ids": ["wikipedia-romulus", "wikipedia-odoacer"]
+        },
+        {
+          "text": "Romulus was spared: Odoacer gave him an annual pension and an estate in Campania near Naples.",
+          "source_ids": ["wikipedia-romulus"]
+        },
+        {
+          "text": "The Senate sent the imperial insignia to Emperor Zeno in Constantinople. The Eastern Roman Empire lasted for centuries, while Odoacer, proclaimed king by his troops, ruled Italy.",
+          "source_ids": ["wikipedia-fall-west", "wikipedia-odoacer"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who deposed the last Western Roman emperor in 476?",
+          "options": ["Odoacer", "Theodoric", "Zeno", "Orestes"],
+          "answer_index": 0,
+          "explanation": "Odoacer deposed Romulus Augustulus on 4 September 476."
+        },
+        {
+          "question": "Who was the father of the last Western Roman emperor?",
+          "options": ["Julius Nepos", "Orestes", "Odoacer", "Zeno"],
+          "answer_index": 1,
+          "explanation": "Orestes made his son Romulus emperor in 475 to keep power for himself."
+        },
+        {
+          "question": "What happened to the Eastern Roman Empire in 476?",
+          "options": [
+            "It lasted for centuries more",
+            "It fell together with the West",
+            "It was conquered by Odoacer",
+            "It was refounded in Italy"
+          ],
+          "answer_index": 0,
+          "explanation": "The Eastern (Byzantine) Empire outlasted the fall of the West by centuries."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-fall-west",
+      "title": "Wikipedia: Fall of the Western Roman Empire",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-romulus",
+      "title": "Wikipedia: Romulus Augustulus",
+      "url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-odoacer",
+      "title": "Wikipedia: Odoacer",
+      "url": "https://en.wikipedia.org/wiki/Odoacer",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

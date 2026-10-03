@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-presentations",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "praesentation", "business-english"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Englisch: Redewendungen für Präsentationen",
+      "cards": [
+        {
+          "front": "Das Thema nennen",
+          "back": "Today, I'd like to talk about…"
+        },
+        {
+          "front": "Den Aufbau der Präsentation ankündigen",
+          "back": "This talk is divided into four main parts."
+        },
+        {
+          "front": "Ankündigen, wann Fragen möglich sind",
+          "back": "At the end of my talk, there will be a chance to ask questions."
+        },
+        {
+          "front": "Zum nächsten Punkt überleiten",
+          "back": "This leads me to my next point, which is…"
+        },
+        {
+          "front": "Rückblick und Übergang zum nächsten Abschnitt",
+          "back": "So far we have looked at… Now I'd like to…"
+        },
+        {
+          "front": "Fragen am Ende anbieten",
+          "back": "I'd be happy to answer any questions you have at the end."
+        },
+        {
+          "front": "Bei einer Frage Zeit gewinnen",
+          "back": "That's a good question. Let me think about that for a second."
+        },
+        {
+          "front": "Eine unklare Frage nachfragen",
+          "back": "Just to make sure I understand, are you asking about X or Y?"
+        }
+      ]
+    },
+    "en": {
+      "title": "English: phrases for presentations",
+      "cards": [
+        {
+          "front": "Naming the topic",
+          "back": "Today, I'd like to talk about…"
+        },
+        {
+          "front": "Announcing the structure of the presentation",
+          "back": "This talk is divided into four main parts."
+        },
+        {
+          "front": "Announcing when questions are welcome",
+          "back": "At the end of my talk, there will be a chance to ask questions."
+        },
+        {
+          "front": "Moving on to the next point",
+          "back": "This leads me to my next point, which is…"
+        },
+        {
+          "front": "Looking back and moving to the next section",
+          "back": "So far we have looked at… Now I'd like to…"
+        },
+        {
+          "front": "Offering questions at the end",
+          "back": "I'd be happy to answer any questions you have at the end."
+        },
+        {
+          "front": "Buying time before answering a question",
+          "back": "That's a good question. Let me think about that for a second."
+        },
+        {
+          "front": "Clarifying an unclear question",
+          "back": "Just to make sure I understand, are you asking about X or Y?"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "eap-foundation-presentations",
+      "title": "EAP Foundation: Language for presentations",
+      "url": "https://www.eapfoundation.com/speaking/presentations/language/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "talaera-transitions",
+      "title": "Talaera: Transition phrases for presentations",
+      "url": "https://www.talaera.com/presentations/transition-phrases-presentations-online/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "talkdrill-presentations",
+      "title": "TalkDrill: English presentation skills",
+      "url": "https://www.talkdrill.com/blog/english-presentation-skills/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
