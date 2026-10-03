@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ge-magna-carta",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "england", "magna-carta", "recht"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Magna Carta von 1215",
+      "intro": "Ein gescheiterter Friedensvertrag zwischen König und Baronen wurde zum Grundstein der Idee, dass auch Herrscher an das Recht gebunden sind.",
+      "facts": [
+        {"text": "König Johann von England besiegelte die Magna Carta am 15. Juni 1215 auf der Wiese von Runnymede zwischen Windsor und Staines.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "Sie sollte Frieden zwischen dem unbeliebten König und aufständischen Baronen stiften. Als Friedensvertrag scheiterte sie zunächst.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "Der Text sicherte Rechte der Kirche zu, schützte vor rechtswidriger Haft, versprach rasche Rechtsprechung und begrenzte feudale Abgaben an die Krone.", "source_ids": ["wp-magna-carta"]},
+        {"text": "Ein Rat von 25 Baronen überwachte die Einhaltung. Verstieß der König dagegen und half nicht binnen 40 Tagen ab, durften sie seine Burgen und Ländereien beschlagnahmen.", "source_ids": ["wp-magna-carta"]},
+        {"text": "Papst Innozenz III. erklärte die Charta im August 1215 für ungültig. Danach brach der Erste Krieg der Barone aus.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "Neu ausgestellt wurde sie 1216, 1217 und 1225. 1297 bestätigte Eduard I. sie als Gesetz, drei Klauseln gelten in England und Wales bis heute.", "source_ids": ["wp-magna-carta"]}
+      ],
+      "quiz": [
+        {"question": "Wo und wann wurde die Magna Carta besiegelt?", "options": ["Runnymede, 15. Juni 1215", "London, 1. Januar 1215", "Hastings, 14. Oktober 1215", "Canterbury, 25. Dezember 1214"], "answer_index": 0, "explanation": "König Johann besiegelte sie am 15. Juni 1215 bei Runnymede nahe Windsor."},
+        {"question": "Wie reagierte Papst Innozenz III. im August 1215 auf die Magna Carta?", "options": ["Er erklärte sie für ungültig", "Er bestätigte sie feierlich", "Er machte sie zum Kirchengesetz", "Er ignorierte sie vollständig"], "answer_index": 0, "explanation": "Die Annullierung durch den Papst trug dazu bei, dass der Erste Krieg der Barone ausbrach."},
+        {"question": "Wie viele Barone sollten die Einhaltung der Charta überwachen?", "options": ["25", "12", "40", "100"], "answer_index": 0, "explanation": "Ein Rat von 25 Baronen konnte bei Verstößen Burgen und Land des Königs beschlagnahmen."}
+      ]
+    },
+    "en": {
+      "title": "Magna Carta of 1215",
+      "intro": "A failed peace treaty between a king and his barons became the foundation of the idea that even rulers are bound by law.",
+      "facts": [
+        {"text": "King John of England sealed Magna Carta on 15 June 1215 at the meadow of Runnymede, between Windsor and Staines.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "It was meant to make peace between the unpopular king and rebellious barons. As a peace treaty, it failed at first.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "The text promised rights for the Church, protection from illegal imprisonment, swift justice, and limits on feudal payments to the Crown.", "source_ids": ["wp-magna-carta"]},
+        {"text": "A council of 25 barons monitored compliance. If the king broke the terms and did not make amends within 40 days, they could seize his castles and lands.", "source_ids": ["wp-magna-carta"]},
+        {"text": "Pope Innocent III annulled the charter in August 1215. The First Barons' War followed.", "source_ids": ["tna-magna-carta", "wp-magna-carta"]},
+        {"text": "It was reissued in 1216, 1217 and 1225. In 1297 Edward I confirmed it as statute, and three clauses remain in force in England and Wales today.", "source_ids": ["wp-magna-carta"]}
+      ],
+      "quiz": [
+        {"question": "Where and when was Magna Carta sealed?", "options": ["Runnymede, 15 June 1215", "London, 1 January 1215", "Hastings, 14 October 1215", "Canterbury, 25 December 1214"], "answer_index": 0, "explanation": "King John sealed it on 15 June 1215 at Runnymede near Windsor."},
+        {"question": "How did Pope Innocent III react to Magna Carta in August 1215?", "options": ["He annulled it", "He solemnly confirmed it", "He made it church law", "He ignored it completely"], "answer_index": 0, "explanation": "The pope's annulment helped lead to the outbreak of the First Barons' War."},
+        {"question": "How many barons were to monitor compliance with the charter?", "options": ["25", "12", "40", "100"], "answer_index": 0, "explanation": "A council of 25 barons could seize the king's castles and lands if he broke the terms."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "tna-magna-carta", "title": "The National Archives: Magna Carta 1214-1225", "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/magna-carta-1214-1225/", "accessed": "2026-10-03"},
+    {"id": "wp-magna-carta", "title": "Wikipedia: Magna Carta", "url": "https://en.wikipedia.org/wiki/Magna_Carta", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

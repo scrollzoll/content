@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "ge-pest",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "pest", "schwarzer-tod", "epidemie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Schwarze Tod: Die Pest im 14. Jahrhundert",
+      "intro": "Zwischen 1346 und 1353 zog eine Pandemie durch Eurasien und Nordafrika. Sie veränderte Europa tiefgreifend. Hier die wichtigsten Fakten.",
+      "facts": [
+        {"text": "Die Pandemie des „Schwarzen Todes“ dauerte etwa von 1346 bis 1353. Ausgelöst wurde sie vom Bakterium Yersinia pestis.", "source_ids": ["wp-black-death", "who-plague"]},
+        {"text": "Genetische Spuren weisen auf das Tian-Shan-Gebirge an der Grenze von Kirgisistan und China. Grabinschriften am Yssykköl nennen Pesttote in den Jahren 1338 und 1339.", "source_ids": ["wp-black-death"]},
+        {"text": "Nach Europa kam die Seuche 1347 über genuesische Händler von Kaffa auf der Krim. Im Oktober 1347 erreichte sie Sizilien.", "source_ids": ["wp-black-death"]},
+        {"text": "Das Bakterium lebt vor allem in Kleinsäugern und ihren Flöhen. Der Biss infizierter Flöhe ist der Hauptübertragungsweg; bei der Beulenpest schwellen Lymphknoten zu „Beulen“ an.", "source_ids": ["who-plague", "cdc-plague"]},
+        {"text": "Die Opferzahlen sind Schätzungen: weltweit meist 25 bis 50 Millionen Tote. In Europa starben je nach Schätzung etwa 30 bis 60 Prozent der Bevölkerung.", "source_ids": ["wp-black-death"]},
+        {"text": "Die Hafenstadt Ragusa (heute Dubrovnik) ordnete 1377 für Ankömmlinge aus Pestgebieten 30 Tage Isolation an, später 40 Tage. Daher stammt das Wort Quarantäne.", "source_ids": ["wp-black-death"]}
+      ],
+      "quiz": [
+        {"question": "Welches Bakterium löste den Schwarzen Tod aus?", "options": ["Yersinia pestis", "Vibrio cholerae", "Mycobacterium tuberculosis", "Salmonella typhi"], "answer_index": 0, "explanation": "Die Pest wird durch Yersinia pestis verursacht, das vor allem durch Flohbisse übertragen wird."},
+        {"question": "Über welche Handelsstadt gelangte die Pest 1347 nach Europa?", "options": ["Kaffa auf der Krim", "Alexandria in Ägypten", "Lübeck an der Ostsee", "Venedig an der Adria"], "answer_index": 0, "explanation": "Genuesische Händler brachten die Seuche von Kaffa auf der Krim nach Europa; im Oktober 1347 erreichte sie Sizilien."},
+        {"question": "Woher stammt das Wort „Quarantäne“?", "options": ["Von der 40-tägigen Isolation in Ragusa", "Vom lateinischen Wort für Seuche", "Von der Zahl der Pestopfer", "Vom Namen eines Arztes"], "answer_index": 0, "explanation": "Ragusa führte 1377 eine Isolation von 30, später 40 Tagen ein. Das italienische „quarantino“ bedeutet „vierzig“."}
+      ]
+    },
+    "en": {
+      "title": "The Black Death: the plague in the 14th century",
+      "intro": "Between 1346 and 1353 a pandemic swept across Eurasia and North Africa. It changed Europe profoundly. Here are the key facts.",
+      "facts": [
+        {"text": "The Black Death pandemic lasted roughly from 1346 to 1353. It was caused by the bacterium Yersinia pestis.", "source_ids": ["wp-black-death", "who-plague"]},
+        {"text": "Genetic traces point to the Tian Shan mountains on the border of Kyrgyzstan and China. Gravestone inscriptions near Lake Issyk-Kul record plague deaths in 1338 and 1339.", "source_ids": ["wp-black-death"]},
+        {"text": "The disease reached Europe in 1347 via Genoese traders from Kaffa in Crimea. In October 1347 it arrived in Sicily.", "source_ids": ["wp-black-death"]},
+        {"text": "The bacterium lives mainly in small mammals and their fleas. The bite of infected fleas is the main route of transmission; in bubonic plague, lymph nodes swell into \"buboes\".", "source_ids": ["who-plague", "cdc-plague"]},
+        {"text": "Death tolls are estimates: usually 25 to 50 million worldwide. In Europe, depending on the estimate, roughly 30 to 60 percent of the population died.", "source_ids": ["wp-black-death"]},
+        {"text": "In 1377 the port city of Ragusa (now Dubrovnik) ordered 30 days of isolation for arrivals from plague areas, later 40 days. This is where the word quarantine comes from.", "source_ids": ["wp-black-death"]}
+      ],
+      "quiz": [
+        {"question": "Which bacterium caused the Black Death?", "options": ["Yersinia pestis", "Vibrio cholerae", "Mycobacterium tuberculosis", "Salmonella typhi"], "answer_index": 0, "explanation": "Plague is caused by Yersinia pestis, which is mainly transmitted by flea bites."},
+        {"question": "Via which trading city did the plague reach Europe in 1347?", "options": ["Kaffa in Crimea", "Alexandria in Egypt", "Lübeck on the Baltic", "Venice on the Adriatic"], "answer_index": 0, "explanation": "Genoese traders brought the disease from Kaffa in Crimea to Europe; it reached Sicily in October 1347."},
+        {"question": "Where does the word \"quarantine\" come from?", "options": ["The 40-day isolation in Ragusa", "The Latin word for epidemic", "The number of plague victims", "The name of a physician"], "answer_index": 0, "explanation": "Ragusa introduced isolation of 30, later 40 days in 1377. The Italian \"quarantino\" means \"forty\"."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-black-death", "title": "Wikipedia: Black Death", "url": "https://en.wikipedia.org/wiki/Black_Death", "accessed": "2026-10-03"},
+    {"id": "who-plague", "title": "WHO: Plague fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/plague", "accessed": "2026-10-03"},
+    {"id": "cdc-plague", "title": "CDC: About Plague", "url": "https://www.cdc.gov/plague/about/index.html", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "tech-ci-cd",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "ci-cd", "devops", "automatisierung"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "CI/CD: Continuous Integration, Delivery und Deployment",
+      "intro": "Wie Teams Code ständig zusammenführen, automatisch testen und jederzeit releasefähig halten.",
+      "facts": [
+        {"text": "Continuous Integration heißt: Jedes Teammitglied führt seine Änderungen mindestens täglich mit denen der anderen in einer gemeinsamen Codebasis zusammen.", "source_ids": ["fowler-ci"]},
+        {"text": "Zu CI gehört ein selbsttestender Build: Neben der Funktion wird auch die Testsuite erweitert. Als Richtwert für die Build-Dauer nennt Fowler etwa zehn Minuten.", "source_ids": ["fowler-ci"]},
+        {"text": "Continuous Delivery bedeutet, Software so zu bauen, dass sie jederzeit in Produktion gehen kann. Eine Deployment-Pipeline automatisiert dafür Build, Tests und Prüfung in produktionsnahen Umgebungen.", "source_ids": ["fowler-cd"]},
+        {"text": "Bei Continuous Deployment läuft jede Änderung durch die Pipeline und geht automatisch in Produktion. Bei Continuous Delivery ist der Release möglich, aber nicht zwingend automatisch.", "source_ids": ["fowler-cd"]},
+        {"text": "AWS beschreibt Continuous Delivery so: Jede Änderung wird gebaut, getestet und in eine Test- oder Staging-Umgebung gebracht. Vor der Produktion steht eine manuelle Freigabe.", "source_ids": ["aws-cd"]}
+      ],
+      "quiz": [
+        {"question": "Wie oft sollte laut Fowler jedes Teammitglied seine Änderungen in die gemeinsame Codebasis integrieren?", "options": ["Mindestens täglich", "Einmal pro Woche", "Einmal pro Sprint", "Erst vor dem Release"], "answer_index": 0, "explanation": "Fowler definiert CI als Zusammenführen der Änderungen mindestens täglich."},
+        {"question": "Was unterscheidet Continuous Deployment von Continuous Delivery?", "options": ["Jede Änderung geht automatisch in Produktion", "Es gibt keine automatisierten Tests", "Es wird nur in Staging ausgeliefert", "Es braucht keine Pipeline"], "answer_index": 0, "explanation": "Beim Deployment gelangt jede Änderung automatisch in Produktion; bei Delivery ist sie nur jederzeit dafür bereit."},
+        {"question": "Welche Build-Dauer gilt laut Fowler als vernünftiger Richtwert?", "options": ["Etwa zehn Minuten", "Etwa zwei Stunden", "Etwa eine Sekunde", "Über Nacht"], "answer_index": 0, "explanation": "Fowler verweist auf die XP-Richtlinie eines Zehn-Minuten-Builds."}
+      ]
+    },
+    "en": {
+      "title": "CI/CD: continuous integration, delivery and deployment",
+      "intro": "How teams merge code constantly, test it automatically and keep it ready to release at any time.",
+      "facts": [
+        {"text": "Continuous integration means every team member merges their changes with everyone else's into a shared codebase at least daily.", "source_ids": ["fowler-ci"]},
+        {"text": "CI includes a self-testing build: besides the functionality, the test suite is extended too. Fowler names roughly ten minutes as a guideline for build time.", "source_ids": ["fowler-ci"]},
+        {"text": "Continuous delivery means building software so it can go to production at any time. A deployment pipeline automates the build, tests and checks in production-like environments.", "source_ids": ["fowler-cd"]},
+        {"text": "With continuous deployment every change runs through the pipeline and goes to production automatically. With continuous delivery a release is possible, but not necessarily automatic.", "source_ids": ["fowler-cd"]},
+        {"text": "AWS describes continuous delivery like this: every change is built, tested and pushed to a test or staging environment. A manual approval comes before production.", "source_ids": ["aws-cd"]}
+      ],
+      "quiz": [
+        {"question": "How often should each team member integrate their changes into the shared codebase, according to Fowler?", "options": ["At least daily", "Once a week", "Once per sprint", "Only before the release"], "answer_index": 0, "explanation": "Fowler defines CI as merging changes at least daily."},
+        {"question": "What distinguishes continuous deployment from continuous delivery?", "options": ["Every change goes to production automatically", "There are no automated tests", "It only delivers to staging", "It needs no pipeline"], "answer_index": 0, "explanation": "With deployment every change reaches production automatically; with delivery it is merely always ready for it."},
+        {"question": "Which build time does Fowler regard as a reasonable guideline?", "options": ["About ten minutes", "About two hours", "About one second", "Overnight"], "answer_index": 0, "explanation": "Fowler points to the XP guideline of a ten-minute build."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "fowler-ci", "title": "Martin Fowler: Continuous Integration", "url": "https://martinfowler.com/articles/continuousIntegration.html", "accessed": "2026-10-03"},
+    {"id": "fowler-cd", "title": "Martin Fowler: Continuous Delivery", "url": "https://martinfowler.com/bliki/ContinuousDelivery.html", "accessed": "2026-10-03"},
+    {"id": "aws-cd", "title": "AWS: What is Continuous Delivery?", "url": "https://aws.amazon.com/devops/continuous-delivery/", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

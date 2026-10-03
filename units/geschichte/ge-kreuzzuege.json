@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ge-kreuzzuege",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "kreuzzuege", "jerusalem"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Kreuzzüge: Ursachen und Verlauf",
+      "intro": "Von der Bitte um Hilfe 1095 bis zum Fall von Akkon 1291: Wie die Kreuzzüge begannen, was sie erreichten und wie sie endeten.",
+      "facts": [
+        {"text": "Auslöser war die Bitte des byzantinischen Kaisers Alexios I. um Hilfe gegen die Seldschuken. Papst Urban II. rief 1095 auf der Synode von Clermont zum Kreuzzug auf.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]},
+        {"text": "Neben religiösem Eifer spielten auch die Aussicht auf Land und Reichtum sowie ritterliche Ideale eine Rolle. Kämpfern wurde zudem die Vergebung ihrer Sünden versprochen.", "source_ids": ["wh-crusades"]},
+        {"text": "Der Erste Kreuzzug erreichte Jerusalem im Juni 1099 und eroberte die Stadt am 15. Juli. Danach entstanden vier Kreuzfahrerstaaten, darunter das Königreich Jerusalem.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]},
+        {"text": "Der Fall von Edessa, der Hauptstadt des ersten Kreuzfahrerstaats, löste den Zweiten Kreuzzug aus. Dieser scheiterte 1148.", "source_ids": ["wp-crusades"]},
+        {"text": "1187 besiegte Saladin das Kreuzfahrerheer bei Hattin und nahm kurz darauf Jerusalem ein. Das führte zum Dritten Kreuzzug unter anderem unter Richard Löwenherz und Philipp II. von Frankreich.", "source_ids": ["wp-crusades", "wh-crusades", "de-wp-kreuzzug"]},
+        {"text": "Der Vierte Kreuzzug erreichte das Heilige Land nie: Die Kreuzfahrer plünderten 1204 Konstantinopel. 1291 fiel Akkon an die Mamluken, die letzte große Bastion der Kreuzfahrer.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]}
+      ],
+      "quiz": [
+        {"question": "Wer rief 1095 auf der Synode von Clermont zum Kreuzzug auf?", "options": ["Papst Urban II.", "Kaiser Alexios I.", "Richard Löwenherz", "Saladin"], "answer_index": 0, "explanation": "Papst Urban II. rief in Clermont zum Kreuzzug auf, nachdem Kaiser Alexios I. um Hilfe gebeten hatte."},
+        {"question": "Was geschah im Juli 1099 im Verlauf des Ersten Kreuzzugs?", "options": ["Die Kreuzfahrer eroberten Jerusalem", "Die Kreuzfahrer verloren Jerusalem", "Die Kreuzfahrer plünderten Konstantinopel", "Die Kreuzfahrer belagerten Akkon"], "answer_index": 0, "explanation": "Am 15. Juli 1099 eroberten die Kreuzfahrer Jerusalem."},
+        {"question": "Welche Stadt plünderten die Teilnehmer des Vierten Kreuzzugs 1204?", "options": ["Konstantinopel", "Kairo", "Damaskus", "Rom"], "answer_index": 0, "explanation": "Statt ins Heilige Land zu ziehen, plünderten sie die christliche Stadt Konstantinopel."},
+        {"question": "Mit dem Fall welcher Festung endete 1291 die Herrschaft der Kreuzfahrer auf dem Festland?", "options": ["Akkon", "Antiochia", "Edessa", "Tripolis"], "answer_index": 0, "explanation": "Die Mamluken eroberten 1291 Akkon, die letzte große Bastion der Kreuzfahrer."}
+      ]
+    },
+    "en": {
+      "title": "The Crusades: causes and course",
+      "intro": "From the plea for help in 1095 to the fall of Acre in 1291: how the Crusades began, what they achieved and how they ended.",
+      "facts": [
+        {"text": "The trigger was Byzantine Emperor Alexios I's request for help against the Seljuks. In 1095, at the Council of Clermont, Pope Urban II called for a crusade.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]},
+        {"text": "Besides religious zeal, the prospect of land and wealth and chivalric ideals played a part. Fighters were also promised forgiveness of their sins.", "source_ids": ["wh-crusades"]},
+        {"text": "The First Crusade reached Jerusalem in June 1099 and took the city on 15 July. Four crusader states followed, including the Kingdom of Jerusalem.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]},
+        {"text": "The fall of Edessa, capital of the first crusader state, prompted the Second Crusade. It failed in 1148.", "source_ids": ["wp-crusades"]},
+        {"text": "In 1187 Saladin defeated the crusader army at Hattin and soon took Jerusalem. This led to the Third Crusade, with leaders including Richard the Lionheart and Philip II of France.", "source_ids": ["wp-crusades", "wh-crusades", "de-wp-kreuzzug"]},
+        {"text": "The Fourth Crusade never reached the Holy Land: in 1204 the crusaders sacked Constantinople. In 1291 Acre fell to the Mamluks, the last major crusader stronghold.", "source_ids": ["wp-crusades", "de-wp-kreuzzug", "wh-crusades"]}
+      ],
+      "quiz": [
+        {"question": "Who called for a crusade at the Council of Clermont in 1095?", "options": ["Pope Urban II", "Emperor Alexios I", "Richard the Lionheart", "Saladin"], "answer_index": 0, "explanation": "Pope Urban II called for a crusade at Clermont after Emperor Alexios I had asked for help."},
+        {"question": "What happened in July 1099 during the First Crusade?", "options": ["The crusaders captured Jerusalem", "The crusaders lost Jerusalem", "The crusaders sacked Constantinople", "The crusaders besieged Acre"], "answer_index": 0, "explanation": "On 15 July 1099 the crusaders captured Jerusalem."},
+        {"question": "Which city did the Fourth Crusade's participants sack in 1204?", "options": ["Constantinople", "Cairo", "Damascus", "Rome"], "answer_index": 0, "explanation": "Instead of going to the Holy Land, they sacked the Christian city of Constantinople."},
+        {"question": "The fall of which fortress ended crusader rule on the mainland in 1291?", "options": ["Acre", "Antioch", "Edessa", "Tripoli"], "answer_index": 0, "explanation": "The Mamluks captured Acre in 1291, the last major crusader stronghold."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-crusades", "title": "Wikipedia: Crusades", "url": "https://en.wikipedia.org/wiki/Crusades", "accessed": "2026-10-03"},
+    {"id": "de-wp-kreuzzug", "title": "Wikipedia (de): Kreuzzug", "url": "https://de.wikipedia.org/wiki/Kreuzzug", "accessed": "2026-10-03"},
+    {"id": "wh-crusades", "title": "World History Encyclopedia: Crusades", "url": "https://www.worldhistory.org/Crusades/", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}
