@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-wasserkreislauf",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["wasser", "wasserkreislauf", "natur", "geografie"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Der Wasserkreislauf der Erde",
+      "intro": "Das Wasser der Erde ist ständig unterwegs: Es verdunstet, bildet Wolken, fällt als Niederschlag und fließt zurück. Hier die wichtigsten Stationen und Zahlen.",
+      "facts": [
+        {
+          "text": "Angetrieben wird der Wasserkreislauf von der Sonne und der Schwerkraft: Sonnenenergie lässt Wasser verdunsten, die Schwerkraft lässt Niederschlag fallen und Wasser an Land bergab fließen.",
+          "source_ids": ["usgs-water-cycle"]
+        },
+        {
+          "text": "Zum Kreislauf gehören Verdunstung samt Pflanzenverdunstung, Kondensation, Niederschlag, Oberflächenabfluss, Versickerung und Grundwasserfluss. Eis kann auch direkt zu Dampf werden (Sublimation).",
+          "source_ids": ["usgs-water-cycle", "noaa-water-cycle"]
+        },
+        {
+          "text": "Die Ozeane enthalten rund 96,5 % des gesamten Wassers der Erde. Süßwasser macht nur etwa 2,5 % aus.",
+          "source_ids": ["usgs-water-distribution"]
+        },
+        {
+          "text": "Vom Süßwasser steckt mit 68,7 % der größte Teil in Eiskappen, Gletschern und Dauerschnee. Weitere 30,1 % sind Grundwasser, Seen und Flüsse zusammen machen weniger als 1 % aus.",
+          "source_ids": ["usgs-water-distribution"]
+        },
+        {
+          "text": "Der Wasserdampf in der Atmosphäre macht nur etwa 0,001 % des gesamten Wassers der Erde aus.",
+          "source_ids": ["usgs-water-distribution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche beiden Kräfte treiben den Wasserkreislauf an?",
+          "options": ["Sonne und Schwerkraft", "Wind und Mond", "Erdrotation und Magnetfeld", "Vulkanismus und Gezeiten"],
+          "answer_index": 0,
+          "explanation": "Die Sonne lässt Wasser verdunsten, die Schwerkraft sorgt für Niederschlag und das Abfließen an Land."
+        },
+        {
+          "question": "Wie nennt man den direkten Übergang von Eis zu Wasserdampf?",
+          "options": ["Kondensation", "Sublimation", "Versickerung", "Transpiration"],
+          "answer_index": 1,
+          "explanation": "Bei der Sublimation geht Eis ohne Schmelzen direkt in Wasserdampf über."
+        },
+        {
+          "question": "Wo steckt der größte Teil des Süßwassers der Erde?",
+          "options": ["In Flüssen und Seen", "Im Grundwasser", "In der Atmosphäre", "In Eiskappen und Gletschern"],
+          "answer_index": 3,
+          "explanation": "Rund 68,7 % des Süßwassers sind als Eis und Dauerschnee gebunden, etwa 30,1 % als Grundwasser."
+        }
+      ]
+    },
+    "en": {
+      "title": "Earth's water cycle",
+      "intro": "Earth's water is always on the move: it evaporates, forms clouds, falls as precipitation and flows back. Here are the key stages and numbers.",
+      "facts": [
+        {
+          "text": "The water cycle is powered by the sun and gravity: solar energy makes water evaporate, while gravity makes precipitation fall and makes water flow downhill over land.",
+          "source_ids": ["usgs-water-cycle"]
+        },
+        {
+          "text": "The cycle includes evaporation plus plant transpiration, condensation, precipitation, surface runoff, infiltration and groundwater flow. Ice can also turn straight into vapor (sublimation).",
+          "source_ids": ["usgs-water-cycle", "noaa-water-cycle"]
+        },
+        {
+          "text": "The oceans hold about 96.5% of all water on Earth. Freshwater makes up only about 2.5%.",
+          "source_ids": ["usgs-water-distribution"]
+        },
+        {
+          "text": "Most freshwater, 68.7%, is locked in ice caps, glaciers and permanent snow. Another 30.1% is groundwater, while lakes and rivers together account for under 1%.",
+          "source_ids": ["usgs-water-distribution"]
+        },
+        {
+          "text": "Water vapor in the atmosphere makes up only about 0.001% of all water on Earth.",
+          "source_ids": ["usgs-water-distribution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which two forces drive the water cycle?",
+          "options": ["Sun and gravity", "Wind and the Moon", "Earth's rotation and magnetic field", "Volcanism and tides"],
+          "answer_index": 0,
+          "explanation": "The sun makes water evaporate, and gravity brings precipitation down and moves water downhill on land."
+        },
+        {
+          "question": "What is the direct change from ice to water vapor called?",
+          "options": ["Condensation", "Sublimation", "Infiltration", "Transpiration"],
+          "answer_index": 1,
+          "explanation": "In sublimation, ice turns directly into water vapor without melting first."
+        },
+        {
+          "question": "Where is most of Earth's freshwater stored?",
+          "options": ["In rivers and lakes", "In groundwater", "In the atmosphere", "In ice caps and glaciers"],
+          "answer_index": 3,
+          "explanation": "About 68.7% of freshwater is held as ice and permanent snow, and about 30.1% as groundwater."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "usgs-water-cycle",
+      "title": "USGS Water Science School: The Water Cycle",
+      "url": "https://www.usgs.gov/water-science-school/science/water-cycle",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "usgs-water-distribution",
+      "title": "USGS Water Science School: How Much Water is There on Earth?",
+      "url": "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "noaa-water-cycle",
+      "title": "NOAA: The Water Cycle",
+      "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "ge-goldene-bulle",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "heiliges-roemisches-reich", "karl-iv", "kurfuersten", "koenigswahl"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Goldene Bulle von 1356",
+      "intro": "Kaiser Karl IV. legte 1356 fest, wer den römisch-deutschen König wählt und wie. Das Gesetz galt bis zum Ende des Reiches.",
+      "facts": [
+        {
+          "text": "Die Goldene Bulle ist ein Reichsgesetz Kaiser Karls IV. Der erste Teil wurde am 10. Januar 1356 in Nürnberg verkündet, der zweite Teil am 25. Dezember 1356 in Metz.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Sieben Kurfürsten wählten den König: die Erzbischöfe von Mainz, Köln und Trier, der König von Böhmen, der Pfalzgraf bei Rhein, der Herzog von Sachsen und der Markgraf von Brandenburg.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Es genügte die Mehrheit: Vier der sieben Stimmen reichten für die Wahl. Einstimmigkeit war nicht nötig, drei Kurfürsten konnten die Wahl also nicht mehr blockieren.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Gewählt wurde in Frankfurt am Main, spätestens binnen dreißig Tagen. Gekrönt wurde in Aachen. Den ersten Reichstag eines neuen Königs sollte Nürnberg ausrichten.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Die weltlichen Kurfürstentümer galten als unteilbar und gingen an den erstgeborenen Sohn (Primogenitur). So sollten die Kurstimmen nicht zersplittern.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Die Goldene Bulle blieb über 400 Jahre in Kraft, bis zum Ende des Heiligen Römischen Reiches 1806. Sie gilt als wichtigstes Verfassungsdokument des mittelalterlichen Reiches.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Kurfürsten wählten nach der Goldenen Bulle den König?",
+          "options": ["Fünf", "Sieben", "Neun", "Zwölf"],
+          "answer_index": 1,
+          "explanation": "Die Goldene Bulle legte sieben Kurfürsten fest: drei geistliche und vier weltliche."
+        },
+        {
+          "question": "Wie viele Stimmen reichten für eine gültige Königswahl?",
+          "options": ["Alle sieben", "Sechs", "Vier", "Drei"],
+          "answer_index": 2,
+          "explanation": "Die Mehrheit von vier der sieben Stimmen genügte. Einstimmigkeit war nicht erforderlich."
+        },
+        {
+          "question": "Wo fand laut Goldener Bulle die Königswahl statt?",
+          "options": ["Aachen", "Nürnberg", "Metz", "Frankfurt am Main"],
+          "answer_index": 3,
+          "explanation": "Gewählt wurde in Frankfurt am Main. Aachen war der Krönungsort, Nürnberg und Metz die Orte der Verkündung."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Golden Bull of 1356",
+      "intro": "In 1356 Emperor Charles IV set out who elects the King of the Romans and how. The law remained valid until the end of the Empire.",
+      "facts": [
+        {
+          "text": "The Golden Bull is an imperial law of Emperor Charles IV. Its first part was issued on 10 January 1356 in Nuremberg, the second part on 25 December 1356 in Metz.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "Seven electors chose the king: the archbishops of Mainz, Cologne and Trier, the King of Bohemia, the Count Palatine of the Rhine, the Duke of Saxony and the Margrave of Brandenburg.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "A majority was enough: four of the seven votes sufficed for an election. Unanimity was not required, so three electors could no longer block a result.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "The election was held in Frankfurt am Main, within thirty days at most. The coronation took place in Aachen. A new king's first imperial diet was to be held in Nuremberg.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "The secular electorates were declared indivisible and passed to the firstborn son (primogeniture). This was meant to keep the electoral votes from being split up.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        },
+        {
+          "text": "The Golden Bull stayed in force for over 400 years, until the Holy Roman Empire ended in 1806. It is regarded as the most important constitutional document of the medieval Empire.",
+          "source_ids": ["wiki-en-golden-bull", "wiki-de-goldene-bulle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many electors chose the king under the Golden Bull?",
+          "options": ["Five", "Seven", "Nine", "Twelve"],
+          "answer_index": 1,
+          "explanation": "The Golden Bull fixed seven electors: three ecclesiastical and four secular."
+        },
+        {
+          "question": "How many votes were enough for a valid royal election?",
+          "options": ["All seven", "Six", "Four", "Three"],
+          "answer_index": 2,
+          "explanation": "A majority of four out of seven votes sufficed. Unanimity was not required."
+        },
+        {
+          "question": "According to the Golden Bull, where was the king elected?",
+          "options": ["Aachen", "Nuremberg", "Metz", "Frankfurt am Main"],
+          "answer_index": 3,
+          "explanation": "The election took place in Frankfurt am Main. Aachen was the coronation site; Nuremberg and Metz were where the Bull was issued."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-en-golden-bull",
+      "title": "Wikipedia: Golden Bull of 1356",
+      "url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-de-goldene-bulle",
+      "title": "Wikipedia: Goldene Bulle",
+      "url": "https://de.wikipedia.org/wiki/Goldene_Bulle",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

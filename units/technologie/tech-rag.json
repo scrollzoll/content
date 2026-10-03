@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "id": "tech-rag",
+  "topic": "technologie/ki",
+  "tags": ["ki", "llm", "rag", "retrieval", "vektordatenbank"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "intro": "RAG lässt ein Sprachmodell vor der Antwort in einer externen Wissensquelle nachschlagen. So wird es aktueller und besser belegbar, ohne neu trainiert zu werden.",
+      "facts": [
+        {
+          "text": "Der Ansatz wurde 2020 von Patrick Lewis und Kollegen auf der NeurIPS vorgestellt. Er verbindet ein vortrainiertes Sprachmodell (parametrisches Wissen) mit einer durchsuchbaren externen Wissensquelle (nicht-parametrisch).",
+          "source_ids": ["lewis-2020"]
+        },
+        {
+          "text": "Im Originalpaper bestand die externe Quelle aus einem dichten Vektorindex von Wikipedia, auf den ein vortrainierter neuronaler Retriever zugreift.",
+          "source_ids": ["lewis-2020"]
+        },
+        {
+          "text": "Ablauf nach AWS: Externe Daten werden in Vektoren umgewandelt und gespeichert, zur Nutzerfrage passende Treffer werden gesucht und dann der Frage als zusätzlicher Kontext für das Modell angehängt.",
+          "source_ids": ["aws-rag"]
+        },
+        {
+          "text": "RAG ist laut AWS kostengünstiger als ein Neutraining des Modells. Die externen Daten lassen sich getrennt davon aktuell halten.",
+          "source_ids": ["aws-rag"]
+        },
+        {
+          "text": "Das Originalpaper nennt als Vorteil die Nachvollziehbarkeit (Provenienz) der Antworten und die einfachere Aktualisierung von Wissen. Auch AWS betont Quellenangaben als Vertrauensgewinn.",
+          "source_ids": ["lewis-2020", "aws-rag"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was geschieht bei RAG, bevor das Sprachmodell antwortet?",
+          "options": [
+            "Passende Informationen aus einer externen Quelle werden gesucht und dem Prompt hinzugefügt",
+            "Das Modell wird komplett neu trainiert",
+            "Die Frage wird in eine andere Sprache übersetzt",
+            "Die Modellgewichte werden gelöscht"
+          ],
+          "answer_index": 0,
+          "explanation": "RAG ergänzt die Nutzerfrage um abgerufene Treffer aus einer Wissensquelle. Das Modell selbst bleibt unverändert."
+        },
+        {
+          "question": "Welchen Vorteil hat RAG gegenüber einem Neutraining des Modells?",
+          "options": [
+            "Das Modell wird dadurch größer",
+            "Wissen lässt sich über die externen Daten aktualisieren, ohne neu zu trainieren",
+            "Es braucht keinerlei Daten",
+            "Halluzinationen sind damit ausgeschlossen"
+          ],
+          "answer_index": 1,
+          "explanation": "Nur die externe Wissensquelle wird gepflegt. Das spart Kosten."
+        },
+        {
+          "question": "Woraus bestand die externe Wissensquelle im Originalpaper von 2020?",
+          "options": [
+            "Aus einem Vektorindex von Wikipedia",
+            "Aus einer Tabelle mit Börsenkursen",
+            "Aus Bildern von Webcams",
+            "Aus einer SQL-Datenbank für Kundendaten"
+          ],
+          "answer_index": 0,
+          "explanation": "Lewis et al. nutzten einen dichten Vektorindex von Wikipedia, der über einen neuronalen Retriever durchsucht wurde."
+        }
+      ]
+    },
+    "en": {
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "intro": "RAG lets a language model look things up in an external knowledge source before it answers. This keeps it more current and easier to verify, without retraining.",
+      "facts": [
+        {
+          "text": "The approach was presented at NeurIPS in 2020 by Patrick Lewis and colleagues. It combines a pre-trained language model (parametric knowledge) with a searchable external knowledge source (non-parametric).",
+          "source_ids": ["lewis-2020"]
+        },
+        {
+          "text": "In the original paper, the external source was a dense vector index of Wikipedia, accessed by a pre-trained neural retriever.",
+          "source_ids": ["lewis-2020"]
+        },
+        {
+          "text": "Process according to AWS: external data is converted to vectors and stored, matches for the user's question are found, and then added to the question as extra context for the model.",
+          "source_ids": ["aws-rag"]
+        },
+        {
+          "text": "According to AWS, RAG is cheaper than retraining the model. The external data can be kept up to date separately.",
+          "source_ids": ["aws-rag"]
+        },
+        {
+          "text": "The original paper names traceability (provenance) of answers and easier knowledge updates as benefits. AWS also stresses source attribution as a gain in trust.",
+          "source_ids": ["lewis-2020", "aws-rag"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happens in RAG before the language model answers?",
+          "options": [
+            "Relevant information is retrieved from an external source and added to the prompt",
+            "The model is fully retrained",
+            "The question is translated into another language",
+            "The model weights are deleted"
+          ],
+          "answer_index": 0,
+          "explanation": "RAG augments the user's question with matches retrieved from a knowledge source. The model itself stays unchanged."
+        },
+        {
+          "question": "What advantage does RAG have over retraining the model?",
+          "options": [
+            "It makes the model larger",
+            "Knowledge can be updated via the external data without retraining",
+            "It needs no data at all",
+            "It rules out hallucinations"
+          ],
+          "answer_index": 1,
+          "explanation": "Only the external knowledge source is maintained. That saves cost."
+        },
+        {
+          "question": "What was the external knowledge source in the original 2020 paper?",
+          "options": [
+            "A vector index of Wikipedia",
+            "A table of stock prices",
+            "Images from webcams",
+            "A SQL database of customer data"
+          ],
+          "answer_index": 0,
+          "explanation": "Lewis et al. used a dense vector index of Wikipedia, searched by a neural retriever."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "lewis-2020",
+      "title": "Lewis et al.: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (NeurIPS 2020)",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "aws-rag",
+      "title": "AWS: What is Retrieval-Augmented Generation?",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

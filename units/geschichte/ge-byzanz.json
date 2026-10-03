@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "id": "ge-byzanz",
+  "topic": "geschichte/mittelalter",
+  "tags": ["byzanz", "konstantinopel", "osmanen", "mittelalter", "1453"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Byzanz und der Fall Konstantinopels 1453",
+      "intro": "Über 1.100 Jahre lang lebte das Römische Reich im Osten weiter. 1453 endete es mit der Eroberung Konstantinopels durch die Osmanen.",
+      "facts": [
+        {
+          "text": "Am 11. Mai 330 machte Konstantin I. das antike Byzantion zur neuen Hauptstadt, genannt „Neu-Rom“. Daraus wurde Konstantinopel, eine der reichsten und bedeutendsten christlichen Städte der Welt.",
+          "source_ids": ["worldhistory-byzantine"]
+        },
+        {
+          "text": "Unter Justinian I. (527–565) eroberte das Reich Gebiete in Nordafrika, Spanien und Italien zurück. Er ließ zudem die Hagia Sophia (532–537) bauen und das Gesetzeswerk Corpus Juris Civilis erstellen.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-byzantine"]
+        },
+        {
+          "text": "Die Bewohner nannten sich Römer. „Byzantinisch“ ist ein Begriff späterer Gelehrter. Griechisch ersetzte allmählich Latein als Amtssprache.",
+          "source_ids": ["wikipedia-byzantine"]
+        },
+        {
+          "text": "Am 12. April 1204 plünderten Kreuzfahrer des Vierten Kreuzzugs Konstantinopel. Das Reich zerfiel in griechische und lateinische Staaten. 1261 wurde die Stadt zurückerobert, die Macht blieb aber begrenzt.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-byzantine"]
+        },
+        {
+          "text": "Die Belagerung durch Sultan Mehmed II. dauerte vom 6. April bis 29. Mai 1453. Am 22. April zogen die Osmanen Schiffe über Land ins Goldene Horn und umgingen so die Kette vor dem Hafen.",
+          "source_ids": ["wikipedia-fall"]
+        },
+        {
+          "text": "Mit dem Fall am 29. Mai 1453 endete das Byzantinische Reich nach 1.123 Jahren. Das Schicksal des letzten Kaisers Konstantin XI. ist ungeklärt: Quellen berichten teils vom Tod im Kampf, teils von Selbstmord.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-fall"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Sultan eroberte 1453 Konstantinopel?",
+          "options": ["Süleyman I.", "Mehmed II.", "Bayezid I.", "Selim I."],
+          "answer_index": 1,
+          "explanation": "Mehmed II. belagerte die Stadt vom 6. April bis zum 29. Mai 1453 und eroberte sie."
+        },
+        {
+          "question": "Welches Ereignis plünderte Konstantinopel schon 1204?",
+          "options": ["Der Vierte Kreuzzug", "Ein Arabischer Angriff", "Die Hunnen unter Attila", "Der Nika-Aufstand"],
+          "answer_index": 0,
+          "explanation": "Kreuzfahrer des Vierten Kreuzzugs plünderten die Stadt am 12. April 1204. Das Reich zerfiel in mehrere Staaten."
+        },
+        {
+          "question": "Wie umgingen die Osmanen 1453 die Kette vor dem Goldenen Horn?",
+          "options": [
+            "Sie zogen Schiffe über Land in die Bucht",
+            "Sie tauchten mit Booten unter der Kette hindurch",
+            "Sie bestachen die Wachen am Hafen",
+            "Sie durchbrachen die Kette mit einem Rammschiff"
+          ],
+          "answer_index": 0,
+          "explanation": "Auf einer gefetteten Holzbahn über Galata brachten die Osmanen am 22. April Schiffe ins Goldene Horn."
+        },
+        {
+          "question": "Unter welchem Kaiser wurde die Hagia Sophia (532–537) erbaut?",
+          "options": ["Konstantin I.", "Herakleios", "Justinian I.", "Konstantin XI."],
+          "answer_index": 2,
+          "explanation": "Justinian I. (527–565) ließ die Hagia Sophia zwischen 532 und 537 bauen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Byzantium and the Fall of Constantinople, 1453",
+      "intro": "For over 1,100 years the Roman Empire lived on in the East. It ended in 1453 when the Ottomans conquered Constantinople.",
+      "facts": [
+        {
+          "text": "On 11 May 330, Constantine I made the ancient city of Byzantium the new capital, called \"New Rome\". It became Constantinople, one of the richest and most important Christian cities in the world.",
+          "source_ids": ["worldhistory-byzantine"]
+        },
+        {
+          "text": "Under Justinian I (527–565) the empire reconquered territory in North Africa, Spain and Italy. He also had the Hagia Sophia built (532–537) and the legal compilation Corpus Juris Civilis produced.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-byzantine"]
+        },
+        {
+          "text": "Its people called themselves Romans. \"Byzantine\" is a term applied by later scholars. Greek gradually replaced Latin as the official language.",
+          "source_ids": ["wikipedia-byzantine"]
+        },
+        {
+          "text": "On 12 April 1204, crusaders of the Fourth Crusade sacked Constantinople. The empire split into Greek and Latin states. The city was retaken in 1261, but the empire's power stayed limited.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-byzantine"]
+        },
+        {
+          "text": "Sultan Mehmed II's siege lasted from 6 April to 29 May 1453. On 22 April the Ottomans hauled ships overland into the Golden Horn, bypassing the chain across the harbour entrance.",
+          "source_ids": ["wikipedia-fall"]
+        },
+        {
+          "text": "The fall on 29 May 1453 ended the Byzantine Empire after 1,123 years. The fate of the last emperor, Constantine XI, is unclear: accounts range from death in battle to suicide.",
+          "source_ids": ["worldhistory-byzantine", "wikipedia-fall"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which sultan conquered Constantinople in 1453?",
+          "options": ["Suleiman I", "Mehmed II", "Bayezid I", "Selim I"],
+          "answer_index": 1,
+          "explanation": "Mehmed II besieged the city from 6 April to 29 May 1453 and conquered it."
+        },
+        {
+          "question": "Which event had already sacked Constantinople in 1204?",
+          "options": ["The Fourth Crusade", "An Arab assault", "The Huns under Attila", "The Nika riots"],
+          "answer_index": 0,
+          "explanation": "Crusaders of the Fourth Crusade sacked the city on 12 April 1204. The empire broke into several states."
+        },
+        {
+          "question": "How did the Ottomans bypass the chain at the Golden Horn in 1453?",
+          "options": [
+            "They hauled ships overland into the bay",
+            "They sailed boats under the chain",
+            "They bribed the harbour guards",
+            "They broke the chain with a ramming ship"
+          ],
+          "answer_index": 0,
+          "explanation": "On a greased log road across Galata, the Ottomans moved ships into the Golden Horn on 22 April."
+        },
+        {
+          "question": "Under which emperor was the Hagia Sophia built (532–537)?",
+          "options": ["Constantine I", "Heraclius", "Justinian I", "Constantine XI"],
+          "answer_index": 2,
+          "explanation": "Justinian I (527–565) had the Hagia Sophia built between 532 and 537."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "worldhistory-byzantine",
+      "title": "World History Encyclopedia: Byzantine Empire",
+      "url": "https://www.worldhistory.org/Byzantine_Empire/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-byzantine",
+      "title": "Wikipedia: Byzantine Empire",
+      "url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-fall",
+      "title": "Wikipedia: Fall of Constantinople",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "aw-wale",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["wale", "blauwal", "buckelwal", "meeressaeuger", "tiere"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Wale: Riesen und Sänger der Meere",
+      "intro": "Wale sind Säugetiere, die ganz im Wasser leben. Der Blauwal ist das größte Tier, das je gelebt hat, und Buckelwal-Männchen singen komplexe Lieder.",
+      "facts": [
+        {
+          "text": "Der Blauwal gilt als größtes bekanntes Tier aller Zeiten: Er erreicht rund 30 Meter Länge und etwa 190 Tonnen Gewicht. Der kleinste Wal, der Zwergpottwal, misst nur etwa 2,6 Meter.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Wale sind Säugetiere: Sie atmen durch Blaslöcher an der Oberfläche Luft und haben eine isolierende Fettschicht. Paarung, Geburt und Aufzucht der Jungen finden im Meer statt.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Man unterscheidet Bartenwale, die mit Hornplatten (Barten) Nahrung aus dem Wasser filtern, und Zahnwale, die mit Zähnen Fische oder Tintenfische fangen.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Blauwale fressen vor allem Krill. Besonders große Tiere können bis zu etwa 6 Tonnen davon pro Tag verzehren.",
+          "source_ids": ["noaa-blue-whale"]
+        },
+        {
+          "text": "Blauwale gehören zu den lautesten Tieren der Erde. Ihre Pulse, Brummtöne und Stöhnlaute können unter günstigen Bedingungen bis zu etwa 1.600 km (1.000 Meilen) weit hörbar sein.",
+          "source_ids": ["noaa-blue-whale"]
+        },
+        {
+          "text": "Männliche Buckelwale singen komplexe Lieder, vor allem in der winterlichen Paarungszeit. Die Lieder ähneln sich innerhalb eines Gebiets und werden im Lauf der Zeit verändert. Ihr Zweck ist umstritten.",
+          "source_ids": ["wiki-humpback"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Tier ist das größte, das je auf der Erde gelebt hat?",
+          "options": ["Pottwal", "Blauwal", "Finnwal", "Walhai"],
+          "answer_index": 1,
+          "explanation": "Der Blauwal wird mit rund 30 m und etwa 190 t als größtes bekanntes Tier aller Zeiten angesehen."
+        },
+        {
+          "question": "Wovon ernähren sich Blauwale hauptsächlich?",
+          "options": ["Krill", "Robben", "Tintenfischen", "Großen Fischen"],
+          "answer_index": 0,
+          "explanation": "Blauwale fressen vor allem Krill, kleine garnelenartige Krebstiere. Große Tiere schaffen bis zu etwa 6 Tonnen am Tag."
+        },
+        {
+          "question": "Welche Buckelwale sind für ihre komplexen Lieder bekannt?",
+          "options": [
+            "Die Männchen",
+            "Die Weibchen",
+            "Die Kälber",
+            "Alle Tiere gleichermaßen"
+          ],
+          "answer_index": 0,
+          "explanation": "Es singen die Männchen, vor allem in der Paarungszeit im Winter."
+        }
+      ]
+    },
+    "en": {
+      "title": "Whales: giants and singers of the sea",
+      "intro": "Whales are mammals that live entirely in water. The blue whale is the largest animal ever to have lived, and male humpback whales sing complex songs.",
+      "facts": [
+        {
+          "text": "The blue whale is the largest known animal of all time: it reaches about 30 metres in length and roughly 190 tonnes. The smallest whale, the dwarf sperm whale, measures only about 2.6 metres.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Whales are mammals: they breathe air through blowholes at the surface and have an insulating layer of blubber. They mate, give birth and raise their young at sea.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Whales split into baleen whales, which filter food from the water with horny plates called baleen, and toothed whales, which use teeth to catch fish or squid.",
+          "source_ids": ["wiki-whale"]
+        },
+        {
+          "text": "Blue whales feed mainly on krill. Especially large individuals may eat up to about 6 tons of it per day.",
+          "source_ids": ["noaa-blue-whale"]
+        },
+        {
+          "text": "Blue whales are among the loudest animals on Earth. Their pulses, groans and moans can potentially be heard up to about 1,000 miles (1,600 km) away under favourable conditions.",
+          "source_ids": ["noaa-blue-whale"]
+        },
+        {
+          "text": "Male humpback whales sing complex songs, mainly in the winter breeding season. Songs are similar within an area and change over time. What they are for is still debated.",
+          "source_ids": ["wiki-humpback"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which animal is the largest ever to have lived on Earth?",
+          "options": ["Sperm whale", "Blue whale", "Fin whale", "Whale shark"],
+          "answer_index": 1,
+          "explanation": "At about 30 m and roughly 190 t, the blue whale is considered the largest known animal of all time."
+        },
+        {
+          "question": "What do blue whales mainly eat?",
+          "options": ["Krill", "Seals", "Squid", "Large fish"],
+          "answer_index": 0,
+          "explanation": "Blue whales feed mainly on krill, small shrimp-like crustaceans. Large ones can eat up to about 6 tons a day."
+        },
+        {
+          "question": "Which humpback whales are known for their complex songs?",
+          "options": [
+            "The males",
+            "The females",
+            "The calves",
+            "All animals equally"
+          ],
+          "answer_index": 0,
+          "explanation": "Males sing, mainly during the winter breeding season. Females do not sing."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-whale",
+      "title": "Wikipedia: Whale",
+      "url": "https://en.wikipedia.org/wiki/Whale",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "noaa-blue-whale",
+      "title": "NOAA Fisheries: Blue Whale",
+      "url": "https://www.fisheries.noaa.gov/species/blue-whale",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-humpback",
+      "title": "Wikipedia: Humpback whale",
+      "url": "https://en.wikipedia.org/wiki/Humpback_whale",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

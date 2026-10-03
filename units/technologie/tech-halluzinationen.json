@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "id": "tech-halluzinationen",
+  "topic": "technologie/ki",
+  "tags": ["ki", "sprachmodelle", "halluzinationen", "rag", "zuverlaessigkeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "KI-Halluzinationen: Ursachen und Gegenmittel",
+      "intro": "Sprachmodelle erfinden manchmal falsche Aussagen, die plausibel klingen. Warum das passiert und was das Risiko senkt.",
+      "facts": [
+        {
+          "text": "Halluzination heißt: Ein Sprachmodell erzeugt Text, der sachlich falsch ist oder nicht zum vorgegebenen Kontext passt. Auch sehr fortgeschrittene Modelle sind davon nicht frei.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "Nach Kalai et al. halluzinieren Modelle, weil Training und Bewertung Raten belohnen, statt Unsicherheit zuzugeben. Modelle werden wie gute Prüflinge optimiert, die lieber tippen als passen.",
+          "source_ids": ["kalai-2025"]
+        },
+        {
+          "text": "Laut dieser Arbeit entstehen Halluzinationen statistisch schon im Pretraining: Kann ein Modell falsche Aussagen nicht sicher von Fakten unterscheiden, treten Fehler wie bei einer Klassifikation auf.",
+          "source_ids": ["kalai-2025"]
+        },
+        {
+          "text": "Ein einfacher Hebel im Prompt: dem Modell ausdrücklich erlauben, \"Ich weiß es nicht\" zu sagen. Das kann falsche Angaben laut Anthropic-Leitfaden deutlich verringern.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "Weitere Maßnahmen: bei langen Dokumenten zuerst wörtliche Zitate ziehen lassen, Aussagen mit Quellen belegen lassen und das Modell auf die gelieferten Dokumente beschränken.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "Retrieval-Augmented Generation (RAG) koppelt ein Modell an einen externen Index, etwa Wikipedia. Das adressiert zwei offene Probleme großer Modelle: Herkunftsnachweise und das Aktualisieren von Wissen.",
+          "source_ids": ["lewis-2020-rag"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Warum halluzinieren Sprachmodelle laut Kalai et al. (2025)?",
+          "options": [
+            "Training und Bewertung belohnen Raten statt Unsicherheit",
+            "Sie haben keinen Zugriff auf Strom",
+            "Sie werden nur mit erfundenen Texten trainiert",
+            "Sie verstehen keine Fragen in Fremdsprachen"
+          ],
+          "answer_index": 0,
+          "explanation": "Die Autoren sehen die Ursache in Anreizen: Wer rät, schneidet in Tests besser ab als wer Unsicherheit zugibt."
+        },
+        {
+          "question": "Welche Prompt-Technik senkt das Halluzinationsrisiko laut Anthropic-Leitfaden?",
+          "options": [
+            "Dem Modell erlauben, \"Ich weiß es nicht\" zu sagen",
+            "Die Frage in Großbuchstaben schreiben",
+            "Das Modell zu mehr Selbstsicherheit auffordern",
+            "Alle Quellen aus dem Prompt entfernen"
+          ],
+          "answer_index": 0,
+          "explanation": "Die ausdrückliche Erlaubnis, Unsicherheit zuzugeben, kann falsche Informationen laut Leitfaden stark reduzieren."
+        },
+        {
+          "question": "Was bietet Retrieval-Augmented Generation (RAG) nach Lewis et al. (2020)?",
+          "options": [
+            "Ein Modell mit Zugriff auf einen externen, aktualisierbaren Wissensindex",
+            "Ein Modell ohne jegliche Parameter",
+            "Eine Garantie, dass nie Fehler auftreten",
+            "Ein Verfahren, das nur Bilder erzeugt"
+          ],
+          "answer_index": 0,
+          "explanation": "RAG kombiniert gelerntes Wissen mit einem abrufbaren Index. Fehler schließt das nicht aus, es hilft bei Herkunft und Aktualität."
+        }
+      ]
+    },
+    "en": {
+      "title": "AI hallucinations: causes and countermeasures",
+      "intro": "Language models sometimes invent false statements that sound plausible. Why this happens and what reduces the risk.",
+      "facts": [
+        {
+          "text": "Hallucination means a language model produces text that is factually wrong or inconsistent with the given context. Even very advanced models are not free of it.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "According to Kalai et al., models hallucinate because training and evaluation reward guessing over admitting uncertainty. Models are optimized like good test-takers who prefer guessing to skipping.",
+          "source_ids": ["kalai-2025"]
+        },
+        {
+          "text": "The paper argues hallucinations arise statistically already in pretraining: when a model cannot reliably tell false statements from facts, errors occur much like in a classification task.",
+          "source_ids": ["kalai-2025"]
+        },
+        {
+          "text": "A simple prompt lever: explicitly allow the model to say \"I don't know\". According to Anthropic's guide, this can drastically reduce false information.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "Further measures: for long documents have the model extract word-for-word quotes first, have it back claims with sources, and restrict it to the documents provided.",
+          "source_ids": ["anthropic-hallucinations"]
+        },
+        {
+          "text": "Retrieval-augmented generation (RAG) links a model to an external index, such as Wikipedia. It addresses two open problems of large models: providing provenance and updating knowledge.",
+          "source_ids": ["lewis-2020-rag"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why do language models hallucinate according to Kalai et al. (2025)?",
+          "options": [
+            "Training and evaluation reward guessing over admitting uncertainty",
+            "They have no access to electricity",
+            "They are trained only on invented texts",
+            "They cannot understand questions in foreign languages"
+          ],
+          "answer_index": 0,
+          "explanation": "The authors locate the cause in incentives: guessing scores better on tests than admitting uncertainty."
+        },
+        {
+          "question": "Which prompting technique reduces hallucination risk according to Anthropic's guide?",
+          "options": [
+            "Allowing the model to say \"I don't know\"",
+            "Writing the question in capital letters",
+            "Telling the model to be more confident",
+            "Removing all sources from the prompt"
+          ],
+          "answer_index": 0,
+          "explanation": "Explicit permission to admit uncertainty can drastically reduce false information, according to the guide."
+        },
+        {
+          "question": "What does retrieval-augmented generation (RAG) offer according to Lewis et al. (2020)?",
+          "options": [
+            "A model with access to an external, updatable knowledge index",
+            "A model without any parameters",
+            "A guarantee that errors never occur",
+            "A method that only generates images"
+          ],
+          "answer_index": 0,
+          "explanation": "RAG combines learned knowledge with a retrievable index. It does not rule out errors but helps with provenance and freshness."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "kalai-2025",
+      "title": "Kalai, Nachum, Vempala, Zhang: Why Language Models Hallucinate (arXiv:2509.04664)",
+      "url": "https://arxiv.org/abs/2509.04664",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "anthropic-hallucinations",
+      "title": "Claude Docs: Reduce hallucinations",
+      "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "lewis-2020-rag",
+      "title": "Lewis et al.: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (arXiv:2005.11401)",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
