@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "ge-aufklaerung",
+  "topic": "geschichte/neuzeit",
+  "tags": ["aufklaerung", "kant", "voltaire", "rousseau", "18-jahrhundert"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Aufklärung: Kant, Voltaire, Rousseau",
+      "intro": "Die Aufklärung stellte Vernunft über Autorität und Tradition. Drei Denker zeigen, wie unterschiedlich das aussehen konnte.",
+      "facts": [
+        {
+          "text": "Die Aufklärung war eine geistige Bewegung in Europa. Sie entstand im späten 17. Jahrhundert, erreichte im 18. Jahrhundert ihren Höhepunkt und betonte Vernunft, Belege, individuelle Freiheit und Toleranz.",
+          "source_ids": ["wikipedia-enlightenment"]
+        },
+        {
+          "text": "Kant beschrieb Aufklärung 1784 als Ausgang aus selbstverschuldeter Unmündigkeit: Man lässt nicht länger andere für sich denken. Sein Wahlspruch: „Sapere aude“ („Wage zu wissen“).",
+          "source_ids": ["sep-kant", "wikipedia-enlightenment"]
+        },
+        {
+          "text": "Rousseau schrieb 1762 „Vom Gesellschaftsvertrag“. Legitime Macht beruht danach auf dem Gemeinwillen des Volkes, nicht auf einem Gottesgnadentum der Monarchen.",
+          "source_ids": ["wikipedia-social-contract"]
+        },
+        {
+          "text": "Voltaire (eigentlich François-Marie Arouet, 1694–1778) schrieb 1759 „Candide“. Nach dem Fall Calas veröffentlichte er 1763 die Abhandlung über die Toleranz und trat für Meinungs- und Religionsfreiheit ein.",
+          "source_ids": ["wikipedia-voltaire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer ist mit dem Wahlspruch „Sapere aude“ der Aufklärung verbunden?",
+          "options": [
+            "Voltaire",
+            "Rousseau",
+            "Montesquieu",
+            "Immanuel Kant"
+          ],
+          "answer_index": 3,
+          "explanation": "Kant griff den Spruch in seinem Aufsatz von 1784 zur Frage „Was ist Aufklärung?“ auf."
+        },
+        {
+          "question": "Welches Werk erschien 1762 und stützt Macht auf den Gemeinwillen?",
+          "options": [
+            "Candide",
+            "Vom Gesellschaftsvertrag",
+            "Kritik der reinen Vernunft",
+            "Abhandlung über die Toleranz"
+          ],
+          "answer_index": 1,
+          "explanation": "Rousseaus „Vom Gesellschaftsvertrag“ leitet legitime Macht vom Gemeinwillen ab."
+        },
+        {
+          "question": "Wie hieß Voltaire mit bürgerlichem Namen?",
+          "options": [
+            "Jean-Jacques Rousseau",
+            "Denis Diderot",
+            "François-Marie Arouet",
+            "Charles de Montesquieu"
+          ],
+          "answer_index": 2,
+          "explanation": "Voltaire war das Pseudonym von François-Marie Arouet."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Enlightenment: Kant, Voltaire, Rousseau",
+      "intro": "The Enlightenment put reason above authority and tradition. Three thinkers show how different that could look.",
+      "facts": [
+        {
+          "text": "The Enlightenment was an intellectual movement in Europe. It emerged in the late 17th century, peaked in the 18th and stressed reason, evidence, individual liberty and tolerance.",
+          "source_ids": ["wikipedia-enlightenment"]
+        },
+        {
+          "text": "In 1784 Kant described enlightenment as emerging from self-imposed immaturity: no longer letting others do your thinking. His motto: \"Sapere aude\" (\"dare to know\").",
+          "source_ids": ["sep-kant", "wikipedia-enlightenment"]
+        },
+        {
+          "text": "Rousseau wrote \"The Social Contract\" in 1762. According to it, legitimate power rests on the general will of the people, not on the divine right of monarchs.",
+          "source_ids": ["wikipedia-social-contract"]
+        },
+        {
+          "text": "Voltaire (born François-Marie Arouet, 1694–1778) wrote \"Candide\" in 1759. After the Calas case he published the Treatise on Tolerance in 1763 and championed freedom of speech and religion.",
+          "source_ids": ["wikipedia-voltaire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who is associated with the Enlightenment motto \"Sapere aude\"?",
+          "options": [
+            "Voltaire",
+            "Rousseau",
+            "Montesquieu",
+            "Immanuel Kant"
+          ],
+          "answer_index": 3,
+          "explanation": "Kant took up the motto in his 1784 essay answering \"What is Enlightenment?\"."
+        },
+        {
+          "question": "Which work appeared in 1762 and bases power on the general will?",
+          "options": [
+            "Candide",
+            "The Social Contract",
+            "Critique of Pure Reason",
+            "Treatise on Tolerance"
+          ],
+          "answer_index": 1,
+          "explanation": "Rousseau's \"The Social Contract\" derives legitimate power from the general will."
+        },
+        {
+          "question": "What was Voltaire's birth name?",
+          "options": [
+            "Jean-Jacques Rousseau",
+            "Denis Diderot",
+            "François-Marie Arouet",
+            "Charles de Montesquieu"
+          ],
+          "answer_index": 2,
+          "explanation": "Voltaire was the pen name of François-Marie Arouet."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-enlightenment",
+      "title": "Wikipedia: Age of Enlightenment",
+      "url": "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "sep-kant",
+      "title": "Stanford Encyclopedia of Philosophy: Immanuel Kant",
+      "url": "https://plato.stanford.edu/entries/kant/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-social-contract",
+      "title": "Wikipedia: The Social Contract",
+      "url": "https://en.wikipedia.org/wiki/The_Social_Contract",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-voltaire",
+      "title": "Wikipedia: Voltaire",
+      "url": "https://en.wikipedia.org/wiki/Voltaire",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

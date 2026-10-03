@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-oekosystem-wald",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["wald", "oekosystem", "deutschland", "baumarten", "zersetzer"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Wald als Ökosystem in Mitteleuropa",
+      "intro": "Der Wald ist mehr als eine Ansammlung von Bäumen, auch Totholz spielt eine Rolle. Die Bundeswaldinventur zeigt, wie er in Deutschland aussieht.",
+      "facts": [
+        {
+          "text": "Wald bedeckt in Deutschland rund 11,5 Millionen Hektar, etwa ein Drittel der Landesfläche.",
+          "source_ids": ["bmleh-bwi", "dewiki-wald-de"]
+        },
+        {
+          "text": "Nach der Bundeswaldinventur 2022 sind Kiefer (22 %), Fichte (21 %), Buche (17 %) und Eiche (12 %) die häufigsten Baumarten.",
+          "source_ids": ["bmleh-bwi"]
+        },
+        {
+          "text": "Ohne menschliche Nutzung würden in Deutschland vor allem Laubbäume wachsen, allen voran die Rotbuche.",
+          "source_ids": ["dewiki-wald-de"]
+        },
+        {
+          "text": "Totholz zersetzt sich im Wald vergleichsweise langsam. Es beeinflusst den Lebensraum von Wildtieren und die Verjüngung der Bäume.",
+          "source_ids": ["wikipedia-forest-ecology"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Baumart würde ohne menschliche Nutzung in Deutschland vorherrschen?",
+          "options": [
+            "Fichte",
+            "Kiefer",
+            "Rotbuche",
+            "Lärche"
+          ],
+          "answer_index": 2,
+          "explanation": "Die natürliche Vegetation wäre von Laubbäumen, besonders der Rotbuche, geprägt."
+        },
+        {
+          "question": "Welche Baumart ist laut Bundeswaldinventur 2022 am häufigsten?",
+          "options": [
+            "Kiefer",
+            "Fichte",
+            "Buche",
+            "Eiche"
+          ],
+          "answer_index": 0,
+          "explanation": "Die Kiefer macht rund 22 % aus, knapp vor der Fichte mit rund 21 %."
+        }
+      ]
+    },
+    "en": {
+      "title": "The forest as an ecosystem in Central Europe",
+      "intro": "A forest is more than a collection of trees, and dead wood plays a role too. The national forest inventory shows what it looks like in Germany.",
+      "facts": [
+        {
+          "text": "Forest covers about 11.5 million hectares in Germany, roughly one third of the land area.",
+          "source_ids": ["bmleh-bwi", "dewiki-wald-de"]
+        },
+        {
+          "text": "According to the 2022 national forest inventory, pine (22%), spruce (21%), beech (17%) and oak (12%) are the most common tree species.",
+          "source_ids": ["bmleh-bwi"]
+        },
+        {
+          "text": "Without human use, Germany would be covered mainly by deciduous trees, above all common beech.",
+          "source_ids": ["dewiki-wald-de"]
+        },
+        {
+          "text": "Dead wood decays relatively slowly in a forest. It influences the habitat of wildlife and how trees regenerate.",
+          "source_ids": ["wikipedia-forest-ecology"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which tree species would dominate Germany without human use?",
+          "options": [
+            "Spruce",
+            "Pine",
+            "Common beech",
+            "Larch"
+          ],
+          "answer_index": 2,
+          "explanation": "Natural vegetation would be shaped by deciduous trees, especially common beech."
+        },
+        {
+          "question": "Which tree species is the most common according to the 2022 national forest inventory?",
+          "options": [
+            "Pine",
+            "Spruce",
+            "Beech",
+            "Oak"
+          ],
+          "answer_index": 0,
+          "explanation": "Pine accounts for about 22%, just ahead of spruce at about 21%."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "bmleh-bwi",
+      "title": "BMLEH: Bundeswaldinventur",
+      "url": "https://www.bmleh.de/DE/themen/wald/wald-in-deutschland/bundeswaldinventur.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "dewiki-wald-de",
+      "title": "Wikipedia: Wald in Deutschland",
+      "url": "https://de.wikipedia.org/wiki/Wald_in_Deutschland",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-forest-ecology",
+      "title": "Wikipedia: Forest ecology",
+      "url": "https://en.wikipedia.org/wiki/Forest_ecology",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "aw-zellen",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["zelle", "zellkern", "mitochondrien", "pflanzenzelle", "biologie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Zellen: Zellkern, Mitochondrien, Pflanze und Tier",
+      "intro": "Alle Lebewesen bestehen aus Zellen. Pflanzen- und Tierzellen teilen viel, unterscheiden sich aber in einigen Bauteilen.",
+      "facts": [
+        {
+          "text": "Eukaryotische Zellen haben einen von einer Membran umgebenen Zellkern. Prokaryotische Zellen besitzen keinen Zellkern, sondern nur einen Bereich namens Nukleoid.",
+          "source_ids": ["wikipedia-cell"]
+        },
+        {
+          "text": "Im Zellkern liegen die Chromosomen. Dort finden fast die gesamte DNA-Verdopplung und RNA-Synthese statt.",
+          "source_ids": ["wikipedia-cell"]
+        },
+        {
+          "text": "Mitochondrien erzeugen chemische Energie für die Zelle in Form von ATP. Sie besitzen eigene DNA, die in der Regel nur von der Mutter vererbt wird.",
+          "source_ids": ["nhgri-mitochondria", "wikipedia-cell"]
+        },
+        {
+          "text": "Pflanzenzellen haben im Gegensatz zu Tierzellen eine Zellwand aus Cellulose und Chloroplasten für die Fotosynthese. Ihre Vakuolen sind meist größer als die tierischer Zellen.",
+          "source_ids": ["wikipedia-plant-cell", "wikipedia-cell"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Struktur haben Pflanzenzellen, Tierzellen aber nicht?",
+          "options": [
+            "Zellkern",
+            "Mitochondrien",
+            "Zellmembran",
+            "Chloroplasten"
+          ],
+          "answer_index": 3,
+          "explanation": "Chloroplasten ermöglichen Fotosynthese und fehlen Tierzellen."
+        },
+        {
+          "question": "Was ist die Hauptaufgabe der Mitochondrien?",
+          "options": [
+            "Erzeugung von Energie in Form von ATP",
+            "Speicherung der Chromosomen",
+            "Aufbau der Zellwand",
+            "Fotosynthese"
+          ],
+          "answer_index": 0,
+          "explanation": "Mitochondrien erzeugen chemische Energie für die Zelle als ATP."
+        },
+        {
+          "question": "Was kennzeichnet Eukaryoten gegenüber Prokaryoten?",
+          "options": [
+            "Sie haben eine Zellwand aus Cellulose",
+            "Sie sind immer kleiner",
+            "Sie haben keine DNA",
+            "Sie haben einen membranumgebenen Zellkern"
+          ],
+          "answer_index": 3,
+          "explanation": "Eukaryotische Zellen haben einen membranumgebenen Zellkern, prokaryotische nur ein Nukleoid."
+        }
+      ]
+    },
+    "en": {
+      "title": "Cells: nucleus, mitochondria, plant and animal",
+      "intro": "All living things consist of cells. Plant and animal cells share a lot but differ in a few components.",
+      "facts": [
+        {
+          "text": "Eukaryotic cells have a nucleus enclosed by a membrane. Prokaryotic cells have no nucleus, only a region called the nucleoid.",
+          "source_ids": ["wikipedia-cell"]
+        },
+        {
+          "text": "The nucleus holds the chromosomes. Almost all DNA replication and RNA synthesis take place there.",
+          "source_ids": ["wikipedia-cell"]
+        },
+        {
+          "text": "Mitochondria produce chemical energy for the cell in the form of ATP. They have their own DNA, which is generally inherited only from the mother.",
+          "source_ids": ["nhgri-mitochondria", "wikipedia-cell"]
+        },
+        {
+          "text": "Unlike animal cells, plant cells have a cell wall made of cellulose and chloroplasts for photosynthesis. Their vacuoles are usually larger than those of animal cells.",
+          "source_ids": ["wikipedia-plant-cell", "wikipedia-cell"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which structure do plant cells have but animal cells do not?",
+          "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Cell membrane",
+            "Chloroplasts"
+          ],
+          "answer_index": 3,
+          "explanation": "Chloroplasts enable photosynthesis and are missing in animal cells."
+        },
+        {
+          "question": "What is the main job of mitochondria?",
+          "options": [
+            "Producing energy in the form of ATP",
+            "Storing the chromosomes",
+            "Building the cell wall",
+            "Photosynthesis"
+          ],
+          "answer_index": 0,
+          "explanation": "Mitochondria produce chemical energy for the cell as ATP."
+        },
+        {
+          "question": "What distinguishes eukaryotes from prokaryotes?",
+          "options": [
+            "They have a cell wall made of cellulose",
+            "They are always smaller",
+            "They have no DNA",
+            "They have a membrane-enclosed nucleus"
+          ],
+          "answer_index": 3,
+          "explanation": "Eukaryotic cells have a membrane-enclosed nucleus, prokaryotic cells only a nucleoid."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-cell",
+      "title": "Wikipedia: Cell (biology)",
+      "url": "https://en.wikipedia.org/wiki/Cell_(biology)",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "nhgri-mitochondria",
+      "title": "NHGRI Genetics Glossary: Mitochondria",
+      "url": "https://www.genome.gov/genetics-glossary/Mitochondria",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-plant-cell",
+      "title": "Wikipedia: Plant cell",
+      "url": "https://en.wikipedia.org/wiki/Plant_cell",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

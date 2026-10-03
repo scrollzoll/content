@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "tech-finetuning",
+  "topic": "technologie/ki",
+  "tags": ["ki", "llm", "fine-tuning", "prompting", "rag"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Feintuning, Prompting oder RAG: Was passt wann?",
+      "intro": "Wer ein Sprachmodell für eine Aufgabe verbessern will, hat drei Hebel. Welcher passt, hängt davon ab, was genau schiefläuft.",
+      "facts": [
+        {
+          "text": "Prompt Engineering ist meist der beste Startpunkt: Man ergänzt Anweisungen, Beispiele oder Hintergrund im Prompt. Für Zusammenfassen, Übersetzen und Codegenerierung reicht es oft aus.",
+          "source_ids": ["openai-optimizing"]
+        },
+        {
+          "text": "RAG passt, wenn dem Modell Wissen fehlt: weil es nicht im Training war, veraltet ist oder intern bleibt. Passende Inhalte werden vor der Antwort in den Prompt eingefügt.",
+          "source_ids": ["openai-optimizing", "wikipedia-rag"]
+        },
+        {
+          "text": "Bei neuen Informationen genügt bei RAG, die Wissensbasis zu aktualisieren. Das Modell muss nicht neu trainiert werden.",
+          "source_ids": ["wikipedia-rag"]
+        },
+        {
+          "text": "Feintuning trainiert ein Modell mit aufgabenspezifischen Beispielen, manchmal nur einigen Hundert bis Tausend. Es hilft bei unstetem Verhalten, etwa falschem Format. Die Parameterzahl bleibt gleich.",
+          "source_ids": ["google-llm-tuning", "openai-optimizing"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist laut OpenAI meist der beste Startpunkt zur Verbesserung eines Modells?",
+          "options": [
+            "Neu trainieren",
+            "Prompt Engineering",
+            "Ein größeres Modell kaufen",
+            "Feintuning"
+          ],
+          "answer_index": 1,
+          "explanation": "Prompt Engineering ist schnell und zwingt dazu, Genauigkeit für den eigenen Fall zu definieren."
+        },
+        {
+          "question": "Ein Modell kennt interne Firmendokumente nicht. Was passt am besten?",
+          "options": [
+            "Feintuning auf das Format",
+            "Distillation",
+            "RAG",
+            "Eine kürzere Frage"
+          ],
+          "answer_index": 2,
+          "explanation": "RAG liefert fehlendes oder internes Wissen zur Laufzeit in den Prompt."
+        },
+        {
+          "question": "Ein Modell liefert Antworten mal im richtigen, mal im falschen Format. Was hilft am ehesten?",
+          "options": [
+            "RAG mit mehr Dokumenten",
+            "Feintuning mit Beispielen",
+            "Ein längerer Kontext",
+            "Das Modell zu verkleinern"
+          ],
+          "answer_index": 1,
+          "explanation": "Feintuning lehrt konsistentes Verhalten anhand repräsentativer Beispiele, etwa für Formate."
+        }
+      ]
+    },
+    "en": {
+      "title": "Fine-tuning, prompting or RAG: what fits when?",
+      "intro": "Anyone who wants to improve a language model for a task has three levers. Which one fits depends on what exactly goes wrong.",
+      "facts": [
+        {
+          "text": "Prompt engineering is usually the best starting point: you add instructions, examples or background to the prompt. For summarizing, translating and code generation it is often enough.",
+          "source_ids": ["openai-optimizing"]
+        },
+        {
+          "text": "RAG fits when the model lacks knowledge: because it was not in training, is outdated or stays internal. Relevant content is inserted into the prompt before the answer.",
+          "source_ids": ["openai-optimizing", "wikipedia-rag"]
+        },
+        {
+          "text": "With RAG, new information only requires updating the knowledge base. The model does not have to be retrained.",
+          "source_ids": ["wikipedia-rag"]
+        },
+        {
+          "text": "Fine-tuning trains a model on task-specific examples, sometimes only a few hundred to a few thousand. It helps with inconsistent behavior, such as wrong formatting. The parameter count stays the same.",
+          "source_ids": ["google-llm-tuning", "openai-optimizing"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to OpenAI, what is usually the best starting point to improve a model?",
+          "options": [
+            "Retraining it",
+            "Prompt engineering",
+            "Buying a larger model",
+            "Fine-tuning"
+          ],
+          "answer_index": 1,
+          "explanation": "Prompt engineering is quick and forces you to define accuracy for your own case."
+        },
+        {
+          "question": "A model does not know internal company documents. What fits best?",
+          "options": [
+            "Fine-tuning on the format",
+            "Distillation",
+            "RAG",
+            "A shorter question"
+          ],
+          "answer_index": 2,
+          "explanation": "RAG brings missing or internal knowledge into the prompt at run time."
+        },
+        {
+          "question": "A model answers sometimes in the right format and sometimes in the wrong one. What helps most?",
+          "options": [
+            "RAG with more documents",
+            "Fine-tuning with examples",
+            "A longer context",
+            "Shrinking the model"
+          ],
+          "answer_index": 1,
+          "explanation": "Fine-tuning teaches consistent behavior from representative examples, for instance for formats."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "openai-optimizing",
+      "title": "OpenAI API Documentation: Optimizing LLM accuracy",
+      "url": "https://developers.openai.com/api/docs/guides/optimizing-llm-accuracy",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "google-llm-tuning",
+      "title": "Google Machine Learning Crash Course: Fine-tuning, distillation, and prompt engineering",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm/tuning",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-rag",
+      "title": "Wikipedia: Retrieval-augmented generation",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

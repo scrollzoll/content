@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-ml-arten
-    topic: technologie/ki
-    hint: "Überwachtes, unüberwachtes und bestärkendes Lernen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-kontextfenster
-    topic: technologie/ki
-    hint: "Kontextfenster bei Sprachmodellen: was es begrenzt"
-    format: facts_quiz
-    priority: 1
-  - id: tech-embeddings
-    topic: technologie/ki
-    hint: "Embeddings: Texte als Vektoren, Anwendung bei der Suche"
-    format: facts_quiz
-    priority: 1
-  - id: tech-finetuning
-    topic: technologie/ki
-    hint: "Feintuning vs. Prompting vs. RAG: wann was passt"
-    format: facts_quiz
-    priority: 1
   - id: tech-ki-bias
     topic: technologie/ki
     hint: "Verzerrungen (Bias) in KI-Systemen: Ursachen und Beispiele"
@@ -1017,26 +997,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-evolution-darwin
-    topic: allgemeinwissen/natur
-    hint: "Evolution durch natürliche Selektion: Darwin und Wallace"
-    format: facts_quiz
-    priority: 1
-  - id: aw-dna
-    topic: allgemeinwissen/natur
-    hint: "DNA: Aufbau, Doppelhelix, Entdeckung 1953"
-    format: facts_quiz
-    priority: 1
-  - id: aw-zellen
-    topic: allgemeinwissen/natur
-    hint: "Zellen: Pflanzen- vs. Tierzelle, Zellkern, Mitochondrien"
-    format: facts_quiz
-    priority: 1
-  - id: aw-oekosystem-wald
-    topic: allgemeinwissen/natur
-    hint: "Der Wald als Ökosystem in Mitteleuropa"
-    format: facts_quiz
-    priority: 1
   - id: aw-korallenriffe
     topic: allgemeinwissen/natur
     hint: "Korallenriffe: Great Barrier Reef, Korallenbleiche"
@@ -1507,26 +1467,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-dreissigjaehriger-krieg
-    topic: geschichte/neuzeit
-    hint: "Der Dreißigjährige Krieg und der Westfälische Frieden"
-    format: facts_quiz
-    priority: 1
-  - id: ge-aufklaerung
-    topic: geschichte/neuzeit
-    hint: "Die Aufklärung: Kant, Voltaire, Rousseau"
-    format: facts_quiz
-    priority: 1
-  - id: ge-amerikanische-unabhaengigkeit
-    topic: geschichte/neuzeit
-    hint: "Die amerikanische Unabhängigkeitserklärung 1776"
-    format: facts_quiz
-    priority: 1
-  - id: ge-franzoesische-revolution
-    topic: geschichte/neuzeit
-    hint: "Die Französische Revolution 1789"
-    format: facts_quiz
-    priority: 1
   - id: ge-napoleon
     topic: geschichte/neuzeit
     hint: "Napoleon Bonaparte: Aufstieg und Ende"
