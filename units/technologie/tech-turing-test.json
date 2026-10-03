@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "tech-turing-test",
+  "topic": "technologie/ki",
+  "tags": ["ki", "turing", "turing-test", "philosophie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Der Turing-Test: Idee und Kritik",
+      "intro": "Alan Turing ersetzte die Frage „Können Maschinen denken?“ durch ein Spiel. Bis heute wird gestritten, was es beweist.",
+      "facts": [
+        {
+          "text": "Alan Turing veröffentlichte 1950 den Aufsatz „Computing Machinery and Intelligence“. Er beginnt mit der Frage, ob Maschinen denken können.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "Im „Imitation Game“ befragt eine Person schriftlich zwei verborgene Gegenüber, einen Menschen und eine Maschine, und soll herausfinden, wer wer ist.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "Turing sagte voraus, dass Computer nach etwa fünfzig Jahren so gut spielen würden, dass ein durchschnittlicher Fragesteller nach fünf Minuten höchstens zu 70 % richtig läge.",
+          "source_ids": ["sep-turing-test"]
+        },
+        {
+          "text": "Kritik 1: Das Programm ELIZA (Weizenbaum, 1966) täuschte Menschen mit simplem Spiegeln ihrer Sätze. Der Test sei daher zu leicht zu überlisten.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "Kritik 2: Mit dem „Chinesischen Zimmer“ (John Searle, 1980) wollte Searle zeigen, dass bloßes Verarbeiten von Symbolen kein Verstehen bedeutet, selbst wenn die Antworten überzeugen.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr veröffentlichte Turing seinen Aufsatz mit dem Imitation Game?",
+          "options": ["1936", "1950", "1966", "1997"],
+          "answer_index": 1,
+          "explanation": "„Computing Machinery and Intelligence“ erschien 1950."
+        },
+        {
+          "question": "Welches Gedankenexperiment soll zeigen, dass bestandene Tests kein Verstehen beweisen?",
+          "options": ["Schrödingers Katze", "Das Chinesische Zimmer", "Das Trolley-Problem", "Das Schiff des Theseus"],
+          "answer_index": 1,
+          "explanation": "John Searle nutzte das Chinesische Zimmer (1980), um zu zeigen, dass Symbolverarbeitung allein kein Verstehen ist."
+        },
+        {
+          "question": "Was zeigte das Programm ELIZA in der Praxis?",
+          "options": [
+            "Dass einfache Tricks Menschen täuschen können",
+            "Dass Maschinen Schach spielen können",
+            "Dass Computer Bilder erkennen",
+            "Dass Maschinen Gefühle haben"
+          ],
+          "answer_index": 0,
+          "explanation": "ELIZA spiegelte Aussagen nur zurück und wirkte trotzdem auf manche Menschen verständig."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Turing Test: Idea and Criticism",
+      "intro": "Alan Turing replaced the question \"Can machines think?\" with a game. People still argue about what it proves.",
+      "facts": [
+        {
+          "text": "Alan Turing published the paper \"Computing Machinery and Intelligence\" in 1950. It opens with the question of whether machines can think.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "In the \"imitation game\", a person questions two hidden counterparts in writing, a human and a machine, and has to work out which is which.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "Turing predicted that after about fifty years computers would play so well that an average interrogator would have no more than a 70% chance of identifying correctly after five minutes.",
+          "source_ids": ["sep-turing-test"]
+        },
+        {
+          "text": "Criticism 1: The program ELIZA (Weizenbaum, 1966) fooled people by merely reflecting their sentences back. The test, critics say, is too easy to trick.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        },
+        {
+          "text": "Criticism 2: With the \"Chinese Room\" (John Searle, 1980), Searle argued that manipulating symbols is not understanding, even when the answers are convincing.",
+          "source_ids": ["wiki-turing-test", "sep-turing-test"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Turing publish his paper with the imitation game?",
+          "options": ["1936", "1950", "1966", "1997"],
+          "answer_index": 1,
+          "explanation": "\"Computing Machinery and Intelligence\" appeared in 1950."
+        },
+        {
+          "question": "Which thought experiment is meant to show that passing a test does not prove understanding?",
+          "options": ["Schrödinger's cat", "The Chinese Room", "The trolley problem", "The Ship of Theseus"],
+          "answer_index": 1,
+          "explanation": "John Searle used the Chinese Room (1980) to argue that symbol manipulation alone is not understanding."
+        },
+        {
+          "question": "What did the program ELIZA show in practice?",
+          "options": [
+            "That simple tricks can fool people",
+            "That machines can play chess",
+            "That computers can recognise images",
+            "That machines have feelings"
+          ],
+          "answer_index": 0,
+          "explanation": "ELIZA only reflected statements back, yet some people took it to be understanding."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-turing-test",
+      "title": "Turing test (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turing_test",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "sep-turing-test",
+      "title": "The Turing Test (Stanford Encyclopedia of Philosophy)",
+      "url": "https://plato.stanford.edu/entries/turing-test/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

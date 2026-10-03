@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-napoleon",
+  "topic": "geschichte/neuzeit",
+  "tags": ["napoleon", "frankreich", "waterloo", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Napoleon Bonaparte: Aufstieg und Ende",
+      "intro": "Vom korsischen Offizier zum Kaiser der Franzosen und weiter ins Exil auf Sankt Helena.",
+      "facts": [
+        {
+          "text": "Napoleon wurde am 15. August 1769 in Ajaccio auf Korsika geboren. Im November 1799 kam er durch den Staatsstreich des 18. Brumaire an die Macht, 1804 wurde er Kaiser.",
+          "source_ids": ["wiki-napoleon"]
+        },
+        {
+          "text": "Am 2. Dezember 1805 siegte er bei Austerlitz und sprengte damit die gegen Frankreich gerichtete Koalition.",
+          "source_ids": ["wiki-napoleon"]
+        },
+        {
+          "text": "Der Russlandfeldzug 1812 endete in einer Katastrophe und fast der Vernichtung der Grande Armée. Im Oktober 1813 verlor Napoleon die Völkerschlacht bei Leipzig.",
+          "source_ids": ["wiki-napoleon", "wiki-napoleonic-wars"]
+        },
+        {
+          "text": "Im April 1814 dankte er ab und wurde nach Elba verbannt. Im März 1815 kehrte er zurück, seine Herrschaft der „Hundert Tage“ endete mit der Niederlage bei Waterloo am 18. Juni 1815.",
+          "source_ids": ["wiki-napoleon", "wiki-napoleonic-wars"]
+        },
+        {
+          "text": "Danach wurde er nach Sankt Helena verbannt. Dort starb er am 5. Mai 1821 im Alter von 51 Jahren an Magenkrebs.",
+          "source_ids": ["wiki-napoleon"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wo erlitt Napoleon 1815 seine endgültige Niederlage?",
+          "options": ["Austerlitz", "Waterloo", "Leipzig", "Borodino"],
+          "answer_index": 1,
+          "explanation": "Bei Waterloo wurde er am 18. Juni 1815 von der Siebten Koalition besiegt."
+        },
+        {
+          "question": "Auf welche Insel wurde Napoleon 1814 zuerst verbannt?",
+          "options": ["Korsika", "Sankt Helena", "Elba", "Korfu"],
+          "answer_index": 2,
+          "explanation": "Nach der Abdankung 1814 kam er nach Elba. Nach Waterloo folgte Sankt Helena."
+        },
+        {
+          "question": "Wo starb Napoleon 1821?",
+          "options": ["Paris", "Ajaccio", "Elba", "Sankt Helena"],
+          "answer_index": 3,
+          "explanation": "Er starb am 5. Mai 1821 in Longwood auf Sankt Helena."
+        }
+      ]
+    },
+    "en": {
+      "title": "Napoleon Bonaparte: Rise and Fall",
+      "intro": "From Corsican officer to Emperor of the French, and on to exile on Saint Helena.",
+      "facts": [
+        {
+          "text": "Napoleon was born on 15 August 1769 in Ajaccio, Corsica. He seized power in the coup of 18 Brumaire in November 1799 and became emperor in 1804.",
+          "source_ids": ["wiki-napoleon"]
+        },
+        {
+          "text": "On 2 December 1805 he won at Austerlitz, which shattered the coalition formed against France.",
+          "source_ids": ["wiki-napoleon"]
+        },
+        {
+          "text": "The 1812 invasion of Russia ended in disaster and the near-destruction of the Grande Armée. In October 1813 Napoleon lost the Battle of Leipzig.",
+          "source_ids": ["wiki-napoleon", "wiki-napoleonic-wars"]
+        },
+        {
+          "text": "In April 1814 he abdicated and was exiled to Elba. He returned in March 1815, but his rule of the \"Hundred Days\" ended with defeat at Waterloo on 18 June 1815.",
+          "source_ids": ["wiki-napoleon", "wiki-napoleonic-wars"]
+        },
+        {
+          "text": "He was then exiled to Saint Helena, where he died on 5 May 1821 aged 51 from stomach cancer.",
+          "source_ids": ["wiki-napoleon"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did Napoleon suffer his final defeat in 1815?",
+          "options": ["Austerlitz", "Waterloo", "Leipzig", "Borodino"],
+          "answer_index": 1,
+          "explanation": "At Waterloo on 18 June 1815 he was defeated by the Seventh Coalition."
+        },
+        {
+          "question": "To which island was Napoleon first exiled in 1814?",
+          "options": ["Corsica", "Saint Helena", "Elba", "Corfu"],
+          "answer_index": 2,
+          "explanation": "After abdicating in 1814 he went to Elba. After Waterloo came Saint Helena."
+        },
+        {
+          "question": "Where did Napoleon die in 1821?",
+          "options": ["Paris", "Ajaccio", "Elba", "Saint Helena"],
+          "answer_index": 3,
+          "explanation": "He died on 5 May 1821 at Longwood on Saint Helena."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-napoleon",
+      "title": "Napoleon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Napoleon",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-napoleonic-wars",
+      "title": "Napoleonic Wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Napoleonic_Wars",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

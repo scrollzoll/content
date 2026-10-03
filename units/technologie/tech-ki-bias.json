@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "tech-ki-bias",
+  "topic": "technologie/ki",
+  "tags": ["ki", "bias", "fairness", "trainingsdaten", "nist"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Bias in KI-Systemen: Ursachen und Beispiele",
+      "intro": "KI-Systeme können Vorurteile übernehmen oder verstärken. Entscheidend ist, woher die Verzerrung stammt.",
+      "facts": [
+        {
+          "text": "Eine häufige Ursache sind die Trainingsdaten: Stammen sie aus einer verzerrten Quelle oder bilden sie Gruppen unausgewogen ab, übernimmt das System die Verzerrung in seinen Ergebnissen.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "Auch Entwurfsentscheidungen können verzerren: Welche Merkmale gewählt und wie Daten gelabelt werden, spiegelt Annahmen der Entwickelnden wider.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "Wird ein System in einem anderen Kontext eingesetzt, als vorgesehen war, kann zusätzlich Bias entstehen, etwa weil bestimmte Nutzergruppen nicht berücksichtigt wurden.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "Das US-Institut NIST unterscheidet in der Veröffentlichung SP 1270 drei Quellen: rechnerisch-statistischen, menschlichen und systemischen Bias. Zusammen können sie sich verstärken.",
+          "source_ids": ["nist-ai-bias-news"]
+        },
+        {
+          "text": "Ein bekanntes Beispiel: Amazon stellte ein KI-Bewerbungstool ein, weil es Lebensläufe mit dem Wort „women's“ und Absolventinnen reiner Frauencolleges benachteiligte.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Arten von Bias unterscheidet NIST in SP 1270?",
+          "options": ["Eine", "Zwei", "Drei", "Sieben"],
+          "answer_index": 2,
+          "explanation": "NIST nennt rechnerisch-statistischen, menschlichen und systemischen Bias."
+        },
+        {
+          "question": "Was ist laut NIST ein Beispiel für systemischen Bias?",
+          "options": [
+            "Rundungsfehler in der Software",
+            "Institutionelle Praktiken, die bestimmte Gruppen benachteiligen",
+            "Zu wenig Rechenleistung beim Training",
+            "Ein zu langer Prompt"
+          ],
+          "answer_index": 1,
+          "explanation": "Systemischer Bias entsteht durch Praktiken von Institutionen, die bestimmte soziale Gruppen benachteiligen."
+        },
+        {
+          "question": "Welches Wort im Lebenslauf wurde vom Amazon-Bewerbungstool negativ gewertet?",
+          "options": ["„manager“", "„women's“", "„Python“", "„university“"],
+          "answer_index": 1,
+          "explanation": "Das Tool wertete Lebensläufe mit „women's“ ab und benachteiligte so Frauen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Bias in AI Systems: Causes and Examples",
+      "intro": "AI systems can inherit or amplify prejudice. What matters is where the distortion comes from.",
+      "facts": [
+        {
+          "text": "A common cause is the training data: if it comes from a biased source or represents groups unevenly, the system carries that distortion into its results.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "Design decisions can also skew results: which features are chosen and how data is labelled reflects the assumptions of the developers.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "Using a system in a different context than intended can add bias, for example because certain user groups were never considered.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        },
+        {
+          "text": "The US institute NIST distinguishes three sources in publication SP 1270: computational-statistical, human and systemic bias. Combined, they can reinforce each other.",
+          "source_ids": ["nist-ai-bias-news"]
+        },
+        {
+          "text": "A well-known example: Amazon dropped an AI recruiting tool because it penalised résumés containing the word \"women's\" and graduates of all-women's colleges.",
+          "source_ids": ["wiki-algorithmic-bias"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many types of bias does NIST distinguish in SP 1270?",
+          "options": ["One", "Two", "Three", "Seven"],
+          "answer_index": 2,
+          "explanation": "NIST names computational-statistical, human and systemic bias."
+        },
+        {
+          "question": "According to NIST, what is an example of systemic bias?",
+          "options": [
+            "Rounding errors in software",
+            "Institutional practices that disadvantage certain groups",
+            "Too little compute during training",
+            "An overly long prompt"
+          ],
+          "answer_index": 1,
+          "explanation": "Systemic bias results from institutional practices that disadvantage certain social groups."
+        },
+        {
+          "question": "Which word in a résumé was penalised by the Amazon recruiting tool?",
+          "options": ["\"manager\"", "\"women's\"", "\"Python\"", "\"university\""],
+          "answer_index": 1,
+          "explanation": "The tool downgraded résumés containing \"women's\", thereby disadvantaging women."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-algorithmic-bias",
+      "title": "Algorithmic bias (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Algorithmic_bias",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "nist-ai-bias-news",
+      "title": "There's More to AI Bias Than Biased Data, NIST Report Highlights (NIST)",
+      "url": "https://www.nist.gov/news-events/news/2022/03/theres-more-ai-bias-biased-data-nist-report-highlights",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

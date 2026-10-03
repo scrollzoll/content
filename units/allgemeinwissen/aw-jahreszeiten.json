@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "aw-jahreszeiten",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["jahreszeiten", "erdachse", "astronomie", "sonne"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Warum es Jahreszeiten gibt",
+      "intro": "Nicht der Abstand zur Sonne, sondern die Neigung der Erdachse sorgt für Sommer und Winter.",
+      "facts": [
+        {
+          "text": "Die Erdachse ist gegenüber der Bahnebene um die Sonne um etwa 23,4° geneigt. Diese Neigung verursacht die Jahreszeiten.",
+          "source_ids": ["nasa-earth-facts", "wiki-season"]
+        },
+        {
+          "text": "Im Lauf des Jahres ist mal die nördliche, mal die südliche Halbkugel der Sonne zugeneigt. Die zugeneigte Seite hat Sommer, die abgewandte Winter.",
+          "source_ids": ["nasa-earth-facts"]
+        },
+        {
+          "text": "Die Jahreszeiten sind also auf Nord- und Südhalbkugel entgegengesetzt: Ist bei uns Sommer, ist im Süden Winter.",
+          "source_ids": ["nasa-earth-facts", "wiki-season"]
+        },
+        {
+          "text": "Der Abstand zur Sonne spielt kaum eine Rolle: Die Erde ist der Sonne Anfang Januar am nächsten und Anfang Juli am weitesten entfernt.",
+          "source_ids": ["wiki-season"]
+        },
+        {
+          "text": "Die Wendepunkte sind die Sonnenwenden (um den 21. Juni und 21. Dezember) und die Tagundnachtgleichen (um den 20. März und 22. September).",
+          "source_ids": ["wiki-season"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was verursacht die Jahreszeiten?",
+          "options": [
+            "Die Neigung der Erdachse",
+            "Der wechselnde Abstand zur Sonne",
+            "Die Mondphasen",
+            "Sonnenflecken"
+          ],
+          "answer_index": 0,
+          "explanation": "Die Neigung von etwa 23,4° lässt abwechselnd eine Halbkugel mehr Sonnenlicht erhalten."
+        },
+        {
+          "question": "Wann ist die Erde der Sonne am nächsten?",
+          "options": ["Anfang Januar", "Anfang April", "Anfang Juli", "Anfang Oktober"],
+          "answer_index": 0,
+          "explanation": "Das Perihel liegt Anfang Januar, also mitten im Winter der Nordhalbkugel."
+        },
+        {
+          "question": "Welche Jahreszeit herrscht in Australien, wenn bei uns Sommer ist?",
+          "options": ["Winter", "Sommer", "Frühling", "Es gibt keine"],
+          "answer_index": 0,
+          "explanation": "Die Südhalbkugel ist dann von der Sonne abgewandt und hat Winter."
+        }
+      ]
+    },
+    "en": {
+      "title": "Why There Are Seasons",
+      "intro": "It is not the distance from the Sun but the tilt of Earth's axis that brings summer and winter.",
+      "facts": [
+        {
+          "text": "Earth's axis is tilted by about 23.4° relative to the plane of its orbit around the Sun. This tilt causes the seasons.",
+          "source_ids": ["nasa-earth-facts", "wiki-season"]
+        },
+        {
+          "text": "Over the year, sometimes the northern and sometimes the southern hemisphere is tilted toward the Sun. The side tilted toward it has summer, the other winter.",
+          "source_ids": ["nasa-earth-facts"]
+        },
+        {
+          "text": "So the seasons are opposite in the northern and southern hemispheres: when it is summer here, it is winter in the south.",
+          "source_ids": ["nasa-earth-facts", "wiki-season"]
+        },
+        {
+          "text": "Distance from the Sun plays little part: Earth is closest to the Sun in early January and farthest in early July.",
+          "source_ids": ["wiki-season"]
+        },
+        {
+          "text": "The turning points are the solstices (around 21 June and 21 December) and the equinoxes (around 20 March and 22 September).",
+          "source_ids": ["wiki-season"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What causes the seasons?",
+          "options": [
+            "The tilt of Earth's axis",
+            "The changing distance from the Sun",
+            "The phases of the Moon",
+            "Sunspots"
+          ],
+          "answer_index": 0,
+          "explanation": "The tilt of about 23.4° makes each hemisphere in turn receive more sunlight."
+        },
+        {
+          "question": "When is Earth closest to the Sun?",
+          "options": ["Early January", "Early April", "Early July", "Early October"],
+          "answer_index": 0,
+          "explanation": "Perihelion is in early January, in the middle of northern winter."
+        },
+        {
+          "question": "Which season is it in Australia when it is summer in Europe?",
+          "options": ["Winter", "Summer", "Spring", "There is none"],
+          "answer_index": 0,
+          "explanation": "The southern hemisphere is then tilted away from the Sun and has winter."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nasa-earth-facts",
+      "title": "Earth Facts (NASA Science)",
+      "url": "https://science.nasa.gov/earth/facts/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-season",
+      "title": "Season (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Season",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

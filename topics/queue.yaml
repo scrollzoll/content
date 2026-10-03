@@ -22,16 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-ki-bias
-    topic: technologie/ki
-    hint: "Verzerrungen (Bias) in KI-Systemen: Ursachen und Beispiele"
-    format: facts_quiz
-    priority: 1
-  - id: tech-turing-test
-    topic: technologie/ki
-    hint: "Der Turing-Test: Idee von Alan Turing (1950) und Kritik"
-    format: facts_quiz
-    priority: 1
   - id: tech-ki-begriffe
     topic: technologie/ki
     hint: "KI-Begriffe: Token, Parameter, Inferenz, Training, Temperature, Modellgewichte"
@@ -997,31 +987,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-korallenriffe
-    topic: allgemeinwissen/natur
-    hint: "Korallenriffe: Great Barrier Reef, Korallenbleiche"
-    format: facts_quiz
-    priority: 1
-  - id: aw-tierrekorde
-    topic: allgemeinwissen/natur
-    hint: "Tierrekorde: schnellstes, größtes, ältestes Tier"
-    format: facts_quiz
-    priority: 1
-  - id: aw-wetter-gewitter
-    topic: allgemeinwissen/natur
-    hint: "Wie Gewitter, Blitz und Donner entstehen"
-    format: facts_quiz
-    priority: 1
-  - id: aw-regenbogen
-    topic: allgemeinwissen/natur
-    hint: "Wie ein Regenbogen entsteht"
-    format: facts_quiz
-    priority: 1
-  - id: aw-jahreszeiten
-    topic: allgemeinwissen/natur
-    hint: "Warum es Jahreszeiten gibt: Neigung der Erdachse"
-    format: facts_quiz
-    priority: 1
   - id: aw-periodensystem
     topic: allgemeinwissen/naturwissenschaft
     hint: "Das Periodensystem: Mendelejew, Aufbau, Gruppen"
@@ -1467,31 +1432,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-napoleon
-    topic: geschichte/neuzeit
-    hint: "Napoleon Bonaparte: Aufstieg und Ende"
-    format: facts_quiz
-    priority: 1
-  - id: ge-industrielle-revolution
-    topic: geschichte/neuzeit
-    hint: "Die Industrielle Revolution: England als Ausgangspunkt"
-    format: facts_quiz
-    priority: 1
-  - id: ge-magellan
-    topic: geschichte/neuzeit
-    hint: "Die erste Weltumsegelung: Magellan und Elcano"
-    format: facts_quiz
-    priority: 1
-  - id: ge-galilei
-    topic: geschichte/neuzeit
-    hint: "Galileo Galilei und das heliozentrische Weltbild"
-    format: facts_quiz
-    priority: 1
-  - id: ge-wiener-kongress
-    topic: geschichte/neuzeit
-    hint: "Der Wiener Kongress 1814/15"
-    format: facts_quiz
-    priority: 1
   - id: ge-sklaverei-abschaffung
     topic: geschichte/neuzeit
     hint: "Abschaffung der Sklaverei im 19. Jahrhundert (sachlich)"
