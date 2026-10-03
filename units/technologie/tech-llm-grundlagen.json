@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "tech-llm-grundlagen",
+  "topic": "technologie/ki",
+  "tags": ["ki", "llm", "token", "sprachmodell", "transformer"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Wie Sprachmodelle Text erzeugen: Tokens",
+      "intro": "Große Sprachmodelle schreiben Text Stück für Stück. Dabei sagen sie immer voraus, welches Token als Nächstes kommt.",
+      "facts": [
+        {
+          "text": "Ein Sprachmodell schätzt die Wahrscheinlichkeit, mit der ein Token oder eine Tokenfolge innerhalb einer längeren Tokenfolge auftritt.",
+          "source_ids": ["google-mlcc-lm"]
+        },
+        {
+          "text": "Ein Token kann ein ganzes Wort, ein Wortteil (Subwort) oder sogar ein einzelnes Zeichen sein. LLMs verarbeiten und erzeugen Text in dieser Granularität.",
+          "source_ids": ["google-mlcc-llm"]
+        },
+        {
+          "text": "Modelle verarbeiten nur Zahlen. Ein Tokenizer zerlegt den Text deshalb in Tokens und ordnet jedem Token eine numerische ID zu, über die das Modell es erkennt.",
+          "source_ids": ["hf-tokenization"]
+        },
+        {
+          "text": "Als Faustregel entspricht bei englischem Text ein Token etwa 4 Zeichen oder 0,75 Wörtern. Prompt und erzeugte Antwort zusammen dürfen die maximale Kontextlänge des Modells nicht überschreiten.",
+          "source_ids": ["openai-concepts"]
+        },
+        {
+          "text": "Ein großes Sprachmodell (LLM) sagt ein Token oder eine ganze Tokenfolge vorhersagt, teils viele Absätze lang. Es wirkt wie eine Autovervollständigung, die tausende Tokens ergänzen kann.",
+          "source_ids": ["google-mlcc-llm"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was sagt ein großes Sprachmodell im Kern vorher?",
+          "options": [
+            "Das nächste Token einer Folge",
+            "Die Sprache des Nutzers",
+            "Den Wahrheitsgehalt einer Aussage",
+            "Die Anzahl der Wörter im Text"
+          ],
+          "answer_index": 0,
+          "explanation": "LLMs schätzen Wahrscheinlichkeiten für Tokens, die auf den bisherigen Text folgen, und erzeugen so Text Stück für Stück."
+        },
+        {
+          "question": "Was kann ein Token laut Fachliteratur sein?",
+          "options": [
+            "Nur ein ganzer Satz",
+            "Ein Wort, ein Wortteil oder ein einzelnes Zeichen",
+            "Nur ein ganzes Wort",
+            "Ein Absatz mit mindestens 50 Zeichen"
+          ],
+          "answer_index": 1,
+          "explanation": "Tokens sind flexible Einheiten: ganze Wörter, Subwörter oder einzelne Zeichen, je nach Tokenizer."
+        },
+        {
+          "question": "Wie wandelt ein Tokenizer Text für ein Modell um?",
+          "options": [
+            "In Bilder",
+            "In Audiosignale",
+            "In Tokens mit numerischen IDs",
+            "In verschlüsselte Textblöcke"
+          ],
+          "answer_index": 2,
+          "explanation": "Modelle verarbeiten nur Zahlen. Der Tokenizer zerlegt Text in Tokens und weist jedem eine numerische ID zu."
+        }
+      ]
+    },
+    "en": {
+      "title": "How language models generate text: tokens",
+      "intro": "Large language models write text piece by piece. At each step they predict which token comes next.",
+      "facts": [
+        {
+          "text": "A language model estimates the probability that a token or a sequence of tokens occurs within a longer sequence of tokens.",
+          "source_ids": ["google-mlcc-lm"]
+        },
+        {
+          "text": "A token can be a whole word, a part of a word (subword) or even a single character. LLMs process and generate text at this level of granularity.",
+          "source_ids": ["google-mlcc-llm"]
+        },
+        {
+          "text": "Models only process numbers. A tokenizer therefore splits text into tokens and assigns each token a numerical ID, which the model uses to identify it.",
+          "source_ids": ["hf-tokenization"]
+        },
+        {
+          "text": "As a rule of thumb, for English text one token is about 4 characters or 0.75 words. Prompt and generated answer together must not exceed the model's maximum context length.",
+          "source_ids": ["openai-concepts"]
+        },
+        {
+          "text": "A large language model (LLM) predicts a token or a whole sequence of tokens, sometimes many paragraphs long. It acts like an autocomplete that can add thousands of tokens.",
+          "source_ids": ["google-mlcc-llm"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a large language model fundamentally predict?",
+          "options": [
+            "The next token in a sequence",
+            "The user's language",
+            "Whether a statement is true",
+            "The number of words in the text"
+          ],
+          "answer_index": 0,
+          "explanation": "LLMs estimate probabilities for tokens that follow the text so far, and thereby generate text piece by piece."
+        },
+        {
+          "question": "What can a token be, according to the literature?",
+          "options": [
+            "Only a whole sentence",
+            "A word, a subword or a single character",
+            "Only a whole word",
+            "A paragraph of at least 50 characters"
+          ],
+          "answer_index": 1,
+          "explanation": "Tokens are flexible units: whole words, subwords or single characters, depending on the tokenizer."
+        },
+        {
+          "question": "How does a tokenizer convert text for a model?",
+          "options": [
+            "Into images",
+            "Into audio signals",
+            "Into tokens with numerical IDs",
+            "Into encrypted text blocks"
+          ],
+          "answer_index": 2,
+          "explanation": "Models only process numbers. The tokenizer splits text into tokens and assigns each one a numerical ID."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "google-mlcc-lm",
+      "title": "Google Machine Learning Crash Course: Language Models",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "google-mlcc-llm",
+      "title": "Google Machine Learning Crash Course: Large Language Models and Transformers",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm/transformers",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "hf-tokenization",
+      "title": "Hugging Face LLM Course: Tokenizers",
+      "url": "https://huggingface.co/learn/llm-course/chapter2/4",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "openai-concepts",
+      "title": "OpenAI API Documentation: Concepts (Tokens and context windows)",
+      "url": "https://developers.openai.com/api/docs/concepts",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

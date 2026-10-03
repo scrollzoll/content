@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "ge-heiliges-roemisches-reich",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "heiliges-roemisches-reich", "kaiser", "otto-i", "goldene-bulle"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Das Heilige Römische Reich: 962 bis 1806",
+      "intro": "Fast 850 Jahre lang bestand in Mitteleuropa ein Reich, das sich in der Nachfolge des römischen Kaisertums sah. Hier die wichtigsten Eckdaten von Anfang bis Ende.",
+      "facts": [
+        {
+          "text": "Otto I. wurde am 2. Februar 962 in Rom zum Kaiser gekrönt. Damit knüpfte er an die römische Kaiserwürde an; dieses Datum gilt als Beginn des Reiches.",
+          "source_ids": ["wiki-hre-de", "wiki-hre-en"]
+        },
+        {
+          "text": "Der Zusatz „Heilig“ ist erstmals 1184 belegt und ab 1254 ein gängiger Teil des Titels. „Deutscher Nation“ taucht ab 1486 auf und wird 1512 erstmals offiziell verwendet.",
+          "source_ids": ["wiki-hre-de"]
+        },
+        {
+          "text": "Der Kaiser wurde traditionell gewählt, nicht vererbt: meist von einer kleinen Gruppe überwiegend deutscher Fürsten, den Kurfürsten.",
+          "source_ids": ["wiki-hre-en"]
+        },
+        {
+          "text": "Das Reich bestand anfangs aus drei Königreichen: Deutschland, Italien und ab 1032 Burgund. Im 15. Jahrhundert lag der Schwerpunkt fast nur noch im Königreich Deutschland.",
+          "source_ids": ["wiki-hre-en"]
+        },
+        {
+          "text": "Am 6. August 1806 legte Kaiser Franz II. die Reichskrone nieder, nachdem Napoleon den Rheinbund gegründet hatte. Damit endete das Reich.",
+          "source_ids": ["wiki-hre-de", "wiki-hre-en"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr wurde Otto I. zum Kaiser gekrönt, dem üblichen Beginn des Reiches?",
+          "options": ["800", "962", "1356", "1648"],
+          "answer_index": 1,
+          "explanation": "Otto I. wurde am 2. Februar 962 in Rom zum Kaiser gekrönt."
+        },
+        {
+          "question": "Wer beendete 1806 das Reich durch Niederlegung der Krone?",
+          "options": ["Karl V.", "Otto I.", "Napoleon", "Franz II."],
+          "answer_index": 3,
+          "explanation": "Kaiser Franz II. legte die Krone am 6. August 1806 nieder. Napoleon hatte zuvor den Rheinbund gegründet, war aber nicht Kaiser des Reiches."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Holy Roman Empire: 962 to 1806",
+      "intro": "For almost 850 years, central Europe was home to a realm that saw itself as heir to the Roman emperors. Here are the key milestones from start to finish.",
+      "facts": [
+        {
+          "text": "Otto I was crowned emperor in Rome on 2 February 962. He thereby took up the Roman imperial title; this date is regarded as the beginning of the empire.",
+          "source_ids": ["wiki-hre-de", "wiki-hre-en"]
+        },
+        {
+          "text": "The word \"Holy\" is first attested in 1184 and was a common part of the title from 1254. \"Of the German Nation\" appears from 1486 and was first used officially in 1512.",
+          "source_ids": ["wiki-hre-de"]
+        },
+        {
+          "text": "The emperor was traditionally elected, not inherited: mostly by a small group of predominantly German princes, the prince-electors.",
+          "source_ids": ["wiki-hre-en"]
+        },
+        {
+          "text": "The empire initially consisted of three kingdoms: Germany, Italy and, from 1032, Burgundy. By the 15th century its weight lay almost entirely in the Kingdom of Germany.",
+          "source_ids": ["wiki-hre-en"]
+        },
+        {
+          "text": "On 6 August 1806 Emperor Francis II laid down the imperial crown after Napoleon had created the Confederation of the Rhine. This ended the empire.",
+          "source_ids": ["wiki-hre-de", "wiki-hre-en"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year was Otto I crowned emperor, the usual start of the empire?",
+          "options": ["800", "962", "1356", "1648"],
+          "answer_index": 1,
+          "explanation": "Otto I was crowned emperor in Rome on 2 February 962."
+        },
+        {
+          "question": "Who ended the empire in 1806 by laying down the crown?",
+          "options": ["Charles V", "Otto I", "Napoleon", "Francis II"],
+          "answer_index": 3,
+          "explanation": "Emperor Francis II laid down the crown on 6 August 1806. Napoleon had created the Confederation of the Rhine but was not emperor of the empire."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-hre-de",
+      "title": "Wikipedia: Heiliges Römisches Reich",
+      "url": "https://de.wikipedia.org/wiki/Heiliges_R%C3%B6misches_Reich",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-hre-en",
+      "title": "Wikipedia: Holy Roman Empire",
+      "url": "https://en.wikipedia.org/wiki/Holy_Roman_Empire",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

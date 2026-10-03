@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "ge-burgen",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "burgen", "befestigung", "adel"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Burgen im Mittelalter: Aufbau und Funktion",
+      "intro": "Burgen waren mehr als Festungen: Sie dienten Verteidigung, Wohnen und Herrschaft. Wie entstanden sie, woraus bestanden sie und wofür nutzte man sie?",
+      "facts": [
+        {
+          "text": "Burgen entstanden in Europa im 9. und 10. Jahrhundert nach dem Zerfall des Karolingerreichs. Ab dem Jahr 1000 nehmen die Belege deutlich zu.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Die frühe Motte bestand aus einem oft künstlich aufgeschütteten Erdhügel und einem befestigten Vorhof, dem Bailey. Ein Graben, trocken oder mit Wasser gefüllt, gehörte oft dazu.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Burgen wurden ursprünglich aus Erde und Holz gebaut. Im Nordwesten Europas blieb Holz noch lange das vorherrschende Baumaterial.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Ringmauern umschlossen den Burghof. Sie waren typischerweise etwa 3 m dick und 12 m hoch und trugen Türme, von denen aus Angreifer seitlich beschossen werden konnten.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Burgen erfüllten viele Aufgaben: Verteidigung, Verwaltung eines Gebiets, Wirtschaftszentrum, Wohnsitz und Herrschaftssymbol. Manche dienten als Zollstelle (Zollburg).",
+          "source_ids": ["wiki-burg", "wiki-castle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Woraus bestand eine frühe Motte hauptsächlich?",
+          "options": [
+            "Aus Erde und Holz",
+            "Aus Marmor und Ziegeln",
+            "Aus Beton",
+            "Aus Eisenplatten"
+          ],
+          "answer_index": 0,
+          "explanation": "Frühe Burgen waren Erd-Holz-Anlagen: ein Erdhügel mit befestigtem Vorhof."
+        },
+        {
+          "question": "Welche Aufgabe hatten Burgen außer der Verteidigung ebenfalls?",
+          "options": [
+            "Verwaltung eines Gebiets",
+            "Druck von Büchern",
+            "Betrieb von Universitäten",
+            "Wetterbeobachtung"
+          ],
+          "answer_index": 0,
+          "explanation": "Burgen waren auch Verwaltungszentren, Wohnsitze und Herrschaftssymbole, teils mit Zollstelle."
+        }
+      ]
+    },
+    "en": {
+      "title": "Medieval castles: structure and function",
+      "intro": "Castles were more than fortresses: they served defence, living and rule. How did they arise, what were they made of and what were they used for?",
+      "facts": [
+        {
+          "text": "Castles arose in Europe in the 9th and 10th centuries after the Carolingian Empire fell apart. From the year 1000 onwards the evidence increases markedly.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "The early motte was an often artificial earth mound with a fortified yard, the bailey. A ditch, dry or filled with water, was often part of it.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Castles were originally built of earth and timber. In north-west Europe, timber remained the dominant building material for a long time.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Curtain walls enclosed the castle yard. They were typically about 3 m thick and 12 m high and carried towers from which attackers could be shot at from the side.",
+          "source_ids": ["wiki-castle"]
+        },
+        {
+          "text": "Castles had many roles: defence, administration of a territory, economic centre, residence and symbol of power. Some served as toll stations (Zollburg).",
+          "source_ids": ["wiki-burg", "wiki-castle"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What were early mottes mainly built of?",
+          "options": [
+            "Earth and timber",
+            "Marble and brick",
+            "Concrete",
+            "Iron plates"
+          ],
+          "answer_index": 0,
+          "explanation": "Early castles were earth-and-timber works: an earth mound with a fortified yard."
+        },
+        {
+          "question": "Besides defence, which role did castles also have?",
+          "options": [
+            "Administering a territory",
+            "Printing books",
+            "Running universities",
+            "Observing the weather"
+          ],
+          "answer_index": 0,
+          "explanation": "Castles were also administrative centres, residences and symbols of power, some with a toll station."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-castle",
+      "title": "Wikipedia: Castle",
+      "url": "https://en.wikipedia.org/wiki/Castle",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-burg",
+      "title": "Wikipedia: Burg",
+      "url": "https://de.wikipedia.org/wiki/Burg",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

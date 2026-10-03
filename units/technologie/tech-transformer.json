@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "tech-transformer",
+  "topic": "technologie/ki",
+  "tags": ["ki", "transformer", "attention", "deep-learning", "nlp"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Transformer: Attention Is All You Need",
+      "intro": "2017 wurde die Transformer-Architektur im Paper „Attention Is All You Need“ vorgestellt. Sie kommt ganz ohne rekurrente Netze aus.",
+      "facts": [
+        {
+          "text": "Das Paper \"Attention Is All You Need\" erschien 2017 bei der NIPS-Konferenz. Es stellt den Transformer vor, ein Netz, das allein auf Attention beruht und auf Rekurrenz und Faltungen komplett verzichtet.",
+          "source_ids": ["vaswani-arxiv", "vaswani-nips"]
+        },
+        {
+          "text": "Rekurrente Netze rechnen Position für Position nacheinander. Das verhindert Parallelisierung innerhalb eines Trainingsbeispiels. Der Transformer lässt sich dagegen deutlich stärker parallelisieren.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "Das Basismodell hat einen Encoder und einen Decoder mit je 6 identischen Schichten, 8 Attention-Köpfe (Heads) und eine Modelldimension von 512.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "Bei der Scaled-Dot-Product-Attention werden Skalarprodukte aus Query und Keys durch die Wurzel der Key-Dimension geteilt. Ein Softmax liefert dann die Gewichte, mit denen die Values gemischt werden.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "Ohne Rekurrenz kennt das Modell die Reihenfolge der Wörter nicht von selbst. Deshalb werden den Eingaben Positionskodierungen aus Sinus- und Kosinusfunktionen unterschiedlicher Frequenz hinzugefügt.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "Das große Transformer-Modell erreichte 28,4 BLEU (Englisch-Deutsch) und 41,8 BLEU (Englisch-Französisch) bei der WMT-2014-Übersetzung.",
+          "source_ids": ["vaswani-arxiv"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Worauf verzichtet der Transformer im Vergleich zu früheren Übersetzungsmodellen vollständig?",
+          "options": [
+            "Auf Rekurrenz und Faltungen",
+            "Auf Encoder und Decoder",
+            "Auf Embeddings",
+            "Auf die Softmax-Funktion"
+          ],
+          "answer_index": 0,
+          "explanation": "Der Transformer beruht allein auf Attention. Encoder, Decoder, Embeddings und Softmax werden weiterhin genutzt."
+        },
+        {
+          "question": "Wozu dienen die Positionskodierungen im Transformer?",
+          "options": [
+            "Sie verkleinern die Vokabelgröße",
+            "Sie liefern Informationen über die Reihenfolge der Tokens",
+            "Sie verhindern Überanpassung",
+            "Sie beschleunigen den Softmax"
+          ],
+          "answer_index": 1,
+          "explanation": "Da es weder Rekurrenz noch Faltung gibt, muss die Position der Tokens explizit zu den Eingaben addiert werden."
+        },
+        {
+          "question": "Wie viele Schichten hat der Encoder des Basismodells im Originalpaper?",
+          "options": ["2", "6", "12", "24"],
+          "answer_index": 1,
+          "explanation": "Encoder und Decoder bestehen im Basismodell aus jeweils 6 identischen Schichten."
+        }
+      ]
+    },
+    "en": {
+      "title": "Transformer: Attention Is All You Need",
+      "intro": "In 2017 the Transformer architecture was introduced in the paper \"Attention Is All You Need\". It needs no recurrent networks at all.",
+      "facts": [
+        {
+          "text": "The paper \"Attention Is All You Need\" appeared at the NIPS conference in 2017. It introduces the Transformer, a network based solely on attention that dispenses with recurrence and convolutions entirely.",
+          "source_ids": ["vaswani-arxiv", "vaswani-nips"]
+        },
+        {
+          "text": "Recurrent networks compute one position after another. This prevents parallelization within a training example. The Transformer, by contrast, can be parallelized far more.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "The base model has an encoder and a decoder with 6 identical layers each, 8 attention heads and a model dimension of 512.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "In scaled dot-product attention, the dot products of a query with the keys are divided by the square root of the key dimension. A softmax then yields the weights used to blend the values.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "Without recurrence the model does not know word order by itself. So positional encodings built from sine and cosine functions of different frequencies are added to the inputs.",
+          "source_ids": ["vaswani-arxiv"]
+        },
+        {
+          "text": "The big Transformer reached 28.4 BLEU (English-German) and 41.8 BLEU (English-French) on WMT 2014 translation.",
+          "source_ids": ["vaswani-arxiv"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the Transformer dispense with entirely, compared with earlier translation models?",
+          "options": [
+            "Recurrence and convolutions",
+            "Encoder and decoder",
+            "Embeddings",
+            "The softmax function"
+          ],
+          "answer_index": 0,
+          "explanation": "The Transformer relies on attention alone. Encoder, decoder, embeddings and softmax are still used."
+        },
+        {
+          "question": "What are positional encodings used for in the Transformer?",
+          "options": [
+            "They shrink the vocabulary size",
+            "They provide information about the order of tokens",
+            "They prevent overfitting",
+            "They speed up the softmax"
+          ],
+          "answer_index": 1,
+          "explanation": "With neither recurrence nor convolution, token positions must be added to the inputs explicitly."
+        },
+        {
+          "question": "How many layers does the encoder of the base model in the original paper have?",
+          "options": ["2", "6", "12", "24"],
+          "answer_index": 1,
+          "explanation": "In the base model, encoder and decoder each consist of 6 identical layers."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "vaswani-arxiv",
+      "title": "Vaswani et al.: Attention Is All You Need (arXiv:1706.03762)",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "vaswani-nips",
+      "title": "Vaswani et al.: Attention is All you Need, NIPS 2017 Proceedings",
+      "url": "https://papers.nips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

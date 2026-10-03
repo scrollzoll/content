@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "aw-voegel-zug",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["voegel", "vogelzug", "navigation", "natur", "magnetfeld"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Vogelzug: Wie Zugvögel navigieren",
+      "intro": "Zugvögel finden über Tausende Kilometer ihr Ziel. Sie kombinieren dafür Sonne, Sterne, Magnetfeld und Orientierungspunkte.",
+      "facts": [
+        {
+          "text": "Der Sonnenkompass funktioniert nur mit Zeitausgleich: Weil die Sonne am Himmel wandert, müssen Vögel die Tageszeit einrechnen, um daraus eine feste Himmelsrichtung abzuleiten.",
+          "source_ids": ["wiki-bird-migration"]
+        },
+        {
+          "text": "Nachts orientieren sich manche Zugvögel an den Sternen. Sie achten dabei vor allem auf die Gesamtdrehung des Sternenhimmels, nicht auf einzelne Sterne.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Vögel besitzen einen Magnetkompass, der die Neigung der Erdmagnetfeldlinien misst. Deckt man bei Rotkehlchen ein Auge ab, verlieren sie die Orientierung im Erdmagnetfeld.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Zugrichtung und -dauer sind erblich festgelegt: Im Labor aufgezogene Vögel zeigen unter konstanten Bedingungen zur Zugzeit trotzdem typische Zugunruhe.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Manche Pfuhlschnepfen (Unterart baueri) fliegen rund 11.000 km nonstop, der längste bekannte Nonstop-Flug eines Zugvogels.",
+          "source_ids": ["wiki-bird-migration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Warum braucht der Sonnenkompass der Vögel einen Zeitausgleich?",
+          "options": [
+            "Die Sonne wandert im Tagesverlauf am Himmel",
+            "Die Sonne ist nachts nicht sichtbar",
+            "Das Magnetfeld ändert sich stündlich",
+            "Vögel sehen Sonnenlicht nur verzögert"
+          ],
+          "answer_index": 0,
+          "explanation": "Da sich die Sonnenposition im Tagesverlauf ändert, müssen Vögel die Tageszeit einrechnen, um eine feste Richtung zu halten."
+        },
+        {
+          "question": "Was zeigen im Labor aufgezogene Vögel zur Zugzeit?",
+          "options": [
+            "Keinerlei Verhaltensänderung",
+            "Typische Zugunruhe",
+            "Nur Schlafverhalten",
+            "Zugunruhe nur nach Training durch ältere Vögel"
+          ],
+          "answer_index": 1,
+          "explanation": "Auch ohne Vorbild zeigen sie unter konstanten Bedingungen Zugunruhe. Das belegt, dass das Zugverhalten erblich angelegt ist."
+        },
+        {
+          "question": "Welche Strecke fliegt die Pfuhlschnepfe von Alaska nach Neuseeland ohne Pause?",
+          "options": ["etwa 1.100 km", "etwa 3.000 km", "etwa 11.000 km", "etwa 40.000 km"],
+          "answer_index": 2,
+          "explanation": "Mit rund 11.000 km ist das der längste bekannte Nonstop-Flug eines Zugvogels; sie trägt dafür etwa 55 % ihres Körpergewichts als Fett."
+        }
+      ]
+    },
+    "en": {
+      "title": "Bird migration: how migratory birds navigate",
+      "intro": "Migratory birds find their destination across thousands of kilometres. They combine the sun, stars, magnetic field and landmarks to do it.",
+      "facts": [
+        {
+          "text": "The sun compass only works with time compensation: because the sun moves across the sky, birds must factor in the time of day to turn its position into a fixed compass direction.",
+          "source_ids": ["wiki-bird-migration"]
+        },
+        {
+          "text": "At night, some migrants orient by the stars. They mainly attend to the overall rotation of the starry sky rather than to individual stars.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Birds have a magnetic compass that senses the inclination of Earth's field lines. If one eye of a robin is covered, it loses its orientation in Earth's magnetic field.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Direction and duration of migration are inherited: birds raised in a lab under constant conditions still show typical migratory restlessness at migration time.",
+          "source_ids": ["wiki-vogelzug"]
+        },
+        {
+          "text": "Some bar-tailed godwits (subspecies baueri) fly about 11,000 km non-stop, the longest known non-stop flight of any migrant.",
+          "source_ids": ["wiki-bird-migration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why does a bird's sun compass need time compensation?",
+          "options": [
+            "The sun moves across the sky during the day",
+            "The sun is not visible at night",
+            "The magnetic field changes hourly",
+            "Birds see sunlight with a delay"
+          ],
+          "answer_index": 0,
+          "explanation": "Since the sun's position changes through the day, birds must factor in the time of day to keep a fixed direction."
+        },
+        {
+          "question": "What do lab-raised birds show at migration time?",
+          "options": [
+            "No change in behaviour at all",
+            "Typical migratory restlessness",
+            "Only sleeping behaviour",
+            "Restlessness only after training by older birds"
+          ],
+          "answer_index": 1,
+          "explanation": "Even without role models and under constant conditions they show restlessness, which shows migration behaviour is inherited."
+        },
+        {
+          "question": "How far does the bar-tailed godwit fly non-stop from Alaska to New Zealand?",
+          "options": ["about 1,100 km", "about 3,000 km", "about 11,000 km", "about 40,000 km"],
+          "answer_index": 2,
+          "explanation": "At about 11,000 km this is the longest known non-stop flight of any migrant; it carries roughly 55% of its body weight as fat."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-bird-migration",
+      "title": "Wikipedia: Bird migration",
+      "url": "https://en.wikipedia.org/wiki/Bird_migration",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-vogelzug",
+      "title": "Wikipedia: Vogelzug",
+      "url": "https://de.wikipedia.org/wiki/Vogelzug",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

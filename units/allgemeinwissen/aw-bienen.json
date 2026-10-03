@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "aw-bienen",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["bienen", "bestaeubung", "insekten", "schwaenzeltanz", "natur"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Bienen: Bestäubung, Staat und Schwänzeltanz",
+      "intro": "Honigbienen leben in großen Staaten, bestäuben unsere Nahrungspflanzen und verständigen sich per Tanz über Futterquellen.",
+      "facts": [
+        {
+          "text": "Ein Volk der Westlichen Honigbiene hat drei Gruppen: eine einzige fruchtbare Königin, viele Arbeiterinnen, die sich normalerweise nicht fortpflanzen, und einen kleinen Anteil männlicher Drohnen.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "Im Hochsommer kann ein gesundes Volk 40.000 bis 80.000 Bienen zählen. Die Königin legt dann bis zu über 2.500 Eier pro Tag, mehr als ihr eigenes Körpergewicht.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "Neue Völker entstehen durch Schwärmen: Die alte Königin verlässt mit etwa zwei Dritteln der Arbeiterinnen den Stock und sucht einen neuen Nistplatz. Im alten Stock bleibt eine Tochterkönigin.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "Beim Schwänzeltanz zeigt der Winkel des Schwänzellaufs zur Senkrechten auf der Wabe die Richtung zur Futterquelle relativ zur Sonne an. Je länger das Schwänzeln dauert, desto weiter ist das Ziel entfernt.",
+          "source_ids": ["wiki-waggle"]
+        },
+        {
+          "text": "Der österreichische Verhaltensforscher Karl von Frisch entschlüsselte die Bedeutung des Schwänzeltanzes. Er wurde später mit dem Nobelpreis ausgezeichnet.",
+          "source_ids": ["wiki-waggle"]
+        },
+        {
+          "text": "Laut FAO werden rund 35 % der weltweiten Erntemenge von Bestäubern wie Bienen beeinflusst. Es gibt mehr als 25.000 Bienenarten.",
+          "source_ids": ["fao-pollination"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was verrät die Dauer des Schwänzelns beim Schwänzeltanz?",
+          "options": [
+            "Die Entfernung zur Futterquelle",
+            "Die Menge an Nektar",
+            "Die Uhrzeit",
+            "Das Alter der Tänzerin"
+          ],
+          "answer_index": 0,
+          "explanation": "Je weiter die Futterquelle entfernt ist, desto länger schwänzelt die Biene in dieser Tanzphase."
+        },
+        {
+          "question": "Wie entstehen neue Honigbienenvölker auf natürliche Weise?",
+          "options": [
+            "Durch Schwärmen: Die alte Königin zieht mit rund zwei Dritteln der Arbeiterinnen aus",
+            "Drohnen gründen allein einen neuen Stock",
+            "Arbeiterinnen legen im Winter neue Königinnen ab",
+            "Die Königin verlässt den Stock allein"
+          ],
+          "answer_index": 0,
+          "explanation": "Beim Schwärmen zieht die alte Königin mit etwa zwei Dritteln der Arbeiterinnen aus; im alten Stock bleibt eine Tochterkönigin."
+        },
+        {
+          "question": "Wer entschlüsselte die Bedeutung des Schwänzeltanzes der Bienen?",
+          "options": ["Karl von Frisch", "Charles Darwin", "Konrad Zuse", "Gregor Mendel"],
+          "answer_index": 0,
+          "explanation": "Der Österreicher Karl von Frisch übersetzte als einer der Ersten die Bedeutung des Schwänzeltanzes und wurde mit dem Nobelpreis geehrt."
+        }
+      ]
+    },
+    "en": {
+      "title": "Bees: pollination, colonies and the waggle dance",
+      "intro": "Honey bees live in large colonies, pollinate our food plants and tell each other about food sources through dance.",
+      "facts": [
+        {
+          "text": "A western honey bee colony has three groups: a single fertile queen, many workers that normally do not reproduce, and a small share of male drones.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "In midsummer a healthy colony can have 40,000 to 80,000 bees. The queen then lays up to more than 2,500 eggs per day, more than her own body weight.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "New colonies form by swarming: the old queen leaves the hive with about two thirds of the workers and looks for a new nesting site. A daughter queen stays behind in the old hive.",
+          "source_ids": ["wiki-honeybee"]
+        },
+        {
+          "text": "In the waggle dance, the angle of the waggle run relative to vertical on the comb shows the direction to the food source relative to the sun. The longer the waggling lasts, the farther away the target is.",
+          "source_ids": ["wiki-waggle"]
+        },
+        {
+          "text": "Austrian ethologist Karl von Frisch decoded the meaning of the waggle dance. He was later awarded the Nobel Prize.",
+          "source_ids": ["wiki-waggle"]
+        },
+        {
+          "text": "According to the FAO, about 35% of global crop production by volume is affected by pollinators such as bees. There are more than 25,000 bee species.",
+          "source_ids": ["fao-pollination"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the duration of the waggle run in the waggle dance indicate?",
+          "options": [
+            "The distance to the food source",
+            "The amount of nectar",
+            "The time of day",
+            "The age of the dancer"
+          ],
+          "answer_index": 0,
+          "explanation": "The farther away the food source is, the longer the bee waggles during that phase of the dance."
+        },
+        {
+          "question": "How do new honey bee colonies form naturally?",
+          "options": [
+            "By swarming: the old queen leaves with about two thirds of the workers",
+            "Drones found a new hive on their own",
+            "Workers lay new queens in winter",
+            "The queen leaves the hive alone"
+          ],
+          "answer_index": 0,
+          "explanation": "When swarming, the old queen leaves with about two thirds of the workers; a daughter queen remains in the old hive."
+        },
+        {
+          "question": "Who decoded the meaning of the honey bee waggle dance?",
+          "options": ["Karl von Frisch", "Charles Darwin", "Konrad Zuse", "Gregor Mendel"],
+          "answer_index": 0,
+          "explanation": "Austrian Karl von Frisch was among the first to translate the meaning of the waggle dance and was awarded the Nobel Prize."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-honeybee",
+      "title": "Wikipedia: Western honey bee",
+      "url": "https://en.wikipedia.org/wiki/Western_honey_bee",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-waggle",
+      "title": "Wikipedia: Waggle dance",
+      "url": "https://en.wikipedia.org/wiki/Waggle_dance",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "fao-pollination",
+      "title": "FAO: Pollination",
+      "url": "https://www.fao.org/pollination/en/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

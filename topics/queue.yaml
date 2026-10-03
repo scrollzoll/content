@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-llm-grundlagen
-    topic: technologie/ki
-    hint: "Wie große Sprachmodelle Text erzeugen: Tokens, Vorhersage des nächsten Tokens"
-    format: facts_quiz
-    priority: 1
-  - id: tech-transformer
-    topic: technologie/ki
-    hint: "Die Transformer-Architektur, Paper 'Attention Is All You Need' (2017)"
-    format: facts_quiz
-    priority: 1
-  - id: tech-halluzinationen
-    topic: technologie/ki
-    hint: "Warum Sprachmodelle halluzinieren und wie man das Risiko senkt"
-    format: facts_quiz
-    priority: 1
-  - id: tech-rag
-    topic: technologie/ki
-    hint: "Retrieval-Augmented Generation: Prinzip und Nutzen"
-    format: facts_quiz
-    priority: 1
   - id: tech-prompting-grundlagen
     topic: technologie/ki
     hint: "Grundregeln für gute Prompts: Kontext, Beispiele, Format"
@@ -1057,26 +1037,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-wasserkreislauf
-    topic: allgemeinwissen/natur
-    hint: "Der Wasserkreislauf der Erde"
-    format: facts_quiz
-    priority: 1
-  - id: aw-bienen
-    topic: allgemeinwissen/natur
-    hint: "Bienen: Bestäubung, Staatenbildung, Schwänzeltanz"
-    format: facts_quiz
-    priority: 1
-  - id: aw-voegel-zug
-    topic: allgemeinwissen/natur
-    hint: "Vogelzug: wie Zugvögel navigieren"
-    format: facts_quiz
-    priority: 1
-  - id: aw-wale
-    topic: allgemeinwissen/natur
-    hint: "Wale: größte Tiere der Erde, Blauwal, Gesang"
-    format: facts_quiz
-    priority: 1
   - id: aw-baeume-alter
     topic: allgemeinwissen/natur
     hint: "Die ältesten und höchsten Bäume der Welt"
@@ -1587,26 +1547,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-burgen
-    topic: geschichte/mittelalter
-    hint: "Burgen im Mittelalter: Aufbau und Funktion"
-    format: facts_quiz
-    priority: 1
-  - id: ge-heiliges-roemisches-reich
-    topic: geschichte/mittelalter
-    hint: "Das Heilige Römische Reich: Entstehung bis 1806"
-    format: facts_quiz
-    priority: 1
-  - id: ge-goldene-bulle
-    topic: geschichte/mittelalter
-    hint: "Die Goldene Bulle 1356 und die Kurfürsten"
-    format: facts_quiz
-    priority: 1
-  - id: ge-byzanz
-    topic: geschichte/mittelalter
-    hint: "Das Byzantinische Reich und der Fall Konstantinopels 1453"
-    format: facts_quiz
-    priority: 1
   - id: ge-mongolen
     topic: geschichte/mittelalter
     hint: "Das Mongolische Reich unter Dschingis Khan"
