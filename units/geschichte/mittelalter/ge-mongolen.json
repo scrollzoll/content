@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-mongolen",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mongolen", "dschingis-khan", "mittelalter"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Das Mongolische Reich unter Dschingis Khan",
+      "intro": "Aus verfeindeten Stämmen formte Temüjin ein Heer, das das größte zusammenhängende Landreich der Geschichte begründete.",
+      "facts": [
+        {
+          "text": "1206 wurde Temüjin auf einer Versammlung (Kurultai) zum Herrscher aller Mongolen ausgerufen und nahm den Titel Dschingis Khan an.",
+          "source_ids": ["wiki-genghis-khan", "wiki-mongol-empire"]
+        },
+        {
+          "text": "Er gliederte das Heer dezimal in Einheiten zu Tausend, Hundert und Zehn und durchbrach damit bewusst die alten Stammesbindungen.",
+          "source_ids": ["wiki-genghis-khan"]
+        },
+        {
+          "text": "Seine Feldzüge richteten sich gegen Westxia (1209–1210), das Jin-Reich in Nordchina (1211–1215) und das Choresmische Reich in Zentralasien (1219–1221).",
+          "source_ids": ["wiki-genghis-khan"]
+        },
+        {
+          "text": "Dschingis Khan starb 1227. 1294 umfasste das Reich etwa 23,5 Millionen km² und gilt als größtes zusammenhängendes Reich der Geschichte.",
+          "source_ids": ["wiki-genghis-khan", "wiki-mongol-empire"]
+        },
+        {
+          "text": "Bis zum Tod Kublai Khans 1294 war das Reich in vier Teilreiche zerfallen: Goldene Horde, Tschagatai-Khanat, Ilchanat und die Yuan-Dynastie.",
+          "source_ids": ["wiki-mongol-empire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr wurde Temüjin zum Dschingis Khan ausgerufen?",
+          "options": ["1162", "1206", "1227", "1294"],
+          "answer_index": 1,
+          "explanation": "1206 proklamierte ihn eine Versammlung zum Herrscher aller Mongolen."
+        },
+        {
+          "question": "Wie war das Heer von Dschingis Khan organisiert?",
+          "options": ["Nach Stämmen und Clans", "Dezimal in Zehner-, Hunderter- und Tausendereinheiten", "Nach Religionen", "In stehende Söldnerheere aus Fremden"],
+          "answer_index": 1,
+          "explanation": "Das Dezimalsystem löste die Stammesloyalitäten zugunsten der Treue zum Khan ab."
+        },
+        {
+          "question": "Welches war keines der vier Teilreiche nach 1294?",
+          "options": ["Goldene Horde", "Ilchanat", "Yuan-Dynastie", "Mamelucken-Sultanat"],
+          "answer_index": 3,
+          "explanation": "Die vier Teilreiche waren Goldene Horde, Tschagatai-Khanat, Ilchanat und Yuan-Dynastie."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Mongol Empire under Genghis Khan",
+      "intro": "Temüjin turned feuding tribes into an army that founded the largest contiguous land empire in history.",
+      "facts": [
+        {
+          "text": "In 1206 an assembly (kurultai) proclaimed Temüjin ruler of all Mongols, and he adopted the title Genghis Khan.",
+          "source_ids": ["wiki-genghis-khan", "wiki-mongol-empire"]
+        },
+        {
+          "text": "He organized the army decimally into units of a thousand, a hundred and ten, deliberately breaking the old tribal loyalties.",
+          "source_ids": ["wiki-genghis-khan"]
+        },
+        {
+          "text": "His campaigns targeted Western Xia (1209–1210), the Jin dynasty in northern China (1211–1215) and the Khwarazmian Empire in Central Asia (1219–1221).",
+          "source_ids": ["wiki-genghis-khan"]
+        },
+        {
+          "text": "Genghis Khan died in 1227. In 1294 the empire covered about 23.5 million km² and is regarded as the largest contiguous empire in history.",
+          "source_ids": ["wiki-genghis-khan", "wiki-mongol-empire"]
+        },
+        {
+          "text": "By the death of Kublai Khan in 1294 the empire had split into four parts: the Golden Horde, the Chagatai Khanate, the Ilkhanate and the Yuan dynasty.",
+          "source_ids": ["wiki-mongol-empire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year was Temüjin proclaimed Genghis Khan?",
+          "options": ["1162", "1206", "1227", "1294"],
+          "answer_index": 1,
+          "explanation": "In 1206 an assembly proclaimed him ruler of all Mongols."
+        },
+        {
+          "question": "How was Genghis Khan's army organized?",
+          "options": ["By tribes and clans", "Decimally in units of ten, a hundred and a thousand", "By religion", "As standing mercenary armies of foreigners"],
+          "answer_index": 1,
+          "explanation": "The decimal system replaced tribal loyalties with loyalty to the khan."
+        },
+        {
+          "question": "Which of these was not one of the four successor parts after 1294?",
+          "options": ["Golden Horde", "Ilkhanate", "Yuan dynasty", "Mamluk Sultanate"],
+          "answer_index": 3,
+          "explanation": "The four parts were the Golden Horde, the Chagatai Khanate, the Ilkhanate and the Yuan dynasty."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-genghis-khan",
+      "title": "Genghis Khan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-mongol-empire",
+      "title": "Mongol Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_Empire",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

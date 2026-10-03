@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "aw-pilze",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["pilze", "myzel", "biologie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Pilze: weder Pflanze noch Tier",
+      "intro": "Pilze bilden ein eigenes Reich des Lebens, mit Fäden im Boden und erstaunlichen Partnerschaften.",
+      "facts": [
+        {
+          "text": "Pilze bilden ein eigenes Reich (Fungi). Genetisch sind sie enger mit Tieren verwandt als mit Pflanzen.",
+          "source_ids": ["wiki-fungus"]
+        },
+        {
+          "text": "Ihre Zellwand besteht aus einem Chitin-Glucan-Komplex. Nur Pilze kombinieren beide Stoffe: Tiere nutzen Chitin etwa im Außenskelett, Pflanzen Cellulose.",
+          "source_ids": ["wiki-fungus"]
+        },
+        {
+          "text": "Pilze wachsen meist als Hyphen, fadenförmige Röhren von 2 bis 10 Mikrometern Durchmesser. Sie bilden ein verzweigtes Geflecht, das Myzel genannt wird.",
+          "source_ids": ["wiki-fungus", "wiki-mycelium"]
+        },
+        {
+          "text": "Rund 80 % der Pflanzenarten leben in Mykorrhiza: Der Pilz liefert Wasser und Mineralstoffe wie Phosphor, die Pflanze im Gegenzug Zucker aus der Photosynthese.",
+          "source_ids": ["wiki-mycorrhiza"]
+        },
+        {
+          "text": "Der Hallimasch-Pilz im Malheur National Forest in Oregon bedeckt etwa 9,1 km² und ist auf rund 8.000 Jahre geschätzt. Er ist möglicherweise der größte bekannte Organismus.",
+          "source_ids": ["wiki-armillaria"]
+        },
+        {
+          "text": "Bisher sind rund 148.000 Pilzarten beschrieben, geschätzt gibt es 2,2 bis 3,8 Millionen. Über 90 % der Pilze sind also noch unbekannt.",
+          "source_ids": ["wiki-fungus"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit welcher Gruppe sind Pilze genetisch enger verwandt?",
+          "options": ["Mit Pflanzen", "Mit Tieren", "Mit Algen", "Mit Bakterien"],
+          "answer_index": 1,
+          "explanation": "Pilze und Tiere gehören zur Gruppe der Opisthokonta und sind enger verwandt als Pilze und Pflanzen."
+        },
+        {
+          "question": "Woraus besteht die Zellwand der Pilze?",
+          "options": ["Nur aus Cellulose", "Aus einem Chitin-Glucan-Komplex", "Aus Keratin", "Aus Lignin"],
+          "answer_index": 1,
+          "explanation": "Die Kombination aus Chitin und Glucan ist typisch für Pilze."
+        },
+        {
+          "question": "Wie viele Pflanzenarten leben ungefähr in Mykorrhiza mit Pilzen?",
+          "options": ["Etwa 5 %", "Etwa 20 %", "Etwa 50 %", "Etwa 80 %"],
+          "answer_index": 3,
+          "explanation": "Etwa 80 % der Pflanzenarten bilden Mykorrhiza, bei den Pflanzenfamilien sind es sogar 92 % der untersuchten."
+        }
+      ]
+    },
+    "en": {
+      "title": "Fungi: Neither Plant nor Animal",
+      "intro": "Fungi form a kingdom of their own, with threads in the soil and surprising partnerships.",
+      "facts": [
+        {
+          "text": "Fungi form a kingdom of their own (Fungi). Genetically they are more closely related to animals than to plants.",
+          "source_ids": ["wiki-fungus"]
+        },
+        {
+          "text": "Their cell wall is made of a chitin-glucan complex. Only fungi combine both substances: animals use chitin in exoskeletons, for example, and plants use cellulose.",
+          "source_ids": ["wiki-fungus"]
+        },
+        {
+          "text": "Fungi mostly grow as hyphae, thread-like tubes 2 to 10 micrometers in diameter. They form a branching network called the mycelium.",
+          "source_ids": ["wiki-fungus", "wiki-mycelium"]
+        },
+        {
+          "text": "About 80% of plant species live in mycorrhiza: the fungus supplies water and minerals such as phosphorus, and the plant gives sugars from photosynthesis in return.",
+          "source_ids": ["wiki-mycorrhiza"]
+        },
+        {
+          "text": "The honey fungus in Malheur National Forest in Oregon covers about 9.1 km² and is estimated at some 8,000 years old. It is possibly the largest known organism.",
+          "source_ids": ["wiki-armillaria"]
+        },
+        {
+          "text": "About 148,000 fungal species have been described, and an estimated 2.2 to 3.8 million exist. So over 90% of fungi are still unknown.",
+          "source_ids": ["wiki-fungus"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which group are fungi genetically more closely related to?",
+          "options": ["Plants", "Animals", "Algae", "Bacteria"],
+          "answer_index": 1,
+          "explanation": "Fungi and animals both belong to the opisthokonts and are more closely related than fungi and plants."
+        },
+        {
+          "question": "What is the fungal cell wall made of?",
+          "options": ["Cellulose only", "A chitin-glucan complex", "Keratin", "Lignin"],
+          "answer_index": 1,
+          "explanation": "The combination of chitin and glucan is typical of fungi."
+        },
+        {
+          "question": "Roughly how many plant species live in mycorrhiza with fungi?",
+          "options": ["About 5%", "About 20%", "About 50%", "About 80%"],
+          "answer_index": 3,
+          "explanation": "About 80% of plant species form mycorrhiza, and among plant families it is 92% of those studied."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-fungus",
+      "title": "Fungus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fungus",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-mycelium",
+      "title": "Mycelium (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mycelium",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-mycorrhiza",
+      "title": "Mycorrhiza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mycorrhiza",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-armillaria",
+      "title": "Armillaria ostoyae (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Armillaria_ostoyae",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
