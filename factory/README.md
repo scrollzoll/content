@@ -108,7 +108,7 @@ Für die Arbeit an `scrollzoll/app` mit Claude Code gibt es zwei saubere Wege, o
 
 ## Mengengerüst (Max 5x)
 
-Der Timer startet alle 2 Stunden einen Lauf; `MAX_RUNS_PER_DAY` × `UNITS_PER_RUN` begrenzt die Tagesmenge (Standard 4 × 4 = 16, maximal 12 Läufe). Um das Abo voll auszuschöpfen: `MAX_RUNS_PER_DAY=12`. Die Warteliste (über 1.100 Themen aus Technologie, Sprachen, Allgemeinwissen und Geschichte) reicht auch dann mehrere Wochen. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
+Der Timer startet alle 2 Stunden einen Lauf; `MAX_RUNS_PER_DAY` × `UNITS_PER_RUN` begrenzt die Tagesmenge (Standard 4 × 4 = 16, maximal 12 Läufe). Um das Abo voll auszuschöpfen: `MAX_RUNS_PER_DAY=12`. Die Warteliste (über 3.000 Themen aus Technologie, Sprachen, Allgemeinwissen und Geschichte) reicht auch dann mehrere Wochen. Wird das Nutzungslimit erreicht, pausiert die Fabrik bis zum nächsten Termin, ohne Kosten.
 
 ## Hinweise zum Abo
 
