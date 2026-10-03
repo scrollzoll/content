@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "tech-finops",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "finops", "kosten"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "FinOps: Cloud-Kosten verstehen und steuern",
+      "intro": "Cloud-Rechnungen wachsen schnell. FinOps verbindet Technik, Finanzen und Fachbereiche, damit Ausgaben sichtbar, verantwortet und am Geschäftswert ausgerichtet sind.",
+      "facts": [
+        {"text": "FinOps ist ein Arbeitsrahmen und eine Kulturpraxis: Technik, Finanzen und Fachbereiche arbeiten zusammen, um den Geschäftswert von Technologie zu steigern und finanzielle Verantwortung zu schaffen.", "source_ids": ["finops-what"]},
+        {"text": "Der Begriff verbindet „Finance“ und „DevOps“. Heute geht FinOps über reine Cloud-Kosten hinaus und umfasst auch SaaS, Lizenzen und Rechenzentren.", "source_ids": ["finops-what"]},
+        {"text": "Das FinOps-Framework kennt drei Phasen im Kreislauf: Inform (Transparenz und Zuordnung), Optimize (Preise und Nutzung verbessern) und Operate (Änderungen umsetzen, laufend verbessern).", "source_ids": ["finops-phases"]},
+        {"text": "Eines der sechs Prinzipien: Alle übernehmen Verantwortung für ihre Technologienutzung. Auch Entwicklungs- und Produktteams tragen die Kosten, von Entwurf bis Betrieb.", "source_ids": ["finops-principles"]},
+        {"text": "Ein weiteres Prinzip: Das variable Kostenmodell der Cloud nutzen, also verbrauchsabhängige Preise und agile Planung statt starrer Langzeitpläne.", "source_ids": ["finops-principles"]},
+        {"text": "In AWS ordnest du Kosten mit Kostenallokations-Tags und Cost Categories Teams zu, analysierst sie im Cost Explorer und warnst per Budgets bei überschrittenen Schwellen.", "source_ids": ["aws-cost-mgmt"]}
+      ],
+      "quiz": [
+        {"question": "Welche Gruppen bringt FinOps vor allem zusammen?", "options": ["Technik, Finanzen und Fachbereiche", "Nur Einkauf und Rechtsabteilung", "Nur Betrieb und IT-Sicherheit", "Cloud-Anbieter und Behörden"], "answer_index": 0, "explanation": "FinOps lebt von der Zusammenarbeit von Engineering, Finanzen und Business, um Technologiekosten gemeinsam zu steuern."},
+        {"question": "Welche Reihenfolge nennt das FinOps-Framework als Phasen?", "options": ["Inform, Optimize, Operate", "Plan, Build, Run", "Detect, Respond, Recover", "Design, Deploy, Retire"], "answer_index": 0, "explanation": "Die Phasen heißen Inform, Optimize und Operate und werden fortlaufend wiederholt."},
+        {"question": "Was beschreibt das Prinzip „Alle übernehmen Verantwortung“?", "options": ["Auch Engineering- und Produktteams verantworten ihre Technologiekosten", "Nur die Finanzabteilung trägt die Cloud-Kosten", "Der Cloud-Anbieter haftet für überhöhte Rechnungen", "Kosten werden erst am Jahresende geprüft"], "answer_index": 0, "explanation": "Entscheidungen werden dezentral getroffen, deshalb tragen auch Entwickler und Produktteams die Kostenverantwortung."},
+        {"question": "Wofür dient der AWS Cost Explorer?", "options": ["Kosten- und Nutzungsdaten visuell analysieren und prognostizieren", "Server automatisch skalieren", "Zugriffsrechte vergeben", "Rechenzentren physisch überwachen"], "answer_index": 0, "explanation": "Der Cost Explorer zeigt Kosten und Nutzung mit Filtern und Gruppierungen und kann Ausgaben prognostizieren."}
+      ]
+    },
+    "en": {
+      "title": "FinOps: understanding and steering cloud costs",
+      "intro": "Cloud bills grow fast. FinOps brings engineering, finance and business together so spending is visible, owned and aligned with business value.",
+      "facts": [
+        {"text": "FinOps is an operating framework and cultural practice: engineering, finance and business teams collaborate to maximize the business value of technology and create financial accountability.", "source_ids": ["finops-what"]},
+        {"text": "The term blends \"Finance\" and \"DevOps\". Today FinOps goes beyond pure cloud costs and also covers SaaS, licensing and data centers.", "source_ids": ["finops-what"]},
+        {"text": "The FinOps Framework has three phases in a cycle: Inform (visibility and allocation), Optimize (improve rates and usage) and Operate (carry out changes, keep improving).", "source_ids": ["finops-phases"]},
+        {"text": "One of the six principles: everyone takes ownership of their technology usage. Engineering and product teams also bear the costs, from design through operations.", "source_ids": ["finops-principles"]},
+        {"text": "Another principle: take advantage of the cloud's variable cost model, meaning consumption-based pricing and agile planning instead of rigid long-term plans.", "source_ids": ["finops-principles"]},
+        {"text": "In AWS you map costs to teams with cost allocation tags and cost categories, analyze them in Cost Explorer, and get alerts via Budgets when thresholds are exceeded.", "source_ids": ["aws-cost-mgmt"]}
+      ],
+      "quiz": [
+        {"question": "Which groups does FinOps mainly bring together?", "options": ["Engineering, finance and business teams", "Only procurement and legal", "Only operations and IT security", "Cloud providers and authorities"], "answer_index": 0, "explanation": "FinOps relies on collaboration between engineering, finance and business to steer technology costs together."},
+        {"question": "Which sequence does the FinOps Framework name as its phases?", "options": ["Inform, Optimize, Operate", "Plan, Build, Run", "Detect, Respond, Recover", "Design, Deploy, Retire"], "answer_index": 0, "explanation": "The phases are Inform, Optimize and Operate, and they are repeated continuously."},
+        {"question": "What does the principle \"everyone takes ownership\" describe?", "options": ["Engineering and product teams also own their technology costs", "Only the finance department bears cloud costs", "The cloud provider is liable for excessive bills", "Costs are only reviewed at year end"], "answer_index": 0, "explanation": "Decisions are made in a decentralized way, so engineers and product teams are accountable for costs too."},
+        {"question": "What is the AWS Cost Explorer used for?", "options": ["Analyzing and forecasting cost and usage data visually", "Scaling servers automatically", "Granting access permissions", "Physically monitoring data centers"], "answer_index": 0, "explanation": "Cost Explorer shows cost and usage with filtering and grouping and can forecast spending."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "finops-what", "title": "FinOps Foundation: What is FinOps?", "url": "https://www.finops.org/introduction/what-is-finops/", "accessed": "2026-10-03"},
+    {"id": "finops-phases", "title": "FinOps Foundation: FinOps Framework Phases", "url": "https://www.finops.org/framework/phases/", "accessed": "2026-10-03"},
+    {"id": "finops-principles", "title": "FinOps Foundation: FinOps Principles", "url": "https://www.finops.org/framework/principles/", "accessed": "2026-10-03"},
+    {"id": "aws-cost-mgmt", "title": "AWS: Use AWS Billing and Cost Management", "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

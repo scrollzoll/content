@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "tech-hochverfuegbarkeit",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "verfuegbarkeit", "sla", "redundanz", "zuverlaessigkeit"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Hochverfügbarkeit: Was die Neunen bedeuten",
+      "intro": "99,9 % klingt nach fast immer. Wie viel Ausfall im Jahr erlaubt ist und wie Abhängigkeiten und Redundanz die Rechnung verändern, zeigt diese Einheit.",
+      "facts": [
+        {"text": "Verfügbarkeit ist der Anteil der Zeit, in der ein System seine Aufgabe erfüllt, meist über einen Monat oder ein Jahr gemessen. „Fünf Neunen“ ist die Kurzform für 99,999 %.", "source_ids": ["aws-wa-availability"]},
+        {"text": "99,9 % Verfügbarkeit erlauben pro Jahr rund 8 Stunden 45 Minuten Ausfall (genauer 8,76 Stunden), pro Monat etwa 43 Minuten.", "source_ids": ["aws-wa-availability", "azure-wa-reliability-targets"]},
+        {"text": "Pro Jahr erlauben 99 % etwa 3,65 Tage Ausfall, 99,99 % etwa 52,6 Minuten und 99,999 % nur etwa 5,3 Minuten. Jede weitere Neun verkleinert die Ausfallzeit auf rund ein Zehntel.", "source_ids": ["azure-wa-reliability-targets", "wp-high-availability"]},
+        {"text": "Hängt ein System zwingend von anderen Systemen ab, multiplizieren sich die Verfügbarkeiten. Drei Komponenten mit je 99,99 % ergeben theoretisch nur noch etwa 99,97 %.", "source_ids": ["aws-wa-availability"]},
+        {"text": "Unabhängige, redundante Komponenten, etwa in verschiedenen Verfügbarkeitszonen, erhöhen die Verfügbarkeit: Zwei Komponenten mit je 99,9 % ergeben theoretisch 99,9999 %.", "source_ids": ["aws-wa-availability"]},
+        {"text": "Höhere Verfügbarkeitsziele kosten mehr: Sie erfordern gründlichere Tests, Automatisierung der Wiederherstellung und oft langsamere Änderungen. Das Ziel sollte zum echten Bedarf passen.", "source_ids": ["aws-wa-availability"]}
+      ],
+      "quiz": [
+        {"question": "Wie viel Ausfallzeit pro Jahr erlaubt eine Verfügbarkeit von 99,9 %?", "options": ["Etwa 5 Minuten", "Etwa 53 Minuten", "Etwa 8 Stunden 45 Minuten", "Etwa 3,7 Tage"], "answer_index": 2, "explanation": "0,1 % eines Jahres sind rund 8,76 Stunden, also etwa 8 Stunden 45 Minuten."},
+        {"question": "Ein System mit 99,99 % hängt zwingend von zwei weiteren unabhängigen Systemen mit je 99,99 % ab. Welche Verfügbarkeit ist theoretisch erreichbar?", "options": ["99,99 %", "99,999 %", "Etwa 99,97 %", "Etwa 99,9 %"], "answer_index": 2, "explanation": "Bei harten Abhängigkeiten werden die Werte multipliziert: 99,99 % × 99,99 % × 99,99 % ≈ 99,97 %."},
+        {"question": "Zwei unabhängige, redundante Komponenten haben je 99,9 % Verfügbarkeit. Wie hoch ist die theoretische Gesamtverfügbarkeit?", "options": ["99,9999 %", "99,95 %", "99,99 %", "99,8 %"], "answer_index": 0, "explanation": "Beide müssen gleichzeitig ausfallen: 100 % − (0,1 % × 0,1 %) = 99,9999 %."}
+      ]
+    },
+    "en": {
+      "title": "High availability: what the nines mean",
+      "intro": "99.9% sounds like almost always. This unit shows how much downtime per year it allows and how dependencies and redundancy change the math.",
+      "facts": [
+        {"text": "Availability is the share of time a system performs its function, usually measured over a month or a year. \"Five nines\" is shorthand for 99.999%.", "source_ids": ["aws-wa-availability"]},
+        {"text": "99.9% availability allows about 8 hours 45 minutes of downtime per year (more precisely 8.76 hours), or about 43 minutes per month.", "source_ids": ["aws-wa-availability", "azure-wa-reliability-targets"]},
+        {"text": "Per year, 99% allows about 3.65 days of downtime, 99.99% about 52.6 minutes and 99.999% only about 5.3 minutes. Each additional nine cuts the allowed downtime to roughly a tenth.", "source_ids": ["azure-wa-reliability-targets", "wp-high-availability"]},
+        {"text": "If a system has hard dependencies on other systems, their availabilities multiply. Three components at 99.99% each theoretically yield only about 99.97%.", "source_ids": ["aws-wa-availability"]},
+        {"text": "Independent, redundant components, for example in different availability zones, raise availability: two components at 99.9% each theoretically give 99.9999%.", "source_ids": ["aws-wa-availability"]},
+        {"text": "Higher availability targets cost more: they demand more thorough testing, automated recovery and often slower changes. The target should match the real need.", "source_ids": ["aws-wa-availability"]}
+      ],
+      "quiz": [
+        {"question": "How much downtime per year does 99.9% availability allow?", "options": ["About 5 minutes", "About 53 minutes", "About 8 hours 45 minutes", "About 3.7 days"], "answer_index": 2, "explanation": "0.1% of a year is roughly 8.76 hours, i.e. about 8 hours 45 minutes."},
+        {"question": "A 99.99% system has hard dependencies on two other independent systems at 99.99% each. What availability can it theoretically reach?", "options": ["99.99%", "99.999%", "About 99.97%", "About 99.9%"], "answer_index": 2, "explanation": "With hard dependencies the values multiply: 99.99% × 99.99% × 99.99% ≈ 99.97%."},
+        {"question": "Two independent, redundant components each have 99.9% availability. What is the theoretical combined availability?", "options": ["99.9999%", "99.95%", "99.99%", "99.8%"], "answer_index": 0, "explanation": "Both must fail at the same time: 100% − (0.1% × 0.1%) = 99.9999%."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "aws-wa-availability", "title": "AWS Well-Architected Framework, Reliability Pillar: Availability", "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/availability.html", "accessed": "2026-10-03"},
+    {"id": "azure-wa-reliability-targets", "title": "Microsoft Azure Well-Architected Framework: Architecture strategies for defining reliability targets", "url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics", "accessed": "2026-10-03"},
+    {"id": "wp-high-availability", "title": "Wikipedia: High availability", "url": "https://en.wikipedia.org/wiki/High_availability", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

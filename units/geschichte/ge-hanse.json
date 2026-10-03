@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ge-hanse",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "hanse", "handel", "staedtebund"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Hanse: Städtebund und Handel",
+      "intro": "Aus Zusammenschlüssen norddeutscher Kaufleute wurde ein mächtiges Handelsnetz, das über Jahrhunderte Nord- und Ostsee prägte.",
+      "facts": [
+        {"text": "Die Hanse war ein Zusammenschluss vor allem norddeutscher Kaufleute und später ihrer Städte. Sie bestand von der Mitte des 12. bis zur Mitte des 17. Jahrhunderts und sicherte den Handel im Ausland.", "source_ids": ["de-wp-hanse"]},
+        {"text": "Lübeck galt ab 1294 als unbestrittener Anführer der Hanse. Neben Hamburg, Bremen und Köln war es eine der wichtigsten Städte des Bundes.", "source_ids": ["de-wp-hanse"]},
+        {"text": "Die Hanse handelte mit Salz aus Lüneburg, Hering aus Schonen, Stockfisch aus Norwegen, Getreide aus Preußen und Livland sowie Wachs aus Russland.", "source_ids": ["de-wp-hanse"]},
+        {"text": "Zu den wichtigsten Kontoren, den Handelsniederlassungen im Ausland, zählten Brügge, London, Bergen und der Peterhof in Nowgorod.", "source_ids": ["en-wp-hanse"]},
+        {"text": "Im Frieden von Stralsund 1370 setzte sich die Hanse gegen Dänemark durch. Er gilt als Höhepunkt ihrer Macht.", "source_ids": ["en-wp-hanse", "de-wp-hanse"]},
+        {"text": "Der letzte Hansetag fand 1669 in Lübeck statt. Hamburg, Bremen und Lübeck blieben als letzte Mitglieder des Bundes.", "source_ids": ["en-wp-hanse", "de-wp-hanse"]}
+      ],
+      "quiz": [
+        {"question": "Welche Stadt führte die Hanse ab 1294 an?", "options": ["Lübeck", "Hamburg", "Danzig", "Bergen"], "answer_index": 0, "explanation": "Lübeck war ab 1294 die unbestrittene Anführerin der Hanse."},
+        {"question": "Welches Ereignis markiert den Höhepunkt der Hansemacht?", "options": ["Der Frieden von Stralsund 1370", "Die Schließung des Nowgoroder Kontors 1494", "Der letzte Hansetag 1669", "Die Gründung Lübecks 1143"], "answer_index": 0, "explanation": "Mit dem Frieden von Stralsund 1370 setzte sich die Hanse gegen Dänemark durch und erreichte ihren Machtgipfel."},
+        {"question": "Welche Ware lieferte Schonen für den Hansehandel?", "options": ["Hering", "Salz", "Wachs", "Tuch"], "answer_index": 0, "explanation": "Hering kam aus Schonen; Salz aus Lüneburg und Wachs aus Russland."}
+      ]
+    },
+    "en": {
+      "title": "The Hanseatic League: city alliance and trade",
+      "intro": "Associations of North German merchants grew into a powerful trading network that shaped the North Sea and the Baltic for centuries.",
+      "facts": [
+        {"text": "The Hanse was an association of mainly North German merchants and later their towns. It existed from the mid-12th to the mid-17th century and protected trade abroad.", "source_ids": ["de-wp-hanse"]},
+        {"text": "From 1294, Lübeck was the undisputed leader of the Hanse. Alongside Hamburg, Bremen and Cologne it was one of the league's most important cities.", "source_ids": ["de-wp-hanse"]},
+        {"text": "The Hanse traded salt from Lüneburg, herring from Scania, stockfish from Norway, grain from Prussia and Livonia, and wax from Russia.", "source_ids": ["de-wp-hanse"]},
+        {"text": "The most important kontors, the league's trading posts abroad, included Bruges, London, Bergen and the Peterhof in Novgorod.", "source_ids": ["en-wp-hanse"]},
+        {"text": "In the Peace of Stralsund in 1370, the Hanse prevailed over Denmark. It is seen as the peak of its power.", "source_ids": ["en-wp-hanse", "de-wp-hanse"]},
+        {"text": "The last Hanseatic Diet took place in Lübeck in 1669. Hamburg, Bremen and Lübeck remained as the last members of the league.", "source_ids": ["en-wp-hanse", "de-wp-hanse"]}
+      ],
+      "quiz": [
+        {"question": "Which city led the Hanse from 1294?", "options": ["Lübeck", "Hamburg", "Danzig", "Bergen"], "answer_index": 0, "explanation": "Lübeck was the undisputed leader of the Hanse from 1294."},
+        {"question": "Which event marks the peak of Hanseatic power?", "options": ["The Peace of Stralsund in 1370", "The closing of the Novgorod kontor in 1494", "The last Hanseatic Diet in 1669", "The founding of Lübeck in 1143"], "answer_index": 0, "explanation": "With the Peace of Stralsund in 1370 the Hanse prevailed over Denmark and reached the height of its power."},
+        {"question": "Which good did Scania supply to Hanseatic trade?", "options": ["Herring", "Salt", "Wax", "Cloth"], "answer_index": 0, "explanation": "Herring came from Scania; salt from Lüneburg and wax from Russia."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "de-wp-hanse", "title": "Wikipedia (de): Hanse", "url": "https://de.wikipedia.org/wiki/Hanse", "accessed": "2026-10-03"},
+    {"id": "en-wp-hanse", "title": "Wikipedia: Hanseatic League", "url": "https://en.wikipedia.org/wiki/Hanseatic_League", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

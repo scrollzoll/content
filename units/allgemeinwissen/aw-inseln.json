@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "aw-inseln",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "inseln", "gronland", "rekorde"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die größten Inseln der Erde",
+      "intro": "Grönland, Neuguinea, Borneo: Welche Inseln sind die größten der Welt, und warum zählt Australien nicht mit?",
+      "facts": [
+        {"text": "Die größte Insel der Erde ist Grönland mit rund 2,1 Millionen Quadratkilometern. Je nach Quelle weichen die Messwerte leicht voneinander ab.", "source_ids": ["wp-islands-area", "de-wp-inseln", "wp-greenland"]},
+        {"text": "Auf den Plätzen zwei bis vier folgen Neuguinea (rund 0,77 bis 0,79 Mio. km²), Borneo (rund 0,72 bis 0,74 Mio. km²) und Madagaskar (rund 0,59 Mio. km²).", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Platz fünf und sechs gehen an die Baffininsel in Kanada (rund 0,51 Mio. km²) und an Sumatra in Indonesien (rund 0,43 bis 0,44 Mio. km²).", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Australien ist zwar von Wasser umgeben, zählt aber als Kontinent und nicht als Insel. Das Festland ist mehr als dreimal so groß wie Grönland.", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Rund 81 Prozent von Grönland sind vom Inlandeis bedeckt. Die Insel gehört zum Königreich Dänemark.", "source_ids": ["wp-greenland", "wp-islands-area"]}
+      ],
+      "quiz": [
+        {"question": "Welche ist die größte Insel der Erde?", "options": ["Grönland", "Neuguinea", "Borneo", "Madagaskar"], "answer_index": 0, "explanation": "Grönland ist mit rund 2,1 Millionen km² die größte Insel, mit großem Abstand vor Neuguinea."},
+        {"question": "Warum steht Australien nicht auf der Liste der größten Inseln?", "options": ["Es zählt als Kontinent", "Es ist kleiner als Grönland", "Es besteht aus mehreren Inseln", "Es hängt mit Neuguinea zusammen"], "answer_index": 0, "explanation": "Das australische Festland gilt als eine der Hauptlandmassen, also als Kontinent, und wird daher nicht als Insel gezählt."},
+        {"question": "Welche Insel belegt Platz zwei der größten Inseln?", "options": ["Neuguinea", "Borneo", "Sumatra", "Baffininsel"], "answer_index": 0, "explanation": "Neuguinea liegt mit rund 0,77 bis 0,79 Mio. km² auf Platz zwei, knapp vor Borneo."}
+      ]
+    },
+    "en": {
+      "title": "The largest islands on Earth",
+      "intro": "Greenland, New Guinea, Borneo: Which islands are the biggest in the world, and why does Australia not count?",
+      "facts": [
+        {"text": "The largest island on Earth is Greenland at around 2.1 million square kilometres. Measured values differ slightly depending on the source.", "source_ids": ["wp-islands-area", "de-wp-inseln", "wp-greenland"]},
+        {"text": "Ranks two to four are New Guinea (around 0.77 to 0.79 million km²), Borneo (around 0.72 to 0.74 million km²) and Madagascar (around 0.59 million km²).", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Fifth and sixth place go to Baffin Island in Canada (around 0.51 million km²) and Sumatra in Indonesia (around 0.43 to 0.44 million km²).", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Australia is surrounded by water but counts as a continent, not an island. The mainland is more than three times the size of Greenland.", "source_ids": ["wp-islands-area", "de-wp-inseln"]},
+        {"text": "Around 81 percent of Greenland is covered by the ice sheet. The island belongs to the Kingdom of Denmark.", "source_ids": ["wp-greenland", "wp-islands-area"]}
+      ],
+      "quiz": [
+        {"question": "Which is the largest island on Earth?", "options": ["Greenland", "New Guinea", "Borneo", "Madagascar"], "answer_index": 0, "explanation": "Greenland, at around 2.1 million km², is the largest island, far ahead of New Guinea."},
+        {"question": "Why is Australia not on the list of the largest islands?", "options": ["It counts as a continent", "It is smaller than Greenland", "It consists of several islands", "It is joined to New Guinea"], "answer_index": 0, "explanation": "The Australian mainland is regarded as one of the main landmasses, i.e. a continent, so it is not counted as an island."},
+        {"question": "Which island ranks second among the largest islands?", "options": ["New Guinea", "Borneo", "Sumatra", "Baffin Island"], "answer_index": 0, "explanation": "New Guinea ranks second at around 0.77 to 0.79 million km², just ahead of Borneo."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-islands-area", "title": "Wikipedia: List of islands by area", "url": "https://en.wikipedia.org/wiki/List_of_islands_by_area", "accessed": "2026-10-03"},
+    {"id": "de-wp-inseln", "title": "Wikipedia (de): Liste der größten Inseln der Erde", "url": "https://de.wikipedia.org/wiki/Liste_der_größten_Inseln_der_Erde", "accessed": "2026-10-03"},
+    {"id": "wp-greenland", "title": "Wikipedia: Greenland", "url": "https://en.wikipedia.org/wiki/Greenland", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

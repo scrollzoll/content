@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "tech-microservices",
+  "topic": "technologie/cloud",
+  "tags": ["microservices", "monolith", "architektur", "cloud"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Microservices vs. Monolith: Vor- und Nachteile",
+      "intro": "Eine Anwendung als ein Block oder als viele kleine Dienste? Beide Bauweisen haben Stärken und Preise.",
+      "facts": [
+        {"text": "Ein Monolith wird als eine Einheit gebaut und ausgeliefert. Bei Microservices besteht die Anwendung aus kleinen Diensten, die jeweils im eigenen Prozess laufen und über schlanke Schnittstellen sprechen.", "source_ids": ["fowler-microservices", "aws-compare"]},
+        {"text": "Microservices lassen sich unabhängig voneinander ausliefern. Ein Dienst kann aktualisiert oder zurückgerollt werden, ohne die ganze Anwendung neu zu bauen und bereitzustellen.", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Dienste skalieren einzeln: Nur der Teil mit hoher Last bekommt mehr Ressourcen. Ein Monolith muss dagegen als Ganzes skaliert werden. Fällt ein Dienst aus, kann der Rest weiterlaufen.", "source_ids": ["aws-compare", "ms-microservices"]},
+        {"text": "Jeder Dienst ist einfacher, das Gesamtsystem aber komplexer. Dazu kommen Netzwerklatenz, Versionierung zwischen Diensten und schwierigeres Testen und Refactoring über Dienstgrenzen hinweg.", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Weil jeder Dienst seine eigenen Daten hält, sind Transaktionen über mehrere Dienste kaum ACID-konform. Man setzt eher auf letztlich konsistente Daten (Eventual Consistency).", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Microservices brauchen reife DevOps-Praxis und Erfahrung mit verteilten Systemen. Fowler und Lewis nennen den Rat, mit einem modularen Monolithen zu starten und erst bei Problemen aufzuteilen.", "source_ids": ["ms-microservices", "fowler-microservices"]}
+      ],
+      "quiz": [
+        {"question": "Was ist ein typischer Vorteil von Microservices gegenüber einem Monolithen?", "options": ["Einzelne Dienste lassen sich unabhängig ausliefern und skalieren", "Es gibt keine Netzwerkaufrufe zwischen Komponenten", "Datenkonsistenz ist immer garantiert", "Der Betrieb wird deutlich einfacher"], "answer_index": 0, "explanation": "Dienste werden einzeln bereitgestellt und je nach Last einzeln skaliert. Dafür steigen Betriebsaufwand und Komplexität."},
+        {"question": "Welche Herausforderung ist bei Microservices typisch?", "options": ["Konsistenz der Daten über mehrere Dienste hinweg", "Die ganze Anwendung muss für jede Änderung neu gebaut werden", "Alle Dienste müssen dieselbe Programmiersprache nutzen", "Ein Fehler legt zwingend das ganze System lahm"], "answer_index": 0, "explanation": "Jeder Dienst besitzt eigene Daten. Dienstübergreifende Änderungen sind daher meist nur letztlich konsistent statt ACID-konform."},
+        {"question": "Welchen Rat geben Fowler und Lewis zum Einstieg?", "options": ["Mit einem modularen Monolithen starten und bei Bedarf aufteilen", "Immer sofort mit Microservices beginnen", "Nie Dienste aufteilen", "Mit möglichst winzigen Diensten starten"], "answer_index": 0, "explanation": "Sie nennen das Argument, zunächst einen modularen Monolithen zu bauen und ihn erst aufzuteilen, wenn er zum Problem wird."}
+      ]
+    },
+    "en": {
+      "title": "Microservices vs. monolith: pros and cons",
+      "intro": "One application as a single block or as many small services? Both styles have strengths and costs.",
+      "facts": [
+        {"text": "A monolith is built and shipped as one unit. With microservices, the application consists of small services, each running in its own process and talking through lightweight interfaces.", "source_ids": ["fowler-microservices", "aws-compare"]},
+        {"text": "Microservices can be released independently. A service can be updated or rolled back without rebuilding and redeploying the whole application.", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Services scale individually: only the part under heavy load gets more resources, while a monolith must be scaled as a whole. If one service fails, the rest can keep running.", "source_ids": ["aws-compare", "ms-microservices"]},
+        {"text": "Each service is simpler, but the system as a whole is more complex. Add network latency, versioning between services, and harder testing and refactoring across service boundaries.", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Because each service holds its own data, transactions across several services are hardly ACID-compliant. Teams rely more on eventually consistent data (eventual consistency).", "source_ids": ["ms-microservices", "fowler-microservices"]},
+        {"text": "Microservices need mature DevOps practice and experience with distributed systems. Fowler and Lewis cite the advice to start with a modular monolith and split it only once it becomes a problem.", "source_ids": ["ms-microservices", "fowler-microservices"]}
+      ],
+      "quiz": [
+        {"question": "What is a typical advantage of microservices over a monolith?", "options": ["Individual services can be deployed and scaled independently", "There are no network calls between components", "Data consistency is always guaranteed", "Operations become much simpler"], "answer_index": 0, "explanation": "Services are deployed one by one and scaled according to load. In exchange, operational effort and complexity grow."},
+        {"question": "Which challenge is typical for microservices?", "options": ["Keeping data consistent across several services", "The whole application must be rebuilt for every change", "All services must use the same programming language", "One failure necessarily takes down the whole system"], "answer_index": 0, "explanation": "Each service owns its data, so changes spanning services are usually only eventually consistent rather than ACID-compliant."},
+        {"question": "What advice do Fowler and Lewis cite for getting started?", "options": ["Start with a modular monolith and split it when needed", "Always begin with microservices right away", "Never split into services", "Start with the tiniest services possible"], "answer_index": 0, "explanation": "They cite the argument to build a modular monolith first and split it only once it becomes a problem."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "fowler-microservices", "title": "Martin Fowler, James Lewis: Microservices (2014)", "url": "https://martinfowler.com/articles/microservices.html", "accessed": "2026-10-03"},
+    {"id": "ms-microservices", "title": "Microsoft Learn: Microservices architecture style", "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices", "accessed": "2026-10-03"},
+    {"id": "aws-compare", "title": "AWS: Monolithic vs. Microservices Architecture", "url": "https://aws.amazon.com/compare/the-difference-between-monolithic-and-microservices-architecture/", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

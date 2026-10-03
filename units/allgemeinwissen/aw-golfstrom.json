@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "aw-golfstrom",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["golfstrom", "klima", "ozean", "europa", "amoc"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Golfstrom und Nordatlantikstrom: Wärme für Europa",
+      "intro": "Eine riesige Meeresströmung bringt Wärme nach Norden. Was der Golfstrom genau leistet und was die Forschung dazu sagt.",
+      "facts": [
+        {"text": "Der Golfstrom beginnt im Golf von Mexiko, fließt durch die Floridastraße und die US-Ostküste entlang. Bei etwa 36° Nord, vor North Carolina, biegt er nach Osten ab.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "Südlich von Neufundland setzt der Nordatlantikstrom den Weg Richtung Europa fort. Er gehört zur Atlantischen Umwälzzirkulation (AMOC), die warmes Wasser nach Norden und kaltes in die Tiefe führt.", "source_ids": ["whoi-amoc", "wp-gulf-stream"]},
+        {"text": "Der Golfstrom ist rund 100 km breit und 800 bis 1.200 m tief, an der Oberfläche bis etwa 2,5 m/s schnell. In der Floridastraße transportiert er etwa 30 Millionen m³ Wasser pro Sekunde, mehr als alle Flüsse zusammen, die in den Atlantik münden.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "Dass Nordwesteuropa so mild ist, liegt nach breitem Konsens zumindest teilweise am Nordatlantikstrom. Fast die gesamte Küste Norwegens bleibt zum Beispiel ganzjährig eisfrei.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "Die AMOC macht Island und Nordeuropa deutlich milder, als es ihre geografische Breite erwarten ließe. Schwächt sie sich ab, gelangt weniger Wärme nach Norden.", "source_ids": ["whoi-amoc", "metoffice-amoc"]},
+        {"text": "Laut Met Office gilt eine Abschwächung der AMOC durch den Klimawandel als sehr wahrscheinlich, ein Kollaps dagegen als unwahrscheinlich (IPCC AR6: mittleres Vertrauen).", "source_ids": ["metoffice-amoc"]}
+      ],
+      "quiz": [
+        {"question": "Wo biegt der Golfstrom bei etwa 36° Nord nach Osten ab?", "options": ["Vor North Carolina", "Vor Island", "Vor Portugal", "Vor Grönland"], "answer_index": 0, "explanation": "Etwa auf Höhe von North Carolina verlässt der Golfstrom die US-Küste und strömt ostwärts in den Atlantik."},
+        {"question": "Wie heißt die Fortsetzung des Golfstroms, die Wärme Richtung Nordeuropa bringt?", "options": ["Nordatlantikstrom", "Humboldtstrom", "Kanarenstrom", "Labradorstrom"], "answer_index": 0, "explanation": "Der Nordatlantikstrom setzt den Weg ostwärts fort und trägt warmes Wasser in Richtung Nordeuropa."},
+        {"question": "Wie bewertet das Met Office einen Kollaps der AMOC?", "options": ["Unwahrscheinlich, mit mittlerem Vertrauen", "Praktisch sicher", "Bereits eingetreten", "Wahrscheinlich bis 2050"], "answer_index": 0, "explanation": "Nach dem IPCC-Bericht AR6 ist ein Kollaps unwahrscheinlich (mittleres Vertrauen). Eine Abschwächung gilt aber als sehr wahrscheinlich."}
+      ]
+    },
+    "en": {
+      "title": "Gulf Stream and North Atlantic Current: warmth for Europe",
+      "intro": "A huge ocean current carries heat northwards. What the Gulf Stream does exactly and what research says about it.",
+      "facts": [
+        {"text": "The Gulf Stream starts in the Gulf of Mexico, flows through the Straits of Florida and up the US East Coast. At about 36° North, off North Carolina, it turns eastwards.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "South of Newfoundland, the North Atlantic Current continues the path towards Europe. It is part of the Atlantic Meridional Overturning Circulation (AMOC), which carries warm water north and cold water to the depths.", "source_ids": ["whoi-amoc", "wp-gulf-stream"]},
+        {"text": "The Gulf Stream is about 100 km wide and 800 to 1,200 m deep, with surface speeds up to about 2.5 m/s. In the Straits of Florida it carries around 30 million m³ of water per second, more than all rivers flowing into the Atlantic combined.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "There is broad consensus that Northwest Europe is so mild at least partly because of the North Atlantic Current. Almost the entire coast of Norway, for example, stays ice-free all year.", "source_ids": ["wp-gulf-stream"]},
+        {"text": "The AMOC makes Iceland and northern Europe much milder than their latitude would suggest. If it weakens, less heat reaches the north.", "source_ids": ["whoi-amoc", "metoffice-amoc"]},
+        {"text": "According to the Met Office, a weakening of the AMOC due to climate change is very likely, while a collapse is unlikely (IPCC AR6: medium confidence).", "source_ids": ["metoffice-amoc"]}
+      ],
+      "quiz": [
+        {"question": "Where does the Gulf Stream turn eastwards at about 36° North?", "options": ["Off North Carolina", "Off Iceland", "Off Portugal", "Off Greenland"], "answer_index": 0, "explanation": "Around the latitude of North Carolina, the Gulf Stream leaves the US coast and flows east into the Atlantic."},
+        {"question": "What is the continuation of the Gulf Stream that brings heat towards northern Europe called?", "options": ["North Atlantic Current", "Humboldt Current", "Canary Current", "Labrador Current"], "answer_index": 0, "explanation": "The North Atlantic Current continues the path eastwards and carries warm water towards northern Europe."},
+        {"question": "How does the Met Office rate a collapse of the AMOC?", "options": ["Unlikely, with medium confidence", "Virtually certain", "Already happened", "Likely by 2050"], "answer_index": 0, "explanation": "According to the IPCC AR6 report, a collapse is unlikely (medium confidence). A weakening is considered very likely, though."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-gulf-stream", "title": "Wikipedia: Gulf Stream", "url": "https://en.wikipedia.org/wiki/Gulf_Stream", "accessed": "2026-10-03"},
+    {"id": "whoi-amoc", "title": "WHOI: AMOC - The Atlantic Ocean's conveyor belt", "url": "https://www.whoi.edu/know-your-ocean/ocean-topics/how-the-ocean-works/ocean-circulation/amoc/", "accessed": "2026-10-03"},
+    {"id": "metoffice-amoc", "title": "Met Office: The Atlantic Meridional Overturning Circulation in a changing climate", "url": "https://www.metoffice.gov.uk/blog/2024/the-atlantic-meridional-overturning-circulation-in-a-changing-climate", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

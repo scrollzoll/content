@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "aw-photosynthese",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["photosynthese", "pflanzen", "biologie", "sauerstoff", "energie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Photosynthese: Wie Pflanzen Licht in Energie umwandeln",
+      "intro": "Pflanzen machen aus Licht, Wasser und Kohlendioxid Zucker und setzen dabei Sauerstoff frei. So funktioniert das in zwei Schritten.",
+      "facts": [
+        {"text": "Bei der Photosynthese wird Lichtenergie in chemische Energie umgewandelt. Vereinfacht gilt: 6 CO₂ + 6 H₂O ergibt Glucose (C₆H₁₂O₆) und 6 O₂.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Der Vorgang läuft in den Chloroplasten ab und hat zwei Stufen: Die Lichtreaktion findet in den Thylakoidmembranen statt, der Calvin-Zyklus im Stroma.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Chlorophyll nimmt vor allem rotes und blaues Licht auf. Grünes Licht wird kaum genutzt und zurückgeworfen, deshalb erscheinen Blätter grün.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Die Lichtreaktion liefert die Energieträger ATP und NADPH. Der Calvin-Zyklus nutzt sie, um CO₂ zu Zucker aufzubauen.", "source_ids": ["libretexts-photosynthesis", "de-wp-photosynthese"]},
+        {"text": "Der freigesetzte Sauerstoff stammt aus dem Wasser, nicht aus dem CO₂. Die Lichtreaktion spaltet Wassermoleküle; O₂ entsteht als Nebenprodukt.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Die Photosynthese ist die Hauptquelle für den Sauerstoff der Erdatmosphäre. Weltweit fängt sie im Mittel etwa 130 Terawatt ein, rund das Achtfache des menschlichen Energieverbrauchs.", "source_ids": ["wp-photosynthesis"]}
+      ],
+      "quiz": [
+        {"question": "Woher stammt der Sauerstoff, den Pflanzen bei der Photosynthese abgeben?", "options": ["Aus Wasser", "Aus Kohlendioxid", "Aus Glucose", "Aus dem Boden"], "answer_index": 0, "explanation": "Die Lichtreaktion spaltet Wassermoleküle. Der Sauerstoff stammt aus dem Wasser, nicht aus dem CO₂."},
+        {"question": "Warum erscheinen die meisten Blätter grün?", "options": ["Chlorophyll wirft grünes Licht zurück", "Chlorophyll nimmt grünes Licht am stärksten auf", "Das Wasser in den Zellen färbt das Licht", "Glucose ist grün"], "answer_index": 0, "explanation": "Chlorophyll absorbiert vor allem rotes und blaues Licht. Grünes Licht wird zurückgeworfen."},
+        {"question": "Wo im Chloroplasten läuft der Calvin-Zyklus ab?", "options": ["Im Stroma", "In den Thylakoidmembranen", "Im Zellkern", "In der Zellwand"], "answer_index": 0, "explanation": "Der Calvin-Zyklus findet im Stroma statt. Die Lichtreaktion läuft in den Thylakoidmembranen."}
+      ]
+    },
+    "en": {
+      "title": "Photosynthesis: how plants turn light into energy",
+      "intro": "Plants turn light, water and carbon dioxide into sugar and release oxygen along the way. Here is how it works in two steps.",
+      "facts": [
+        {"text": "Photosynthesis converts light energy into chemical energy. In simplified form: 6 CO₂ + 6 H₂O gives glucose (C₆H₁₂O₆) and 6 O₂.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "The process takes place in chloroplasts and has two stages: the light reactions occur in the thylakoid membranes, the Calvin cycle in the stroma.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Chlorophyll mainly absorbs red and blue light. Green light is barely used and is reflected, which is why leaves look green.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "The light reactions supply the energy carriers ATP and NADPH. The Calvin cycle uses them to build sugar from CO₂.", "source_ids": ["libretexts-photosynthesis", "de-wp-photosynthese"]},
+        {"text": "The oxygen released comes from water, not from CO₂. The light reactions split water molecules; O₂ is a by-product.", "source_ids": ["de-wp-photosynthese", "libretexts-photosynthesis"]},
+        {"text": "Photosynthesis is the main source of oxygen in Earth's atmosphere. Worldwide it captures about 130 terawatts on average, roughly eight times human power consumption.", "source_ids": ["wp-photosynthesis"]}
+      ],
+      "quiz": [
+        {"question": "Where does the oxygen that plants release during photosynthesis come from?", "options": ["From water", "From carbon dioxide", "From glucose", "From the soil"], "answer_index": 0, "explanation": "The light reactions split water molecules. The oxygen comes from water, not from CO₂."},
+        {"question": "Why do most leaves look green?", "options": ["Chlorophyll reflects green light", "Chlorophyll absorbs green light most strongly", "The water in cells tints the light", "Glucose is green"], "answer_index": 0, "explanation": "Chlorophyll mainly absorbs red and blue light. Green light is reflected."},
+        {"question": "Where in the chloroplast does the Calvin cycle take place?", "options": ["In the stroma", "In the thylakoid membranes", "In the cell nucleus", "In the cell wall"], "answer_index": 0, "explanation": "The Calvin cycle takes place in the stroma. The light reactions run in the thylakoid membranes."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-photosynthesis", "title": "Wikipedia: Photosynthesis", "url": "https://en.wikipedia.org/wiki/Photosynthesis", "accessed": "2026-10-03"},
+    {"id": "de-wp-photosynthese", "title": "Wikipedia (de): Photosynthese", "url": "https://de.wikipedia.org/wiki/Photosynthese", "accessed": "2026-10-03"},
+    {"id": "libretexts-photosynthesis", "title": "Biology LibreTexts (Lumen): Photosynthesis", "url": "https://bio.libretexts.org/Courses/Lumen_Learning/Biology_for_Non-Majors_I_(Lumen)/06:_Metabolic_Pathways/6.06:_Photosynthesis", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

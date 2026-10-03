@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-hochverfuegbarkeit
-    topic: technologie/cloud
-    hint: "Verfügbarkeit in Prozent und was 99,9 % pro Jahr an Ausfallzeit bedeutet"
-    format: facts_quiz
-    priority: 1
-  - id: tech-finops
-    topic: technologie/cloud
-    hint: "FinOps: Cloud-Kosten verstehen und steuern"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ci-cd
-    topic: technologie/cloud
-    hint: "Continuous Integration und Continuous Delivery/Deployment"
-    format: facts_quiz
-    priority: 1
-  - id: tech-microservices
-    topic: technologie/cloud
-    hint: "Microservices vs. Monolith: Vor- und Nachteile"
-    format: facts_quiz
-    priority: 1
   - id: tech-llm-grundlagen
     topic: technologie/ki
     hint: "Wie große Sprachmodelle Text erzeugen: Tokens, Vorhersage des nächsten Tokens"
@@ -1062,21 +1042,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-gezeiten
-    topic: allgemeinwissen/geografie
-    hint: "Ebbe und Flut: Rolle von Mond und Sonne"
-    format: facts_quiz
-    priority: 1
-  - id: aw-golfstrom
-    topic: allgemeinwissen/geografie
-    hint: "Golfstrom und Nordatlantikstrom: Einfluss auf das Klima Europas"
-    format: facts_quiz
-    priority: 1
-  - id: aw-inseln
-    topic: allgemeinwissen/geografie
-    hint: "Die größten Inseln der Erde"
-    format: facts_quiz
-    priority: 1
   - id: aw-hauptstaedte-welt-1
     topic: allgemeinwissen/geografie
     hint: "Hauptstädte großer Länder außerhalb Europas, Teil 1 (Amerika)"
@@ -1092,11 +1057,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-photosynthese
-    topic: allgemeinwissen/natur
-    hint: "Photosynthese: wie Pflanzen Licht in Energie umwandeln"
-    format: facts_quiz
-    priority: 1
   - id: aw-wasserkreislauf
     topic: allgemeinwissen/natur
     hint: "Der Wasserkreislauf der Erde"
@@ -1627,26 +1587,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-kreuzzuege
-    topic: geschichte/mittelalter
-    hint: "Die Kreuzzüge: Ursachen und Verlauf (sachlich)"
-    format: facts_quiz
-    priority: 1
-  - id: ge-magna-carta
-    topic: geschichte/mittelalter
-    hint: "Die Magna Carta 1215"
-    format: facts_quiz
-    priority: 1
-  - id: ge-pest
-    topic: geschichte/mittelalter
-    hint: "Die Pest im 14. Jahrhundert"
-    format: facts_quiz
-    priority: 1
-  - id: ge-hanse
-    topic: geschichte/mittelalter
-    hint: "Die Hanse: Städtebund und Handel"
-    format: facts_quiz
-    priority: 1
   - id: ge-burgen
     topic: geschichte/mittelalter
     hint: "Burgen im Mittelalter: Aufbau und Funktion"

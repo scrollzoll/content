@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "aw-gezeiten",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["gezeiten", "ebbe-und-flut", "mond", "ozeane"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Ebbe und Flut: Wie Mond und Sonne die Gezeiten steuern",
+      "intro": "Zweimal am Tag steigt und sinkt das Meer. Verantwortlich ist vor allem die Anziehung des Mondes, die Sonne spielt eine kleinere Rolle.",
+      "facts": [
+        {"text": "Gezeiten entstehen durch die Gravitation von Mond und Sonne, die auf die Wassermassen der Ozeane wirkt.", "source_ids": ["noaa-tides-cause"]},
+        {"text": "Obwohl die Sonne viel massereicher ist, wirkt der Mond etwa doppelt so stark auf die Gezeiten. Die Gezeitenkraft nimmt mit der dritten Potenz der Entfernung ab, und der Mond ist viel näher.", "source_ids": ["noaa-tides-cause"]},
+        {"text": "Der Mond erzeugt auf der ihm zugewandten und auf der abgewandten Seite der Erde je einen Wasserberg. Durch die Erddrehung ziehen die Küsten täglich zweimal durch diese Berge.", "source_ids": ["noaa-tides-cause", "de-wp-gezeiten"]},
+        {"text": "Zwischen zwei aufeinanderfolgenden Hochwassern vergehen im Mittel etwa 12 Stunden und 25 Minuten, nicht genau 12 Stunden. Der Mond wandert nämlich selbst weiter um die Erde.", "source_ids": ["de-wp-gezeiten"]},
+        {"text": "Bei Neumond und Vollmond stehen Sonne, Erde und Mond fast in einer Linie. Ihre Kräfte addieren sich, es kommt zur Springtide mit besonders hohem Hochwasser und tiefem Niedrigwasser.", "source_ids": ["noaa-spring-neap", "de-wp-gezeiten"]},
+        {"text": "Bei Halbmond stehen Sonne und Mond im rechten Winkel zur Erde. Ihre Wasserberge schwächen sich teilweise ab: Es gibt eine Nipptide mit geringem Tidenhub, etwa eine Woche nach der Springtide.", "source_ids": ["noaa-spring-neap", "de-wp-gezeiten"]}
+      ],
+      "quiz": [
+        {"question": "Welcher Himmelskörper beeinflusst die Gezeiten der Erde am stärksten?", "options": ["Der Mond", "Die Sonne", "Der Mars", "Die Venus"], "answer_index": 0, "explanation": "Der Mond wirkt etwa doppelt so stark wie die Sonne, weil er der Erde viel näher ist und die Gezeitenkraft mit der Entfernung stark abnimmt."},
+        {"question": "Wie lange dauert es im Mittel von einem Hochwasser bis zum nächsten?", "options": ["Etwa 12 Stunden 25 Minuten", "Genau 12 Stunden", "Etwa 24 Stunden", "Etwa 6 Stunden"], "answer_index": 0, "explanation": "Weil der Mond weiter um die Erde wandert, vergehen zwischen zwei Hochwassern etwa 12 Stunden und 25 Minuten."},
+        {"question": "Bei welcher Mondphase tritt eine Springtide auf?", "options": ["Bei Neumond und Vollmond", "Nur bei Vollmond", "Bei Halbmond", "Nur bei Neumond"], "answer_index": 0, "explanation": "Bei Neu- und Vollmond stehen Sonne, Erde und Mond fast in einer Linie, ihre Kräfte addieren sich. Bei Halbmond gibt es Nipptiden."}
+      ]
+    },
+    "en": {
+      "title": "Ebb and flow: how the Moon and Sun drive the tides",
+      "intro": "Twice a day the sea rises and falls. The Moon's pull is mainly responsible, while the Sun plays a smaller role.",
+      "facts": [
+        {"text": "Tides are caused by the gravity of the Moon and the Sun acting on the water masses of the oceans.", "source_ids": ["noaa-tides-cause"]},
+        {"text": "Although the Sun is far more massive, the Moon affects the tides about twice as strongly. Tidal force falls off with the cube of distance, and the Moon is much closer.", "source_ids": ["noaa-tides-cause"]},
+        {"text": "The Moon creates one water bulge on the side of Earth facing it and one on the opposite side. As Earth rotates, coasts pass through these bulges twice a day.", "source_ids": ["noaa-tides-cause", "de-wp-gezeiten"]},
+        {"text": "On average, about 12 hours and 25 minutes pass between two successive high tides, not exactly 12 hours. This is because the Moon itself keeps moving around Earth.", "source_ids": ["de-wp-gezeiten"]},
+        {"text": "At new moon and full moon, the Sun, Earth and Moon are nearly in a line. Their forces add up, producing a spring tide with an especially high high water and low low water.", "source_ids": ["noaa-spring-neap", "de-wp-gezeiten"]},
+        {"text": "At half moon, the Sun and Moon are at right angles as seen from Earth. Their bulges partly cancel out: a neap tide with a small tidal range, about a week after a spring tide.", "source_ids": ["noaa-spring-neap", "de-wp-gezeiten"]}
+      ],
+      "quiz": [
+        {"question": "Which celestial body influences Earth's tides the most?", "options": ["The Moon", "The Sun", "Mars", "Venus"], "answer_index": 0, "explanation": "The Moon acts about twice as strongly as the Sun because it is much closer to Earth and tidal force drops off sharply with distance."},
+        {"question": "On average, how long does it take from one high tide to the next?", "options": ["About 12 hours 25 minutes", "Exactly 12 hours", "About 24 hours", "About 6 hours"], "answer_index": 0, "explanation": "Because the Moon keeps moving around Earth, about 12 hours and 25 minutes pass between two high tides."},
+        {"question": "At which Moon phase does a spring tide occur?", "options": ["At new moon and full moon", "Only at full moon", "At half moon", "Only at new moon"], "answer_index": 0, "explanation": "At new and full moon the Sun, Earth and Moon are nearly aligned and their forces add up. At half moon, neap tides occur."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "noaa-tides-cause", "title": "NOAA National Ocean Service: What causes tides?", "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html", "accessed": "2026-10-03"},
+    {"id": "noaa-spring-neap", "title": "NOAA National Ocean Service: What are spring tides and neap tides?", "url": "https://oceanservice.noaa.gov/facts/springtide.html", "accessed": "2026-10-03"},
+    {"id": "de-wp-gezeiten", "title": "Wikipedia (de): Gezeiten", "url": "https://de.wikipedia.org/wiki/Gezeiten", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}
