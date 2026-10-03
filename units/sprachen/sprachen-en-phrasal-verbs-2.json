@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-phrasal-verbs-2",
+  "topic": "sprachen/englisch",
+  "tags": ["phrasal-verbs", "wortschatz", "alltag"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Phrasal Verbs im Alltag (2)",
+      "intro": "Sechs häufige Phrasal Verbs mit ihrer wichtigsten Bedeutung.",
+      "cards": [
+        { "front": "get along (with): Was heißt es?", "back": "sich gut verstehen, miteinander auskommen. „I get along well with my colleagues.“" },
+        { "front": "look forward to: Was heißt es, und was folgt darauf?", "back": "sich freuen auf. Danach folgt ein Substantiv oder die -ing-Form: „I look forward to seeing you.“ Nicht: „to see“." },
+        { "front": "put off: Was heißt es?", "back": "aufschieben, verschieben („We put off the meeting“). Auch: abschrecken, die Lust nehmen („It put me off swimming“)." },
+        { "front": "run into: Was heißt es?", "back": "zufällig treffen („I ran into an old friend“). Auch: auf ein Problem stoßen." },
+        { "front": "break down: Was heißt es?", "back": "kaputtgehen, ausfallen („The car broke down“). Auch: scheitern (Verhandlungen) oder in Teile aufgliedern („break down the numbers“)." },
+        { "front": "bring up: Was heißt es?", "back": "ein Thema ansprechen („Don’t bring up politics“). Auch: ein Kind großziehen." }
+      ]
+    },
+    "en": {
+      "title": "Phrasal Verbs in Daily Life (2)",
+      "intro": "Six common phrasal verbs with their most important meaning.",
+      "cards": [
+        { "front": "get along (with): what does it mean?", "back": "To be on good terms and live or work together without trouble. In German: sich gut verstehen. \"I get along well with my colleagues.\"" },
+        { "front": "look forward to: what does it mean, and what follows it?", "back": "To await with pleasure. A noun or the -ing form follows: \"I look forward to seeing you.\" Not: \"to see\"." },
+        { "front": "put off: what does it mean?", "back": "To postpone (\"We put off the meeting\"). Also: to discourage or make someone dislike something (\"It put me off swimming\")." },
+        { "front": "run into: what does it mean?", "back": "To meet by chance (\"I ran into an old friend\"). Also: to come across a problem." },
+        { "front": "break down: what does it mean?", "back": "To stop working (\"The car broke down\"). Also: to fail (negotiations) or to split into parts (\"break down the numbers\")." },
+        { "front": "bring up: what does it mean?", "back": "To raise a topic in conversation (\"Don't bring up politics\"). Also: to raise a child." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-get-along", "title": "Wiktionary: get along", "url": "https://en.wiktionary.org/wiki/get_along", "accessed": "2026-10-03" },
+    { "id": "wiktionary-look-forward-to", "title": "Wiktionary: look forward to", "url": "https://en.wiktionary.org/wiki/look_forward_to", "accessed": "2026-10-03" },
+    { "id": "wiktionary-put-off", "title": "Wiktionary: put off", "url": "https://en.wiktionary.org/wiki/put_off", "accessed": "2026-10-03" },
+    { "id": "wiktionary-run-into", "title": "Wiktionary: run into", "url": "https://en.wiktionary.org/wiki/run_into", "accessed": "2026-10-03" },
+    { "id": "wiktionary-break-down", "title": "Wiktionary: break down", "url": "https://en.wiktionary.org/wiki/break_down", "accessed": "2026-10-03" },
+    { "id": "wiktionary-bring-up", "title": "Wiktionary: bring up", "url": "https://en.wiktionary.org/wiki/bring_up", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

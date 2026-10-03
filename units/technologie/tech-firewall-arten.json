@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "tech-firewall-arten",
+  "topic": "technologie/sicherheit",
+  "tags": ["firewall", "paketfilter", "stateful-inspection", "ngfw", "netzwerk"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Firewall-Arten: Paketfilter bis Next-Generation",
+      "intro": "Firewalls prüfen Datenverkehr nach Regeln. Die Arten unterscheiden sich darin, wie tief sie in den Verkehr hineinschauen.",
+      "facts": [
+        { "text": "Ein Paketfilter ist die einfachste Firewall-Form. Er prüft jedes Paket einzeln nach Regeln, etwa Quell- und Zieladresse, Protokoll (TCP, UDP, ICMP) und Ports, und arbeitet im Kern auf der Netzwerkschicht.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Ein reiner Paketfilter ist zustandslos (stateless): Er merkt sich nicht, welche Pakete zu einer Verbindung gehören, und kann mehrere Anfragen einer Sitzung nicht miteinander verknüpfen.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Stateful Inspection führt eine Zustandstabelle mit den laufenden Verbindungen. Ein Paket, das nur vorgibt, zu einer bestehenden Verbindung zu gehören, wird verworfen, wenn die Tabelle keinen passenden Eintrag hat.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Application Firewalls analysieren zusätzlich Protokolle der Anwendungsschicht (Deep Packet Inspection). Sie können z. B. E-Mails mit ausführbarem Anhang erkennen oder Instant Messaging, das über Port 80 läuft.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Next-Generation Firewalls erkennen Anwendungen auch auf unüblichen Ports oder im SSL-Tunnel, bringen ein Intrusion-Prevention-System mit, ordnen IP-Adressen Nutzern zu und können TLS-Verkehr entschlüsseln und prüfen.", "source_ids": ["paloalto-ngfw"] },
+        { "text": "Geschichtlich kamen zuerst die Paketfilter, entwickelt von Ingenieuren der Digital Equipment Corporation (DEC) Ende der 1980er-Jahre. Es folgten Zustandsverfolgung und später die Anwendungsschicht.", "source_ids": ["wikipedia-firewall"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was unterscheidet eine Stateful Firewall von einem reinen Paketfilter?",
+          "options": ["Sie führt eine Zustandstabelle über bestehende Verbindungen", "Sie liest nur E-Mail-Inhalte", "Sie arbeitet ausschließlich auf der Anwendungsschicht", "Sie benötigt keine Regeln"],
+          "answer_index": 0,
+          "explanation": "Die Zustandstabelle erlaubt es, Pakete danach zu beurteilen, ob sie zu einer erlaubten, bestehenden Verbindung passen."
+        },
+        {
+          "question": "Welches Gerät erkennt eine Anwendung auch dann, wenn sie einen unüblichen Port nutzt?",
+          "options": ["Router mit Zugriffsliste (ACL)", "Reiner Paketfilter", "Next-Generation Firewall", "NAT-Gerät"],
+          "answer_index": 2,
+          "explanation": "Die Anwendungserkennung ist ein Kernmerkmal der Next-Generation Firewall; Paketfilter und ACLs sehen nur Adressen, Protokolle und Ports."
+        },
+        {
+          "question": "Auf welcher Schicht arbeitet ein einfacher Paketfilter laut NIST?",
+          "options": ["Netzwerkschicht", "Anwendungsschicht", "Bitübertragungsschicht", "Darstellungsschicht"],
+          "answer_index": 0,
+          "explanation": "In seiner einfachsten Form entscheidet der Paketfilter auf Netzwerkebene anhand der Angaben im Paketkopf."
+        }
+      ]
+    },
+    "en": {
+      "title": "Firewall Types: From Packet Filter to Next-Generation",
+      "intro": "Firewalls check traffic against rules. The types differ in how deeply they look into the traffic.",
+      "facts": [
+        { "text": "A packet filter is the most basic form of firewall. It checks each packet on its own against rules, such as source and destination address, protocol (TCP, UDP, ICMP) and ports, and works at the network layer at its core.", "source_ids": ["nist-sp800-41"] },
+        { "text": "A pure packet filter is stateless: it does not remember which packets belong to a connection and cannot link several requests of one session to each other.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Stateful inspection keeps a state table of ongoing connections. A packet that merely claims to belong to an existing connection is dropped if the table has no matching entry.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Application firewalls additionally analyse application-layer protocols (deep packet inspection). They can, for example, spot emails with an executable attachment or instant messaging running over port 80.", "source_ids": ["nist-sp800-41"] },
+        { "text": "Next-generation firewalls recognise applications even on unusual ports or inside an SSL tunnel, include an intrusion prevention system, map IP addresses to users, and can decrypt and inspect TLS traffic.", "source_ids": ["paloalto-ngfw"] },
+        { "text": "Historically, packet filters came first, developed by engineers at Digital Equipment Corporation (DEC) in the late 1980s. Connection tracking followed, and later the application layer.", "source_ids": ["wikipedia-firewall"] }
+      ],
+      "quiz": [
+        {
+          "question": "What distinguishes a stateful firewall from a pure packet filter?",
+          "options": ["It keeps a state table of existing connections", "It only reads email contents", "It works exclusively at the application layer", "It needs no rules"],
+          "answer_index": 0,
+          "explanation": "The state table lets it judge packets by whether they fit an allowed, existing connection."
+        },
+        {
+          "question": "Which device recognises an application even if it uses an unusual port?",
+          "options": ["Router with an access list (ACL)", "Pure packet filter", "Next-generation firewall", "NAT device"],
+          "answer_index": 2,
+          "explanation": "Application recognition is a core feature of the next-generation firewall; packet filters and ACLs only see addresses, protocols and ports."
+        },
+        {
+          "question": "At which layer does a basic packet filter work, according to NIST?",
+          "options": ["Network layer", "Application layer", "Physical layer", "Presentation layer"],
+          "answer_index": 0,
+          "explanation": "In its simplest form, the packet filter decides at network level based on the information in the packet header."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-sp800-41", "title": "NIST SP 800-41 Rev. 1: Guidelines on Firewalls and Firewall Policy", "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf", "accessed": "2026-10-03" },
+    { "id": "paloalto-ngfw", "title": "Palo Alto Networks: What Is a Next-Generation Firewall (NGFW)?", "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-a-next-generation-firewall-ngfw", "accessed": "2026-10-03" },
+    { "id": "wikipedia-firewall", "title": "Wikipedia: Firewall (computing)", "url": "https://en.wikipedia.org/wiki/Firewall_(computing)", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
