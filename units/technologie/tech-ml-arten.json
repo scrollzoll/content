@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "tech-ml-arten",
+  "topic": "technologie/ki",
+  "tags": ["ki", "maschinelles-lernen", "supervised", "unsupervised", "reinforcement-learning"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Drei Arten des maschinellen Lernens",
+      "intro": "Maschinelles Lernen unterscheidet sich vor allem darin, woraus ein Modell lernt: aus beschrifteten Beispielen, aus unbeschrifteten Daten oder aus Belohnungen.",
+      "facts": [
+        {
+          "text": "Beim überwachten Lernen trainiert ein Modell mit beschrifteten Beispielen. Jedes enthält Eingabemerkmale und das Label, also die gewünschte „Antwort“, die das Modell vorhersagen soll.",
+          "source_ids": ["google-supervised"]
+        },
+        {
+          "text": "Das Modell vergleicht seine Vorhersagen mit den echten Werten und passt sich schrittweise an. Nach dem Training sagt es auch für neue Daten ohne Label etwas voraus.",
+          "source_ids": ["google-supervised"]
+        },
+        {
+          "text": "Unüberwachtes Lernen sucht in unbeschrifteten Daten ohne menschliche Anleitung nach Mustern oder Gruppen. Typische Aufgaben sind Clustering, Assoziationsregeln und Dimensionsreduktion.",
+          "source_ids": ["ibm-unsupervised"]
+        },
+        {
+          "text": "Beim bestärkenden Lernen handelt ein Agent in einer Umgebung und erhält Belohnungssignale. Sein Ziel ist, die Belohnung zu maximieren; dabei muss er Ausprobieren und Ausnutzen abwägen.",
+          "source_ids": ["wikipedia-rl"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Lernart braucht Trainingsdaten mit Labels?",
+          "options": [
+            "Überwachtes Lernen",
+            "Unüberwachtes Lernen",
+            "Bestärkendes Lernen",
+            "Keine davon"
+          ],
+          "answer_index": 0,
+          "explanation": "Überwachtes Lernen nutzt beschriftete Beispiele, deren Label die gewünschte Antwort vorgibt."
+        },
+        {
+          "question": "Was ist eine typische Aufgabe des unüberwachten Lernens?",
+          "options": [
+            "Vorhersage eines vorgegebenen Labels",
+            "Daten nach Ähnlichkeit in Gruppen einteilen (Clustering)",
+            "Eine Belohnung in einer Umgebung maximieren",
+            "Menschliche Beschriftungen nachahmen"
+          ],
+          "answer_index": 1,
+          "explanation": "Clustering gruppiert unbeschriftete Daten nach Ähnlichkeit, ohne dass Labels vorgegeben sind."
+        },
+        {
+          "question": "Woraus lernt ein Agent beim bestärkenden Lernen?",
+          "options": [
+            "Aus beschrifteten Datensätzen",
+            "Aus Belohnungen für seine Aktionen in einer Umgebung",
+            "Aus der Gruppierung von Daten",
+            "Aus dem Zufall ohne Rückmeldung"
+          ],
+          "answer_index": 1,
+          "explanation": "Der Agent lernt aus direkter Interaktion mit der Umgebung und dem Belohnungssignal, das sein Verhalten lenkt."
+        }
+      ]
+    },
+    "en": {
+      "title": "Three types of machine learning",
+      "intro": "Machine learning types differ mainly in what a model learns from: labeled examples, unlabeled data or rewards.",
+      "facts": [
+        {
+          "text": "In supervised learning, a model trains on labeled examples. Each one holds input features and the label, the desired \"answer\" that the model is meant to predict.",
+          "source_ids": ["google-supervised"]
+        },
+        {
+          "text": "The model compares its predictions with the true values and adjusts step by step. After training, it also makes predictions for new data without labels.",
+          "source_ids": ["google-supervised"]
+        },
+        {
+          "text": "Unsupervised learning looks for patterns or groups in unlabeled data without human guidance. Typical tasks are clustering, association rules and dimensionality reduction.",
+          "source_ids": ["ibm-unsupervised"]
+        },
+        {
+          "text": "In reinforcement learning, an agent acts in an environment and receives reward signals. Its goal is to maximize reward, and it has to balance exploration against exploitation.",
+          "source_ids": ["wikipedia-rl"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which type of learning needs training data with labels?",
+          "options": [
+            "Supervised learning",
+            "Unsupervised learning",
+            "Reinforcement learning",
+            "None of them"
+          ],
+          "answer_index": 0,
+          "explanation": "Supervised learning uses labeled examples whose label gives the desired answer."
+        },
+        {
+          "question": "What is a typical task of unsupervised learning?",
+          "options": [
+            "Predicting a given label",
+            "Grouping data by similarity (clustering)",
+            "Maximizing a reward in an environment",
+            "Imitating human annotations"
+          ],
+          "answer_index": 1,
+          "explanation": "Clustering groups unlabeled data by similarity without any labels being given."
+        },
+        {
+          "question": "What does an agent learn from in reinforcement learning?",
+          "options": [
+            "From labeled datasets",
+            "From rewards for its actions in an environment",
+            "From grouping data",
+            "From chance without any feedback"
+          ],
+          "answer_index": 1,
+          "explanation": "The agent learns from direct interaction with the environment and the reward signal that guides its behavior."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "google-supervised",
+      "title": "Google Machine Learning: Introduction to ML – Supervised Learning",
+      "url": "https://developers.google.com/machine-learning/intro-to-ml/supervised",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "ibm-unsupervised",
+      "title": "IBM Think: What is unsupervised learning?",
+      "url": "https://www.ibm.com/think/topics/unsupervised-learning",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-rl",
+      "title": "Wikipedia: Reinforcement learning",
+      "url": "https://en.wikipedia.org/wiki/Reinforcement_learning",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

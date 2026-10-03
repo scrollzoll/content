@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "id": "ge-amerikanische-unabhaengigkeit",
+  "topic": "geschichte/neuzeit",
+  "tags": ["usa", "unabhaengigkeitserklaerung", "1776", "jefferson", "18-jahrhundert"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die amerikanische Unabhängigkeitserklärung 1776",
+      "intro": "1776 erklärten dreizehn britische Kolonien in Nordamerika ihre Unabhängigkeit. Die Begründung enthält Sätze, die bis heute oft zitiert werden.",
+      "facts": [
+        {
+          "text": "Der Zweite Kontinentalkongress verabschiedete die Erklärung am 4. Juli 1776 in Philadelphia. Der Beschluss zur Unabhängigkeit selbst war schon am 2. Juli gefasst worden.",
+          "source_ids": ["wikipedia-declaration"]
+        },
+        {
+          "text": "Thomas Jefferson war der Hauptautor und schrieb den Text zwischen dem 11. und 28. Juni 1776. Er gehörte einem Fünferausschuss mit Adams, Franklin, Livingston und Sherman an.",
+          "source_ids": ["wikipedia-declaration"]
+        },
+        {
+          "text": "Die Präambel nennt es selbstverständlich, dass alle Menschen gleich geschaffen sind. Sie nennt unveräußerliche Rechte, darunter Leben, Freiheit und das Streben nach Glück.",
+          "source_ids": ["nara-declaration", "wikipedia-declaration"]
+        },
+        {
+          "text": "Die Regierungsgewalt beruht auf der Zustimmung der Regierten. Der Hauptteil listet Beschwerden gegen König Georg III. auf und erklärt die dreizehn Kolonien zu freien, unabhängigen Staaten.",
+          "source_ids": ["nara-declaration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer war der Hauptautor der Unabhängigkeitserklärung?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Benjamin Franklin",
+            "Abraham Lincoln"
+          ],
+          "answer_index": 1,
+          "explanation": "Jefferson schrieb den Text im Juni 1776; der Ausschuss und der Kongress überarbeiteten ihn."
+        },
+        {
+          "question": "Wann nahm der Kontinentalkongress die Erklärung an?",
+          "options": [
+            "4. Juli 1776",
+            "19. April 1775",
+            "3. September 1783",
+            "14. Juli 1789"
+          ],
+          "answer_index": 0,
+          "explanation": "Am 4. Juli 1776 wurde der Text verabschiedet; den Unabhängigkeitsbeschluss gab es schon am 2. Juli."
+        },
+        {
+          "question": "Worauf beruht nach der Erklärung die Macht einer legitimen Regierung?",
+          "options": [
+            "Auf göttlichem Recht des Königs",
+            "Auf militärischer Stärke",
+            "Auf Erbfolge",
+            "Auf der Zustimmung der Regierten"
+          ],
+          "answer_index": 3,
+          "explanation": "Die Erklärung leitet die Macht einer Regierung von der Zustimmung der Regierten ab."
+        }
+      ]
+    },
+    "en": {
+      "title": "The American Declaration of Independence, 1776",
+      "intro": "In 1776, thirteen British colonies in North America declared independence. The justification contains lines that are still widely quoted.",
+      "facts": [
+        {
+          "text": "The Second Continental Congress adopted the Declaration on 4 July 1776 in Philadelphia. The resolution for independence itself had already passed on 2 July.",
+          "source_ids": ["wikipedia-declaration"]
+        },
+        {
+          "text": "Thomas Jefferson was the principal author and wrote the text between 11 and 28 June 1776. He sat on a Committee of Five with Adams, Franklin, Livingston and Sherman.",
+          "source_ids": ["wikipedia-declaration"]
+        },
+        {
+          "text": "The preamble holds it self-evident that all men are created equal. It names unalienable rights, among them life, liberty and the pursuit of happiness.",
+          "source_ids": ["nara-declaration", "wikipedia-declaration"]
+        },
+        {
+          "text": "Government power rests on the consent of the governed. The main body lists grievances against King George III and declares the thirteen colonies free and independent states.",
+          "source_ids": ["nara-declaration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was the principal author of the Declaration of Independence?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Benjamin Franklin",
+            "Abraham Lincoln"
+          ],
+          "answer_index": 1,
+          "explanation": "Jefferson wrote the text in June 1776; the committee and Congress then edited it."
+        },
+        {
+          "question": "When did the Continental Congress adopt the Declaration?",
+          "options": [
+            "4 July 1776",
+            "19 April 1775",
+            "3 September 1783",
+            "14 July 1789"
+          ],
+          "answer_index": 0,
+          "explanation": "The text was adopted on 4 July 1776; the independence resolution had passed on 2 July."
+        },
+        {
+          "question": "According to the Declaration, what does a legitimate government's power rest on?",
+          "options": [
+            "The divine right of the king",
+            "Military strength",
+            "Hereditary succession",
+            "The consent of the governed"
+          ],
+          "answer_index": 3,
+          "explanation": "The Declaration derives a government's power from the consent of the governed."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nara-declaration",
+      "title": "U.S. National Archives: Declaration of Independence – Transcript",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-declaration",
+      "title": "Wikipedia: United States Declaration of Independence",
+      "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

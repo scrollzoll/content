@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "id": "ge-franzoesische-revolution",
+  "topic": "geschichte/neuzeit",
+  "tags": ["franzoesische-revolution", "1789", "bastille", "menschenrechte", "18-jahrhundert"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Französische Revolution 1789",
+      "intro": "1789 begann in Frankreich ein Umbruch, der die Monarchie stürzte und politische Ideen wie Gleichheit vor dem Gesetz in ganz Europa bekannt machte.",
+      "facts": [
+        {
+          "text": "Die Revolution begann 1789 mit der Generalständeversammlung. Am 14. Juli 1789 stürmten Pariser die Bastille, ein Ereignis, an das der französische Nationalfeiertag erinnert.",
+          "source_ids": ["wikipedia-french-revolution"]
+        },
+        {
+          "text": "Am 26. August 1789 verabschiedete die Nationalversammlung die Erklärung der Menschen- und Bürgerrechte. Artikel 1: Die Menschen werden frei und gleich an Rechten geboren und bleiben es.",
+          "source_ids": ["wikipedia-rights-of-man"]
+        },
+        {
+          "text": "Die Erklärung schloss Frauen von politischen Rechten aus. Olympe de Gouges veröffentlichte deshalb 1791 ihre eigene Erklärung der Rechte der Frau.",
+          "source_ids": ["wikipedia-rights-of-man"]
+        },
+        {
+          "text": "Die Monarchie fiel im September 1792, Ludwig XVI. wurde im Januar 1793 hingerichtet. In der Schreckensherrschaft unter Robespierre wurden rund 16.000 Menschen hingerichtet.",
+          "source_ids": ["wikipedia-french-revolution"]
+        },
+        {
+          "text": "Die Revolution endete mit dem Staatsstreich des 18. Brumaire am 9. November 1799, mit dem Napoleon die Macht übernahm.",
+          "source_ids": ["wikipedia-french-revolution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Ereignis ist heute Anlass des französischen Nationalfeiertags am 14. Juli?",
+          "options": [
+            "Die Hinrichtung Ludwigs XVI.",
+            "Die Krönung Napoleons",
+            "Der Sturm auf die Bastille",
+            "Die Gründung der Republik"
+          ],
+          "answer_index": 2,
+          "explanation": "Am 14. Juli 1789 stürmten Pariser die Bastille; daran erinnert der Nationalfeiertag."
+        },
+        {
+          "question": "Was verabschiedete die Nationalversammlung am 26. August 1789?",
+          "options": [
+            "Die Verfassung der Fünften Republik",
+            "Das Ende der Schreckensherrschaft",
+            "Die Erklärung der Menschen- und Bürgerrechte",
+            "Das Gesetz zur Hinrichtung des Königs"
+          ],
+          "answer_index": 2,
+          "explanation": "Die Erklärung der Menschen- und Bürgerrechte stellte Freiheit und Gleichheit vor dem Gesetz heraus."
+        },
+        {
+          "question": "Womit endete die Revolution 1799?",
+          "options": [
+            "Mit dem Wiener Kongress",
+            "Mit der Wahl Robespierres",
+            "Mit der Rückkehr der Monarchie",
+            "Mit dem Staatsstreich Napoleons"
+          ],
+          "answer_index": 3,
+          "explanation": "Der Staatsstreich des 18. Brumaire am 9. November 1799 brachte Napoleon an die Macht."
+        }
+      ]
+    },
+    "en": {
+      "title": "The French Revolution of 1789",
+      "intro": "In 1789 an upheaval began in France that toppled the monarchy and spread political ideas such as equality before the law across Europe.",
+      "facts": [
+        {
+          "text": "The Revolution began in 1789 with the Estates-General. On 14 July 1789, Parisians stormed the Bastille, an event commemorated by the French national holiday.",
+          "source_ids": ["wikipedia-french-revolution"]
+        },
+        {
+          "text": "On 26 August 1789 the National Assembly adopted the Declaration of the Rights of Man and of the Citizen. Article 1: men are born and remain free and equal in rights.",
+          "source_ids": ["wikipedia-rights-of-man"]
+        },
+        {
+          "text": "The Declaration excluded women from political rights. Olympe de Gouges therefore published her own Declaration of the Rights of Woman in 1791.",
+          "source_ids": ["wikipedia-rights-of-man"]
+        },
+        {
+          "text": "The monarchy fell in September 1792, and Louis XVI was executed in January 1793. In the Reign of Terror under Robespierre, about 16,000 people were executed.",
+          "source_ids": ["wikipedia-french-revolution"]
+        },
+        {
+          "text": "The Revolution ended with the coup of 18 Brumaire on 9 November 1799, by which Napoleon took power.",
+          "source_ids": ["wikipedia-french-revolution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which event is the French national holiday on 14 July about?",
+          "options": [
+            "The execution of Louis XVI",
+            "Napoleon's coronation",
+            "The storming of the Bastille",
+            "The founding of the Republic"
+          ],
+          "answer_index": 2,
+          "explanation": "On 14 July 1789 Parisians stormed the Bastille; the national holiday commemorates it."
+        },
+        {
+          "question": "What did the National Assembly adopt on 26 August 1789?",
+          "options": [
+            "The constitution of the Fifth Republic",
+            "The end of the Reign of Terror",
+            "The Declaration of the Rights of Man and of the Citizen",
+            "The law to execute the king"
+          ],
+          "answer_index": 2,
+          "explanation": "The Declaration of the Rights of Man and of the Citizen stressed liberty and equality before the law."
+        },
+        {
+          "question": "How did the Revolution end in 1799?",
+          "options": [
+            "With the Congress of Vienna",
+            "With Robespierre's election",
+            "With the return of the monarchy",
+            "With Napoleon's coup"
+          ],
+          "answer_index": 3,
+          "explanation": "The coup of 18 Brumaire on 9 November 1799 brought Napoleon to power."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-french-revolution",
+      "title": "Wikipedia: French Revolution",
+      "url": "https://en.wikipedia.org/wiki/French_Revolution",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-rights-of-man",
+      "title": "Wikipedia: Declaration of the Rights of Man and of the Citizen",
+      "url": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

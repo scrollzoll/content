@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "aw-evolution-darwin",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["evolution", "darwin", "wallace", "natuerliche-selektion", "biologie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Evolution durch natürliche Selektion: Darwin und Wallace",
+      "intro": "Zwei Naturforscher kamen unabhängig auf dieselbe Idee, wie sich Arten verändern. Ihre Erklärung ist bis heute ein Grundpfeiler der Biologie.",
+      "facts": [
+        {
+          "text": "Natürliche Selektion heißt: Individuen mit vererbbaren Merkmalen, die ihnen Vorteile bringen, überleben und vermehren sich häufiger. Solche Merkmale werden über Generationen häufiger.",
+          "source_ids": ["wikipedia-natural-selection"]
+        },
+        {
+          "text": "Alfred Russel Wallace entwickelte die Theorie unabhängig von Darwin. Im Juni 1858 schickte er Darwin eine rund zwanzigseitige Beschreibung des Mechanismus.",
+          "source_ids": ["wikipedia-origin", "wikipedia-wallace"]
+        },
+        {
+          "text": "Am 1. Juli 1858 wurden Texte beider Männer vor der Linnean Society in London verlesen. Die Zuhörer reagierten kaum darauf.",
+          "source_ids": ["wikipedia-origin"]
+        },
+        {
+          "text": "Darwins Buch „On the Origin of Species“ erschien am 24. November 1859 bei John Murray mit einer ersten Auflage von 1.250 Exemplaren.",
+          "source_ids": ["wikipedia-origin"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer entwickelte die Theorie der natürlichen Selektion unabhängig von Darwin?",
+          "options": [
+            "Gregor Mendel",
+            "Alfred Russel Wallace",
+            "Carl von Linné",
+            "Louis Pasteur"
+          ],
+          "answer_index": 1,
+          "explanation": "Wallace kam unabhängig zu derselben Idee, und sein Brief von 1858 drängte Darwin zur Veröffentlichung."
+        },
+        {
+          "question": "In welchem Jahr erschien „On the Origin of Species“?",
+          "options": [
+            "1831",
+            "1844",
+            "1859",
+            "1871"
+          ],
+          "answer_index": 2,
+          "explanation": "Das Buch wurde am 24. November 1859 veröffentlicht."
+        },
+        {
+          "question": "Was geschieht bei natürlicher Selektion mit vorteilhaften, vererbbaren Merkmalen?",
+          "options": [
+            "Sie verschwinden nach wenigen Generationen",
+            "Sie werden in der Population häufiger",
+            "Sie entstehen gezielt durch Anstrengung",
+            "Sie bleiben unverändert selten"
+          ],
+          "answer_index": 1,
+          "explanation": "Träger vorteilhafter Merkmale haben mehr überlebende Nachkommen, daher nimmt das Merkmal über Generationen zu."
+        }
+      ]
+    },
+    "en": {
+      "title": "Evolution by natural selection: Darwin and Wallace",
+      "intro": "Two naturalists independently arrived at the same idea of how species change. Their explanation is still a cornerstone of biology.",
+      "facts": [
+        {
+          "text": "Natural selection means that individuals with heritable traits that give them an advantage survive and reproduce more often. Such traits become more common over generations.",
+          "source_ids": ["wikipedia-natural-selection"]
+        },
+        {
+          "text": "Alfred Russel Wallace developed the theory independently of Darwin. In June 1858 he sent Darwin a description of the mechanism about twenty pages long.",
+          "source_ids": ["wikipedia-origin", "wikipedia-wallace"]
+        },
+        {
+          "text": "On 1 July 1858, papers by both men were read before the Linnean Society in London. The audience hardly reacted.",
+          "source_ids": ["wikipedia-origin"]
+        },
+        {
+          "text": "Darwin's book \"On the Origin of Species\" appeared on 24 November 1859 from John Murray, with a first print run of 1,250 copies.",
+          "source_ids": ["wikipedia-origin"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who developed the theory of natural selection independently of Darwin?",
+          "options": [
+            "Gregor Mendel",
+            "Alfred Russel Wallace",
+            "Carl Linnaeus",
+            "Louis Pasteur"
+          ],
+          "answer_index": 1,
+          "explanation": "Wallace reached the same idea independently, and his 1858 letter pushed Darwin to publish."
+        },
+        {
+          "question": "In which year was \"On the Origin of Species\" published?",
+          "options": [
+            "1831",
+            "1844",
+            "1859",
+            "1871"
+          ],
+          "answer_index": 2,
+          "explanation": "The book was published on 24 November 1859."
+        },
+        {
+          "question": "What happens to advantageous, heritable traits under natural selection?",
+          "options": [
+            "They disappear after a few generations",
+            "They become more common in the population",
+            "They arise on purpose through effort",
+            "They stay equally rare"
+          ],
+          "answer_index": 1,
+          "explanation": "Carriers of advantageous traits leave more surviving offspring, so the trait spreads over generations."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-natural-selection",
+      "title": "Wikipedia: Natural selection",
+      "url": "https://en.wikipedia.org/wiki/Natural_selection",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-origin",
+      "title": "Wikipedia: On the Origin of Species",
+      "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-wallace",
+      "title": "Wikipedia: Alfred Russel Wallace",
+      "url": "https://en.wikipedia.org/wiki/Alfred_Russel_Wallace",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

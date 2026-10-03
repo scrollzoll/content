@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "tech-kontextfenster",
+  "topic": "technologie/ki",
+  "tags": ["ki", "llm", "kontextfenster", "token", "sprachmodell"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Das Kontextfenster von Sprachmodellen",
+      "intro": "Ein Sprachmodell kann nur den Text berücksichtigen, der ins Kontextfenster passt. Was alles darin Platz braucht und warum mehr nicht immer besser ist, ist weniger offensichtlich.",
+      "facts": [
+        {
+          "text": "Das Kontextfenster umfasst allen Text, auf den ein Modell beim Antworten zugreifen kann, einschließlich der Antwort selbst. Es wirkt wie ein Arbeitsgedächtnis und ist nicht mit den Trainingsdaten identisch.",
+          "source_ids": ["claude-context-windows"]
+        },
+        {
+          "text": "Alles in einer Anfrage zählt mit: Systemprompt, alle Nachrichten samt Werkzeugergebnissen und Dokumenten, die Werkzeugdefinitionen und die erzeugte Ausgabe.",
+          "source_ids": ["claude-context-windows"]
+        },
+        {
+          "text": "Mehr Kontext ist nicht automatisch besser: Mit wachsender Tokenzahl können Genauigkeit und Erinnerung nachlassen („Context Rot“). Deshalb zählt auch, was im Kontext steht.",
+          "source_ids": ["claude-context-windows"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was zählt zum Kontextfenster eines Sprachmodells?",
+          "options": [
+            "Nur die letzte Nutzernachricht",
+            "Nur die Trainingsdaten des Modells",
+            "Eingabe und erzeugte Ausgabe zusammen",
+            "Nur der Systemprompt"
+          ],
+          "answer_index": 2,
+          "explanation": "Alles in der Anfrage und auch die erzeugte Antwort belegen Platz im Kontextfenster."
+        },
+        {
+          "question": "Was beschreibt „Context Rot“?",
+          "options": [
+            "Das Löschen alter Nachrichten durch den Nutzer",
+            "Nachlassende Genauigkeit und Erinnerung bei wachsender Kontextlänge",
+            "Das Veralten der Trainingsdaten",
+            "Einen Fehler beim Zählen von Tokens"
+          ],
+          "answer_index": 1,
+          "explanation": "Mit steigender Tokenzahl können Genauigkeit und Recall des Modells abnehmen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The context window of language models",
+      "intro": "A language model can only take into account the text that fits into its context window. What takes up space there and why more is not always better is less obvious.",
+      "facts": [
+        {
+          "text": "The context window covers all text a model can refer to when answering, including the answer itself. It acts like working memory and is not the same as the training data.",
+          "source_ids": ["claude-context-windows"]
+        },
+        {
+          "text": "Everything in a request counts: system prompt, all messages including tool results and documents, tool definitions and the generated output.",
+          "source_ids": ["claude-context-windows"]
+        },
+        {
+          "text": "More context is not automatically better: as the token count grows, accuracy and recall can degrade (\"context rot\"). What is in the context matters too.",
+          "source_ids": ["claude-context-windows"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What counts toward a language model's context window?",
+          "options": [
+            "Only the last user message",
+            "Only the model's training data",
+            "Input and generated output together",
+            "Only the system prompt"
+          ],
+          "answer_index": 2,
+          "explanation": "Everything in the request and also the generated answer takes up space in the context window."
+        },
+        {
+          "question": "What does \"context rot\" describe?",
+          "options": [
+            "Users deleting old messages",
+            "Declining accuracy and recall as context length grows",
+            "Training data becoming outdated",
+            "An error in counting tokens"
+          ],
+          "answer_index": 1,
+          "explanation": "As the token count rises, the model's accuracy and recall can decrease."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "claude-context-windows",
+      "title": "Claude API Docs: Context windows",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

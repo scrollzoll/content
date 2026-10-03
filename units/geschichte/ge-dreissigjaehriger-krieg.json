@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "id": "ge-dreissigjaehriger-krieg",
+  "topic": "geschichte/neuzeit",
+  "tags": ["dreissigjaehriger-krieg", "westfaelischer-frieden", "17-jahrhundert", "religionskriege"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Dreißigjährige Krieg und der Westfälische Frieden",
+      "intro": "Zwischen 1618 und 1648 verwüstete ein Krieg große Teile Mitteleuropas. Er endete mit Verträgen, die auch die Religionsfrage im Reich neu ordneten.",
+      "facts": [
+        {
+          "text": "Der Krieg dauerte von 1618 bis 1648 und wurde vor allem in Mitteleuropa geführt. Auslöser war der Prager Fenstersturz im Mai 1618, bei dem protestantische Adlige kaiserliche Vertreter aus dem Fenster warfen.",
+          "source_ids": ["wikipedia-30yw"]
+        },
+        {
+          "text": "Schätzungen gehen von 4,5 bis 8 Millionen Toten durch Kämpfe, Hunger und Seuchen aus. In Teilen Deutschlands sank die Bevölkerung um mehr als die Hälfte.",
+          "source_ids": ["wikipedia-30yw"]
+        },
+        {
+          "text": "Der Westfälische Friede besteht aus zwei Verträgen, die am 24. Oktober 1648 in Osnabrück und Münster unterzeichnet wurden.",
+          "source_ids": ["wikipedia-westphalia"]
+        },
+        {
+          "text": "Neben Katholiken und Lutheranern wurden nun erstmals auch Calvinisten rechtlich anerkannt. Die Schweizer Eidgenossenschaft erhielt rechtlich ihre Unabhängigkeit vom Reich.",
+          "source_ids": ["wikipedia-westphalia"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Ereignis löste den Dreißigjährigen Krieg aus?",
+          "options": [
+            "Der Prager Fenstersturz 1618",
+            "Die Schlacht am Weißen Berg 1648",
+            "Der Augsburger Religionsfriede",
+            "Der Tod Karls des Großen"
+          ],
+          "answer_index": 0,
+          "explanation": "Der Fenstersturz im Mai 1618 löste den böhmischen Aufstand und damit den Krieg aus."
+        },
+        {
+          "question": "In welchen Städten wurde der Westfälische Friede unterzeichnet?",
+          "options": [
+            "Augsburg und Nürnberg",
+            "Wien und Prag",
+            "Münster und Osnabrück",
+            "Köln und Frankfurt"
+          ],
+          "answer_index": 2,
+          "explanation": "Die zwei Verträge wurden am 24. Oktober 1648 in Münster und Osnabrück unterzeichnet."
+        },
+        {
+          "question": "Welche Konfession wurde 1648 neben Katholiken und Lutheranern rechtlich anerkannt?",
+          "options": [
+            "Die Anglikaner",
+            "Die Orthodoxen",
+            "Die Calvinisten",
+            "Die Täufer"
+          ],
+          "answer_index": 2,
+          "explanation": "Der Friede gab dem Calvinismus erstmals den Status einer anerkannten Religion im Reich."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Thirty Years' War and the Peace of Westphalia",
+      "intro": "Between 1618 and 1648, a war devastated large parts of Central Europe. It ended with treaties that also reordered the question of religion in the Empire.",
+      "facts": [
+        {
+          "text": "The war lasted from 1618 to 1648 and was fought mainly in Central Europe. It was triggered by the Defenestration of Prague in May 1618, when Protestant nobles threw imperial representatives out of a window.",
+          "source_ids": ["wikipedia-30yw"]
+        },
+        {
+          "text": "Estimates put the death toll at 4.5 to 8 million from fighting, famine and disease. In parts of Germany the population fell by more than half.",
+          "source_ids": ["wikipedia-30yw"]
+        },
+        {
+          "text": "The Peace of Westphalia consists of two treaties signed on 24 October 1648 in Osnabrück and Münster.",
+          "source_ids": ["wikipedia-westphalia"]
+        },
+        {
+          "text": "Besides Catholics and Lutherans, Calvinists were legally recognized for the first time. The Swiss Confederacy gained legal independence from the Empire.",
+          "source_ids": ["wikipedia-westphalia"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which event triggered the Thirty Years' War?",
+          "options": [
+            "The Defenestration of Prague in 1618",
+            "The Battle of White Mountain in 1648",
+            "The Peace of Augsburg",
+            "The death of Charlemagne"
+          ],
+          "answer_index": 0,
+          "explanation": "The defenestration in May 1618 set off the Bohemian Revolt and thereby the war."
+        },
+        {
+          "question": "In which cities was the Peace of Westphalia signed?",
+          "options": [
+            "Augsburg and Nuremberg",
+            "Vienna and Prague",
+            "Münster and Osnabrück",
+            "Cologne and Frankfurt"
+          ],
+          "answer_index": 2,
+          "explanation": "The two treaties were signed on 24 October 1648 in Münster and Osnabrück."
+        },
+        {
+          "question": "Which denomination was legally recognized in 1648 alongside Catholics and Lutherans?",
+          "options": [
+            "Anglicans",
+            "Orthodox Christians",
+            "Calvinists",
+            "Anabaptists"
+          ],
+          "answer_index": 2,
+          "explanation": "The peace gave Calvinism the status of a recognized religion in the Empire for the first time."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wikipedia-30yw",
+      "title": "Wikipedia: Thirty Years' War",
+      "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-westphalia",
+      "title": "Wikipedia: Peace of Westphalia",
+      "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

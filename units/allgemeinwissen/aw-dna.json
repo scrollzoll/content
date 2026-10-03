@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "aw-dna",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["dna", "doppelhelix", "genetik", "biologie", "watson-crick"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "DNA: Aufbau und Entdeckung der Doppelhelix",
+      "intro": "Die DNA speichert die Erbinformation fast aller Lebewesen. 1953 wurde ihre Struktur in einem nur zwei Seiten langen Aufsatz beschrieben.",
+      "facts": [
+        {
+          "text": "DNA besteht aus zwei verbundenen Strängen, die sich umeinander winden: der Doppelhelix. Das Rückgrat bilden abwechselnd der Zucker Desoxyribose und Phosphatgruppen.",
+          "source_ids": ["nhgri-dna"]
+        },
+        {
+          "text": "Vier Basen bilden den Code: Adenin, Thymin, Cytosin und Guanin. Gegenüber liegen sich immer Adenin und Thymin sowie Cytosin und Guanin.",
+          "source_ids": ["nhgri-dna", "wikipedia-dna"]
+        },
+        {
+          "text": "Das menschliche Genom umfasst etwa 3 Milliarden Basenpaare, verteilt auf 46 Chromosomen.",
+          "source_ids": ["wikipedia-dna"]
+        },
+        {
+          "text": "Watson und Crick veröffentlichten das Doppelhelix-Modell am 25. April 1953 in „Nature“. Röntgendaten von Rosalind Franklin und Raymond Gosling sowie der Gruppe um Maurice Wilkins lieferten wichtige Hinweise.",
+          "source_ids": ["wikipedia-nature-1953"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Mit welcher Base paart sich Adenin in der DNA?",
+          "options": [
+            "Guanin",
+            "Cytosin",
+            "Thymin",
+            "Uracil"
+          ],
+          "answer_index": 2,
+          "explanation": "Adenin paart sich mit Thymin, Cytosin mit Guanin."
+        },
+        {
+          "question": "In welchem Jahr erschien der Aufsatz mit dem Doppelhelix-Modell?",
+          "options": [
+            "1869",
+            "1928",
+            "1953",
+            "2003"
+          ],
+          "answer_index": 2,
+          "explanation": "Watson und Crick veröffentlichten ihn am 25. April 1953 in „Nature“."
+        },
+        {
+          "question": "Wer lieferte wichtige Röntgenbeugungsdaten zur DNA-Struktur?",
+          "options": [
+            "Gregor Mendel",
+            "Charles Darwin",
+            "Rosalind Franklin und Raymond Gosling",
+            "Louis Pasteur"
+          ],
+          "answer_index": 2,
+          "explanation": "Franklin und Gosling lieferten Röntgenbilder, die Watson und Crick bei ihrem Modell halfen."
+        }
+      ]
+    },
+    "en": {
+      "title": "DNA: structure and discovery of the double helix",
+      "intro": "DNA stores the genetic information of nearly all living things. In 1953, its structure was described in a paper only two pages long.",
+      "facts": [
+        {
+          "text": "DNA consists of two linked strands that wind around each other: the double helix. The backbone is made of alternating deoxyribose sugar and phosphate groups.",
+          "source_ids": ["nhgri-dna"]
+        },
+        {
+          "text": "Four bases form the code: adenine, thymine, cytosine and guanine. Adenine always faces thymine, and cytosine always faces guanine.",
+          "source_ids": ["nhgri-dna", "wikipedia-dna"]
+        },
+        {
+          "text": "The human genome comprises about 3 billion base pairs spread over 46 chromosomes.",
+          "source_ids": ["wikipedia-dna"]
+        },
+        {
+          "text": "Watson and Crick published the double helix model on 25 April 1953 in \"Nature\". X-ray data from Rosalind Franklin and Raymond Gosling and from Maurice Wilkins' group provided key clues.",
+          "source_ids": ["wikipedia-nature-1953"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which base does adenine pair with in DNA?",
+          "options": [
+            "Guanine",
+            "Cytosine",
+            "Thymine",
+            "Uracil"
+          ],
+          "answer_index": 2,
+          "explanation": "Adenine pairs with thymine, and cytosine with guanine."
+        },
+        {
+          "question": "In which year was the paper with the double helix model published?",
+          "options": [
+            "1869",
+            "1928",
+            "1953",
+            "2003"
+          ],
+          "answer_index": 2,
+          "explanation": "Watson and Crick published it on 25 April 1953 in \"Nature\"."
+        },
+        {
+          "question": "Who provided key X-ray diffraction data on the DNA structure?",
+          "options": [
+            "Gregor Mendel",
+            "Charles Darwin",
+            "Rosalind Franklin and Raymond Gosling",
+            "Louis Pasteur"
+          ],
+          "answer_index": 2,
+          "explanation": "Franklin and Gosling supplied X-ray images that helped Watson and Crick build their model."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhgri-dna",
+      "title": "NHGRI Genetics Glossary: Deoxyribonucleic Acid (DNA)",
+      "url": "https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-dna",
+      "title": "Wikipedia: DNA",
+      "url": "https://en.wikipedia.org/wiki/DNA",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-nature-1953",
+      "title": "Wikipedia: Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid",
+      "url": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids:_A_Structure_for_Deoxyribose_Nucleic_Acid",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

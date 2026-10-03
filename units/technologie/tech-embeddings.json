@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "tech-embeddings",
+  "topic": "technologie/ki",
+  "tags": ["ki", "embeddings", "vektoren", "semantische-suche", "nlp"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Embeddings: Text als Vektoren",
+      "intro": "Embeddings übersetzen Text in Zahlenlisten, sodass ähnliche Bedeutung zu geringem Abstand führt. Das ist die Grundlage vieler Such- und Empfehlungssysteme.",
+      "facts": [
+        {
+          "text": "Ein Embedding ist ein Vektor aus Zahlen, der Text oder ein anderes Objekt darstellt. Dichte Vektoren dieser Art erfassen semantische Beziehungen zwischen den Objekten.",
+          "source_ids": ["google-embeddings", "openai-embeddings"]
+        },
+        {
+          "text": "Der Abstand zwischen zwei Vektoren misst ihre Verwandtschaft: Kleine Abstände deuten auf hohe, große auf geringe Ähnlichkeit. Üblich ist die Kosinus-Ähnlichkeit.",
+          "source_ids": ["openai-embeddings"]
+        },
+        {
+          "text": "Bei der Suche werden Ergebnisse danach sortiert, wie relevant sie für die Anfrage sind. Weitere Einsatzfelder sind Clustering, Empfehlungen, Anomalieerkennung und Klassifikation.",
+          "source_ids": ["openai-embeddings"]
+        },
+        {
+          "text": "Word2vec, 2013 von Google-Forschern um Tomas Mikolov vorgestellt, machte Worteinbettungen populär. Kontextuelle Modelle wie BERT erzeugen für jedes Token einen eigenen Vektor.",
+          "source_ids": ["wikipedia-word-embedding"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was bedeutet ein kleiner Abstand zwischen zwei Embedding-Vektoren?",
+          "options": [
+            "Die Texte sind inhaltlich verwandt",
+            "Die Texte sind in verschiedenen Sprachen",
+            "Die Texte sind gleich lang",
+            "Die Texte stammen vom selben Autor"
+          ],
+          "answer_index": 0,
+          "explanation": "Kleine Abstände deuten auf hohe Verwandtschaft, große Abstände auf geringe."
+        },
+        {
+          "question": "Welche Anwendung nennt die OpenAI-Dokumentation für Embeddings?",
+          "options": [
+            "Verschlüsselung von Daten",
+            "Komprimierung von Videos",
+            "Suche und Empfehlungen",
+            "Bildschirmanzeige von Text"
+          ],
+          "answer_index": 2,
+          "explanation": "Genannt werden unter anderem Suche, Clustering, Empfehlungen, Anomalieerkennung und Klassifikation."
+        },
+        {
+          "question": "Wer stellte 2013 Word2vec vor?",
+          "options": [
+            "Forschende von Google um Tomas Mikolov",
+            "Forschende von IBM um Alan Turing",
+            "Forschende von Meta um Yann LeCun",
+            "Forschende von Microsoft um Bill Gates"
+          ],
+          "answer_index": 0,
+          "explanation": "Word2vec kam 2013 von einem Google-Team unter Tomas Mikolov."
+        }
+      ]
+    },
+    "en": {
+      "title": "Embeddings: text as vectors",
+      "intro": "Embeddings translate text into lists of numbers so that similar meaning leads to a small distance. They underpin many search and recommendation systems.",
+      "facts": [
+        {
+          "text": "An embedding is a vector of numbers representing text or another object. Dense vectors of this kind capture semantic relationships between the objects.",
+          "source_ids": ["google-embeddings", "openai-embeddings"]
+        },
+        {
+          "text": "The distance between two vectors measures their relatedness: small distances suggest high, large distances low similarity. Cosine similarity is the usual choice.",
+          "source_ids": ["openai-embeddings"]
+        },
+        {
+          "text": "In search, results are ranked by how relevant they are to the query. Other uses are clustering, recommendations, anomaly detection and classification.",
+          "source_ids": ["openai-embeddings"]
+        },
+        {
+          "text": "Word2vec, introduced in 2013 by Google researchers led by Tomas Mikolov, made word embeddings popular. Contextual models such as BERT create a separate vector for each token.",
+          "source_ids": ["wikipedia-word-embedding"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does a small distance between two embedding vectors mean?",
+          "options": [
+            "The texts are related in content",
+            "The texts are in different languages",
+            "The texts are the same length",
+            "The texts have the same author"
+          ],
+          "answer_index": 0,
+          "explanation": "Small distances suggest high relatedness, large distances low relatedness."
+        },
+        {
+          "question": "Which use of embeddings does the OpenAI documentation name?",
+          "options": [
+            "Encrypting data",
+            "Compressing video",
+            "Search and recommendations",
+            "Displaying text on screen"
+          ],
+          "answer_index": 2,
+          "explanation": "It lists search, clustering, recommendations, anomaly detection and classification, among others."
+        },
+        {
+          "question": "Who introduced Word2vec in 2013?",
+          "options": [
+            "Google researchers led by Tomas Mikolov",
+            "IBM researchers led by Alan Turing",
+            "Meta researchers led by Yann LeCun",
+            "Microsoft researchers led by Bill Gates"
+          ],
+          "answer_index": 0,
+          "explanation": "Word2vec came in 2013 from a Google team under Tomas Mikolov."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "google-embeddings",
+      "title": "Google Machine Learning Crash Course: Embeddings",
+      "url": "https://developers.google.com/machine-learning/crash-course/embeddings",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "openai-embeddings",
+      "title": "OpenAI API Documentation: Vector embeddings",
+      "url": "https://developers.openai.com/api/docs/guides/embeddings",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-word-embedding",
+      "title": "Wikipedia: Word embedding",
+      "url": "https://en.wikipedia.org/wiki/Word_embedding",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
