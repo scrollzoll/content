@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-phrasal-verbs-3",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "phrasal-verbs", "wortschatz"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Phrasal Verbs 3: call off, find out, give up und mehr",
+      "intro": "Sieben häufige Phrasal Verbs mit deutscher Bedeutung und einem Beispielsatz.",
+      "cards": [
+        { "front": "call off", "back": "absagen, abbrechen. The organisers called off the concert because of the storm." },
+        { "front": "find out", "back": "herausfinden, erfahren. I will find out when the train leaves." },
+        { "front": "give up", "back": "aufgeben, mit etwas aufhören. They gave up the search when it got dark." },
+        { "front": "hold on", "back": "kurz warten („Moment mal“). Hold on, I will get my coat." },
+        { "front": "hold on to", "back": "sich an etwas festhalten (mit Objekt). Hold on to the railing." },
+        { "front": "look into", "back": "etwas prüfen oder untersuchen. The team will look into the cause of the error." },
+        { "front": "point out", "back": "auf etwas hinweisen. She pointed out that the deadline had changed." }
+      ]
+    },
+    "en": {
+      "title": "Phrasal Verbs 3: call off, find out, give up and more",
+      "intro": "Seven common phrasal verbs with their meaning and an example sentence.",
+      "cards": [
+        { "front": "call off", "back": "to cancel or stop something planned. The organisers called off the concert because of the storm." },
+        { "front": "find out", "back": "to discover or learn something. I will find out when the train leaves." },
+        { "front": "give up", "back": "to stop doing something, or to quit trying. They gave up the search when it got dark." },
+        { "front": "hold on", "back": "to wait for a short moment. Hold on, I will get my coat." },
+        { "front": "hold on to", "back": "to grip something firmly (takes an object). Hold on to the railing." },
+        { "front": "look into", "back": "to investigate or examine something. The team will look into the cause of the error." },
+        { "front": "point out", "back": "to tell someone about a fact or remind them of it. She pointed out that the deadline had changed." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-call-off", "title": "Wiktionary: call off", "url": "https://en.wiktionary.org/wiki/call_off", "accessed": "2026-10-03" },
+    { "id": "wiktionary-find-out", "title": "Wiktionary: find out", "url": "https://en.wiktionary.org/wiki/find_out", "accessed": "2026-10-03" },
+    { "id": "wiktionary-give-up", "title": "Wiktionary: give up", "url": "https://en.wiktionary.org/wiki/give_up", "accessed": "2026-10-03" },
+    { "id": "wiktionary-hold-on", "title": "Wiktionary: hold on", "url": "https://en.wiktionary.org/wiki/hold_on", "accessed": "2026-10-03" },
+    { "id": "wiktionary-look-into", "title": "Wiktionary: look into", "url": "https://en.wiktionary.org/wiki/look_into", "accessed": "2026-10-03" },
+    { "id": "wiktionary-point-out", "title": "Wiktionary: point out", "url": "https://en.wiktionary.org/wiki/point_out", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

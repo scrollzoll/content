@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-backup-3-2-1
-    topic: technologie/sicherheit
-    hint: "Die 3-2-1-Backup-Regel und warum Offline-Kopien wichtig sind"
-    format: facts_quiz
-    priority: 1
-  - id: tech-dsgvo-grundsaetze
-    topic: technologie/sicherheit
-    hint: "Die sieben Grundsätze der DSGVO (Art. 5)"
-    format: facts_quiz
-    priority: 1
   - id: tech-nis2
     topic: technologie/sicherheit
     hint: "NIS-2-Richtlinie der EU: wen sie betrifft und was sie verlangt"
@@ -297,16 +287,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-phrasal-verbs-3
-    topic: sprachen/englisch
-    hint: "Phrasal Verbs: call off, find out, give up, hold on, look into, point out"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-business-emails
-    topic: sprachen/englisch
-    hint: "Formulierungen für E-Mails: Einstieg, Bitte, Nachfassen, Abschluss"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-meetings
     topic: sprachen/englisch
     hint: "Redewendungen in Meetings: Meinung äußern, widersprechen, zusammenfassen"
@@ -1182,11 +1162,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-zeitzonen
-    topic: allgemeinwissen/geografie
-    hint: "Zeitzonen: UTC, Datumsgrenze, warum China nur eine Zeitzone hat"
-    format: facts_quiz
-    priority: 1
   - id: aw-laengen-breitengrade
     topic: allgemeinwissen/geografie
     hint: "Längen- und Breitengrade, Äquator und Nullmeridian"
@@ -1807,11 +1782,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-roemische-republik
-    topic: geschichte/antike
-    hint: "Die Römische Republik: Senat, Konsuln, Ende"
-    format: facts_quiz
-    priority: 1
   - id: ge-caesar
     topic: geschichte/antike
     hint: "Julius Caesar: Aufstieg und Ermordung 44 v. Chr."

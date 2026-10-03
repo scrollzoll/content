@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "ge-roemische-republik",
+  "topic": "geschichte/antike",
+  "tags": ["rom", "republik", "senat", "konsuln", "augustus"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Römische Republik: Senat, Konsuln, Ende",
+      "intro": "Rom wurde etwa fünf Jahrhunderte lang ohne König regiert. Zwei Konsuln und der Senat prägten diese Zeit.",
+      "facts": [
+        { "text": "Die Römische Republik begann der Überlieferung nach um 509 v. Chr., als die Monarchie gestürzt wurde. Die Macht des Königs ging auf zwei Konsuln über.", "source_ids": ["wikipedia-roman-republic"] },
+        { "text": "Jedes Jahr wurden zwei Konsuln für ein Jahr gewählt. Jeder konnte die Handlungen des anderen mit einem Veto blockieren, was die Macht begrenzte.", "source_ids": ["wikipedia-roman-consul"] },
+        { "text": "Die Konsuln leiteten die Regierung, beriefen den Senat ein, führten den Vorsitz in seinen Sitzungen und befehligten mit imperium die Legionen.", "source_ids": ["wikipedia-roman-consul"] },
+        { "text": "Der Senat hatte in der Republik etwa 300 bis 500 Mitglieder, die auf Lebenszeit dienten. Wer ein Staatsamt bekleidete, wurde damit automatisch Senator.", "source_ids": ["wikipedia-roman-senate"] },
+        { "text": "Senatsbeschlüsse (senatus consulta) waren formal nur ein Rat an die Beamten und hatten keine Gesetzeskraft. In der Praxis wurden sie meist befolgt, und der Senat kontrollierte u. a. die Staatsfinanzen.", "source_ids": ["wikipedia-roman-senate"] },
+        { "text": "Als der Senat 27 v. Chr. Octavian den Titel Augustus verlieh, gilt das oft als Ende der Republik. Die Konsuln verloren danach die meisten Befugnisse und blieben vor allem Symbol.", "source_ids": ["wikipedia-roman-republic", "wikipedia-roman-consul"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Konsuln wurden in der Römischen Republik pro Jahr gewählt?",
+          "options": ["Einer", "Zwei", "Drei", "Zwölf"],
+          "answer_index": 1,
+          "explanation": "Zwei Konsuln amtierten gemeinsam ein Jahr lang und konnten sich gegenseitig per Veto bremsen."
+        },
+        {
+          "question": "Welche rechtliche Wirkung hatten Senatsbeschlüsse (senatus consulta) formal?",
+          "options": ["Sie waren bindende Gesetze", "Sie standen über allen Volksgesetzen", "Sie waren formal nur Rat ohne Gesetzeskraft", "Sie galten nur im Krieg"],
+          "answer_index": 2,
+          "explanation": "Sie waren formal Rat an die Beamten; ein Gesetz der Volksversammlung hatte im Konfliktfall Vorrang."
+        },
+        {
+          "question": "Welches Ereignis wird oft als Ende der Republik gesehen?",
+          "options": ["Die Gründung Roms", "Octavian erhält 27 v. Chr. den Titel Augustus", "Der Sturz des letzten Königs", "Das Jahr 509 v. Chr."],
+          "answer_index": 1,
+          "explanation": "Danach begann das Kaiserreich; die Konsuln verloren den größten Teil ihrer Macht."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Roman Republic: Senate, Consuls, End",
+      "intro": "Rome was ruled without a king for about five centuries. Two consuls and the Senate shaped this period.",
+      "facts": [
+        { "text": "According to tradition, the Roman Republic began around 509 BC when the monarchy was overthrown. The king's powers passed to two consuls.", "source_ids": ["wikipedia-roman-republic"] },
+        { "text": "Each year two consuls were elected for one year. Each could block the other's actions with a veto, which limited their power.", "source_ids": ["wikipedia-roman-consul"] },
+        { "text": "The consuls headed the government, convened the Senate, presided over its meetings and commanded the legions with imperium.", "source_ids": ["wikipedia-roman-consul"] },
+        { "text": "In the Republic the Senate had roughly 300 to 500 members who served for life. Holding a state office automatically made someone a senator.", "source_ids": ["wikipedia-roman-senate"] },
+        { "text": "Senate decrees (senatus consulta) were formally only advice to the magistrates and had no force of law. In practice they were usually obeyed, and the Senate controlled state finances, among other things.", "source_ids": ["wikipedia-roman-senate"] },
+        { "text": "When the Senate gave Octavian the title Augustus in 27 BC, this is often seen as the end of the Republic. The consuls then lost most of their powers and remained mostly a symbol.", "source_ids": ["wikipedia-roman-republic", "wikipedia-roman-consul"] }
+      ],
+      "quiz": [
+        {
+          "question": "How many consuls were elected per year in the Roman Republic?",
+          "options": ["One", "Two", "Three", "Twelve"],
+          "answer_index": 1,
+          "explanation": "Two consuls served together for a year and could check each other with a veto."
+        },
+        {
+          "question": "What legal effect did Senate decrees (senatus consulta) formally have?",
+          "options": ["They were binding laws", "They ranked above all laws of the assemblies", "They were formally only advice without force of law", "They applied only in wartime"],
+          "answer_index": 2,
+          "explanation": "They were formally advice to the magistrates; a law passed by an assembly took precedence in a conflict."
+        },
+        {
+          "question": "Which event is often seen as the end of the Republic?",
+          "options": ["The founding of Rome", "Octavian receiving the title Augustus in 27 BC", "The fall of the last king", "The year 509 BC"],
+          "answer_index": 1,
+          "explanation": "The Empire began afterwards; the consuls lost most of their power."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-roman-republic", "title": "Wikipedia: Roman Republic", "url": "https://en.wikipedia.org/wiki/Roman_Republic", "accessed": "2026-10-03" },
+    { "id": "wikipedia-roman-consul", "title": "Wikipedia: Roman consul", "url": "https://en.wikipedia.org/wiki/Roman_consul", "accessed": "2026-10-03" },
+    { "id": "wikipedia-roman-senate", "title": "Wikipedia: Roman Senate", "url": "https://en.wikipedia.org/wiki/Roman_Senate", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

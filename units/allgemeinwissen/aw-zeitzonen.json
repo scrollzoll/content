@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "aw-zeitzonen",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["zeitzonen", "utc", "datumsgrenze", "china"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Zeitzonen: UTC, Datumsgrenze und Chinas eine Uhr",
+      "intro": "Die Welt rechnet Uhrzeiten von einer gemeinsamen Referenz aus. Wo ein neuer Tag beginnt und warum China eine Ausnahme ist, zeigen diese Fakten.",
+      "facts": [
+        { "text": "UTC ist die weltweite Referenzzeit. Zeitzonen werden als Abweichung von UTC angegeben, von UTC−12:00 bis UTC+14:00. UTC selbst ist keine Zeitzone, sondern der Bezugspunkt.", "source_ids": ["wikipedia-utc"] },
+        { "text": "UTC kennt keine Sommerzeit und ändert sich nicht mit den Jahreszeiten. Die Ortszeit eines Landes kann sich dagegen ändern, wenn es die Sommerzeit nutzt.", "source_ids": ["wikipedia-utc"] },
+        { "text": "UTC beruht auf der Internationalen Atomzeit, einem gewichteten Mittel aus Hunderten Atomuhren weltweit, und ist im Alltag der Nachfolger der Greenwich Mean Time (GMT).", "source_ids": ["wikipedia-utc"] },
+        { "text": "Die Datumsgrenze verläuft von Pol zu Pol und trennt einen Kalendertag vom nächsten. Sie folgt grob dem 180. Längengrad im Pazifik und weicht um einzelne Staaten und Inselgruppen aus.", "source_ids": ["wikipedia-idl"] },
+        { "text": "Wer die Datumsgrenze nach Osten überquert, geht ein Datum zurück; wer sie nach Westen überquert, springt ein Datum vor.", "source_ids": ["wikipedia-idl"] },
+        { "text": "China hat offiziell eine Zeit, UTC+8 („Beijing Time“), eingeführt nach der Machtübernahme 1949, obwohl es fast fünf geografische Zeitzonen umspannt. In Xinjiang wird daneben eine lokale Zeit bei UTC+6 verwendet.", "source_ids": ["wikipedia-china-time"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was gilt für UTC?",
+          "options": ["Es wechselt im Sommer auf Sommerzeit", "Es ist die Referenzzeit und kennt keine Sommerzeit", "Es ist die Ortszeit von Greenwich im Sommer", "Es gilt nur in Europa"],
+          "answer_index": 1,
+          "explanation": "UTC ist der Bezugspunkt aller Zeitzonen und bleibt das ganze Jahr unverändert."
+        },
+        {
+          "question": "Was passiert mit dem Datum, wenn man die Datumsgrenze nach Westen überquert?",
+          "options": ["Es springt einen Tag vor", "Es geht einen Tag zurück", "Es bleibt gleich", "Es springt eine Stunde vor"],
+          "answer_index": 0,
+          "explanation": "Westwärts wird das Datum um einen Tag erhöht, ostwärts um einen Tag verringert."
+        },
+        {
+          "question": "Welche Zeit gilt offiziell in ganz China?",
+          "options": ["UTC+6", "UTC+8", "UTC+10", "UTC+12"],
+          "answer_index": 1,
+          "explanation": "Die offizielle chinesische Zeit („Beijing Time“) liegt bei UTC+8."
+        }
+      ]
+    },
+    "en": {
+      "title": "Time Zones: UTC, the Date Line and China's One Clock",
+      "intro": "The world counts clock times from a shared reference. These facts show where a new day begins and why China is an exception.",
+      "facts": [
+        { "text": "UTC is the global reference time. Time zones are given as offsets from UTC, from UTC−12:00 to UTC+14:00. UTC itself is not a time zone but the reference point.", "source_ids": ["wikipedia-utc"] },
+        { "text": "UTC has no daylight saving time and does not change with the seasons. A country's local time can change, however, if it uses daylight saving time.", "source_ids": ["wikipedia-utc"] },
+        { "text": "UTC is based on International Atomic Time, a weighted average of hundreds of atomic clocks worldwide, and is the everyday successor to Greenwich Mean Time (GMT).", "source_ids": ["wikipedia-utc"] },
+        { "text": "The International Date Line runs from pole to pole and separates one calendar day from the next. It roughly follows 180° longitude in the Pacific and bends around some countries and island groups.", "source_ids": ["wikipedia-idl"] },
+        { "text": "Crossing the date line eastbound takes the date back by one day; crossing it westbound moves the date forward by one day.", "source_ids": ["wikipedia-idl"] },
+        { "text": "China officially has one time, UTC+8 (\"Beijing Time\"), introduced after the 1949 takeover, although it spans nearly five geographic time zones. Xinjiang also uses a local time at UTC+6.", "source_ids": ["wikipedia-china-time"] }
+      ],
+      "quiz": [
+        {
+          "question": "What is true of UTC?",
+          "options": ["It switches to daylight saving time in summer", "It is the reference time and has no daylight saving time", "It is Greenwich local time in summer", "It applies only in Europe"],
+          "answer_index": 1,
+          "explanation": "UTC is the reference point for all time zones and stays unchanged all year."
+        },
+        {
+          "question": "What happens to the date when you cross the International Date Line westbound?",
+          "options": ["It moves forward by one day", "It goes back by one day", "It stays the same", "It moves forward by one hour"],
+          "answer_index": 0,
+          "explanation": "Westbound the date increases by one day, eastbound it decreases by one day."
+        },
+        {
+          "question": "Which time is officially used across all of China?",
+          "options": ["UTC+6", "UTC+8", "UTC+10", "UTC+12"],
+          "answer_index": 1,
+          "explanation": "China's official time (\"Beijing Time\") is UTC+8."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-utc", "title": "Wikipedia: Coordinated Universal Time", "url": "https://en.wikipedia.org/wiki/Coordinated_Universal_Time", "accessed": "2026-10-03" },
+    { "id": "wikipedia-idl", "title": "Wikipedia: International Date Line", "url": "https://en.wikipedia.org/wiki/International_Date_Line", "accessed": "2026-10-03" },
+    { "id": "wikipedia-china-time", "title": "Wikipedia: Time in China", "url": "https://en.wikipedia.org/wiki/Time_in_China", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
