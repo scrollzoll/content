@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "ge-china-qin",
+  "topic": "geschichte/antike",
+  "tags": ["geschichte", "antike", "china", "qin", "terrakotta-armee"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Qin Shi Huang und die Terrakotta-Armee",
+      "intro": "Der erste Kaiser Chinas einte das Land und ließ sich mit einer riesigen Tonarmee bestatten.",
+      "facts": [
+        {
+          "text": "Ying Zheng wurde 247 v. Chr. König von Qin, eroberte zwischen 230 und 221 v. Chr. die anderen sechs Reiche und nannte sich 221 v. Chr. Qin Shi Huang, „erster Kaiser“.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "Er ersetzte das Lehnswesen durch eine Verwaltung aus Kommandanturen und Kreisen und vereinheitlichte Gewichte, Maße, Währung und Schrift.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "Bestehende Verteidigungsmauern ließ er zu einer frühen Großen Mauer verbinden. Qin Shi Huang starb 210 v. Chr. auf einer Reise durch sein Reich.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "Die Terrakotta-Armee wurde am 29. März 1974 von Bauern entdeckt, die bei Xi'an einen Brunnen gruben. Sie sollte den Kaiser im Jenseits schützen.",
+          "source_ids": ["wp-en-terracotta-army"]
+        },
+        {
+          "text": "Schätzungen gehen von mehr als 8.000 Tonsoldaten aus, dazu 130 Streitwagen mit 520 Pferden. Die Grabanlage ist seit 1987 UNESCO-Welterbe.",
+          "source_ids": ["wp-en-terracotta-army"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr einte Qin Shi Huang China und nahm den Kaisertitel an?",
+          "options": ["336 v. Chr.", "221 v. Chr.", "206 v. Chr.", "27 v. Chr."],
+          "answer_index": 1,
+          "explanation": "221 v. Chr. hatte er die anderen Reiche erobert und nannte sich erster Kaiser."
+        },
+        {
+          "question": "Wann wurde die Terrakotta-Armee entdeckt?",
+          "options": ["1874", "1948", "1974", "2001"],
+          "answer_index": 2,
+          "explanation": "Am 29. März 1974 stießen Bauern beim Brunnenbau auf die Figuren."
+        },
+        {
+          "question": "Wer entdeckte die Terrakotta-Armee?",
+          "options": [
+            "Bauern beim Brunnenbau",
+            "Archäologen auf einer Grabung",
+            "Soldaten beim Straßenbau",
+            "Ein Forschungssatellit"
+          ],
+          "answer_index": 0,
+          "explanation": "Die Entdeckung war ein Zufall: Bauern gruben nahe Xi'an einen Brunnen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Qin Shi Huang and the Terracotta Army",
+      "intro": "China's first emperor unified the country and was buried with a vast clay army.",
+      "facts": [
+        {
+          "text": "Ying Zheng became King of Qin in 247 BC, conquered the other six states between 230 and 221 BC and in 221 BC called himself Qin Shi Huang, 'first emperor'.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "He replaced feudalism with an administration of commanderies and counties and standardised weights, measures, currency and writing.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "He had existing defensive walls joined into an early Great Wall. Qin Shi Huang died in 210 BC while touring his empire.",
+          "source_ids": ["wp-en-qin-shi-huang"]
+        },
+        {
+          "text": "The Terracotta Army was discovered on 29 March 1974 by farmers digging a well near Xi'an. It was meant to protect the emperor in the afterlife.",
+          "source_ids": ["wp-en-terracotta-army"]
+        },
+        {
+          "text": "Estimates put the clay soldiers at more than 8,000, plus 130 chariots with 520 horses. The burial complex has been a UNESCO World Heritage Site since 1987.",
+          "source_ids": ["wp-en-terracotta-army"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Qin Shi Huang unify China and take the title of emperor?",
+          "options": ["336 BC", "221 BC", "206 BC", "27 BC"],
+          "answer_index": 1,
+          "explanation": "By 221 BC he had conquered the other states and called himself first emperor."
+        },
+        {
+          "question": "When was the Terracotta Army discovered?",
+          "options": ["1874", "1948", "1974", "2001"],
+          "answer_index": 2,
+          "explanation": "On 29 March 1974, farmers digging a well came across the figures."
+        },
+        {
+          "question": "Who discovered the Terracotta Army?",
+          "options": [
+            "Farmers digging a well",
+            "Archaeologists on an excavation",
+            "Soldiers building a road",
+            "A research satellite"
+          ],
+          "answer_index": 0,
+          "explanation": "The discovery was an accident: farmers were digging a well near Xi'an."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-qin-shi-huang",
+      "title": "Wikipedia: Qin Shi Huang",
+      "url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wp-en-terracotta-army",
+      "title": "Wikipedia: Terracotta Army",
+      "url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

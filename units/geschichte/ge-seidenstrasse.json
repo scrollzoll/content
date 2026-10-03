@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "ge-seidenstrasse",
+  "topic": "geschichte/antike",
+  "tags": ["geschichte", "antike", "handel", "china", "seidenstrasse"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die Seidenstraße",
+      "intro": "Die Seidenstraße war kein einzelner Weg, sondern ein Netz von Handelsrouten zwischen Ost und West.",
+      "facts": [
+        {
+          "text": "Die Seidenstraße war ein Netz von Land- und Seerouten, das vom 2. Jh. v. Chr. bis zur Mitte des 15. Jh. n. Chr. aktiv war. Heute sagt man oft „Seidenstraßen“ im Plural.",
+          "source_ids": ["wp-en-silk-road"]
+        },
+        {
+          "text": "Unter der Han-Dynastie entstand um 130 v. Chr. der organisierte Handel. Zuvor hatte Kaiser Wu den Gesandten Zhang Qian nach Westen geschickt, um Verbündete gegen die Xiongnu zu finden.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "Den Namen „Seidenstraße“ machte der deutsche Geograf Ferdinand von Richthofen 1877 bekannt, nicht Marco Polo.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "Gehandelt wurden u. a. Seide, Tee, Gewürze und Porzellan nach Westen, Pferde, Glas, Gold und Silber nach Osten. Auch Papier und Schießpulver gelangten über die Routen.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "Neben Waren reisten Religionen und Wissen, etwa der Buddhismus nach Osten, aber auch Krankheiten. Ab 1453 rangen die Osmanen um mehr Kontrolle über die Landwege, Europäer suchten Alternativen zur See.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer machte den Namen „Seidenstraße“ 1877 bekannt?",
+          "options": ["Marco Polo", "Zhang Qian", "Herodot", "Ferdinand von Richthofen"],
+          "answer_index": 3,
+          "explanation": "Der deutsche Geograf Ferdinand von Richthofen machte den Begriff 1877 bekannt."
+        },
+        {
+          "question": "Unter welcher chinesischen Dynastie entstand um 130 v. Chr. der organisierte Handel?",
+          "options": ["Qin", "Han", "Tang", "Ming"],
+          "answer_index": 1,
+          "explanation": "Die Han-Dynastie baute den Handel mit dem Westen auf."
+        },
+        {
+          "question": "Was veranlasste die Europäer ab 1453 verstärkt, Seewege zu suchen?",
+          "options": [
+            "Die Osmanen kontrollierten die Landrouten",
+            "Die Seide wurde wertlos",
+            "Die Römer sperrten die Alpen",
+            "Der Kompass wurde verboten"
+          ],
+          "answer_index": 0,
+          "explanation": "Mit der osmanischen Kontrolle über die Landwege begann die Suche nach Seewegen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Silk Road",
+      "intro": "The Silk Road was not a single road but a network of trade routes between East and West.",
+      "facts": [
+        {
+          "text": "The Silk Road was a network of land and sea routes active from the 2nd century BC to the mid-15th century AD. Today people often say 'Silk Roads' in the plural.",
+          "source_ids": ["wp-en-silk-road"]
+        },
+        {
+          "text": "Organised trade arose under the Han dynasty around 130 BC. Before that, Emperor Wu had sent the envoy Zhang Qian west to seek allies against the Xiongnu.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "The name 'Silk Road' was popularised in 1877 by the German geographer Ferdinand von Richthofen, not by Marco Polo.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "Silk, tea, spices and porcelain went west; horses, glass, gold and silver went east. Paper and gunpowder also travelled along the routes.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        },
+        {
+          "text": "Besides goods, religions and knowledge travelled, such as Buddhism eastward, but diseases too. From 1453 the Ottomans competed for greater control of the land routes and Europeans looked for alternatives by sea.",
+          "source_ids": ["wp-en-silk-road", "worldhistory-silk-road"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who popularised the name 'Silk Road' in 1877?",
+          "options": ["Marco Polo", "Zhang Qian", "Herodotus", "Ferdinand von Richthofen"],
+          "answer_index": 3,
+          "explanation": "The German geographer Ferdinand von Richthofen popularised the term in 1877."
+        },
+        {
+          "question": "Under which Chinese dynasty did organised trade arise around 130 BC?",
+          "options": ["Qin", "Han", "Tang", "Ming"],
+          "answer_index": 1,
+          "explanation": "The Han dynasty built up trade with the West."
+        },
+        {
+          "question": "What pushed Europeans from 1453 to look more for sea routes?",
+          "options": [
+            "The Ottomans controlled the land routes",
+            "Silk became worthless",
+            "The Romans closed the Alps",
+            "The compass was banned"
+          ],
+          "answer_index": 0,
+          "explanation": "With Ottoman control of the land routes, the search for sea routes began."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wp-en-silk-road",
+      "title": "Wikipedia: Silk Road",
+      "url": "https://en.wikipedia.org/wiki/Silk_Road",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "worldhistory-silk-road",
+      "title": "World History Encyclopedia: Silk Road",
+      "url": "https://www.worldhistory.org/Silk_Road/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

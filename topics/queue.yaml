@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-container-vs-vm
-    topic: technologie/cloud
-    hint: "Container vs. virtuelle Maschine: Unterschiede und Einsatz"
-    format: facts_quiz
-    priority: 1
-  - id: tech-kubernetes
-    topic: technologie/cloud
-    hint: "Was Kubernetes macht: Pods, Deployments, Services"
-    format: facts_quiz
-    priority: 1
-  - id: tech-serverless
-    topic: technologie/cloud
-    hint: "Serverless und Function as a Service: Vorteile und Grenzen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-object-storage
-    topic: technologie/cloud
-    hint: "Object Storage vs. Block Storage vs. File Storage"
-    format: facts_quiz
-    priority: 1
   - id: tech-infrastructure-as-code
     topic: technologie/cloud
     hint: "Infrastructure as Code: Idee und Werkzeuge wie Terraform/OpenTofu"
@@ -1102,26 +1082,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-klimazonen
-    topic: allgemeinwissen/geografie
-    hint: "Die Klimazonen der Erde nach Köppen-Geiger"
-    format: facts_quiz
-    priority: 1
-  - id: aw-deutschland-geografie
-    topic: allgemeinwissen/geografie
-    hint: "Deutschland: höchster Berg, längster Fluss, größter See, Bundesländer"
-    format: facts_quiz
-    priority: 1
-  - id: aw-alpen
-    topic: allgemeinwissen/geografie
-    hint: "Die Alpen: Länder, höchste Gipfel, Entstehung"
-    format: facts_quiz
-    priority: 1
-  - id: aw-europa-hauptstaedte-1
-    topic: allgemeinwissen/geografie
-    hint: "Hauptstädte Europas Teil 1 (West- und Nordeuropa)"
-    format: facts_quiz
-    priority: 1
   - id: aw-europa-hauptstaedte-2
     topic: allgemeinwissen/geografie
     hint: "Hauptstädte Europas Teil 2 (Ost- und Südeuropa)"
@@ -1707,26 +1667,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-varusschlacht
-    topic: geschichte/antike
-    hint: "Die Varusschlacht 9 n. Chr. und der Limes"
-    format: facts_quiz
-    priority: 1
-  - id: ge-china-qin
-    topic: geschichte/antike
-    hint: "Der erste Kaiser Chinas, Qin Shi Huang, und die Terrakotta-Armee"
-    format: facts_quiz
-    priority: 1
-  - id: ge-seidenstrasse
-    topic: geschichte/antike
-    hint: "Die Seidenstraße: Handel zwischen Ost und West"
-    format: facts_quiz
-    priority: 1
-  - id: ge-griechische-philosophen
-    topic: geschichte/antike
-    hint: "Sokrates, Platon, Aristoteles"
-    format: facts_quiz
-    priority: 1
   - id: ge-pompeji
     topic: geschichte/antike
     hint: "Pompeji und der Ausbruch des Vesuvs 79 n. Chr."

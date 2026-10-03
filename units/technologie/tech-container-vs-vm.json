@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "tech-container-vs-vm",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "container", "virtualisierung", "vm", "docker"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Container vs. virtuelle Maschine",
+      "intro": "Beide isolieren Anwendungen, aber auf unterschiedlicher Ebene: Container teilen sich den Kernel, VMs bringen ein eigenes Betriebssystem mit.",
+      "facts": [
+        {
+          "text": "Container laufen als isolierte Prozesse im User Space und teilen sich den Betriebssystem-Kernel des Hosts mit anderen Containern.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "Eine virtuelle Maschine enthält ein komplettes Gast-Betriebssystem samt Anwendung und Bibliotheken. Ein Hypervisor lässt mehrere solcher VMs auf einem physischen Rechner laufen.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "Container-Images sind typischerweise nur einige zehn MB groß. VMs belegen dagegen oft einige zehn GB und booten langsamer.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "Container virtualisieren das Betriebssystem, VMs die Hardware. Container sind dadurch leichter und lassen sich besser zwischen Clouds und Betriebssystem-Distributionen verschieben.",
+          "source_ids": ["docker-what-is-container", "k8s-overview"]
+        },
+        {
+          "text": "Bei der Isolation haben VMs die Nase vorn: Kubernetes beschreibt die Isolation von Containern als entspannter, auch wenn jeder Container ein eigenes Dateisystem und eigene Ressourcen hat.",
+          "source_ids": ["k8s-overview"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was teilen sich mehrere Container auf demselben Host?",
+          "options": [
+            "Den Betriebssystem-Kernel",
+            "Ein komplettes Gast-Betriebssystem",
+            "Einen eigenen Hypervisor je Container",
+            "Die emulierte Hardware"
+          ],
+          "answer_index": 0,
+          "explanation": "Container teilen den Kernel des Hosts. Ein eigenes Gast-Betriebssystem bringt nur eine VM mit."
+        },
+        {
+          "question": "Was wird bei Containern virtualisiert?",
+          "options": ["Die Hardware", "Das Betriebssystem", "Das Netzwerkkabel", "Der Prozessor-Befehlssatz"],
+          "answer_index": 1,
+          "explanation": "Container virtualisieren das Betriebssystem auf App-Ebene, VMs virtualisieren die Hardware."
+        },
+        {
+          "question": "Welche Größenordnung hat ein typisches Container-Image?",
+          "options": ["Einige zehn GB", "Einige TB", "Einige zehn MB", "Wenige KB"],
+          "answer_index": 2,
+          "explanation": "Container-Images sind typischerweise einige zehn MB groß, VMs mit komplettem Betriebssystem oft einige zehn GB."
+        }
+      ]
+    },
+    "en": {
+      "title": "Containers vs. virtual machines",
+      "intro": "Both isolate applications, but at different levels: containers share the kernel, VMs bring their own operating system.",
+      "facts": [
+        {
+          "text": "Containers run as isolated processes in user space and share the host's operating system kernel with other containers.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "A virtual machine contains a full guest operating system plus the application and its libraries. A hypervisor lets several such VMs run on one physical machine.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "Container images are typically only tens of MB in size. VMs, by contrast, often take up tens of GB and boot more slowly.",
+          "source_ids": ["docker-what-is-container"]
+        },
+        {
+          "text": "Containers virtualize the operating system, VMs virtualize the hardware. This makes containers lighter and easier to move between clouds and OS distributions.",
+          "source_ids": ["docker-what-is-container", "k8s-overview"]
+        },
+        {
+          "text": "VMs lead on isolation: Kubernetes describes container isolation as more relaxed, even though each container has its own filesystem and resources.",
+          "source_ids": ["k8s-overview"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What do several containers on the same host share?",
+          "options": [
+            "The operating system kernel",
+            "A full guest operating system",
+            "A separate hypervisor per container",
+            "The emulated hardware"
+          ],
+          "answer_index": 0,
+          "explanation": "Containers share the host's kernel. Only a VM brings its own guest operating system."
+        },
+        {
+          "question": "What do containers virtualize?",
+          "options": ["The hardware", "The operating system", "The network cable", "The processor instruction set"],
+          "answer_index": 1,
+          "explanation": "Containers virtualize the operating system at the app layer, VMs virtualize the hardware."
+        },
+        {
+          "question": "What is the typical size of a container image?",
+          "options": ["Tens of GB", "Several TB", "Tens of MB", "A few KB"],
+          "answer_index": 2,
+          "explanation": "Container images are typically tens of MB, while VMs with a full operating system often take tens of GB."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "docker-what-is-container",
+      "title": "Docker: What is a Container?",
+      "url": "https://www.docker.com/resources/what-container/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "k8s-overview",
+      "title": "Kubernetes Documentation: Overview",
+      "url": "https://kubernetes.io/docs/concepts/overview/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "id": "tech-kubernetes",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "kubernetes", "container", "orchestrierung"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Kubernetes: Pods, Deployments, Services",
+      "intro": "Kubernetes verwaltet Container im Cluster. Drei Bausteine muss man kennen: Pod, Deployment und Service.",
+      "facts": [
+        {
+          "text": "Kubernetes ist eine Open-Source-Plattform zur Verwaltung containerisierter Workloads. Sie bietet u. a. Selbstheilung, automatische Rollouts und Rollbacks, horizontale Skalierung und Service Discovery.",
+          "source_ids": ["k8s-overview"]
+        },
+        {
+          "text": "Ein Pod ist die kleinste einsetzbare Einheit: eine Gruppe aus einem oder mehreren Containern, die Speicher und Netzwerk teilen. Meist enthält ein Pod nur einen Container.",
+          "source_ids": ["k8s-pods"]
+        },
+        {
+          "text": "Pods legt man normalerweise nicht direkt an. Ein Deployment verwaltet über ReplicaSets die gewünschte Anzahl an Pods, meist für zustandslose Anwendungen.",
+          "source_ids": ["k8s-pods", "k8s-deployment"]
+        },
+        {
+          "text": "Ein Deployment aktualisiert Pods per Rolling Update: Das neue ReplicaSet wird schrittweise hoch-, das alte heruntergefahren. Frühere Versionen lassen sich per Rollback wiederherstellen.",
+          "source_ids": ["k8s-deployment"]
+        },
+        {
+          "text": "Ein Service gibt einer Gruppe von Pods einen stabilen Zugang, obwohl deren IPs wechseln. Er wählt die Pods über Labels aus. Der Standardtyp ClusterIP ist nur im Cluster erreichbar.",
+          "source_ids": ["k8s-service"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist die kleinste einsetzbare Einheit in Kubernetes?",
+          "options": ["Container", "Pod", "Node", "Deployment"],
+          "answer_index": 1,
+          "explanation": "Der Pod ist die kleinste einsetzbare Einheit. Er kann einen oder mehrere Container enthalten."
+        },
+        {
+          "question": "Welches Objekt steuert Rolling Updates und Rollbacks der Pods?",
+          "options": ["Service", "Namespace", "Deployment", "ConfigMap"],
+          "answer_index": 2,
+          "explanation": "Ein Deployment steuert über ReplicaSets die Pods, führt Rolling Updates aus und erlaubt Rollbacks."
+        },
+        {
+          "question": "Welches Problem löst ein Service?",
+          "options": [
+            "Er stellt einen stabilen Zugang trotz wechselnder Pod-IPs bereit",
+            "Er baut Container-Images",
+            "Er startet fehlgeschlagene Nodes neu",
+            "Er speichert Passwörter verschlüsselt"
+          ],
+          "answer_index": 0,
+          "explanation": "Pods kommen und gehen, ihre IPs ändern sich. Ein Service bietet Clients einen gleichbleibenden Zugang."
+        }
+      ]
+    },
+    "en": {
+      "title": "Kubernetes: pods, deployments, services",
+      "intro": "Kubernetes manages containers in a cluster. Three building blocks matter most: pod, deployment and service.",
+      "facts": [
+        {
+          "text": "Kubernetes is an open-source platform for managing containerized workloads. Among other things it offers self-healing, automated rollouts and rollbacks, horizontal scaling and service discovery.",
+          "source_ids": ["k8s-overview"]
+        },
+        {
+          "text": "A pod is the smallest deployable unit: a group of one or more containers that share storage and networking. Most pods contain just one container.",
+          "source_ids": ["k8s-pods"]
+        },
+        {
+          "text": "Pods are normally not created directly. A deployment manages the desired number of pods through ReplicaSets, mostly for stateless applications.",
+          "source_ids": ["k8s-pods", "k8s-deployment"]
+        },
+        {
+          "text": "A deployment updates pods with a rolling update: the new ReplicaSet is scaled up step by step while the old one is scaled down. Earlier versions can be restored with a rollback.",
+          "source_ids": ["k8s-deployment"]
+        },
+        {
+          "text": "A service gives a group of pods a stable access point even though their IPs change. It selects pods by labels. The default type, ClusterIP, is only reachable inside the cluster.",
+          "source_ids": ["k8s-service"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the smallest deployable unit in Kubernetes?",
+          "options": ["Container", "Pod", "Node", "Deployment"],
+          "answer_index": 1,
+          "explanation": "The pod is the smallest deployable unit. It can hold one or more containers."
+        },
+        {
+          "question": "Which object controls rolling updates and rollbacks of pods?",
+          "options": ["Service", "Namespace", "Deployment", "ConfigMap"],
+          "answer_index": 2,
+          "explanation": "A deployment manages pods through ReplicaSets, performs rolling updates and allows rollbacks."
+        },
+        {
+          "question": "Which problem does a service solve?",
+          "options": [
+            "It provides stable access despite changing pod IPs",
+            "It builds container images",
+            "It restarts failed nodes",
+            "It stores passwords encrypted"
+          ],
+          "answer_index": 0,
+          "explanation": "Pods come and go and their IPs change. A service offers clients a constant access point."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "k8s-overview",
+      "title": "Kubernetes Documentation: Overview",
+      "url": "https://kubernetes.io/docs/concepts/overview/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "k8s-pods",
+      "title": "Kubernetes Documentation: Pods",
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "k8s-deployment",
+      "title": "Kubernetes Documentation: Deployments",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "k8s-service",
+      "title": "Kubernetes Documentation: Service",
+      "url": "https://kubernetes.io/docs/concepts/services-networking/service/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
