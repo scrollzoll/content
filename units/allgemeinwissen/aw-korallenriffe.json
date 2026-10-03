@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "aw-korallenriffe",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["korallen", "great-barrier-reef", "korallenbleiche", "ozean"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Korallenriffe und Korallenbleiche",
+      "intro": "Korallenriffe nehmen nur einen winzigen Teil des Meeres ein, sind aber Lebensraum für sehr viele Arten.",
+      "facts": [
+        {
+          "text": "Das Great Barrier Reef vor der Küste von Queensland (Australien) ist über 2.300 km lang und besteht aus mehr als 2.900 Einzelriffen und rund 900 Inseln. Seit 1981 ist es Weltnaturerbe.",
+          "source_ids": ["wiki-great-barrier-reef"]
+        },
+        {
+          "text": "Korallenriffe bedecken weniger als 0,1 % der Meeresfläche, beherbergen aber mindestens ein Viertel aller Meeresarten.",
+          "source_ids": ["wiki-coral-reef"]
+        },
+        {
+          "text": "Korallen leben in Symbiose mit winzigen Algen, den Zooxanthellen. Die Algen liefern den Korallen Nahrung und ihre Farbe.",
+          "source_ids": ["noaa-coral-bleaching", "wiki-coral-reef"]
+        },
+        {
+          "text": "Bei Stress, etwa durch erhöhte Wassertemperatur, stoßen Korallen die Algen aus und werden weiß: Das ist die Korallenbleiche.",
+          "source_ids": ["noaa-coral-bleaching"]
+        },
+        {
+          "text": "Leichte Bleichen können Korallen überstehen. Hält der Stress an, sterben sie. Am Great Barrier Reef gab es Massenbleichen unter anderem 1998, 2016, 2017 und 2022.",
+          "source_ids": ["noaa-coral-bleaching", "wiki-great-barrier-reef"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie heißen die Algen, die in Korallen leben?",
+          "options": ["Zooxanthellen", "Kieselalgen", "Rotalgen", "Blaualgen"],
+          "answer_index": 0,
+          "explanation": "Zooxanthellen leben in den Geweben der Korallen und versorgen sie mit Nahrung und Farbe."
+        },
+        {
+          "question": "Welchen Anteil der Meeresfläche bedecken Korallenriffe ungefähr?",
+          "options": ["Etwa 25 %", "Etwa 10 %", "Etwa 1 %", "Weniger als 0,1 %"],
+          "answer_index": 3,
+          "explanation": "Riffe nehmen weniger als 0,1 % der Meeresfläche ein, tragen aber mindestens ein Viertel der Meeresarten."
+        },
+        {
+          "question": "Was passiert bei der Korallenbleiche?",
+          "options": [
+            "Die Koralle stößt ihre Algen aus und wird weiß",
+            "Die Koralle wächst schneller",
+            "Die Koralle bildet neue Polypen",
+            "Die Koralle wird durch Salz hell"
+          ],
+          "answer_index": 0,
+          "explanation": "Unter Stress verliert die Koralle ihre symbiotischen Algen und damit ihre Farbe."
+        }
+      ]
+    },
+    "en": {
+      "title": "Coral Reefs and Coral Bleaching",
+      "intro": "Coral reefs cover only a tiny part of the ocean but are home to a great many species.",
+      "facts": [
+        {
+          "text": "The Great Barrier Reef off the coast of Queensland, Australia, is over 2,300 km long and made up of more than 2,900 individual reefs and about 900 islands. It has been a World Heritage Site since 1981.",
+          "source_ids": ["wiki-great-barrier-reef"]
+        },
+        {
+          "text": "Coral reefs cover less than 0.1% of the ocean's surface but support at least a quarter of all marine species.",
+          "source_ids": ["wiki-coral-reef"]
+        },
+        {
+          "text": "Corals live in symbiosis with tiny algae called zooxanthellae. The algae supply the coral with food and its colour.",
+          "source_ids": ["noaa-coral-bleaching", "wiki-coral-reef"]
+        },
+        {
+          "text": "Under stress, such as higher water temperature, corals expel the algae and turn white: this is coral bleaching.",
+          "source_ids": ["noaa-coral-bleaching"]
+        },
+        {
+          "text": "Corals can survive mild bleaching. If the stress continues, they die. Mass bleaching at the Great Barrier Reef occurred in 1998, 2016, 2017 and 2022, among other years.",
+          "source_ids": ["noaa-coral-bleaching", "wiki-great-barrier-reef"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What are the algae that live inside corals called?",
+          "options": ["Zooxanthellae", "Diatoms", "Red algae", "Blue-green algae"],
+          "answer_index": 0,
+          "explanation": "Zooxanthellae live in coral tissue and provide it with food and colour."
+        },
+        {
+          "question": "Roughly what share of the ocean's surface do coral reefs cover?",
+          "options": ["About 25%", "About 10%", "About 1%", "Less than 0.1%"],
+          "answer_index": 3,
+          "explanation": "Reefs cover less than 0.1% of the ocean but support at least a quarter of marine species."
+        },
+        {
+          "question": "What happens during coral bleaching?",
+          "options": [
+            "The coral expels its algae and turns white",
+            "The coral grows faster",
+            "The coral forms new polyps",
+            "The coral is lightened by salt"
+          ],
+          "answer_index": 0,
+          "explanation": "Under stress the coral loses its symbiotic algae and with them its colour."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-great-barrier-reef",
+      "title": "Great Barrier Reef (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "noaa-coral-bleaching",
+      "title": "What is coral bleaching? (NOAA National Ocean Service)",
+      "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-coral-reef",
+      "title": "Coral reef (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coral_reef",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

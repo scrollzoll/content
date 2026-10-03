@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-magellan",
+  "topic": "geschichte/neuzeit",
+  "tags": ["magellan", "elcano", "weltumsegelung", "entdeckungen", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Die erste Weltumsegelung: Magellan und Elcano",
+      "intro": "Magellan starb unterwegs, aber seine Expedition schloss den Kreis um die Erde.",
+      "facts": [
+        {
+          "text": "Die Flotte brach am 20. September 1519 mit fünf Schiffen und etwa 270 Mann von Sanlúcar de Barrameda in Spanien auf.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "Im Oktober 1520 fand die Flotte die später nach Magellan benannte Meerenge an der Südspitze Südamerikas und erreichte im November den Pazifik.",
+          "source_ids": ["wiki-magellan-elcano"]
+        },
+        {
+          "text": "Magellan fiel am 27. April 1521 in der Schlacht von Mactan auf den Philippinen im Kampf gegen Kämpfer unter Lapulapu.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "Juan Sebastián Elcano übernahm das Kommando. Mit der „Victoria“ kehrte er am 6. September 1522 nach Spanien zurück, nur dieses eine der fünf Schiffe vollendete die Fahrt.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "Von den rund 270 Männern kamen nur etwa 18 oder 19 zurück. Die Expedition legte insgesamt rund 60.000 km zurück.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Schiff vollendete die erste Weltumsegelung?",
+          "options": ["Trinidad", "Victoria", "Santa María", "Concepción"],
+          "answer_index": 1,
+          "explanation": "Nur die Victoria unter Elcano kehrte 1522 nach Spanien zurück."
+        },
+        {
+          "question": "Wer übernahm nach Magellans Tod das Kommando und führte die Reise zu Ende?",
+          "options": ["Vasco da Gama", "Juan Sebastián Elcano", "Christoph Kolumbus", "Francis Drake"],
+          "answer_index": 1,
+          "explanation": "Elcano führte die Victoria nach Spanien zurück."
+        },
+        {
+          "question": "Wie viele Schiffe brachen 1519 auf?",
+          "options": ["Drei", "Fünf", "Acht", "Zwölf"],
+          "answer_index": 1,
+          "explanation": "Es waren fünf Schiffe: Trinidad, San Antonio, Concepción, Victoria und Santiago."
+        }
+      ]
+    },
+    "en": {
+      "title": "The First Circumnavigation: Magellan and Elcano",
+      "intro": "Magellan died along the way, but his expedition closed the circle around the Earth.",
+      "facts": [
+        {
+          "text": "The fleet set out from Sanlúcar de Barrameda in Spain on 20 September 1519 with five ships and about 270 men.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "In October 1520 the fleet found the strait later named after Magellan at the southern tip of South America and entered the Pacific in November.",
+          "source_ids": ["wiki-magellan-elcano"]
+        },
+        {
+          "text": "Magellan was killed on 27 April 1521 in the Battle of Mactan in the Philippines, fighting forces led by Lapulapu.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "Juan Sebastián Elcano took command. He brought the Victoria back to Spain on 6 September 1522; only this one of the five ships completed the voyage.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        },
+        {
+          "text": "Of the roughly 270 men, only about 18 or 19 returned. The expedition covered some 60,000 km in total.",
+          "source_ids": ["wiki-magellan-elcano", "wiki-magellan-circumnavigation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which ship completed the first circumnavigation?",
+          "options": ["Trinidad", "Victoria", "Santa María", "Concepción"],
+          "answer_index": 1,
+          "explanation": "Only the Victoria under Elcano returned to Spain in 1522."
+        },
+        {
+          "question": "Who took command after Magellan's death and finished the voyage?",
+          "options": ["Vasco da Gama", "Juan Sebastián Elcano", "Christopher Columbus", "Francis Drake"],
+          "answer_index": 1,
+          "explanation": "Elcano led the Victoria back to Spain."
+        },
+        {
+          "question": "How many ships set out in 1519?",
+          "options": ["Three", "Five", "Eight", "Twelve"],
+          "answer_index": 1,
+          "explanation": "There were five ships: Trinidad, San Antonio, Concepción, Victoria and Santiago."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-magellan-elcano",
+      "title": "Ferdinand Magellan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ferdinand_Magellan",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-magellan-circumnavigation",
+      "title": "Magellan's circumnavigation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Magellan%27s_circumnavigation",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

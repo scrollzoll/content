@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "aw-regenbogen",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["regenbogen", "optik", "licht", "wetter"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Wie ein Regenbogen entsteht",
+      "intro": "Sonnenlicht und Wassertropfen reichen aus, wenn man sie aus dem richtigen Winkel betrachtet.",
+      "facts": [
+        {
+          "text": "Ein Regenbogen entsteht aus Brechung, innerer Reflexion und Dispersion (Farbzerlegung) des Sonnenlichts in Regentropfen.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Das Licht tritt in den Tropfen ein, wird an der Rückseite gespiegelt und tritt wieder aus. Dabei werden die Farben unterschiedlich stark gebrochen.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Am hellsten ist das Licht bei etwa 42° Abstand vom Gegenpunkt der Sonne (dem Punkt genau gegenüber der Sonne aus Sicht der Betrachtenden).",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Blau wird im Tropfen stärker gebrochen als Rot und tritt unter kleinerem Winkel aus. Daher liegt Rot außen und Blau innen im Hauptbogen.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Man sieht ihn, wenn die Sonne hinter einem steht und tief genug (unter 42° Höhe) am Himmel. Ein schwächerer Nebenbogen hat durch eine zweite Reflexion umgekehrte Farben.",
+          "source_ids": ["wiki-rainbow"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Farbe liegt im Hauptregenbogen außen?",
+          "options": ["Violett", "Blau", "Grün", "Rot"],
+          "answer_index": 3,
+          "explanation": "Rot wird weniger stark gebrochen als Blau und erscheint daher am äußeren Rand."
+        },
+        {
+          "question": "Wo muss die Sonne stehen, damit man einen Regenbogen sieht?",
+          "options": ["Hinter den Betrachtenden", "Direkt vor ihnen", "Senkrecht über ihnen", "Hinter der Regenwolke"],
+          "answer_index": 0,
+          "explanation": "Das Licht wird in den Tropfen zurückgeworfen, die Sonne steht also im Rücken."
+        },
+        {
+          "question": "Welche Vorgänge erzeugen den Regenbogen?",
+          "options": [
+            "Brechung, innere Reflexion und Farbzerlegung in Tropfen",
+            "Beugung an Wolkenrändern",
+            "Streuung an Staub",
+            "Spiegelung am Meer"
+          ],
+          "answer_index": 0,
+          "explanation": "Brechung, innere Reflexion und Dispersion im Wassertropfen erzeugen das Farbspektrum."
+        }
+      ]
+    },
+    "en": {
+      "title": "How a Rainbow Forms",
+      "intro": "Sunlight and water droplets are enough, if you look from the right angle.",
+      "facts": [
+        {
+          "text": "A rainbow results from refraction, internal reflection and dispersion (splitting into colours) of sunlight in raindrops.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Light enters the droplet, is reflected at its back and exits again. The colours are bent by different amounts along the way.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "The light is brightest at about 42° from the antisolar point (the spot exactly opposite the Sun from the observer's view).",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "Blue is refracted more strongly than red in the droplet and exits at a smaller angle. That is why red is on the outside and blue on the inside of the primary bow.",
+          "source_ids": ["wiki-rainbow"]
+        },
+        {
+          "text": "You see one when the Sun is behind you and low enough (below 42° elevation). A fainter secondary bow has reversed colours because of a second reflection.",
+          "source_ids": ["wiki-rainbow"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which colour is on the outside of the primary rainbow?",
+          "options": ["Violet", "Blue", "Green", "Red"],
+          "answer_index": 3,
+          "explanation": "Red is refracted less than blue and so appears at the outer edge."
+        },
+        {
+          "question": "Where must the Sun be for you to see a rainbow?",
+          "options": ["Behind you", "Directly in front of you", "Straight overhead", "Behind the rain cloud"],
+          "answer_index": 0,
+          "explanation": "The light is sent back by the droplets, so the Sun is at your back."
+        },
+        {
+          "question": "Which processes create a rainbow?",
+          "options": [
+            "Refraction, internal reflection and dispersion in droplets",
+            "Diffraction at cloud edges",
+            "Scattering by dust",
+            "Reflection off the sea"
+          ],
+          "answer_index": 0,
+          "explanation": "Refraction, internal reflection and dispersion in a water droplet produce the colour spectrum."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-rainbow",
+      "title": "Rainbow (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rainbow",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

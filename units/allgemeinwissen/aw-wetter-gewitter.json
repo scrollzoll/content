@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "id": "aw-wetter-gewitter",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["wetter", "gewitter", "blitz", "donner"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Wie Gewitter, Blitz und Donner entstehen",
+      "intro": "Aufsteigende warme Luft, Eis im Wolkeninneren und ein gewaltiger elektrischer Funke: So entsteht ein Gewitter.",
+      "facts": [
+        {
+          "text": "Gewitter entstehen, wenn warme, feuchte Luft schnell aufsteigt und sich zu hohen Gewitterwolken (Cumulonimben) auftürmt.",
+          "source_ids": ["wiki-thunderstorm"]
+        },
+        {
+          "text": "In der Wolke stoßen aufsteigende Eiskristalle und Graupel (weicher Hagel) zusammen. Dabei laden sich die Eiskristalle positiv und der Graupel negativ auf.",
+          "source_ids": ["wiki-lightning"]
+        },
+        {
+          "text": "Ist die Ladungstrennung groß genug, entlädt sie sich als Blitz: innerhalb einer Wolke, zwischen zwei Wolken oder zwischen Wolke und Boden.",
+          "source_ids": ["wiki-lightning"]
+        },
+        {
+          "text": "Der Blitzkanal erhitzt die Luft schlagartig auf bis zu rund 28.000 °C (50.000 °F). Die Luft dehnt sich explosionsartig aus, das hören wir als Donner.",
+          "source_ids": ["nws-thunder", "wiki-lightning"]
+        },
+        {
+          "text": "Entfernung schätzen: Zählt man die Sekunden zwischen Blitz und Donner und teilt durch 5, erhält man ungefähr die Entfernung in Meilen (1 Meile ≈ 1,6 km).",
+          "source_ids": ["nws-thunder"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was ist die Ursache des Donners?",
+          "options": [
+            "Das Aufeinanderprallen von Wolken",
+            "Die explosionsartige Ausdehnung der vom Blitz erhitzten Luft",
+            "Das Platzen von Regentropfen",
+            "Wind in der Gewitterwolke"
+          ],
+          "answer_index": 1,
+          "explanation": "Der Blitz erhitzt die Luft extrem schnell, sie dehnt sich aus und erzeugt Schallwellen."
+        },
+        {
+          "question": "Zwischen Blitz und Donner vergehen 15 Sekunden. Wie weit ist das Gewitter etwa entfernt?",
+          "options": ["Ca. 0,5 Meilen", "Ca. 3 Meilen", "Ca. 15 Meilen", "Ca. 75 Meilen"],
+          "answer_index": 1,
+          "explanation": "Sekunden geteilt durch 5 ergeben Meilen: 15 ÷ 5 = 3 Meilen (knapp 5 km)."
+        },
+        {
+          "question": "Wodurch trennen sich in der Gewitterwolke die Ladungen?",
+          "options": [
+            "Durch Zusammenstöße von Eiskristallen und Graupel",
+            "Durch Sonnenlicht",
+            "Durch den Mond",
+            "Durch Salz in der Luft"
+          ],
+          "answer_index": 0,
+          "explanation": "Kollisionen von Eiskristallen und Graupel in der Wolke trennen positive und negative Ladungen."
+        }
+      ]
+    },
+    "en": {
+      "title": "How Thunderstorms, Lightning and Thunder Form",
+      "intro": "Rising warm air, ice inside the cloud and a huge electrical spark: that is how a thunderstorm forms.",
+      "facts": [
+        {
+          "text": "Thunderstorms form when warm, moist air rises quickly and builds up into tall storm clouds (cumulonimbus).",
+          "source_ids": ["wiki-thunderstorm"]
+        },
+        {
+          "text": "Inside the cloud, rising ice crystals collide with graupel (soft hail). In the process the ice crystals become positively charged and the graupel negatively charged.",
+          "source_ids": ["wiki-lightning"]
+        },
+        {
+          "text": "Once the charge separation is large enough, it discharges as lightning: within a cloud, between two clouds, or between cloud and ground.",
+          "source_ids": ["wiki-lightning"]
+        },
+        {
+          "text": "The lightning channel heats the air almost instantly to as much as about 28,000 °C (50,000 °F). The air expands explosively, which we hear as thunder.",
+          "source_ids": ["nws-thunder", "wiki-lightning"]
+        },
+        {
+          "text": "Estimating distance: count the seconds between flash and thunder and divide by 5 to get roughly the distance in miles (1 mile ≈ 1.6 km).",
+          "source_ids": ["nws-thunder"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What causes thunder?",
+          "options": [
+            "Clouds crashing into each other",
+            "The explosive expansion of air heated by lightning",
+            "Raindrops bursting",
+            "Wind inside the storm cloud"
+          ],
+          "answer_index": 1,
+          "explanation": "Lightning heats the air extremely fast, it expands and produces sound waves."
+        },
+        {
+          "question": "15 seconds pass between lightning and thunder. How far away is the storm roughly?",
+          "options": ["About 0.5 miles", "About 3 miles", "About 15 miles", "About 75 miles"],
+          "answer_index": 1,
+          "explanation": "Seconds divided by 5 give miles: 15 ÷ 5 = 3 miles (just under 5 km)."
+        },
+        {
+          "question": "What separates the charges inside a storm cloud?",
+          "options": [
+            "Collisions of ice crystals and graupel",
+            "Sunlight",
+            "The Moon",
+            "Salt in the air"
+          ],
+          "answer_index": 0,
+          "explanation": "Collisions of ice crystals and graupel in the cloud separate positive and negative charges."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-thunderstorm",
+      "title": "Thunderstorm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Thunderstorm",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-lightning",
+      "title": "Lightning (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "nws-thunder",
+      "title": "Understanding Thunder (NOAA National Weather Service)",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

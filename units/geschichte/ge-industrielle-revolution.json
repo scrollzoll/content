@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "ge-industrielle-revolution",
+  "topic": "geschichte/neuzeit",
+  "tags": ["industrialisierung", "england", "dampfmaschine", "textil", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Die Industrielle Revolution: England als Ausgangspunkt",
+      "intro": "Ab etwa 1760 veränderten Maschinen, Kohle und Fabriken zuerst in Großbritannien die Produktion.",
+      "facts": [
+        {
+          "text": "Die Industrielle Revolution begann um 1760 in Großbritannien und hatte bis etwa 1840 Kontinentaleuropa und die USA erreicht.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Die Textilindustrie führte die Mechanisierung an: Maschinelles Baumwollspinnen steigerte die Leistung je Arbeitskraft etwa um das 500-Fache.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "James Watt verbesserte die Dampfmaschine entscheidend. Bis 1800 baute die Firma Boulton & Watt 496 Maschinen.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Koks ersetzte Holzkohle bei der Eisenherstellung: Die Produktion von Koks-Gusseisen stieg von rund 400 Tonnen (1720) auf etwa 250.000 Tonnen (1806).",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Richard Arkwrights Cromford Mill (1771) steht für das neue Fabriksystem: Maschinen, Wasserkraft und Arbeiter unter einem Dach.",
+          "source_ids": ["wiki-industrial-revolution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Land begann die Industrielle Revolution?",
+          "options": ["Frankreich", "Deutschland", "Großbritannien", "USA"],
+          "answer_index": 2,
+          "explanation": "Sie begann um 1760 in Großbritannien und breitete sich dann aus."
+        },
+        {
+          "question": "Welche Branche führte die Mechanisierung an?",
+          "options": ["Textilindustrie", "Automobilbau", "Chemie", "Elektrotechnik"],
+          "answer_index": 0,
+          "explanation": "Maschinelles Spinnen von Baumwolle steigerte die Produktivität enorm."
+        },
+        {
+          "question": "Wer verbesserte die Dampfmaschine entscheidend?",
+          "options": ["Richard Arkwright", "James Watt", "John Wilkinson", "Isaac Newton"],
+          "answer_index": 1,
+          "explanation": "James Watts Verbesserungen machten die Dampfmaschine effizient. Arkwright baute die Cromford Mill."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Industrial Revolution: Britain as the Starting Point",
+      "intro": "From about 1760, machines, coal and factories transformed production, first in Great Britain.",
+      "facts": [
+        {
+          "text": "The Industrial Revolution began around 1760 in Great Britain and had reached continental Europe and the USA by about 1840.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Textiles led mechanisation: mechanised cotton spinning raised output per worker by a factor of around 500.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "James Watt decisively improved the steam engine. By 1800 the firm Boulton & Watt had built 496 engines.",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Coke replaced charcoal in ironmaking: production of coke cast iron rose from around 400 tonnes (1720) to about 250,000 tonnes (1806).",
+          "source_ids": ["wiki-industrial-revolution"]
+        },
+        {
+          "text": "Richard Arkwright's Cromford Mill (1771) stands for the new factory system: machines, water power and workers under one roof.",
+          "source_ids": ["wiki-industrial-revolution"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which country did the Industrial Revolution begin?",
+          "options": ["France", "Germany", "Great Britain", "USA"],
+          "answer_index": 2,
+          "explanation": "It began around 1760 in Great Britain and then spread."
+        },
+        {
+          "question": "Which industry led mechanisation?",
+          "options": ["Textiles", "Car manufacturing", "Chemicals", "Electrical engineering"],
+          "answer_index": 0,
+          "explanation": "Mechanised cotton spinning boosted productivity enormously."
+        },
+        {
+          "question": "Who decisively improved the steam engine?",
+          "options": ["Richard Arkwright", "James Watt", "John Wilkinson", "Isaac Newton"],
+          "answer_index": 1,
+          "explanation": "James Watt's improvements made the steam engine efficient. Arkwright built Cromford Mill."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-industrial-revolution",
+      "title": "Industrial Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-tierrekorde",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["tiere", "rekorde", "blauwal", "wanderfalke", "gepard"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Tierrekorde: schnellstes, größtes, ältestes Tier",
+      "intro": "Einige Rekorde der Tierwelt sind kaum zu fassen.",
+      "facts": [
+        {
+          "text": "Das schnellste Tier überhaupt ist der Wanderfalke: Im Sturzflug erreicht er über 300 km/h, für Einzelfälle werden bis zu 389 km/h genannt.",
+          "source_ids": ["wiki-fastest-animals"]
+        },
+        {
+          "text": "Das schnellste Landtier ist der Gepard. Als verlässlich gemessene Höchstgeschwindigkeit gelten 104 km/h.",
+          "source_ids": ["wiki-fastest-animals"]
+        },
+        {
+          "text": "Der Blauwal ist nach heutigem Kenntnisstand das größte Tier, das je gelebt hat. Das längste sicher belegte Exemplar war 29,9 m lang, das schwerste wog rund 190 Tonnen.",
+          "source_ids": ["wiki-blue-whale"]
+        },
+        {
+          "text": "Das langlebigste Wirbeltier ist wohl der Grönlandhai: Für ein Tier wurde ein Alter von etwa 272 bis 512 Jahren geschätzt.",
+          "source_ids": ["wiki-longest-living"]
+        },
+        {
+          "text": "Die Islandmuschel „Ming“ wurde etwa 507 Jahre alt und gilt als eines der ältesten einzeln belegten Tiere.",
+          "source_ids": ["wiki-longest-living"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Tier ist insgesamt das schnellste?",
+          "options": ["Gepard", "Wanderfalke", "Schwarzer Marlin", "Strauß"],
+          "answer_index": 1,
+          "explanation": "Der Wanderfalke erreicht im Sturzflug über 300 km/h, der Gepard als Landtier gut 100 km/h."
+        },
+        {
+          "question": "Welches Tier ist das größte, das je gelebt hat?",
+          "options": ["Afrikanischer Elefant", "Pottwal", "Blauwal", "Giraffe"],
+          "answer_index": 2,
+          "explanation": "Der Blauwal gilt als größtes bekanntes Tier aller Zeiten."
+        },
+        {
+          "question": "Welches Wirbeltier gilt als das langlebigste?",
+          "options": ["Grönlandhai", "Galápagos-Riesenschildkröte", "Elefant", "Blauwal"],
+          "answer_index": 0,
+          "explanation": "Beim Grönlandhai wurde für ein Tier ein Alter von etwa 272 bis 512 Jahren geschätzt."
+        }
+      ]
+    },
+    "en": {
+      "title": "Animal Records: Fastest, Largest, Oldest",
+      "intro": "Some animal records are hard to believe.",
+      "facts": [
+        {
+          "text": "The fastest animal overall is the peregrine falcon: in a hunting dive it exceeds 300 km/h, with up to 389 km/h cited for individual cases.",
+          "source_ids": ["wiki-fastest-animals"]
+        },
+        {
+          "text": "The fastest land animal is the cheetah. The highest reliably measured speed is 104 km/h.",
+          "source_ids": ["wiki-fastest-animals"]
+        },
+        {
+          "text": "The blue whale is, as far as is known, the largest animal ever to have lived. The longest reliably documented specimen was 29.9 m long, and the heaviest weighed about 190 tonnes.",
+          "source_ids": ["wiki-blue-whale"]
+        },
+        {
+          "text": "The longest-lived vertebrate is probably the Greenland shark: one specimen was estimated to be between about 272 and 512 years old.",
+          "source_ids": ["wiki-longest-living"]
+        },
+        {
+          "text": "The Icelandic ocean quahog \"Ming\" lived about 507 years and is considered one of the oldest individually documented animals.",
+          "source_ids": ["wiki-longest-living"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which animal is the fastest overall?",
+          "options": ["Cheetah", "Peregrine falcon", "Black marlin", "Ostrich"],
+          "answer_index": 1,
+          "explanation": "The peregrine falcon exceeds 300 km/h in a dive, while the cheetah, a land animal, reaches a little over 100 km/h."
+        },
+        {
+          "question": "Which animal is the largest ever to have lived?",
+          "options": ["African elephant", "Sperm whale", "Blue whale", "Giraffe"],
+          "answer_index": 2,
+          "explanation": "The blue whale is considered the largest known animal of all time."
+        },
+        {
+          "question": "Which vertebrate is considered the longest-lived?",
+          "options": ["Greenland shark", "Galápagos giant tortoise", "Elephant", "Blue whale"],
+          "answer_index": 0,
+          "explanation": "One Greenland shark was estimated to be about 272 to 512 years old."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-fastest-animals",
+      "title": "List of fastest animals (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/List_of_fastest_animals",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-blue-whale",
+      "title": "Blue whale (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Blue_whale",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-longest-living",
+      "title": "List of longest-living organisms (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/List_of_longest-living_organisms",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

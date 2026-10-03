@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "ge-galilei",
+  "topic": "geschichte/neuzeit",
+  "tags": ["galilei", "heliozentrismus", "astronomie", "inquisition", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Galileo Galilei und das heliozentrische Weltbild",
+      "intro": "Mit dem Fernrohr lieferte Galilei Belege für das Weltbild von Kopernikus und geriet in Konflikt mit der Kirche.",
+      "facts": [
+        {
+          "text": "Um 1609/1610 beobachtete Galilei mit einem verbesserten Fernrohr Mondberge, die vier größten Jupitermonde und die Phasen der Venus.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        },
+        {
+          "text": "Die Venusphasen passten nicht zum ptolemäischen Weltbild, in dem die Erde im Zentrum steht. Sie sprachen dafür, dass Venus die Sonne umkreist.",
+          "source_ids": ["wiki-galileo"]
+        },
+        {
+          "text": "Seine ersten Fernrohrbeobachtungen veröffentlichte er 1610 im „Sidereus Nuncius“ und wurde damit in ganz Europa berühmt.",
+          "source_ids": ["sep-galileo"]
+        },
+        {
+          "text": "1632 erschien sein „Dialog über die beiden hauptsächlichen Weltsysteme“, der das heliozentrische System verteidigte. 1633 wurde er von der Inquisition der „starken Ketzerei-Verdächtigung“ schuldig gesprochen und musste widerrufen.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        },
+        {
+          "text": "Den Rest seines Lebens verbrachte er unter Hausarrest, zuletzt in Arcetri. Dort schrieb er die „Discorsi“ (1638). Er starb 1642.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche Himmelskörper entdeckte Galilei 1610 um Jupiter?",
+          "options": ["Vier große Monde", "Einen Ring", "Einen roten Fleck als Mond", "Zwei Zwergplaneten"],
+          "answer_index": 0,
+          "explanation": "Galilei sah die vier größten Jupitermonde, die heute Galileische Monde heißen."
+        },
+        {
+          "question": "In welchem Jahr wurde Galilei von der Inquisition verurteilt?",
+          "options": ["1543", "1610", "1633", "1687"],
+          "answer_index": 2,
+          "explanation": "1633 wurde er der starken Ketzerei-Verdächtigung schuldig gesprochen und musste widerrufen."
+        },
+        {
+          "question": "Wie heißt Galileis Werk von 1632?",
+          "options": [
+            "Dialog über die beiden hauptsächlichen Weltsysteme",
+            "Über die Umschwünge der himmlischen Kreise",
+            "Philosophiae Naturalis Principia Mathematica",
+            "Almagest"
+          ],
+          "answer_index": 0,
+          "explanation": "Im „Dialog“ von 1632 verteidigte Galilei das heliozentrische System."
+        }
+      ]
+    },
+    "en": {
+      "title": "Galileo Galilei and the Heliocentric World View",
+      "intro": "With the telescope, Galileo found evidence for Copernicus's world view and came into conflict with the Church.",
+      "facts": [
+        {
+          "text": "Around 1609/1610, Galileo used an improved telescope to observe lunar mountains, the four largest moons of Jupiter and the phases of Venus.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        },
+        {
+          "text": "The phases of Venus did not fit the Ptolemaic model with Earth at the centre. They indicated that Venus orbits the Sun.",
+          "source_ids": ["wiki-galileo"]
+        },
+        {
+          "text": "He published his first telescopic observations in 1610 in the \"Sidereus Nuncius\", which made him famous across Europe.",
+          "source_ids": ["sep-galileo"]
+        },
+        {
+          "text": "In 1632 his \"Dialogue Concerning the Two Chief World Systems\" defended the heliocentric system. In 1633 the Inquisition found him \"vehemently suspect of heresy\" and he had to recant.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        },
+        {
+          "text": "He spent the rest of his life under house arrest, finally at Arcetri. There he wrote the \"Two New Sciences\" (1638). He died in 1642.",
+          "source_ids": ["wiki-galileo", "sep-galileo"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which bodies did Galileo discover around Jupiter in 1610?",
+          "options": ["Four large moons", "A ring", "A red spot as a moon", "Two dwarf planets"],
+          "answer_index": 0,
+          "explanation": "Galileo saw the four largest moons of Jupiter, now called the Galilean moons."
+        },
+        {
+          "question": "In which year was Galileo convicted by the Inquisition?",
+          "options": ["1543", "1610", "1633", "1687"],
+          "answer_index": 2,
+          "explanation": "In 1633 he was found vehemently suspect of heresy and had to recant."
+        },
+        {
+          "question": "What is the title of Galileo's 1632 work?",
+          "options": [
+            "Dialogue Concerning the Two Chief World Systems",
+            "On the Revolutions of the Heavenly Spheres",
+            "Philosophiae Naturalis Principia Mathematica",
+            "Almagest"
+          ],
+          "answer_index": 0,
+          "explanation": "In the 1632 \"Dialogue\" Galileo defended the heliocentric system."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-galileo",
+      "title": "Galileo Galilei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "sep-galileo",
+      "title": "Galileo Galilei (Stanford Encyclopedia of Philosophy)",
+      "url": "https://plato.stanford.edu/entries/galileo/",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
