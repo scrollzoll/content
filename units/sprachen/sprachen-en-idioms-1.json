@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-idioms-1",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "idioms", "redewendungen", "wortschatz"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Englische Redewendungen 1: piece of cake und mehr",
+      "intro": "Vier gängige englische Redewendungen mit deutscher Bedeutung und Beispielsatz.",
+      "cards": [
+        { "front": "a piece of cake", "back": "etwas ganz Leichtes, ein Kinderspiel. Don't worry about the test, it will be a piece of cake." },
+        { "front": "to break the ice", "back": "das Eis brechen, eine verkrampfte Stimmung zwischen Fremden lösen. A short game helped to break the ice at the workshop." },
+        { "front": "to hit the nail on the head", "back": "den Nagel auf den Kopf treffen, genau richtig liegen. You hit the nail on the head when you said the plan was too risky." },
+        { "front": "under the weather", "back": "sich nicht wohlfühlen, leicht angeschlagen sein. I'm feeling a bit under the weather, so I'll stay home today." }
+      ]
+    },
+    "en": {
+      "title": "English Idioms 1: piece of cake and more",
+      "intro": "Four common English idioms with their meaning and an example sentence.",
+      "cards": [
+        { "front": "a piece of cake", "back": "something very easy. Don't worry about the test, it will be a piece of cake." },
+        { "front": "to break the ice", "back": "to ease the awkwardness between people who don't know each other yet. A short game helped to break the ice at the workshop." },
+        { "front": "to hit the nail on the head", "back": "to identify something exactly, to be exactly right. You hit the nail on the head when you said the plan was too risky." },
+        { "front": "under the weather", "back": "slightly ill or not feeling well. I'm feeling a bit under the weather, so I'll stay home today." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-piece-of-cake", "title": "Wiktionary: piece of cake", "url": "https://en.wiktionary.org/wiki/piece_of_cake", "accessed": "2026-10-03" },
+    { "id": "wiktionary-break-the-ice", "title": "Wiktionary: break the ice", "url": "https://en.wiktionary.org/wiki/break_the_ice", "accessed": "2026-10-03" },
+    { "id": "wiktionary-hit-the-nail-on-the-head", "title": "Wiktionary: hit the nail on the head", "url": "https://en.wiktionary.org/wiki/hit_the_nail_on_the_head", "accessed": "2026-10-03" },
+    { "id": "wiktionary-under-the-weather", "title": "Wiktionary: under the weather", "url": "https://en.wiktionary.org/wiki/under_the_weather", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

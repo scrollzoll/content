@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-meetings",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "business-englisch", "meetings", "redewendungen"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Englisch im Meeting: Meinung, Widerspruch, Zusammenfassung",
+      "intro": "Sechs Wendungen für Meetings: eine Meinung äußern, höflich widersprechen und zusammenfassen.",
+      "cards": [
+        { "front": "in my opinion", "back": "meiner Meinung nach. In my opinion, we should move the launch to May." },
+        { "front": "as I see it", "back": "wie ich es sehe (leitet die eigene Sicht ein). As I see it, the budget is the main risk." },
+        { "front": "to my mind", "back": "meines Erachtens, nach meinem Dafürhalten. To my mind, the second offer is better." },
+        { "front": "with all due respect", "back": "bei allem Respekt (höfliche Einleitung vor einem Widerspruch). With all due respect, I don't think that will work." },
+        { "front": "let's agree to disagree", "back": "lassen wir es dabei bewenden, dass wir uns nicht einig sind. We won't settle this today, so let's agree to disagree." },
+        { "front": "in a nutshell", "back": "kurz gesagt, zusammengefasst. In a nutshell, we need more time and more people." }
+      ]
+    },
+    "en": {
+      "title": "English in Meetings: Opinions, Disagreeing, Summing Up",
+      "intro": "Six phrases for meetings: giving an opinion, disagreeing politely and summing up.",
+      "cards": [
+        { "front": "in my opinion", "back": "according to me. In my opinion, we should move the launch to May." },
+        { "front": "as I see it", "back": "introduces your own point of view. As I see it, the budget is the main risk." },
+        { "front": "to my mind", "back": "in my view, as I think. To my mind, the second offer is better." },
+        { "front": "with all due respect", "back": "a polite opening before you disagree. With all due respect, I don't think that will work." },
+        { "front": "let's agree to disagree", "back": "let's accept that we will not reach agreement and stop arguing. We won't settle this today, so let's agree to disagree." },
+        { "front": "in a nutshell", "back": "in short, in summary. In a nutshell, we need more time and more people." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-in-my-opinion", "title": "Wiktionary: in my opinion", "url": "https://en.wiktionary.org/wiki/in_my_opinion", "accessed": "2026-10-03" },
+    { "id": "wiktionary-with-all-due-respect", "title": "Wiktionary: with all due respect", "url": "https://en.wiktionary.org/wiki/with_all_due_respect", "accessed": "2026-10-03" },
+    { "id": "wiktionary-agree-to-disagree", "title": "Wiktionary: agree to disagree", "url": "https://en.wiktionary.org/wiki/agree_to_disagree", "accessed": "2026-10-03" },
+    { "id": "wiktionary-in-a-nutshell", "title": "Wiktionary: in a nutshell", "url": "https://en.wiktionary.org/wiki/in_a_nutshell", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

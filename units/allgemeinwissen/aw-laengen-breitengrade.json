@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "aw-laengen-breitengrade",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "koordinaten", "aequator", "nullmeridian"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Längen- und Breitengrade: Äquator und Nullmeridian",
+      "intro": "Mit zwei Winkelangaben lässt sich jeder Punkt der Erdoberfläche beschreiben: Breitengrad und Längengrad.",
+      "facts": [
+        { "text": "Der Breitengrad gibt die Nord-Süd-Lage an. Er reicht von 0° am Äquator bis 90° Nord und 90° Süd an den Polen.", "source_ids": ["wikipedia-latitude", "wikipedia-equator"] },
+        { "text": "Der Äquator teilt die Erde in Nord- und Südhalbkugel. Er ist rund 40.075 Kilometer lang.", "source_ids": ["wikipedia-equator"] },
+        { "text": "Der Längengrad gibt die Ost-West-Lage an. Der Nullmeridian durch Greenwich bildet die 0°-Linie; von ihm aus zählt man bis 180° nach Osten und nach Westen.", "source_ids": ["wikipedia-longitude", "wikipedia-prime-meridian"] },
+        { "text": "1884 wählte die Internationale Meridiankonferenz in Washington Greenwich als Nullmeridian. 22 Länder stimmten dafür, Frankreich enthielt sich.", "source_ids": ["wikipedia-prime-meridian"] },
+        { "text": "Ein Breitengrad ist etwa 111 km lang. Ein Längengrad misst am Äquator rund 111 km, bei 60° Breite aber nur noch etwa 56 km, weil sich die Längenkreise zu den Polen hin annähern.", "source_ids": ["wikipedia-latitude", "wikipedia-longitude"] },
+        { "text": "Die Erde dreht sich in 24 Stunden um 360°. Je 15° Länge entsprechen deshalb einer Stunde Zeitunterschied.", "source_ids": ["wikipedia-longitude"] }
+      ],
+      "quiz": [
+        {
+          "question": "Auf welchem Breitengrad liegt der Äquator?",
+          "options": ["0°", "23,5°", "45°", "90°"],
+          "answer_index": 0,
+          "explanation": "Der Äquator ist die 0°-Linie der Breite. Die Pole liegen bei 90° Nord und 90° Süd."
+        },
+        {
+          "question": "Durch welchen Ort verläuft der Nullmeridian?",
+          "options": ["Paris", "Washington", "Greenwich", "Rom"],
+          "answer_index": 2,
+          "explanation": "1884 wurde Greenwich als Nullmeridian festgelegt. Frankreich enthielt sich und nutzte noch bis 1911 den Pariser Meridian."
+        },
+        {
+          "question": "Wie viel Grad Länge entsprechen einer Stunde Zeitunterschied?",
+          "options": ["10°", "15°", "24°", "30°"],
+          "answer_index": 1,
+          "explanation": "360° geteilt durch 24 Stunden ergibt 15° pro Stunde."
+        }
+      ]
+    },
+    "en": {
+      "title": "Latitude and Longitude: Equator and Prime Meridian",
+      "intro": "Two angles are enough to describe any point on Earth's surface: latitude and longitude.",
+      "facts": [
+        { "text": "Latitude gives the north-south position. It runs from 0° at the equator to 90° north and 90° south at the poles.", "source_ids": ["wikipedia-latitude", "wikipedia-equator"] },
+        { "text": "The equator divides Earth into the Northern and Southern Hemispheres. It is about 40,075 kilometres long.", "source_ids": ["wikipedia-equator"] },
+        { "text": "Longitude gives the east-west position. The prime meridian through Greenwich is the 0° line; from it, longitude counts up to 180° east and west.", "source_ids": ["wikipedia-longitude", "wikipedia-prime-meridian"] },
+        { "text": "In 1884 the International Meridian Conference in Washington chose Greenwich as the prime meridian. 22 countries voted in favour; France abstained.", "source_ids": ["wikipedia-prime-meridian"] },
+        { "text": "One degree of latitude is about 111 km. One degree of longitude is about 111 km at the equator but only about 56 km at 60° latitude, because meridians converge toward the poles.", "source_ids": ["wikipedia-latitude", "wikipedia-longitude"] },
+        { "text": "Earth turns 360° in 24 hours. Every 15° of longitude therefore corresponds to one hour of time difference.", "source_ids": ["wikipedia-longitude"] }
+      ],
+      "quiz": [
+        {
+          "question": "At which latitude does the equator lie?",
+          "options": ["0°", "23.5°", "45°", "90°"],
+          "answer_index": 0,
+          "explanation": "The equator is the 0° line of latitude. The poles lie at 90° north and 90° south."
+        },
+        {
+          "question": "Through which place does the prime meridian run?",
+          "options": ["Paris", "Washington", "Greenwich", "Rome"],
+          "answer_index": 2,
+          "explanation": "Greenwich was chosen as the prime meridian in 1884. France abstained and kept using the Paris meridian until 1911."
+        },
+        {
+          "question": "How many degrees of longitude correspond to one hour of time difference?",
+          "options": ["10°", "15°", "24°", "30°"],
+          "answer_index": 1,
+          "explanation": "360° divided by 24 hours gives 15° per hour."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-latitude", "title": "Wikipedia: Latitude", "url": "https://en.wikipedia.org/wiki/Latitude", "accessed": "2026-10-03" },
+    { "id": "wikipedia-longitude", "title": "Wikipedia: Longitude", "url": "https://en.wikipedia.org/wiki/Longitude", "accessed": "2026-10-03" },
+    { "id": "wikipedia-equator", "title": "Wikipedia: Equator", "url": "https://en.wikipedia.org/wiki/Equator", "accessed": "2026-10-03" },
+    { "id": "wikipedia-prime-meridian", "title": "Wikipedia: Prime meridian", "url": "https://en.wikipedia.org/wiki/Prime_meridian", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
