@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-backup-3-2-1",
+  "topic": "technologie/sicherheit",
+  "tags": ["backup", "datensicherung", "ransomware", "offline", "wiederherstellung"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die 3-2-1-Backup-Regel und Offline-Kopien",
+      "intro": "Ein Backup nützt nur, wenn es den Vorfall übersteht, der die Originaldaten zerstört. Die 3-2-1-Regel und eine Offline-Kopie sorgen dafür.",
+      "facts": [
+        { "text": "Die 3-2-1-Regel verlangt mindestens drei Kopien der Daten, abgelegt auf zwei verschiedenen Arten von Speichermedien, wobei eine Kopie an einem anderen Ort (offsite) liegen sollte.", "source_ids": ["wikipedia-backup"] },
+        { "text": "Eine Kopie an einem anderen Standort schützt vor Brand, Diebstahl von Datenträgern und Naturkatastrophen wie Überschwemmung oder Erdbeben, die den Originalstandort treffen.", "source_ids": ["wikipedia-backup"] },
+        { "text": "Ransomware kann nicht nur die Originaldaten verschlüsseln, sondern auch angeschlossene USB- und Netzlaufwerke mit Backups. Auch verbundene Cloud-Speicher mit Backups waren bei Vorfällen schon betroffen.", "source_ids": ["ncsc-offline-backups"] },
+        { "text": "Offline-Speicher erfordert eine bewusste Handlung für den Zugriff, etwa das Einlegen eines Bandes in ein Laufwerk. Solche Kopien sind daher weitgehend gegen Ausfälle geschützt, die Online-Backups treffen.", "source_ids": ["wikipedia-backup"] },
+        { "text": "Ist zu jeder Zeit mindestens ein Backup offline, kann ein einzelner Vorfall nicht alle Backups gleichzeitig treffen. Das ist der Kerngedanke hinter der Offline-Kopie.", "source_ids": ["ncsc-offline-backups"] }
+      ],
+      "quiz": [
+        {
+          "question": "Wofür steht die „2“ in der 3-2-1-Backup-Regel?",
+          "options": ["Zwei Kopien pro Tag", "Zwei verschiedene Arten von Speichermedien", "Zwei Standorte außerhalb des Büros", "Zwei Verschlüsselungsschlüssel"],
+          "answer_index": 1,
+          "explanation": "Die Regel lautet: drei Kopien, zwei Medienarten, eine Kopie an einem anderen Ort."
+        },
+        {
+          "question": "Warum hilft eine Offline-Kopie gegen Ransomware?",
+          "options": ["Sie ist kleiner und wird schneller wiederhergestellt", "Sie wird automatisch doppelt verschlüsselt", "Sie ist nicht verbunden und kann daher nicht gleichzeitig mit den anderen Backups verschlüsselt werden", "Sie wird nur einmal pro Jahr erstellt"],
+          "answer_index": 2,
+          "explanation": "Verbundene Backups können mitverschlüsselt werden; eine getrennte Kopie bleibt bei einem Vorfall unberührt."
+        },
+        {
+          "question": "Wovor schützt vor allem die Kopie an einem anderen Standort?",
+          "options": ["Vor Brand und Naturkatastrophen am Hauptstandort", "Vor Tippfehlern in Dokumenten", "Vor zu langsamer Internetverbindung", "Vor veralteter Software"],
+          "answer_index": 0,
+          "explanation": "Ereignisse wie Brand oder Überschwemmung treffen meist einen Ort; eine entfernte Kopie bleibt davon verschont."
+        }
+      ]
+    },
+    "en": {
+      "title": "The 3-2-1 Backup Rule and Offline Copies",
+      "intro": "A backup only helps if it survives the incident that destroys the original data. The 3-2-1 rule and an offline copy make sure it does.",
+      "facts": [
+        { "text": "The 3-2-1 rule asks for at least three copies of the data, stored on two different types of storage media, with one copy kept at a different location (offsite).", "source_ids": ["wikipedia-backup"] },
+        { "text": "A copy at another location protects against fire, theft of storage media and natural disasters such as floods or earthquakes that hit the original site.", "source_ids": ["wikipedia-backup"] },
+        { "text": "Ransomware can encrypt not only the original data but also connected USB and network drives holding backups. Connected cloud storage holding backups has also been hit in incidents.", "source_ids": ["ncsc-offline-backups"] },
+        { "text": "Offline storage requires a deliberate action to get access, such as inserting a tape into a tape drive. Such copies are therefore largely protected from failures that hit online backups.", "source_ids": ["wikipedia-backup"] },
+        { "text": "If at least one backup is offline at all times, a single incident cannot affect all backups at once. That is the core idea behind the offline copy.", "source_ids": ["ncsc-offline-backups"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does the \"2\" in the 3-2-1 backup rule stand for?",
+          "options": ["Two copies per day", "Two different types of storage media", "Two locations outside the office", "Two encryption keys"],
+          "answer_index": 1,
+          "explanation": "The rule is: three copies, two media types, one copy at another location."
+        },
+        {
+          "question": "Why does an offline copy help against ransomware?",
+          "options": ["It is smaller and restores faster", "It is automatically encrypted twice", "It is not connected, so it cannot be encrypted together with the other backups", "It is only created once a year"],
+          "answer_index": 2,
+          "explanation": "Connected backups can be encrypted too; a disconnected copy stays untouched during an incident."
+        },
+        {
+          "question": "What does the copy at another location mainly protect against?",
+          "options": ["Fire and natural disasters at the main site", "Typos in documents", "A slow internet connection", "Outdated software"],
+          "answer_index": 0,
+          "explanation": "Events such as fire or flooding usually hit one place; a remote copy is spared."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-backup", "title": "Wikipedia: Backup", "url": "https://en.wikipedia.org/wiki/Backup", "accessed": "2026-10-03" },
+    { "id": "ncsc-offline-backups", "title": "NCSC (UK): Offline backups in an online world", "url": "https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

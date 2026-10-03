@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "tech-dsgvo-grundsaetze",
+  "topic": "technologie/sicherheit",
+  "tags": ["dsgvo", "datenschutz", "gdpr", "recht"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Grundsätze der DSGVO (Art. 5)",
+      "intro": "Art. 5 DSGVO nennt sechs Grundsätze in Absatz 1 und die Rechenschaftspflicht in Absatz 2. Zusammen ergeben sie sieben Pflichten für Verantwortliche.",
+      "facts": [
+        { "text": "Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz: Daten müssen rechtmäßig und für die betroffene Person nachvollziehbar verarbeitet werden.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Zweckbindung und Datenminimierung: Daten werden nur für festgelegte, eindeutige, legitime Zwecke erhoben und sind auf das für diese Zwecke notwendige Maß beschränkt.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Richtigkeit und Speicherbegrenzung: Daten müssen sachlich richtig und bei Bedarf aktuell sein. Eine Identifizierung der Person ist nur so lange erlaubt, wie der Zweck es erfordert.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Integrität und Vertraulichkeit: Die Verarbeitung muss so erfolgen, dass eine angemessene Sicherheit der personenbezogenen Daten gewährleistet ist.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Rechenschaftspflicht (Absatz 2): Der Verantwortliche ist für die Einhaltung der Grundsätze verantwortlich und muss deren Einhaltung nachweisen können.", "source_ids": ["dsgvo-gesetz-art5"] }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Grundsatz verlangt, nur so viele Daten zu erheben, wie für den Zweck notwendig sind?",
+          "options": ["Speicherbegrenzung", "Datenminimierung", "Richtigkeit", "Zweckbindung"],
+          "answer_index": 1,
+          "explanation": "Datenminimierung: Die Daten müssen auf das notwendige Maß beschränkt sein."
+        },
+        {
+          "question": "Was fordert der Grundsatz der Speicherbegrenzung?",
+          "options": ["Daten dürfen nie gelöscht werden", "Personen dürfen nur so lange identifizierbar bleiben, wie der Zweck es erfordert", "Daten müssen verschlüsselt sein", "Jede Person darf nur einmal erfasst werden"],
+          "answer_index": 1,
+          "explanation": "Nach Wegfall des Zwecks sollen Daten nicht mehr in identifizierbarer Form gespeichert werden."
+        },
+        {
+          "question": "Wer muss laut Art. 5 Abs. 2 die Einhaltung der Grundsätze nachweisen können?",
+          "options": ["Die betroffene Person", "Der Verantwortliche", "Die Aufsichtsbehörde", "Der Internetanbieter"],
+          "answer_index": 1,
+          "explanation": "Das ist die Rechenschaftspflicht des Verantwortlichen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Principles of the GDPR (Art. 5)",
+      "intro": "Art. 5 GDPR lists six principles in paragraph 1 and accountability in paragraph 2. Together they make up seven duties for controllers.",
+      "facts": [
+        { "text": "Lawfulness, fairness and transparency: data must be processed lawfully, fairly and in a way the data subject can follow.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Purpose limitation and data minimisation: data is collected only for specified, explicit, legitimate purposes and is limited to what is necessary for those purposes.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Accuracy and storage limitation: data must be factually correct and kept up to date where needed. A person may be identifiable only as long as the purpose requires.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Integrity and confidentiality: processing must ensure appropriate security of the personal data.", "source_ids": ["dsgvo-gesetz-art5"] },
+        { "text": "Accountability (paragraph 2): the controller is responsible for compliance with the principles and must be able to demonstrate it.", "source_ids": ["dsgvo-gesetz-art5"] }
+      ],
+      "quiz": [
+        {
+          "question": "Which principle requires collecting only as much data as the purpose needs?",
+          "options": ["Storage limitation", "Data minimisation", "Accuracy", "Purpose limitation"],
+          "answer_index": 1,
+          "explanation": "Data minimisation: data must be limited to what is necessary."
+        },
+        {
+          "question": "What does the storage limitation principle require?",
+          "options": ["Data may never be deleted", "People may stay identifiable only as long as the purpose requires", "Data must be encrypted", "Each person may be recorded only once"],
+          "answer_index": 1,
+          "explanation": "Once the purpose ends, data should no longer be kept in identifiable form."
+        },
+        {
+          "question": "Who must be able to demonstrate compliance under Art. 5(2)?",
+          "options": ["The data subject", "The controller", "The supervisory authority", "The internet provider"],
+          "answer_index": 1,
+          "explanation": "This is the accountability duty of the controller."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "dsgvo-gesetz-art5", "title": "DSGVO-Gesetz.de: Art. 5 DSGVO – Grundsätze für die Verarbeitung personenbezogener Daten", "url": "https://dsgvo-gesetz.de/art-5-dsgvo/", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

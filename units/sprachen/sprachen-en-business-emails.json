@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-business-emails",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "business-englisch", "e-mail", "formulierungen"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 160,
+  "locales": {
+    "de": {
+      "title": "Business-E-Mails: Einstieg, Bitte, Nachfassen, Abschluss",
+      "intro": "Feste Formulierungen für englische E-Mails im Beruf, von der Anrede bis zum Gruß.",
+      "cards": [
+        { "front": "Förmliche Anrede an eine namentlich bekannte Person", "back": "Dear Mr Piper," },
+        { "front": "Förmliche Anrede, wenn du den Namen nicht kennst", "back": "Dear Sir or Madam," },
+        { "front": "Höfliche Bitte", "back": "Could you please …? / Would you be able to …?" },
+        { "front": "Direkte Bitte", "back": "Please send me … (direkter als „Could you please …?“)" },
+        { "front": "Sachlich nachfassen", "back": "I am following up on my email of [date]." },
+        { "front": "Freundlich erinnern", "back": "Just a gentle reminder about …" },
+        { "front": "Förmlicher Abschluss", "back": "Yours sincerely, / Yours faithfully," },
+        { "front": "Neutraler Abschluss", "back": "Best regards, / Regards," }
+      ]
+    },
+    "en": {
+      "title": "Business Emails: Opening, Request, Follow-up, Closing",
+      "intro": "Set phrases for English emails at work, from the greeting to the sign-off.",
+      "cards": [
+        { "front": "Formal greeting to a person you know by name", "back": "Dear Mr Piper," },
+        { "front": "Formal greeting when you do not know the name", "back": "Dear Sir or Madam," },
+        { "front": "Polite request", "back": "Could you please …? / Would you be able to …?" },
+        { "front": "Direct request","back": "Please send me … (more direct than \"Could you please …?\")" },
+        { "front": "Follow up in a neutral way", "back": "I am following up on my email of [date]." },
+        { "front": "Remind in a friendly way", "back": "Just a gentle reminder about …" },
+        { "front": "Formal closing", "back": "Yours sincerely, / Yours faithfully," },
+        { "front": "Neutral closing", "back": "Best regards, / Regards," }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "british-council-emails-unit4", "title": "British Council LearnEnglish: Unit 4 – Starting and finishing emails", "url": "https://learnenglish.britishcouncil.org/business-english/english-emails/unit-4-starting-finishing-emails", "accessed": "2026-10-03" },
+    { "id": "myenglishpages-email-phrases", "title": "My English Pages: Business English Email Phrases", "url": "https://www.myenglishpages.com/business-english-email-phrases/", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
