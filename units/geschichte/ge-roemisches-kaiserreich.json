@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "ge-roemisches-kaiserreich",
+  "topic": "geschichte/antike",
+  "tags": ["rom", "kaiserzeit", "augustus", "antike"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Das Römische Kaiserreich: von Augustus bis zur Teilung",
+      "intro": "Aus der Republik wurde ein Kaiserreich, das sich über das Mittelmeer erstreckte und schließlich in Ost und West zerfiel.",
+      "facts": [
+        { "text": "27 v. Chr. verlieh der Senat Octavian den Ehrentitel Augustus (\"der Erhabene\"). Dieses Jahr gilt als Beginn des Kaiserreichs.", "source_ids": ["wikipedia-augustus", "wikipedia-roman-empire"] },
+        { "text": "Augustus schuf den Prinzipat: Die Fassade der Republik blieb, die Macht lag aber bei ihm. Er starb 14 n. Chr. mit 75 Jahren, sein Stiefsohn Tiberius folgte.", "source_ids": ["wikipedia-augustus"] },
+        { "text": "Die rund 200 Jahre ab der Herrschaft des Augustus gelten traditionell als Pax Romana, eine lange Phase relativer Stabilität und Wohlstands.", "source_ids": ["wikipedia-roman-empire"] },
+        { "text": "Unter Kaiser Trajan erreichte das Reich 117 n. Chr. seine größte Ausdehnung von rund 5 Millionen Quadratkilometern.", "source_ids": ["wikipedia-roman-empire", "worldhistory-roman-empire"] },
+        { "text": "Diokletian (284 bis 305 n. Chr.) teilte die Verwaltung auf vier Herrscher auf (Tetrarchie). Konstantin verlegte später die Hauptstadt nach Byzanz und benannte es in Konstantinopel um.", "source_ids": ["wikipedia-roman-empire"] },
+        { "text": "Mit dem Tod Theodosius' I. 395 n. Chr., des letzten Herrschers über Ost und West, blieb das Reich dauerhaft geteilt. Der Westen endete 476 mit der Absetzung Romulus Augustulus', der Osten bestand bis 1453.", "source_ids": ["wikipedia-roman-empire", "worldhistory-roman-empire"] }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr erhielt Octavian den Titel Augustus?",
+          "options": ["44 v. Chr.", "31 v. Chr.", "27 v. Chr.", "14 n. Chr."],
+          "answer_index": 2,
+          "explanation": "27 v. Chr. gab ihm der Senat den Ehrentitel. Dieses Jahr gilt als Beginn des Kaiserreichs."
+        },
+        {
+          "question": "Unter welchem Kaiser war das Reich 117 n. Chr. am größten?",
+          "options": ["Augustus", "Trajan", "Diokletian", "Konstantin"],
+          "answer_index": 1,
+          "explanation": "Trajan regierte, als das Reich seine größte Ausdehnung erreichte."
+        },
+        {
+          "question": "Was geschah 395 n. Chr. nach dem Tod Theodosius' I.?",
+          "options": ["Das Reich blieb dauerhaft in Ost und West geteilt", "Konstantinopel wurde gegründet", "Der letzte weströmische Kaiser wurde abgesetzt", "Augustus wurde zum ersten Kaiser"],
+          "answer_index": 0,
+          "explanation": "Mit Theodosius' Tod 395 endete die gemeinsame Herrschaft über Ost und West. Der Westen fiel erst 476."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Roman Empire: from Augustus to the split",
+      "intro": "A republic became an empire spanning the Mediterranean, which finally divided into East and West.",
+      "facts": [
+        { "text": "In 27 BC the Senate gave Octavian the honorary title Augustus (\"the revered\"). That year is seen as the start of the Empire.", "source_ids": ["wikipedia-augustus", "wikipedia-roman-empire"] },
+        { "text": "Augustus created the Principate: the republic's facade remained, but power lay with him. He died in AD 14 aged 75, and his stepson Tiberius succeeded him.", "source_ids": ["wikipedia-augustus"] },
+        { "text": "The roughly 200 years from the rule of Augustus are traditionally regarded as the Pax Romana, a long period of relative stability and prosperity.", "source_ids": ["wikipedia-roman-empire"] },
+        { "text": "Under Emperor Trajan, the Empire reached its greatest extent in AD 117, about 5 million square kilometres.", "source_ids": ["wikipedia-roman-empire", "worldhistory-roman-empire"] },
+        { "text": "Diocletian (AD 284 to 305) split the administration among four rulers (the Tetrarchy). Constantine later moved the capital to Byzantium, renamed Constantinople.", "source_ids": ["wikipedia-roman-empire"] },
+        { "text": "With the death of Theodosius I in AD 395, the last ruler of both East and West, the Empire stayed permanently divided. The West ended in 476 when Romulus Augustulus was deposed; the East lasted until 1453.", "source_ids": ["wikipedia-roman-empire", "worldhistory-roman-empire"] }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Octavian receive the title Augustus?",
+          "options": ["44 BC", "31 BC", "27 BC", "AD 14"],
+          "answer_index": 2,
+          "explanation": "The Senate gave him the honorific in 27 BC, the year seen as the start of the Empire."
+        },
+        {
+          "question": "Under which emperor was the Empire largest in AD 117?",
+          "options": ["Augustus", "Trajan", "Diocletian", "Constantine"],
+          "answer_index": 1,
+          "explanation": "Trajan ruled when the Empire reached its greatest extent."
+        },
+        {
+          "question": "What happened in AD 395 after Theodosius I died?",
+          "options": ["The Empire stayed permanently divided into East and West", "Constantinople was founded", "The last Western emperor was deposed", "Augustus became the first emperor"],
+          "answer_index": 0,
+          "explanation": "With Theodosius' death in 395, joint rule over East and West ended. The West fell only in 476."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-augustus", "title": "Wikipedia: Augustus", "url": "https://en.wikipedia.org/wiki/Augustus", "accessed": "2026-10-03" },
+    { "id": "wikipedia-roman-empire", "title": "Wikipedia: Roman Empire", "url": "https://en.wikipedia.org/wiki/Roman_Empire", "accessed": "2026-10-03" },
+    { "id": "worldhistory-roman-empire", "title": "World History Encyclopedia: Roman Empire", "url": "https://www.worldhistory.org/Roman_Empire/", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

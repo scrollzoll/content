@@ -17,21 +17,11 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-least-privilege
-    topic: technologie/sicherheit
-    hint: "Prinzip der minimalen Rechte (Least Privilege) und warum es wirkt"
-    format: facts_quiz
-    priority: 1
   - id: tech-security-abkuerzungen
     topic: technologie/sicherheit
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-cloud-shared-responsibility
-    topic: technologie/cloud
-    hint: "Wer ist bei IaaS, PaaS, SaaS wofür verantwortlich"
-    format: facts_quiz
-    priority: 1
   - id: tech-iaas-paas-saas
     topic: technologie/cloud
     hint: "Die drei Cloud-Servicemodelle nach NIST-Definition mit Beispielen"
@@ -277,16 +267,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-idioms-2
-    topic: sprachen/englisch
-    hint: "Englische Redewendungen: the ball is in your court, cut corners, on the same page, back to square one"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-tech-vocabulary
-    topic: sprachen/englisch
-    hint: "IT-Wortschatz: deploy, rollout, outage, rollback, deadline, stakeholder"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-presentations
     topic: sprachen/englisch
     hint: "Redewendungen für Präsentationen: Einleitung, Überleitung, Fragen"
@@ -1142,11 +1122,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-plattentektonik
-    topic: allgemeinwissen/geografie
-    hint: "Plattentektonik: wie Kontinente wandern und Erdbeben entstehen"
-    format: facts_quiz
-    priority: 1
   - id: aw-vulkane
     topic: allgemeinwissen/geografie
     hint: "Vulkane: Arten, Pazifischer Feuerring"
@@ -1757,11 +1732,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-roemisches-kaiserreich
-    topic: geschichte/antike
-    hint: "Das Römische Kaiserreich: Augustus bis zur Teilung"
-    format: facts_quiz
-    priority: 1
   - id: ge-untergang-westrom
     topic: geschichte/antike
     hint: "Der Untergang Westroms 476 n. Chr."

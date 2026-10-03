@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "aw-plattentektonik",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["plattentektonik", "erdbeben", "geologie", "kontinente"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Plattentektonik: wandernde Kontinente, bebende Erde",
+      "intro": "Die starre Erdoberfläche besteht aus Platten, die sich bewegen. An ihren Rändern entstehen Gebirge, Vulkane und Erdbeben.",
+      "facts": [
+        { "text": "Die Lithosphäre ist die kühle, starre Außenschicht der Erde. Sie ist in Platten zerbrochen, die auf der heißeren, leichter fließenden Asthenosphäre liegen.", "source_ids": ["wikipedia-plate-tectonics"] },
+        { "text": "Je nach Zählweise gibt es sieben oder acht große Platten und viele kleine.", "source_ids": ["wikipedia-plate-tectonics"] },
+        { "text": "Es gibt drei Randtypen: auseinanderdriftende (neue Kruste entsteht), kollidierende (eine Platte taucht ab oder Kontinente stoßen zusammen) und aneinander vorbeigleitende.", "source_ids": ["wikipedia-plate-tectonics", "usgs-plate-motions"] },
+        { "text": "Platten bewegen sich langsam: Am Mittelatlantischen Rücken driften sie mit etwa 2,5 cm pro Jahr auseinander, am Ostpazifischen Rücken bei der Osterinsel mit über 15 cm pro Jahr am schnellsten.", "source_ids": ["usgs-plate-motions"] },
+        { "text": "Erdbeben entstehen, wenn Platten an einer Verwerfung verhaken. Die Spannung wächst, bis die Verwerfung plötzlich nachgibt und Energie als Erdbebenwellen frei wird.", "source_ids": ["wikipedia-earthquake"] },
+        { "text": "Alfred Wegener schlug 1912 vor, dass die Kontinente einst ein Urkontinent (Pangaea) waren. Die Plattentektonik setzte sich erst nach Belegen für Meeresbodenspreizung in den 1960ern durch.", "source_ids": ["wikipedia-plate-tectonics"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was passiert an einem divergenten Plattenrand?",
+          "options": ["Neue Kruste entsteht, während die Platten auseinanderdriften", "Eine Platte taucht unter die andere", "Platten gleiten seitlich aneinander vorbei, ohne Kruste zu bilden", "Kruste wird vollständig zerstört"],
+          "answer_index": 0,
+          "explanation": "Divergent bedeutet auseinanderdriften. Dabei entsteht neue ozeanische Kruste."
+        },
+        {
+          "question": "Wie entsteht ein tektonisches Erdbeben?",
+          "options": ["Spannung baut sich an einer verhakten Verwerfung auf und entlädt sich plötzlich", "Die Asthenosphäre kühlt schlagartig ab", "Das Meerwasser drückt auf die Kontinente", "Kontinente schmelzen an ihren Rändern"],
+          "answer_index": 0,
+          "explanation": "Die Platten bewegen sich weiter, die Verwerfung hält zunächst. Wenn sie nachgibt, wird die gespeicherte Energie frei."
+        },
+        {
+          "question": "Wer schlug 1912 vor, dass die Kontinente einst zusammenhingen?",
+          "options": ["Charles Darwin", "Alfred Wegener", "Alexander von Humboldt", "Isaac Newton"],
+          "answer_index": 1,
+          "explanation": "Wegener stellte die Idee eines Urkontinents (später Pangaea genannt) 1912 vor."
+        }
+      ]
+    },
+    "en": {
+      "title": "Plate tectonics: drifting continents, shaking Earth",
+      "intro": "Earth's rigid surface consists of moving plates. Mountains, volcanoes and earthquakes arise at their edges.",
+      "facts": [
+        { "text": "The lithosphere is Earth's cool, rigid outer layer. It is broken into plates that rest on the hotter, more easily flowing asthenosphere.", "source_ids": ["wikipedia-plate-tectonics"] },
+        { "text": "Depending on how they are counted, there are seven or eight major plates and many minor ones.", "source_ids": ["wikipedia-plate-tectonics"] },
+        { "text": "There are three boundary types: divergent (new crust forms), convergent (one plate dives under another or continents collide) and transform (plates slide past each other).", "source_ids": ["wikipedia-plate-tectonics", "usgs-plate-motions"] },
+        { "text": "Plates move slowly: they spread apart at about 2.5 cm per year at the Mid-Atlantic Ridge, and at over 15 cm per year at the East Pacific Rise near Easter Island, the fastest.", "source_ids": ["usgs-plate-motions"] },
+        { "text": "Earthquakes occur when plates stick at a fault. Stress builds until the fault suddenly slips, releasing energy as seismic waves.", "source_ids": ["wikipedia-earthquake"] },
+        { "text": "Alfred Wegener proposed in 1912 that the continents once formed a single landmass (Pangaea). Plate tectonics was accepted only after seafloor spreading was confirmed in the 1960s.", "source_ids": ["wikipedia-plate-tectonics"] }
+      ],
+      "quiz": [
+        {
+          "question": "What happens at a divergent plate boundary?",
+          "options": ["New crust forms as the plates move apart", "One plate dives beneath another", "Plates slide sideways past each other without making crust", "Crust is completely destroyed"],
+          "answer_index": 0,
+          "explanation": "Divergent means moving apart. New oceanic crust forms in the gap."
+        },
+        {
+          "question": "How does a tectonic earthquake arise?",
+          "options": ["Stress builds up at a stuck fault and is released suddenly", "The asthenosphere suddenly cools", "Seawater presses down on the continents", "Continents melt at their edges"],
+          "answer_index": 0,
+          "explanation": "The plates keep moving while the fault holds. When it gives way, the stored energy is released."
+        },
+        {
+          "question": "Who proposed in 1912 that the continents once were joined?",
+          "options": ["Charles Darwin", "Alfred Wegener", "Alexander von Humboldt", "Isaac Newton"],
+          "answer_index": 1,
+          "explanation": "Wegener presented the idea of a single supercontinent, later called Pangaea, in 1912."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-plate-tectonics", "title": "Wikipedia: Plate tectonics", "url": "https://en.wikipedia.org/wiki/Plate_tectonics", "accessed": "2026-10-03" },
+    { "id": "usgs-plate-motions", "title": "USGS: Understanding Plate Motions", "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html", "accessed": "2026-10-03" },
+    { "id": "wikipedia-earthquake", "title": "Wikipedia: Earthquake", "url": "https://en.wikipedia.org/wiki/Earthquake", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
