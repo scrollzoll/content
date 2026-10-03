@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-tech-vocabulary",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "it-wortschatz", "wortschatz", "berufsenglisch"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "IT-Englisch: deploy, rollout, outage und mehr",
+      "intro": "Sechs Begriffe, die im IT-Alltag ständig fallen, mit deutscher Bedeutung und Beispielsatz.",
+      "cards": [
+        { "front": "to deploy / a deploy", "back": "Software in einer Produktivumgebung installieren und in Betrieb nehmen. We deploy the new version on Friday." },
+        { "front": "rollout", "back": "schrittweise Einführung eines Produkts oder einer Technik. The rollout to all offices will take three weeks." },
+        { "front": "outage", "back": "zeitweiser Ausfall, vor allem der Stromversorgung. The payment service had a two-hour outage." },
+        { "front": "rollback / to roll back", "back": "etwas auf einen früheren Zustand zurücksetzen. The update caused errors, so we had to roll it back." },
+        { "front": "deadline", "back": "Frist, ein Termin, bis zu dem etwas fertig sein muss. The deadline for the report is Monday." },
+        { "front": "stakeholder", "back": "Person oder Organisation mit berechtigtem Interesse an einem Vorhaben. We update all stakeholders every week." }
+      ]
+    },
+    "en": {
+      "title": "Tech English: deploy, rollout, outage and more",
+      "intro": "Six terms that come up constantly in IT work, with meaning and an example sentence.",
+      "cards": [
+        { "front": "to deploy / a deploy", "back": "to install and put software into a production environment. We deploy the new version on Friday." },
+        { "front": "rollout", "back": "the gradual introduction of a product or technology. The rollout to all offices will take three weeks." },
+        { "front": "outage", "back": "a temporary suspension of operation, especially of power supply. The payment service had a two-hour outage." },
+        { "front": "rollback / to roll back", "back": "to return something to an earlier state. The update caused errors, so we had to roll it back." },
+        { "front": "deadline", "back": "a time limit: the date by which something must be finished. The deadline for the report is Monday." },
+        { "front": "stakeholder", "back": "a person or organisation with a legitimate interest in a project or situation. We update all stakeholders every week." }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-deploy", "title": "Wiktionary: deploy", "url": "https://en.wiktionary.org/wiki/deploy", "accessed": "2026-10-03" },
+    { "id": "wiktionary-rollout", "title": "Wiktionary: rollout", "url": "https://en.wiktionary.org/wiki/rollout", "accessed": "2026-10-03" },
+    { "id": "wiktionary-outage", "title": "Wiktionary: outage", "url": "https://en.wiktionary.org/wiki/outage", "accessed": "2026-10-03" },
+    { "id": "wiktionary-rollback", "title": "Wiktionary: rollback", "url": "https://en.wiktionary.org/wiki/rollback", "accessed": "2026-10-03" },
+    { "id": "wiktionary-deadline", "title": "Wiktionary: deadline", "url": "https://en.wiktionary.org/wiki/deadline", "accessed": "2026-10-03" },
+    { "id": "wiktionary-stakeholder", "title": "Wiktionary: stakeholder", "url": "https://en.wiktionary.org/wiki/stakeholder", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

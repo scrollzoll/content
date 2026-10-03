@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "tech-least-privilege",
+  "topic": "technologie/sicherheit",
+  "tags": ["least-privilege", "zugriffsrechte", "sicherheit", "iam"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Least Privilege: so wenig Rechte wie nötig",
+      "intro": "Wer nur die Rechte hat, die er für seine Aufgabe braucht, kann im Ernstfall weniger kaputt machen.",
+      "facts": [
+        { "text": "Least Privilege heißt: Nutzer und Prozesse bekommen nur die minimalen Zugriffsrechte, die sie für ihre zugewiesenen Aufgaben brauchen.", "source_ids": ["nist-least-privilege"] },
+        { "text": "Das Prinzip gilt nicht nur für Menschen, sondern auch für Prozesse, die im Auftrag von Nutzern laufen.", "source_ids": ["nist-least-privilege"] },
+        { "text": "Jerome Saltzer formulierte das Prinzip 1974 in den Communications of the ACM. Frühe Ideen dazu gab es schon 1972 bei Roger Needham.", "source_ids": ["wikipedia-polp"] },
+        { "text": "Es wirkt, weil ein Programm mit wenigen Rechten weniger anrichten kann: Ein ausgenutzter Fehler oder Schadcode bleibt eingegrenzt, die Angriffsfläche ist kleiner.", "source_ids": ["wikipedia-polp"] },
+        { "text": "Beispiele: Ein Konto nur für Backups darf keine Software installieren. Alltagsarbeit läuft mit Standardkonto, Adminrechte gibt es nur, wenn sie wirklich nötig sind.", "source_ids": ["wikipedia-polp"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was verlangt das Prinzip der minimalen Rechte?",
+          "options": ["Alle Nutzer erhalten Adminrechte, aber ihre Aktionen werden protokolliert", "Nur die für die Aufgabe nötigen Zugriffsrechte vergeben", "Rechte werden nur Prozessen, nie Menschen entzogen", "Jede Person bekommt dieselben Rechte"],
+          "answer_index": 1,
+          "explanation": "Nach NIST sollen Rechte auf das Minimum beschränkt sein, das für die zugewiesenen Aufgaben nötig ist."
+        },
+        {
+          "question": "Warum begrenzt Least Privilege den Schaden durch Schadsoftware?",
+          "options": ["Schadsoftware läuft nur mit den Rechten des Kontos, also kann sie weniger tun", "Schadsoftware wird dadurch automatisch erkannt", "Konten mit wenig Rechten sind verschlüsselt", "Schadsoftware kann nur auf Servern laufen"],
+          "answer_index": 0,
+          "explanation": "Ein kompromittiertes Programm erbt nur die vorhandenen Rechte. Weniger Rechte bedeuten weniger Möglichkeiten für den Angreifer."
+        },
+        {
+          "question": "Welches Beispiel entspricht dem Prinzip?",
+          "options": ["Ein Backup-Konto, das auch Software installieren darf", "Ein Backup-Konto ohne Recht, Software zu installieren", "Alle Mitarbeitenden arbeiten dauerhaft als Administrator", "Ein gemeinsames Passwort für alle Dienstkonten"],
+          "answer_index": 1,
+          "explanation": "Ein Konto nur für Backups braucht keine Installationsrechte, daher werden sie ihm nicht gegeben."
+        }
+      ]
+    },
+    "en": {
+      "title": "Least Privilege: as few rights as needed",
+      "intro": "If you only hold the rights your task requires, you can do less damage when something goes wrong.",
+      "facts": [
+        { "text": "Least privilege means users and processes get only the minimum access rights they need to perform their assigned tasks.", "source_ids": ["nist-least-privilege"] },
+        { "text": "The principle applies not only to people but also to processes that run on behalf of users.", "source_ids": ["nist-least-privilege"] },
+        { "text": "Jerome Saltzer formulated the principle in 1974 in Communications of the ACM. Earlier ideas appeared in 1972 with Roger Needham.", "source_ids": ["wikipedia-polp"] },
+        { "text": "It works because a program with few rights can do less harm: an exploited bug or malware stays contained, and the attack surface is smaller.", "source_ids": ["wikipedia-polp"] },
+        { "text": "Examples: a backup-only account may not install software. Daily work runs on a standard account, and admin rights are used only when truly needed.", "source_ids": ["wikipedia-polp"] }
+      ],
+      "quiz": [
+        {
+          "question": "What does the principle of least privilege require?",
+          "options": ["Everyone gets admin rights, but actions are logged", "Granting only the access rights the task needs", "Removing rights from processes, never from people", "Giving every person identical rights"],
+          "answer_index": 1,
+          "explanation": "According to NIST, rights should be limited to the minimum necessary for the assigned tasks."
+        },
+        {
+          "question": "Why does least privilege limit damage from malware?",
+          "options": ["Malware runs only with the account's rights, so it can do less", "Malware is detected automatically", "Low-privilege accounts are encrypted", "Malware can only run on servers"],
+          "answer_index": 0,
+          "explanation": "A compromised program inherits only the rights that exist. Fewer rights mean fewer options for an attacker."
+        },
+        {
+          "question": "Which example follows the principle?",
+          "options": ["A backup account that may also install software", "A backup account without the right to install software", "Everyone working permanently as administrator", "One shared password for all service accounts"],
+          "answer_index": 1,
+          "explanation": "An account used only for backups needs no installation rights, so it is not given any."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "nist-least-privilege", "title": "NIST CSRC Glossary: least privilege", "url": "https://csrc.nist.gov/glossary/term/least_privilege", "accessed": "2026-10-03" },
+    { "id": "wikipedia-polp", "title": "Wikipedia: Principle of least privilege", "url": "https://en.wikipedia.org/wiki/Principle_of_least_privilege", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

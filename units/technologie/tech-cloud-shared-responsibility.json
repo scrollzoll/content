@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "tech-cloud-shared-responsibility",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "iaas", "paas", "saas", "shared-responsibility"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Cloud: Wer ist bei IaaS, PaaS und SaaS wofür verantwortlich?",
+      "intro": "Im Modell der geteilten Verantwortung sichert der Anbieter die Infrastruktur, der Kunde seine Nutzung. Die Grenze verschiebt sich je nach Dienst.",
+      "facts": [
+        { "text": "Der Anbieter sichert die Cloud-Infrastruktur, der Kunde seine Daten, Identitäten und Konfiguration. Je nach Dienst verschiebt sich die Grenze.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "Bei allen Modellen, auch SaaS, bleiben Kundendaten, Identitäten und Nutzer sowie Konfigurationen und Einstellungen beim Kunden.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "Bei IaaS betreibt der Anbieter Rechenzentrum, Netz und physische Hosts. Betriebssystem, Anwendungen und Netzwerkkontrollen verantwortet der Kunde.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "Bei PaaS übernimmt der Anbieter zusätzlich das Betriebssystem. Anwendungen und Netzwerkkontrollen bleiben geteilt.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "Bei SaaS verantwortet der Anbieter auch die Netzwerkkontrollen. Anwendungen und Endgeräte sind geteilt, Daten und Identitäten bleiben beim Kunden.", "source_ids": ["microsoft-shared-responsibility"] }
+      ],
+      "quiz": [
+        {
+          "question": "Was bleibt bei jedem Cloud-Modell, auch SaaS, beim Kunden?",
+          "options": ["Das Betriebssystem", "Die physischen Server", "Die Kundendaten und Identitäten", "Das Rechenzentrum"],
+          "answer_index": 2,
+          "explanation": "Daten, Identitäten und Konfigurationen verantwortet der Kunde immer."
+        },
+        {
+          "question": "Wer verantwortet bei IaaS das Betriebssystem der virtuellen Maschine?",
+          "options": ["Der Anbieter", "Der Kunde", "Beide zu gleichen Teilen", "Niemand"],
+          "answer_index": 1,
+          "explanation": "Bei IaaS verwaltet der Kunde VMs, Betriebssysteme und Anwendungen."
+        },
+        {
+          "question": "Wer verantwortet bei SaaS die Netzwerkkontrollen?",
+          "options": ["Der Anbieter", "Der Kunde", "Der Endnutzer allein", "Ein Drittanbieter"],
+          "answer_index": 0,
+          "explanation": "Bei SaaS liegen die Netzwerkkontrollen laut Matrix beim Anbieter."
+        }
+      ]
+    },
+    "en": {
+      "title": "Cloud: who is responsible for what in IaaS, PaaS and SaaS?",
+      "intro": "In the shared responsibility model the provider secures the infrastructure and the customer secures their use of it. The line shifts with the service.",
+      "facts": [
+        { "text": "The provider secures the cloud infrastructure; the customer secures their data, identities and configuration. The boundary shifts depending on the service.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "In every model, including SaaS, customer data, identities and users, and configurations and settings stay with the customer.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "In IaaS the provider runs the datacenter, network and physical hosts. The customer is responsible for the operating system, applications and network controls.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "In PaaS the provider also takes over the operating system. Applications and network controls are shared.", "source_ids": ["microsoft-shared-responsibility"] },
+        { "text": "In SaaS the provider also owns network controls. Applications and client devices are shared; data and identities stay with the customer.", "source_ids": ["microsoft-shared-responsibility"] }
+      ],
+      "quiz": [
+        {
+          "question": "What stays with the customer in every cloud model, even SaaS?",
+          "options": ["The operating system", "The physical servers", "Customer data and identities", "The datacenter"],
+          "answer_index": 2,
+          "explanation": "Data, identities and configurations are always the customer's responsibility."
+        },
+        {
+          "question": "Who is responsible for the operating system of a virtual machine in IaaS?",
+          "options": ["The provider", "The customer", "Both equally", "Nobody"],
+          "answer_index": 1,
+          "explanation": "In IaaS the customer manages VMs, operating systems and applications."
+        },
+        {
+          "question": "Who is responsible for network controls in SaaS?",
+          "options": ["The provider", "The customer", "The end user alone", "A third party"],
+          "answer_index": 0,
+          "explanation": "In SaaS, network controls sit with the provider according to the matrix."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "microsoft-shared-responsibility", "title": "Microsoft Learn: Shared responsibility in the cloud", "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

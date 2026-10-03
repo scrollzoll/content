@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "sprachen-en-idioms-2",
+  "topic": "sprachen/englisch",
+  "tags": ["englisch", "idioms", "redewendungen", "wortschatz"],
+  "format": "flashcards",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Englische Redewendungen 2: the ball is in your court und mehr",
+      "intro": "Vier englische Redewendungen aus dem Arbeitsalltag, mit Bedeutung und Beispielsatz.",
+      "cards": [
+        { "front": "the ball is in your court", "back": "Du bist am Zug, du musst jetzt handeln oder entscheiden. I've sent you my offer, so the ball is in your court." },
+        { "front": "to cut corners", "back": "bei einer Arbeit unsauber vorgehen oder unzulässig abkürzen. The builder cut corners, and the wall cracked within a year." },
+        { "front": "to be on the same page", "back": "sich einig sein, dasselbe Verständnis haben. After the call, our team was finally on the same page about the schedule." },
+        { "front": "back to square one", "back": "wieder am Anfang stehen, nach einem Fehlschlag oder einer Sackgasse. The test failed, so we're back to square one." },
+        { "front": "Woher stammt \"the ball is in your court\"?", "back": "Aus dem Tennis: Wer den Ball in seinem Feld hat, ist am Zug." },
+        { "front": "Woher stammt wohl \"back to square one\"?", "back": "Vermutlich aus dem Brettspiel Schlangen und Leitern." },
+        { "front": "Welche deutsche Wendung passt zu \"the ball is in your court\"?", "back": "am Zug sein" },
+        { "front": "Welche ähnlichen Wendungen gibt es zu \"on the same page\"?", "back": "on board und to see eye to eye" }
+      ]
+    },
+    "en": {
+      "title": "English Idioms 2: the ball is in your court and more",
+      "intro": "Four English idioms from everyday work, with meaning and an example sentence.",
+      "cards": [
+        { "front": "the ball is in your court", "back": "It's your turn to act or decide. I've sent you my offer, so the ball is in your court." },
+        { "front": "to cut corners", "back": "to do a job sloppily or take improper shortcuts. The builder cut corners, and the wall cracked within a year." },
+        { "front": "to be on the same page", "back": "to be in agreement and share the same understanding. After the call, our team was finally on the same page about the schedule." },
+        { "front": "back to square one", "back": "back at the start after a failure or dead end. The test failed, so we're back to square one." },
+        { "front": "Where does \"the ball is in your court\" come from?", "back": "From tennis: whoever has the ball in their court is the one to play." },
+        { "front": "Where does \"back to square one\" probably come from?", "back": "Probably from the board game snakes and ladders." },
+        { "front": "Which German phrase matches \"the ball is in your court\"?", "back": "am Zug sein" },
+        { "front": "Which similar phrases exist for \"on the same page\"?", "back": "on board and to see eye to eye" }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wiktionary-ball-in-your-court", "title": "Wiktionary: the ball is in your court", "url": "https://en.wiktionary.org/wiki/the_ball_is_in_your_court", "accessed": "2026-10-03" },
+    { "id": "wiktionary-cut-corners", "title": "Wiktionary: cut corners", "url": "https://en.wiktionary.org/wiki/cut_corners", "accessed": "2026-10-03" },
+    { "id": "wiktionary-on-the-same-page", "title": "Wiktionary: on the same page", "url": "https://en.wiktionary.org/wiki/on_the_same_page", "accessed": "2026-10-03" },
+    { "id": "wiktionary-back-to-square-one", "title": "Wiktionary: back to square one", "url": "https://en.wiktionary.org/wiki/back_to_square_one", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}
