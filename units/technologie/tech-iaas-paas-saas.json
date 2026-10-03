@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "tech-iaas-paas-saas",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "nist", "iaas", "paas", "saas"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "IaaS, PaaS, SaaS nach NIST",
+      "intro": "Die drei Cloud-Servicemodelle unterscheiden sich darin, was der Kunde selbst steuert und was der Anbieter übernimmt.",
+      "facts": [
+        {
+          "text": "Die NIST-Definition von Cloud Computing (SP 800-145, 2011) unterscheidet drei Servicemodelle: Software as a Service (SaaS), Platform as a Service (PaaS) und Infrastructure as a Service (IaaS).",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "SaaS: Der Kunde nutzt Anwendungen des Anbieters, z. B. über einen Webbrowser wie bei webbasierter E-Mail. Infrastruktur und Anwendungsfunktionen verwaltet er nicht, nur begrenzte Nutzereinstellungen.",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "PaaS: Der Kunde bringt eigene oder erworbene Anwendungen auf die Cloud, gebaut mit Sprachen und Werkzeugen, die der Anbieter unterstützt. Er steuert die Anwendungen, nicht Server, Netzwerk oder Betriebssystem.",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "IaaS: Der Kunde erhält Rechenleistung, Speicher und Netzwerk und kann beliebige Software betreiben, auch Betriebssysteme. Er steuert Betriebssysteme, Speicher und Anwendungen, nicht die Infrastruktur darunter.",
+          "source_ids": ["nist-800-145"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Bei welchem Servicemodell installiert der Kunde sein eigenes Betriebssystem?",
+          "options": ["SaaS", "PaaS", "IaaS", "Keinem der drei"],
+          "answer_index": 2,
+          "explanation": "Nur bei IaaS steuert der Kunde laut NIST die Betriebssysteme; bei PaaS und SaaS liegen sie beim Anbieter."
+        },
+        {
+          "question": "Welchem Modell ordnet NIST webbasierte E-Mail als Zugriffsbeispiel zu?",
+          "options": ["IaaS", "PaaS", "SaaS", "Hybrid Cloud"],
+          "answer_index": 2,
+          "explanation": "SaaS-Anwendungen sind über einen Webbrowser nutzbar, etwa webbasierte E-Mail."
+        },
+        {
+          "question": "Was steuert der Kunde bei PaaS?",
+          "options": [
+            "Die bereitgestellten Anwendungen",
+            "Die Server",
+            "Das Netzwerk des Anbieters",
+            "Das Betriebssystem der Server"
+          ],
+          "answer_index": 0,
+          "explanation": "Bei PaaS kontrolliert der Kunde seine Anwendungen und ggf. deren Umgebungskonfiguration, nicht die darunterliegende Infrastruktur."
+        }
+      ]
+    },
+    "en": {
+      "title": "IaaS, PaaS, SaaS according to NIST",
+      "intro": "The three cloud service models differ in what the customer controls and what the provider takes care of.",
+      "facts": [
+        {
+          "text": "The NIST definition of cloud computing (SP 800-145, 2011) distinguishes three service models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS).",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "SaaS: The customer uses the provider's applications, e.g. through a web browser as with web-based email. They manage neither the infrastructure nor the application features, only limited user settings.",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "PaaS: The customer deploys their own or acquired applications built with languages and tools the provider supports. They control the applications, but not servers, network or operating system.",
+          "source_ids": ["nist-800-145"]
+        },
+        {
+          "text": "IaaS: The customer gets processing, storage and networking and can run arbitrary software, including operating systems. They control operating systems, storage and applications, but not the infrastructure beneath.",
+          "source_ids": ["nist-800-145"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which service model does the customer install their own operating system?",
+          "options": ["SaaS", "PaaS", "IaaS", "None of the three"],
+          "answer_index": 2,
+          "explanation": "Only with IaaS does the customer control operating systems according to NIST; with PaaS and SaaS they stay with the provider."
+        },
+        {
+          "question": "Which model does NIST link to web-based email as an access example?",
+          "options": ["IaaS", "PaaS", "SaaS", "Hybrid cloud"],
+          "answer_index": 2,
+          "explanation": "SaaS applications can be used through a web browser, such as web-based email."
+        },
+        {
+          "question": "What does the customer control with PaaS?",
+          "options": [
+            "The deployed applications",
+            "The servers",
+            "The provider's network",
+            "The servers' operating system"
+          ],
+          "answer_index": 0,
+          "explanation": "With PaaS the customer controls their applications and possibly the environment configuration, not the underlying infrastructure."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nist-800-145",
+      "title": "NIST SP 800-145: The NIST Definition of Cloud Computing",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

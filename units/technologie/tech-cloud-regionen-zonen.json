@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "id": "tech-cloud-regionen-zonen",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "region", "verfuegbarkeitszone", "ausfallsicherheit"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Cloud-Regionen und Verfügbarkeitszonen",
+      "intro": "Cloud-Anbieter gliedern ihre Rechenzentren in Regionen und Zonen, um Ausfälle abzufangen.",
+      "facts": [
+        {
+          "text": "Bei AWS sind Regionen getrennte geografische Gebiete und gegeneinander isoliert. Ressourcen werden nicht automatisch zwischen Regionen repliziert.",
+          "source_ids": ["aws-ec2-regions"]
+        },
+        {
+          "text": "Eine AWS-Availability-Zone besteht aus einem oder mehreren Rechenzentren mit eigener Strom- und Netzinfrastruktur. Ihr Code ist der Regionscode plus Buchstabe, z. B. us-east-1a.",
+          "source_ids": ["aws-ec2-regions", "aws-fault-isolation"]
+        },
+        {
+          "text": "AWS-Zonen einer Region liegen weit genug auseinander (bis etwa 100 km), um gemeinsame Ausfälle zu vermeiden, aber nah genug für synchrone Replikation mit einstelliger Millisekunden-Latenz.",
+          "source_ids": ["aws-fault-isolation"]
+        },
+        {
+          "text": "Google Cloud: Eine Region besteht aus drei oder mehr Zonen, und jede Zone ist eine einzelne Ausfalldomäne. Anwendungen sollten daher über mehrere Zonen verteilt werden.",
+          "source_ids": ["gcp-regions-zones"]
+        },
+        {
+          "text": "Azure unterscheidet zonenredundante Ressourcen (vom Dienst über Zonen verteilt) und zonale Ressourcen (in einer Zone, die du wählst). Beim Zonenausfall musst du zonale Ressourcen selbst umschalten.",
+          "source_ids": ["azure-availability-zones"]
+        },
+        {
+          "text": "Verfügbarkeitszonen schützen laut Microsoft nicht vor dem Ausfall einer ganzen Region. Für geschäftskritische Workloads empfiehlt Azure eine Kombination aus mehreren Zonen und mehreren Regionen.",
+          "source_ids": ["azure-availability-zones"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was bezeichnet der Code „us-east-1a“ bei AWS?",
+          "options": [
+            "Eine Availability Zone in der Region us-east-1",
+            "Eine eigene Region",
+            "Ein einzelnes Rechenzentrum in Ohio",
+            "Eine virtuelle Maschine"
+          ],
+          "answer_index": 0,
+          "explanation": "Der Zonencode setzt sich aus dem Regionscode (us-east-1) und einem Buchstaben (a) zusammen."
+        },
+        {
+          "question": "Wie viele Zonen umfasst eine Google-Cloud-Region mindestens?",
+          "options": ["Eine", "Zwei", "Drei", "Sechs"],
+          "answer_index": 2,
+          "explanation": "Laut Google besteht eine Region aus drei oder mehr Zonen."
+        },
+        {
+          "question": "Was schützt vor dem Ausfall einer kompletten Region?",
+          "options": [
+            "Verteilung über mehrere Regionen",
+            "Nur mehrere Zonen in derselben Region",
+            "Ein zweites Subnetz in derselben Zone",
+            "Eine größere Instanz"
+          ],
+          "answer_index": 0,
+          "explanation": "Zonen sind Teil einer Region und schützen nicht vor deren Totalausfall; dafür braucht es mehrere Regionen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Cloud regions and availability zones",
+      "intro": "Cloud providers organise their data centres into regions and zones to absorb failures.",
+      "facts": [
+        {
+          "text": "At AWS, regions are separate geographic areas and isolated from each other. Resources are not automatically replicated between regions.",
+          "source_ids": ["aws-ec2-regions"]
+        },
+        {
+          "text": "An AWS Availability Zone consists of one or more data centres with their own power and network infrastructure. Its code is the Region code plus a letter, e.g. us-east-1a.",
+          "source_ids": ["aws-ec2-regions", "aws-fault-isolation"]
+        },
+        {
+          "text": "AWS zones in a Region are far enough apart (up to about 100 km) to avoid shared failures, yet close enough for synchronous replication with single-digit millisecond latency.",
+          "source_ids": ["aws-fault-isolation"]
+        },
+        {
+          "text": "Google Cloud: A region consists of three or more zones, and each zone is a single failure domain. Applications should therefore be spread across multiple zones.",
+          "source_ids": ["gcp-regions-zones"]
+        },
+        {
+          "text": "Azure distinguishes zone-redundant resources (spread across zones by the service) from zonal resources (in one zone you choose). When a zone fails, you must fail over zonal resources yourself.",
+          "source_ids": ["azure-availability-zones"]
+        },
+        {
+          "text": "According to Microsoft, availability zones do not protect against the outage of a whole region. For mission-critical workloads, Azure suggests combining multiple zones and multiple regions.",
+          "source_ids": ["azure-availability-zones"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the code “us-east-1a” denote at AWS?",
+          "options": [
+            "An Availability Zone in the us-east-1 Region",
+            "A Region of its own",
+            "A single data centre in Ohio",
+            "A virtual machine"
+          ],
+          "answer_index": 0,
+          "explanation": "The zone code combines the Region code (us-east-1) with a letter (a)."
+        },
+        {
+          "question": "What is the minimum number of zones in a Google Cloud region?",
+          "options": ["One", "Two", "Three", "Six"],
+          "answer_index": 2,
+          "explanation": "According to Google, a region consists of three or more zones."
+        },
+        {
+          "question": "What protects against the outage of an entire region?",
+          "options": [
+            "Spreading across multiple regions",
+            "Only multiple zones in the same region",
+            "A second subnet in the same zone",
+            "A larger instance"
+          ],
+          "answer_index": 0,
+          "explanation": "Zones are part of a region and do not protect against its total outage; multiple regions are needed."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "aws-ec2-regions",
+      "title": "AWS Docs: Regions and Zones (Amazon EC2)",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "aws-fault-isolation",
+      "title": "AWS Fault Isolation Boundaries: Availability Zones",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "gcp-regions-zones",
+      "title": "Google Cloud: Geography and regions",
+      "url": "https://docs.cloud.google.com/docs/geography-and-regions",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "azure-availability-zones",
+      "title": "Microsoft Learn: What are Azure availability zones?",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

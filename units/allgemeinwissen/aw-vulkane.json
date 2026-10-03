@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "aw-vulkane",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["vulkane", "feuerring", "geologie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Vulkane und der Pazifische Feuerring",
+      "intro": "Vulkane unterscheiden sich in Form und Aufbau. Viele liegen entlang des Pazifischen Feuerrings.",
+      "facts": [
+        {
+          "text": "Die USGS unterscheidet vier Haupttypen von Vulkanen: Schlackenkegel, Schichtvulkane (Kompositvulkane), Schildvulkane und Lavadome.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Schildvulkane bestehen fast nur aus dünnflüssiger Basaltlava, die sich weit ausbreitet. So entstehen breite, flache Kuppen, etwa Mauna Loa und Kīlauea auf Hawaii.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Schichtvulkane sind steile, symmetrische Berge aus abwechselnden Lagen von Lava, Asche und Auswurfmaterial. Beispiele sind der Fuji in Japan und der Mount St. Helens in den USA.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Schlackenkegel sind der einfachste Haupttyp. Sie bauen sich aus Lavabrocken auf, die aus einem einzigen Schlot geschleudert werden und rundherum niederfallen.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Der Pazifische Feuerring ist rund 40.000 km lang und umgibt den Pazifik. Etwa 90 % der Erdbeben weltweit treten dort auf. Ursache sind Subduktionszonen.",
+          "source_ids": ["wikipedia-ring-of-fire", "usgs-ring-of-fire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Vulkantyp besteht aus dünnflüssiger Basaltlava und hat flache Hänge?",
+          "options": ["Schildvulkan", "Schichtvulkan", "Schlackenkegel", "Lavadom"],
+          "answer_index": 0,
+          "explanation": "Fließfähige Basaltlava breitet sich weit aus und bildet breite, sanft ansteigende Schildvulkane wie Mauna Loa."
+        },
+        {
+          "question": "Zu welchem Typ zählt der Fuji laut USGS?",
+          "options": ["Schildvulkan", "Schichtvulkan", "Schlackenkegel", "Lavadom"],
+          "answer_index": 1,
+          "explanation": "Der Fuji ist ein steiler, symmetrischer Schichtvulkan (Kompositvulkan)."
+        },
+        {
+          "question": "Was ist die Hauptursache der Aktivität im Pazifischen Feuerring?",
+          "options": [
+            "Subduktion von Platten",
+            "Meteoriteneinschläge",
+            "Gezeitenkräfte des Mondes",
+            "Verwitterung durch Wind"
+          ],
+          "answer_index": 0,
+          "explanation": "Rund um den Pazifik schiebt sich eine Platte unter eine andere (Subduktion); das erzeugt Erdbeben und Vulkane."
+        }
+      ]
+    },
+    "en": {
+      "title": "Volcanoes and the Pacific Ring of Fire",
+      "intro": "Volcanoes differ in shape and structure. Many lie along the Pacific Ring of Fire.",
+      "facts": [
+        {
+          "text": "The USGS distinguishes four main types of volcano: cinder cones, composite volcanoes (stratovolcanoes), shield volcanoes and lava domes.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Shield volcanoes are built almost entirely from fluid basalt lava that spreads widely. This creates broad, gently sloping domes, such as Mauna Loa and Kīlauea in Hawaii.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Composite volcanoes are steep, symmetrical mountains of alternating layers of lava, ash and ejected material. Examples are Mount Fuji in Japan and Mount St. Helens in the USA.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "Cinder cones are the simplest main type. They are built from lava fragments thrown out of a single vent that fall back around it.",
+          "source_ids": ["usgs-volcano-types"]
+        },
+        {
+          "text": "The Pacific Ring of Fire is about 40,000 km long and surrounds the Pacific. Around 90% of the world's earthquakes occur there. The cause is subduction zones.",
+          "source_ids": ["wikipedia-ring-of-fire", "usgs-ring-of-fire"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which volcano type is made of fluid basalt lava and has gentle slopes?",
+          "options": ["Shield volcano", "Composite volcano", "Cinder cone", "Lava dome"],
+          "answer_index": 0,
+          "explanation": "Runny basalt lava spreads far and forms broad, gently rising shield volcanoes like Mauna Loa."
+        },
+        {
+          "question": "Which type does the USGS list Mount Fuji under?",
+          "options": ["Shield volcano", "Composite volcano", "Cinder cone", "Lava dome"],
+          "answer_index": 1,
+          "explanation": "Mount Fuji is a steep, symmetrical composite volcano (stratovolcano)."
+        },
+        {
+          "question": "What is the main cause of activity in the Pacific Ring of Fire?",
+          "options": [
+            "Subduction of plates",
+            "Meteorite impacts",
+            "Tidal forces of the Moon",
+            "Weathering by wind"
+          ],
+          "answer_index": 0,
+          "explanation": "Around the Pacific one plate slides beneath another (subduction); this causes earthquakes and volcanoes."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "usgs-volcano-types",
+      "title": "USGS: Volcanoes – Principal types of volcanoes",
+      "url": "https://pubs.usgs.gov/gip/volc/types.html",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "usgs-ring-of-fire",
+      "title": "USGS: What is the Ring of Fire?",
+      "url": "https://www.usgs.gov/faqs/what-ring-fire",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wikipedia-ring-of-fire",
+      "title": "Wikipedia: Ring of Fire",
+      "url": "https://en.wikipedia.org/wiki/Ring_of_Fire",
+      "license": "CC-BY-SA-4.0",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
