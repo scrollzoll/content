@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "tech-nis2",
+  "topic": "technologie/sicherheit",
+  "tags": ["nis2", "eu-recht", "cybersicherheit", "compliance"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "NIS-2: Wen die EU-Richtlinie betrifft und was sie verlangt",
+      "intro": "Die NIS-2-Richtlinie (EU) 2022/2555 soll die Cybersicherheit in der EU stärken. Sie legt fest, wer betroffen ist, welche Maßnahmen nötig sind und wie schnell Vorfälle zu melden sind.",
+      "facts": [
+        { "text": "NIS-2 löste die erste NIS-Richtlinie ab. Die Mitgliedstaaten mussten sie bis zum 17. Oktober 2024 in nationales Recht umsetzen; die alte Richtlinie wurde am 18. Oktober 2024 aufgehoben.", "source_ids": ["wikipedia-nis2-en", "ec-nis2"] },
+        { "text": "Betroffen sind mittlere und große Einrichtungen aus den in Anhang I und II genannten Sektoren, etwa Energie, Verkehr, Gesundheit oder digitale Infrastruktur. Manche Anbieter, z. B. von DNS-Diensten, fallen unabhängig von der Größe darunter.", "source_ids": ["nis2-art2", "ec-nis2"] },
+        { "text": "Man unterscheidet „besonders wichtige“ und „wichtige“ Einrichtungen. Große Einrichtungen aus Anhang I zählen zu den besonders wichtigen, ebenso einige Sondergruppen wie DNS-Anbieter. Erfasste Einrichtungen, die nicht besonders wichtig sind, gelten als wichtig.", "source_ids": ["nis2-art3"] },
+        { "text": "Artikel 21 verlangt mindestens zehn Maßnahmenbereiche, darunter Risikoanalyse, Umgang mit Sicherheitsvorfällen, Business Continuity (z. B. Backups), Lieferkettensicherheit und Multi-Faktor-Authentifizierung.", "source_ids": ["nis2-art21"] },
+        { "text": "Erhebliche Sicherheitsvorfälle sind in drei Stufen zu melden: Frühwarnung binnen 24 Stunden, Meldung binnen 72 Stunden und Abschlussbericht spätestens einen Monat nach der Meldung.", "source_ids": ["nis2-art23"] },
+        { "text": "Als Höchstgrenze für Bußgelder gelten bei besonders wichtigen Einrichtungen mindestens 10 Mio. € oder 2 % des weltweiten Jahresumsatzes, bei wichtigen Einrichtungen 7 Mio. € oder 1,4 %; maßgeblich ist der höhere Wert.", "source_ids": ["nis2-art34"] }
+      ],
+      "quiz": [
+        {
+          "question": "Innerhalb welcher Frist muss laut NIS-2 die Frühwarnung zu einem erheblichen Vorfall erfolgen?",
+          "options": ["6 Stunden", "24 Stunden", "72 Stunden", "7 Tage"],
+          "answer_index": 1,
+          "explanation": "Die Frühwarnung ist unverzüglich, spätestens binnen 24 Stunden nach Kenntnis fällig. Nach 72 Stunden folgt die Vorfallmeldung."
+        },
+        {
+          "question": "Welche Höchstgrenze gilt für Bußgelder bei besonders wichtigen Einrichtungen?",
+          "options": ["5 Mio. € oder 1 %", "7 Mio. € oder 1,4 %", "10 Mio. € oder 2 %", "20 Mio. € oder 4 %"],
+          "answer_index": 2,
+          "explanation": "Besonders wichtige Einrichtungen: 10 Mio. € oder 2 % des Jahresumsatzes (der höhere Wert). 7 Mio. € und 1,4 % gelten für wichtige Einrichtungen."
+        },
+        {
+          "question": "Welche dieser Einrichtungen zählen typischerweise zu den „besonders wichtigen“?",
+          "options": ["Jedes Unternehmen mit mehr als zehn Beschäftigten", "Große Einrichtungen aus den Sektoren des Anhangs I", "Nur staatliche Behörden", "Nur Betreiber von Kraftwerken"],
+          "answer_index": 1,
+          "explanation": "Große Einrichtungen aus Anhang-I-Sektoren sind besonders wichtig; andere erfasste Einrichtungen gelten als wichtig."
+        }
+      ]
+    },
+    "en": {
+      "title": "NIS2: Who the EU Directive Covers and What It Requires",
+      "intro": "The NIS2 Directive (EU) 2022/2555 aims to strengthen cybersecurity in the EU. It defines who is covered, which measures are required and how fast incidents must be reported.",
+      "facts": [
+        { "text": "NIS2 replaced the first NIS Directive. Member States had to transpose it into national law by 17 October 2024; the old directive was repealed on 18 October 2024.", "source_ids": ["wikipedia-nis2-en", "ec-nis2"] },
+        { "text": "It covers medium-sized and large entities in the sectors listed in Annexes I and II, such as energy, transport, health or digital infrastructure. Some providers, e.g. of DNS services, are covered regardless of size.", "source_ids": ["nis2-art2", "ec-nis2"] },
+        { "text": "The directive distinguishes essential and important entities. Large entities in Annex I are essential, as are some special groups such as DNS providers. Covered entities that are not essential count as important.", "source_ids": ["nis2-art3"] },
+        { "text": "Article 21 requires at least ten areas of measures, including risk analysis, incident handling, business continuity (e.g. backups), supply chain security and multi-factor authentication.", "source_ids": ["nis2-art21"] },
+        { "text": "Significant incidents must be reported in three steps: an early warning within 24 hours, a notification within 72 hours and a final report no later than one month after the notification.", "source_ids": ["nis2-art23"] },
+        { "text": "The maximum fine is at least EUR 10 million or 2% of worldwide annual turnover for essential entities, and EUR 7 million or 1.4% for important entities; the higher amount applies.", "source_ids": ["nis2-art34"] }
+      ],
+      "quiz": [
+        {
+          "question": "Within what time limit must the early warning of a significant incident be sent under NIS2?",
+          "options": ["6 hours", "24 hours", "72 hours", "7 days"],
+          "answer_index": 1,
+          "explanation": "The early warning is due without undue delay and within 24 hours of becoming aware. The incident notification follows within 72 hours."
+        },
+        {
+          "question": "What is the maximum fine for essential entities?",
+          "options": ["EUR 5 million or 1%", "EUR 7 million or 1.4%", "EUR 10 million or 2%", "EUR 20 million or 4%"],
+          "answer_index": 2,
+          "explanation": "Essential entities: EUR 10 million or 2% of annual turnover (whichever is higher). EUR 7 million and 1.4% apply to important entities."
+        },
+        {
+          "question": "Which of these entities typically count as essential entities?",
+          "options": ["Every company with more than ten employees", "Large entities in the Annex I sectors", "Only government agencies", "Only power plant operators"],
+          "answer_index": 1,
+          "explanation": "Large entities in Annex I sectors are essential; other covered entities are important."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-nis2-en", "title": "Wikipedia: NIS2 Directive", "url": "https://en.wikipedia.org/wiki/NIS2_Directive", "accessed": "2026-10-03" },
+    { "id": "ec-nis2", "title": "Europäische Kommission: NIS2 Directive", "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive", "accessed": "2026-10-03" },
+    { "id": "nis2-art2", "title": "NIS 2 Directive, Article 2: Scope", "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_2.html", "accessed": "2026-10-03" },
+    { "id": "nis2-art3", "title": "NIS 2 Directive, Article 3: Essential and important entities", "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_3.html", "accessed": "2026-10-03" },
+    { "id": "nis2-art21", "title": "NIS 2 Directive, Article 21: Cybersecurity risk-management measures", "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_21.html", "accessed": "2026-10-03" },
+    { "id": "nis2-art23", "title": "NIS 2 Directive, Article 23: Reporting obligations", "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_23.html", "accessed": "2026-10-03" },
+    { "id": "nis2-art34", "title": "NIS 2 Directive, Article 34: General conditions for imposing administrative fines", "url": "https://www.nis-2-directive.com/NIS_2_Directive_Article_34.html", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

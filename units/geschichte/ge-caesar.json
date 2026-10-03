@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "ge-caesar",
+  "topic": "geschichte/antike",
+  "tags": ["rom", "caesar", "antike", "roemische-republik"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Julius Caesar: Aufstieg und Ermordung 44 v. Chr.",
+      "intro": "Vom Konsul über den Eroberer Galliens bis zum Diktator auf Lebenszeit: Caesars Weg endete an den Iden des März 44 v. Chr.",
+      "facts": [
+        { "text": "60 v. Chr. verbündete sich Caesar informell mit Pompeius und Crassus (Erstes Triumvirat). 59 v. Chr. war er Konsul.", "source_ids": ["wikipedia-caesar", "worldhistory-caesar"] },
+        { "text": "Ab 58 v. Chr. eroberte Caesar Gallien. Die Feldzüge brachten ihm Reichtum, die Treue seiner Soldaten und wachsende Macht.", "source_ids": ["wikipedia-caesar", "worldhistory-caesar"] },
+        { "text": "Im Januar 49 v. Chr. überschritt Caesar mit seinen Truppen den Rubikon, obwohl der Senat die Auflösung seines Heeres verlangt hatte. Das löste einen Bürgerkrieg aus.", "source_ids": ["wikipedia-rubicon", "worldhistory-caesar"] },
+        { "text": "Nach dem Sieg im Bürgerkrieg wurde Caesar Diktator. Anfang 44 v. Chr. erhielt er die Diktatur auf Lebenszeit, was viele Senatoren als Schritt zum Königtum fürchteten.", "source_ids": ["wikipedia-caesar", "wikipedia-assassination"] },
+        { "text": "Am 15. März 44 v. Chr. (den Iden des März) wurde Caesar in der Curia des Pompeius ermordet, von rund 60 Verschwörern, angeführt von Brutus und Cassius. Er erlitt etwa 23 Stichwunden.", "source_ids": ["wikipedia-assassination", "wikipedia-caesar"] }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr überschritt Caesar den Rubikon?",
+          "options": ["59 v. Chr.", "49 v. Chr.", "44 v. Chr.", "31 v. Chr."],
+          "answer_index": 1,
+          "explanation": "Im Januar 49 v. Chr. zog Caesar mit seinem Heer nach Italien und löste damit den Bürgerkrieg aus."
+        },
+        {
+          "question": "Wie viele Stichwunden erlitt Caesar bei seiner Ermordung?",
+          "options": ["3", "12", "23", "60"],
+          "answer_index": 2,
+          "explanation": "Es waren 23 Stichwunden; nur eine davon war tödlich. Rund 60 Verschwörer waren an der Tat beteiligt."
+        },
+        {
+          "question": "Wer gehörte zu den Anführern der Verschwörung?",
+          "options": ["Pompeius und Crassus", "Brutus und Cassius", "Cicero und Sulla", "Octavian und Antonius"],
+          "answer_index": 1,
+          "explanation": "Marcus Junius Brutus und Gaius Cassius Longinus führten die Verschwörer an."
+        }
+      ]
+    },
+    "en": {
+      "title": "Julius Caesar: Rise and Assassination in 44 BC",
+      "intro": "From consul to conqueror of Gaul to dictator for life: Caesar's path ended on the Ides of March, 44 BC.",
+      "facts": [
+        { "text": "In 60 BC Caesar formed an informal alliance with Pompey and Crassus (the First Triumvirate). In 59 BC he served as consul.", "source_ids": ["wikipedia-caesar", "worldhistory-caesar"] },
+        { "text": "From 58 BC Caesar conquered Gaul. The campaigns brought him wealth, the loyalty of his soldiers and growing power.", "source_ids": ["wikipedia-caesar", "worldhistory-caesar"] },
+        { "text": "In January 49 BC Caesar crossed the Rubicon with his troops although the Senate had demanded that he disband his army. This started a civil war.", "source_ids": ["wikipedia-rubicon", "worldhistory-caesar"] },
+        { "text": "After winning the civil war Caesar became dictator. In early 44 BC he was named dictator for life, which many senators feared was a step toward kingship.", "source_ids": ["wikipedia-caesar", "wikipedia-assassination"] },
+        { "text": "On 15 March 44 BC (the Ides of March) Caesar was killed in the Curia of Pompey by about 60 conspirators, led by Brutus and Cassius. He suffered about 23 stab wounds.", "source_ids": ["wikipedia-assassination", "wikipedia-caesar"] }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Caesar cross the Rubicon?",
+          "options": ["59 BC", "49 BC", "44 BC", "31 BC"],
+          "answer_index": 1,
+          "explanation": "In January 49 BC Caesar led his army into Italy, which started the civil war."
+        },
+        {
+          "question": "How many stab wounds did Caesar suffer in the assassination?",
+          "options": ["3", "12", "23", "60"],
+          "answer_index": 2,
+          "explanation": "There were 23 stab wounds, only one of them fatal. About 60 conspirators took part."
+        },
+        {
+          "question": "Who was among the leaders of the conspiracy?",
+          "options": ["Pompey and Crassus", "Brutus and Cassius", "Cicero and Sulla", "Octavian and Antony"],
+          "answer_index": 1,
+          "explanation": "Marcus Junius Brutus and Gaius Cassius Longinus led the conspirators."
+        }
+      ]
+    }
+  },
+  "sources": [
+    { "id": "wikipedia-caesar", "title": "Wikipedia: Julius Caesar", "url": "https://en.wikipedia.org/wiki/Julius_Caesar", "accessed": "2026-10-03" },
+    { "id": "wikipedia-assassination", "title": "Wikipedia: Assassination of Julius Caesar", "url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar", "accessed": "2026-10-03" },
+    { "id": "wikipedia-rubicon", "title": "Wikipedia: Crossing the Rubicon", "url": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon", "accessed": "2026-10-03" },
+    { "id": "worldhistory-caesar", "title": "World History Encyclopedia: Julius Caesar", "url": "https://www.worldhistory.org/Julius_Caesar/", "accessed": "2026-10-03" }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": { "created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03" }
+}

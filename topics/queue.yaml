@@ -17,16 +17,6 @@ queue:
     hint: "IPv6-Adresstypen: Link-Local, Global Unicast, Multicast, Loopback"
     format: flashcards
     priority: 2
-  - id: tech-nis2
-    topic: technologie/sicherheit
-    hint: "NIS-2-Richtlinie der EU: wen sie betrifft und was sie verlangt"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ende-zu-ende
-    topic: technologie/sicherheit
-    hint: "Ende-zu-Ende-Verschlüsselung vs. Transportverschlüsselung"
-    format: facts_quiz
-    priority: 1
   - id: tech-least-privilege
     topic: technologie/sicherheit
     hint: "Prinzip der minimalen Rechte (Least Privilege) und warum es wirkt"
@@ -287,16 +277,6 @@ queue:
     hint: "5G: Frequenzbereiche, Latenz und was es von LTE unterscheidet"
     format: facts_quiz
     priority: 3
-  - id: sprachen-en-meetings
-    topic: sprachen/englisch
-    hint: "Redewendungen in Meetings: Meinung äußern, widersprechen, zusammenfassen"
-    format: flashcards
-    priority: 1
-  - id: sprachen-en-idioms-1
-    topic: sprachen/englisch
-    hint: "Englische Redewendungen: piece of cake, break the ice, hit the nail on the head, under the weather"
-    format: flashcards
-    priority: 1
   - id: sprachen-en-idioms-2
     topic: sprachen/englisch
     hint: "Englische Redewendungen: the ball is in your court, cut corners, on the same page, back to square one"
@@ -1162,11 +1142,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-laengen-breitengrade
-    topic: allgemeinwissen/geografie
-    hint: "Längen- und Breitengrade, Äquator und Nullmeridian"
-    format: facts_quiz
-    priority: 1
   - id: aw-plattentektonik
     topic: allgemeinwissen/geografie
     hint: "Plattentektonik: wie Kontinente wandern und Erdbeben entstehen"
@@ -1782,11 +1757,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-caesar
-    topic: geschichte/antike
-    hint: "Julius Caesar: Aufstieg und Ermordung 44 v. Chr."
-    format: facts_quiz
-    priority: 1
   - id: ge-roemisches-kaiserreich
     topic: geschichte/antike
     hint: "Das Römische Kaiserreich: Augustus bis zur Teilung"
