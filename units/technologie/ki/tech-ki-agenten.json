@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "tech-ki-agenten",
+  "topic": "technologie/ki",
+  "tags": ["agenten", "llm", "werkzeuge", "ki"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "KI-Agenten: Werkzeuge, Planung und Schleifen",
+      "intro": "Agenten steuern ihren Ablauf selbst, nutzen Werkzeuge und prüfen ihren Fortschritt an Rückmeldungen aus der Umgebung.",
+      "facts": [
+        {
+          "text": "Anthropic nennt Systeme Workflows, wenn Sprachmodelle und Werkzeuge über vorab festgelegte Codepfade gesteuert werden. Bei Agenten lenkt das Modell Ablauf und Werkzeugnutzung dagegen selbst.",
+          "source_ids": ["anthropic-agents"]
+        },
+        {
+          "text": "Beim Werkzeugaufruf entscheidet das Modell anhand der Anfrage und der Werkzeugbeschreibung, ob es ein Werkzeug braucht. Bei Client-Werkzeugen führt die Anwendung den Aufruf aus.",
+          "source_ids": ["claude-tool-use"]
+        },
+        {
+          "text": "Bei Client-Werkzeugen ist der Ablauf ein Kreislauf: Das Modell fordert einen Aufruf an, die Anwendung führt ihn aus und schickt das Ergebnis zurück, worauf das Modell weiterarbeitet.",
+          "source_ids": ["claude-tool-use"]
+        },
+        {
+          "text": "Agenten arbeiten in Schleifen aus Planen, Handeln und Rückmeldung. Bei jedem Schritt brauchen sie reale Ergebnisse aus der Umgebung, etwa Werkzeugresultate oder Codeausführung.",
+          "source_ids": ["anthropic-agents"]
+        },
+        {
+          "text": "Anthropic rät, in das Design der Werkzeuge ebenso viel Mühe zu stecken wie in Mensch-Computer-Schnittstellen: mit klarer Dokumentation, Beispielen und verständlichen Parametern.",
+          "source_ids": ["anthropic-agents"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was unterscheidet laut Anthropic einen Agenten von einem Workflow?",
+          "options": ["Der Agent läuft immer lokal.", "Das Modell lenkt Ablauf und Werkzeugnutzung selbst.", "Der Agent nutzt keine Werkzeuge.", "Der Agent hat immer mehr Parameter."],
+          "answer_index": 1,
+          "explanation": "Workflows folgen vorab festgelegten Codepfaden, Agenten bestimmen ihren Weg dynamisch selbst."
+        },
+        {
+          "question": "Wer führt bei einem Client-Werkzeug den Aufruf tatsächlich aus?",
+          "options": ["Das Sprachmodell selbst", "Die Anwendung des Entwicklers", "Der Nutzer von Hand", "Immer ein Suchmaschinenanbieter"],
+          "answer_index": 1,
+          "explanation": "Das Modell liefert nur den strukturierten Aufruf; die Anwendung führt ihn aus und gibt das Ergebnis zurück."
+        },
+        {
+          "question": "Wozu braucht ein Agent in jedem Schritt Rückmeldung aus der Umgebung?",
+          "options": ["Um seinen Fortschritt zu beurteilen", "Um Tokens zu sparen", "Um den Nutzer zu ersetzen", "Um das Training zu wiederholen"],
+          "answer_index": 0,
+          "explanation": "Werkzeugergebnisse oder Testläufe zeigen, ob der Agent auf Kurs ist und wie er weitermachen sollte."
+        }
+      ]
+    },
+    "en": {
+      "title": "AI Agents: Tools, Planning and Loops",
+      "intro": "Agents steer their own process, use tools and check their progress against feedback from the environment.",
+      "facts": [
+        {
+          "text": "Anthropic calls systems workflows when language models and tools are orchestrated through predefined code paths. With agents, the model itself directs the process and its tool use.",
+          "source_ids": ["anthropic-agents"]
+        },
+        {
+          "text": "In tool use, the model decides from the request and the tool description whether it needs a tool. For client tools, the application executes the call.",
+          "source_ids": ["claude-tool-use"]
+        },
+        {
+          "text": "For client tools, the process is a round trip: the model requests a call, the application runs it and sends back the result, and the model carries on from there.",
+          "source_ids": ["claude-tool-use"]
+        },
+        {
+          "text": "Agents work in loops of planning, acting and feedback. At each step they need real results from the environment, such as tool outputs or code execution.",
+          "source_ids": ["anthropic-agents"]
+        },
+        {
+          "text": "Anthropic advises putting as much effort into tool design as into human-computer interfaces: clear documentation, examples and understandable parameters.",
+          "source_ids": ["anthropic-agents"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "According to Anthropic, what distinguishes an agent from a workflow?",
+          "options": ["The agent always runs locally.", "The model directs the process and tool use itself.", "The agent uses no tools.", "The agent always has more parameters."],
+          "answer_index": 1,
+          "explanation": "Workflows follow predefined code paths, whereas agents dynamically decide their own route."
+        },
+        {
+          "question": "Who actually executes the call for a client tool?",
+          "options": ["The language model itself", "The developer's application", "The user by hand", "Always a search engine provider"],
+          "answer_index": 1,
+          "explanation": "The model only returns the structured call; the application runs it and returns the result."
+        },
+        {
+          "question": "Why does an agent need feedback from the environment at every step?",
+          "options": ["To assess its progress", "To save tokens", "To replace the user", "To repeat its training"],
+          "answer_index": 0,
+          "explanation": "Tool results or test runs show whether the agent is on track and how to continue."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "anthropic-agents",
+      "title": "Building effective agents (Anthropic)",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "claude-tool-use",
+      "title": "Tool use with Claude (Claude Docs)",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

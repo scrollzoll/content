@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "tech-mcp",
+  "topic": "technologie/ki",
+  "tags": ["mcp", "protokoll", "werkzeuge", "ki"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Model Context Protocol (MCP): Werkzeuge für KI anbinden",
+      "intro": "MCP ist ein offener Standard, über den KI-Anwendungen auf Daten, Werkzeuge und Workflows zugreifen.",
+      "facts": [
+        {
+          "text": "MCP ist ein quelloffener Standard, der KI-Anwendungen mit externen Systemen verbindet, etwa mit Dateien, Datenbanken, Suchmaschinen oder vorbereiteten Prompts.",
+          "source_ids": ["mcp-intro"]
+        },
+        {
+          "text": "Die offizielle Analogie: MCP ist wie ein USB-C-Anschluss für KI-Anwendungen, ein einheitlicher Weg, sie mit externen Systemen zu verbinden.",
+          "source_ids": ["mcp-intro"]
+        },
+        {
+          "text": "Die Kommunikation nutzt JSON-RPC-2.0-Nachrichten zwischen drei Rollen: Hosts (die KI-Anwendung), Clients (Verbinder im Host) und Servern, die Kontext und Funktionen bereitstellen.",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "Server können drei Arten von Funktionen anbieten: Resources (Daten und Kontext), Prompts (vorgefertigte Nachrichten und Abläufe) und Tools (Funktionen, die das Modell ausführt).",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "MCP ließ sich vom Language Server Protocol inspirieren, das die Unterstützung von Programmiersprachen in Entwicklungswerkzeugen vereinheitlicht.",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "Sicherheit: Hosts müssen vor jedem Tool-Aufruf die ausdrückliche Zustimmung der Nutzer einholen. Beschreibungen von Tools gelten als nicht vertrauenswürdig, solange der Server nicht vertrauenswürdig ist.",
+          "source_ids": ["mcp-spec"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Nachrichtenformat verwendet MCP?",
+          "options": ["JSON-RPC 2.0", "SMTP", "FTP", "SOAP über E-Mail"],
+          "answer_index": 0,
+          "explanation": "Die Spezifikation basiert auf JSON-RPC-2.0-Nachrichten."
+        },
+        {
+          "question": "Welche Funktion bieten MCP-Server an, damit das Modell Aktionen ausführen kann?",
+          "options": ["Hosts", "Tools", "Elicitation", "Beacons"],
+          "answer_index": 1,
+          "explanation": "Tools sind Funktionen, die das Modell ausführen kann. Resources liefern Kontext, Prompts liefern Vorlagen."
+        },
+        {
+          "question": "Womit vergleicht die offizielle Einführung MCP?",
+          "options": ["Mit einer Brieftaube", "Mit einem USB-C-Anschluss", "Mit einem Zahnrad", "Mit einem Telefonbuch"],
+          "answer_index": 1,
+          "explanation": "Wie USB-C Geräte einheitlich verbindet, verbindet MCP KI-Anwendungen einheitlich mit externen Systemen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Model Context Protocol (MCP): Connecting Tools to AI",
+      "intro": "MCP is an open standard through which AI applications access data, tools and workflows.",
+      "facts": [
+        {
+          "text": "MCP is an open-source standard that connects AI applications to external systems, such as files, databases, search engines or prepared prompts.",
+          "source_ids": ["mcp-intro"]
+        },
+        {
+          "text": "The official analogy: MCP is like a USB-C port for AI applications, one uniform way to connect them to external systems.",
+          "source_ids": ["mcp-intro"]
+        },
+        {
+          "text": "Communication uses JSON-RPC 2.0 messages between three roles: hosts (the AI application), clients (connectors inside the host) and servers that provide context and capabilities.",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "Servers can offer three kinds of features: resources (data and context), prompts (templated messages and workflows) and tools (functions the model executes).",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "MCP took inspiration from the Language Server Protocol, which standardizes support for programming languages across development tools.",
+          "source_ids": ["mcp-spec"]
+        },
+        {
+          "text": "Security: hosts must obtain explicit user consent before invoking any tool. Tool descriptions are to be treated as untrusted unless they come from a trusted server.",
+          "source_ids": ["mcp-spec"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which message format does MCP use?",
+          "options": ["JSON-RPC 2.0", "SMTP", "FTP", "SOAP over email"],
+          "answer_index": 0,
+          "explanation": "The specification is based on JSON-RPC 2.0 messages."
+        },
+        {
+          "question": "Which feature do MCP servers offer so the model can perform actions?",
+          "options": ["Hosts", "Tools", "Elicitation", "Beacons"],
+          "answer_index": 1,
+          "explanation": "Tools are functions the model can execute. Resources supply context, and prompts supply templates."
+        },
+        {
+          "question": "What does the official introduction compare MCP to?",
+          "options": ["A carrier pigeon", "A USB-C port", "A gear wheel", "A phone book"],
+          "answer_index": 1,
+          "explanation": "Just as USB-C connects devices uniformly, MCP connects AI applications uniformly to external systems."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "mcp-intro",
+      "title": "What is the Model Context Protocol (MCP)?",
+      "url": "https://modelcontextprotocol.io/introduction",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "mcp-spec",
+      "title": "Model Context Protocol Specification",
+      "url": "https://modelcontextprotocol.io/specification/latest",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

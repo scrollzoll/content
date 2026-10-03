@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "tech-prompting-grundlagen",
+  "topic": "technologie/ki",
+  "tags": ["prompting", "llm", "few-shot", "ki"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Prompting: Grundregeln für gute Anweisungen",
+      "intro": "Gute Prompts sind klar, liefern Kontext, zeigen Beispiele und sagen, wie die Antwort aussehen soll.",
+      "facts": [
+        {
+          "text": "Wer erklärt, warum eine Anweisung wichtig ist, hilft dem Modell, das Ziel zu verstehen. Die Antworten werden dadurch gezielter.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "Beispiele im Prompt gehören zu den verlässlichsten Mitteln, um Format, Ton und Struktur der Antwort zu steuern (Few-Shot-Prompting).",
+          "source_ids": ["claude-prompting", "wiki-prompt-engineering"]
+        },
+        {
+          "text": "Als Faustregel gelten 3 bis 5 Beispiele. Man kann sie außerdem auf Relevanz und Vielfalt prüfen lassen.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "Beim Format hilft es, positiv zu sagen, was die Antwort sein soll, statt nur zu verbieten, was sie nicht sein soll.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "Modelle reagieren empfindlich auf Details: Schon die Reihenfolge der Beispiele oder kleine Formulierungsänderungen können das Ergebnis spürbar verändern.",
+          "source_ids": ["wiki-prompt-engineering"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Beispiele empfiehlt die Faustregel für Few-Shot-Prompts?",
+          "options": ["Genau 1", "3 bis 5", "20 bis 30", "Mindestens 100"],
+          "answer_index": 1,
+          "explanation": "Die Dokumentation nennt 3 bis 5 Beispiele als guten Richtwert für die Qualität der Ergebnisse."
+        },
+        {
+          "question": "Welche Anweisung folgt dem Rat, positiv zu formulieren?",
+          "options": ["Schreibe keine Aufzählungen.", "Bitte nicht zu lang.", "Antworte in zusammenhängendem Fließtext."],
+          "answer_index": 2,
+          "explanation": "Sie sagt, was gewünscht ist, statt nur zu verbieten, was nicht gewünscht ist."
+        },
+        {
+          "question": "Warum sollte ein Prompt den Grund für eine Anweisung nennen?",
+          "options": ["Das Modell versteht das Ziel besser und antwortet gezielter.", "Das Modell antwortet dadurch schneller.", "Das Modell darf dadurch mehr Text lesen."],
+          "answer_index": 0,
+          "explanation": "Kontext und Motivation helfen dem Modell, die Absicht hinter der Aufgabe zu erfassen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Prompting: Core Rules for Good Instructions",
+      "intro": "Good prompts are clear, provide context, show examples and say what the answer should look like.",
+      "facts": [
+        {
+          "text": "Explaining why an instruction matters helps the model understand your goal. The answers become more targeted as a result.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "Examples in a prompt are among the most reliable ways to steer the format, tone and structure of an answer (few-shot prompting).",
+          "source_ids": ["claude-prompting", "wiki-prompt-engineering"]
+        },
+        {
+          "text": "A rule of thumb is 3 to 5 examples. You can also have them checked for relevance and diversity.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "For format, it helps to state positively what the answer should be instead of only forbidding what it should not be.",
+          "source_ids": ["claude-prompting"]
+        },
+        {
+          "text": "Models are sensitive to details: even the order of examples or small changes in wording can noticeably change the result.",
+          "source_ids": ["wiki-prompt-engineering"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many examples does the rule of thumb recommend for few-shot prompts?",
+          "options": ["Exactly 1", "3 to 5", "20 to 30", "At least 100"],
+          "answer_index": 1,
+          "explanation": "The documentation names 3 to 5 examples as a good guideline for result quality."
+        },
+        {
+          "question": "Which instruction follows the advice to phrase things positively?",
+          "options": ["Don't write bullet lists.", "Please not too long.", "Answer in continuous prose."],
+          "answer_index": 2,
+          "explanation": "It says what is wanted instead of only forbidding what is not wanted."
+        },
+        {
+          "question": "Why should a prompt state the reason behind an instruction?",
+          "options": ["The model understands the goal better and answers more precisely.", "The model answers faster.", "The model is allowed to read more text."],
+          "answer_index": 0,
+          "explanation": "Context and motivation help the model grasp the intent behind the task."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "claude-prompting",
+      "title": "Prompting best practices (Claude Docs)",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-prompt-engineering",
+      "title": "Prompt engineering (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

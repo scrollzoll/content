@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-artensterben",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["massenaussterben", "erdgeschichte", "evolution"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Massenaussterben in der Erdgeschichte",
+      "intro": "Fünfmal verschwand in der Erdgeschichte ein Großteil aller Arten, die sogenannten Big Five.",
+      "facts": [
+        {
+          "text": "Als „Big Five“ bezeichnet man fünf große Massenaussterben: Ordovizium, Devon, Perm–Trias, Trias–Jura und Kreide–Paläogen.",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "Das Massenaussterben im späten Ordovizium (vor etwa 445 Millionen Jahren) vernichtete rund 85 % der Arten.",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "An der Grenze von Perm zu Trias (vor etwa 252 Millionen Jahren) starben rund 81 % der Meeresarten und etwa 70 % der Landwirbeltierarten. Es heißt „Great Dying“.",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "Das Aussterben an der Kreide–Paläogen-Grenze vor etwa 66 Millionen Jahren kostete rund 75 % der Arten. Es gilt als Ende der Nichtvogel-Dinosaurier.",
+          "source_ids": ["wiki-extinction-event", "wiki-kpg"]
+        },
+        {
+          "text": "Das aktuelle Artensterben wird teils als sechstes Massenaussterben bezeichnet. Als Hauptursachen gelten menschliche Eingriffe wie Lebensraumzerstörung und Übernutzung.",
+          "source_ids": ["wiki-holocene-extinction"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Massenaussterben wird „Great Dying“ genannt?",
+          "options": ["Ordovizium", "Perm–Trias", "Trias–Jura", "Kreide–Paläogen"],
+          "answer_index": 1,
+          "explanation": "Beim Perm–Trias-Ereignis vor etwa 252 Millionen Jahren starben rund 81 % der Meeresarten."
+        },
+        {
+          "question": "Welches Massenaussterben ereignete sich vor etwa 445 Millionen Jahren?",
+          "options": ["Ordovizium", "Devon", "Perm–Trias", "Kreide–Paläogen"],
+          "answer_index": 0,
+          "explanation": "Im späten Ordovizium starben rund 85 % der Arten aus."
+        },
+        {
+          "question": "Welches Ereignis vor etwa 66 Millionen Jahren beendete die Nichtvogel-Dinosaurier?",
+          "options": ["Das Perm–Trias-Aussterben", "Das Kreide–Paläogen-Aussterben", "Das Devon-Aussterben", "Das Ordovizium-Aussterben"],
+          "answer_index": 1,
+          "explanation": "Das Kreide–Paläogen-Aussterben, verbunden mit einem Asteroideneinschlag, löschte rund 75 % der Arten aus."
+        }
+      ]
+    },
+    "en": {
+      "title": "Mass Extinctions in Earth's History",
+      "intro": "Five times in Earth's history a large share of all species vanished, the so-called Big Five.",
+      "facts": [
+        {
+          "text": "The \"Big Five\" are five major mass extinctions: Ordovician, Devonian, Permian–Triassic, Triassic–Jurassic and Cretaceous–Paleogene.",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "The mass extinction in the Late Ordovician (about 445 million years ago) wiped out around 85% of species.",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "At the Permian–Triassic boundary (about 252 million years ago), around 81% of marine species and about 70% of land vertebrate species died. It is called the \"Great Dying\".",
+          "source_ids": ["wiki-extinction-event"]
+        },
+        {
+          "text": "The Cretaceous–Paleogene extinction about 66 million years ago cost around 75% of species. It marks the end of the non-avian dinosaurs.",
+          "source_ids": ["wiki-extinction-event", "wiki-kpg"]
+        },
+        {
+          "text": "The current extinction is sometimes called the sixth mass extinction. Human activities such as habitat destruction and overexploitation are seen as main causes.",
+          "source_ids": ["wiki-holocene-extinction"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which mass extinction is called the \"Great Dying\"?",
+          "options": ["Ordovician", "Permian–Triassic", "Triassic–Jurassic", "Cretaceous–Paleogene"],
+          "answer_index": 1,
+          "explanation": "In the Permian–Triassic event about 252 million years ago, around 81% of marine species died."
+        },
+        {
+          "question": "Which mass extinction happened about 445 million years ago?",
+          "options": ["Ordovician", "Devonian", "Permian–Triassic", "Cretaceous–Paleogene"],
+          "answer_index": 0,
+          "explanation": "In the Late Ordovician, around 85% of species died out."
+        },
+        {
+          "question": "Which event about 66 million years ago ended the non-avian dinosaurs?",
+          "options": ["The Permian–Triassic extinction", "The Cretaceous–Paleogene extinction", "The Devonian extinction", "The Ordovician extinction"],
+          "answer_index": 1,
+          "explanation": "The Cretaceous–Paleogene extinction, linked to an asteroid impact, wiped out around 75% of species."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-extinction-event",
+      "title": "Extinction event (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Extinction_event",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-kpg",
+      "title": "Cretaceous–Paleogene extinction event (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-holocene-extinction",
+      "title": "Holocene extinction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Holocene_extinction",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

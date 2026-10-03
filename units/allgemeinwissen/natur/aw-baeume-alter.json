@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "aw-baeume-alter",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["baeume", "rekorde", "natur"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Rekordbäume: die ältesten und der höchste der Welt",
+      "intro": "Bäume stellen Rekorde auf: Manche werden Jahrtausende alt, andere ragen über 100 Meter in den Himmel.",
+      "facts": [
+        {
+          "text": "Methuselah, eine Langlebige Grannenkiefer in Kalifornien, gilt mit rund 4.700 bis 4.900 Jahren (je nach Quelle) als ältester lebender Einzelbaum mit per Jahrringzählung bestimmtem Alter.",
+          "source_ids": ["wiki-oldest-trees", "wiki-pinus-longaeva"]
+        },
+        {
+          "text": "Der Baum Prometheus in Nevada, ebenfalls eine Grannenkiefer, wurde 1964 gefällt. Mit rund 4.961 Jahren führt ihn die Liste als ältesten je erfassten Einzelbaum.",
+          "source_ids": ["wiki-oldest-trees"]
+        },
+        {
+          "text": "Hyperion, ein Küstenmammutbaum im Redwood-Nationalpark in Kalifornien, ist mit 116,22 Metern der höchste bekannte lebende Baum.",
+          "source_ids": ["wiki-hyperion"]
+        },
+        {
+          "text": "Hyperion wurde 2006 entdeckt. Seit Juli 2022 ist sein Standort für Besucher gesperrt, weil Trittschäden den Lebensraum beschädigt hatten.",
+          "source_ids": ["wiki-hyperion"]
+        },
+        {
+          "text": "Pando in Utah ist eine Zitterpappel-Kolonie: Rund 47.000 genetisch identische Stämme hängen an einem Wurzelsystem. Das Alter ist umstritten, geschätzt werden mindestens 9.000 Jahre.",
+          "source_ids": ["wiki-pando", "wiki-oldest-trees"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Baum gilt als höchster bekannter lebender Baum?",
+          "options": ["Hyperion", "Methuselah", "Pando", "Prometheus"],
+          "answer_index": 0,
+          "explanation": "Hyperion ist ein Küstenmammutbaum mit 116,22 Metern Höhe."
+        },
+        {
+          "question": "Um welche Baumart handelt es sich bei Methuselah?",
+          "options": ["Langlebige Grannenkiefer", "Küstenmammutbaum", "Zitterpappel", "Riesenmammutbaum"],
+          "answer_index": 0,
+          "explanation": "Methuselah ist eine Langlebige Grannenkiefer (Pinus longaeva) in Kalifornien."
+        },
+        {
+          "question": "Was macht Pando in Utah besonders?",
+          "options": ["Er ist der höchste Baum der Erde.", "Rund 47.000 Stämme gehören zu einem einzigen Organismus.", "Er wurde 1964 gefällt.", "Er ist eine Eibe in Wales."],
+          "answer_index": 1,
+          "explanation": "Die Stämme sind genetisch identisch und über ein gemeinsames Wurzelsystem verbunden."
+        }
+      ]
+    },
+    "en": {
+      "title": "Record Trees: the Oldest and the Tallest in the World",
+      "intro": "Trees set records: some live for millennia, others tower more than 100 meters into the sky.",
+      "facts": [
+        {
+          "text": "Methuselah, a Great Basin bristlecone pine in California, is considered the oldest living single tree with a ring-count age, at roughly 4,700 to 4,900 years (depending on the source).",
+          "source_ids": ["wiki-oldest-trees", "wiki-pinus-longaeva"]
+        },
+        {
+          "text": "The tree Prometheus in Nevada, also a bristlecone pine, was felled in 1964. At about 4,961 years, the list ranks it as the oldest single tree ever recorded.",
+          "source_ids": ["wiki-oldest-trees"]
+        },
+        {
+          "text": "Hyperion, a coast redwood in Redwood National Park in California, is the tallest known living tree at 116.22 meters.",
+          "source_ids": ["wiki-hyperion"]
+        },
+        {
+          "text": "Hyperion was discovered in 2006. Since July 2022 its location has been closed to visitors because foot traffic had damaged the habitat.",
+          "source_ids": ["wiki-hyperion"]
+        },
+        {
+          "text": "Pando in Utah is a quaking aspen colony: about 47,000 genetically identical stems share one root system. Its age is disputed, with estimates of at least 9,000 years.",
+          "source_ids": ["wiki-pando", "wiki-oldest-trees"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which tree is considered the tallest known living tree?",
+          "options": ["Hyperion", "Methuselah", "Pando", "Prometheus"],
+          "answer_index": 0,
+          "explanation": "Hyperion is a coast redwood that stands 116.22 meters tall."
+        },
+        {
+          "question": "What species is Methuselah?",
+          "options": ["Great Basin bristlecone pine", "Coast redwood", "Quaking aspen", "Giant sequoia"],
+          "answer_index": 0,
+          "explanation": "Methuselah is a Great Basin bristlecone pine (Pinus longaeva) in California."
+        },
+        {
+          "question": "What makes Pando in Utah special?",
+          "options": ["It is the tallest tree on Earth.", "About 47,000 stems belong to a single organism.", "It was felled in 1964.", "It is a yew in Wales."],
+          "answer_index": 1,
+          "explanation": "The stems are genetically identical and connected by one shared root system."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-oldest-trees",
+      "title": "List of oldest trees (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/List_of_oldest_trees",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-pinus-longaeva",
+      "title": "Pinus longaeva (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pinus_longaeva",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-hyperion",
+      "title": "Hyperion (tree) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-pando",
+      "title": "Pando (tree) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pando_(tree)",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

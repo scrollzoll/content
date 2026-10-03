@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-dinosaurier",
+  "topic": "allgemeinwissen/natur",
+  "tags": ["dinosaurier", "erdzeitalter", "aussterben"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Dinosaurier: Erdzeitalter und Aussterben",
+      "intro": "Dinosaurier prägten das Erdmittelalter über viele Millionen Jahre. Ihre Linie lebt in den Vögeln weiter.",
+      "facts": [
+        {
+          "text": "Dinosaurier entstanden in der mittleren bis späten Trias, rund 20 Millionen Jahre nach dem Perm–Trias-Massenaussterben. Die ältesten umfangreichen Fossilien sind etwa 231 bis 233 Millionen Jahre alt.",
+          "source_ids": ["wiki-dinosaur"]
+        },
+        {
+          "text": "Das Erdmittelalter (Mesozoikum) gliedert sich in Trias, Jura und Kreide. Die Kreide endete vor etwa 66 Millionen Jahren.",
+          "source_ids": ["wiki-dinosaur", "wiki-kpg"]
+        },
+        {
+          "text": "Vögel sind die einzigen überlebenden Dinosaurier. Es gibt über 10.000 Vogelarten.",
+          "source_ids": ["wiki-dinosaur"]
+        },
+        {
+          "text": "Vor etwa 66 Millionen Jahren schlug ein 10 bis 15 km großer Asteroid im Gebiet der Yucatán-Halbinsel ein. Der Chicxulub-Krater misst etwa 180 km im Durchmesser.",
+          "source_ids": ["wiki-kpg"]
+        },
+        {
+          "text": "Dabei starben mindestens rund 75 % der Arten aus, darunter alle Nichtvogel-Dinosaurier. Eine Iridium-reiche Tonschicht gilt als Beleg, Vulkanausbrüche in Indien als möglicher Mitverursacher.",
+          "source_ids": ["wiki-kpg"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welche heutigen Tiere sind Dinosaurier?",
+          "options": ["Echsen", "Krokodile", "Vögel", "Säugetiere"],
+          "answer_index": 2,
+          "explanation": "Vögel stammen von Theropoden ab und sind die einzigen überlebenden Dinosaurier."
+        },
+        {
+          "question": "Wann starben die Nichtvogel-Dinosaurier aus?",
+          "options": ["Vor etwa 6,6 Millionen Jahren", "Vor etwa 66 Millionen Jahren", "Vor etwa 252 Millionen Jahren", "Vor etwa 660 Millionen Jahren"],
+          "answer_index": 1,
+          "explanation": "Das Kreide–Paläogen-Aussterben liegt rund 66 Millionen Jahre zurück."
+        },
+        {
+          "question": "Wo liegt der Chicxulub-Krater?",
+          "options": ["Bei der Yucatán-Halbinsel am Golf von Mexiko", "In der Sahara", "Im Himalaya", "Vor der Küste Norwegens"],
+          "answer_index": 0,
+          "explanation": "Der etwa 180 km große Krater liegt im Gebiet der Yucatán-Halbinsel."
+        }
+      ]
+    },
+    "en": {
+      "title": "Dinosaurs: Geological Eras and Extinction",
+      "intro": "Dinosaurs shaped the Mesozoic for many millions of years. Their lineage lives on in birds.",
+      "facts": [
+        {
+          "text": "Dinosaurs emerged in the Middle to Late Triassic, roughly 20 million years after the Permian–Triassic mass extinction. The oldest substantial fossils are about 231 to 233 million years old.",
+          "source_ids": ["wiki-dinosaur"]
+        },
+        {
+          "text": "The Mesozoic Era is divided into the Triassic, Jurassic and Cretaceous. The Cretaceous ended about 66 million years ago.",
+          "source_ids": ["wiki-dinosaur", "wiki-kpg"]
+        },
+        {
+          "text": "Birds are the only surviving dinosaurs. There are over 10,000 bird species.",
+          "source_ids": ["wiki-dinosaur"]
+        },
+        {
+          "text": "About 66 million years ago, an asteroid 10 to 15 km wide struck the area of the Yucatán Peninsula. The Chicxulub crater is about 180 km across.",
+          "source_ids": ["wiki-kpg"]
+        },
+        {
+          "text": "At least around 75% of species died out, including all non-avian dinosaurs. An iridium-rich clay layer serves as evidence, and volcanic eruptions in India as a possible contributor.",
+          "source_ids": ["wiki-kpg"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which animals alive today are dinosaurs?",
+          "options": ["Lizards", "Crocodiles", "Birds", "Mammals"],
+          "answer_index": 2,
+          "explanation": "Birds descend from theropods and are the only surviving dinosaurs."
+        },
+        {
+          "question": "When did the non-avian dinosaurs die out?",
+          "options": ["About 6.6 million years ago", "About 66 million years ago", "About 252 million years ago", "About 660 million years ago"],
+          "answer_index": 1,
+          "explanation": "The Cretaceous–Paleogene extinction was about 66 million years ago."
+        },
+        {
+          "question": "Where is the Chicxulub crater?",
+          "options": ["By the Yucatán Peninsula on the Gulf of Mexico", "In the Sahara", "In the Himalayas", "Off the coast of Norway"],
+          "answer_index": 0,
+          "explanation": "The roughly 180 km crater lies in the area of the Yucatán Peninsula."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-dinosaur",
+      "title": "Dinosaur (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dinosaur",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-kpg",
+      "title": "Cretaceous–Paleogene extinction event (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

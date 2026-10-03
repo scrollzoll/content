@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-reformation",
+  "topic": "geschichte/neuzeit",
+  "tags": ["reformation", "luther", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Martin Luther und die Reformation 1517",
+      "intro": "Aus einem akademischen Streit über den Ablass wurde eine Bewegung, die Europa religiös und politisch veränderte.",
+      "facts": [
+        {
+          "text": "Am 31. Oktober 1517 schickte Martin Luther, Theologieprofessor in Wittenberg, seine 95 Thesen gegen den Ablasshandel in einem Brief an Erzbischof Albrecht von Mainz.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "Ob Luther die Thesen an die Kirchentür schlug, ist umstritten: Melanchthon behauptete es, ein Wittenberger Originaldruck als Beleg ist aber nicht erhalten.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "Die lateinischen Thesen wurden rasch in Basel, Leipzig und Nürnberg gedruckt. Noch im selben Jahr entstand in Nürnberg auch eine deutsche Übersetzung.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "Auf dem Reichstag zu Worms weigerte sich Luther am 18. April 1521, zu widerrufen. Kaiser Karl V. erließ am 25. Mai das Wormser Edikt, das ihn als Ketzer verurteilte.",
+          "source_ids": ["wiki-diet-worms"]
+        },
+        {
+          "text": "Auf der Wartburg übersetzte Luther das Neue Testament in nur elf Wochen (1522). Die vollständige Bibel erschien 1534 und prägte die hochdeutsche Sprache mit.",
+          "source_ids": ["wiki-luther-bible"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr schickte Luther seine 95 Thesen an Erzbischof Albrecht von Mainz?",
+          "options": ["1492", "1517", "1521", "1534"],
+          "answer_index": 1,
+          "explanation": "Der Brief mit den Thesen datiert vom 31. Oktober 1517."
+        },
+        {
+          "question": "Wer erließ 1521 das Wormser Edikt gegen Luther?",
+          "options": ["Papst Leo X.", "Kaiser Karl V.", "Friedrich der Weise", "Philipp Melanchthon"],
+          "answer_index": 1,
+          "explanation": "Kaiser Karl V. erließ das Edikt am 25. Mai 1521."
+        },
+        {
+          "question": "Was übersetzte Luther 1522 auf der Wartburg in nur elf Wochen?",
+          "options": ["Das Neue Testament", "Die ganze Bibel", "Die 95 Thesen", "Das Augsburger Bekenntnis"],
+          "answer_index": 0,
+          "explanation": "Das „Septembertestament“ erschien 1522, die ganze Bibel erst 1534."
+        }
+      ]
+    },
+    "en": {
+      "title": "Martin Luther and the Reformation of 1517",
+      "intro": "An academic dispute over indulgences grew into a movement that changed Europe religiously and politically.",
+      "facts": [
+        {
+          "text": "On 31 October 1517, Martin Luther, a theology professor in Wittenberg, sent his 95 Theses against the sale of indulgences in a letter to Archbishop Albert of Mainz.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "Whether Luther nailed the theses to the church door is disputed: Melanchthon claimed so, but no original Wittenberg printing survives as proof.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "The Latin theses were quickly printed in Basel, Leipzig and Nuremberg. Later that year a German translation was made in Nuremberg as well.",
+          "source_ids": ["wiki-95-theses"]
+        },
+        {
+          "text": "At the Diet of Worms on 18 April 1521, Luther refused to recant. On 25 May, Emperor Charles V issued the Edict of Worms condemning him as a heretic.",
+          "source_ids": ["wiki-diet-worms"]
+        },
+        {
+          "text": "At the Wartburg, Luther translated the New Testament in just eleven weeks (1522). The complete Bible appeared in 1534 and helped shape High German.",
+          "source_ids": ["wiki-luther-bible"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Luther send his 95 Theses to Archbishop Albert of Mainz?",
+          "options": ["1492", "1517", "1521", "1534"],
+          "answer_index": 1,
+          "explanation": "The letter with the theses is dated 31 October 1517."
+        },
+        {
+          "question": "Who issued the Edict of Worms against Luther in 1521?",
+          "options": ["Pope Leo X", "Emperor Charles V", "Frederick the Wise", "Philip Melanchthon"],
+          "answer_index": 1,
+          "explanation": "Emperor Charles V issued the edict on 25 May 1521."
+        },
+        {
+          "question": "What did Luther translate in just eleven weeks at the Wartburg in 1522?",
+          "options": ["The New Testament", "The whole Bible", "The 95 Theses", "The Augsburg Confession"],
+          "answer_index": 0,
+          "explanation": "The \"September Testament\" appeared in 1522, the full Bible only in 1534."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-95-theses",
+      "title": "Ninety-five Theses (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ninety-five_Theses",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-diet-worms",
+      "title": "Diet of Worms (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Diet_of_Worms",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-luther-bible",
+      "title": "Luther Bible (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Luther_Bible",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-kloester",
+  "topic": "geschichte/mittelalter",
+  "tags": ["kloester", "benediktiner", "handschriften", "mittelalter"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Klöster: Zentren des Wissens im Mittelalter",
+      "intro": "Im Mittelalter waren Klöster Orte, an denen Bücher entstanden, Regeln galten und Wissen weitergegeben wurde.",
+      "facts": [
+        {
+          "text": "Benedikt von Nursia gründete um 530 das Kloster Monte Cassino. Seine Regel mit 73 Kapiteln wurde eine der einflussreichsten Ordensregeln im Westen.",
+          "source_ids": ["wiki-benedict"]
+        },
+        {
+          "text": "Ein Scriptorium war eine Schreibstube, in der Mönche Handschriften kopierten und ausschmückten. Nicht jedes Kloster hatte dafür einen eigenen Raum.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "Kopiert wurden etwa die lateinische Bibel (Vulgata) und Schriften der Kirchenväter. Cassiodors Kloster Vivarium im 6. Jahrhundert sollte auch antike Texte bewahren.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "Monte Cassino wurde im Hochmittelalter zum größten Zentrum der Buchproduktion in Süditalien, mit einem Höhepunkt im 11. Jahrhundert.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "Das Kloster Cluny wurde 910 gegründet und ging als Ausgangspunkt einer Reform in die Geschichte ein. Seine dritte Kirche (ab 1088) war lange die größte Kirche Europas.",
+          "source_ids": ["wiki-cluny"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer gründete um 530 das Kloster Monte Cassino?",
+          "options": ["Karl der Große", "Benedikt von Nursia", "Cassiodor", "Martin Luther"],
+          "answer_index": 1,
+          "explanation": "Benedikt von Nursia gründete Monte Cassino um 530 und schrieb die einflussreiche Benediktsregel."
+        },
+        {
+          "question": "Was war ein Scriptorium?",
+          "options": ["Ein Weinkeller", "Eine Schreibstube für das Kopieren von Handschriften", "Ein Krankenhaus", "Ein Gästehaus für Pilger"],
+          "answer_index": 1,
+          "explanation": "Dort kopierten und verzierten Mönche Handschriften."
+        },
+        {
+          "question": "In welchem Jahr wurde das Kloster Cluny gegründet?",
+          "options": ["530", "910", "1088", "1562"],
+          "answer_index": 1,
+          "explanation": "Cluny entstand 910 und wurde Ausgangspunkt der cluniazensischen Reform."
+        }
+      ]
+    },
+    "en": {
+      "title": "Monasteries: Centers of Knowledge in the Middle Ages",
+      "intro": "In the Middle Ages, monasteries were places where books were made, rules applied and knowledge was passed on.",
+      "facts": [
+        {
+          "text": "Benedict of Nursia founded the monastery of Monte Cassino around 530. His Rule of 73 chapters became one of the most influential monastic rules in the West.",
+          "source_ids": ["wiki-benedict"]
+        },
+        {
+          "text": "A scriptorium was a writing room where monks copied and decorated manuscripts. Not every monastery had a dedicated room for it.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "Among the works copied were the Latin Bible (Vulgate) and writings of the Church Fathers. Cassiodorus's 6th-century monastery Vivarium was also meant to preserve ancient texts.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "In the High Middle Ages, Monte Cassino became the greatest center of book production in southern Italy, peaking in the 11th century.",
+          "source_ids": ["wiki-scriptorium"]
+        },
+        {
+          "text": "Cluny Abbey was founded in 910 and became the starting point of a reform movement. Its third church (from 1088) was long the largest church in Europe.",
+          "source_ids": ["wiki-cluny"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who founded the monastery of Monte Cassino around 530?",
+          "options": ["Charlemagne", "Benedict of Nursia", "Cassiodorus", "Martin Luther"],
+          "answer_index": 1,
+          "explanation": "Benedict of Nursia founded Monte Cassino around 530 and wrote the influential Rule of Saint Benedict."
+        },
+        {
+          "question": "What was a scriptorium?",
+          "options": ["A wine cellar", "A writing room for copying manuscripts", "A hospital", "A guesthouse for pilgrims"],
+          "answer_index": 1,
+          "explanation": "There, monks copied and decorated manuscripts."
+        },
+        {
+          "question": "In which year was Cluny Abbey founded?",
+          "options": ["530", "910", "1088", "1562"],
+          "answer_index": 1,
+          "explanation": "Cluny was founded in 910 and became the origin of the Cluniac reforms."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-benedict",
+      "title": "Benedict of Nursia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-scriptorium",
+      "title": "Scriptorium (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Scriptorium",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-cluny",
+      "title": "Cluny Abbey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}

@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-prompting-grundlagen
-    topic: technologie/ki
-    hint: "Grundregeln für gute Prompts: Kontext, Beispiele, Format"
-    format: facts_quiz
-    priority: 1
-  - id: tech-ki-agenten
-    topic: technologie/ki
-    hint: "Was KI-Agenten von Chatbots unterscheidet: Werkzeuge, Planung, Schleifen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-mcp
-    topic: technologie/ki
-    hint: "Model Context Protocol: offener Standard zur Anbindung von Werkzeugen an KI"
-    format: facts_quiz
-    priority: 1
-  - id: tech-eu-ai-act
-    topic: technologie/ki
-    hint: "EU AI Act: Risikoklassen und Zeitplan"
-    format: facts_quiz
-    priority: 1
   - id: tech-ml-arten
     topic: technologie/ki
     hint: "Überwachtes, unüberwachtes und bestärkendes Lernen"
@@ -1037,26 +1017,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-baeume-alter
-    topic: allgemeinwissen/natur
-    hint: "Die ältesten und höchsten Bäume der Welt"
-    format: facts_quiz
-    priority: 1
-  - id: aw-pilze
-    topic: allgemeinwissen/natur
-    hint: "Pilze: weder Pflanze noch Tier, Myzelnetzwerke"
-    format: facts_quiz
-    priority: 1
-  - id: aw-artensterben
-    topic: allgemeinwissen/natur
-    hint: "Massenaussterben in der Erdgeschichte"
-    format: facts_quiz
-    priority: 1
-  - id: aw-dinosaurier
-    topic: allgemeinwissen/natur
-    hint: "Dinosaurier: Erdzeitalter und Aussterben vor 66 Millionen Jahren"
-    format: facts_quiz
-    priority: 1
   - id: aw-evolution-darwin
     topic: allgemeinwissen/natur
     hint: "Evolution durch natürliche Selektion: Darwin und Wallace"
@@ -1547,26 +1507,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-mongolen
-    topic: geschichte/mittelalter
-    hint: "Das Mongolische Reich unter Dschingis Khan"
-    format: facts_quiz
-    priority: 1
-  - id: ge-kloester
-    topic: geschichte/mittelalter
-    hint: "Klöster als Zentren von Wissen im Mittelalter"
-    format: facts_quiz
-    priority: 1
-  - id: ge-kolumbus
-    topic: geschichte/neuzeit
-    hint: "Kolumbus 1492 und die Folgen für Amerika"
-    format: facts_quiz
-    priority: 1
-  - id: ge-reformation
-    topic: geschichte/neuzeit
-    hint: "Martin Luther und die Reformation 1517"
-    format: facts_quiz
-    priority: 1
   - id: ge-dreissigjaehriger-krieg
     topic: geschichte/neuzeit
     hint: "Der Dreißigjährige Krieg und der Westfälische Frieden"

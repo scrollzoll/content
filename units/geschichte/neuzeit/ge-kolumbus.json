@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-kolumbus",
+  "topic": "geschichte/neuzeit",
+  "tags": ["kolumbus", "entdeckungen", "amerika", "neuzeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 110,
+  "locales": {
+    "de": {
+      "title": "Kolumbus 1492 und die Folgen für Amerika",
+      "intro": "Die Reise von 1492 verband Europa und Amerika dauerhaft und hatte tiefgreifende Folgen.",
+      "facts": [
+        {
+          "text": "Kolumbus brach am 3. August 1492 von Palos auf und erreichte am 12. Oktober eine Insel, die er San Salvador nannte (einheimisch: Guanahani).",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "Die Flotte bestand aus drei Schiffen: der Santa María als Flaggschiff sowie den kleineren Karavellen Pinta und Niña. Die Reise erfolgte im Namen des spanischen Königspaars.",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "Insgesamt unternahm Kolumbus zwischen 1492 und 1504 vier Atlantikfahrten.",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "Als „Columbian Exchange“ bezeichnet man den Austausch von Pflanzen, Tieren und Krankheiten zwischen Alter und Neuer Welt. Der Begriff stammt von Alfred Crosby (1972).",
+          "source_ids": ["wiki-columbian-exchange"]
+        },
+        {
+          "text": "Mais und Kartoffeln kamen nach Europa, Pferde, Rinder und Weizen nach Amerika. Eingeschleppte Krankheiten wie Pocken ließen die indigene Bevölkerung binnen 100–150 Jahren nach Schätzungen um 80–95 % schrumpfen.",
+          "source_ids": ["wiki-columbian-exchange"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Schiff war das Flaggschiff der ersten Reise von 1492?",
+          "options": ["Pinta", "Niña", "Santa María", "Victoria"],
+          "answer_index": 2,
+          "explanation": "Die Santa María war das Flaggschiff, Pinta und Niña waren die kleineren Karavellen."
+        },
+        {
+          "question": "Wie viele Atlantikfahrten unternahm Kolumbus insgesamt?",
+          "options": ["Eine", "Zwei", "Vier", "Zehn"],
+          "answer_index": 2,
+          "explanation": "Zwischen 1492 und 1504 führte er vier Expeditionen."
+        },
+        {
+          "question": "Welche Nutzpflanze gelangte durch den Columbian Exchange von Amerika nach Europa?",
+          "options": ["Weizen", "Reis", "Kartoffel", "Zuckerrohr"],
+          "answer_index": 2,
+          "explanation": "Kartoffeln und Mais stammen aus Amerika, Weizen, Reis und Zuckerrohr kamen aus der Alten Welt."
+        }
+      ]
+    },
+    "en": {
+      "title": "Columbus in 1492 and the Consequences for the Americas",
+      "intro": "The 1492 voyage permanently linked Europe and the Americas and had far-reaching consequences.",
+      "facts": [
+        {
+          "text": "Columbus set out from Palos on 3 August 1492 and reached an island on 12 October that he named San Salvador (indigenous name: Guanahani).",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "The fleet had three ships: the Santa María as flagship plus the smaller caravels Pinta and Niña. The voyage was made in the name of the Spanish monarchs.",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "In total, Columbus made four Atlantic voyages between 1492 and 1504.",
+          "source_ids": ["wiki-columbus-voyages"]
+        },
+        {
+          "text": "The \"Columbian Exchange\" is the transfer of plants, animals and diseases between the Old and New Worlds. The term comes from Alfred Crosby (1972).",
+          "source_ids": ["wiki-columbian-exchange"]
+        },
+        {
+          "text": "Maize and potatoes went to Europe, horses, cattle and wheat to the Americas. Introduced diseases such as smallpox are estimated to have cut the Indigenous population by 80–95% within 100–150 years.",
+          "source_ids": ["wiki-columbian-exchange"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which ship was the flagship of the first voyage in 1492?",
+          "options": ["Pinta", "Niña", "Santa María", "Victoria"],
+          "answer_index": 2,
+          "explanation": "The Santa María was the flagship, while Pinta and Niña were the smaller caravels."
+        },
+        {
+          "question": "How many Atlantic voyages did Columbus make in total?",
+          "options": ["One", "Two", "Four", "Ten"],
+          "answer_index": 2,
+          "explanation": "Between 1492 and 1504 he led four expeditions."
+        },
+        {
+          "question": "Which crop reached Europe from the Americas through the Columbian Exchange?",
+          "options": ["Wheat", "Rice", "Potato", "Sugarcane"],
+          "answer_index": 2,
+          "explanation": "Potatoes and maize come from the Americas, while wheat, rice and sugarcane came from the Old World."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-columbus-voyages",
+      "title": "Voyages of Christopher Columbus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
+      "accessed": "2026-10-03"
+    },
+    {
+      "id": "wiki-columbian-exchange",
+      "title": "Columbian exchange (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Columbian_exchange",
+      "accessed": "2026-10-03"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-03"
+  }
+}
