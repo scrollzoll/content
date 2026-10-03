@@ -17,7 +17,7 @@ Verbindlich sind `schema/learning-unit.schema.json` und die Regeln in `CONTRIBUT
 
 ## Ablauf je Thema
 
-1. **Thema übernehmen:** `id`, `topic`, `format` und `hint` kommen aus der Aufgabe. Die `id` bleibt exakt so, der Dateiname ist `<id>.json`, der Ordner ist der erste Teil von `topic`.
+1. **Thema übernehmen:** `id`, `topic`, `format` und `hint` kommen aus der Aufgabe. Die `id` bleibt exakt so, der Dateiname ist `<id>.json`, der Ordner ist der erste Teil von `topic`. Der `hint` ist nur eine Richtung und ungeprüft: Übernimm Zahlen, Jahreszahlen und Namen daraus nur, wenn sie in einer geöffneten Quelle stehen. Widerspricht die Quelle dem `hint`, gilt die Quelle.
 2. **Recherchieren:** Finde 2–4 verlässliche Quellen und öffne sie mit WebFetch. Rangfolge: Standards und Primärquellen (RFC, NIST, ISO, Herstellerdokumentation, Wörterbücher wie Cambridge, Merriam-Webster, Duden, DWDS), danach Fachliteratur, Wikipedia nur ergänzend. Nutze nur Aussagen, die in einer geöffneten Quelle stehen.
 3. **Schreiben:** Erstelle die Einheit auf Deutsch und Englisch, gleich aufgebaut, in eigenen Worten, kurz und konkret:
    - `facts_quiz`: 3–6 Fakten (je ≤ 280 Zeichen, jeder mit `source_ids`), 2–4 Quizfragen mit genau einer richtigen Antwort und plausiblen falschen Optionen.
