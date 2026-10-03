@@ -22,26 +22,6 @@ queue:
     hint: "Security-Abkürzungen: SIEM, SOC, EDR, XDR, IAM, CASB, ZTNA"
     format: flashcards
     priority: 2
-  - id: tech-infrastructure-as-code
-    topic: technologie/cloud
-    hint: "Infrastructure as Code: Idee und Werkzeuge wie Terraform/OpenTofu"
-    format: facts_quiz
-    priority: 1
-  - id: tech-cloud-souveraenitaet
-    topic: technologie/cloud
-    hint: "Digitale Souveränität und Cloud: Datenstandort, CLOUD Act, EU-Initiativen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-vpc
-    topic: technologie/cloud
-    hint: "Virtual Private Cloud: Subnetze, Routing, Sicherheitsgruppen"
-    format: facts_quiz
-    priority: 1
-  - id: tech-autoscaling
-    topic: technologie/cloud
-    hint: "Horizontale vs. vertikale Skalierung und Autoscaling"
-    format: facts_quiz
-    priority: 1
   - id: tech-hochverfuegbarkeit
     topic: technologie/cloud
     hint: "Verfügbarkeit in Prozent und was 99,9 % pro Jahr an Ausfallzeit bedeutet"
@@ -1082,26 +1062,6 @@ queue:
     hint: "Deutsche Wörter schwer zu übersetzen: doch, eben, mal, halt"
     format: facts_quiz
     priority: 2
-  - id: aw-europa-hauptstaedte-2
-    topic: allgemeinwissen/geografie
-    hint: "Hauptstädte Europas Teil 2 (Ost- und Südeuropa)"
-    format: facts_quiz
-    priority: 1
-  - id: aw-kleinste-staaten
-    topic: allgemeinwissen/geografie
-    hint: "Die kleinsten Staaten der Welt: Vatikanstadt, Monaco, Nauru"
-    format: facts_quiz
-    priority: 1
-  - id: aw-groesste-staaten
-    topic: allgemeinwissen/geografie
-    hint: "Die flächengrößten Staaten der Welt"
-    format: facts_quiz
-    priority: 1
-  - id: aw-bevoelkerung-welt
-    topic: allgemeinwissen/geografie
-    hint: "Weltbevölkerung: Entwicklung und bevölkerungsreichste Länder"
-    format: facts_quiz
-    priority: 1
   - id: aw-gezeiten
     topic: allgemeinwissen/geografie
     hint: "Ebbe und Flut: Rolle von Mond und Sonne"
@@ -1667,26 +1627,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-pompeji
-    topic: geschichte/antike
-    hint: "Pompeji und der Ausbruch des Vesuvs 79 n. Chr."
-    format: facts_quiz
-    priority: 1
-  - id: ge-karl-der-grosse
-    topic: geschichte/mittelalter
-    hint: "Karl der Große: Kaiserkrönung 800"
-    format: facts_quiz
-    priority: 1
-  - id: ge-lehnswesen
-    topic: geschichte/mittelalter
-    hint: "Das Lehnswesen im Mittelalter"
-    format: facts_quiz
-    priority: 1
-  - id: ge-wikinger
-    topic: geschichte/mittelalter
-    hint: "Die Wikinger: Seefahrt, Handel, Entdeckungen"
-    format: facts_quiz
-    priority: 1
   - id: ge-kreuzzuege
     topic: geschichte/mittelalter
     hint: "Die Kreuzzüge: Ursachen und Verlauf (sachlich)"

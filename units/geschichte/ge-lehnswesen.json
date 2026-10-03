@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "ge-lehnswesen",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "lehnswesen", "feudalismus"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Das Lehnswesen im Mittelalter",
+      "intro": "Land gegen Treue und Dienst: Das Lehnswesen ordnete im Mittelalter Politik und Gesellschaft.",
+      "facts": [
+        {"text": "Beim Lehnswesen überließ ein Lehnsherr einem Vasallen ein Lehen (Land oder Rechte) im Gegenzug für Treue und Dienste. Das Verhältnis war gegenseitig.", "source_ids": ["wp-feudalism", "de-wp-lehnswesen"]},
+        {"text": "Der Vasall bekräftigte das Verhältnis durch eine feierliche Huldigung (homage) und einen Treueeid (fealty).", "source_ids": ["wp-feudalism"]},
+        {"text": "Hauptpflicht des Vasallen war der Kriegsdienst, dazu kam die Teilnahme am Hof des Herrn (Rat und Hilfe, auxilium et consilium). Der Herr schuldete Schutz.", "source_ids": ["wp-feudalism", "de-wp-lehnswesen"]},
+        {"text": "Im 8. Jahrhundert wurde die Landvergabe an Vasallen üblich. Karl Martell nutzte sie als Erster systematisch und in großem Maßstab.", "source_ids": ["wp-fief"]},
+        {"text": "Bis zur Mitte des 10. Jahrhunderts wurden Lehen großenteils erblich. Der älteste Sohn erbte, musste aber huldigen und eine Abgabe („Relief“) zahlen.", "source_ids": ["wp-fief"]},
+        {"text": "Historiker streiten über den Begriff: Susan Reynolds bezweifelt, dass es ein einheitliches Lehnssystem gab. Ein ausgebildetes Lehnswesen entstand wohl erst im 11. Jahrhundert, nicht überall gleich.", "source_ids": ["de-wp-lehnswesen", "wp-feudalism"]}
+      ],
+      "quiz": [
+        {"question": "Was ist ein Lehen?", "options": ["Von einem Lehnsherrn überlassenes Land oder Recht", "Eine Steuer an den König", "Ein Burgtyp", "Ein Ritterturnier"], "answer_index": 0, "explanation": "Ein Lehen ist Besitz oder Recht, das der Herr gegen Treue und Dienste an den Vasallen vergibt."},
+        {"question": "Was war die Hauptpflicht eines Vasallen?", "options": ["Kriegsdienst", "Getreideabgaben", "Pilgerfahrten", "Münzprägung"], "answer_index": 0, "explanation": "Vor allem schuldete der Vasall seinem Herrn Kriegsdienst."},
+        {"question": "Was geschah bis zur Mitte des 10. Jahrhunderts mit den meisten Lehen?", "options": ["Sie wurden weitgehend erblich", "Sie wurden abgeschafft", "Sie fielen stets an den König zurück", "Sie wurden meistens verkauft"], "answer_index": 0, "explanation": "Lehen wurden großenteils erblich; der älteste Sohn erbte gegen Huldigung und Abgabe."}
+      ]
+    },
+    "en": {
+      "title": "Feudalism in the Middle Ages",
+      "intro": "Land in exchange for loyalty and service: feudalism structured politics and society in the Middle Ages.",
+      "facts": [
+        {"text": "In feudalism a lord granted a vassal a fief (land or rights) in return for loyalty and service. The relationship was reciprocal.", "source_ids": ["wp-feudalism", "de-wp-lehnswesen"]},
+        {"text": "The vassal sealed the relationship through a formal ceremony of homage and an oath of fealty.", "source_ids": ["wp-feudalism"]},
+        {"text": "The vassal's main duty was military service, plus attending the lord's court (aid and counsel, auxilium et consilium). The lord owed protection.", "source_ids": ["wp-feudalism", "de-wp-lehnswesen"]},
+        {"text": "In the 8th century granting land to vassals became standard. Charles Martel was the first to use it systematically on a large scale.", "source_ids": ["wp-fief"]},
+        {"text": "By the middle of the 10th century fiefs had largely become hereditary. The eldest son inherited but had to do homage and pay a “relief”.", "source_ids": ["wp-fief"]},
+        {"text": "Historians debate the concept: Susan Reynolds doubts there was a uniform feudal system. A developed feudal order probably emerged only in the 11th century, and not the same everywhere.", "source_ids": ["de-wp-lehnswesen", "wp-feudalism"]}
+      ],
+      "quiz": [
+        {"question": "What is a fief?", "options": ["Land or rights granted by a lord", "A tax paid to the king", "A type of castle", "A knights' tournament"], "answer_index": 0, "explanation": "A fief is property or rights that the lord grants to the vassal in return for loyalty and service."},
+        {"question": "What was a vassal's main obligation?", "options": ["Military service", "Grain deliveries", "Pilgrimages", "Minting coins"], "answer_index": 0, "explanation": "Above all, the vassal owed his lord military service."},
+        {"question": "What happened to most fiefs by the middle of the 10th century?", "options": ["They had largely become hereditary", "They were abolished", "They always reverted to the king", "They were mostly sold"], "answer_index": 0, "explanation": "Fiefs largely became hereditary; the eldest son inherited against homage and payment."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-feudalism", "title": "Wikipedia: Feudalism", "url": "https://en.wikipedia.org/wiki/Feudalism", "accessed": "2026-10-03"},
+    {"id": "de-wp-lehnswesen", "title": "Wikipedia (de): Lehnswesen", "url": "https://de.wikipedia.org/wiki/Lehnswesen", "accessed": "2026-10-03"},
+    {"id": "wp-fief", "title": "Wikipedia: Fief", "url": "https://en.wikipedia.org/wiki/Fief", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

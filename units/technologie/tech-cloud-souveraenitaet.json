@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "tech-cloud-souveraenitaet",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "souveraenitaet", "cloud-act", "dsgvo", "gaia-x"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Digitale Souveränität in der Cloud",
+      "intro": "Wo Daten liegen, ist nur die halbe Antwort. Entscheidend ist auch, welches Recht für den Anbieter gilt.",
+      "facts": [
+        {"text": "Der US-amerikanische CLOUD Act von 2018 verpflichtet US-Anbieter, gespeicherte Daten auf richterliche Anordnung herauszugeben, egal ob die Server in den USA oder im Ausland stehen.", "source_ids": ["wp-cloud-act"]},
+        {"text": "Betroffen sind Anbieter mit Geschäft oder rechtlicher Präsenz in den USA. Gerichte können von Muttergesellschaften auch Daten ihrer Töchter verlangen.", "source_ids": ["wp-cloud-act"]},
+        {"text": "Anlass war der Streit um E-Mails, die Microsoft auf Servern in Irland speicherte. Das US-Gesetz von 1986 kannte die Cloud noch nicht.", "source_ids": ["wp-cloud-act"]},
+        {"text": "Der CLOUD Act erlaubt bilaterale Abkommen mit anderen Staaten für schnellere Datenanfragen, wenn die US-Regierung deren Datenschutz als ausreichend bescheinigt.", "source_ids": ["wp-cloud-act"]},
+        {"text": "Die DSGVO gilt seit 25. Mai 2018. Personenbezogene Daten dürfen nur unter Bedingungen aus dem EWR hinaus: Angemessenheitsbeschluss, verbindliche Unternehmensregeln oder Standardvertragsklauseln.", "source_ids": ["wp-gdpr"]},
+        {"text": "Gaia-X wurde 2019 von Deutschland und Frankreich angestoßen: ein föderiertes Rahmenwerk für Cloud- und Dateninfrastrukturen mit Interoperabilität und Datenkontrolle. Sitz ist Brüssel.", "source_ids": ["wp-gaia-x"]}
+      ],
+      "quiz": [
+        {"question": "In welchem Jahr wurde der US-amerikanische CLOUD Act verabschiedet?", "options": ["2014", "2016", "2018", "2020"], "answer_index": 2, "explanation": "Der CLOUD Act wurde 2018 unterzeichnet."},
+        {"question": "Was gilt laut CLOUD Act für Daten bei US-Anbietern auf Servern im Ausland?", "options": ["Der Anbieter muss sie auf Anordnung per Warrant herausgeben", "Sie sind ausdrücklich ausgenommen", "Sie dürfen nur mit Zustimmung des Standortlandes herausgegeben werden", "Der Act gilt nur für Server auf US-Boden"], "answer_index": 0, "explanation": "Der Act gilt unabhängig vom Serverstandort für Anbieter, die in den USA tätig sind oder dort rechtlich präsent sind."},
+        {"question": "Was ist Gaia-X?", "options": ["Ein föderiertes Rahmenwerk für europäische Cloud- und Dateninfrastrukturen", "Ein Rechenzentrum der EU-Kommission", "Ein Verschlüsselungsstandard", "Eine US-Cloud-Plattform"], "answer_index": 0, "explanation": "Gaia-X will Interoperabilität und Datenkontrolle in Europa ermöglichen; es ist ein Rahmenwerk, keine einzelne Cloud."}
+      ]
+    },
+    "en": {
+      "title": "Digital sovereignty in the cloud",
+      "intro": "Where data is stored is only half the answer. It also matters which laws apply to the provider.",
+      "facts": [
+        {"text": "The US CLOUD Act of 2018 requires US providers to hand over stored data when ordered by warrant, whether the servers are in the US or abroad.", "source_ids": ["wp-cloud-act"]},
+        {"text": "It covers providers that operate or have a legal presence in the US. Courts can require parent companies to produce data held by their subsidiaries.", "source_ids": ["wp-cloud-act"]},
+        {"text": "The trigger was the dispute over emails Microsoft stored on servers in Ireland. The 1986 US law predated cloud computing.", "source_ids": ["wp-cloud-act"]},
+        {"text": "The CLOUD Act allows bilateral agreements with other countries for faster data requests, provided the US government certifies their privacy protections as adequate.", "source_ids": ["wp-cloud-act"]},
+        {"text": "The GDPR has applied since 25 May 2018. Personal data may only leave the EEA under conditions: an adequacy decision, binding corporate rules or standard contractual clauses.", "source_ids": ["wp-gdpr"]},
+        {"text": "Gaia-X was initiated in 2019 by Germany and France: a federated framework for cloud and data infrastructures stressing interoperability and data control. It is based in Brussels.", "source_ids": ["wp-gaia-x"]}
+      ],
+      "quiz": [
+        {"question": "In which year was the US CLOUD Act enacted?", "options": ["2014", "2016", "2018", "2020"], "answer_index": 2, "explanation": "The CLOUD Act was signed in 2018."},
+        {"question": "According to the CLOUD Act, what applies to data held by US providers on servers abroad?", "options": ["The provider must hand it over when ordered by warrant", "It is expressly exempt", "It may only be disclosed with the consent of the host country", "The Act only covers servers on US soil"], "answer_index": 0, "explanation": "The Act applies regardless of server location to providers that operate or are legally present in the US."},
+        {"question": "What is Gaia-X?", "options": ["A federated framework for European cloud and data infrastructures", "A data center run by the European Commission", "An encryption standard", "A US cloud platform"], "answer_index": 0, "explanation": "Gaia-X aims at interoperability and data control in Europe; it is a framework, not a single cloud."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-cloud-act", "title": "Wikipedia: CLOUD Act", "url": "https://en.wikipedia.org/wiki/CLOUD_Act", "accessed": "2026-10-03"},
+    {"id": "wp-gdpr", "title": "Wikipedia: General Data Protection Regulation", "url": "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation", "accessed": "2026-10-03"},
+    {"id": "wp-gaia-x", "title": "Wikipedia: Gaia-X", "url": "https://en.wikipedia.org/wiki/Gaia-X", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

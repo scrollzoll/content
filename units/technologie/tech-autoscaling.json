@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "tech-autoscaling",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "skalierung", "autoscaling", "kubernetes", "aws"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Horizontale vs. vertikale Skalierung und Autoscaling",
+      "intro": "Mehr Last? Entweder mehr Instanzen (horizontal) oder größere Instanzen (vertikal). Autoscaling macht das automatisch.",
+      "facts": [
+        {"text": "Horizontale Skalierung ändert die Zahl der Replikate eines Workloads. Vertikale Skalierung ändert die Ressourcen (CPU, Speicher) der vorhandenen Replikate.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "In Kubernetes passt der HorizontalPodAutoscaler die Replikazahl anhand von Metriken wie CPU oder Speicher an.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "Der VerticalPodAutoscaler ist ein Zusatz, der nicht standardmäßig dabei ist. Er passt die Ressourcen der Container automatisch an.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "Ein Node Autoscaler fügt Cluster-Nodes hinzu oder entfernt sie. KEDA skaliert ereignisgesteuert, etwa nach der Länge einer Warteschlange.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "Bei AWS EC2 Auto Scaling bilden Instanzen eine Auto Scaling Group mit Minimum, Maximum und Wunschkapazität. Scaling Policies ändern die Zahl innerhalb dieser Grenzen.", "source_ids": ["aws-ec2-asg"]},
+        {"text": "EC2 Auto Scaling ersetzt defekte Instanzen nach Gesundheitschecks und verteilt die Instanzen gleichmäßig über mehrere Availability Zones.", "source_ids": ["aws-ec2-asg"]}
+      ],
+      "quiz": [
+        {"question": "Welche Skalierung erhöht die Anzahl der Replikate?", "options": ["Horizontale", "Vertikale", "Diagonale", "Keine von beiden"], "answer_index": 0, "explanation": "Horizontal bedeutet mehr (oder weniger) Replikate; vertikal bedeutet mehr Ressourcen pro Replikat."},
+        {"question": "Was garantiert das Minimum einer EC2 Auto Scaling Group?", "options": ["Die Gruppe wächst nie über diese Größe", "Jede Instanz hat mindestens eine CPU", "Die Gruppe fällt nie unter diese Größe", "Die Gruppe läuft in mindestens zwei Regionen"], "answer_index": 2, "explanation": "Das Minimum ist die Untergrenze der Gruppengröße; das Maximum ist die Obergrenze."},
+        {"question": "Was ändert der VerticalPodAutoscaler?", "options": ["Die Zahl der Nodes", "Die CPU- und Speicherressourcen vorhandener Replikate", "Die Zahl der Replikate", "Die Netzwerkregeln"], "answer_index": 1, "explanation": "Der VPA skaliert vertikal: Er passt Ressourcen der Container an, nicht deren Anzahl."}
+      ]
+    },
+    "en": {
+      "title": "Horizontal vs. vertical scaling and autoscaling",
+      "intro": "More load? Either more instances (horizontal) or bigger instances (vertical). Autoscaling does it automatically.",
+      "facts": [
+        {"text": "Horizontal scaling changes the number of replicas of a workload. Vertical scaling changes the resources (CPU, memory) of the existing replicas.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "In Kubernetes the HorizontalPodAutoscaler adjusts the replica count based on metrics such as CPU or memory.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "The VerticalPodAutoscaler is an add-on that is not included by default. It automatically adjusts the resources of containers.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "A node autoscaler adds or removes cluster nodes. KEDA scales based on events, such as the length of a queue.", "source_ids": ["k8s-autoscaling"]},
+        {"text": "In AWS EC2 Auto Scaling, instances form an Auto Scaling group with a minimum, a maximum and a desired capacity. Scaling policies change the count within those limits.", "source_ids": ["aws-ec2-asg"]},
+        {"text": "EC2 Auto Scaling replaces unhealthy instances based on health checks and balances instances evenly across several Availability Zones.", "source_ids": ["aws-ec2-asg"]}
+      ],
+      "quiz": [
+        {"question": "Which kind of scaling increases the number of replicas?", "options": ["Horizontal", "Vertical", "Diagonal", "Neither"], "answer_index": 0, "explanation": "Horizontal means more (or fewer) replicas; vertical means more resources per replica."},
+        {"question": "What does the minimum of an EC2 Auto Scaling group guarantee?", "options": ["The group never grows above this size", "Every instance has at least one CPU", "The group never goes below this size", "The group runs in at least two regions"], "answer_index": 2, "explanation": "The minimum is the lower bound of the group size; the maximum is the upper bound."},
+        {"question": "What does the VerticalPodAutoscaler change?", "options": ["The number of nodes", "The CPU and memory resources of existing replicas", "The number of replicas", "The network rules"], "answer_index": 1, "explanation": "The VPA scales vertically: it adjusts container resources, not their number."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "k8s-autoscaling", "title": "Kubernetes Documentation: Autoscaling Workloads", "url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/", "accessed": "2026-10-03"},
+    {"id": "aws-ec2-asg", "title": "AWS Docs: What is Amazon EC2 Auto Scaling?", "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

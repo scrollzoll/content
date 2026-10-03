@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "tech-vpc",
+  "topic": "technologie/cloud",
+  "tags": ["cloud", "netzwerk", "vpc", "aws"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 180,
+  "locales": {
+    "de": {
+      "title": "Virtual Private Cloud: Subnetze, Routing, Security Groups",
+      "intro": "Ein VPC ist dein eigenes, isoliertes Netz in der Cloud. Hier am Beispiel von Amazon VPC.",
+      "facts": [
+        {"text": "Ein VPC ist ein logisch isoliertes virtuelles Netz in der Cloud. Es ähnelt einem klassischen Netz im eigenen Rechenzentrum.", "source_ids": ["aws-vpc-what"]},
+        {"text": "Ein Subnetz ist ein IP-Adressbereich im VPC und muss komplett in einer Availability Zone liegen. Subnetze in mehreren Zonen schützen vor dem Ausfall einer Zone.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "Ein öffentliches Subnetz hat eine direkte Route zu einem Internet Gateway. Ein privates hat sie nicht und braucht ein NAT-Gerät, um ins Internet zu gelangen.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "Jedes Subnetz ist einer Routentabelle zugeordnet, die festlegt, wohin ausgehender Verkehr geleitet wird. Standardmäßig ist es die Hauptroutentabelle des VPC.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "Eine Security Group ist eine virtuelle Firewall für Ressourcen wie EC2-Instanzen. Sie ist zustandsbehaftet: Antworten auf erlaubte Anfragen kommen automatisch durch.", "source_ids": ["aws-vpc-sg"]},
+        {"text": "Netzwerk-ACLs erlauben oder verweigern Verkehr auf Subnetzebene. Die Standard-ACL erlaubt alles; meist genügen Security Groups, ACLs sind eine zusätzliche Schicht.", "source_ids": ["aws-vpc-subnets"]}
+      ],
+      "quiz": [
+        {"question": "Woran erkennt man ein öffentliches Subnetz?", "options": ["Es hat eine direkte Route zu einem Internet Gateway", "Es erstreckt sich über mehrere Availability Zones", "Es hat keine Routentabelle", "Es nutzt ausschließlich IPv6"], "answer_index": 0, "explanation": "Der Subnetztyp ergibt sich aus dem Routing: Öffentlich heißt direkte Route zum Internet Gateway."},
+        {"question": "Was bedeutet es, dass Security Groups „stateful“ sind?", "options": ["Antworten auf erlaubte Anfragen sind automatisch erlaubt", "Ihre Regeln gelten nur für ein Subnetz", "Jedes Paket wird einzeln gegen die Regeln geprüft", "Der Verkehr wird verschlüsselt"], "answer_index": 0, "explanation": "Zustandsbehaftet: Antwortverkehr zu einer erlaubten Verbindung braucht keine eigene Regel."},
+        {"question": "Über wie viele Availability Zones kann sich ein Subnetz erstrecken?", "options": ["Genau eine", "Zwei", "Alle einer Region", "Beliebig viele"], "answer_index": 0, "explanation": "Ein Subnetz muss vollständig in einer Zone liegen und kann sie nicht überspannen."}
+      ]
+    },
+    "en": {
+      "title": "Virtual Private Cloud: subnets, routing, security groups",
+      "intro": "A VPC is your own isolated network in the cloud. Here using Amazon VPC as the example.",
+      "facts": [
+        {"text": "A VPC is a logically isolated virtual network in the cloud. It closely resembles a traditional network in your own data center.", "source_ids": ["aws-vpc-what"]},
+        {"text": "A subnet is a range of IP addresses in the VPC and must reside entirely within one Availability Zone. Subnets in several zones protect against the failure of a single zone.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "A public subnet has a direct route to an internet gateway. A private subnet does not and needs a NAT device to reach the internet.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "Every subnet is associated with a route table that specifies where outbound traffic is directed. By default this is the VPC's main route table.", "source_ids": ["aws-vpc-subnets"]},
+        {"text": "A security group is a virtual firewall for resources such as EC2 instances. It is stateful: responses to allowed requests are let through automatically.", "source_ids": ["aws-vpc-sg"]},
+        {"text": "Network ACLs allow or deny traffic at the subnet level. The default ACL allows everything; security groups usually suffice, and ACLs add an extra layer.", "source_ids": ["aws-vpc-subnets"]}
+      ],
+      "quiz": [
+        {"question": "How do you recognize a public subnet?", "options": ["It has a direct route to an internet gateway", "It spans several Availability Zones", "It has no route table", "It uses IPv6 only"], "answer_index": 0, "explanation": "The subnet type results from routing: public means a direct route to an internet gateway."},
+        {"question": "What does it mean that security groups are “stateful”?", "options": ["Responses to allowed requests are automatically allowed", "Their rules only apply to one subnet", "Every packet is checked individually against the rules", "Traffic is encrypted"], "answer_index": 0, "explanation": "Stateful: return traffic for an allowed connection needs no rule of its own."},
+        {"question": "How many Availability Zones can a subnet span?", "options": ["Exactly one", "Two", "All in a region", "Any number"], "answer_index": 0, "explanation": "A subnet must reside entirely within one zone and cannot span zones."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "aws-vpc-what", "title": "AWS Docs: What is Amazon VPC?", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html", "accessed": "2026-10-03"},
+    {"id": "aws-vpc-subnets", "title": "AWS Docs: Subnets for your VPC", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html", "accessed": "2026-10-03"},
+    {"id": "aws-vpc-sg", "title": "AWS Docs: Control traffic using security groups", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

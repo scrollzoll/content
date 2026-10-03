@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "aw-bevoelkerung-welt",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "bevoelkerung", "demografie"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Weltbevölkerung: Entwicklung und größte Länder",
+      "intro": "Von einer auf acht Milliarden Menschen in gut 200 Jahren, und welche Länder die meisten Einwohner haben.",
+      "facts": [
+        {"text": "Die Weltbevölkerung erreichte 1804 eine Milliarde und 2022 acht Milliarden. Nach UN-Schätzung brauchte die Menschheit bis zur ersten Milliarde rund 300.000 Jahre, bis zur achten nur 218 weitere.", "source_ids": ["wp-world-pop"]},
+        {"text": "Laut UN wurde am 15. November 2022 die Marke von acht Milliarden Menschen erreicht.", "source_ids": ["un-population"]},
+        {"text": "Die jährliche Wachstumsrate lag 1965 bis 1970 mit 2,1 % am höchsten und fiel bis 2015 bis 2020 auf 1,1 %.", "source_ids": ["wp-world-pop"]},
+        {"text": "Indien hat 2023 China als bevölkerungsreichstes Land überholt. Beide haben über 1,4 Milliarden Einwohner.", "source_ids": ["wp-world-pop", "worldometer"]},
+        {"text": "Nach UN-Schätzungen für 2026 folgen auf Indien und China die USA (knapp 350 Mio.), Indonesien und Pakistan.", "source_ids": ["worldometer"]},
+        {"text": "Die UN erwartet den Höhepunkt der Weltbevölkerung bei etwa 10,3 Milliarden Menschen Mitte der 2080er Jahre, danach einen leichten Rückgang.", "source_ids": ["un-population"]}
+      ],
+      "quiz": [
+        {"question": "In welchem Jahr erreichte die Weltbevölkerung acht Milliarden?", "options": ["2018", "2020", "2022", "2024"], "answer_index": 2, "explanation": "Die UN nennt den 15. November 2022."},
+        {"question": "Welches Land ist seit 2023 das bevölkerungsreichste?", "options": ["China", "Indien", "USA", "Indonesien"], "answer_index": 1, "explanation": "Indien hat 2023 China überholt."},
+        {"question": "Was erwartet die UN für die Weltbevölkerung?", "options": ["Höhepunkt bei etwa 10,3 Mrd. in den 2080er Jahren", "Höhepunkt bei etwa 8,5 Mrd. um 2030", "Weiteres Wachstum auf 15 Mrd. bis 2200", "Rückgang auf 5 Mrd. bis 2050"], "answer_index": 0, "explanation": "Die UN erwartet den Gipfel bei etwa 10,3 Milliarden Menschen Mitte der 2080er Jahre."}
+      ]
+    },
+    "en": {
+      "title": "World population: growth and most populous countries",
+      "intro": "From one to eight billion people in just over 200 years, and which countries have the most inhabitants.",
+      "facts": [
+        {"text": "World population reached one billion in 1804 and eight billion in 2022. The UN estimates humanity needed about 300,000 years for the first billion and only 218 more for the eighth.", "source_ids": ["wp-world-pop"]},
+        {"text": "According to the UN, the mark of eight billion people was reached on 15 November 2022.", "source_ids": ["un-population"]},
+        {"text": "The annual growth rate peaked at 2.1% in 1965–1970 and fell to 1.1% in 2015–2020.", "source_ids": ["wp-world-pop"]},
+        {"text": "India overtook China as the most populous country in 2023. Both have more than 1.4 billion inhabitants.", "source_ids": ["wp-world-pop", "worldometer"]},
+        {"text": "According to UN estimates for 2026, India and China are followed by the USA (just under 350 million), Indonesia and Pakistan.", "source_ids": ["worldometer"]},
+        {"text": "The UN expects world population to peak at about 10.3 billion in the mid-2080s, followed by a slight decline.", "source_ids": ["un-population"]}
+      ],
+      "quiz": [
+        {"question": "In which year did world population reach eight billion?", "options": ["2018", "2020", "2022", "2024"], "answer_index": 2, "explanation": "The UN gives 15 November 2022."},
+        {"question": "Which country has been the most populous since 2023?", "options": ["China", "India", "USA", "Indonesia"], "answer_index": 1, "explanation": "India overtook China in 2023."},
+        {"question": "What does the UN expect for world population?", "options": ["A peak of about 10.3 billion in the 2080s", "A peak of about 8.5 billion around 2030", "Further growth to 15 billion by 2200", "A decline to 5 billion by 2050"], "answer_index": 0, "explanation": "The UN expects a peak of about 10.3 billion people in the mid-2080s."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-world-pop", "title": "Wikipedia: World population", "url": "https://en.wikipedia.org/wiki/World_population", "accessed": "2026-10-03"},
+    {"id": "un-population", "title": "United Nations: Population", "url": "https://www.un.org/en/global-issues/population", "accessed": "2026-10-03"},
+    {"id": "worldometer", "title": "Worldometer: Population by Country (UN estimates)", "url": "https://www.worldometers.info/world-population/population-by-country/", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

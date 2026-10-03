@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "aw-groesste-staaten",
+  "topic": "allgemeinwissen/geografie",
+  "tags": ["geografie", "staaten", "flaeche"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die flächengrößten Staaten der Welt",
+      "intro": "Von Russland bis Algerien: die zehn größten Länder nach Gesamtfläche.",
+      "facts": [
+        {"text": "Russland ist mit 17.098.246 km² der größte Staat der Erde und erstreckt sich über Europa und Asien.", "source_ids": ["wp-russia", "wp-area-list"]},
+        {"text": "Kanada ist mit 9.984.670 km² der zweitgrößte Staat. Nach reiner Landfläche liegt es nur auf Platz 4, weil es viele Süßwasserseen hat.", "source_ids": ["wp-canada"]},
+        {"text": "China (9.596.960 km²) und die USA (9.525.067 km²) liegen auf Platz 3 und 4. Der Abstand beträgt nur rund 72.000 km².", "source_ids": ["wp-area-list"]},
+        {"text": "Brasilien (8.510.346 km²) ist Nummer 5, Australien (7.741.220 km²) Nummer 6.", "source_ids": ["wp-area-list"]},
+        {"text": "Indien (3.287.263 km²) ist Nummer 7. Es folgen Argentinien, Kasachstan und Algerien auf den Plätzen 8 bis 10.", "source_ids": ["wp-area-list"]}
+      ],
+      "quiz": [
+        {"question": "Welches Land ist flächenmäßig das größte der Welt?", "options": ["Kanada", "China", "Russland", "USA"], "answer_index": 2, "explanation": "Russland hat mit 17,1 Mio. km² rund das 1,7-Fache der Fläche Kanadas."},
+        {"question": "Welches Land belegt nach Gesamtfläche Platz 2?", "options": ["China", "Kanada", "USA", "Brasilien"], "answer_index": 1, "explanation": "Kanada hat 9.984.670 km² Gesamtfläche."},
+        {"question": "Warum ist Kanada nach Landfläche nur Vierter, nach Gesamtfläche aber Zweiter?", "options": ["Es hat sehr viele Süßwasserseen, die zur Gesamtfläche zählen", "Die Arktis wird nicht mitgezählt", "Seine Küste ist besonders kurz", "Es hat nur wenige Einwohner"], "answer_index": 0, "explanation": "Die Gesamtfläche zählt Wasser mit, und Kanada hat die größte Süßwasserfläche aller Länder."}
+      ]
+    },
+    "en": {
+      "title": "The largest countries in the world by area",
+      "intro": "From Russia to Algeria: the ten largest countries by total area.",
+      "facts": [
+        {"text": "Russia, at 17,098,246 km², is the largest country in the world and spans Europe and Asia.", "source_ids": ["wp-russia", "wp-area-list"]},
+        {"text": "Canada, at 9,984,670 km², is the second-largest country. By land area alone it ranks only fourth because it has so many freshwater lakes.", "source_ids": ["wp-canada"]},
+        {"text": "China (9,596,960 km²) and the United States (9,525,067 km²) are ranked third and fourth. The gap is only about 72,000 km².", "source_ids": ["wp-area-list"]},
+        {"text": "Brazil (8,510,346 km²) is number 5 and Australia (7,741,220 km²) is number 6.", "source_ids": ["wp-area-list"]},
+        {"text": "India (3,287,263 km²) is number 7. Argentina, Kazakhstan and Algeria follow in places 8 to 10.", "source_ids": ["wp-area-list"]}
+      ],
+      "quiz": [
+        {"question": "Which country is the largest in the world by area?", "options": ["Canada", "China", "Russia", "USA"], "answer_index": 2, "explanation": "At 17.1 million km², Russia has about 1.7 times the area of Canada."},
+        {"question": "Which country ranks second by total area?", "options": ["China", "Canada", "USA", "Brazil"], "answer_index": 1, "explanation": "Canada has a total area of 9,984,670 km²."},
+        {"question": "Why is Canada only fourth by land area but second by total area?", "options": ["It has very many freshwater lakes that count toward total area", "The Arctic is not counted", "Its coastline is particularly short", "It has few inhabitants"], "answer_index": 0, "explanation": "Total area includes water, and Canada has the largest area of freshwater lakes of any country."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-area-list", "title": "Wikipedia: List of countries and dependencies by area", "url": "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area", "accessed": "2026-10-03"},
+    {"id": "wp-russia", "title": "Wikipedia: Russia", "url": "https://en.wikipedia.org/wiki/Russia", "accessed": "2026-10-03"},
+    {"id": "wp-canada", "title": "Wikipedia: Canada", "url": "https://en.wikipedia.org/wiki/Canada", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

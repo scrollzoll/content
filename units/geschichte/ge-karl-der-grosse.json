@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ge-karl-der-grosse",
+  "topic": "geschichte/mittelalter",
+  "tags": ["mittelalter", "franken", "karl-der-grosse"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Karl der Große und die Kaiserkrönung 800",
+      "intro": "Der Frankenkönig Karl wurde im Jahr 800 zum Kaiser gekrönt und prägte Europa bis weit über seinen Tod hinaus.",
+      "facts": [
+        {"text": "Karl war von 768 bis zu seinem Tod 814 König der Franken.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "Am 25. Dezember 800 krönte ihn Papst Leo III. zum Kaiser: die erste Kaiserkrönung im Westen seit über drei Jahrhunderten.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "774 unterwarf Karl die Langobarden in Italien. Die Sachsenkriege (772 bis 804) dienten der Unterwerfung und erzwungenen Christianisierung der Sachsen.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "788 endete die Unabhängigkeit Bayerns unter Herzog Tassilo III. In den 790er Jahren eroberte Karl das Awarenreich.", "source_ids": ["de-wp-karl"]},
+        {"text": "Die „karolingische Renaissance“ war eine Bildungsreform. Karl förderte Gelehrte wie Alkuin und erneuerte Bildung und Schriftkultur.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "Aachen war Karls Hauptresidenz, mit Pfalz und Kapelle. Es blieb bis ins 16. Jahrhundert Krönungsort der römisch-deutschen Könige.", "source_ids": ["de-wp-karl"]}
+      ],
+      "quiz": [
+        {"question": "In welchem Jahr wurde Karl der Große zum Kaiser gekrönt?", "options": ["768", "800", "814", "962"], "answer_index": 1, "explanation": "Die Krönung fand am 25. Dezember 800 statt."},
+        {"question": "Welcher Papst krönte Karl zum Kaiser?", "options": ["Leo III.", "Stephan II.", "Gregor I.", "Urban II."], "answer_index": 0, "explanation": "Papst Leo III. krönte Karl am 25. Dezember 800."},
+        {"question": "Welcher Ort war Karls Hauptresidenz?", "options": ["Paris", "Aachen", "Rom", "Trier"], "answer_index": 1, "explanation": "Karl baute in Aachen eine Pfalz mit Kapelle."}
+      ]
+    },
+    "en": {
+      "title": "Charlemagne and the imperial coronation of 800",
+      "intro": "The Frankish king Charles was crowned emperor in 800 and shaped Europe well beyond his death.",
+      "facts": [
+        {"text": "Charlemagne was King of the Franks from 768 until his death in 814.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "On 25 December 800 Pope Leo III crowned him emperor: the first imperial coronation in Western Europe in over three centuries.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "In 774 Charlemagne conquered the Lombards in Italy. The Saxon Wars (772 to 804) aimed at subduing and forcibly Christianizing the Saxons.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "In 788 Bavaria lost its independence under Duke Tassilo III. In the 790s Charlemagne conquered the Avar realm.", "source_ids": ["de-wp-karl"]},
+        {"text": "The “Carolingian Renaissance” was an educational reform. Charlemagne promoted scholars such as Alcuin and renewed learning and written culture.", "source_ids": ["wp-charlemagne", "de-wp-karl"]},
+        {"text": "Aachen was Charlemagne's main residence, with a palace and chapel. It remained the coronation site of Roman-German kings until the 16th century.", "source_ids": ["de-wp-karl"]}
+      ],
+      "quiz": [
+        {"question": "In which year was Charlemagne crowned emperor?", "options": ["768", "800", "814", "962"], "answer_index": 1, "explanation": "The coronation took place on 25 December 800."},
+        {"question": "Which pope crowned Charlemagne emperor?", "options": ["Leo III", "Stephen II", "Gregory I", "Urban II"], "answer_index": 0, "explanation": "Pope Leo III crowned Charlemagne on 25 December 800."},
+        {"question": "Which place was Charlemagne's main residence?", "options": ["Paris", "Aachen", "Rome", "Trier"], "answer_index": 1, "explanation": "Charlemagne built a palace with a chapel in Aachen."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-charlemagne", "title": "Wikipedia: Charlemagne", "url": "https://en.wikipedia.org/wiki/Charlemagne", "accessed": "2026-10-03"},
+    {"id": "de-wp-karl", "title": "Wikipedia (de): Karl der Große", "url": "https://de.wikipedia.org/wiki/Karl_der_Gro%C3%9Fe", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ge-pompeji",
+  "topic": "geschichte/antike",
+  "tags": ["antike", "rom", "pompeji", "vesuv"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Pompeji und der Ausbruch des Vesuvs 79 n. Chr.",
+      "intro": "Ein Vulkanausbruch begrub 79 n. Chr. mehrere römische Städte. Was wir heute über Pompeji wissen, verdanken wir der Asche.",
+      "facts": [
+        {"text": "Der Vesuv brach 79 n. Chr. aus. Lange galt ein Tag im August als Datum; eine Studie von 2022 nennt den 24./25. Oktober.", "source_ids": ["wp-pompeii"]},
+        {"text": "Zuerst fiel etwa 18 Stunden lang Bimsstein auf die Stadt, dann folgten tödliche pyroklastische Ströme. Pompeji lag am Ende unter bis zu 6 m vulkanischem Material.", "source_ids": ["wp-pompeii"]},
+        {"text": "In Pompeji fand man rund 1.150 Leichname. Das spricht dafür, dass die meisten Einwohner vor dem Ausbruch geflohen sind.", "source_ids": ["wp-pompeii"]},
+        {"text": "Grabungen am Ort begannen 1748. Dass es Pompeji war, belegte 1763 eine Inschrift mit dem Ortsnamen.", "source_ids": ["wp-pompeii"]},
+        {"text": "Giuseppe Fiorelli goss Hohlräume, die zerfallene Körper in der Asche hinterlassen hatten, mit Gips aus und erhielt so Abdrücke der Opfer.", "source_ids": ["wp-pompeii"]},
+        {"text": "Auch Herculaneum wurde 79 n. Chr. von pyroklastischen Strömen zerstört und etwa 20 m tief verschüttet. Dort blieben Holz, Nahrung und Papyrus verkohlt erhalten.", "source_ids": ["wp-herculaneum"]}
+      ],
+      "quiz": [
+        {"question": "In welchem Jahr brach der Vesuv aus und verschüttete Pompeji?", "options": ["63 n. Chr.", "79 n. Chr.", "79 v. Chr.", "180 n. Chr."], "answer_index": 1, "explanation": "Der Ausbruch fand 79 n. Chr. statt."},
+        {"question": "Wer entwickelte die Technik, Hohlräume der Opfer mit Gips auszugießen?", "options": ["Giuseppe Fiorelli", "Johann Joachim Winckelmann", "Heinrich Schliemann", "Howard Carter"], "answer_index": 0, "explanation": "Giuseppe Fiorelli goss die Hohlräume in der Asche mit Gips aus."},
+        {"question": "Was war für die meisten Todesopfer in Pompeji verantwortlich?", "options": ["Lavaströme", "Ein Tsunami", "Pyroklastische Ströme", "Ein Erdbeben"], "answer_index": 2, "explanation": "Nach dem Bimsregen waren die pyroklastischen Ströme tödlich."}
+      ]
+    },
+    "en": {
+      "title": "Pompeii and the eruption of Vesuvius in AD 79",
+      "intro": "A volcanic eruption buried several Roman towns in AD 79. What we know about Pompeii today we owe to the ash.",
+      "facts": [
+        {"text": "Vesuvius erupted in AD 79. An August date was long assumed; a 2022 study gives 24–25 October.", "source_ids": ["wp-pompeii"]},
+        {"text": "First, pumice rained on the town for about 18 hours, then deadly pyroclastic flows followed. In the end Pompeii lay under up to 6 m of volcanic material.", "source_ids": ["wp-pompeii"]},
+        {"text": "About 1,150 bodies have been found at Pompeii. This suggests that most inhabitants escaped the eruption.", "source_ids": ["wp-pompeii"]},
+        {"text": "Excavations at the site began in 1748. That it was Pompeii was established in 1763 when an inscription naming the town was found.", "source_ids": ["wp-pompeii"]},
+        {"text": "Giuseppe Fiorelli injected plaster into voids left in the ash by decayed bodies, producing casts of the victims.", "source_ids": ["wp-pompeii"]},
+        {"text": "Herculaneum was also destroyed by pyroclastic surges in AD 79 and buried about 20 m deep. Wood, food and papyrus survived there in carbonized form.", "source_ids": ["wp-herculaneum"]}
+      ],
+      "quiz": [
+        {"question": "In which year did Vesuvius erupt and bury Pompeii?", "options": ["AD 63", "AD 79", "79 BC", "AD 180"], "answer_index": 1, "explanation": "The eruption took place in AD 79."},
+        {"question": "Who devised the technique of filling the victims' voids with plaster?", "options": ["Giuseppe Fiorelli", "Johann Joachim Winckelmann", "Heinrich Schliemann", "Howard Carter"], "answer_index": 0, "explanation": "Giuseppe Fiorelli injected plaster into the voids in the ash."},
+        {"question": "What was responsible for most deaths in Pompeii?", "options": ["Lava flows", "A tsunami", "Pyroclastic flows", "An earthquake"], "answer_index": 2, "explanation": "After the pumice fall, the pyroclastic flows were lethal."}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "wp-pompeii", "title": "Wikipedia: Pompeii", "url": "https://en.wikipedia.org/wiki/Pompeii", "accessed": "2026-10-03"},
+    {"id": "wp-herculaneum", "title": "Wikipedia: Herculaneum", "url": "https://en.wikipedia.org/wiki/Herculaneum", "accessed": "2026-10-03"}
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {"created_by": "ai", "model": "claude-sonnet-5-5", "created_at": "2026-10-03"}
+}
