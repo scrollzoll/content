@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "aw-wasser-besonderheiten",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["chemie", "wasser", "dichte", "eis"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die Dichteanomalie des Wassers: Warum Eis schwimmt",
+      "intro": "Warum Eis oben schwimmt und Seen von oben zufrieren.",
+      "facts": [
+        {
+          "text": "Flüssiges Wasser ist bei 3,98 °C am dichtesten. Kühlt es weiter ab, wird es wieder weniger dicht.",
+          "source_ids": ["wiki-water-properties", "usgs-water-density"]
+        },
+        {
+          "text": "Beim Gefrieren sinkt die Dichte um etwa 9 %. Eis hat rund 0,917 g/ml, flüssiges Wasser etwa 1,0 g/ml, daher schwimmt Eis.",
+          "source_ids": ["wiki-water-properties", "usgs-water-density"]
+        },
+        {
+          "text": "Eine Erklärung sind Wasserstoffbrücken: Im Eis halten sie die Moleküle in einem lockeren Gitter, daher ist Eis weniger dicht als flüssiges Wasser.",
+          "source_ids": ["wiki-water-properties"]
+        },
+        {
+          "text": "Weil Wasser von etwa 4 °C absinkt und Eis oben schwimmt, frieren Seen von oben zu. Das Eis isoliert, darunter bleibt Leben möglich.",
+          "source_ids": ["usgs-water-density", "wiki-water-properties"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Bei welcher Temperatur ist flüssiges Wasser am dichtesten?",
+          "options": ["0 °C", "4 °C", "10 °C", "100 °C"],
+          "answer_index": 1,
+          "explanation": "Die größte Dichte hat Wasser bei etwa 4 °C (3,98 °C)."
+        },
+        {
+          "question": "Wie ändert sich die Dichte von Wasser beim Gefrieren?",
+          "options": ["Sie sinkt um etwa 9 %", "Sie steigt um etwa 9 %", "Sie bleibt gleich", "Sie verdoppelt sich"],
+          "answer_index": 0,
+          "explanation": "Eis ist etwa 9 % weniger dicht als flüssiges Wasser und schwimmt deshalb."
+        },
+        {
+          "question": "Warum frieren Seen normalerweise von oben nach unten zu?",
+          "options": [
+            "Wasser unter 4 °C ist leichter und bleibt oben",
+            "Eis ist schwerer als Wasser",
+            "Der Seeboden ist immer am kältesten",
+            "Salz sinkt nach unten"
+          ],
+          "answer_index": 0,
+          "explanation": "Das dichteste Wasser (etwa 4 °C) sinkt ab, kälteres und Eis bleiben oben."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Density Anomaly of Water: Why Ice Floats",
+      "intro": "Why ice floats and lakes freeze from the top down.",
+      "facts": [
+        {
+          "text": "Liquid water is densest at 3.98 °C. If it cools further, it becomes less dense again.",
+          "source_ids": ["wiki-water-properties", "usgs-water-density"]
+        },
+        {
+          "text": "On freezing, density drops by about 9%. Ice is about 0.917 g/ml, liquid water about 1.0 g/ml, so ice floats.",
+          "source_ids": ["wiki-water-properties", "usgs-water-density"]
+        },
+        {
+          "text": "One explanation is hydrogen bonding: in ice it holds the molecules in an open lattice, so ice is less dense than liquid water.",
+          "source_ids": ["wiki-water-properties"]
+        },
+        {
+          "text": "Because water at about 4 °C sinks and ice floats, lakes freeze from the top down. The ice insulates, and life can survive below.",
+          "source_ids": ["usgs-water-density", "wiki-water-properties"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "At what temperature is liquid water densest?",
+          "options": ["0 °C", "4 °C", "10 °C", "100 °C"],
+          "answer_index": 1,
+          "explanation": "Water is densest at about 4 °C (3.98 °C)."
+        },
+        {
+          "question": "How does the density of water change on freezing?",
+          "options": ["It drops by about 9%", "It rises by about 9%", "It stays the same", "It doubles"],
+          "answer_index": 0,
+          "explanation": "Ice is about 9% less dense than liquid water, which is why it floats."
+        },
+        {
+          "question": "Why do lakes usually freeze from the top down?",
+          "options": [
+            "Water below 4 °C is lighter and stays on top",
+            "Ice is heavier than water",
+            "The lake bottom is always coldest",
+            "Salt sinks to the bottom"
+          ],
+          "answer_index": 0,
+          "explanation": "The densest water (about 4 °C) sinks, colder water and ice stay on top."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-water-properties",
+      "title": "Properties of water (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "usgs-water-density",
+      "title": "Water Density (USGS Water Science School)",
+      "url": "https://www.usgs.gov/water-science-school/science/water-density",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

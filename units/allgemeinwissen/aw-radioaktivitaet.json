@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "aw-radioaktivitaet",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "radioaktivitaet", "becquerel", "curie", "halbwertszeit"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Radioaktivität: Becquerel, Curie und die Halbwertszeit",
+      "intro": "Wie 1896 geschwärzte Fotoplatten die Physik veränderten.",
+      "facts": [
+        {
+          "text": "Henri Becquerel entdeckte 1896 die Radioaktivität: Uransalze schwärzten Fotoplatten, selbst wenn diese in schwarzes Papier gewickelt waren und kein Sonnenlicht abbekamen.",
+          "source_ids": ["wiki-radioactive-decay", "wiki-becquerel"]
+        },
+        {
+          "text": "Marie und Pierre Curie prägten das Wort „Radioaktivität“. 1898 gaben sie die Entdeckung von Polonium (Juli) und Radium (Dezember) bekannt.",
+          "source_ids": ["wiki-marie-curie"]
+        },
+        {
+          "text": "1903 teilten sich Becquerel sowie Pierre und Marie Curie den Physik-Nobelpreis. Marie Curie erhielt 1911 den Chemie-Nobelpreis, als einzige Person in zwei verschiedenen Naturwissenschaften.",
+          "source_ids": ["wiki-becquerel", "wiki-marie-curie"]
+        },
+        {
+          "text": "Die Halbwertszeit ist die Zeit, in der die Hälfte der radioaktiven Atome zerfallen ist. Sie reicht je nach Stoff von Sekunden bis zu Hunderten Millionen Jahren.",
+          "source_ids": ["epa-radioactive-decay", "wiki-radioactive-decay"]
+        },
+        {
+          "text": "Die SI-Einheit der Aktivität ist das Becquerel: ein Zerfall pro Sekunde. Alphastrahlung stoppt Papier, Gammastrahlung braucht dickes Blei.",
+          "source_ids": ["wiki-radioactive-decay"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer entdeckte 1896 die Radioaktivität?",
+          "options": ["Marie Curie", "Ernest Rutherford", "Henri Becquerel", "Wilhelm Röntgen"],
+          "answer_index": 2,
+          "explanation": "Henri Becquerel beobachtete 1896 die Strahlung von Uransalzen."
+        },
+        {
+          "question": "Welche zwei Elemente gaben die Curies 1898 bekannt?",
+          "options": ["Uran und Thorium", "Polonium und Radium", "Radon und Helium", "Plutonium und Cäsium"],
+          "answer_index": 1,
+          "explanation": "Polonium im Juli und Radium im Dezember 1898."
+        },
+        {
+          "question": "Wie viel einer Probe ist nach zwei Halbwertszeiten noch nicht zerfallen?",
+          "options": ["Die Hälfte", "Ein Viertel", "Ein Achtel", "Nichts mehr"],
+          "answer_index": 1,
+          "explanation": "Nach einer Halbwertszeit bleibt die Hälfte, nach der zweiten die Hälfte davon, also ein Viertel."
+        }
+      ]
+    },
+    "en": {
+      "title": "Radioactivity: Becquerel, Curie and the Half-Life",
+      "intro": "How darkened photographic plates changed physics in 1896.",
+      "facts": [
+        {
+          "text": "Henri Becquerel discovered radioactivity in 1896: uranium salts darkened photographic plates even when these were wrapped in black paper and got no sunlight.",
+          "source_ids": ["wiki-radioactive-decay", "wiki-becquerel"]
+        },
+        {
+          "text": "Marie and Pierre Curie coined the word “radioactivity”. In 1898 they announced the discovery of polonium (July) and radium (December).",
+          "source_ids": ["wiki-marie-curie"]
+        },
+        {
+          "text": "In 1903 Becquerel and Pierre and Marie Curie shared the Nobel Prize in Physics. Marie Curie won the 1911 Chemistry prize, the only person with Nobel Prizes in two different sciences.",
+          "source_ids": ["wiki-becquerel", "wiki-marie-curie"]
+        },
+        {
+          "text": "The half-life is the time in which half of the radioactive atoms have decayed. Depending on the substance it ranges from seconds to hundreds of millions of years.",
+          "source_ids": ["epa-radioactive-decay", "wiki-radioactive-decay"]
+        },
+        {
+          "text": "The SI unit of activity is the becquerel: one decay per second. Alpha radiation is stopped by paper, gamma radiation needs thick lead.",
+          "source_ids": ["wiki-radioactive-decay"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who discovered radioactivity in 1896?",
+          "options": ["Marie Curie", "Ernest Rutherford", "Henri Becquerel", "Wilhelm Röntgen"],
+          "answer_index": 2,
+          "explanation": "Henri Becquerel observed the radiation from uranium salts in 1896."
+        },
+        {
+          "question": "Which two elements did the Curies announce in 1898?",
+          "options": ["Uranium and thorium", "Polonium and radium", "Radon and helium", "Plutonium and caesium"],
+          "answer_index": 1,
+          "explanation": "Polonium in July and radium in December 1898."
+        },
+        {
+          "question": "How much of a sample has not yet decayed after two half-lives?",
+          "options": ["Half", "One quarter", "One eighth", "Nothing"],
+          "answer_index": 1,
+          "explanation": "After one half-life half remains, after the second half of that, so one quarter."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-radioactive-decay",
+      "title": "Radioactive decay (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Radioactive_decay",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-becquerel",
+      "title": "Henri Becquerel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Henri_Becquerel",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-marie-curie",
+      "title": "Marie Curie (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marie_Curie",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "epa-radioactive-decay",
+      "title": "Radioactive Decay (U.S. EPA)",
+      "url": "https://www.epa.gov/radiation/radioactive-decay",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

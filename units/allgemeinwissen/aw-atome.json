@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "aw-atome",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "chemie", "atom", "isotope"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Atome: Protonen, Neutronen, Elektronen",
+      "intro": "Woraus die kleinsten Bausteine der chemischen Elemente bestehen.",
+      "facts": [
+        {
+          "text": "Ein Atom ist die kleinste Einheit eines chemischen Elements. Es besteht aus einem Kern, den Elektronen umgeben.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Der Kern enthält positive Protonen und ungeladene Neutronen und trägt über 99,94 % der Masse. Die Elektronen sind negativ geladen.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Die Zahl der Protonen (Ordnungszahl) legt das Element fest: Jedes Atom mit 11 Protonen ist Natrium.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Isotope eines Elements haben gleich viele Protonen, aber unterschiedlich viele Neutronen.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Atome messen typischerweise rund 100 Pikometer. Ein Haar ist etwa eine Million Kohlenstoffatome breit.",
+          "source_ids": ["wiki-atom"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Teilchen im Atom ist elektrisch neutral?",
+          "options": ["Proton", "Neutron", "Elektron", "Alle drei"],
+          "answer_index": 1,
+          "explanation": "Neutronen tragen keine Ladung, Protonen sind positiv, Elektronen negativ."
+        },
+        {
+          "question": "Welches Element hat Atome mit 11 Protonen?",
+          "options": ["Kohlenstoff", "Neon", "Natrium", "Magnesium"],
+          "answer_index": 2,
+          "explanation": "Die Protonenzahl bestimmt das Element. Mit 11 Protonen ist es Natrium."
+        },
+        {
+          "question": "Worin unterscheiden sich Isotope desselben Elements?",
+          "options": ["In der Protonenzahl", "In der Neutronenzahl", "In der Elektronenladung", "In der Ordnungszahl"],
+          "answer_index": 1,
+          "explanation": "Isotope haben gleich viele Protonen, aber verschieden viele Neutronen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Atoms: Protons, Neutrons, Electrons",
+      "intro": "What the smallest building blocks of the chemical elements are made of.",
+      "facts": [
+        {
+          "text": "An atom is the smallest unit of a chemical element. It consists of a nucleus surrounded by electrons.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "The nucleus contains positive protons and uncharged neutrons and carries over 99.94% of the mass. Electrons are negatively charged.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "The number of protons (atomic number) determines the element: every atom with 11 protons is sodium.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Isotopes of an element have the same number of protons but different numbers of neutrons.",
+          "source_ids": ["wiki-atom"]
+        },
+        {
+          "text": "Atoms are typically around 100 picometers across. A hair is about a million carbon atoms wide.",
+          "source_ids": ["wiki-atom"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which particle in an atom is electrically neutral?",
+          "options": ["Proton", "Neutron", "Electron", "All three"],
+          "answer_index": 1,
+          "explanation": "Neutrons carry no charge, protons are positive, electrons negative."
+        },
+        {
+          "question": "Which element has atoms with 11 protons?",
+          "options": ["Carbon", "Neon", "Sodium", "Magnesium"],
+          "answer_index": 2,
+          "explanation": "The proton number determines the element. With 11 protons it is sodium."
+        },
+        {
+          "question": "How do isotopes of the same element differ?",
+          "options": ["In proton number", "In neutron number", "In electron charge", "In atomic number"],
+          "answer_index": 1,
+          "explanation": "Isotopes have the same number of protons but different numbers of neutrons."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-atom",
+      "title": "Atom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Atom",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

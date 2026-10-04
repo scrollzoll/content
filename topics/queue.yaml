@@ -987,36 +987,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-schall
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Schall: Ausbreitung, Schallgeschwindigkeit, Dezibel"
-    format: facts_quiz
-    priority: 1
-  - id: aw-magnetismus
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Magnetismus und das Magnetfeld der Erde"
-    format: facts_quiz
-    priority: 1
-  - id: aw-elektrizitaet
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Strom, Spannung, Widerstand: das ohmsche Gesetz"
-    format: facts_quiz
-    priority: 1
-  - id: aw-atome
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Atome: Protonen, Neutronen, Elektronen"
-    format: facts_quiz
-    priority: 1
-  - id: aw-radioaktivitaet
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Radioaktivität: Entdeckung durch Becquerel und Curie, Halbwertszeit"
-    format: facts_quiz
-    priority: 1
-  - id: aw-wasser-besonderheiten
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Die Dichteanomalie des Wassers und warum Eis schwimmt"
-    format: facts_quiz
-    priority: 1
   - id: aw-si-einheiten
     topic: allgemeinwissen/naturwissenschaft
     hint: "Die sieben SI-Basiseinheiten"
@@ -1402,36 +1372,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-kolonialismus
-    topic: geschichte/19-jahrhundert
-    hint: "Kolonialismus und die Berliner Konferenz 1884 (sachlich)"
-    format: facts_quiz
-    priority: 1
-  - id: ge-meiji
-    topic: geschichte/19-jahrhundert
-    hint: "Die Meiji-Restauration in Japan"
-    format: facts_quiz
-    priority: 1
-  - id: ge-frauenwahlrecht
-    topic: geschichte/19-jahrhundert
-    hint: "Frauenwahlrecht: Neuseeland 1893, Deutschland 1918"
-    format: facts_quiz
-    priority: 1
-  - id: ge-goldrausch
-    topic: geschichte/19-jahrhundert
-    hint: "Der kalifornische Goldrausch 1848"
-    format: facts_quiz
-    priority: 1
-  - id: ge-erster-weltkrieg
-    topic: geschichte/20-jahrhundert
-    hint: "Der Erste Weltkrieg: Ursachen, Verlauf, Ende 1918"
-    format: facts_quiz
-    priority: 1
-  - id: ge-weimarer-republik
-    topic: geschichte/20-jahrhundert
-    hint: "Die Weimarer Republik 1918–1933"
-    format: facts_quiz
-    priority: 1
   - id: ge-weltwirtschaftskrise
     topic: geschichte/20-jahrhundert
     hint: "Die Weltwirtschaftskrise ab 1929"

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-weimarer-republik",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["weimarer-republik", "hyperinflation", "demokratie", "1933"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Weimarer Republik 1918–1933",
+      "intro": "Deutschlands erste parlamentarische Demokratie zwischen Krisen und Goldenen Zwanzigern.",
+      "facts": [
+        {
+          "text": "Die Republik wurde am 9. November 1918 ausgerufen, die Verfassung am 11. August 1919 angenommen. Präsidenten waren Friedrich Ebert (1919–1925) und Paul von Hindenburg (1925–1934).",
+          "source_ids": ["wiki-weimar"]
+        },
+        {
+          "text": "Die frühen Jahre bis 1923 prägten Hyperinflation, politische Morde und die Ruhrbesetzung. Die Hyperinflation von 1923 vernichtete Ersparnisse und Vertrauen.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "Von 1924 bis 1929 beruhigte sich die Lage nach der Währungsreform. 1926 trat Deutschland dem Völkerbund bei, die Kultur blühte in den „Goldenen Zwanzigern“.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "Der Reichstag wurde nach dem Verhältniswahlrecht gewählt. Die häufigen Wechsel von insgesamt 16 Reichsregierungen in 14 Jahren belasteten die Stabilität.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "Die Weltwirtschaftskrise brachte Massenarbeitslosigkeit. Im Juli 1932 erhielt die NSDAP über 37 %. Am 30. Januar 1933 wurde Hitler Kanzler, das Ermächtigungsgesetz vom 23. März 1933 beendete die Republik.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wann wurde die Weimarer Verfassung angenommen?",
+          "options": ["9. November 1918", "11. August 1919", "28. Juni 1919", "30. Januar 1933"],
+          "answer_index": 1,
+          "explanation": "Die Verfassung wurde am 11. August 1919 angenommen."
+        },
+        {
+          "question": "Wer war der erste Reichspräsident der Weimarer Republik?",
+          "options": ["Paul von Hindenburg", "Friedrich Ebert", "Gustav Stresemann", "Adolf Hitler"],
+          "answer_index": 1,
+          "explanation": "Friedrich Ebert war von 1919 bis 1925 Präsident, danach Hindenburg."
+        },
+        {
+          "question": "Welches Ereignis vernichtete 1923 die Ersparnisse vieler Menschen?",
+          "options": ["Die Hyperinflation", "Der Börsencrash 1929", "Die Währungsreform 1948", "Der Dawes-Plan"],
+          "answer_index": 0,
+          "explanation": "Die Hyperinflation von 1923 entwertete Geld und Ersparnisse."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Weimar Republic 1918–1933",
+      "intro": "Germany's first parliamentary democracy between crises and the Golden Twenties.",
+      "facts": [
+        {
+          "text": "The republic was proclaimed on 9 November 1918, the constitution adopted on 11 August 1919. Presidents were Friedrich Ebert (1919–1925) and Paul von Hindenburg (1925–1934).",
+          "source_ids": ["wiki-weimar"]
+        },
+        {
+          "text": "The early years until 1923 were marked by hyperinflation, political assassinations and the occupation of the Ruhr. The 1923 hyperinflation destroyed savings and trust.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "From 1924 to 1929 things calmed down after the currency reform. In 1926 Germany joined the League of Nations, and culture flourished in the “Golden Twenties”.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "The Reichstag was elected by proportional representation. The frequent changes among a total of 16 Reich governments in 14 years weighed on stability.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        },
+        {
+          "text": "The Great Depression brought mass unemployment. In July 1932 the Nazi party won over 37%. Hitler became chancellor on 30 January 1933, and the Enabling Act of 23 March 1933 ended the republic.",
+          "source_ids": ["wiki-weimar", "dhm-weimar"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When was the Weimar constitution adopted?",
+          "options": ["9 November 1918", "11 August 1919", "28 June 1919", "30 January 1933"],
+          "answer_index": 1,
+          "explanation": "The constitution was adopted on 11 August 1919."
+        },
+        {
+          "question": "Who was the first Reich President of the Weimar Republic?",
+          "options": ["Paul von Hindenburg", "Friedrich Ebert", "Gustav Stresemann", "Adolf Hitler"],
+          "answer_index": 1,
+          "explanation": "Friedrich Ebert was president from 1919 to 1925, then Hindenburg."
+        },
+        {
+          "question": "Which event destroyed many people's savings in 1923?",
+          "options": ["Hyperinflation", "The 1929 stock market crash", "The 1948 currency reform", "The Dawes Plan"],
+          "answer_index": 0,
+          "explanation": "The 1923 hyperinflation wiped out the value of money and savings."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-weimar",
+      "title": "Weimar Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weimar_Republic",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "dhm-weimar",
+      "title": "Weimarer Republik (LeMO, Deutsches Historisches Museum)",
+      "url": "https://www.dhm.de/lemo/kapitel/weimarer-republik",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

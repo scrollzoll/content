@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-erster-weltkrieg",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["weltkrieg", "sarajevo", "versailles", "buendnissysteme"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Erste Weltkrieg: Anlass, Verlauf, Ende 1918",
+      "intro": "Vom Attentat in Sarajevo bis zum Waffenstillstand am 11. November 1918.",
+      "facts": [
+        {
+          "text": "Am 28. Juni 1914 erschoss Gavrilo Princip in Sarajevo den Thronfolger Franz Ferdinand. Der Krieg dauerte vom 28. Juli 1914 bis zum 11. November 1918.",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "Zwei Bündnisse standen sich gegenüber: die Entente (Frankreich, Großbritannien, Russland, ab 1915 Italien, ab 1917 USA) und die Mittelmächte (Deutschland, Österreich-Ungarn, Osmanisches Reich, ab 1915 Bulgarien).",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "Die USA erklärten im April 1917 Deutschland den Krieg. Gründe waren der uneingeschränkte U-Boot-Krieg und das Zimmermann-Telegramm mit einem Bündnisangebot an Mexiko.",
+          "source_ids": ["state-wwi-us-entry"]
+        },
+        {
+          "text": "Kaiser Wilhelm II. dankte am 9. November 1918 ab. Der Waffenstillstand vom 11. November 1918 beendete die Kämpfe.",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "Der Krieg forderte schätzungsweise 15 bis 22 Millionen Tote. Das Russische, Deutsche, Österreichisch-Ungarische und Osmanische Reich zerbrachen. Der Vertrag von Versailles folgte am 28. Juni 1919.",
+          "source_ids": ["wiki-ww1", "wiki-versailles"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welcher Stadt wurde 1914 Thronfolger Franz Ferdinand erschossen?",
+          "options": ["Wien", "Belgrad", "Sarajevo", "Berlin"],
+          "answer_index": 2,
+          "explanation": "Gavrilo Princip erschoss ihn am 28. Juni 1914 in Sarajevo."
+        },
+        {
+          "question": "Wann trat der Waffenstillstand zwischen den Kriegsparteien in Kraft?",
+          "options": ["9. November 1918", "11. November 1918", "28. Juni 1919", "1. Januar 1919"],
+          "answer_index": 1,
+          "explanation": "Der Waffenstillstand vom 11. November 1918 beendete die Kämpfe."
+        },
+        {
+          "question": "In welchem Jahr traten die USA in den Krieg ein?",
+          "options": ["1914", "1915", "1917", "1919"],
+          "answer_index": 2,
+          "explanation": "Die USA erklärten im April 1917 Deutschland den Krieg."
+        }
+      ]
+    },
+    "en": {
+      "title": "The First World War: Trigger, Course, End in 1918",
+      "intro": "From the assassination in Sarajevo to the armistice on 11 November 1918.",
+      "facts": [
+        {
+          "text": "On 28 June 1914 Gavrilo Princip shot heir apparent Franz Ferdinand in Sarajevo. The war lasted from 28 July 1914 to 11 November 1918.",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "Two alliances faced each other: the Entente (France, Britain, Russia, from 1915 Italy, from 1917 the USA) and the Central Powers (Germany, Austria-Hungary, Ottoman Empire, from 1915 Bulgaria).",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "The USA declared war on Germany in April 1917. Reasons were unrestricted submarine warfare and the Zimmermann Telegram, which offered Mexico an alliance.",
+          "source_ids": ["state-wwi-us-entry"]
+        },
+        {
+          "text": "Kaiser Wilhelm II abdicated on 9 November 1918. The armistice of 11 November 1918 ended the fighting.",
+          "source_ids": ["wiki-ww1"]
+        },
+        {
+          "text": "The war caused an estimated 15 to 22 million deaths. The Russian, German, Austro-Hungarian and Ottoman empires collapsed. The Treaty of Versailles followed on 28 June 1919.",
+          "source_ids": ["wiki-ww1", "wiki-versailles"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which city was heir apparent Franz Ferdinand shot in 1914?",
+          "options": ["Vienna", "Belgrade", "Sarajevo", "Berlin"],
+          "answer_index": 2,
+          "explanation": "Gavrilo Princip shot him on 28 June 1914 in Sarajevo."
+        },
+        {
+          "question": "When did the armistice between the warring parties take effect?",
+          "options": ["9 November 1918", "11 November 1918", "28 June 1919", "1 January 1919"],
+          "answer_index": 1,
+          "explanation": "The armistice of 11 November 1918 ended the fighting."
+        },
+        {
+          "question": "In which year did the USA enter the war?",
+          "options": ["1914", "1915", "1917", "1919"],
+          "answer_index": 2,
+          "explanation": "The USA declared war on Germany in April 1917."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-ww1",
+      "title": "World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/World_War_I",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-versailles",
+      "title": "Treaty of Versailles (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "state-wwi-us-entry",
+      "title": "U.S. Entry into World War I (Office of the Historian, U.S. Department of State)",
+      "url": "https://history.state.gov/milestones/1914-1920/wwi",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

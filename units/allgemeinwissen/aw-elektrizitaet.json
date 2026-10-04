@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "aw-elektrizitaet",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "elektrizitaet", "ohmsches-gesetz", "spannung"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Strom, Spannung, Widerstand: das ohmsche Gesetz",
+      "intro": "Drei Größen, eine Formel: U = R · I.",
+      "facts": [
+        {
+          "text": "Das ohmsche Gesetz besagt: Der Strom zwischen zwei Punkten ist proportional zur Spannung dazwischen. Als Formel: U = R · I, bei konstantem Widerstand R.",
+          "source_ids": ["wiki-ohms-law"]
+        },
+        {
+          "text": "Die Spannung misst man in Volt, die Stromstärke in Ampere, den Widerstand in Ohm. Ein Ohm entspricht einem Volt pro Ampere.",
+          "source_ids": ["wiki-ohms-law", "nist-volt-ohm"]
+        },
+        {
+          "text": "Georg Ohm veröffentlichte sein Gesetz 1827 in der Schrift „Die galvanische Kette, mathematisch bearbeitet“.",
+          "source_ids": ["wiki-ohms-law"]
+        },
+        {
+          "text": "Seit dem 20. Mai 2019 ist das Ampere über die Elementarladung definiert. Ein Ampere bedeutet eine Ladung von einem Coulomb pro Sekunde.",
+          "source_ids": ["nist-ampere"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Durch einen Widerstand von 4 Ω liegt eine Spannung von 12 V an. Wie groß ist der Strom?",
+          "options": ["0,33 A", "3 A", "8 A", "48 A"],
+          "answer_index": 1,
+          "explanation": "I = U / R = 12 V / 4 Ω = 3 A."
+        },
+        {
+          "question": "In welcher Einheit misst man den elektrischen Widerstand?",
+          "options": ["Volt", "Ampere", "Ohm", "Coulomb"],
+          "answer_index": 2,
+          "explanation": "Der Widerstand wird in Ohm (Ω) gemessen, 1 Ω = 1 V/A."
+        },
+        {
+          "question": "In welchem Jahr veröffentlichte Georg Ohm sein Gesetz?",
+          "options": ["1787", "1827", "1887", "1927"],
+          "answer_index": 1,
+          "explanation": "Ohm veröffentlichte es 1827."
+        }
+      ]
+    },
+    "en": {
+      "title": "Current, Voltage, Resistance: Ohm's Law",
+      "intro": "Three quantities, one formula: V = I · R.",
+      "facts": [
+        {
+          "text": "Ohm's law says the current between two points is proportional to the voltage across them. As a formula: V = I · R, with constant resistance R.",
+          "source_ids": ["wiki-ohms-law"]
+        },
+        {
+          "text": "Voltage is measured in volts, current in amperes, resistance in ohms. One ohm equals one volt per ampere.",
+          "source_ids": ["wiki-ohms-law", "nist-volt-ohm"]
+        },
+        {
+          "text": "Georg Ohm published his law in 1827 in the treatise “Die galvanische Kette, mathematisch bearbeitet” (The galvanic circuit investigated mathematically).",
+          "source_ids": ["wiki-ohms-law"]
+        },
+        {
+          "text": "Since 20 May 2019 the ampere has been defined through the elementary charge. One ampere means a charge of one coulomb per second.",
+          "source_ids": ["nist-ampere"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A voltage of 12 V is applied across a resistance of 4 Ω. What is the current?",
+          "options": ["0.33 A", "3 A", "8 A", "48 A"],
+          "answer_index": 1,
+          "explanation": "I = V / R = 12 V / 4 Ω = 3 A."
+        },
+        {
+          "question": "In which unit is electrical resistance measured?",
+          "options": ["Volt", "Ampere", "Ohm", "Coulomb"],
+          "answer_index": 2,
+          "explanation": "Resistance is measured in ohms (Ω), 1 Ω = 1 V/A."
+        },
+        {
+          "question": "In which year did Georg Ohm publish his law?",
+          "options": ["1787", "1827", "1887", "1927"],
+          "answer_index": 1,
+          "explanation": "Ohm published it in 1827."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-ohms-law",
+      "title": "Ohm's law (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ohm%27s_law",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "nist-volt-ohm",
+      "title": "SI Units – Electric Current, Potential Difference and Resistance (NIST)",
+      "url": "https://www.nist.gov/pml/owm/si-units-electric-current",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "nist-ampere",
+      "title": "The Ampere (NIST)",
+      "url": "https://www.nist.gov/si-redefinition/ampere",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

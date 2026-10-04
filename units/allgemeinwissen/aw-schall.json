@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "aw-schall",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "schall", "akustik", "dezibel"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Schall: Ausbreitung, Geschwindigkeit und Dezibel",
+      "intro": "Wie reist Schall, wie schnell ist er und was bedeutet eigentlich „dB“?",
+      "facts": [
+        {
+          "text": "Schall braucht ein Medium. In Gasen und Flüssigkeiten breitet er sich als Längswelle aus: Das Medium wird in Ausbreitungsrichtung abwechselnd verdichtet und verdünnt.",
+          "source_ids": ["wiki-speed-of-sound"]
+        },
+        {
+          "text": "Bei 20 °C beträgt die Schallgeschwindigkeit in Luft etwa 343 m/s, in Süßwasser etwa 1481 m/s. In Stahl laufen Druckwellen mit rund 6000 m/s.",
+          "source_ids": ["wiki-speed-of-sound"]
+        },
+        {
+          "text": "Das Dezibel ist eine logarithmische Einheit für das Verhältnis zweier Größen. Bei Leistungen entsprechen +10 dB einem Faktor 10.",
+          "source_ids": ["wiki-decibel"]
+        },
+        {
+          "text": "Der Schalldruckpegel in Luft bezieht sich auf einen Referenzdruck von 20 µPa. Beim Schalldruck entsprechen +20 dB dem Zehnfachen des Drucks.",
+          "source_ids": ["wiki-decibel"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie schnell ist Schall in Luft bei 20 °C etwa?",
+          "options": ["34 m/s", "343 m/s", "1481 m/s", "6000 m/s"],
+          "answer_index": 1,
+          "explanation": "In Luft bei 20 °C sind es rund 343 m/s. 1481 m/s gelten für Wasser, 6000 m/s für Stahl."
+        },
+        {
+          "question": "Wo kann sich Schall nicht ausbreiten?",
+          "options": ["In Wasser", "In Stahl", "In Luft", "Im Vakuum"],
+          "answer_index": 3,
+          "explanation": "Schall braucht ein elastisches Medium. Im Vakuum gibt es keines."
+        },
+        {
+          "question": "Um welchen Faktor steigt die Leistung bei +10 dB?",
+          "options": ["Um das 2-Fache", "Um das 10-Fache", "Um das 20-Fache", "Um das 100-Fache"],
+          "answer_index": 1,
+          "explanation": "Die Dezibel-Skala ist logarithmisch: +10 dB bedeuten bei der Leistung das Zehnfache."
+        }
+      ]
+    },
+    "en": {
+      "title": "Sound: Propagation, Speed and Decibels",
+      "intro": "How does sound travel, how fast is it, and what does “dB” actually mean?",
+      "facts": [
+        {
+          "text": "Sound needs a medium. In gases and liquids it travels as a longitudinal wave: the medium is alternately compressed and thinned along the direction of travel.",
+          "source_ids": ["wiki-speed-of-sound"]
+        },
+        {
+          "text": "At 20 °C the speed of sound is about 343 m/s in air and about 1481 m/s in fresh water. In steel, compression waves travel at around 6000 m/s.",
+          "source_ids": ["wiki-speed-of-sound"]
+        },
+        {
+          "text": "The decibel is a logarithmic unit for the ratio of two quantities. For power, +10 dB corresponds to a factor of 10.",
+          "source_ids": ["wiki-decibel"]
+        },
+        {
+          "text": "Sound pressure level in air refers to a reference pressure of 20 µPa. For sound pressure, +20 dB corresponds to ten times the pressure.",
+          "source_ids": ["wiki-decibel"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "About how fast is sound in air at 20 °C?",
+          "options": ["34 m/s", "343 m/s", "1481 m/s", "6000 m/s"],
+          "answer_index": 1,
+          "explanation": "In air at 20 °C it is about 343 m/s. 1481 m/s applies to water, 6000 m/s to steel."
+        },
+        {
+          "question": "Where can sound not propagate?",
+          "options": ["In water", "In steel", "In air", "In a vacuum"],
+          "answer_index": 3,
+          "explanation": "Sound needs an elastic medium. A vacuum has none."
+        },
+        {
+          "question": "By what factor does power increase at +10 dB?",
+          "options": ["2 times", "10 times", "20 times", "100 times"],
+          "answer_index": 1,
+          "explanation": "The decibel scale is logarithmic: +10 dB means ten times the power."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-speed-of-sound",
+      "title": "Speed of sound (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_sound",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-decibel",
+      "title": "Decibel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Decibel",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

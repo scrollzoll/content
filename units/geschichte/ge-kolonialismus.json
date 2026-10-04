@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "ge-kolonialismus",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["kolonialismus", "afrika", "berliner-konferenz", "bismarck"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Kolonialismus und die Berliner Konferenz 1884/85",
+      "intro": "Wie Europas Mächte Regeln für den Zugriff auf Afrika aufstellten, ohne Afrikaner zu beteiligen.",
+      "facts": [
+        {
+          "text": "Die Berliner Konferenz tagte vom 15. November 1884 bis zum 26. Februar 1885. Reichskanzler Otto von Bismarck organisierte sie.",
+          "source_ids": ["wiki-berlin-conference"]
+        },
+        {
+          "text": "Vierzehn Staaten waren vertreten, darunter Deutschland, Frankreich, Großbritannien, die USA und das Osmanische Reich. Afrikanische Staaten wurden nicht eingeladen.",
+          "source_ids": ["wiki-berlin-conference"]
+        },
+        {
+          "text": "Nach dem Prinzip der „effektiven Besetzung“ sollte ein Anspruch auf afrikanisches Gebiet durch tatsächliche Präsenz gedeckt sein, etwa durch Flagge, Verträge mit lokalen Herrschern und Verwaltung.",
+          "source_ids": ["wiki-berlin-conference", "wiki-scramble-africa"]
+        },
+        {
+          "text": "Die Schlussakte erklärte das Kongobecken zur Freihandelszone und bestätigte die Gebiete der Internationalen Kongo-Gesellschaft Leopolds II., später Kongo-Freistaat genannt.",
+          "source_ids": ["wiki-berlin-conference", "wiki-scramble-africa"]
+        },
+        {
+          "text": "In den 1870er-Jahren kontrollierten Europäer etwa 10 % Afrikas, bis 1914 rund 90 %. Nur Äthiopien und Liberia blieben unabhängig.",
+          "source_ids": ["wiki-scramble-africa", "wiki-berlin-conference"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer organisierte die Berliner Konferenz 1884/85?",
+          "options": ["Otto von Bismarck", "Wilhelm II.", "Klemens von Metternich", "Napoleon III."],
+          "answer_index": 0,
+          "explanation": "Reichskanzler Bismarck organisierte die Konferenz in Berlin."
+        },
+        {
+          "question": "Was besagte das Prinzip der „effektiven Besetzung“?",
+          "options": [
+            "Gebiete gehören dem, der sie zuerst auf einer Karte einzeichnet",
+            "Ansprüche müssen durch tatsächliche Präsenz im Gebiet gedeckt sein",
+            "Afrikanische Herrscher entscheiden über Ansprüche",
+            "Alle Gebiete werden gleichmäßig aufgeteilt"
+          ],
+          "answer_index": 1,
+          "explanation": "Eine Macht sollte ihren Anspruch durch Präsenz belegen, etwa durch Verträge und Verwaltung."
+        },
+        {
+          "question": "Welche zwei afrikanischen Staaten blieben 1914 unabhängig?",
+          "options": [
+            "Ägypten und Marokko",
+            "Südafrika und Kenia",
+            "Äthiopien und Liberia",
+            "Algerien und Tunesien"
+          ],
+          "answer_index": 2,
+          "explanation": "Nur Äthiopien und Liberia standen 1914 nicht unter europäischer Kontrolle."
+        }
+      ]
+    },
+    "en": {
+      "title": "Colonialism and the Berlin Conference of 1884–85",
+      "intro": "How Europe's powers set rules for claiming Africa without involving Africans.",
+      "facts": [
+        {
+          "text": "The Berlin Conference met from 15 November 1884 to 26 February 1885. German Chancellor Otto von Bismarck organized it.",
+          "source_ids": ["wiki-berlin-conference"]
+        },
+        {
+          "text": "Fourteen states were represented, including Germany, France, Britain, the USA and the Ottoman Empire. No African states were invited.",
+          "source_ids": ["wiki-berlin-conference"]
+        },
+        {
+          "text": "Under the principle of “effective occupation”, a claim to African territory was meant to be backed by actual presence, for example a flag, treaties with local rulers and administration.",
+          "source_ids": ["wiki-berlin-conference", "wiki-scramble-africa"]
+        },
+        {
+          "text": "The final act made the Congo basin a free-trade zone and confirmed the territories of Leopold II's International Congo Society, later called the Congo Free State.",
+          "source_ids": ["wiki-berlin-conference", "wiki-scramble-africa"]
+        },
+        {
+          "text": "In the 1870s Europeans controlled about 10% of Africa, by 1914 around 90%. Only Ethiopia and Liberia stayed independent.",
+          "source_ids": ["wiki-scramble-africa", "wiki-berlin-conference"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who organized the Berlin Conference of 1884–85?",
+          "options": ["Otto von Bismarck", "Wilhelm II", "Klemens von Metternich", "Napoleon III"],
+          "answer_index": 0,
+          "explanation": "Chancellor Bismarck organized the conference in Berlin."
+        },
+        {
+          "question": "What did the principle of “effective occupation” say?",
+          "options": [
+            "Land belongs to whoever first draws it on a map",
+            "Claims must be backed by actual presence in the territory",
+            "African rulers decide on claims",
+            "All territory is divided equally"
+          ],
+          "answer_index": 1,
+          "explanation": "A power was meant to back its claim with presence, for example through treaties and administration."
+        },
+        {
+          "question": "Which two African states remained independent in 1914?",
+          "options": [
+            "Egypt and Morocco",
+            "South Africa and Kenya",
+            "Ethiopia and Liberia",
+            "Algeria and Tunisia"
+          ],
+          "answer_index": 2,
+          "explanation": "Only Ethiopia and Liberia were not under European control in 1914."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-berlin-conference",
+      "title": "Berlin Conference (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Berlin_Conference",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-scramble-africa",
+      "title": "Scramble for Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Scramble_for_Africa",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
