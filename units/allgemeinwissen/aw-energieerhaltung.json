@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-energieerhaltung",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "energie", "thermodynamik", "erhaltungssatz"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Der Energieerhaltungssatz",
+      "intro": "Energie geht nicht verloren, sie ändert nur ihre Form.",
+      "facts": [
+        {
+          "text": "In einem abgeschlossenen System bleibt die Gesamtenergie konstant. Energie kann weder erzeugt noch vernichtet, nur umgewandelt oder übertragen werden.",
+          "source_ids": ["wiki-conservation-energy", "wiki-first-law"]
+        },
+        {
+          "text": "Beispiel Dynamit: Bei der Explosion wird chemische Energie in Bewegungsenergie, Wärme und Schall umgewandelt. Die Summe bleibt gleich.",
+          "source_ids": ["wiki-conservation-energy"]
+        },
+        {
+          "text": "Julius Robert Mayer und James Joule zeigten in den 1840er-Jahren, dass Wärme und mechanische Arbeit ineinander umwandelbar sind. Hermann von Helmholtz veröffentlichte 1847 die umfassende Theorie.",
+          "source_ids": ["wiki-conservation-energy"]
+        },
+        {
+          "text": "Der Satz ist der erste Hauptsatz der Thermodynamik. Daraus folgt: Ein Perpetuum mobile erster Art, das Arbeit ohne Energiezufuhr liefert, ist unmöglich.",
+          "source_ids": ["wiki-first-law"]
+        },
+        {
+          "text": "Mit E = mc² zeigte Einstein, dass Masse und Energie ineinander umwandelbar sind. Dadurch verschmolzen zwei zuvor getrennte Erhaltungssätze.",
+          "source_ids": ["wiki-conservation-energy"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Was besagt der Energieerhaltungssatz?",
+          "options": ["Energie kann nur umgewandelt werden, nicht erzeugt oder vernichtet", "Energie nimmt mit der Zeit immer ab", "Nur Wärme bleibt erhalten", "Energie lässt sich beliebig vermehren"],
+          "answer_index": 0,
+          "explanation": "In einem abgeschlossenen System bleibt die Gesamtenergie konstant."
+        },
+        {
+          "question": "Was geschieht bei der Explosion von Dynamit mit der chemischen Energie?",
+          "options": ["Sie verschwindet", "Sie wird zu Bewegung, Wärme und Schall", "Sie wird zu reiner Masse", "Sie bleibt als chemische Energie erhalten"],
+          "answer_index": 1,
+          "explanation": "Die chemische Energie wird umgewandelt, die Gesamtsumme bleibt gleich."
+        },
+        {
+          "question": "Was ist nach dem ersten Hauptsatz der Thermodynamik unmöglich?",
+          "options": ["Ein Motor, der Wärme abgibt", "Eine Maschine, die dauerhaft Arbeit ohne Energiezufuhr liefert", "Ein Kühlschrank", "Eine Dampfmaschine"],
+          "answer_index": 1,
+          "explanation": "Ein Perpetuum mobile erster Art würde Energie aus dem Nichts erzeugen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Law of Conservation of Energy",
+      "intro": "Energy is never lost, it only changes form.",
+      "facts": [
+        {
+          "text": "In an isolated system the total energy stays constant. Energy can be neither created nor destroyed, only transformed or transferred.",
+          "source_ids": ["wiki-conservation-energy", "wiki-first-law"]
+        },
+        {
+          "text": "Example dynamite: in the explosion, chemical energy is converted into kinetic energy, heat and sound. The total stays the same.",
+          "source_ids": ["wiki-conservation-energy"]
+        },
+        {
+          "text": "Julius Robert Mayer and James Joule showed in the 1840s that heat and mechanical work are interchangeable. Hermann von Helmholtz published the comprehensive theory in 1847.",
+          "source_ids": ["wiki-conservation-energy"]
+        },
+        {
+          "text": "The law is the first law of thermodynamics. It follows that a perpetual motion machine of the first kind, delivering work without energy input, is impossible.",
+          "source_ids": ["wiki-first-law"]
+        },
+        {
+          "text": "With E = mc², Einstein showed that mass and energy can be converted into each other. This merged two previously separate conservation laws.",
+          "source_ids": ["wiki-conservation-energy"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the law of conservation of energy state?",
+          "options": ["Energy can only be transformed, not created or destroyed", "Energy always decreases over time", "Only heat is conserved", "Energy can be multiplied at will"],
+          "answer_index": 0,
+          "explanation": "In an isolated system the total energy stays constant."
+        },
+        {
+          "question": "What happens to the chemical energy when dynamite explodes?",
+          "options": ["It vanishes", "It becomes motion, heat and sound", "It becomes pure mass", "It stays as chemical energy"],
+          "answer_index": 1,
+          "explanation": "The chemical energy is converted, and the total stays the same."
+        },
+        {
+          "question": "What is impossible according to the first law of thermodynamics?",
+          "options": ["An engine that gives off heat", "A machine that permanently delivers work without energy input", "A refrigerator", "A steam engine"],
+          "answer_index": 1,
+          "explanation": "A perpetual motion machine of the first kind would create energy from nothing."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-conservation-energy",
+      "title": "Conservation of energy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Conservation_of_energy",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-first-law",
+      "title": "First law of thermodynamics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

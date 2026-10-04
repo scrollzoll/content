@@ -987,36 +987,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-periodensystem
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Das Periodensystem: Mendelejew, Aufbau, Gruppen"
-    format: facts_quiz
-    priority: 1
-  - id: aw-aggregatzustaende
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Aggregatzustände: fest, flüssig, gasförmig, Plasma"
-    format: facts_quiz
-    priority: 1
-  - id: aw-schwerkraft
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Schwerkraft: Newton, Fallbeschleunigung 9,81 m/s²"
-    format: facts_quiz
-    priority: 1
-  - id: aw-lichtgeschwindigkeit
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Lichtgeschwindigkeit und warum nichts schneller ist"
-    format: facts_quiz
-    priority: 1
-  - id: aw-relativitaetstheorie
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Einsteins Relativitätstheorie in einfachen Worten"
-    format: facts_quiz
-    priority: 1
-  - id: aw-energieerhaltung
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Energieerhaltungssatz mit Alltagsbeispielen"
-    format: facts_quiz
-    priority: 1
   - id: aw-schall
     topic: allgemeinwissen/naturwissenschaft
     hint: "Schall: Ausbreitung, Schallgeschwindigkeit, Dezibel"
@@ -1432,36 +1402,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-sklaverei-abschaffung
-    topic: geschichte/neuzeit
-    hint: "Abschaffung der Sklaverei im 19. Jahrhundert (sachlich)"
-    format: facts_quiz
-    priority: 1
-  - id: ge-revolution-1848
-    topic: geschichte/19-jahrhundert
-    hint: "Die Revolution 1848/49 und die Paulskirche"
-    format: facts_quiz
-    priority: 1
-  - id: ge-reichsgruendung-1871
-    topic: geschichte/19-jahrhundert
-    hint: "Die Reichsgründung 1871 und Bismarck"
-    format: facts_quiz
-    priority: 1
-  - id: ge-sozialversicherung
-    topic: geschichte/19-jahrhundert
-    hint: "Bismarcks Sozialversicherung: Kranken-, Unfall-, Rentenversicherung"
-    format: facts_quiz
-    priority: 1
-  - id: ge-eisenbahn-deutschland
-    topic: geschichte/19-jahrhundert
-    hint: "Die erste deutsche Eisenbahn 1835 Nürnberg–Fürth"
-    format: facts_quiz
-    priority: 1
-  - id: ge-amerikanischer-buergerkrieg
-    topic: geschichte/19-jahrhundert
-    hint: "Der Amerikanische Bürgerkrieg 1861–1865"
-    format: facts_quiz
-    priority: 1
   - id: ge-kolonialismus
     topic: geschichte/19-jahrhundert
     hint: "Kolonialismus und die Berliner Konferenz 1884 (sachlich)"

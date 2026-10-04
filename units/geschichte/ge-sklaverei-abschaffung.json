@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "ge-sklaverei-abschaffung",
+  "topic": "geschichte/neuzeit",
+  "tags": ["sklaverei", "abolitionismus", "19-jahrhundert"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Das Ende der Sklaverei im 19. Jahrhundert",
+      "intro": "Die Sklaverei endete nicht überall gleichzeitig, sondern Land für Land und oft in Etappen.",
+      "facts": [
+        {
+          "text": "Großbritannien verbot 1807 den Handel mit versklavten Menschen. Der Slavery Abolition Act von 1833 schaffte die Sklaverei im Britischen Empire ab, er trat am 1. August 1834 in Kraft.",
+          "source_ids": ["wiki-abolition-1833"]
+        },
+        {
+          "text": "Der britische Staat zahlte 20 Millionen Pfund Entschädigung an die Sklavenhalter. Viele Befreite mussten zunächst als „Lehrlinge“ weiterarbeiten, bis 1838 bzw. 1840.",
+          "source_ids": ["wiki-abolition-1833"]
+        },
+        {
+          "text": "Frankreich proklamierte am 27. April 1848 die Abschaffung der Sklaverei in seinen Kolonien.",
+          "source_ids": ["wiki-abolition-timeline"]
+        },
+        {
+          "text": "In den USA beendete der 13. Verfassungszusatz die Sklaverei. Er wurde am 6. Dezember 1865 ratifiziert, ließ aber Zwangsarbeit als Strafe für Verbrechen zu.",
+          "source_ids": ["wiki-13th-amendment"]
+        },
+        {
+          "text": "Brasilien schaffte die Sklaverei am 13. Mai 1888 mit dem „Goldenen Gesetz“ (Lei Áurea) ab, als letztes Land Amerikas.",
+          "source_ids": ["wiki-lei-aurea"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Land schaffte als letztes in Amerika die Sklaverei ab?",
+          "options": ["Brasilien", "USA", "Haiti", "Kolumbien"],
+          "answer_index": 0,
+          "explanation": "Brasilien beendete sie 1888 mit dem Lei Áurea."
+        },
+        {
+          "question": "Welcher Verfassungszusatz beendete 1865 die Sklaverei in den USA?",
+          "options": ["Der 1.", "Der 13.", "Der 14.", "Der 19."],
+          "answer_index": 1,
+          "explanation": "Der 13. Verfassungszusatz wurde am 6. Dezember 1865 ratifiziert."
+        },
+        {
+          "question": "In welchem Jahr wurde die Sklaverei im Britischen Empire per Gesetz abgeschafft?",
+          "options": ["1807", "1833", "1848", "1865"],
+          "answer_index": 1,
+          "explanation": "Der Slavery Abolition Act stammt von 1833. 1807 wurde nur der Handel verboten."
+        }
+      ]
+    },
+    "en": {
+      "title": "The End of Slavery in the 19th Century",
+      "intro": "Slavery did not end everywhere at once, but country by country and often in stages.",
+      "facts": [
+        {
+          "text": "Britain banned the trade in enslaved people in 1807. The Slavery Abolition Act of 1833 abolished slavery in the British Empire and came into force on 1 August 1834.",
+          "source_ids": ["wiki-abolition-1833"]
+        },
+        {
+          "text": "The British state paid 20 million pounds in compensation to slave owners. Many freed people first had to keep working as \"apprentices\", until 1838 or 1840.",
+          "source_ids": ["wiki-abolition-1833"]
+        },
+        {
+          "text": "On 27 April 1848 France proclaimed the abolition of slavery in its colonies.",
+          "source_ids": ["wiki-abolition-timeline"]
+        },
+        {
+          "text": "In the USA the 13th Amendment ended slavery. It was ratified on 6 December 1865 but allowed forced labour as punishment for crime.",
+          "source_ids": ["wiki-13th-amendment"]
+        },
+        {
+          "text": "Brazil abolished slavery on 13 May 1888 with the \"Golden Law\" (Lei Áurea), the last country in the Americas to do so.",
+          "source_ids": ["wiki-lei-aurea"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which country was the last in the Americas to abolish slavery?",
+          "options": ["Brazil", "USA", "Haiti", "Colombia"],
+          "answer_index": 0,
+          "explanation": "Brazil ended it in 1888 with the Lei Áurea."
+        },
+        {
+          "question": "Which constitutional amendment ended slavery in the USA in 1865?",
+          "options": ["The 1st", "The 13th", "The 14th", "The 19th"],
+          "answer_index": 1,
+          "explanation": "The 13th Amendment was ratified on 6 December 1865."
+        },
+        {
+          "question": "In which year was slavery abolished by law in the British Empire?",
+          "options": ["1807", "1833", "1848", "1865"],
+          "answer_index": 1,
+          "explanation": "The Slavery Abolition Act dates from 1833. In 1807 only the trade was banned."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-abolition-timeline",
+      "title": "Abolition of slavery timeline (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Abolition_of_slavery_timeline",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-abolition-1833",
+      "title": "Slavery Abolition Act 1833 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-13th-amendment",
+      "title": "Thirteenth Amendment to the US Constitution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-lei-aurea",
+      "title": "Lei Áurea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lei_%C3%81urea",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

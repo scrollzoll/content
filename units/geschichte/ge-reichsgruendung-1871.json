@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "ge-reichsgruendung-1871",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["kaiserreich", "bismarck", "reichsgruendung", "versailles"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Reichsgründung 1871 und Bismarck",
+      "intro": "Im Spiegelsaal von Versailles entstand das Deutsche Kaiserreich, als „kleindeutsche“ Lösung ohne Österreich.",
+      "facts": [
+        {
+          "text": "Am 18. Januar 1871 wurde im Spiegelsaal von Versailles Wilhelm I., König von Preußen, zum Deutschen Kaiser ausgerufen. Das geschah am Ende des Deutsch-Französischen Kriegs.",
+          "source_ids": ["wiki-proclamation", "wiki-hall-of-mirrors"]
+        },
+        {
+          "text": "Otto von Bismarck, preußischer Ministerpräsident, steuerte die Einigung politisch und verlas bei der Zeremonie die Proklamation.",
+          "source_ids": ["wiki-unification", "wiki-proclamation"]
+        },
+        {
+          "text": "Das Datum erinnerte an die preußische Königskrönung von 1701.",
+          "source_ids": ["wiki-proclamation"]
+        },
+        {
+          "text": "Baden, Württemberg, Bayern und Hessen-Darmstadt waren am 1. Januar 1871 dem Norddeutschen Bund beigetreten, den Preußen angeführt hatte.",
+          "source_ids": ["wiki-proclamation", "wiki-unification"]
+        },
+        {
+          "text": "Das Reich war ein Bundesstaat mit 25 Mitgliedern, ohne Österreich („kleindeutsche Lösung“). Preußen stellte Präsidium und Reichskanzler.",
+          "source_ids": ["wiki-unification"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wo wurde 1871 das Deutsche Kaiserreich ausgerufen?",
+          "options": ["Berlin", "Versailles", "Frankfurt", "Wien"],
+          "answer_index": 1,
+          "explanation": "Die Proklamation fand im Spiegelsaal des Schlosses von Versailles statt."
+        },
+        {
+          "question": "Wer wurde am 18. Januar 1871 zum Deutschen Kaiser ausgerufen?",
+          "options": ["Wilhelm I.", "Friedrich Wilhelm IV.", "Franz Joseph I.", "Otto von Bismarck"],
+          "answer_index": 0,
+          "explanation": "Der preußische König Wilhelm I. wurde Kaiser. Bismarck wurde Reichskanzler."
+        },
+        {
+          "question": "Welcher Staat gehörte nicht zum neuen Kaiserreich?",
+          "options": ["Bayern", "Sachsen", "Österreich", "Preußen"],
+          "answer_index": 2,
+          "explanation": "Österreich blieb in der „kleindeutschen Lösung“ außen vor."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Founding of the German Empire in 1871 and Bismarck",
+      "intro": "The German Empire arose in the Hall of Mirrors at Versailles as a \"Lesser German\" solution without Austria.",
+      "facts": [
+        {
+          "text": "On 18 January 1871 Wilhelm I, King of Prussia, was proclaimed German Emperor in the Hall of Mirrors at Versailles, at the end of the Franco-Prussian War.",
+          "source_ids": ["wiki-proclamation", "wiki-hall-of-mirrors"]
+        },
+        {
+          "text": "Otto von Bismarck, Minister President of Prussia, steered the unification politically and read out the proclamation at the ceremony.",
+          "source_ids": ["wiki-unification", "wiki-proclamation"]
+        },
+        {
+          "text": "The date recalled the Prussian royal coronation of 1701.",
+          "source_ids": ["wiki-proclamation"]
+        },
+        {
+          "text": "Baden, Württemberg, Bavaria and Hesse-Darmstadt had joined the Prussian-led North German Confederation on 1 January 1871.",
+          "source_ids": ["wiki-proclamation", "wiki-unification"]
+        },
+        {
+          "text": "The empire was a federation of 25 member states, without Austria (the \"Lesser German\" solution). Prussia held the presidency and the chancellorship.",
+          "source_ids": ["wiki-unification"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where was the German Empire proclaimed in 1871?",
+          "options": ["Berlin", "Versailles", "Frankfurt", "Vienna"],
+          "answer_index": 1,
+          "explanation": "The proclamation took place in the Hall of Mirrors of the Palace of Versailles."
+        },
+        {
+          "question": "Who was proclaimed German Emperor on 18 January 1871?",
+          "options": ["Wilhelm I", "Frederick William IV", "Franz Joseph I", "Otto von Bismarck"],
+          "answer_index": 0,
+          "explanation": "The Prussian king Wilhelm I became emperor. Bismarck became chancellor."
+        },
+        {
+          "question": "Which state did not belong to the new empire?",
+          "options": ["Bavaria", "Saxony", "Austria", "Prussia"],
+          "answer_index": 2,
+          "explanation": "Austria was left out under the \"Lesser German\" solution."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-unification",
+      "title": "Unification of Germany (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unification_of_Germany",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-proclamation",
+      "title": "Proclamation of the German Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-hall-of-mirrors",
+      "title": "Hall of Mirrors (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hall_of_Mirrors",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

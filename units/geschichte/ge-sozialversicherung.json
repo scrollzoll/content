@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-sozialversicherung",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["bismarck", "sozialversicherung", "kaiserreich", "sozialstaat"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Bismarcks Sozialversicherung",
+      "intro": "Im Kaiserreich entstand in den 1880er-Jahren die erste staatliche Sozialversicherung der Welt.",
+      "facts": [
+        {
+          "text": "Das Kaiserreich führte drei Versicherungen ein: 1883 die Krankenversicherung, 1884 die Unfallversicherung und 1889 die Invaliditäts- und Altersversicherung (Rente, ab 1891 wirksam).",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Die Krankenversicherung zahlten Arbeiter zu zwei Dritteln und Arbeitgeber zu einem Drittel. Sie umfasste ärztliche Behandlung, Arzneimittel und Krankengeld.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Die Unfallversicherung finanzierten allein die Arbeitgeber.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Bei der Rentenversicherung teilten sich Arbeitnehmer und Arbeitgeber die Beiträge etwa zur Hälfte. Der Staat gab einen Zuschuss.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Bismarck verband die Sozialgesetze mit Härte gegen Sozialisten („Zuckerbrot und Peitsche“), zum Beispiel dem Sozialistengesetz von 1878. Er wollte die Not der Industriearbeiter lindern und sozialistische Bewegungen schwächen.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr wurde die gesetzliche Krankenversicherung im Kaiserreich eingeführt?",
+          "options": ["1871", "1883", "1889", "1914"],
+          "answer_index": 1,
+          "explanation": "1883 kam die Krankenversicherung, 1884 die Unfallversicherung, 1889 die Rentenversicherung."
+        },
+        {
+          "question": "Wer finanzierte die Unfallversicherung allein?",
+          "options": ["Die Arbeiter", "Die Arbeitgeber", "Der Staat", "Die Kirchen"],
+          "answer_index": 1,
+          "explanation": "Die Beiträge zur Unfallversicherung zahlten allein die Arbeitgeber."
+        },
+        {
+          "question": "Welche Versicherung gehörte nicht zu Bismarcks drei Säulen?",
+          "options": ["Krankenversicherung", "Unfallversicherung", "Rentenversicherung", "Arbeitslosenversicherung"],
+          "answer_index": 3,
+          "explanation": "Die drei Säulen waren Kranken-, Unfall- sowie Invaliditäts- und Altersversicherung."
+        }
+      ]
+    },
+    "en": {
+      "title": "Bismarck's Social Insurance",
+      "intro": "In the 1880s the German Empire created the world's first state social insurance system.",
+      "facts": [
+        {
+          "text": "The German Empire introduced three insurances: health insurance in 1883, accident insurance in 1884 and disability and old-age insurance (pensions, effective from 1891) in 1889.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Workers paid two thirds of health insurance and employers one third. It covered medical treatment, medicine and sick pay.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Accident insurance was funded by employers alone.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "For pension insurance, employees and employers split the contributions roughly in half. The state added a subsidy.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        },
+        {
+          "text": "Bismarck paired the social laws with repression of socialists (\"carrot and stick\"), such as the Anti-Socialist Law of 1878. He wanted to ease the hardship of industrial workers and weaken socialist movements.",
+          "source_ids": ["dhm-sozialgesetzgebung", "wiki-de-sozialgesetzgebung"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year was statutory health insurance introduced in the German Empire?",
+          "options": ["1871", "1883", "1889", "1914"],
+          "answer_index": 1,
+          "explanation": "Health insurance came in 1883, accident insurance in 1884 and pension insurance in 1889."
+        },
+        {
+          "question": "Who funded accident insurance alone?",
+          "options": ["The workers", "The employers", "The state", "The churches"],
+          "answer_index": 1,
+          "explanation": "Employers alone paid the contributions for accident insurance."
+        },
+        {
+          "question": "Which insurance was not one of Bismarck's three pillars?",
+          "options": ["Health insurance", "Accident insurance", "Pension insurance", "Unemployment insurance"],
+          "answer_index": 3,
+          "explanation": "The three pillars were health, accident, and disability and old-age insurance."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "dhm-sozialgesetzgebung",
+      "title": "Sozialgesetzgebung im Kaiserreich (LeMO, Deutsches Historisches Museum)",
+      "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/innenpolitik/sozialgesetzgebung.html",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-de-sozialgesetzgebung",
+      "title": "Bismarcksche Sozialgesetzgebung (Wikipedia)",
+      "url": "https://de.wikipedia.org/wiki/Bismarcksche_Sozialgesetzgebung",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

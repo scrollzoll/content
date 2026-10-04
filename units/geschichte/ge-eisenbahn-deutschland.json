@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-eisenbahn-deutschland",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["eisenbahn", "ludwigsbahn", "industrialisierung", "nuernberg"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Die erste deutsche Eisenbahn 1835",
+      "intro": "Zwischen Nürnberg und Fürth fuhr 1835 der erste dampfbetriebene Zug Deutschlands.",
+      "facts": [
+        {
+          "text": "Am 7. Dezember 1835 eröffnete die Ludwigsbahn zwischen Nürnberg und Fürth. Sie war die erste Dampfeisenbahn Deutschlands und etwa 6 Kilometer lang.",
+          "source_ids": ["wiki-ludwig-railway", "wiki-de-ludwigsbahn"]
+        },
+        {
+          "text": "Die Lokomotive „Adler“ stammte aus der Werkstatt von Stephenson in Newcastle und zog den ersten Zug.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "Der „Adler“ fuhr anfangs nur um 13 und 14 Uhr, weil importierte Kohle teuer war. Sonst zogen Pferde die Wagen im Stundentakt.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "Die Bahn war profitabel: Bis 1855 lag die Dividende nie unter 12 Prozent.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "Der Betrieb endete am 31. Oktober 1922. Auf der Trasse fuhr später eine Schnellstraßenbahn, seit Dezember 1985 die U-Bahn-Linie U1 nach Fürth.",
+          "source_ids": ["wiki-ludwig-railway"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Zwischen welchen Städten fuhr die erste deutsche Dampfeisenbahn 1835?",
+          "options": ["Berlin und Potsdam", "Nürnberg und Fürth", "Leipzig und Dresden", "München und Augsburg"],
+          "answer_index": 1,
+          "explanation": "Die Ludwigsbahn verband ab dem 7. Dezember 1835 Nürnberg und Fürth."
+        },
+        {
+          "question": "Wie hieß die Lokomotive des ersten Zuges?",
+          "options": ["Adler", "Rocket", "Saxonia", "Puffing Billy"],
+          "answer_index": 0,
+          "explanation": "Die „Adler“ wurde von Stephenson in Newcastle geliefert."
+        },
+        {
+          "question": "Warum fuhr der „Adler“ anfangs nur zweimal täglich?",
+          "options": ["Importierte Kohle war teuer", "Es gab zu wenige Fahrgäste", "Es fehlte ein Lokführer", "Der König hatte es verboten"],
+          "answer_index": 0,
+          "explanation": "Wegen der hohen Kohlekosten zogen sonst Pferde die Wagen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Germany's First Railway in 1835",
+      "intro": "In 1835 the first steam-hauled train in Germany ran between Nuremberg and Fürth.",
+      "facts": [
+        {
+          "text": "On 7 December 1835 the Ludwig Railway opened between Nuremberg and Fürth. It was Germany's first steam railway and about 6 kilometres long.",
+          "source_ids": ["wiki-ludwig-railway", "wiki-de-ludwigsbahn"]
+        },
+        {
+          "text": "The locomotive \"Adler\" (Eagle) came from Stephenson's works in Newcastle and hauled the first train.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "At first the \"Adler\" ran only at 1 pm and 2 pm because imported coal was expensive. Otherwise horses pulled the cars every hour.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "The line was profitable: until 1855 dividends were never below 12 percent.",
+          "source_ids": ["wiki-ludwig-railway"]
+        },
+        {
+          "text": "Service ended on 31 October 1922. A high-speed tram later ran on the route, and since December 1985 the U1 metro line has run to Fürth.",
+          "source_ids": ["wiki-ludwig-railway"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Between which cities did Germany's first steam railway run in 1835?",
+          "options": ["Berlin and Potsdam", "Nuremberg and Fürth", "Leipzig and Dresden", "Munich and Augsburg"],
+          "answer_index": 1,
+          "explanation": "From 7 December 1835 the Ludwig Railway connected Nuremberg and Fürth."
+        },
+        {
+          "question": "What was the first train's locomotive called?",
+          "options": ["Adler", "Rocket", "Saxonia", "Puffing Billy"],
+          "answer_index": 0,
+          "explanation": "The \"Adler\" was supplied by Stephenson in Newcastle."
+        },
+        {
+          "question": "Why did the \"Adler\" run only twice a day at first?",
+          "options": ["Imported coal was expensive", "There were too few passengers", "A driver was missing", "The king had forbidden it"],
+          "answer_index": 0,
+          "explanation": "Because of the high coal costs, horses pulled the cars otherwise."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-ludwig-railway",
+      "title": "Bavarian Ludwig Railway (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bavarian_Ludwig_Railway",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-de-ludwigsbahn",
+      "title": "Ludwigsbahn (Wikipedia, Begriffsklärung)",
+      "url": "https://de.wikipedia.org/wiki/Ludwigsbahn",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

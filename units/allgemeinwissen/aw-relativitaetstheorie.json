@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-relativitaetstheorie",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "einstein", "relativitaet", "raumzeit"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Einsteins Relativitätstheorie in einfachen Worten",
+      "intro": "Zwei Theorien, die unser Bild von Raum, Zeit und Schwerkraft verändert haben.",
+      "facts": [
+        {
+          "text": "Die Relativitätstheorie besteht aus zwei Teilen: der speziellen Relativitätstheorie von 1905 und der allgemeinen Relativitätstheorie, die Einstein 1915 abschloss.",
+          "source_ids": ["wiki-relativity", "wiki-gravity-rel"]
+        },
+        {
+          "text": "Die spezielle Relativitätstheorie beruht auf zwei Prinzipien: Die Naturgesetze sind für alle gleichförmig bewegten Beobachter gleich, und die Lichtgeschwindigkeit ist für alle gleich.",
+          "source_ids": ["wiki-relativity"]
+        },
+        {
+          "text": "Folgen sind unter anderem die Zeitdilatation (bewegte Uhren gehen langsamer) und die Gleichwertigkeit von Masse und Energie, E = mc².",
+          "source_ids": ["wiki-relativity"]
+        },
+        {
+          "text": "Die allgemeine Relativitätstheorie beschreibt Gravitation nicht als Kraft, sondern als Krümmung der Raumzeit durch Masse und Energie.",
+          "source_ids": ["wiki-relativity", "wiki-general-relativity"]
+        },
+        {
+          "text": "1919 bestätigte eine Expedition unter Arthur Eddington, dass Sternenlicht an der Sonne abgelenkt wird. Auch GPS muss relativistische Effekte einrechnen, um genau zu bleiben.",
+          "source_ids": ["wiki-general-relativity", "wiki-relativity"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr veröffentlichte Einstein die spezielle Relativitätstheorie?",
+          "options": ["1687", "1905", "1927", "1969"],
+          "answer_index": 1,
+          "explanation": "Die spezielle Relativitätstheorie stammt von 1905, die allgemeine wurde 1915 abgeschlossen."
+        },
+        {
+          "question": "Wie beschreibt die allgemeine Relativitätstheorie die Gravitation?",
+          "options": ["Als Krümmung der Raumzeit", "Als elektrische Kraft", "Als Strahlung der Sonne", "Als Luftdruck"],
+          "answer_index": 0,
+          "explanation": "Masse und Energie krümmen die Raumzeit, und Körper folgen dieser Krümmung."
+        },
+        {
+          "question": "Welche alltägliche Technik muss Effekte der Relativitätstheorie berücksichtigen?",
+          "options": ["GPS-Navigation", "Glühlampe", "Fahrradklingel", "Kühlschrank"],
+          "answer_index": 0,
+          "explanation": "GPS muss relativistische Effekte einrechnen, um genau zu bleiben."
+        }
+      ]
+    },
+    "en": {
+      "title": "Einstein's Theory of Relativity in Simple Terms",
+      "intro": "Two theories that changed our picture of space, time and gravity.",
+      "facts": [
+        {
+          "text": "Relativity has two parts: special relativity from 1905 and general relativity, which Einstein completed in 1915.",
+          "source_ids": ["wiki-relativity", "wiki-gravity-rel"]
+        },
+        {
+          "text": "Special relativity rests on two principles: the laws of physics are the same for all uniformly moving observers, and the speed of light is the same for everyone.",
+          "source_ids": ["wiki-relativity"]
+        },
+        {
+          "text": "Consequences include time dilation (moving clocks run slower) and the equivalence of mass and energy, E = mc².",
+          "source_ids": ["wiki-relativity"]
+        },
+        {
+          "text": "General relativity describes gravity not as a force but as the curvature of spacetime caused by mass and energy.",
+          "source_ids": ["wiki-relativity", "wiki-general-relativity"]
+        },
+        {
+          "text": "In 1919 an expedition led by Arthur Eddington confirmed that starlight bends around the Sun. GPS also has to account for relativistic effects to stay accurate.",
+          "source_ids": ["wiki-general-relativity", "wiki-relativity"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did Einstein publish special relativity?",
+          "options": ["1687", "1905", "1927", "1969"],
+          "answer_index": 1,
+          "explanation": "Special relativity dates from 1905, and general relativity was completed in 1915."
+        },
+        {
+          "question": "How does general relativity describe gravity?",
+          "options": ["As curvature of spacetime", "As an electric force", "As radiation from the Sun", "As air pressure"],
+          "answer_index": 0,
+          "explanation": "Mass and energy curve spacetime, and bodies follow that curvature."
+        },
+        {
+          "question": "Which everyday technology has to account for effects of relativity?",
+          "options": ["GPS navigation", "Light bulb", "Bicycle bell", "Refrigerator"],
+          "answer_index": 0,
+          "explanation": "GPS has to account for relativistic effects to stay accurate."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-relativity",
+      "title": "Theory of relativity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-general-relativity",
+      "title": "General relativity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/General_relativity",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-gravity-rel",
+      "title": "Gravity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

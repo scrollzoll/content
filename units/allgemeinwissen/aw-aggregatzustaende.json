@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-aggregatzustaende",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "chemie", "materie", "plasma"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Aggregatzustände: fest, flüssig, gasförmig, Plasma",
+      "intro": "Je nach Temperatur und Druck liegt derselbe Stoff in einem anderen Zustand vor.",
+      "facts": [
+        {
+          "text": "Im festen Zustand sitzen die Teilchen dicht an festen Plätzen. Ein Festkörper hat eine bestimmte Form und ein bestimmtes Volumen.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "Eine Flüssigkeit behält ihr (fast) gleiches Volumen, passt sich aber der Form des Gefäßes an. Ihre Teilchen liegen dicht beieinander, können aber aneinander vorbeigleiten.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "Ein Gas hat weit auseinanderliegende, frei bewegliche Teilchen. Es füllt jedes Gefäß vollständig aus.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "Plasma ist ein ionisiertes Gas aus freien Elektronen und Ionen. Es entsteht, wenn genug Energie ein Gas ionisiert. Beispiele sind Blitze, Polarlichter und Sterne.",
+          "source_ids": ["wiki-plasma", "wiki-state-of-matter"]
+        },
+        {
+          "text": "Übergänge heißen Schmelzen (fest → flüssig), Verdampfen (flüssig → gasförmig) und Sublimation (fest → gasförmig). Die Umkehrungen sind Erstarren, Kondensieren und Resublimation.",
+          "source_ids": ["wiki-state-of-matter"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welcher Zustand behält sein Volumen, passt sich aber der Gefäßform an?",
+          "options": ["Fest", "Flüssig", "Gasförmig", "Keiner davon"],
+          "answer_index": 1,
+          "explanation": "Flüssigkeiten haben ein nahezu festes Volumen, aber keine feste Form."
+        },
+        {
+          "question": "Welches Beispiel zeigt Plasma?",
+          "options": ["Ein Eiswürfel", "Ein Blitz", "Ein Wassertropfen", "Ein Luftballon"],
+          "answer_index": 1,
+          "explanation": "Im Blitz ist Luft teilweise ionisiert, also ein Plasma."
+        },
+        {
+          "question": "Wie heißt der direkte Übergang von fest zu gasförmig?",
+          "options": ["Schmelzen", "Kondensieren", "Sublimation", "Erstarren"],
+          "answer_index": 2,
+          "explanation": "Bei der Sublimation verdampft ein Feststoff, ohne zuvor flüssig zu werden."
+        }
+      ]
+    },
+    "en": {
+      "title": "States of Matter: Solid, Liquid, Gas, Plasma",
+      "intro": "Depending on temperature and pressure, the same substance can exist in a different state.",
+      "facts": [
+        {
+          "text": "In a solid the particles sit tightly packed in fixed positions. A solid has a definite shape and volume.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "A liquid keeps a (nearly) constant volume but takes the shape of its container. Its particles stay close together but can slide past one another.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "A gas has widely spaced, freely moving particles. It expands to fill any container completely.",
+          "source_ids": ["wiki-state-of-matter"]
+        },
+        {
+          "text": "Plasma is an ionized gas of free electrons and ions. It forms when enough energy ionizes a gas. Examples are lightning, auroras and stars.",
+          "source_ids": ["wiki-plasma", "wiki-state-of-matter"]
+        },
+        {
+          "text": "The transitions are called melting (solid → liquid), vaporization (liquid → gas) and sublimation (solid → gas). The reverse processes are freezing, condensation and deposition.",
+          "source_ids": ["wiki-state-of-matter"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which state keeps its volume but adapts to the shape of its container?",
+          "options": ["Solid", "Liquid", "Gas", "None of them"],
+          "answer_index": 1,
+          "explanation": "Liquids have a nearly constant volume but no fixed shape."
+        },
+        {
+          "question": "Which example shows plasma?",
+          "options": ["An ice cube", "A lightning bolt", "A water drop", "A balloon"],
+          "answer_index": 1,
+          "explanation": "In lightning, air is partly ionized, which makes it a plasma."
+        },
+        {
+          "question": "What is the direct change from solid to gas called?",
+          "options": ["Melting", "Condensation", "Sublimation", "Freezing"],
+          "answer_index": 2,
+          "explanation": "In sublimation a solid turns into gas without becoming liquid first."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-state-of-matter",
+      "title": "State of matter (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_matter",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-plasma",
+      "title": "Plasma (physics) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Plasma_(physics)",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
