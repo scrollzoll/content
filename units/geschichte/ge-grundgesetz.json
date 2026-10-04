@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-grundgesetz",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["grundgesetz", "1949", "verfassung", "bundesrepublik"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Das Grundgesetz 1949",
+      "intro": "Die Verfassung der Bundesrepublik, gedacht als Provisorium.",
+      "facts": [
+        {
+          "text": "Der Parlamentarische Rat, 65 von den westdeutschen Landtagen gewählte Mitglieder, arbeitete das Grundgesetz von September 1948 bis Mai 1949 in Bonn aus.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "Der Name „Grundgesetz“ statt „Verfassung“ betonte den vorläufigen Charakter, bis nach einer Wiedervereinigung eine Verfassung folgen konnte.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "Der Parlamentarische Rat beschloss das Grundgesetz am 8. Mai 1949, es wurde am 23. Mai 1949 verkündet.",
+          "source_ids": ["bundestag-gg"]
+        },
+        {
+          "text": "Zehn Landtage stimmten vom 18. bis 21. Mai zu. Bayern lehnte ab, erkannte die Geltung aber später an.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "Die Grundrechte stehen in Artikel 1–19. Nach der Ewigkeitsklausel (Art. 79 Abs. 3) bleiben die Grundsätze der Artikel 1 und 20 unveränderbar.",
+          "source_ids": ["bundestag-gg"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "An welchem Datum wurde das Grundgesetz verkündet?",
+          "options": ["8. Mai 1945", "23. Mai 1949", "3. Oktober 1990", "11. August 1919"],
+          "answer_index": 1,
+          "explanation": "Die Verkündung war am 23. Mai 1949."
+        },
+        {
+          "question": "Warum heißt es „Grundgesetz“ und nicht „Verfassung“?",
+          "options": ["Es sollte als Provisorium bis zur Wiedervereinigung gelten", "Es galt nur für Bayern", "Es war nur für Wirtschaftsfragen gedacht", "Die Alliierten verboten das Wort"],
+          "answer_index": 0,
+          "explanation": "Der Name betonte den vorläufigen Charakter."
+        },
+        {
+          "question": "Welche Artikel schützt die Ewigkeitsklausel?",
+          "options": ["Artikel 1 und 20", "Artikel 5 und 8", "Artikel 38 und 39", "Artikel 79 und 146"],
+          "answer_index": 0,
+          "explanation": "Die Grundsätze der Artikel 1 und 20 sind unveränderbar."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Basic Law 1949",
+      "intro": "The constitution of the Federal Republic, meant as a provisional arrangement.",
+      "facts": [
+        {
+          "text": "The Parliamentary Council, 65 members elected by the West German state parliaments, drafted the Basic Law in Bonn from September 1948 to May 1949.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "The name “Basic Law” rather than “constitution” stressed its provisional character, until a constitution could follow after reunification.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "The Parliamentary Council adopted the Basic Law on 8 May 1949, and it was promulgated on 23 May 1949.",
+          "source_ids": ["bundestag-gg"]
+        },
+        {
+          "text": "Ten state parliaments approved it between 18 and 21 May. Bavaria rejected it but later accepted that it was binding.",
+          "source_ids": ["wiki-gg"]
+        },
+        {
+          "text": "Fundamental rights are in Articles 1–19. Under the eternity clause (Art. 79(3)), the principles of Articles 1 and 20 cannot be changed.",
+          "source_ids": ["bundestag-gg"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On what date was the Basic Law promulgated?",
+          "options": ["8 May 1945", "23 May 1949", "3 October 1990", "11 August 1919"],
+          "answer_index": 1,
+          "explanation": "It was promulgated on 23 May 1949."
+        },
+        {
+          "question": "Why is it called “Basic Law” rather than “constitution”?",
+          "options": ["It was meant as a provisional arrangement until reunification", "It applied only to Bavaria", "It covered only economic matters", "The Allies banned the word"],
+          "answer_index": 0,
+          "explanation": "The name stressed its provisional character."
+        },
+        {
+          "question": "Which articles does the eternity clause protect?",
+          "options": ["Articles 1 and 20", "Articles 5 and 8", "Articles 38 and 39", "Articles 79 and 146"],
+          "answer_index": 0,
+          "explanation": "The principles of Articles 1 and 20 cannot be changed."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "bundestag-gg",
+      "title": "Grundgesetz (Deutscher Bundestag)",
+      "url": "https://www.bundestag.de/parlament/aufgaben/rechtsgrundlagen/grundgesetz",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-gg",
+      "title": "Grundgesetz für die Bundesrepublik Deutschland (Wikipedia)",
+      "url": "https://de.wikipedia.org/wiki/Grundgesetz_f%C3%BCr_die_Bundesrepublik_Deutschland",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

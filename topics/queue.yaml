@@ -987,36 +987,6 @@ queue:
     hint: "Hauptstadt-Fallen: Australien, Kanada, Brasilien, Türkei, Schweiz"
     format: flashcards
     priority: 2
-  - id: aw-si-einheiten
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Die sieben SI-Basiseinheiten"
-    format: facts_quiz
-    priority: 1
-  - id: aw-temperatur-skalen
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Celsius, Fahrenheit, Kelvin: Umrechnung und absoluter Nullpunkt"
-    format: facts_quiz
-    priority: 1
-  - id: aw-treibhauseffekt
-    topic: allgemeinwissen/naturwissenschaft
-    hint: "Natürlicher und menschengemachter Treibhauseffekt"
-    format: facts_quiz
-    priority: 1
-  - id: aw-sonnensystem
-    topic: allgemeinwissen/astronomie
-    hint: "Die acht Planeten des Sonnensystems"
-    format: facts_quiz
-    priority: 1
-  - id: aw-pluto
-    topic: allgemeinwissen/astronomie
-    hint: "Warum Pluto seit 2006 kein Planet mehr ist"
-    format: facts_quiz
-    priority: 1
-  - id: aw-mond
-    topic: allgemeinwissen/astronomie
-    hint: "Der Mond: Entstehung, Phasen, Mondlandung 1969"
-    format: facts_quiz
-    priority: 1
   - id: aw-sonne
     topic: allgemeinwissen/astronomie
     hint: "Die Sonne: Aufbau, Alter, Energie durch Kernfusion"
@@ -1372,36 +1342,6 @@ queue:
     hint: "Das Oktoberfest: Ursprung 1810"
     format: facts_quiz
     priority: 3
-  - id: ge-weltwirtschaftskrise
-    topic: geschichte/20-jahrhundert
-    hint: "Die Weltwirtschaftskrise ab 1929"
-    format: facts_quiz
-    priority: 1
-  - id: ge-zweiter-weltkrieg
-    topic: geschichte/20-jahrhundert
-    hint: "Der Zweite Weltkrieg 1939–1945: Eckdaten (sachlich)"
-    format: facts_quiz
-    priority: 1
-  - id: ge-holocaust
-    topic: geschichte/20-jahrhundert
-    hint: "Der Holocaust: Fakten und Erinnerungskultur (sachlich, mit seriösen Quellen wie Gedenkstätten)"
-    format: facts_quiz
-    priority: 1
-  - id: ge-nuernberger-prozesse
-    topic: geschichte/20-jahrhundert
-    hint: "Die Nürnberger Prozesse 1945/46"
-    format: facts_quiz
-    priority: 1
-  - id: ge-uno-gruendung
-    topic: geschichte/20-jahrhundert
-    hint: "Gründung der Vereinten Nationen 1945"
-    format: facts_quiz
-    priority: 1
-  - id: ge-grundgesetz
-    topic: geschichte/20-jahrhundert
-    hint: "Das Grundgesetz 1949"
-    format: facts_quiz
-    priority: 1
   - id: ge-kalter-krieg
     topic: geschichte/20-jahrhundert
     hint: "Der Kalte Krieg: Blockbildung, Kuba-Krise"

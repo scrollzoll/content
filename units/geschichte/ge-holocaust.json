@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-holocaust",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["holocaust", "nationalsozialismus", "auschwitz", "erinnerung"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Holocaust: Fakten",
+      "intro": "Der systematische Mord an den europäischen Juden durch das NS-Regime. Sachlich dargestellt.",
+      "facts": [
+        {
+          "text": "Der Holocaust war die systematische, staatlich organisierte Verfolgung und Ermordung von sechs Millionen europäischen Juden durch das NS-Regime, seine Verbündeten und Kollaborateure zwischen 1933 und 1945.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "Grundlage war der Antisemitismus der Nationalsozialisten. Sie machten Jüdinnen und Juden fälschlich für soziale und wirtschaftliche Probleme und besonders für die Niederlage im Ersten Weltkrieg verantwortlich.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "Der Holocaust betraf fast die gesamte jüdische Bevölkerung Europas, die 1933 rund 9 Millionen Menschen zählte. Sie wurden in Ghettos konzentriert und per Bahn in Vernichtungsstätten im besetzten Polen deportiert.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "In der „Endlösung“ (1941–1945) wurden bis zu 2 Millionen Jüdinnen und Juden in von der Sowjetunion eroberten Gebieten erschossen oder in Gaswagen ermordet, knapp 2,7 Millionen in fünf Vernichtungsstätten.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "Auschwitz entstand 1940 bei Oświęcim im ans Deutsche Reich angeschlossenen Gebiet. Es begann als Konzentrationslager und wurde später das größte der Vernichtungszentren.",
+          "source_ids": ["auschwitz-museum"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele europäische Juden wurden im Holocaust ermordet?",
+          "options": ["etwa 1 Million", "etwa 3 Millionen", "etwa 6 Millionen", "etwa 12 Millionen"],
+          "answer_index": 2,
+          "explanation": "Die Gedenkstätten nennen sechs Millionen ermordete Jüdinnen und Juden."
+        },
+        {
+          "question": "In welchem Jahr entstand das Lager Auschwitz?",
+          "options": ["1933", "1938", "1940", "1944"],
+          "answer_index": 2,
+          "explanation": "Das Lager entstand 1940 bei Oświęcim."
+        },
+        {
+          "question": "In welchem besetzten Land lagen die fünf Vernichtungsstätten?",
+          "options": ["Frankreich", "Österreich", "Polen", "Dänemark"],
+          "answer_index": 2,
+          "explanation": "Die fünf Vernichtungsstätten lagen im besetzten Polen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Holocaust: Facts",
+      "intro": "The systematic murder of European Jews by the Nazi regime, presented factually.",
+      "facts": [
+        {
+          "text": "The Holocaust was the systematic, state-sponsored persecution and murder of six million European Jews by the Nazi regime, its allies and collaborators between 1933 and 1945.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "It rested on Nazi antisemitism. The Nazis falsely blamed Jews for social and economic problems and especially for the defeat in the First World War.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "The Holocaust affected nearly all of Europe's Jewish population, which numbered about 9 million in 1933. They were concentrated in ghettos and deported by rail to killing centres in occupied Poland.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "In the “Final Solution” (1941–1945), as many as 2 million Jews were shot or killed in gas vans in territories seized from the Soviet Union, and nearly 2.7 million were murdered at five killing centres.",
+          "source_ids": ["ushmm-intro"]
+        },
+        {
+          "text": "Auschwitz was set up in 1940 near Oświęcim in territory annexed to the German Reich. It began as a concentration camp and later became the largest of the extermination centres.",
+          "source_ids": ["auschwitz-museum"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many European Jews were murdered in the Holocaust?",
+          "options": ["about 1 million", "about 3 million", "about 6 million", "about 12 million"],
+          "answer_index": 2,
+          "explanation": "Memorial institutions give the figure of six million Jewish victims."
+        },
+        {
+          "question": "In which year was the Auschwitz camp set up?",
+          "options": ["1933", "1938", "1940", "1944"],
+          "answer_index": 2,
+          "explanation": "The camp was set up in 1940 near Oświęcim."
+        },
+        {
+          "question": "In which occupied country were the five killing centres located?",
+          "options": ["France", "Austria", "Poland", "Denmark"],
+          "answer_index": 2,
+          "explanation": "The five killing centres were in occupied Poland."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "ushmm-intro",
+      "title": "Introduction to the Holocaust (US Holocaust Memorial Museum)",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "auschwitz-museum",
+      "title": "History (Auschwitz-Birkenau Memorial and Museum)",
+      "url": "https://www.auschwitz.org/en/history/",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

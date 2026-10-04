@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-temperatur-skalen",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["temperatur", "celsius", "fahrenheit", "kelvin"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Celsius, Fahrenheit, Kelvin",
+      "intro": "Drei Temperaturskalen, ein gemeinsamer Nullpunkt der Physik.",
+      "facts": [
+        {
+          "text": "Null Grad Celsius entsprechen 273,15 Kelvin. Ein Grad Celsius ist genauso groß wie ein Kelvin, die Skalen sind nur gegeneinander verschoben.",
+          "source_ids": ["nist-temp"]
+        },
+        {
+          "text": "Der absolute Nullpunkt liegt bei 0 K, das sind −273,15 °C. Man nennt diesen Punkt den absoluten Nullpunkt.",
+          "source_ids": ["nist-temp"]
+        },
+        {
+          "text": "Auf der Fahrenheit-Skala gefriert Wasser bei 32 °F und siedet bei 212 °F, dazwischen liegen 180 Grad. Daniel Gabriel Fahrenheit stellte sie 1724 vor.",
+          "source_ids": ["wiki-fahrenheit"]
+        },
+        {
+          "text": "Umrechnung: °C = (°F − 32) × 5/9 und °F = °C × 9/5 + 32.",
+          "source_ids": ["wiki-fahrenheit"]
+        },
+        {
+          "text": "Das Kelvin ist über die Boltzmann-Konstante festgelegt: Sie hat den Wert 1,380649 · 10⁻²³ Joule pro Kelvin.",
+          "source_ids": ["bipm-kelvin"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viel Grad Celsius entspricht der absolute Nullpunkt (0 K)?",
+          "options": ["−100 °C", "−273,15 °C", "−460 °C", "0 °C"],
+          "answer_index": 1,
+          "explanation": "0 K entsprechen −273,15 °C."
+        },
+        {
+          "question": "Wie viel Grad Celsius sind 68 °F?",
+          "options": ["20 °C", "36 °C", "68 °C", "10 °C"],
+          "answer_index": 0,
+          "explanation": "(68 − 32) × 5/9 = 20."
+        },
+        {
+          "question": "Bei welcher Fahrenheit-Temperatur siedet Wasser?",
+          "options": ["100 °F", "180 °F", "212 °F", "273 °F"],
+          "answer_index": 2,
+          "explanation": "Wasser siedet bei 212 °F, 180 Grad über dem Gefrierpunkt von 32 °F."
+        }
+      ]
+    },
+    "en": {
+      "title": "Celsius, Fahrenheit, Kelvin",
+      "intro": "Three temperature scales and one shared zero point of physics.",
+      "facts": [
+        {
+          "text": "Zero degrees Celsius equals 273.15 kelvin. One degree Celsius is the same size as one kelvin; the scales are simply shifted against each other.",
+          "source_ids": ["nist-temp"]
+        },
+        {
+          "text": "Absolute zero is 0 K, which is −273.15 °C. This point is called absolute zero.",
+          "source_ids": ["nist-temp"]
+        },
+        {
+          "text": "On the Fahrenheit scale water freezes at 32 °F and boils at 212 °F, 180 degrees apart. Daniel Gabriel Fahrenheit proposed it in 1724.",
+          "source_ids": ["wiki-fahrenheit"]
+        },
+        {
+          "text": "Conversion: °C = (°F − 32) × 5/9 and °F = °C × 9/5 + 32.",
+          "source_ids": ["wiki-fahrenheit"]
+        },
+        {
+          "text": "The kelvin is fixed via the Boltzmann constant, which has the value 1.380649 × 10⁻²³ joules per kelvin.",
+          "source_ids": ["bipm-kelvin"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is absolute zero (0 K) in degrees Celsius?",
+          "options": ["−100 °C", "−273.15 °C", "−460 °C", "0 °C"],
+          "answer_index": 1,
+          "explanation": "0 K equals −273.15 °C."
+        },
+        {
+          "question": "How many degrees Celsius is 68 °F?",
+          "options": ["20 °C", "36 °C", "68 °C", "10 °C"],
+          "answer_index": 0,
+          "explanation": "(68 − 32) × 5/9 = 20."
+        },
+        {
+          "question": "At what Fahrenheit temperature does water boil?",
+          "options": ["100 °F", "180 °F", "212 °F", "273 °F"],
+          "answer_index": 2,
+          "explanation": "Water boils at 212 °F, 180 degrees above the freezing point of 32 °F."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nist-temp",
+      "title": "SI Units – Temperature (NIST)",
+      "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-fahrenheit",
+      "title": "Fahrenheit (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fahrenheit",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "bipm-kelvin",
+      "title": "The kelvin (BIPM)",
+      "url": "https://www.bipm.org/en/si-base-units/kelvin",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
