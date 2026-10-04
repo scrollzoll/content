@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-revolution-1848",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["revolution-1848", "paulskirche", "frankfurt", "deutschland"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Revolution 1848/49 und die Paulskirche",
+      "intro": "Bürger forderten Freiheit und Einheit. Das erste frei gewählte gesamtdeutsche Parlament scheiterte dennoch.",
+      "facts": [
+        {
+          "text": "Die Revolution begann im März 1848, nach Aufständen in Frankreich. Menschen forderten Pressefreiheit, Versammlungsfreiheit, Verfassungen und ein Parlament.",
+          "source_ids": ["wiki-revolutions-1848-german"]
+        },
+        {
+          "text": "Am 18. Mai 1848 trat die Nationalversammlung in der Frankfurter Paulskirche zusammen. Es war das erste frei gewählte Parlament für alle deutschen Staaten.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "Heinrich von Gagern wurde zum Präsidenten der Versammlung gewählt. Als Reichsverweser stand Erzherzog Johann an der Spitze der provisorischen Zentralgewalt.",
+          "source_ids": ["wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "Am 28. März 1849 war die Verfassung fertig. Im April 1849 lehnte der preußische König Friedrich Wilhelm IV. die ihm angebotene Kaiserkrone ab.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "Bis Mitte 1849 schlugen preußische und andere Truppen die Aufstände nieder. Schwarz-Rot-Gold wurde zum Symbol der Bewegung, und die Verfassung wirkte auf Weimarer Verfassung und Grundgesetz.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wo tagte 1848/49 die Frankfurter Nationalversammlung?",
+          "options": ["Paulskirche", "Wartburg", "Hambacher Schloss", "Berliner Schloss"],
+          "answer_index": 0,
+          "explanation": "Sie tagte ab dem 18. Mai 1848 in der Paulskirche in Frankfurt."
+        },
+        {
+          "question": "Wer lehnte 1849 die angebotene Kaiserkrone ab?",
+          "options": ["Wilhelm I.", "Friedrich Wilhelm IV.", "Franz Joseph I.", "Napoleon III."],
+          "answer_index": 1,
+          "explanation": "Der preußische König Friedrich Wilhelm IV. lehnte die Krone im April 1849 ab."
+        },
+        {
+          "question": "Welche Farben wurden zum Symbol der Freiheits- und Einheitsbewegung?",
+          "options": ["Schwarz-Weiß-Rot", "Blau-Weiß-Rot", "Schwarz-Rot-Gold", "Rot-Weiß-Grün"],
+          "answer_index": 2,
+          "explanation": "Schwarz-Rot-Gold wurde zum Symbol der Bewegung für Freiheit und Einheit."
+        }
+      ]
+    },
+    "en": {
+      "title": "The 1848/49 Revolution and the Paulskirche",
+      "intro": "Citizens demanded freedom and unity. The first freely elected all-German parliament failed nonetheless.",
+      "facts": [
+        {
+          "text": "The revolution began in March 1848, after uprisings in France. People demanded freedom of the press, freedom of assembly, constitutions and a parliament.",
+          "source_ids": ["wiki-revolutions-1848-german"]
+        },
+        {
+          "text": "On 18 May 1848 the National Assembly met in St Paul's Church (Paulskirche) in Frankfurt. It was the first freely elected parliament for all German states.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "Heinrich von Gagern was elected president of the assembly. Archduke John headed the provisional central power as regent.",
+          "source_ids": ["wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "The constitution was completed on 28 March 1849. In April 1849 the Prussian king Frederick William IV refused the imperial crown offered to him.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        },
+        {
+          "text": "By mid-1849 Prussian and other troops had crushed the uprisings. Black-red-gold became a symbol of the movement, and the constitution influenced the Weimar Constitution and the Basic Law.",
+          "source_ids": ["wiki-revolutions-1848-german", "wiki-frankfurt-parliament"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did the Frankfurt National Assembly meet in 1848/49?",
+          "options": ["St Paul's Church", "Wartburg", "Hambach Castle", "Berlin Palace"],
+          "answer_index": 0,
+          "explanation": "It met from 18 May 1848 in St Paul's Church in Frankfurt."
+        },
+        {
+          "question": "Who refused the offered imperial crown in 1849?",
+          "options": ["Wilhelm I", "Frederick William IV", "Franz Joseph I", "Napoleon III"],
+          "answer_index": 1,
+          "explanation": "The Prussian king Frederick William IV refused it in April 1849."
+        },
+        {
+          "question": "Which colours became the symbol of the movement for freedom and unity?",
+          "options": ["Black-white-red", "Blue-white-red", "Black-red-gold", "Red-white-green"],
+          "answer_index": 2,
+          "explanation": "Black-red-gold became the symbol of the movement for freedom and unity."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-revolutions-1848-german",
+      "title": "Revolutions of 1848 in the German states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_German_states",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-frankfurt-parliament",
+      "title": "Frankfurt Parliament (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Frankfurt_Parliament",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

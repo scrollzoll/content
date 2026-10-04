@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "ge-amerikanischer-buergerkrieg",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["usa", "buergerkrieg", "lincoln", "sklaverei"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Amerikanische Bürgerkrieg 1861–1865",
+      "intro": "Ein Krieg um die Zukunft der Sklaverei spaltete die USA und kostete Hunderttausende das Leben.",
+      "facts": [
+        {
+          "text": "Nach Abraham Lincolns Wahl 1860 traten Südstaaten aus der Union aus. Sie fürchteten, die Republikaner würden die Ausweitung der Sklaverei begrenzen.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "Am 12. April 1861 beschossen Truppen der Konföderierten Fort Sumter in Charleston. Damit begannen die Kämpfe.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "Am 1. Januar 1863 erließ Lincoln die Emanzipationsproklamation. Sie erklärte die Sklaven in den abtrünnigen Staaten für frei.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "Im Juli 1863 siegte die Union bei Gettysburg. Lees Vorstoß in den Norden scheiterte dort.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "Am 9. April 1865 kapitulierte der Südstaaten-General Robert E. Lee vor Ulysses S. Grant. Der Krieg forderte Hunderttausende Todesopfer unter den Soldaten.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "Der 13. Verfassungszusatz, am 6. Dezember 1865 ratifiziert, beendete die Sklaverei in den ganzen USA, außer als Strafe für Verbrechen.",
+          "source_ids": ["wiki-13th-amendment-war"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wo begannen am 12. April 1861 die Kämpfe des Bürgerkriegs?",
+          "options": ["Gettysburg", "Fort Sumter", "Washington", "New Orleans"],
+          "answer_index": 1,
+          "explanation": "Die Konföderierten beschossen Fort Sumter bei Charleston."
+        },
+        {
+          "question": "Vor wem kapitulierte Robert E. Lee am 9. April 1865?",
+          "options": ["Abraham Lincoln", "Ulysses S. Grant", "George Meade", "William T. Sherman"],
+          "answer_index": 1,
+          "explanation": "Lee kapitulierte vor dem Unionsgeneral Ulysses S. Grant."
+        },
+        {
+          "question": "Was verkündete Lincoln am 1. Januar 1863?",
+          "options": ["Die Emanzipationsproklamation", "Den 13. Verfassungszusatz", "Das Ende des Krieges", "Die Gründung der Konföderation"],
+          "answer_index": 0,
+          "explanation": "Die Proklamation erklärte die Sklaven in den abtrünnigen Staaten für frei."
+        }
+      ]
+    },
+    "en": {
+      "title": "The American Civil War 1861–1865",
+      "intro": "A war over the future of slavery split the USA and cost hundreds of thousands of lives.",
+      "facts": [
+        {
+          "text": "After Abraham Lincoln's election in 1860, Southern states left the Union. They feared the Republicans would restrict the expansion of slavery.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "On 12 April 1861 Confederate forces bombarded Fort Sumter in Charleston. This began the fighting.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "On 1 January 1863 Lincoln issued the Emancipation Proclamation. It declared enslaved people in the rebel states free.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "In July 1863 the Union won at Gettysburg. Lee's push into the North failed there.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "On 9 April 1865 Confederate General Robert E. Lee surrendered to Ulysses S. Grant. The war cost hundreds of thousands of soldiers' lives.",
+          "source_ids": ["wiki-civil-war"]
+        },
+        {
+          "text": "The 13th Amendment, ratified on 6 December 1865, ended slavery across the whole USA, except as punishment for crime.",
+          "source_ids": ["wiki-13th-amendment-war"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did the fighting of the Civil War begin on 12 April 1861?",
+          "options": ["Gettysburg", "Fort Sumter", "Washington", "New Orleans"],
+          "answer_index": 1,
+          "explanation": "The Confederates bombarded Fort Sumter near Charleston."
+        },
+        {
+          "question": "To whom did Robert E. Lee surrender on 9 April 1865?",
+          "options": ["Abraham Lincoln", "Ulysses S. Grant", "George Meade", "William T. Sherman"],
+          "answer_index": 1,
+          "explanation": "Lee surrendered to the Union general Ulysses S. Grant."
+        },
+        {
+          "question": "What did Lincoln issue on 1 January 1863?",
+          "options": ["The Emancipation Proclamation", "The 13th Amendment", "The end of the war", "The founding of the Confederacy"],
+          "answer_index": 0,
+          "explanation": "The proclamation declared enslaved people in the rebel states free."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-civil-war",
+      "title": "American Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/American_Civil_War",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-13th-amendment-war",
+      "title": "Thirteenth Amendment to the US Constitution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

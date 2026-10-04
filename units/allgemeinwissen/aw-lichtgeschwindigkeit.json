@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-lichtgeschwindigkeit",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "licht", "relativitaet", "konstanten"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Lichtgeschwindigkeit: das kosmische Tempolimit",
+      "intro": "Licht ist im Vakuum immer gleich schnell, und kein Körper mit Masse kann diese Geschwindigkeit erreichen.",
+      "facts": [
+        {
+          "text": "Die Lichtgeschwindigkeit im Vakuum beträgt genau 299.792.458 m/s. Der Wert ist exakt, seit 1983 der Meter über die Strecke definiert wird, die Licht in einer bestimmten Zeit zurücklegt.",
+          "source_ids": ["nist-c", "wiki-speed-of-light"]
+        },
+        {
+          "text": "Licht braucht von der Sonne zur Erde etwa 8 Minuten und 20 Sekunden, vom Mond zur Erde etwa 1,3 Sekunden.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "Ole Rømer schätzte 1676 als Erster die Lichtgeschwindigkeit, indem er den Jupitermond Io beobachtete.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "Laut Einstein ist die Lichtgeschwindigkeit in jedem Inertialsystem gleich, unabhängig von der Bewegung der Lichtquelle. Das ist eine Grundlage der speziellen Relativitätstheorie.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "Je näher ein Körper mit Masse der Lichtgeschwindigkeit kommt, desto mehr Energie braucht er für weitere Beschleunigung. Um sie ganz zu erreichen, wäre unendlich viel Energie nötig.",
+          "source_ids": ["wiki-speed-of-light"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie lange braucht Licht ungefähr von der Sonne zur Erde?",
+          "options": ["1,3 Sekunden", "8 Minuten", "8 Stunden", "8 Tage"],
+          "answer_index": 1,
+          "explanation": "Etwa 8 Minuten und 20 Sekunden. Die 1,3 Sekunden gelten für die Strecke Mond–Erde."
+        },
+        {
+          "question": "Warum kann ein Körper mit Masse die Lichtgeschwindigkeit nicht erreichen?",
+          "options": ["Der Luftwiderstand ist zu groß", "Es bräuchte unendlich viel Energie", "Es gibt keinen passenden Treibstoff", "Die Schwerkraft bremst ihn"],
+          "answer_index": 1,
+          "explanation": "Mit steigender Geschwindigkeit wächst der Energiebedarf ohne Grenze, nach der Relativitätstheorie wäre er bei c unendlich."
+        },
+        {
+          "question": "Wer schätzte 1676 als Erster die Lichtgeschwindigkeit?",
+          "options": ["Galileo Galilei", "Isaac Newton", "Ole Rømer", "Albert Einstein"],
+          "answer_index": 2,
+          "explanation": "Ole Rømer leitete sie aus Beobachtungen des Jupitermonds Io ab."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Speed of Light: the Cosmic Speed Limit",
+      "intro": "In a vacuum light always travels at the same speed, and no object with mass can reach it.",
+      "facts": [
+        {
+          "text": "The speed of light in a vacuum is exactly 299,792,458 m/s. The value is exact because since 1983 the metre has been defined by the distance light travels in a set time.",
+          "source_ids": ["nist-c", "wiki-speed-of-light"]
+        },
+        {
+          "text": "Light takes about 8 minutes and 20 seconds to travel from the Sun to Earth, and about 1.3 seconds from the Moon to Earth.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "Ole Rømer made the first estimate of the speed of light in 1676 by observing Jupiter's moon Io.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "According to Einstein, the speed of light is the same in every inertial frame, independent of the motion of the light source. This is a foundation of special relativity.",
+          "source_ids": ["wiki-speed-of-light"]
+        },
+        {
+          "text": "The closer an object with mass gets to the speed of light, the more energy it needs to accelerate further. Reaching it fully would take infinite energy.",
+          "source_ids": ["wiki-speed-of-light"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "About how long does light take to travel from the Sun to Earth?",
+          "options": ["1.3 seconds", "8 minutes", "8 hours", "8 days"],
+          "answer_index": 1,
+          "explanation": "About 8 minutes and 20 seconds. The 1.3 seconds apply to the Moon–Earth distance."
+        },
+        {
+          "question": "Why can an object with mass not reach the speed of light?",
+          "options": ["Air resistance is too great", "It would need infinite energy", "No suitable fuel exists", "Gravity slows it down"],
+          "answer_index": 1,
+          "explanation": "The energy needed grows without limit as speed rises. According to relativity it would be infinite at c."
+        },
+        {
+          "question": "Who made the first estimate of the speed of light in 1676?",
+          "options": ["Galileo Galilei", "Isaac Newton", "Ole Rømer", "Albert Einstein"],
+          "answer_index": 2,
+          "explanation": "Ole Rømer derived it from observations of Jupiter's moon Io."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nist-c",
+      "title": "Speed of light in vacuum (NIST CODATA)",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-speed-of-light",
+      "title": "Speed of light (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Speed_of_light",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-periodensystem",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["chemie", "periodensystem", "mendelejew", "elemente"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Das Periodensystem der Elemente",
+      "intro": "Wie Mendelejew Ordnung in die chemischen Elemente brachte und wie das System heute aufgebaut ist.",
+      "facts": [
+        {
+          "text": "1869 veröffentlichte der russische Chemiker Dmitri Mendelejew die erste allgemein akzeptierte Tabelle. Er ordnete die Elemente nach ihrer Atommasse und ihren chemischen Eigenschaften.",
+          "source_ids": ["wiki-periodic-table"]
+        },
+        {
+          "text": "Heute sind die Elemente nach der Ordnungszahl (Zahl der Protonen) sortiert. Das System hat 118 Elemente in 18 Gruppen (Spalten) und 7 Perioden (Zeilen).",
+          "source_ids": ["wiki-periodic-table", "iupac-periodic-table"]
+        },
+        {
+          "text": "Mendelejew ließ Lücken für unbekannte Elemente und sagte ihre Eigenschaften voraus. Sein „Eka-Aluminium“ entdeckte man 1875 als Gallium, sein „Eka-Silicium“ 1886 als Germanium.",
+          "source_ids": ["wiki-mendeleev"]
+        },
+        {
+          "text": "Die Edelgase (Gruppe 18) waren 1869 noch unbekannt. Mendelejew akzeptierte 1902 die Belege für ihre Existenz.",
+          "source_ids": ["wiki-periodic-table"]
+        },
+        {
+          "text": "Zu Mendelejews Ehren heißt das Element mit der Ordnungszahl 101 Mendelevium (Md).",
+          "source_ids": ["wiki-mendeleev"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer veröffentlichte 1869 das erste allgemein akzeptierte Periodensystem?",
+          "options": ["Dmitri Mendelejew", "Marie Curie", "Antoine Lavoisier", "John Dalton"],
+          "answer_index": 0,
+          "explanation": "Der Russe Dmitri Mendelejew stellte 1869 sein Periodensystem vor."
+        },
+        {
+          "question": "Wie viele Gruppen (Spalten) hat das heutige Periodensystem?",
+          "options": ["7", "8", "12", "18"],
+          "answer_index": 3,
+          "explanation": "Die Gruppen werden von 1 bis 18 nummeriert. Die 7 gehört zur Zahl der Perioden (Zeilen)."
+        },
+        {
+          "question": "Welches Element entspricht Mendelejews vorhergesagtem „Eka-Aluminium“?",
+          "options": ["Gallium", "Germanium", "Helium", "Argon"],
+          "answer_index": 0,
+          "explanation": "Gallium wurde 1875 entdeckt. Germanium (1886) war sein „Eka-Silicium“."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Periodic Table of the Elements",
+      "intro": "How Mendeleev brought order to the chemical elements and how the system is built today.",
+      "facts": [
+        {
+          "text": "In 1869 the Russian chemist Dmitri Mendeleev published the first generally accepted table. He arranged the elements by atomic mass and chemical properties.",
+          "source_ids": ["wiki-periodic-table"]
+        },
+        {
+          "text": "Today the elements are sorted by atomic number (the number of protons). The table has 118 elements in 18 groups (columns) and 7 periods (rows).",
+          "source_ids": ["wiki-periodic-table", "iupac-periodic-table"]
+        },
+        {
+          "text": "Mendeleev left gaps for unknown elements and predicted their properties. His \"eka-aluminium\" was found in 1875 as gallium, his \"eka-silicon\" in 1886 as germanium.",
+          "source_ids": ["wiki-mendeleev"]
+        },
+        {
+          "text": "The noble gases (group 18) were still unknown in 1869. Mendeleev accepted the evidence for their existence in 1902.",
+          "source_ids": ["wiki-periodic-table"]
+        },
+        {
+          "text": "Element number 101 is called mendelevium (Md) in Mendeleev's honour.",
+          "source_ids": ["wiki-mendeleev"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who published the first generally accepted periodic table in 1869?",
+          "options": ["Dmitri Mendeleev", "Marie Curie", "Antoine Lavoisier", "John Dalton"],
+          "answer_index": 0,
+          "explanation": "The Russian Dmitri Mendeleev presented his periodic table in 1869."
+        },
+        {
+          "question": "How many groups (columns) does the modern periodic table have?",
+          "options": ["7", "8", "12", "18"],
+          "answer_index": 3,
+          "explanation": "The groups are numbered 1 to 18. The number 7 refers to the periods (rows)."
+        },
+        {
+          "question": "Which element matches Mendeleev's predicted \"eka-aluminium\"?",
+          "options": ["Gallium", "Germanium", "Helium", "Argon"],
+          "answer_index": 0,
+          "explanation": "Gallium was discovered in 1875. Germanium (1886) was his \"eka-silicon\"."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-periodic-table",
+      "title": "Periodic table (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Periodic_table",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "iupac-periodic-table",
+      "title": "IUPAC Periodic Table of Elements",
+      "url": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-mendeleev",
+      "title": "Dmitri Mendeleev (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dmitri_Mendeleev",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-schwerkraft",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "gravitation", "newton", "fallbeschleunigung"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Schwerkraft: Newton und die Fallbeschleunigung",
+      "intro": "Warum fallen Dinge nach unten und was sagt die Physik dazu?",
+      "facts": [
+        {
+          "text": "Isaac Newton veröffentlichte 1687 in den „Principia“ sein Gravitationsgesetz: Zwei Massen ziehen sich an. Die Kraft wächst mit den Massen und nimmt mit dem Quadrat des Abstands ab.",
+          "source_ids": ["wiki-newton-gravitation"]
+        },
+        {
+          "text": "Die Normfallbeschleunigung ist exakt auf 9,80665 m/s² festgelegt, gerundet 9,81 m/s². Jede Sekunde im freien Fall wird ein Körper um etwa diesen Wert schneller.",
+          "source_ids": ["nist-gn"]
+        },
+        {
+          "text": "Galilei und andere widerlegten die Annahme, schwere Körper fielen schneller. Die Fallbeschleunigung ist für alle Körper gleich (ohne Luftwiderstand).",
+          "source_ids": ["wiki-gravity"]
+        },
+        {
+          "text": "Henry Cavendish prüfte Newtons Gesetz Ende der 1790er-Jahre erstmals im Labor und bestimmte so die Gravitationskonstante G, mehr als hundert Jahre nach Newton.",
+          "source_ids": ["wiki-newton-gravitation"]
+        },
+        {
+          "text": "Einstein beschrieb Gravitation 1915 als Krümmung der Raumzeit. Newtons Gesetz bleibt für die meisten praktischen Zwecke genau genug.",
+          "source_ids": ["wiki-gravity", "wiki-newton-gravitation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie groß ist die Normfallbeschleunigung (gerundet)?",
+          "options": ["1,62 m/s²", "6,67 m/s²", "9,81 m/s²", "98,1 m/s²"],
+          "answer_index": 2,
+          "explanation": "Festgelegt sind 9,80665 m/s², gerundet 9,81 m/s²."
+        },
+        {
+          "question": "Was geschieht laut Newton mit der Anziehungskraft, wenn sich der Abstand verdoppelt?",
+          "options": ["Sie halbiert sich", "Sie fällt auf ein Viertel", "Sie bleibt gleich", "Sie verdoppelt sich"],
+          "answer_index": 1,
+          "explanation": "Die Kraft nimmt mit dem Quadrat des Abstands ab: 2² = 4."
+        },
+        {
+          "question": "In welchem Werk stellte Newton 1687 sein Gravitationsgesetz vor?",
+          "options": ["Principia", "Opticks", "Almagest", "De revolutionibus"],
+          "answer_index": 0,
+          "explanation": "Die „Philosophiae Naturalis Principia Mathematica“ erschien 1687."
+        }
+      ]
+    },
+    "en": {
+      "title": "Gravity: Newton and the Acceleration of Free Fall",
+      "intro": "Why do things fall down, and what does physics say about it?",
+      "facts": [
+        {
+          "text": "In 1687 Isaac Newton published his law of gravitation in the \"Principia\": two masses attract each other. The force grows with the masses and falls with the square of the distance.",
+          "source_ids": ["wiki-newton-gravitation"]
+        },
+        {
+          "text": "Standard gravity is fixed exactly at 9.80665 m/s², rounded 9.81 m/s². In free fall a body gains roughly this much speed every second.",
+          "source_ids": ["nist-gn"]
+        },
+        {
+          "text": "Galileo and others disproved the idea that heavy bodies fall faster. The acceleration is the same for all bodies (without air resistance).",
+          "source_ids": ["wiki-gravity"]
+        },
+        {
+          "text": "Henry Cavendish first tested Newton's law in the laboratory in the late 1790s and so determined the gravitational constant G, over a hundred years after Newton.",
+          "source_ids": ["wiki-newton-gravitation"]
+        },
+        {
+          "text": "In 1915 Einstein described gravity as the curvature of spacetime. Newton's law remains accurate enough for most practical purposes.",
+          "source_ids": ["wiki-gravity", "wiki-newton-gravitation"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is standard gravity (rounded)?",
+          "options": ["1.62 m/s²", "6.67 m/s²", "9.81 m/s²", "98.1 m/s²"],
+          "answer_index": 2,
+          "explanation": "It is fixed at 9.80665 m/s², rounded 9.81 m/s²."
+        },
+        {
+          "question": "According to Newton, what happens to the attraction when the distance doubles?",
+          "options": ["It halves", "It drops to a quarter", "It stays the same", "It doubles"],
+          "answer_index": 1,
+          "explanation": "The force falls with the square of the distance: 2² = 4."
+        },
+        {
+          "question": "In which work did Newton present his law of gravitation in 1687?",
+          "options": ["Principia", "Opticks", "Almagest", "De revolutionibus"],
+          "answer_index": 0,
+          "explanation": "\"Philosophiae Naturalis Principia Mathematica\" appeared in 1687."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-newton-gravitation",
+      "title": "Newton's law of universal gravitation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "nist-gn",
+      "title": "Standard acceleration of gravity (NIST CODATA)",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-gravity",
+      "title": "Gravity (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
