@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-magnetismus",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["physik", "magnetismus", "erdmagnetfeld", "geodynamo"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Magnetismus und das Magnetfeld der Erde",
+      "intro": "Was Magnete antreibt und warum der Kompass nach Norden zeigt.",
+      "facts": [
+        {
+          "text": "Magnetfelder entstehen durch elektrische Ströme und durch den Spin von Elementarteilchen. Eisen, Nickel und Kobalt sind ferromagnetisch und können zu Dauermagneten werden.",
+          "source_ids": ["wiki-magnetism"]
+        },
+        {
+          "text": "Jeder Magnet hat einen Nord- und einen Südpol. Einzelne magnetische Pole (Monopole) hat bisher noch nie jemand beobachtet.",
+          "source_ids": ["wiki-magnetism"]
+        },
+        {
+          "text": "Das Erdmagnetfeld entsteht im flüssigen äußeren Kern. Dort bewegt sich geschmolzenes Eisen-Nickel-Gemisch in Konvektionsströmen; dieser Vorgang heißt Geodynamo.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        },
+        {
+          "text": "An der Oberfläche liegt das Feld bei etwa 30.000 bis 60.000 Nanotesla. Die Magnetosphäre schirmt Teilchen des Sonnenwinds und der kosmischen Strahlung ab.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        },
+        {
+          "text": "Das Erdfeld kehrt sich unregelmäßig um. Die jüngste Umpolung, Brunhes-Matuyama, liegt etwa 780.000 Jahre zurück.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wo entsteht das Magnetfeld der Erde?",
+          "options": ["In der Erdkruste", "Im flüssigen äußeren Kern", "In der Atmosphäre", "Im Erdmantel nahe der Oberfläche"],
+          "answer_index": 1,
+          "explanation": "Strömungen von geschmolzenem Eisen und Nickel im äußeren Kern erzeugen das Feld (Geodynamo)."
+        },
+        {
+          "question": "Welcher dieser Stoffe ist ferromagnetisch?",
+          "options": ["Kupfer", "Aluminium", "Eisen", "Kohlenstoff"],
+          "answer_index": 2,
+          "explanation": "Eisen, Nickel und Kobalt sind ferromagnetisch. Kupfer und Kohlenstoff werden schwach abgestoßen, Aluminium schwach angezogen."
+        },
+        {
+          "question": "Wann fand die jüngste Umpolung des Erdmagnetfelds etwa statt?",
+          "options": ["Vor 780 Jahren", "Vor 78.000 Jahren", "Vor 780.000 Jahren", "Vor 78 Millionen Jahren"],
+          "answer_index": 2,
+          "explanation": "Die Brunhes-Matuyama-Umkehr liegt etwa 780.000 Jahre zurück."
+        }
+      ]
+    },
+    "en": {
+      "title": "Magnetism and Earth's Magnetic Field",
+      "intro": "What drives magnets and why a compass points north.",
+      "facts": [
+        {
+          "text": "Magnetic fields arise from electric currents and from the spin of elementary particles. Iron, nickel and cobalt are ferromagnetic and can become permanent magnets.",
+          "source_ids": ["wiki-magnetism"]
+        },
+        {
+          "text": "Every magnet has a north and a south pole. Isolated magnetic poles (monopoles) have never been observed.",
+          "source_ids": ["wiki-magnetism"]
+        },
+        {
+          "text": "Earth's magnetic field is generated in the liquid outer core, where molten iron and nickel move in convection currents. This process is called the geodynamo.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        },
+        {
+          "text": "At the surface the field is about 30,000 to 60,000 nanotesla. The magnetosphere shields Earth from particles of the solar wind and from cosmic rays.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        },
+        {
+          "text": "Earth's field reverses irregularly. The most recent reversal, Brunhes–Matuyama, happened about 780,000 years ago.",
+          "source_ids": ["wiki-earth-magnetic-field"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where is Earth's magnetic field generated?",
+          "options": ["In the crust", "In the liquid outer core", "In the atmosphere", "In the mantle near the surface"],
+          "answer_index": 1,
+          "explanation": "Currents of molten iron and nickel in the outer core generate the field (geodynamo)."
+        },
+        {
+          "question": "Which of these materials is ferromagnetic?",
+          "options": ["Copper", "Aluminium", "Iron", "Carbon"],
+          "answer_index": 2,
+          "explanation": "Iron, nickel and cobalt are ferromagnetic. Copper and carbon are weakly repelled, aluminium is weakly attracted."
+        },
+        {
+          "question": "About when did the most recent reversal of Earth's magnetic field occur?",
+          "options": ["780 years ago", "78,000 years ago", "780,000 years ago", "78 million years ago"],
+          "answer_index": 2,
+          "explanation": "The Brunhes–Matuyama reversal was about 780,000 years ago."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-magnetism",
+      "title": "Magnetism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Magnetism",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-earth-magnetic-field",
+      "title": "Earth's magnetic field (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

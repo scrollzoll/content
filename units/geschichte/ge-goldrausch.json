@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "ge-goldrausch",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["usa", "kalifornien", "goldrausch", "migration"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Der kalifornische Goldrausch ab 1848",
+      "intro": "Ein Goldfund löste eine der größten Wanderungsbewegungen der US-Geschichte aus.",
+      "facts": [
+        {
+          "text": "Am 24. Januar 1848 fand James W. Marshall beim Bau von Sutters Sägemühle nahe Coloma in Kalifornien Gold.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "Rund 300.000 Menschen kamen während des Goldrauschs nach Kalifornien. Der Höhepunkt lag 1849, daher der Name „Forty-Niners“.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "San Francisco wuchs von etwa 1.000 Einwohnern im Jahr 1848 auf rund 25.000 im Jahr 1850.",
+          "source_ids": ["wiki-gold-rush"]
+        },
+        {
+          "text": "Im September 1850 wurde Kalifornien Bundesstaat der USA.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "Die Zugewanderten kamen auch aus China, Chile, Mexiko, Frankreich und Australien. Die indigene Bevölkerung litt stark unter Krankheiten, Hunger und Gewalt.",
+          "source_ids": ["wiki-gold-rush"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wer fand 1848 das Gold, das den Goldrausch auslöste?",
+          "options": ["John Sutter", "James W. Marshall", "Levi Strauss", "Kit Carson"],
+          "answer_index": 1,
+          "explanation": "James W. Marshall entdeckte das Gold am 24. Januar 1848 bei Sutters Mühle."
+        },
+        {
+          "question": "Woher stammt der Name „Forty-Niners“?",
+          "options": [
+            "Von 49 Goldminen in Kalifornien",
+            "Vom Höhepunkt der Zuwanderung im Jahr 1849",
+            "Von den 49 ersten Siedlern",
+            "Vom 49. Breitengrad"
+          ],
+          "answer_index": 1,
+          "explanation": "Die meisten Goldsucher kamen 1849."
+        },
+        {
+          "question": "In welchem Jahr wurde Kalifornien US-Bundesstaat?",
+          "options": ["1848", "1850", "1865", "1889"],
+          "answer_index": 1,
+          "explanation": "Im September 1850 wurde Kalifornien als Bundesstaat aufgenommen."
+        }
+      ]
+    },
+    "en": {
+      "title": "The California Gold Rush from 1848",
+      "intro": "A gold find set off one of the largest migrations in US history.",
+      "facts": [
+        {
+          "text": "On 24 January 1848 James W. Marshall found gold while building Sutter's sawmill near Coloma, California.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "Around 300,000 people came to California during the gold rush. The peak was in 1849, hence the name “Forty-Niners”.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "San Francisco grew from about 1,000 residents in 1848 to roughly 25,000 in 1850.",
+          "source_ids": ["wiki-gold-rush"]
+        },
+        {
+          "text": "In September 1850 California became a US state.",
+          "source_ids": ["wiki-gold-rush", "wiki-sutters-mill"]
+        },
+        {
+          "text": "Newcomers also came from China, Chile, Mexico, France and Australia. The indigenous population suffered badly from disease, starvation and violence.",
+          "source_ids": ["wiki-gold-rush"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who found the gold in 1848 that set off the gold rush?",
+          "options": ["John Sutter", "James W. Marshall", "Levi Strauss", "Kit Carson"],
+          "answer_index": 1,
+          "explanation": "James W. Marshall discovered the gold on 24 January 1848 at Sutter's mill."
+        },
+        {
+          "question": "Where does the name “Forty-Niners” come from?",
+          "options": [
+            "From 49 gold mines in California",
+            "From the peak of immigration in 1849",
+            "From the first 49 settlers",
+            "From the 49th parallel"
+          ],
+          "answer_index": 1,
+          "explanation": "Most gold seekers arrived in 1849."
+        },
+        {
+          "question": "In which year did California become a US state?",
+          "options": ["1848", "1850", "1865", "1889"],
+          "answer_index": 1,
+          "explanation": "California was admitted as a state in September 1850."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-gold-rush",
+      "title": "California Gold Rush (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/California_Gold_Rush",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-sutters-mill",
+      "title": "Sutter's Mill (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sutter%27s_Mill",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "ge-meiji",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["japan", "meiji", "modernisierung", "shogunat"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Meiji-Restauration in Japan",
+      "intro": "Wie Japan 1868 das Shogunat beendete und sich in wenigen Jahrzehnten grundlegend wandelte.",
+      "facts": [
+        {
+          "text": "Am 3. Januar 1868 erklärte Kaiser Meiji, die Macht liege wieder beim Kaiserhaus. Damit endete die Herrschaft des Tokugawa-Shogunats.",
+          "source_ids": ["wiki-meiji-restoration"]
+        },
+        {
+          "text": "Auslöser war der Druck von außen: US-Kommodore Perry lief 1853 mit vier Schiffen in die Bucht von Tokio ein. 1854 öffnete der Vertrag von Kanagawa die Häfen Shimoda und Hakodate.",
+          "source_ids": ["state-opening-japan"]
+        },
+        {
+          "text": "Zwischen 1868 und 1873 wurden die Lehensgebiete (Domänen) abgeschafft. Damit verlor das Feudalsystem seine Grundlage.",
+          "source_ids": ["wiki-meiji-restoration"]
+        },
+        {
+          "text": "Die Samurai-Klasse wurde aufgelöst, Japan industrialisierte sich rasch und übernahm vieles aus dem Westen. Die Meiji-Verfassung stammt von 1889.",
+          "source_ids": ["wiki-meiji-restoration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In welchem Jahr fand die Meiji-Restauration statt?",
+          "options": ["1853", "1868", "1889", "1912"],
+          "answer_index": 1,
+          "explanation": "Am 3. Januar 1868 wurde die Macht dem Kaiserhaus zurückgegeben."
+        },
+        {
+          "question": "Wessen Shogunat endete 1868 mit der Meiji-Restauration?",
+          "options": ["Minamoto", "Ashikaga", "Tokugawa", "Fujiwara"],
+          "answer_index": 2,
+          "explanation": "Die Restauration beendete die Herrschaft des Tokugawa-Shogunats."
+        },
+        {
+          "question": "Wer erreichte 1853 mit einer Flotte in der Bucht von Tokio die Öffnung Japans?",
+          "options": ["Christoph Kolumbus", "Matthew Perry", "James Cook", "Vasco da Gama"],
+          "answer_index": 1,
+          "explanation": "Der US-Kommodore Matthew Perry kam 1853 nach Japan; der Vertrag von Kanagawa folgte 1854."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Meiji Restoration in Japan",
+      "intro": "How Japan ended the shogunate in 1868 and transformed itself within a few decades.",
+      "facts": [
+        {
+          "text": "On 3 January 1868 Emperor Meiji declared power restored to the imperial house. This ended the rule of the Tokugawa shogunate.",
+          "source_ids": ["wiki-meiji-restoration"]
+        },
+        {
+          "text": "Pressure from abroad was the trigger: US Commodore Perry sailed into Tokyo Bay with four ships in 1853. In 1854 the Treaty of Kanagawa opened the ports of Shimoda and Hakodate.",
+          "source_ids": ["state-opening-japan"]
+        },
+        {
+          "text": "Between 1868 and 1873 the feudal domains were abolished. This removed the basis of the feudal system.",
+          "source_ids": ["wiki-meiji-restoration"]
+        },
+        {
+          "text": "The samurai class was dissolved, Japan industrialized rapidly and adopted much from the West. The Meiji Constitution dates from 1889.",
+          "source_ids": ["wiki-meiji-restoration"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which year did the Meiji Restoration take place?",
+          "options": ["1853", "1868", "1889", "1912"],
+          "answer_index": 1,
+          "explanation": "On 3 January 1868 power was restored to the imperial house."
+        },
+        {
+          "question": "Whose shogunate ended in 1868 with the Meiji Restoration?",
+          "options": ["Minamoto", "Ashikaga", "Tokugawa", "Fujiwara"],
+          "answer_index": 2,
+          "explanation": "The Restoration ended the rule of the Tokugawa shogunate."
+        },
+        {
+          "question": "Who arrived with a fleet in Tokyo Bay in 1853 and pushed Japan to open up?",
+          "options": ["Christopher Columbus", "Matthew Perry", "James Cook", "Vasco da Gama"],
+          "answer_index": 1,
+          "explanation": "US Commodore Matthew Perry came to Japan in 1853; the Treaty of Kanagawa followed in 1854."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-meiji-restoration",
+      "title": "Meiji Restoration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "state-opening-japan",
+      "title": "Opening to Japan, Perry Expedition and Treaty of Kanagawa (Office of the Historian, U.S. Department of State)",
+      "url": "https://history.state.gov/milestones/1830-1860/opening-to-japan",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

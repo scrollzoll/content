@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-frauenwahlrecht",
+  "topic": "geschichte/19-jahrhundert",
+  "tags": ["frauenwahlrecht", "neuseeland", "demokratie", "wahlrecht"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Frauenwahlrecht: Neuseeland 1893, Deutschland 1918",
+      "intro": "Wann Frauen in verschiedenen Ländern erstmals wählen durften.",
+      "facts": [
+        {
+          "text": "Neuseeland war 1893 das erste Land mit einem nationalen Wahlrecht für Frauen. Das Wahlgesetz erhielt am 19. September 1893 die Zustimmung des Gouverneurs.",
+          "source_ids": ["wiki-womens-suffrage", "wiki-nz-suffrage"]
+        },
+        {
+          "text": "Die Petition von 1893 trug fast 32.000 Unterschriften, das entsprach etwa einem Viertel der erwachsenen europäischstämmigen Frauen. Die erste Wahl mit Frauen fand am 28. November 1893 statt.",
+          "source_ids": ["wiki-nz-suffrage"]
+        },
+        {
+          "text": "Wählen heißt nicht gewählt werden: In Neuseeland durften Frauen bis 1919 nicht für das Parlament kandidieren.",
+          "source_ids": ["wiki-nz-suffrage"]
+        },
+        {
+          "text": "In Deutschland wurde das Frauenwahlrecht 1918 eingeführt. Die USA folgten 1920, Frankreich 1944.",
+          "source_ids": ["wiki-womens-suffrage"]
+        },
+        {
+          "text": "Die Schweiz führte das Frauenwahlrecht auf Bundesebene erst 1971 ein, später als die meisten westlichen Demokratien.",
+          "source_ids": ["wiki-womens-suffrage"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Land führte als erstes ein nationales Frauenwahlrecht ein?",
+          "options": ["Deutschland", "Neuseeland", "USA", "Frankreich"],
+          "answer_index": 1,
+          "explanation": "Neuseeland war 1893 das erste Land mit nationalem Frauenwahlrecht."
+        },
+        {
+          "question": "In welchem Jahr wurde in Deutschland das Frauenwahlrecht eingeführt?",
+          "options": ["1871", "1894", "1918", "1949"],
+          "answer_index": 2,
+          "explanation": "In Deutschland wurde es 1918 eingeführt."
+        },
+        {
+          "question": "Wann führte die Schweiz das Frauenwahlrecht auf Bundesebene ein?",
+          "options": ["1921", "1946", "1971", "1995"],
+          "answer_index": 2,
+          "explanation": "Auf Bundesebene gilt es in der Schweiz seit 1971."
+        }
+      ]
+    },
+    "en": {
+      "title": "Women's Suffrage: New Zealand 1893, Germany 1918",
+      "intro": "When women first got to vote in different countries.",
+      "facts": [
+        {
+          "text": "In 1893 New Zealand became the first country with national voting rights for women. The governor gave his assent to the Electoral Act on 19 September 1893.",
+          "source_ids": ["wiki-womens-suffrage", "wiki-nz-suffrage"]
+        },
+        {
+          "text": "The 1893 petition carried almost 32,000 signatures, roughly a quarter of adult European women. The first election with women voting took place on 28 November 1893.",
+          "source_ids": ["wiki-nz-suffrage"]
+        },
+        {
+          "text": "Voting is not the same as standing for office: in New Zealand, women could not stand for parliament until 1919.",
+          "source_ids": ["wiki-nz-suffrage"]
+        },
+        {
+          "text": "Germany introduced women's suffrage in 1918. The USA followed in 1920, France in 1944.",
+          "source_ids": ["wiki-womens-suffrage"]
+        },
+        {
+          "text": "Switzerland introduced women's suffrage at federal level only in 1971, later than most Western democracies.",
+          "source_ids": ["wiki-womens-suffrage"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which country was the first to introduce national women's suffrage?",
+          "options": ["Germany", "New Zealand", "USA", "France"],
+          "answer_index": 1,
+          "explanation": "New Zealand was the first, in 1893."
+        },
+        {
+          "question": "In which year was women's suffrage introduced in Germany?",
+          "options": ["1871", "1894", "1918", "1949"],
+          "answer_index": 2,
+          "explanation": "It was introduced in Germany in 1918."
+        },
+        {
+          "question": "When did Switzerland introduce women's suffrage at federal level?",
+          "options": ["1921", "1946", "1971", "1995"],
+          "answer_index": 2,
+          "explanation": "At federal level it has applied in Switzerland since 1971."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-womens-suffrage",
+      "title": "Women's suffrage (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-nz-suffrage",
+      "title": "Women's suffrage in New Zealand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
