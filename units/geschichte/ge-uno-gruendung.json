@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-uno-gruendung",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["uno", "vereinte-nationen", "1945", "voelkerbund"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 120,
+  "locales": {
+    "de": {
+      "title": "Gründung der Vereinten Nationen 1945",
+      "intro": "Aus den Trümmern des Zweiten Weltkriegs entstand eine neue Weltorganisation.",
+      "facts": [
+        {
+          "text": "Vertreter von 50 Staaten berieten vom 25. April bis 26. Juni 1945 in San Francisco über die UN-Charta. Am 26. Juni 1945 wurde sie unterzeichnet.",
+          "source_ids": ["un-history"]
+        },
+        {
+          "text": "Die UNO bestand offiziell ab dem 24. Oktober 1945, nachdem China, Frankreich, die Sowjetunion, Großbritannien, die USA und die Mehrheit der übrigen Unterzeichner die Charta ratifiziert hatten.",
+          "source_ids": ["un-history"]
+        },
+        {
+          "text": "Bei der ersten Generalversammlung im Januar 1946 in London waren 51 Staaten vertreten.",
+          "source_ids": ["wiki-un"]
+        },
+        {
+          "text": "Die UNO trat die Nachfolge des Völkerbunds an, der den Zweiten Weltkrieg nicht verhindert hatte.",
+          "source_ids": ["wiki-un"]
+        },
+        {
+          "text": "Ihr Hauptsitz ist New York. Heute hat sie 193 Mitgliedstaaten und soll Frieden und internationale Sicherheit wahren.",
+          "source_ids": ["wiki-un"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "An welchem Datum wurde die UN-Charta unterzeichnet?",
+          "options": ["8. Mai 1945", "26. Juni 1945", "24. Oktober 1945", "10. Dezember 1948"],
+          "answer_index": 1,
+          "explanation": "Die Unterzeichnung war am 26. Juni 1945, in Kraft trat sie am 24. Oktober 1945."
+        },
+        {
+          "question": "Welche Organisation war der Vorgänger der UNO?",
+          "options": ["Der Völkerbund", "Die NATO", "Der Europarat", "Die Hanse"],
+          "answer_index": 0,
+          "explanation": "Die UNO folgte auf den Völkerbund."
+        },
+        {
+          "question": "Wo liegt der Hauptsitz der UNO?",
+          "options": ["Genf", "New York", "Wien", "Den Haag"],
+          "answer_index": 1,
+          "explanation": "Der Hauptsitz befindet sich in New York."
+        }
+      ]
+    },
+    "en": {
+      "title": "Founding of the United Nations 1945",
+      "intro": "A new world organisation arose from the ruins of the Second World War.",
+      "facts": [
+        {
+          "text": "Representatives of 50 countries met in San Francisco from 25 April to 26 June 1945 to draft the UN Charter. It was signed on 26 June 1945.",
+          "source_ids": ["un-history"]
+        },
+        {
+          "text": "The UN officially came into being on 24 October 1945, after China, France, the Soviet Union, the UK, the USA and a majority of other signatories had ratified the Charter.",
+          "source_ids": ["un-history"]
+        },
+        {
+          "text": "At the first General Assembly in London in January 1946, 51 nations were represented.",
+          "source_ids": ["wiki-un"]
+        },
+        {
+          "text": "The UN succeeded the League of Nations, which had failed to prevent the Second World War.",
+          "source_ids": ["wiki-un"]
+        },
+        {
+          "text": "Its headquarters are in New York. Today it has 193 member states and aims to maintain international peace and security.",
+          "source_ids": ["wiki-un"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On what date was the UN Charter signed?",
+          "options": ["8 May 1945", "26 June 1945", "24 October 1945", "10 December 1948"],
+          "answer_index": 1,
+          "explanation": "It was signed on 26 June 1945 and entered into force on 24 October 1945."
+        },
+        {
+          "question": "Which organisation was the predecessor of the UN?",
+          "options": ["The League of Nations", "NATO", "The Council of Europe", "The Hanseatic League"],
+          "answer_index": 0,
+          "explanation": "The UN followed the League of Nations."
+        },
+        {
+          "question": "Where are the UN headquarters?",
+          "options": ["Geneva", "New York", "Vienna", "The Hague"],
+          "answer_index": 1,
+          "explanation": "The headquarters are in New York."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "un-history",
+      "title": "History of the United Nations (UN)",
+      "url": "https://www.un.org/en/about-us/history-of-the-un",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-un",
+      "title": "United Nations (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_Nations",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

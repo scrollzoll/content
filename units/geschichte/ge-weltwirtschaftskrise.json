@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-weltwirtschaftskrise",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["weltwirtschaftskrise", "1929", "boersencrash", "bruening"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Weltwirtschaftskrise ab 1929",
+      "intro": "Vom New Yorker Börsencrash zur weltweiten Krise, die auch Deutschland schwer traf.",
+      "facts": [
+        {
+          "text": "Der US-Börsenindex Dow Jones erreichte am 3. September 1929 sein Hoch von 381,17 Punkten. Am 28. Oktober fiel er um knapp 13 %, am Schwarzen Dienstag, dem 29. Oktober, um knapp 12 %.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "Bis Mitte November 1929 hatte der Dow etwa die Hälfte seines Werts verloren. Der Tiefpunkt kam am 8. Juli 1932 mit 41,22 Punkten, 89 % unter dem Höchststand.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "Der Crash zerstörte das Vertrauen von Verbrauchern und Unternehmen und vertiefte den Abschwung zur längsten und tiefsten Depression der USA.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "Deutschlands Wirtschaft hing stark an US-Krediten. Deren Zufluss versiegte ab Mitte 1928. Am 11. Mai 1931 brach die österreichische Creditanstalt zusammen, am 13. Juli 1931 schlossen Deutschlands Großbanken.",
+          "source_ids": ["wiki-wwk"]
+        },
+        {
+          "text": "Kanzler Heinrich Brüning setzte auf Sparpolitik, etwa Kürzungen der Beamtengehälter um 25 %, was die Krise verschärfte. Im Februar 1932 gab es 6,12 Millionen Arbeitslose.",
+          "source_ids": ["wiki-wwk"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "An welchem Datum fiel der Dow am „Schwarzen Dienstag“ um knapp 12 %?",
+          "options": ["24. Oktober 1929", "29. Oktober 1929", "3. September 1929", "13. Juli 1931"],
+          "answer_index": 1,
+          "explanation": "Der Schwarze Dienstag war der 29. Oktober 1929."
+        },
+        {
+          "question": "Wie weit lag der Dow im Tief vom Juli 1932 unter seinem Höchststand?",
+          "options": ["etwa 25 %", "etwa 50 %", "etwa 89 %", "etwa 13 %"],
+          "answer_index": 2,
+          "explanation": "Mit 41,22 Punkten lag er 89 % unter dem Hoch von 1929."
+        },
+        {
+          "question": "Welcher Zusammenbruch löste im Mai 1931 Panik in Mitteleuropa aus?",
+          "options": ["Die Creditanstalt", "Die Deutsche Bank", "Lehman Brothers", "Die Bank of England"],
+          "answer_index": 0,
+          "explanation": "Der Kollaps der österreichischen Creditanstalt löste eine Bankenpanik aus."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Great Depression from 1929",
+      "intro": "From the New York stock market crash to a worldwide crisis that hit Germany hard.",
+      "facts": [
+        {
+          "text": "The Dow Jones index peaked at 381.17 on 3 September 1929. On 28 October it fell almost 13%, and on Black Tuesday, 29 October, almost 12%.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "By mid-November 1929 the Dow had lost about half its value. It bottomed out on 8 July 1932 at 41.22, 89% below its peak.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "The crash destroyed consumer and business confidence and deepened the downturn into the longest and deepest depression in US history.",
+          "source_ids": ["fed-1929"]
+        },
+        {
+          "text": "Germany's economy relied heavily on US loans, and that inflow dried up from mid-1928. On 11 May 1931 Austria's Creditanstalt collapsed, and on 13 July 1931 Germany's major banks closed.",
+          "source_ids": ["wiki-wwk"]
+        },
+        {
+          "text": "Chancellor Heinrich Brüning relied on austerity, such as cutting civil servants' pay by 25%, which worsened the crisis. In February 1932 there were 6.12 million unemployed.",
+          "source_ids": ["wiki-wwk"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On what date did the Dow fall almost 12% on “Black Tuesday”?",
+          "options": ["24 October 1929", "29 October 1929", "3 September 1929", "13 July 1931"],
+          "answer_index": 1,
+          "explanation": "Black Tuesday was 29 October 1929."
+        },
+        {
+          "question": "How far below its peak was the Dow at its July 1932 low?",
+          "options": ["about 25%", "about 50%", "about 89%", "about 13%"],
+          "answer_index": 2,
+          "explanation": "At 41.22 it stood 89% below the 1929 peak."
+        },
+        {
+          "question": "Which collapse triggered panic across Central Europe in May 1931?",
+          "options": ["The Creditanstalt", "Deutsche Bank", "Lehman Brothers", "The Bank of England"],
+          "answer_index": 0,
+          "explanation": "The failure of Austria's Creditanstalt set off a banking panic."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "fed-1929",
+      "title": "Stock Market Crash of 1929 (Federal Reserve History)",
+      "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-wwk",
+      "title": "Weltwirtschaftskrise (Wikipedia)",
+      "url": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

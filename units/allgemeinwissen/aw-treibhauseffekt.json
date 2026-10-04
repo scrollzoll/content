@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "aw-treibhauseffekt",
+  "topic": "allgemeinwissen/naturwissenschaft",
+  "tags": ["treibhauseffekt", "klima", "co2", "atmosphaere"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 130,
+  "locales": {
+    "de": {
+      "title": "Treibhauseffekt: natürlich und menschengemacht",
+      "intro": "Ohne ihn wäre die Erde eisig, doch wir verstärken ihn.",
+      "facts": [
+        {
+          "text": "Ohne Treibhauseffekt läge die mittlere Oberflächentemperatur der Erde bei rund −18 °C. Tatsächlich sind es etwa 15 °C, der natürliche Effekt wärmt also um rund 33 °C.",
+          "source_ids": ["wiki-greenhouse"]
+        },
+        {
+          "text": "Treibhausgase lassen Sonnenstrahlung weitgehend durch, halten aber die von der Erdoberfläche abgegebene Wärmestrahlung zurück. Das erwärmt die Oberfläche.",
+          "source_ids": ["wiki-greenhouse"]
+        },
+        {
+          "text": "Natürlich vorkommende Treibhausgase sind Wasserdampf, Kohlendioxid und Methan. Wasserdampf ist am häufigsten, wirkt aber eher als Verstärker denn als direkte Ursache der Erwärmung.",
+          "source_ids": ["wiki-greenhouse", "nasa-causes"]
+        },
+        {
+          "text": "Menschen verstärken den Effekt: Der CO₂-Gehalt der Luft ist seit 1750 um etwa 50 % gestiegen, vor allem durch fossile Brennstoffe und Entwaldung. Auch Methan, Lachgas und FCKW tragen bei.",
+          "source_ids": ["nasa-causes"]
+        },
+        {
+          "text": "Seit der Industrialisierung hat sich die Erde laut Stand 2023 um etwa 1,2 °C erwärmt.",
+          "source_ids": ["wiki-greenhouse"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie kalt wäre die Erde im Mittel ohne natürlichen Treibhauseffekt?",
+          "options": ["etwa −18 °C", "etwa 0 °C", "etwa 15 °C", "etwa −80 °C"],
+          "answer_index": 0,
+          "explanation": "Ohne ihn läge die Mitteltemperatur bei etwa −18 °C statt 15 °C."
+        },
+        {
+          "question": "Welches Treibhausgas ist am häufigsten, wirkt aber vor allem als Verstärker?",
+          "options": ["Wasserdampf", "Kohlendioxid", "Methan", "FCKW"],
+          "answer_index": 0,
+          "explanation": "Wasserdampf reagiert auf die Erwärmung und verstärkt sie."
+        },
+        {
+          "question": "Um wie viel ist der CO₂-Gehalt der Luft seit 1750 etwa gestiegen?",
+          "options": ["um etwa 5 %", "um etwa 50 %", "um etwa 200 %", "gar nicht"],
+          "answer_index": 1,
+          "explanation": "Der Anstieg beträgt rund 50 %."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Greenhouse Effect: Natural and Human-Made",
+      "intro": "Without it Earth would be icy, but we are strengthening it.",
+      "facts": [
+        {
+          "text": "Without the greenhouse effect, Earth's average surface temperature would be about −18 °C. In reality it is around 15 °C, so the natural effect warms by roughly 33 °C.",
+          "source_ids": ["wiki-greenhouse"]
+        },
+        {
+          "text": "Greenhouse gases let sunlight pass fairly freely but hold back the heat radiation emitted by Earth's surface. This warms the surface.",
+          "source_ids": ["wiki-greenhouse"]
+        },
+        {
+          "text": "Naturally occurring greenhouse gases include water vapour, carbon dioxide and methane. Water vapour is the most abundant but acts more as an amplifier than as a direct cause of warming.",
+          "source_ids": ["wiki-greenhouse", "nasa-causes"]
+        },
+        {
+          "text": "Humans strengthen the effect: atmospheric CO₂ has risen by about 50% since 1750, mainly from fossil fuels and deforestation. Methane, nitrous oxide and CFCs also contribute.",
+          "source_ids": ["nasa-causes"]
+        },
+        {
+          "text": "As of 2023, Earth has warmed by about 1.2 °C since industrialisation.",
+          "source_ids": ["wiki-greenhouse"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How cold would Earth be on average without the natural greenhouse effect?",
+          "options": ["about −18 °C", "about 0 °C", "about 15 °C", "about −80 °C"],
+          "answer_index": 0,
+          "explanation": "Without it the average would be about −18 °C instead of 15 °C."
+        },
+        {
+          "question": "Which greenhouse gas is the most abundant but mainly acts as an amplifier?",
+          "options": ["Water vapour", "Carbon dioxide", "Methane", "CFCs"],
+          "answer_index": 0,
+          "explanation": "Water vapour responds to warming and amplifies it."
+        },
+        {
+          "question": "By roughly how much has atmospheric CO₂ risen since 1750?",
+          "options": ["about 5%", "about 50%", "about 200%", "not at all"],
+          "answer_index": 1,
+          "explanation": "The increase is about 50%."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-greenhouse",
+      "title": "Greenhouse effect (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "nasa-causes",
+      "title": "Causes of Climate Change (NASA)",
+      "url": "https://science.nasa.gov/climate-change/causes/",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

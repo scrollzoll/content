@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-zweiter-weltkrieg",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["zweiter-weltkrieg", "1939", "1945", "eckdaten"],
+  "format": "facts_quiz",
+  "difficulty": 2,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Der Zweite Weltkrieg 1939–1945",
+      "intro": "Die wichtigsten Eckdaten des bisher opferreichsten Krieges.",
+      "facts": [
+        {
+          "text": "Der Krieg begann am 1. September 1939 mit dem deutschen Überfall auf Polen. Die Alliierten (u. a. Sowjetunion, USA, Großbritannien, China) standen gegen die Achse Deutschland, Japan und Italien.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "Am 22. Juni 1941 griff Deutschland die Sowjetunion an. Damit begann die Ostfront.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "Im Dezember 1941 griff Japan Pearl Harbor an, danach traten die USA in den Krieg ein. Im Juni 1944 landeten die Alliierten in der Normandie.",
+          "source_ids": ["wiki-ww2"]
+        },
+        {
+          "text": "Nach dem Vorstoß sowjetischer Truppen bis Berlin kapitulierte Deutschland am 8. Mai 1945 bedingungslos.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "Nach den Atombomben auf Hiroshima und Nagasaki im August kapitulierte Japan, am 2. September 1945 endete der Krieg formal. Schätzungen nennen 60 bis 75 Millionen Tote.",
+          "source_ids": ["wiki-ww2"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches Ereignis markiert den Beginn des Zweiten Weltkriegs in Europa?",
+          "options": ["Der Überfall auf Polen am 1. September 1939", "Der Angriff auf Pearl Harbor", "Der Angriff auf die Sowjetunion", "Das Münchner Abkommen"],
+          "answer_index": 0,
+          "explanation": "Mit dem Überfall auf Polen begann der Krieg am 1. September 1939."
+        },
+        {
+          "question": "Wann kapitulierte Deutschland bedingungslos?",
+          "options": ["30. April 1945", "8. Mai 1945", "2. September 1945", "6. Juni 1944"],
+          "answer_index": 1,
+          "explanation": "Die Kapitulation erfolgte am 8. Mai 1945."
+        },
+        {
+          "question": "An welchem Datum endete der Krieg formal mit Japans Kapitulation?",
+          "options": ["8. Mai 1945", "6. August 1945", "2. September 1945", "24. Oktober 1945"],
+          "answer_index": 2,
+          "explanation": "Das formale Ende war der 2. September 1945."
+        }
+      ]
+    },
+    "en": {
+      "title": "World War II 1939–1945",
+      "intro": "The key dates of the deadliest war so far.",
+      "facts": [
+        {
+          "text": "The war began on 1 September 1939 with Germany's invasion of Poland. The Allies (including the Soviet Union, USA, UK and China) fought the Axis of Germany, Japan and Italy.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "On 22 June 1941 Germany attacked the Soviet Union. This opened the Eastern Front.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "In December 1941 Japan attacked Pearl Harbor, after which the USA entered the war. In June 1944 the Allies landed in Normandy.",
+          "source_ids": ["wiki-ww2"]
+        },
+        {
+          "text": "After Soviet forces advanced to Berlin, Germany surrendered unconditionally on 8 May 1945.",
+          "source_ids": ["lemo-ww2", "wiki-ww2"]
+        },
+        {
+          "text": "After the atomic bombings of Hiroshima and Nagasaki in August, Japan surrendered, and on 2 September 1945 the war formally ended. Estimates range from 60 to 75 million deaths.",
+          "source_ids": ["wiki-ww2"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which event marks the start of World War II in Europe?",
+          "options": ["The invasion of Poland on 1 September 1939", "The attack on Pearl Harbor", "The attack on the Soviet Union", "The Munich Agreement"],
+          "answer_index": 0,
+          "explanation": "The war began with the invasion of Poland on 1 September 1939."
+        },
+        {
+          "question": "When did Germany surrender unconditionally?",
+          "options": ["30 April 1945", "8 May 1945", "2 September 1945", "6 June 1944"],
+          "answer_index": 1,
+          "explanation": "The surrender took place on 8 May 1945."
+        },
+        {
+          "question": "On what date did the war formally end with Japan's surrender?",
+          "options": ["8 May 1945", "6 August 1945", "2 September 1945", "24 October 1945"],
+          "answer_index": 2,
+          "explanation": "The formal end was 2 September 1945."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-ww2",
+      "title": "World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/World_War_II",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "lemo-ww2",
+      "title": "Der Zweite Weltkrieg (LeMO, Deutsches Historisches Museum)",
+      "url": "https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "ge-nuernberger-prozesse",
+  "topic": "geschichte/20-jahrhundert",
+  "tags": ["nuernberger-prozesse", "1945", "voelkerrecht", "nationalsozialismus"],
+  "format": "facts_quiz",
+  "difficulty": 3,
+  "duration_seconds": 150,
+  "locales": {
+    "de": {
+      "title": "Die Nürnberger Prozesse 1945/46",
+      "intro": "Erstmals mussten sich führende Politiker vor einem internationalen Gericht verantworten.",
+      "facts": [
+        {
+          "text": "Der Hauptprozess vor dem Internationalen Militärtribunal lief vom 20. November 1945 bis zum 1. Oktober 1946 im Nürnberger Justizpalast. USA, Sowjetunion, Großbritannien und Frankreich stellten Richter und Ankläger.",
+          "source_ids": ["wiki-nuremberg-en"]
+        },
+        {
+          "text": "Angeklagt waren 24 führende Nationalsozialisten. Die vier Anklagepunkte lauteten Verschwörung, Verbrechen gegen den Frieden, Kriegsverbrechen und Verbrechen gegen die Menschlichkeit.",
+          "source_ids": ["wiki-nuremberg-en", "wiki-nuremberg-de"]
+        },
+        {
+          "text": "Das Urteil lautete auf 12 Todesstrafen, 3 lebenslange und 4 zeitliche Haftstrafen sowie 3 Freisprüche. Zehn Todesurteile wurden vollstreckt, Hermann Göring nahm sich zuvor das Leben.",
+          "source_ids": ["wiki-nuremberg-en", "wiki-nuremberg-de"]
+        },
+        {
+          "text": "Das Tribunal erklärte vier NS-Organisationen für verbrecherisch: Führerkorps der NSDAP, SS, Gestapo und SD.",
+          "source_ids": ["wiki-nuremberg-en"]
+        },
+        {
+          "text": "Bis 1949 folgten zwölf Nachfolgeprozesse vor US-Militärgerichten gegen 185 Angeklagte. Die Nürnberger Prinzipien halten fest, dass Einzelne für Völkerrechtsverbrechen persönlich verantwortlich sind.",
+          "source_ids": ["wiki-nuremberg-de"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Wie viele Todesurteile sprach das Tribunal im Hauptprozess aus?",
+          "options": ["3", "7", "12", "24"],
+          "answer_index": 2,
+          "explanation": "Zwölf Angeklagte wurden zum Tod verurteilt."
+        },
+        {
+          "question": "Welche Mächte stellten Richter und Ankläger im Hauptprozess?",
+          "options": ["USA, Sowjetunion, Großbritannien, Frankreich", "USA, Sowjetunion, Großbritannien, China", "USA, Großbritannien, Frankreich, Polen", "Nur USA und Großbritannien"],
+          "answer_index": 0,
+          "explanation": "Es waren die vier Siegermächte USA, UdSSR, Großbritannien und Frankreich."
+        },
+        {
+          "question": "Was legten die Nürnberger Prinzipien fest?",
+          "options": ["Einzelne können persönlich für Völkerrechtsverbrechen verantwortlich sein", "Befehle befreien immer von Schuld", "Nur Staaten können verurteilt werden", "Kriegsverbrechen verjähren nach 10 Jahren"],
+          "answer_index": 0,
+          "explanation": "Auch wer auf Befehl handelt, kann persönlich verantwortlich sein."
+        }
+      ]
+    },
+    "en": {
+      "title": "The Nuremberg Trials 1945/46",
+      "intro": "For the first time, leading political figures faced an international court.",
+      "facts": [
+        {
+          "text": "The main trial before the International Military Tribunal ran from 20 November 1945 to 1 October 1946 in Nuremberg's Palace of Justice. The USA, Soviet Union, UK and France provided judges and prosecutors.",
+          "source_ids": ["wiki-nuremberg-en"]
+        },
+        {
+          "text": "Twenty-four leading Nazis were indicted. The four counts were conspiracy, crimes against peace, war crimes and crimes against humanity.",
+          "source_ids": ["wiki-nuremberg-en", "wiki-nuremberg-de"]
+        },
+        {
+          "text": "The verdicts were 12 death sentences, 3 life terms, 4 fixed prison terms and 3 acquittals. Ten death sentences were carried out; Hermann Göring took his own life beforehand.",
+          "source_ids": ["wiki-nuremberg-en", "wiki-nuremberg-de"]
+        },
+        {
+          "text": "The tribunal declared four Nazi organisations criminal: the Leadership Corps of the Nazi Party, the SS, the Gestapo and the SD.",
+          "source_ids": ["wiki-nuremberg-en"]
+        },
+        {
+          "text": "Twelve successor trials before US military courts followed until 1949, with 185 defendants. The Nuremberg Principles hold that individuals are personally responsible for crimes under international law.",
+          "source_ids": ["wiki-nuremberg-de"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many death sentences did the tribunal pass in the main trial?",
+          "options": ["3", "7", "12", "24"],
+          "answer_index": 2,
+          "explanation": "Twelve defendants were sentenced to death."
+        },
+        {
+          "question": "Which powers provided judges and prosecutors in the main trial?",
+          "options": ["USA, Soviet Union, UK, France", "USA, Soviet Union, UK, China", "USA, UK, France, Poland", "Only the USA and UK"],
+          "answer_index": 0,
+          "explanation": "They were the four victorious powers: USA, USSR, UK and France."
+        },
+        {
+          "question": "What did the Nuremberg Principles establish?",
+          "options": ["Individuals can be personally responsible for crimes under international law", "Orders always excuse guilt", "Only states can be convicted", "War crimes expire after 10 years"],
+          "answer_index": 0,
+          "explanation": "Even someone acting on orders can be personally responsible."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-nuremberg-en",
+      "title": "Nuremberg trials (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nuremberg_trials",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-nuremberg-de",
+      "title": "Nürnberger Prozesse (Wikipedia)",
+      "url": "https://de.wikipedia.org/wiki/N%C3%BCrnberger_Prozesse",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "aw-pluto",
+  "topic": "allgemeinwissen/astronomie",
+  "tags": ["pluto", "zwergplanet", "iau", "kuiperguertel"],
+  "format": "facts_quiz",
+  "difficulty": 1,
+  "duration_seconds": 100,
+  "locales": {
+    "de": {
+      "title": "Warum Pluto kein Planet mehr ist",
+      "intro": "Seit 2006 gilt Pluto als Zwergplanet.",
+      "facts": [
+        {
+          "text": "Clyde Tombaugh entdeckte Pluto am 18. Februar 1930 am Lowell-Observatorium in Arizona. Er galt sofort als neunter Planet.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "Die Entdeckung von Eris 2005, einem massereicheren Objekt als Pluto, löste eine Neubewertung aus, was ein Planet ist.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "Im August 2006 legte die IAU drei Kriterien fest: Umlauf um die Sonne, genug Masse für eine runde Form und eine freigeräumte Bahnumgebung.",
+          "source_ids": ["wiki-pluto", "wiki-planet"]
+        },
+        {
+          "text": "Pluto erfüllt das dritte Kriterium nicht: Seine Masse beträgt nur das 0,07-Fache der übrigen Objekte in seiner Bahnzone, bei der Erde ist es das 1,7-Millionenfache.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "Pluto ist seitdem ein Zwergplanet im Kuipergürtel jenseits von Neptun. 2015 flog die Sonde New Horizons als erste und bisher einzige an ihm vorbei.",
+          "source_ids": ["nasa-pluto"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Welches IAU-Kriterium erfüllt Pluto nicht?",
+          "options": ["Er umkreist nicht die Sonne", "Er ist nicht rund", "Er hat seine Bahnumgebung nicht freigeräumt", "Er hat keinen Mond"],
+          "answer_index": 2,
+          "explanation": "Pluto hat seine Bahnumgebung nicht freigeräumt."
+        },
+        {
+          "question": "In welchem Jahr wurde Pluto zum Zwergplaneten erklärt?",
+          "options": ["1930", "2006", "2015", "2005"],
+          "answer_index": 1,
+          "explanation": "Die IAU-Entscheidung fiel im August 2006."
+        },
+        {
+          "question": "Wer entdeckte Pluto 1930?",
+          "options": ["Galileo Galilei", "William Herschel", "Clyde Tombaugh", "Edwin Hubble"],
+          "answer_index": 2,
+          "explanation": "Clyde Tombaugh fand Pluto am Lowell-Observatorium."
+        }
+      ]
+    },
+    "en": {
+      "title": "Why Pluto Is No Longer a Planet",
+      "intro": "Since 2006, Pluto has been a dwarf planet.",
+      "facts": [
+        {
+          "text": "Clyde Tombaugh discovered Pluto on 18 February 1930 at Lowell Observatory in Arizona. It was immediately hailed as the ninth planet.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "The 2005 discovery of Eris, an object more massive than Pluto, triggered a rethink of what counts as a planet.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "In August 2006 the IAU set three criteria: orbiting the Sun, enough mass for a round shape, and a cleared orbital neighbourhood.",
+          "source_ids": ["wiki-pluto", "wiki-planet"]
+        },
+        {
+          "text": "Pluto fails the third criterion: its mass is only 0.07 times that of the other objects in its orbital zone, while for Earth it is 1.7 million times.",
+          "source_ids": ["wiki-pluto"]
+        },
+        {
+          "text": "Pluto has since been a dwarf planet in the Kuiper belt beyond Neptune. In 2015 the New Horizons probe made the first and so far only flyby.",
+          "source_ids": ["nasa-pluto"]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which IAU criterion does Pluto fail?",
+          "options": ["It does not orbit the Sun", "It is not round", "It has not cleared its orbital neighbourhood", "It has no moon"],
+          "answer_index": 2,
+          "explanation": "Pluto has not cleared its orbital neighbourhood."
+        },
+        {
+          "question": "In which year was Pluto declared a dwarf planet?",
+          "options": ["1930", "2006", "2015", "2005"],
+          "answer_index": 1,
+          "explanation": "The IAU decision was made in August 2006."
+        },
+        {
+          "question": "Who discovered Pluto in 1930?",
+          "options": ["Galileo Galilei", "William Herschel", "Clyde Tombaugh", "Edwin Hubble"],
+          "answer_index": 2,
+          "explanation": "Clyde Tombaugh found Pluto at Lowell Observatory."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "wiki-pluto",
+      "title": "Pluto (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pluto",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "wiki-planet",
+      "title": "Planet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Planet",
+      "accessed": "2026-10-04"
+    },
+    {
+      "id": "nasa-pluto",
+      "title": "Pluto (NASA Science)",
+      "url": "https://science.nasa.gov/dwarf-planets/pluto/",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "status": "review",
+  "provenance": {
+    "created_by": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-04"
+  }
+}
